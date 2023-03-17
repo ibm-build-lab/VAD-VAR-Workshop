@@ -2,7 +2,7 @@
 
 In this chapter, learn how to configure a Secure File Transfer Protocol (SFTP) adapter using the containerized B2Bi deployment.
 
-<span style="color:red">
+<span style="color:red;font-weight:bold">
 **PLEASE NOTE THAT THIS FIRST LAB WILL BE LEAD AND COMPLETED BY THE INSTRUCTOR ONLY**
 </span>
 
