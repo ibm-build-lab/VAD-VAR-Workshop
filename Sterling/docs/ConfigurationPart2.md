@@ -76,7 +76,7 @@ Next, add 2 partners to the newly created **bb-sftp_community**.
 
 1. Review the default settings on the **Initiate Connections Settings** screen and then click **Next**.
 
-    ![image](_attachments/BB_FG_CommunitiesPartner1ICS.png)
+    ![image](_attachments/BB_FG_CommunitiesPartner1CS.png)
 
 1. Review the default settings on the **PGP Settings** screen and then click **Next**.
 
