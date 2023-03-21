@@ -6,7 +6,7 @@
 
 Completing this lab requires access to the latest version of the Maximo Application Suite (MAS) v8.6 demo cluster environment. To reserve the MAS demo environment, please perform the following steps:
 
-1. Click on this [TechZone](https://techzone.ibm.com/my/reservations/create/61e86836cf867a001eadbcaf) form to request access to the MAS demo environment.
+1. Click on this [TechZone](https://techzone.ibm.com/my/reservations/create/635952829aaefe0019bea350) form to request access to the MAS demo environment.
 2. On this form, select **Reserve now**.
 
 <img width="1237" alt="1-mas" src="https://user-images.githubusercontent.com/40394344/225987130-86d17b0d-13ad-440b-8ca2-de8aa4c5e3a3.png">
