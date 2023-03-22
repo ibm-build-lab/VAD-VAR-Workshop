@@ -1,57 +1,9 @@
 # Maximo Application Suite
 
-## Getting Started
+In this lab you will get a tour of how 4 key applications within Maximo Application Suite (MAS) can be used to troubleshoot a real world situation. All L3 Quiz questions can be answered using this lab.
 
-### Demo Lab Environment Access
+HEADS UP! L3 Quiz Content denoted with 🟢
 
-Completing this lab requires access to the latest version of the Maximo Application Suite (MAS) v8.6 demo cluster environment. To reserve the MAS demo environment, please perform the following steps:
-
-1. Click on this [TechZone](https://techzone.ibm.com/my/reservations/create/635952829aaefe0019bea350) form to request access to the MAS demo environment.
-2. On this form, select **Reserve now**.
-
-<img width="1237" alt="1-mas" src="https://user-images.githubusercontent.com/40394344/225987130-86d17b0d-13ad-440b-8ca2-de8aa4c5e3a3.png">
-
-3. Click on the **Purpose** dropdown and select **Practice/Self-Education** from the list **(A)**.
-4. In the **Purpose description** textbox, enter “Level 3 demo” **(B)**.
-5. Click on the **Preferred Geography** dropdown and select **Americas**.
-6. Feel free to leave the **End date and time** fields as they are **(D)**.
-7. Click **Submit (E)**.
-
-   You will almost immediately receive an email notifying that your environment has begun provisioning. After 5-10 minutes, you’ll receive another email notifying you that your environment is ready, with details on how to access it.
-
-   <img width="1290" alt="2-mas" src="https://user-images.githubusercontent.com/40394344/226028615-b2b99991-3c56-47e1-9fcd-beaee3c73ad9.png">
-
-   **Caution:** The maximum duration for reserving this demo environment is 3 days (72 hours). Please try and complete this demo script within that time to avoid losing demo access before completion.
-
-8. Once you receive an email notifying you that your environment is ready to use, locate the URL link in this email for the demo environment **MAS v8.6 Demo Environment URL** and the list of corresponding login credentials. This URL and login credentials will be used later in the demo script.
-
-<img width="1179" alt="3-mas" src="https://user-images.githubusercontent.com/40394344/226029695-74b3aef9-46de-4cbe-9444-d11384152424.png">
-
-9. Scroll down in the email to view a list of login credentials for each application in the Maximo Application Suite. Please take note of the username and password to demonstrate the Manage, Health, and Predict applications.
-
-<img width="1173" alt="4-mas" src="https://user-images.githubusercontent.com/40394344/226029964-7f8553cf-6538-4c9b-99b4-8836a828af83.png">
-
-### Instructions to Use Demo Script
-
-The script in this document is arranged as follows:
-
-1. **Actions:** Outline the presenters’ steps to complete the demo.
-2. When instructions are given to enter text, the text is shown with double quotes around it (“this is an example”). This is to help indicate that you need to type all the text within the quotes. However, do not include the double quotes unless explicitly instructed.
-3. Action instructions appear before the corresponding screenshot. For your convenience, **bolded text** is used to highlight the User interface (UI) elements in the action statements. The corresponding screenshot also uses a red bounded box and red arrow to point at the UI element. For example, instructions and their corresponding screenshots will appear like the following.
-
-   1. Under the **Name** column, click on **tanking123000_model**.
-
-   <img width="1257" alt="5-mas" src="https://user-images.githubusercontent.com/40394344/226030382-f1797248-c78c-416f-81db-41971cce5f41.png">
-
-4. You will also notice that some action steps do not have a corresponding screenshot right away. Instead, a screenshot is shown after multiple related steps wherever it makes sense. In such cases, you will see bolded letters (like **A**, **B**, or **C**) at the end of each instruction in round brackets. At the end of such instructions, these letters correspond to the order of operations to follow and are consistent with the letters shown in the screenshot representing the multiple steps.
-
-## IBM Maximo Application Suite at-a-glance
-
-IBM Maximo Application Suite (MAS) provides clients with a comprehensive and innovative answer for physical asset management. This flexible solution provides a unified platform that delivers asset performance and maintenance management, with end-to-end asset lifecycle management across the enterprise.
-
-Maximo Application Suite is built to scale a client’s digital transformation journey with integrated solutions, simplified licensing, and multi-cloud deployments. Maximo Application Suite includes a suite of applications such as Maximo Manage, Monitor, Health, Predict, Visual Inspection, and more.
-
-This client demonstration provides a high-level overview of the Maximo’s Monitor, Manage, Health, and Predict applications, through a story about a water waste plant. This demo will connect these various applications, thus illustrating how they can work together to run operations within a business.
 
 ## Lab Story Line
 
@@ -81,9 +33,7 @@ To complete this step, please refer to the email confirming your demo access and
 
 **Actions:**
 
-1. Click on this [Maximo Application Suite Demo Environment](https://wwdemo.home.wwdemomas8.gtm-pat.com/) URL link to launch IBM Maximo Application Suite and bring up the login page. Alternatively, you can also locate and click the MAS demo environment URL link from the email you received containing instructions to use the demo environment as shown in the screenshot below.
-
-<img width="1138" alt="6-mas" src="https://user-images.githubusercontent.com/40394344/226031007-93ea7c43-088a-487b-962a-6fd3d2da7f31.png">
+1. Click on this [Maximo Application Suite Demo Environment](https://wwdemo.home.wwdemomas8.gtm-pat.com/) URL link to launch IBM Maximo Application Suite and bring up the login page. Alternatively, you can also locate and click the MAS demo environment URL link from the email you received after TechZone environment reservation.
 
 2. The **IBM Maximo Application Suite** login page opens in a web browser.
 
@@ -98,9 +48,6 @@ To complete this step, please refer to the email confirming your demo access and
 
    If this is your first-time logging into MAS, you may be prompted to view a quick application tour (how-to tutorial). Please dismiss any such tours for the purposes of this demo.
 
-## Maximo Monitor and Manage
-
-Maximo Monitor and Maximo Manage are ideal starting points for many clients as they begin their journey toward a new digital operating model. Monitor provides near-real-time monitoring capabilities for all enterprise assets. It is targeted to operations, and with it, clients can visualize incoming asset sensor readings on a single dashboard. They can also easily see and respond to alerts. Monitor helps to introduce artificial intelligence (AI) into operations to help recognize anomalies and eliminate false-positive alerts. Clients can react to those alerts directly from the dashboard by issuing service requests, or further investigate an asset’s maintenance history in Manage. Maximo Monitor and Manage together reduce unplanned downtime and increase productivity. The sensor data that flows into Monitor is also the basis of analysis in the other Maximo products, Health and Predict.
 
 ### Step 2: Review High Severity Alerts (Anomalies) in Monitor
 

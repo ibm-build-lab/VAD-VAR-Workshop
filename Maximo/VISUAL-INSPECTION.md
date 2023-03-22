@@ -4,6 +4,8 @@ In this lab you will first see the connection between Maximo Monitor and MVI.
 
 Then you will create your own data set, label, and augment using an MVI instance.
 
+HEADS UP! L3 Quiz Content denoted with 🟢
+
 ## Part One: Maximo Monitor and Maximo Visual Inspection
 
 ### Step 1: Log in to Maximo Application Suite Navigator
