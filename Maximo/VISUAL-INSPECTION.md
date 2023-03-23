@@ -32,8 +32,6 @@ HEADS UP! L3 Quiz Content denoted with 🟢
 
 Assume that the analyst’s AI solution is set up so that cameras constantly monitor every tank in the facility. The feed from the cameras is analyzed every hour by Maximo Visual Inspection’s AI model and uploaded as IoT (Internet of Things) events. Maximo Monitor then maps and plots these details on a set of dashboards. Rules are also triggered to generate alerts on the dashboard. As a result, plant engineers and operational managers can view the condition of all tanks from a single screen and act on assets that need attention.
 
-- The key idea of leading by showing the completed solution first is to enable clients to envision a fully implemented MVI solution in their line of work right from the start of the demo process. This may also increase clarity on how an MVI computer vision model fits into the larger spectrum of EAM (Enterprise Asset Management) using the MAS suite of applications.
-- The Maximo Monitor application demo environment is pre-configured with inspection alerts from MVI sedimentation tanks. Instructions to perform application integration between MVI and Monitor are beyond the scope of this demo.
 
 **Actions:**
 
@@ -51,7 +49,7 @@ Assume that the analyst’s AI solution is set up so that cameras constantly mon
 
 **Sample Dialogue:** In the Monitor application, you can see a list of device types for this Water Resource Authority. Clicking on any device type can show further details about any active analysis or data inflow for the device type, as you will see in the next step.
 
-4. In the search area, type **“Sedimentation” (A)** to filter the displayed device type’s list and click on the filtered result **SedimentationTanks_LI (B)** to view the sedimentation tanks dashboard on the right.
+4. In the search area, type **“Sedimentation” (A)** to filter the displayed device type’s list and click on the filtered result **SedimentationTanks_LI (B)** to view the sedimentation tanks dashboard on the right. 🟢
 
 ![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.011.jpeg)
 
