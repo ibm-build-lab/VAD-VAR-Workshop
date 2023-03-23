@@ -288,11 +288,8 @@ The Reliability Engineer continues their investigation to determine which water 
 
 ### Step 8: Explore available actions
 
-Once the Reliability Engineer decides on what action to take, it can be immediately turned into action from the top of the page. They can create a service request, create a work order, recalculate a health score, or edit the source asset’s record.
+45. Once the Reliability Engineer decides on what action to take, it can be immediately turned into action from the top of the page. They can create a service request, create a work order, recalculate a health score, or edit the source asset’s record. We will NOT take any action in the shared environment. 
 
-45. To preserve this use case in the shared environment, DO NOT CLICK ANY OF THESE DROPDOWN OPTIONS.  Rather, it can instead be verbalized that there are available options to address this asset’s poor health.
-
-    <img width="1294" alt="45-mas" src="https://user-images.githubusercontent.com/40394344/226058324-4ccae9f3-cdac-4118-9b9c-d097a094201e.png">
 
 46. The Reliability Engineer can finally create and present a detailed report of their findings about current and predicted future state of PMPDEVICE005 (and similar pumps) to the Operations Manager.
 
