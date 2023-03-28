@@ -44,7 +44,7 @@ This creates the actual static pages of the site under the `/public` directory a
 npm run serve
 ```
 
-Using the supplied `server` command should start host the site locally at http://localhost:9000.
+Using the supplied `serve` command will start host the site locally at http://localhost:9000.
 
 ## How content is parsed
 
@@ -52,4 +52,4 @@ Content for the docs is stored as `.md` files in the `/content` directory. URLs 
 
 In order to extend functionality the files are parsed using MDX instead of Markdown. This allows for the inclusion of JSX elements/React components if wanted. Standard Markdown syntax is still applicable but any inclusion of HTML tags should instead be using JSX tags.
 
-Various plugins to extend functionality further are available via [remark](https://github.com/remarkjs/remark/blob/main/doc/plugins.md#list-of-plugins) and [rehype](https://github.com/rehypejs/rehype/blob/main/doc/plugins.md#list-of-plugins). Custom plugins can also be written through the use of the [unified] family of libraries as well.
+Various plugins to extend functionality further are available via [remark](https://github.com/remarkjs/remark/blob/main/doc/plugins.md#list-of-plugins) and [rehype](https://github.com/rehypejs/rehype/blob/main/doc/plugins.md#list-of-plugins). Custom plugins can also be written through the use of the [unified](https://unifiedjs.com/learn/) family of libraries as well.
