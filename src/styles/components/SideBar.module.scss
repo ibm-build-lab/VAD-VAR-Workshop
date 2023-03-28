@@ -1,4 +1,11 @@
 .sidebar {
-    border-right: 1px solid #c6c6c6;
-    // position: sticky;
+    @include theme($themes-g10);
+    border-right: 1px solid $cool-gray-20;;
+}
+
+
+@include apply-lesser-than('md') {
+    .sidebar {
+        display: none !important;
+***REMOVED***
 }

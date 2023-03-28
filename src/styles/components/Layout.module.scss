@@ -1,12 +1,20 @@
 .header {
+    @include theme($themes-g90);
     position: sticky;
     top: 0;
 }
 
-.main {
-
+.content {
+    padding: $spacing-07;
+    display: flex;
+    justify-content: space-between;
+    gap: $spacing-07;
+    margin-top: $header-height !important;
 }
 
-.content {
-    padding: 1rem;
+
+@include apply-lesser-than('md') {
+    .content {
+        margin-left: unset !important;
+***REMOVED***
 }

@@ -1,0 +1,28 @@
+@mixin apply-lesser-than($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: inspect(map-get($breakpoints, $breakpoint))) {
+      @content;
+***REMOVED***
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+  
+@mixin apply-greater-than($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: inspect(map-get($breakpoints, $breakpoint))) {
+      @content;
+***REMOVED***
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin headings {
+  h1, h2, h3,
+  h4, h5, h6 {
+    @content;
+  }
+}

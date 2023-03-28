@@ -1,27 +1,32 @@
 import React from 'react';
-import '../styles/global.scss';
-import { Header, HeaderName, HeaderContainer, Content } from '@carbon/react';
+import { Header, HeaderName, Content } from '@carbon/react';
 import * as styles from '../styles/components/Layout.module.scss';
 import SideBar from './SideBar';
+import { cleanPathString } from '../helpers/helpers';
 
-const Layout = (props: { children: React.ReactNode }) => {
-  const { children } = props;
+interface LayoutProps {
+  children: React.ReactNode;
+  location: {
+    pathname: string;
+  };
+}
+
+const Layout = (props: LayoutProps) => {
+  const {
+    children,
+    location: { pathname }
+  } = props;
 
   return (
     <>
-      <HeaderContainer
-        render={({ isSideNavEnabled, onClickSideNavExpand }) => (
-          <>
-            <Header aria-label='IBM Platform Name' className={styles.header}>
-              <HeaderName href='/' prefix='IBM'>
-                VAD VAR Misson
-              </HeaderName>
-              <SideBar></SideBar>
-            </Header>
-            <Content className='cds--col-lg-13 cds--offset-lg-3'>{children}</Content>
-          </>
-***REMOVED***}
-      />
+      <Header aria-label='IBM Platform Name' className={styles.header}>
+        <HeaderName href='/' prefix='IBM'>
+          VAD VAR Mission
+        </HeaderName>
+      </Header>
+
+      <SideBar currentPath={cleanPathString(pathname)} />
+      <Content className={styles.content}>{children}</Content>
     </>
   );
 };

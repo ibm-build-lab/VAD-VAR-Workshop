@@ -1,3 +1,5 @@
+# Next Steps
+
 This guide provided information to assist IBM and Business Partner sellers and technical sellers in installing and demonstrating IBM Sterling B2B Integrator. Links to specific B2Bi topics were provided throughout this demonstration guide.
 
 Finally, remember to complete the IBM Sterling Data Exchange Level 3 learning plan in either YourLearning (IBM employees) or learn.ibm.com (Business Partners).
