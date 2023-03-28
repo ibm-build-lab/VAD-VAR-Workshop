@@ -1,8 +1,10 @@
-import React from 'react';
-import { graphql } from 'gatsby';
 import * as styles from '../styles/pages/{mdx.fields__slug}.module.scss';
 import { MDXProvider } from '@mdx-js/react';
+import React from 'react';
 import TableOfContents from '../components/TableOfContents';
+import { graphql } from 'gatsby';
+import { SmartLink, TableWrapper } from '../components/replacements';
+import { Props } from '@mdx-js/react/lib';
 
 interface TOCItem {
   title: string;
@@ -16,31 +18,28 @@ interface ContentTemplateProps {
       tableOfContents: {
         items: TOCItem[];
   ***REMOVED***;
+      frontmatter: {
+        toc?: boolean;
+  ***REMOVED***;
 ***REMOVED***;
   };
   children: React.ReactNode;
 }
 
-const TableWrapper = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className={styles.tableWrapper}>
-      <table>{children}</table>
-    </div>
-  );
+const components: Props['components'] = {
+  table: TableWrapper,
+  a: SmartLink
 };
-
-const components = {
-  table: TableWrapper
-} as any;
 
 const ContentTemplate = (props: ContentTemplateProps) => {
   const {
     data: {
-      mdx: { tableOfContents }
+      mdx: { tableOfContents, frontmatter }
 ***REMOVED***,
     children
   } = props;
 
+  const { toc = true } = frontmatter;
   const { items: tocItems } = tableOfContents;
 
   return (
@@ -48,7 +47,7 @@ const ContentTemplate = (props: ContentTemplateProps) => {
       <article className={styles.article}>
         <MDXProvider components={components}>{children}</MDXProvider>
       </article>
-      <TableOfContents itemsList={tocItems} />
+      {(toc === null ? true : toc) && tocItems && <TableOfContents itemsList={tocItems} />}
     </>
   );
 };
@@ -57,6 +56,9 @@ export const pageQuery = graphql`
   query PostTemplate($id: String!) {
     mdx(id: { eq: $id }) {
       tableOfContents(maxDepth: 0)
+      frontmatter {
+        toc
+  ***REMOVED***
 ***REMOVED***
   }
 `;

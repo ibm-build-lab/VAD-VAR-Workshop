@@ -1,6 +1,7 @@
 import { createFilePath } from 'gatsby-source-filesystem';
+import { GatsbyNode } from 'gatsby';
 
-const onCreateNode = ({ node, getNode, actions }: any) => {
+const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === 'Mdx') {
     const relativeFilePath = createFilePath({

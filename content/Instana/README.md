@@ -1,3 +1,6 @@
+---
+title: Instana
+---
 # Instana Technical Sales Workshop
 
 This workshop covers Instana in breadth and depth, with content appropriate for both brand-new learners and experienced practitioners.

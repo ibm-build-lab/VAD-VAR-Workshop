@@ -1,3 +1,6 @@
+---
+title: Maximo
+---
 # Maximo Technical Sales Workshop
 
 This workshop covers Maximo in breadth and depth, with content appropriate for both brand-new learners and experienced practitioners.

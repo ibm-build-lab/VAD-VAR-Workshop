@@ -26,6 +26,18 @@ module.exports = {
   },
   rules: {
     'react/prop-types': 'off',
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    'no-underscore-dangle': 'off',
+    'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.tsx'] }],
+    'react/function-component-definition': ['warn', { namedComponents: 'arrow-function' }],
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple']
+  ***REMOVED***
+    ]
   }
 };

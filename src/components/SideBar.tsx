@@ -1,16 +1,19 @@
-import { SideNav, SideNavMenuItem, SideNavItems, SideNavMenu, SideNavDivider } from '@carbon/react';
-import React from 'react';
 import * as styles from '../styles/components/SideBar.module.scss';
-import { useStaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
+import React from 'react';
 import { cleanPathString } from '../helpers/helpers';
-
-interface SideBarProps {
-  currentPath: string;
-}
+import cx from 'classnames';
+import { useLocation } from '@reach/router';
+import { usePrefix } from '@carbon/react';
+import { SideNav, SideNavDivider, SideNavItems, SideNavLinkText, SideNavMenu } from '@carbon/react';
+import { graphql, useStaticQuery } from 'gatsby';
 
 interface MDXNode {
   fields: {
     slug: string;
+  };
+  frontmatter: {
+    title: string;
   };
   tableOfContents: {
     items: {
@@ -32,11 +35,20 @@ interface SlugItem {
   title: string;
 }
 
+interface SmartLinkProps {
+  href: string;
+  children: NonNullable<React.ReactNode>;
+  isActive?: boolean;
+  style?: object;
+}
+
 interface NavBarProps {
   navItems: MenuItem[];
   currentPath: string;
+  depth?: number;
 }
 
+// build site map tree
 const buildSiteMap = () => {
   const {
     allMdx: { nodes }
@@ -47,6 +59,9 @@ const buildSiteMap = () => {
           fields {
             slug
       ***REMOVED***
+          frontmatter {
+            title
+      ***REMOVED***
           tableOfContents(maxDepth: 1)
     ***REMOVED***
   ***REMOVED***
@@ -54,41 +69,64 @@ const buildSiteMap = () => {
   `);
 
   const slugList: SlugItem[] = (nodes as MDXNode[])
-    .map(({ fields, tableOfContents }) => ({
+    .map(({ fields, tableOfContents, frontmatter }) => ({
       slug: fields.slug,
-      title: tableOfContents.items[0].title
+      title:
+        frontmatter?.title || (tableOfContents?.items && tableOfContents?.items[0]?.title) || ''
 ***REMOVED***))
     .filter(({ slug }) => !!slug)
     .sort((a, b) => a.slug.localeCompare(b.slug));
 
   // recursive insert pass by reference
-  const insertNested = (array: MenuItem[], path: string[], curr: SlugItem) => {
-    let index = array.findIndex((item) => item.root === path[0]);
+  const insertNested = (array: MenuItem[], splitPath: string[], curr: SlugItem) => {
+    let index = array.findIndex((item) => item.root === splitPath[0]);
     if (index < 0) {
       // insert in-place
       array.splice(array.length, 0, {
         name: curr.title,
         slug: `/${curr.slug}`,
         children: [],
-        root: path[0]
+        root: splitPath[0]
   ***REMOVED***);
       index = array.length;
 ***REMOVED***
 
-    path.shift();
-    if (path.length > 0) insertNested(array[index].children, path, curr);
+    splitPath.shift();
+    if (splitPath.length > 0) insertNested(array[index].children, splitPath, curr);
   };
 
-  return slugList.reduce((acc, curr) => {
-    const { slug } = curr;
-    const splitSlug = slug.split('/').filter((s: string) => !!s);
-    insertNested(acc, splitSlug, curr);
-    return acc;
-  }, []) as MenuItem[];
+  return (
+    slugList.reduce((acc, curr) => {
+      const { slug } = curr;
+      const splitSlug = slug.split('/').filter((s: string) => !!s);
+      insertNested(acc, splitSlug, curr);
+      return acc;
+***REMOVED***, []) as MenuItem[]
+  ).sort((a, b) => a.children.length - b.children.length);
 };
 
+// custom link implementation to stop remounts
+const CustomSideNavItem = (props: SmartLinkProps) => {
+  const prefix = usePrefix();
+  const { href, children, isActive = false, style = {} } = props;
+
+  const linkClassName = cx(
+    `${prefix}--side-nav__link`,
+    isActive && `${prefix}--side-nav__link--current`
+  );
+
+  return (
+    <li className={`${prefix}--side-nav__menu-item`} style={style}>
+      <Link to={href} className={linkClassName}>
+        <SideNavLinkText>{children}</SideNavLinkText>
+      </Link>
+    </li>
+  );
+};
+
+// build side nav recursively
 const NavBar = (props: NavBarProps) => {
-  const { navItems, currentPath } = props;
+  const { navItems, currentPath, depth = 0 } = props;
 
   return (
     <>
@@ -97,24 +135,26 @@ const NavBar = (props: NavBarProps) => {
         const isActive = cleanPathString(slug) === currentPath;
         return children.length > 0 ? (
           <SideNavMenu key={index} title={name} defaultExpanded>
-            <SideNavMenuItem href={slug} isActive={isActive}>
+            <CustomSideNavItem href={slug} isActive={isActive}>
               {name}
-            </SideNavMenuItem>
-            <NavBar navItems={children} currentPath={currentPath} />
+            </CustomSideNavItem>
+            <NavBar navItems={children} currentPath={currentPath} depth={depth + 1} />
           </SideNavMenu>
 ***REMOVED*** : (
-          <SideNavMenuItem isActive={isActive} key={index} href={slug}>
+          <CustomSideNavItem key={index} href={slug} isActive={isActive}>
             {name || ''}
-          </SideNavMenuItem>
+          </CustomSideNavItem>
 ***REMOVED***;
   ***REMOVED***)}
     </>
   );
 };
 
-const SideBar = (props: SideBarProps) => {
-  const { currentPath } = props;
+const SideBar = () => {
   const siteMap = buildSiteMap();
+  const { pathname } = useLocation();
+  const cleanPathName = cleanPathString(pathname);
+
   return (
     <SideNav
       isFixedNav
@@ -123,9 +163,9 @@ const SideBar = (props: SideBarProps) => {
       className={styles.sidebar}
       isChildOfHeader={true}>
       <SideNavItems>
-        <SideNavMenuItem href='/'>Home</SideNavMenuItem>
+        <CustomSideNavItem href='/'>Home</CustomSideNavItem>
         <SideNavDivider />
-        <NavBar navItems={siteMap} currentPath={currentPath} />
+        <NavBar navItems={siteMap} currentPath={cleanPathName} />
       </SideNavItems>
     </SideNav>
   );

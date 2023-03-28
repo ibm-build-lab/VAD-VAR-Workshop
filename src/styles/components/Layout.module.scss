@@ -1,15 +1,14 @@
 .header {
-    @include theme($themes-g90);
+    @include theme($themes-g100);
     position: sticky;
     top: 0;
 }
 
 .content {
-    padding: $spacing-07;
+    padding: $spacing-06;
     display: flex;
-    justify-content: space-between;
     gap: $spacing-07;
-    margin-top: $header-height !important;
+    margin-top: 0 !important;
 }
 
 

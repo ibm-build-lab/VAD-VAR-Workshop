@@ -1,5 +1,5 @@
-import React from 'react';
 import * as styles from '../styles/components/TableOfContents.module.scss';
+import React from 'react';
 
 interface TOCItem {
   title: string;

@@ -1,5 +1,6 @@
 ---
-title: Watson Assistant Technical Sales Workshop
+title: Watson Assistant
+toc: false
 ---
 
 # Watson Assistant Technical Sales Workshop

@@ -1,8 +1,9 @@
 .article {
-    max-width: 850px;
+    max-width: 875px;
     line-height: 1.5;
 
     @include headings {
+        margin-bottom: $spacing-02;
         scroll-margin-top: calc($header-height + $spacing-04);
         & > a {
             text-decoration: none;
@@ -15,18 +16,23 @@
 ***REMOVED***
 
     h1 {
-        // @include type-style('productive-heading-03');
+        @include type-style('productive-heading-06');
         margin-bottom: $spacing-05;
 ***REMOVED***
 
     h2 {
-        margin-top: $spacing-06;
-        margin-bottom: $spacing-04;
+        @include type-style('productive-heading-05');
+        margin-top: $spacing-07;
 ***REMOVED***
 
     h3 {
-        margin-top: $spacing-04;
-        margin-bottom: $spacing-03;
+        @include type-style('productive-heading-04');
+        margin-top: $spacing-06;
+***REMOVED***
+
+    h4 {
+        @include type-style('productive-heading-03');
+        margin-top: $spacing-05;
 ***REMOVED***
 
     p {
@@ -44,28 +50,5 @@
 
     ol {
         list-style-type: number;
-***REMOVED***
-}
-
-.tableWrapper {
-    display: block;
-    max-width: 100%;
-    margin: $spacing-07 0;
-
-    & > table {
-        table-layout: fixed;
-        width: 100%;
-***REMOVED***
-
-    & > th, td {
-        padding: $spacing-05;
-***REMOVED***
-
-    & > table, th, td {
-        border: 1px solid;
-***REMOVED***
-
-    & > table {
-        width: 100%;
 ***REMOVED***
 }

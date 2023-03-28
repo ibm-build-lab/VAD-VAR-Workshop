@@ -1,4 +1,4 @@
-import { visit, CONTINUE } from 'unist-util-visit';
+import { CONTINUE, visit } from 'unist-util-visit';
 
 export default function remarkRelativeReplace() {
   return (tree) => {

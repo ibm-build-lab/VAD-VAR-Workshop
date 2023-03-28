@@ -1,31 +1,22 @@
-import React from 'react';
-import { Header, HeaderName, Content } from '@carbon/react';
+import '../styles/globals.scss';
 import * as styles from '../styles/components/Layout.module.scss';
+import React from 'react';
 import SideBar from './SideBar';
-import { cleanPathString } from '../helpers/helpers';
+import { Content, Header, HeaderName } from '@carbon/react';
 
 interface LayoutProps {
   children: React.ReactNode;
-  location: {
-    pathname: string;
-  };
 }
 
 const Layout = (props: LayoutProps) => {
-  const {
-    children,
-    location: { pathname }
-  } = props;
+  const { children } = props;
 
   return (
     <>
       <Header aria-label='IBM Platform Name' className={styles.header}>
-        <HeaderName href='/' prefix='IBM'>
-          VAD VAR Mission
-        </HeaderName>
+        <HeaderName prefix='IBM'>VAD VAR Mission</HeaderName>
       </Header>
-
-      <SideBar currentPath={cleanPathString(pathname)} />
+      <SideBar />
       <Content className={styles.content}>{children}</Content>
     </>
   );

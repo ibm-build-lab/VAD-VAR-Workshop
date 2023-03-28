@@ -41,7 +41,7 @@ const config = {
               maxWidth: 590,
               withWebp: false,
               showCaptions: false,
-              quality: 100
+              quality: 50
         ***REMOVED***
       ***REMOVED***
         ],
