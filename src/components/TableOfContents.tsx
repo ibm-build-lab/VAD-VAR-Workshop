@@ -29,8 +29,10 @@ const TableOfContentsItems = (props: TableOfContentsProps) => {
           React.Fragment,
           { key: index },
           <>
-            <ProgressStep onClick={() => onClickItem(url)} label={title}></ProgressStep>
-            {items && <TableOfContentsItems itemsList={items} depth={depth + 1} />}
+            <ProgressStep onClick={() => onClickItem(url)} label={title} />
+            {items && items.length > 0 && (
+              <TableOfContentsItems itemsList={items} depth={depth + 1} />
+    ***REMOVED***}
           </>
 ***REMOVED***;
   ***REMOVED***)}
@@ -43,6 +45,9 @@ const TableOfContents = (props: TableOfContentsProps) => {
 
   return (
     <nav className={styles.toc}>
+      <h6 className={styles.tocHeader}>
+        <a href='#'>On this page</a>
+      </h6>
       <ProgressIndicator vertical>
         <TableOfContentsItems itemsList={itemsList[0].items || []} />
       </ProgressIndicator>

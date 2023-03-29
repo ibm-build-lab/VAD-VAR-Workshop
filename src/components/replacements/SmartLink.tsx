@@ -1,5 +1,7 @@
-import { Link } from 'gatsby';
+import { Link as GatsbyLink } from 'gatsby';
 import React from 'react';
+import { Launch } from '@carbon/react/icons';
+import { Link as CarbonLink } from '@carbon/react';
 
 interface SmartLinkProps {
   children?: React.ReactNode;
@@ -8,13 +10,16 @@ interface SmartLinkProps {
 
 const SmartLink: React.FC<SmartLinkProps> = (props) => {
   const { children, href = '' } = props;
-  const isInteral = !href.startsWith('//') && !href.startsWith('https');
+  const isInternal = !href.startsWith('//') && !href.startsWith('http');
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const linkProps: any = isInteral
-    ? { to: href }
-    : { href: href, target: '_blank', rel: 'noreferrer' };
-  return React.createElement(isInteral ? Link : 'a', linkProps, children);
+  if (isInternal) return <GatsbyLink to={href}>{children}</GatsbyLink>;
+
+  return (
+    <CarbonLink href={href} target='_blank' rel='noreferrer'>
+      {children}
+      {<Launch />}
+    </CarbonLink>
+  );
 };
 
 export default SmartLink;

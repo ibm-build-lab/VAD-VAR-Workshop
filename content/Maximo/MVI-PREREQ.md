@@ -29,7 +29,7 @@ Completing this lab requires access to the latest version of the worldwide Maxim
 
 ![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.015.png)
 
-### Step 2: Download the Training and Validation Tank Images for the AI Model**
+### Step 2: Download the Training and Validation Tank Images for the AI Model\*\*
 
 1. **Download** the images folder from[ Seismic ](https://ibm.seismic.com/Link/Content/DCpWQCmg4Wbg889TgW8X383JR7XB)to your local machine. These images of Sedimentation tanks will be used to train the computer vision model in the later steps.
 

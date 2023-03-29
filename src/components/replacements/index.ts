@@ -1,4 +1,5 @@
 import SmartLink from './SmartLink';
 import TableWrapper from './TableWrapper';
+import BlockQuote from './BlockQuote';
 
-export { SmartLink, TableWrapper };
+export { SmartLink, BlockQuote, TableWrapper };

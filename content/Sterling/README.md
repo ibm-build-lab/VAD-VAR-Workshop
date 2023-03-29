@@ -4,7 +4,7 @@ title: Sterling Data Exchange
 
 # Sterling Data Exchange Technical Sales Workshop
 
-This workshop covers Sterling Data Exchange in breadth and depth, with content appropriate for both brand-new learners and experienced practitioners.
+This workshop covers Sterling Data Exchange in breadth and depth, with content appropriate for both brand-new learners and experienced practitioners.
 
 After completing these labs in a workshop session, you'll be able to earn the [IBM Sterling Data Exchange Technical Sales Intermediate badge](https://www.credly.com/org/ibm/badge/ibm-sterling-data-exchange-technical-sales-intermediate) based on a quiz about this workshop.
 

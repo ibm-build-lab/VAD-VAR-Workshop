@@ -2,6 +2,7 @@
   max-width: 975px;
   line-height: 1.5;
   padding: $spacing-07;
+  box-sizing: content-box;
 
   @include headings {
     margin-bottom: $spacing-02;
@@ -17,26 +18,28 @@
   }
 
   h1 {
-    @include type-style('productive-heading-06');
+    @include type-style('heading-05');
     margin-bottom: $spacing-05;
   }
 
   h2 {
-    @include type-style('productive-heading-05');
+    @include type-style('heading-04');
     margin-top: $spacing-07;
   }
 
   h3 {
-    @include type-style('productive-heading-04');
+    @include type-style('heading-03');
+    font-weight: bold;
     margin-top: $spacing-06;
   }
 
   h4 {
-    @include type-style('productive-heading-03');
+    @include type-style('heading-02');
     margin-top: $spacing-05;
   }
 
   p {
+    @include type-style('body-01');
     margin-bottom: $spacing-03;
   }
 
@@ -44,6 +47,7 @@
   ol {
     margin-left: $spacing-08;
     margin-bottom: $spacing-08;
+    @include type-style('body-01');
   }
 
   ul {

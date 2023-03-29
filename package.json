@@ -14,7 +14,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint . --ext js,md,mdx,ts,tsx,mjs"
+    "lint": "eslint . --ext js,md,mdx,ts,tsx,mjs",
+    "lint:fix": "eslint . --ext js,md,mdx,ts,tsx,mjs --fix"
   },
   "dependencies": {
     "@carbon/react": "^1.25.0",

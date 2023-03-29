@@ -4,7 +4,6 @@ In this lab you will get a tour of how 4 key applications within Maximo Applicat
 
 HEADS UP! L3 Quiz Content denoted with 🟢
 
-
 ## Lab Story Line
 
 A Water Resource Authority (WRA) needs to manage water and wastewater treatment assets across multiple cities and regions to maintain water quality standards.
@@ -48,7 +47,6 @@ To complete this step, please refer to the email confirming your demo access and
 
    If this is your first-time logging into MAS, you may be prompted to view a quick application tour (how-to tutorial). Please dismiss any such tours for the purposes of this demo.
 
-
 ### Step 2: Review High Severity Alerts (Anomalies) in Monitor
 
 An Operations Manager for this Water Resource Authority (WRA) needs to view the status of pump assets spread across multiple cities worldwide. This person will need to navigate to Maximo Monitor, as it provides a single place to monitor all enterprise mission-critical global assets from a single dashboard.
@@ -91,19 +89,19 @@ An Operations Manager for this Water Resource Authority (WRA) needs to view the 
 
     <img width="1192" alt="15-mas" src="https://user-images.githubusercontent.com/40394344/226046435-747c7fd3-15ec-4dda-ba6a-a48fef4d7f50.png"/>
 
-12. On the **Pump Alerts** tab, notice that there is an alert named **VELOCITYX_Alert_KMeans_Anomaly** for **PMPDEVICE005**. 
-**NOTE**: New alerts are generated frequently. You may need to filter on you may need to filter by "005" int he Search textbox to find it.  But we will be working with PMPDEVICE005.
+12. On the **Pump Alerts** tab, notice that there is an alert named **VELOCITYX_Alert_KMeans_Anomaly** for **PMPDEVICE005**.
+    **NOTE**: New alerts are generated frequently. You may need to filter on you may need to filter by "005" int he Search textbox to find it. But we will be working with PMPDEVICE005.
 
 <img width="1357" alt="16-mas" src="https://user-images.githubusercontent.com/40394344/226047407-3464b32a-bb87-4484-93e6-ab0a10a940d8.png"/>
 
-    Traditional threshold-based alerts can be overwhelming; Maximo Monitor uses Artificial Intelligence (AI) powered anomaly alerts to remove the false positives. The Operations Manager decided to investigate the PMPDEVICE005 pump further. 
+    Traditional threshold-based alerts can be overwhelming; Maximo Monitor uses Artificial Intelligence (AI) powered anomaly alerts to remove the false positives. The Operations Manager decided to investigate the PMPDEVICE005 pump further.
 
 13. Click on the **Show sidebar** icon to expand it **(A)**.
 14. Expand the **Pump** category by clicking on the **dropdown arrow** to see the full list of pumps in this category **(B)**.
 
     <img width="1181" alt="17-mas" src="https://user-images.githubusercontent.com/40394344/226047799-46960d66-86a6-40c8-bdcc-86e38a87351d.png"/>
 
-15. Click on the **PMPDEVICE005** from the expanded list to bring up its dashboard on the right side of the page (If you don't see PMPDEVICE005 listed, scroll down the pump list until you find it). Collapse the left sidebar to view the dashboard in the full view mode.  🟢
+15. Click on the **PMPDEVICE005** from the expanded list to bring up its dashboard on the right side of the page (If you don't see PMPDEVICE005 listed, scroll down the pump list until you find it). Collapse the left sidebar to view the dashboard in the full view mode. 🟢
 
     <img width="1139" alt="18-mas" src="https://user-images.githubusercontent.com/40394344/226048644-9b1e076b-9e18-4834-a91e-807ce70cc234.png"/>
 
@@ -123,7 +121,7 @@ An Operations Manager for this Water Resource Authority (WRA) needs to view the 
 
 Next, the Operations Manager wants to look at this pump's maintenance history to see if there were any recent services done on it that could be the cause of the current problem.
 
-18. On the **Asset Information** card on this dashboard (bottom right), click on the **PMPDEVICE005** hyperlink under the **Asset_ID** column to open Maximo Manage.  🟢
+18. On the **Asset Information** card on this dashboard (bottom right), click on the **PMPDEVICE005** hyperlink under the **Asset_ID** column to open Maximo Manage. 🟢
 
     <img width="1178" alt="21-mas" src="https://user-images.githubusercontent.com/40394344/226050420-c618307b-d38d-4883-a077-286a3f57a6a7.png"/>
 
@@ -146,7 +144,7 @@ Next, the Operations Manager wants to look at this pump's maintenance history to
 
 In a real-world scenario, the Operations Manager would return to the VELOCITYX alert on PMPDEVICE005 and assign a Maintenance Supervisor as an owner of this alert. However, to preserve this use case in the shared environment will not assign this alert, but will investigate further in Step 5 below.
 
-25. This is a placeholder step to mention that an Operations Manager could easily assign a service owner from the device dashboard. 
+25. This is a placeholder step to mention that an Operations Manager could easily assign a service owner from the device dashboard.
 
 ### Step 5: View near-real-time Metric data from IoT sensors
 
@@ -288,8 +286,7 @@ The Reliability Engineer continues their investigation to determine which water 
 
 ### Step 8: Explore available actions
 
-45. Once the Reliability Engineer decides on what action to take, it can be immediately turned into action from the top of the page. They can create a service request, create a work order, recalculate a health score, or edit the source asset’s record. We will NOT take any action in the shared environment. 
-
+45. Once the Reliability Engineer decides on what action to take, it can be immediately turned into action from the top of the page. They can create a service request, create a work order, recalculate a health score, or edit the source asset’s record. We will NOT take any action in the shared environment.
 
 46. The Reliability Engineer can finally create and present a detailed report of their findings about current and predicted future state of PMPDEVICE005 (and similar pumps) to the Operations Manager.
 
@@ -323,7 +320,7 @@ The AI model predicts that this pump will fail within a certain number of days, 
 
     <img width="1259" alt="49-mas" src="https://user-images.githubusercontent.com/40394344/226058551-bc078c96-e67d-4254-9016-c9b8c664d575.png"/>
 
-51. On the **Failure probability** tile, notice the probability of the selected failure mode occurring in the selected prediction **Time window** (currently pre-selected to 2 days as shown at the bottom left of this tile). You can see that this pump has a 0% chance of failing in the next two days (based on the screenshot below).  🟢
+51. On the **Failure probability** tile, notice the probability of the selected failure mode occurring in the selected prediction **Time window** (currently pre-selected to 2 days as shown at the bottom left of this tile). You can see that this pump has a 0% chance of failing in the next two days (based on the screenshot below). 🟢
 
     <img width="1306" alt="50-mas" src="https://user-images.githubusercontent.com/40394344/226058587-0666eed1-d612-45cf-9869-2730fd18ec31.png"/>
 
@@ -345,7 +342,7 @@ The AI model predicts that this pump will fail within a certain number of days, 
 
     <img width="1349" alt="54-mas" src="https://user-images.githubusercontent.com/40394344/226058750-38c4dd11-d472-4ba8-9d3b-ab39f205b6ed.png"/>
 
-56. The **Asset timeline** tab provides several pieces of key information about this asset within a single graph.  🟢
+56. The **Asset timeline** tab provides several pieces of key information about this asset within a single graph. 🟢
 
     Looking at this timeline, the selected pump has a predicted failure (PF) date that will occur before its next planned preventative maintenance (PM) scheduled date! other information from the chart, like past work order and inspection dates, provides valuable insight into the asset's history and may support what kind of action needs to be taken.
 

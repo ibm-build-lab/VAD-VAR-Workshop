@@ -1,9 +1,10 @@
 ---
 title: Instana
 ---
+
 # Instana Technical Sales Workshop
 
-This workshop covers Instana in breadth and depth, with content appropriate for both brand-new learners and experienced practitioners.
+This workshop covers Instana in breadth and depth, with content appropriate for both brand-new learners and experienced practitioners.
 
 After completing these labs in a workshop session, you'll be able to earn the [Instana by IBM Technical Sales Intermediate badge](https://www.credly.com/org/ibm/badge/instana-by-ibm-technical-sales-intermediate) based on a quiz about this workshop.
 

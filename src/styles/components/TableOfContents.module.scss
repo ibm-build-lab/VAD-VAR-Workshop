@@ -10,6 +10,18 @@
   overflow-y: auto;
   padding: $spacing-07;
   flex-grow: 1;
+
+  & .tocHeader {
+    & > a {
+      color: unset;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+  ***REMOVED***
+***REMOVED***
+    margin-bottom: $spacing-04;
+  }
 }
 
 @include apply-lesser-than('lg') {

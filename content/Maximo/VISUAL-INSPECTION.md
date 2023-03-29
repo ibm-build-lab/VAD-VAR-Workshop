@@ -28,13 +28,11 @@ HEADS UP! L3 Quiz Content denoted with 🟢
 
 ![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.004.jpeg)
 
-
 ### Step 2: Viewing MVI AI Model Inspection Results in Monitor Dashboard
 
 Assume that the analyst’s AI solution is set up so that cameras constantly monitor every tank in the facility. The feed from the cameras is analyzed every hour by Maximo Visual Inspection’s AI model and uploaded as IoT (Internet of Things) events. Maximo Monitor then maps and plots these details on a set of dashboards. Rules are also triggered to generate alerts on the dashboard. As a result, plant engineers and operational managers can view the condition of all tanks from a single screen and act on assets that need attention.
 
 **Spanish Helper** Suponga que la solución de IA del analista está configurada para que las cámaras monitoreen constantemente cada tanque en la instalación. El modelo de IA de Maximo Visual Inspection analiza la transmisión de las cámaras cada hora y la carga como eventos de IoT (Internet de las cosas). Luego, Maximo Monitor mapea y traza estos detalles en un conjunto de tableros. Las reglas también se activan para generar alertas en el tablero. Como resultado, los ingenieros de planta y los gerentes operativos pueden ver la condición de todos los tanques desde una sola pantalla y actuar sobre los activos que necesitan atención.
-
 
 **Actions:**
 
@@ -68,16 +66,13 @@ Assume that the analyst’s AI solution is set up so that cameras constantly mon
 
 **Spanish Helper:** Un desafío común con las inspecciones manuales realizadas por varios inspectores en varios equipos en este escenario es obtener un estado agregado de alto nivel de todos los tanques. Aún más difícil es obtener esta información de manera oportuna. Con Maximo Application Suite, este desafío se vuelve casi trivial de resolver.
 
-The **Tank Alerts** card (top right) shows the alert history for the Sedimentation Tanks is this group. The Plant Manager see’s there is an alert for **Tank2**  🟢
+The **Tank Alerts** card (top right) shows the alert history for the Sedimentation Tanks is this group. The Plant Manager see’s there is an alert for **Tank2** 🟢
 
 The **Inspection Results** table card (bottom right) is currently empty, but this is where the Plant Manager can view the company’s automated MVI inspection results.
 
-
 <br />
 
-
 ## Part Two: Creating, labeling and augmenting a data set
-
 
 ### Step 1: Launch Maximo Visual Inspection
 
@@ -294,4 +289,3 @@ In this window;
 Congratulations, you have created a new augmented dataset from the original that is ready to be trained. Now it’s time to create the object detection model using this augmented dataset.
 
 Part 2 of the MVI lab is available [here](VISUAL-INSPECTION2.md).
-

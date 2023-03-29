@@ -10,55 +10,55 @@ Sterling B2B Integrator includes a number of pre-installed adapters that can be 
 
 1. Return to the OpenShift **Routes** list and open the **sterling-fg-b2bi-asi-internal-route-dashboard** route. When prompted, log in using the **admin** user. Then expand **Deployment** -> **Services** and click on **Configuration**.
 
-    ![image](_attachments/HSA_ServiceConfigMenu.png)
+   ![image](_attachments/HSA_ServiceConfigMenu.png)
 
 1. Type **HTTP Server Adapter** for the Service Name in the Search panel and click on **Go!**.
 
-    ![image](_attachments/HSA_ServiceSearch.png)
+   ![image](_attachments/HSA_ServiceSearch.png)
 
 1. Find the row with **Http Server Adapter** in the name column and click on the **copy** text/icon.
 
-    ![image](_attachments/HSA_ServiceCopy.png)
+   ![image](_attachments/HSA_ServiceCopy.png)
 
 1. Change the name to **AC Hosted Authenticating Http Server Adapter**, scroll in the **Environment** panel to select the **node 1 Adapter Container1** resource. Then, click on **Next**.
 
-    ![image](_attachments/HSA_ServiceConfigName.png)
+   ![image](_attachments/HSA_ServiceConfigName.png)
 
 1. To find a port to use for the Http Server Adapter instance, go back to the OpenShift console and the **Services** list. This time, select the **sterling-fg-b2bi-ac-backend-svc** service and note the port used for the `adapters-2` Service port.
 
-    ![image](_attachments/HSA_OCPACBackendSvcPort.png)
+   ![image](_attachments/HSA_OCPACBackendSvcPort.png)
 
-    Notice that the Kubernetes service and the node port are identical. Techincally, they do not need to match. The important part to note is the port number associated with the service, or the pod port if given. Since the pod port name matches the service port mapping name, the correct port to choose is `30352`.
+   Notice that the Kubernetes service and the node port are identical. Techincally, they do not need to match. The important part to note is the port number associated with the service, or the pod port if given. Since the pod port name matches the service port mapping name, the correct port to choose is `30352`.
 
 1. Enter the port from the service in for the **HTTP Listen Port**, change **User Authentication Required** to **Yes**. Then, click on **Next**.
 
-    ![image](_attachments/HSA_ServiceConfigPort.png)
+   ![image](_attachments/HSA_ServiceConfigPort.png)
 
-    > There is a warning on this page that not enabling SSL would result in a weak security configuration. This is generally true, but we will mitigate the security exposure of credentials going over the Internet in cleartext when we create the **Route** to expose the service using OpenShift.
+   > There is a warning on this page that not enabling SSL would result in a weak security configuration. This is generally true, but we will mitigate the security exposure of credentials going over the Internet in cleartext when we create the **Route** to expose the service using OpenShift.
 
 1. Review the option to specify a particular group for access to the service, but do not make changes. Click on **Save**.
 
-    ![image](_attachments/HSA_ServiceConfigGroup.png)
+   ![image](_attachments/HSA_ServiceConfigGroup.png)
 
 1. In the confirmation page, scroll down to find the **URI: /hello** entry. Notice that the Business Process to run is called **Hello World**
 
-    ![image](_attachments/HSA_ServiceCheckBP.png)
+   ![image](_attachments/HSA_ServiceCheckBP.png)
 
 1. Continue scrolling to the bottom of the confirmation page and click on **Finish**.
 
-    ![image](_attachments/HSA_ServiceCheckFinish.png)
+   ![image](_attachments/HSA_ServiceCheckFinish.png)
 
 1. Click on **Return** to go back to the Services Configuration panel.
 
-    ![image](_attachments/HSA_ServiceConfigReturn.png)
+   ![image](_attachments/HSA_ServiceConfigReturn.png)
 
 1. Check the status of the new adapter. Using **Select Node**, change to **node1AC1**.
 
-    ![image](_attachments/HSA_ServiceListAC1.png)
+   ![image](_attachments/HSA_ServiceListAC1.png)
 
 1. Click on the exclamation mark for the service adapter to check the running status (it will be automatically enabled since it was copied from an enabled service adapter).
 
-    ![image](_attachments/HSA_ServiceCheckAC1.png)
+   ![image](_attachments/HSA_ServiceCheckAC1.png)
 
 1. Note the progression in timestamps ending with **REGISTER_JNDI**, this shows the service adapter is operating. Click on **CLOSE** in the upper right to dismiss the panel.
 
@@ -68,23 +68,25 @@ Before configuring an OpenShift Route to access the service, spend a moment revi
 
 1. On the main B2Bi left navigation, expand **Business Process** -> **Manager**. Then, type **Hello World** as the Process Name in the Search panel. Finally, click on **Go!**.
 
-    ![image](_attachments/HSA_BPSearch.png)
+   ![image](_attachments/HSA_BPSearch.png)
 
 1. Click on the Process Name to open a view of the process.
 
-    ![image](_attachments/HSA_BPOpen.png)
+   ![image](_attachments/HSA_BPOpen.png)
 
 1. Expand the window so that the full business process is shown.
 
-    ![image](_attachments/HSA_BPHelloWorld.png)
+   ![image](_attachments/HSA_BPHelloWorld.png)
 
-    Without getting too technical, it is clear to see that the sequence of this business process has three operations. The first operation generates a xml document with a data element containing `Hello World!`. The second operation invokes an XSL Transformation using a stylesheet called "HelloWorld". If you were to look up this XSL stylesheet in the B2Bi dashboard you would see that it takes the data from the xml document and wraps it with some basic html tags. The last operation creates a http response sending the data from the XSL Transformation. In effect, when this business process is invoked it will generate a response like this to the caller:
+   Without getting too technical, it is clear to see that the sequence of this business process has three operations. The first operation generates a xml document with a data element containing `Hello World!`. The second operation invokes an XSL Transformation using a stylesheet called "HelloWorld". If you were to look up this XSL stylesheet in the B2Bi dashboard you would see that it takes the data from the xml document and wraps it with some basic html tags. The last operation creates a http response sending the data from the XSL Transformation. In effect, when this business process is invoked it will generate a response like this to the caller:
 
-    ```html
-    <HTML><BODY>
-    Hello World!
-    </BODY></HTML>
-    ```
+   ```html
+   <html>
+     <body>
+       Hello World!
+     </body>
+   </html>
+   ```
 
 1. Close the view of the business process by clicking on **CLOSE** in either the upper right or lower right corner.
 

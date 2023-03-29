@@ -1,0 +1,16 @@
+.blockQuote {
+  display: flex;
+  padding: $spacing-04;
+  background-color: $blue-10;
+  gap: $spacing-04;
+  margin: $spacing-05 0;
+
+  & p {
+    margin-bottom: 0;
+  }
+
+  & svg {
+    height: fit-content;
+    flex-shrink: 0;
+  }
+}
