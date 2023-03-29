@@ -1,11 +1,10 @@
 .sidebar {
-    @include theme($themes-g10);
-    border-right: 1px solid $cool-gray-20;;
+  @include theme($themes-g10);
+  border-right: 1px solid $cool-gray-20;
 }
 
-
 @include apply-lesser-than('md') {
-    .sidebar {
-        display: none !important;
-***REMOVED***
+  .sidebar {
+    display: none !important;
+  }
 }

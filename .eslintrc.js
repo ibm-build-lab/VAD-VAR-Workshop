@@ -39,5 +39,11 @@ module.exports = {
         memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple']
   ***REMOVED***
     ]
-  }
+  },
+  overrides: [
+    {
+      files: ['*.md'],
+      extends: 'plugin:mdx/recommended'
+***REMOVED***
+  ]
 };

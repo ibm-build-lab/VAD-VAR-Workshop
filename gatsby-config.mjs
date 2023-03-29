@@ -11,6 +11,8 @@ const __dirname = path.dirname(__filename);
 const config = {
   siteMetadata: {
     title: `VAD-VAR`,
+    description: 'Experiential Selling Workshops for IBM Ecosystem Partners',
+    image: '',
     siteUrl: `https://www.yourdomain.tld`
   },
   graphqlTypegen: true,

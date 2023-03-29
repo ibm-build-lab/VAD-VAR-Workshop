@@ -1,25 +1,19 @@
 .toc {
-    position: sticky;
-    left: 0;
-    top: calc($header-height + $spacing-07);
-    border: 1px solid $gray-30;
-    height: fit-content;
-    width: fit-content;
-    padding: $spacing-05;
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-03;
+  @include theme($themes-g10);
+  border-left: 1px solid $cool-gray-20;
+  background-color: $gray-10;
 
-    & a {
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-    ***REMOVED***
-***REMOVED***
+  position: sticky;
+  top: $header-height;
+  height: calc(100vh - $header-height);
+  min-width: 300px;
+  overflow-y: auto;
+  padding: $spacing-07;
+  flex-grow: 1;
 }
 
 @include apply-lesser-than('lg') {
-    .toc {
-        display: none;
-***REMOVED***
+  .toc {
+    display: none;
+  }
 }

@@ -1,54 +1,56 @@
 .article {
-    max-width: 875px;
-    line-height: 1.5;
+  max-width: 975px;
+  line-height: 1.5;
+  padding: $spacing-07;
 
-    @include headings {
-        margin-bottom: $spacing-02;
-        scroll-margin-top: calc($header-height + $spacing-04);
-        & > a {
-            text-decoration: none;
-            color: unset;
+  @include headings {
+    margin-bottom: $spacing-02;
+    scroll-margin-top: calc($header-height + $spacing-04);
+    & > a {
+      text-decoration: none;
+      color: unset;
 
-            &:hover {
-                text-decoration: underline;
-        ***REMOVED***
-    ***REMOVED***
+      &:hover {
+        text-decoration: underline;
+  ***REMOVED***
 ***REMOVED***
+  }
 
-    h1 {
-        @include type-style('productive-heading-06');
-        margin-bottom: $spacing-05;
-***REMOVED***
+  h1 {
+    @include type-style('productive-heading-06');
+    margin-bottom: $spacing-05;
+  }
 
-    h2 {
-        @include type-style('productive-heading-05');
-        margin-top: $spacing-07;
-***REMOVED***
+  h2 {
+    @include type-style('productive-heading-05');
+    margin-top: $spacing-07;
+  }
 
-    h3 {
-        @include type-style('productive-heading-04');
-        margin-top: $spacing-06;
-***REMOVED***
+  h3 {
+    @include type-style('productive-heading-04');
+    margin-top: $spacing-06;
+  }
 
-    h4 {
-        @include type-style('productive-heading-03');
-        margin-top: $spacing-05;
-***REMOVED***
+  h4 {
+    @include type-style('productive-heading-03');
+    margin-top: $spacing-05;
+  }
 
-    p {
-        margin-bottom: $spacing-03;
-***REMOVED***
+  p {
+    margin-bottom: $spacing-03;
+  }
 
-    ul, ol {
-        margin-left: $spacing-08;
-        margin-bottom: $spacing-08;
-***REMOVED***
+  ul,
+  ol {
+    margin-left: $spacing-08;
+    margin-bottom: $spacing-08;
+  }
 
-    ul {
-        list-style-type: circle;
-***REMOVED***
+  ul {
+    list-style-type: circle;
+  }
 
-    ol {
-        list-style-type: number;
-***REMOVED***
+  ol {
+    list-style-type: number;
+  }
 }

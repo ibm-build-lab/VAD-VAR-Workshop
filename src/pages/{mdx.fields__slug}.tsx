@@ -5,6 +5,8 @@ import TableOfContents from '../components/TableOfContents';
 import { graphql } from 'gatsby';
 import { SmartLink, TableWrapper } from '../components/replacements';
 import { Props } from '@mdx-js/react/lib';
+import type { HeadProps } from 'gatsby';
+import SEO from '../components/SEO';
 
 interface TOCItem {
   title: string;
@@ -20,6 +22,7 @@ interface ContentTemplateProps {
   ***REMOVED***;
       frontmatter: {
         toc?: boolean;
+        title?: string;
   ***REMOVED***;
 ***REMOVED***;
   };
@@ -57,10 +60,26 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       tableOfContents(maxDepth: 0)
       frontmatter {
+        title
         toc
   ***REMOVED***
 ***REMOVED***
   }
 `;
+
+// SEO
+export const Head = (props: HeadProps<ContentTemplateProps['data']>) => {
+  const {
+    location: { pathname },
+    data: {
+      mdx: {
+        frontmatter: { title },
+        tableOfContents: { items }
+  ***REMOVED***
+***REMOVED***
+  } = props;
+
+  return <SEO {...{ pathname, title: title || items[0].title || undefined }}></SEO>;
+};
 
 export default ContentTemplate;

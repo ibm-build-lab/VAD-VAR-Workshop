@@ -1,5 +1,7 @@
 import * as styles from '../styles/components/TableOfContents.module.scss';
 import React from 'react';
+import { ProgressIndicator, ProgressStep } from '@carbon/react';
+import { navigate } from 'gatsby';
 
 interface TOCItem {
   title: string;
@@ -12,6 +14,10 @@ interface TableOfContentsProps {
   depth?: number;
 }
 
+const onClickItem = (hashUrl: string) => {
+  navigate(hashUrl);
+};
+
 const TableOfContentsItems = (props: TableOfContentsProps) => {
   const { itemsList, depth = 0 } = props;
 
@@ -23,7 +29,7 @@ const TableOfContentsItems = (props: TableOfContentsProps) => {
           React.Fragment,
           { key: index },
           <>
-            <a href={url}>{title}</a>
+            <ProgressStep onClick={() => onClickItem(url)} label={title}></ProgressStep>
             {items && <TableOfContentsItems itemsList={items} depth={depth + 1} />}
           </>
 ***REMOVED***;
@@ -37,8 +43,9 @@ const TableOfContents = (props: TableOfContentsProps) => {
 
   return (
     <nav className={styles.toc}>
-      <h4>Table of Contents</h4>
-      <TableOfContentsItems itemsList={itemsList[0].items || []} />
+      <ProgressIndicator vertical>
+        <TableOfContentsItems itemsList={itemsList[0].items || []} />
+      </ProgressIndicator>
     </nav>
   );
 };

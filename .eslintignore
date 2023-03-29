@@ -39,6 +39,3 @@ yarn-error.log*
 
 # Eclipse
 .project
-
-# content
-/content

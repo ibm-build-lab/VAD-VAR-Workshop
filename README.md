@@ -3,6 +3,7 @@
 Content for building experiential sales skills with various IBM products. These tutorials are hands-on labs that give you "show, not tell" experiential selling skills.
 
 Built using:
+
 - [Gatsby](https://www.gatsbyjs.com/docs/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [MDX](https://mdxjs.com/docs/)
@@ -28,7 +29,7 @@ npm run dev
 
 This will start the development server at http://localhost:8000.
 
-> Note: The current version of `@carbon/react seems` to not support [TypeScript types out of the box](https://github.com/carbon-design-system/carbon/discussions/10752). 
+> Note: The current version of `@carbon/react seems` to not support [TypeScript types out of the box](https://github.com/carbon-design-system/carbon/discussions/10752).
 
 ## Building static pages
 
