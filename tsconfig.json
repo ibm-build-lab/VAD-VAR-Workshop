@@ -15,8 +15,8 @@
     "rootDir": "./",                  
     "lib": ["dom", "esnext"],
     "noEmit": true,
-    "sourceMap": true,                          
+    "sourceMap": true                        
   },
-  "include": ["./src/**/*", "./gatsby-node.ts", "gatsby-config.mjss", "./plugins/**/*"],
-  "exclude": ["node_modules", "public", ".cache"]
+  "include": ["./src/**/*", "./gatsby-node.ts", "gatsby-config.mjs", "./plugins/**/*"],
+  "exclude": ["node_modules", "public", ".cache"],
 }

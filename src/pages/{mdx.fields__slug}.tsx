@@ -1,6 +1,6 @@
 import * as styles from '../styles/pages/{mdx.fields__slug}.module.scss';
 import { MDXProvider } from '@mdx-js/react';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import TableOfContents from '../components/TableOfContents';
 import { graphql } from 'gatsby';
 import { BlockQuote, SmartLink, TableWrapper } from '../components/replacements';
@@ -38,37 +38,47 @@ const components: Props['components'] = {
 const ContentTemplate = (props: ContentTemplateProps) => {
   const {
     data: {
-      mdx: { tableOfContents, frontmatter }
+      mdx: {
+        tableOfContents: { items: tocItems },
+        frontmatter: { toc = true }
+  ***REMOVED***
 ***REMOVED***,
     children
   } = props;
 
-  const { toc = true } = frontmatter;
-  const { items: tocItems } = tableOfContents;
   const articleRef = useRef(null);
+  const [currSection, setCurrSection] = useState('');
 
-  // useEffect(() => {
-  //   if (articleRef.current) {
-  //     const test = articleRef.current.querySelector('h1');
+  useEffect(() => {
+    if (!articleRef.current) return;
+    const headingElements = (articleRef.current as HTMLElement).querySelectorAll('h2,h3,h4,h5');
 
-  //     console.log(test);
+    const cb: IntersectionObserverCallback = (entries) => {
+      entries.forEach((e: IntersectionObserverEntry) => {
+        if (e.isIntersecting) setCurrSection(e.target.id);
+  ***REMOVED***);
+***REMOVED***;
 
-  //     const options = {
-  //       root: articleRef.current.querySelector('h1'),
-  //       rootMargin: '0px',
-  //       threshold: 1.0
-  // ***REMOVED***;
-  //   }
+    const observer = new IntersectionObserver(cb, {
+      rootMargin: '0px 0px -98% 0px',
+      threshold: 0
+***REMOVED***);
 
-  //   // let observer = new IntersectionObserver(callback, options);
-  // }, []);
+    headingElements.forEach((el) => {
+      observer.observe(el);
+***REMOVED***);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
       <article className={styles.article} ref={articleRef}>
         <MDXProvider components={components}>{children}</MDXProvider>
       </article>
-      {(toc === null ? true : toc) && tocItems && <TableOfContents itemsList={tocItems} />}
+      {(toc === null ? true : toc) && tocItems && (
+        <TableOfContents itemsList={tocItems} maxDepth={1} currSection={currSection} />
+      )}
     </>
   );
 };
@@ -76,7 +86,7 @@ const ContentTemplate = (props: ContentTemplateProps) => {
 export const pageQuery = graphql`
   query PostTemplate($id: String!) {
     mdx(id: { eq: $id }) {
-      tableOfContents(maxDepth: 2)
+      tableOfContents(maxDepth: 0)
       frontmatter {
         title
         toc

@@ -8,6 +8,8 @@ import rehypeSlug from 'rehype-slug';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+console.log(process.env.NODE_ENV);
+
 const config = {
   siteMetadata: {
     title: `VAD-VAR`,
@@ -43,7 +45,7 @@ const config = {
               maxWidth: 590,
               withWebp: false,
               showCaptions: false,
-              quality: 50
+              quality: process.env.NODE_ENV === 'development' ? 50 : 100
         ***REMOVED***
       ***REMOVED***
         ],
