@@ -2,6 +2,7 @@ import path from 'path';
 import remarkGfm from 'remark-gfm';
 import { fileURLToPath } from 'url';
 import remarkRelativeReplace from './src/plugins/remark-relative-replace.mjs';
+import remarkInsertJSX from './src/plugins/remark-instert-jsx.mjs';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 
@@ -31,7 +32,7 @@ const config = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         mdxOptions: {
-          remarkPlugins: [remarkGfm, remarkRelativeReplace],
+          remarkPlugins: [remarkGfm, remarkRelativeReplace, remarkInsertJSX],
           rehypePlugins: [
             rehypeSlug,
             [rehypeAutolinkHeadings, { behavior: 'wrap', test: ['h2', 'h3', 'h4', 'h5', 'h6'] }]

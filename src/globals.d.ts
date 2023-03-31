@@ -9,7 +9,12 @@ declare module '@carbon/react/icons' {
     size: number;
   }
 
-  const icon: { Launch: React.FC<IconProps>; InformationSquare: React.FC<IconProps> };
+  const icon: {
+    Launch: React.FC<IconProps>;
+    InformationSquare: React.FC<IconProps>;
+    Calendar: React.FC<IconProps>;
+    Time: React.FC<IconProps>;
+  };
   export = icon;
 }
 

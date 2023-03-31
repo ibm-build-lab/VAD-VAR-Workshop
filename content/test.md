@@ -1,6 +1,8 @@
 ---
 title: Test File
 toc: true
+timeToComplete: 45
+updated: 2023-09-21
 ---
 
 # Test h1

@@ -3,7 +3,7 @@ import { MDXProvider } from '@mdx-js/react';
 import React, { useEffect, useRef, useState } from 'react';
 import TableOfContents from '../components/TableOfContents';
 import { graphql } from 'gatsby';
-import { BlockQuote, SmartLink, TableWrapper } from '../components/replacements';
+import { BlockQuote, SmartLink, SubHeader, TableWrapper } from '../components/replacements';
 import { Props } from '@mdx-js/react/lib';
 import type { HeadProps } from 'gatsby';
 import SEO from '../components/SEO';
@@ -23,6 +23,8 @@ interface ContentTemplateProps {
       frontmatter: {
         toc?: boolean;
         title?: string;
+        timeToComplete?: number;
+        updated?: string;
   ***REMOVED***;
 ***REMOVED***;
   };
@@ -40,7 +42,7 @@ const ContentTemplate = (props: ContentTemplateProps) => {
     data: {
       mdx: {
         tableOfContents: { items: tocItems },
-        frontmatter: { toc = true }
+        frontmatter: { toc = true, timeToComplete, updated }
   ***REMOVED***
 ***REMOVED***,
     children
@@ -60,7 +62,7 @@ const ContentTemplate = (props: ContentTemplateProps) => {
 ***REMOVED***;
 
     const observer = new IntersectionObserver(cb, {
-      rootMargin: '0px 0px -98% 0px',
+      rootMargin: '0px 0px -95% 0px',
       threshold: 0
 ***REMOVED***);
 
@@ -74,7 +76,13 @@ const ContentTemplate = (props: ContentTemplateProps) => {
   return (
     <>
       <article className={styles.article} ref={articleRef}>
-        <MDXProvider components={components}>{children}</MDXProvider>
+        <MDXProvider
+          components={{
+            ...components,
+            SubHeader: () => <SubHeader {...{ timeToComplete, updated }} />
+      ***REMOVED***}>
+          {children}
+        </MDXProvider>
       </article>
       {(toc === null ? true : toc) && tocItems && (
         <TableOfContents itemsList={tocItems} maxDepth={1} currSection={currSection} />
@@ -88,6 +96,8 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       tableOfContents(maxDepth: 0)
       frontmatter {
+        timeToComplete
+        updated
         title
         toc
   ***REMOVED***
