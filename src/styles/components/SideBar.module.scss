@@ -13,15 +13,14 @@
   }
 }
 
-$columns: 6;
-@for $i from 0 through $columns {
+@for $i from 0 through 5 {
   .col-#{$i} {
     & > button > span {
-      padding-left: calc($i * $spacing-04);
+      padding-left: calc($i * $spacing-05);
 ***REMOVED***
 
     & > span {
-      padding-left: calc($i * $spacing-04);
+      padding-left: calc(max($i - 1, 0) * $spacing-05);
 ***REMOVED***
   }
 }
