@@ -7,6 +7,7 @@ Built using:
 - [Gatsby](https://www.gatsbyjs.com/docs/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [MDX](https://mdxjs.com/docs/)
+- [Carbon Design System](https://carbondesignsystem.com/)
 
 ## Getting started
 
@@ -29,7 +30,15 @@ npm run dev
 
 This will start the development server at http://localhost:8000.
 
-> Note: The current version of `@carbon/react seems` to not support [TypeScript types out of the box](https://github.com/carbon-design-system/carbon/discussions/10752).
+> Note: The current version of `@carbon/react` seems to not support [TypeScript types out of the box](https://github.com/carbon-design-system/carbon/discussions/10752).
+
+### Linting
+
+Linting has been added via ESLint. MDX linting is also available too. In order to lint all files run:
+
+```bash
+npm run lint
+```
 
 ## Building static pages
 
@@ -47,10 +56,27 @@ npm run serve
 
 Using the supplied `serve` command will start host the site locally at http://localhost:9000.
 
+### Deployment
+
+Deployment of the static content is handled via Github Actions. On a merge to the main branch a workflow is triggered that will build the static pages and then deploy them as a static site via Github Pages.
+
 ## How content is parsed
 
 Content for the docs is stored as `.md` files in the `/content` directory. URLs for each of the files in the documentation is built as a mirror of the file structure within the directory. `README.md` files are interpreted as the index page of the directory.
 
 In order to extend functionality the files are parsed using MDX instead of Markdown. This allows for the inclusion of JSX elements/React components if wanted. Standard Markdown syntax is still applicable but any inclusion of HTML tags should instead be using JSX tags.
 
+> Note: any inclusion of text that may be misinterpreted as JSX could cause an error when building pages. Be sure to escape any `>`,`<`, `{`, or `}` characters in text if not used as JSX.
+
 Various plugins to extend functionality further are available via [remark](https://github.com/remarkjs/remark/blob/main/doc/plugins.md#list-of-plugins) and [rehype](https://github.com/rehypejs/rehype/blob/main/doc/plugins.md#list-of-plugins). Custom plugins can also be written through the use of the [unified](https://unifiedjs.com/learn/) family of libraries as well.
+
+### Frontmatter data
+
+Frontmatter data is supported out of the box with `gatsby-plugin-mdx`. For use in this site it is always optional for each document. Here are some of the values recognized:
+
+| Value            | Type    | Optional | Description                                                                                                            |
+| ---------------- | ------- | -------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `title`          | string  | ✅       | Used as SEO title as well as string is left-hand side nav. When not used will default to the `H1` tag in the document. |
+| `toc`            | boolean | ✅       | Determines whether pages should show the table of contents right-hand nav. When not included defaults to `true`.       |
+| `timeToComplete` | number  | ✅       | Completion time for lab. Used in the conditional render of the sub-header under the `H1` tag.                          |
+| `updated`        | date    | ✅       | Date lab was last updated. Used in the conditional render of the sub-header under the `H1` tag.                        |

@@ -46,7 +46,6 @@ const TableOfContents = (props: TableOfContentsProps) => {
 
   useEffect(() => {
     setCurrentIndex((curr) => {
-      console.log(flatTOC);
       const newIndex = flatTOC.findIndex(({ url = '#' }) => url.substring(1) === currSection);
       return newIndex >= 0 ? newIndex : curr;
 ***REMOVED***);

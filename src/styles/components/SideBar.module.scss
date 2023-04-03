@@ -3,8 +3,25 @@
   border-right: 1px solid $cool-gray-20;
 }
 
+.tree {
+  @include theme($themes-white);
+}
+
 @include apply-lesser-than('md') {
   .sidebar {
     display: none !important;
+  }
+}
+
+$columns: 6;
+@for $i from 0 through $columns {
+  .col-#{$i} {
+    & > button > span {
+      padding-left: calc($i * $spacing-04);
+***REMOVED***
+
+    & > span {
+      padding-left: calc($i * $spacing-04);
+***REMOVED***
   }
 }
