@@ -1,6 +1,6 @@
 # VAD VAR Workshop Docs
 
-Content for building experiential sales skills with various IBM products. These tutorials are hands-on labs that give you "show, not tell" experiential selling skills.
+This repo contains content for IBM Ecosystem partners (primarily our Value-Added Distributors and Value-Added Resellers) to build experiential sales skills with various IBM products.
 
 Built using:
 

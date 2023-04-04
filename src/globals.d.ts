@@ -6,7 +6,7 @@ declare module '*.scss' {
 // until @carbon/react has native declarations for all packages we'll add our own
 declare module '@carbon/react/icons' {
   interface IconProps {
-    size: number;
+    size?: number;
   }
 
   const icon: {
