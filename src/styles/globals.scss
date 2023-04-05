@@ -1,0 +1,11 @@
+// @use '@carbon/react/scss/reset';
+// @use '@carbon/react/scss/components/ui-shell';
+// @use '@carbon/react/scss/components/progress-indicator';
+// @include reset();
+
+@use '@carbon/react';
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}

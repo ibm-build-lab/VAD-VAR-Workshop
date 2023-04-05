@@ -1,0 +1,26 @@
+.sidebar {
+  @include theme($themes-g10);
+  border-right: 1px solid $cool-gray-20;
+}
+
+.tree {
+  @include theme($themes-white);
+}
+
+@include apply-lesser-than('md') {
+  .sidebar {
+    display: none !important;
+  }
+}
+
+@for $i from 0 through 5 {
+  .col-#{$i} {
+    & > button > span {
+      padding-left: calc($i * $spacing-05);
+***REMOVED***
+
+    & > span {
+      padding-left: calc(max($i - 1, 0) * $spacing-05);
+***REMOVED***
+  }
+}

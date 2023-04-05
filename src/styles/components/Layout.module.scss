@@ -1,0 +1,17 @@
+.header {
+  @include theme($themes-g100);
+  position: sticky;
+  top: 0;
+}
+
+.content {
+  padding: 0;
+  display: flex;
+  margin-top: 0 !important;
+}
+
+@include apply-lesser-than('md') {
+  .content {
+    margin-left: unset !important;
+  }
+}

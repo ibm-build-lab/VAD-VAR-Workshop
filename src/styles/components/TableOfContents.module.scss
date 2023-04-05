@@ -1,0 +1,31 @@
+.toc {
+  @include theme($themes-g10);
+  border-left: 1px solid $cool-gray-20;
+  background-color: $gray-10;
+
+  position: sticky;
+  top: $header-height;
+  height: calc(100vh - $header-height);
+  min-width: 300px;
+  overflow-y: auto;
+  padding: $spacing-07;
+  flex-grow: 1;
+
+  & .tocHeader {
+    & > a {
+      color: unset;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+  ***REMOVED***
+***REMOVED***
+    margin-bottom: $spacing-04;
+  }
+}
+
+@include apply-lesser-than('lg') {
+  .toc {
+    display: none;
+  }
+}

@@ -1,0 +1,60 @@
+.article {
+  max-width: 975px;
+  line-height: 1.5;
+  padding: $spacing-07;
+  box-sizing: content-box;
+
+  @include headings {
+    margin-bottom: $spacing-02;
+    scroll-margin-top: calc($header-height + $spacing-04);
+    & > a {
+      text-decoration: none;
+      color: unset;
+
+      &:hover {
+        text-decoration: underline;
+  ***REMOVED***
+***REMOVED***
+  }
+
+  h1 {
+    @include type-style('heading-05');
+    margin-bottom: $spacing-03;
+  }
+
+  h2 {
+    @include type-style('heading-04');
+    margin-top: $spacing-07;
+  }
+
+  h3 {
+    @include type-style('heading-03');
+    font-weight: bold;
+    margin-top: $spacing-06;
+  }
+
+  h4 {
+    @include type-style('heading-02');
+    margin-top: $spacing-05;
+  }
+
+  p {
+    @include type-style('body-01');
+    margin-bottom: $spacing-03;
+  }
+
+  ul,
+  ol {
+    margin-left: $spacing-08;
+    margin-bottom: $spacing-08;
+    @include type-style('body-01');
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+
+  ol {
+    list-style-type: number;
+  }
+}

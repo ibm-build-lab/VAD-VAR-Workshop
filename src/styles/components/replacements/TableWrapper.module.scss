@@ -1,0 +1,26 @@
+.tableWrapper {
+  display: block;
+  max-width: 100%;
+  margin: $spacing-07 0;
+  @include type-style('body-01');
+
+  & > table {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  & > th,
+  td {
+    padding: $spacing-05;
+  }
+
+  & > table,
+  th,
+  td {
+    border: 1px solid;
+  }
+
+  & > table {
+    width: 100%;
+  }
+}
