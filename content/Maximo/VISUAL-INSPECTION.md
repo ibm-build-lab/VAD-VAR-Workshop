@@ -1,4 +1,4 @@
-# Maximo Visual Inspection - Part 1
+# Maximo Visual Inspection (MVI) - Part 1
 
 In this lab you will first see the connection between Maximo Monitor and MVI.
 
@@ -6,7 +6,7 @@ Then you will create your own data set, label, and augment using an MVI instance
 
 HEADS UP! L3 Quiz Content denoted with 🟢
 
-## Part One: Maximo Monitor and Maximo Visual Inspection
+## Maximo Monitor and MVI
 
 ### Step 1: Log in to Maximo Application Suite Navigator
 
@@ -70,9 +70,7 @@ The **Tank Alerts** card (top right) shows the alert history for the Sedimentati
 
 The **Inspection Results** table card (bottom right) is currently empty, but this is where the Plant Manager can view the company’s automated MVI inspection results.
 
-<br />
-
-## Part Two: Creating, labeling and augmenting a data set
+## Creating, labeling and augmenting a data set
 
 ### Step 1: Launch Maximo Visual Inspection
 
