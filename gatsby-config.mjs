@@ -9,9 +9,8 @@ import rehypeSlug from 'rehype-slug';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-console.log(process.env.NODE_ENV);
-
 const config = {
+  pathPrefix: '/VAD-VAR-Workshop',
   siteMetadata: {
     title: `VAD-VAR`,
     description: 'Experiential Selling Workshops for IBM Ecosystem Partners',
