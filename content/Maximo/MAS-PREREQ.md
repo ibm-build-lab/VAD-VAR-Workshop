@@ -1,6 +1,6 @@
 # Maximo Application Suite Lab Prerequisites
 
-### Demo Lab Environment Access
+## Demo Lab Environment Access
 
 Completing this lab requires access to the latest version of the Maximo Application Suite (MAS) v8.6 demo cluster environment. To reserve the MAS demo environment, please perform the following steps:
 
