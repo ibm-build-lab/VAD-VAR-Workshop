@@ -8,10 +8,13 @@ import { EXIT, visit } from 'unist-util-visit';
  */
 export default function remarkInsertJSXAfterHeader() {
   return (root) => {
-    const { children } = fromMarkdown('<SubHeader/>', {
-      extensions: [mdxjs()],
-      mdastExtensions: [mdxFromMarkdown()]
-***REMOVED***);
+    const { children } = fromMarkdown(
+      '<SubHeader timeToComplete={props.pageContext.frontmatter.timeToComplete} updated={props.pageContext.frontmatter.updated}/>',
+      {
+        extensions: [mdxjs()],
+        mdastExtensions: [mdxFromMarkdown()]
+  ***REMOVED***
+    );
 
     const headerPosition = (() => {
       let position;
