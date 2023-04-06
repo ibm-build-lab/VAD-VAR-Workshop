@@ -10,6 +10,10 @@ html {
   height: 100%;
 }
 
+span span.gatsby-resp-image-wrapper {
+  max-width: 800px !important;
+}
+
 .gatsby-resp-image-wrapper {
   margin-bottom: $spacing-05;
 

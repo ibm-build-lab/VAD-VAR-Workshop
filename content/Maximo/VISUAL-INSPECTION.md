@@ -1,3 +1,7 @@
+---
+title: Visual Inspection - Part 1
+---
+
 # Maximo Visual Inspection (MVI) - Part 1
 
 In this lab you will first see the connection between Maximo Monitor and MVI.

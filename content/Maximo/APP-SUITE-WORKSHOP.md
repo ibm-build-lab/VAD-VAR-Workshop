@@ -1,3 +1,7 @@
+---
+title: Application Suite
+---
+
 # Maximo Application Suite
 
 In this lab you will get a tour of how 4 key applications within Maximo Application Suite (MAS) can be used to troubleshoot a real world situation. All L3 Quiz questions can be answered using this lab.
@@ -36,16 +40,15 @@ To complete this step, please refer to the email confirming your demo access and
 
 2. The **IBM Maximo Application Suite** login page opens in a web browser.
 
-   1. Enter the Maximo Manage **Username (A)** found in the confirmation email and click **Continue (B)**.
-   2. Enter the Maximo Manage **Password** found in the confirmation email and click **Log in** (image not shown for this step).
+   - Enter the Maximo Manage **Username (A)** found in the confirmation email and click **Continue (B)**.
+
+   - Enter the Maximo Manage **Password** found in the confirmation email and click **Log in** (image not shown for this step).
 
    ![](_attatchments/mas/login.png)
-
+   <br />
    Once the login credentials are accepted, the Maximo Application **Suite navigator** window opens. Several applications that make up the MAS products are displayed. In this demo, the focus will be on Maximo Monitor, Manage, Health, and Predict.
 
    ![](_attatchments/mas/suite-navigator.png)
-
-   If this is your first-time logging into MAS, you may be prompted to view a quick application tour (how-to tutorial). Please dismiss any such tours for the purposes of this demo.
 
 ### Step 2: Review High Severity Alerts (Anomalies) in Monitor
 
@@ -55,32 +58,32 @@ An Operations Manager for this Water Resource Authority (WRA) needs to view the 
 
 3. From the Maximo **Suite navigator**, click the **Monitor** application tile.
 
-    ![](_attatchments/mas/suite-nav-monitor.png)
+   ![](_attatchments/mas/suite-nav-monitor.png)
 
 4. Click the **Monitor** tile on the **Welcome** screen that opens.
 
-    ![](_attatchments/mas/monitor-root.png)
+   ![](_attatchments/mas/monitor-root.png)
 
 5. On the left sidebar, use the **right arrow (>)** icon to scroll all the Maximo Monitor options **(A)**.
 6. Select the **Devices** tab **(B)** from the menu to view the list of device types in this WRA.
 
-    ![](_attatchments/mas/monitor-devices.png)
+   ![](_attatchments/mas/monitor-devices.png)
 
 7. Type **“pump”** in the search bar to filter the results.
 
-    ![](_attatchments/mas/monitor-devices-pump.png)
+   ![](_attatchments/mas/monitor-devices-pump.png)
 
 8. Click **Pump** from the filtered list to view a Pump summary dashboard that will appear on the right **(A)**.
 
 9. Click on the left side bar’s **Hide sidebar** icon to collapse it **(B)**.
 
-    ![](_attatchments/mas/monitor-devices-hide.png)
+   ![](_attatchments/mas/monitor-devices-hide.png)
 
-    Maximo Monitor allows users to categorize/group device types according to their specific business use case. For example, a user can have a separate dashboard according to an asset’s supplier type such as Original Equipment Manufacturer (OEM) and non-OEM. By selecting the Pump group, the operations manager is viewing metrics for all Pump assets in order to manage and view performance of that entire asset set together.
+   Maximo Monitor allows users to categorize/group device types according to their specific business use case. For example, a user can have a separate dashboard according to an asset’s supplier type such as Original Equipment Manufacturer (OEM) and non-OEM. By selecting the Pump group, the operations manager is viewing metrics for all Pump assets in order to manage and view performance of that entire asset set together.
 
-    The Operations Manager should now navigate through the summary dashboard to see a global map of pump sites. This summary dashboard summarizes important metrics relevant to a pump such as its motor temperature, pressure valves reading, and more. This provides real-time insights on any problems with these assets (These dashboards are fully customizable).
+   The Operations Manager should now navigate through the summary dashboard to see a global map of pump sites. This summary dashboard summarizes important metrics relevant to a pump such as its motor temperature, pressure valves reading, and more. This provides real-time insights on any problems with these assets (These dashboards are fully customizable).
 
-    The Operations Manager notices an alert on one of the site locations in the map (as seen by the triangle with an exclamation point inside).
+   The Operations Manager notices an alert on one of the site locations in the map (as seen by the triangle with an exclamation point inside).
 
 10. Click on the **alert icon** displayed on the map to view a summary of the anomaly. Notice that a pump is causing an alert at the **Bedford Site**. 🟢
 
@@ -129,7 +132,6 @@ Next, the Operations Manager wants to look at this pump's maintenance history to
 19. The Maximo **Manage** window opens in a separate browser tab.
 
     ![](_attatchments/mas/manage-assets.png)
-
 
 20. Select the **Work** tab **(A)** and then click on the filter icon (funnel) to see the available filter options **(B)**.
 21. Type **“COMP”** in the **Status** box in the **Work Order** section to filter recent completed work orders for this pump **(C)**. Press **Return** on the keyboard to apply the filter.
