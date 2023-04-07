@@ -54,7 +54,7 @@ This creates the actual static pages of the site under the `/public` directory a
 npm run serve
 ```
 
-Using the supplied `serve` command will start host the site locally at http://localhost:9000/VAD-VAR-Workshop/.
+Using the supplied `serve` command will start host the site locally at http://localhost:9000/VAD-VAR-Workshop/ (Note the prefixed path).
 
 ### Deployment
 
