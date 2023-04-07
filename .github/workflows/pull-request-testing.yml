@@ -1,0 +1,13 @@
+name: Pull Request Testing
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  dry-build:
+    uses: ./.github/workflows/build-site.yml
