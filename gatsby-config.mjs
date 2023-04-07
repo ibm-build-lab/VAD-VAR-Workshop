@@ -14,7 +14,6 @@ const isDev = NODE_ENV === 'development';
 const optimizeImages = IMAGE_OPTIMIZATION === 'true';
 
 const config = {
-  pathPrefix: '/VAD-VAR-Workshop',
   siteMetadata: {
     title: `VAD-VAR`,
     description: 'Experiential Selling Workshops for IBM Ecosystem Partners',
