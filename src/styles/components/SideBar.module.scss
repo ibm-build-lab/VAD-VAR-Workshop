@@ -5,6 +5,11 @@
 
 .tree {
   @include theme($themes-white);
+  
+  * > a {
+    text-decoration: none;
+    color: unset;
+  }
 }
 
 @include apply-lesser-than('md') {
