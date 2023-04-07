@@ -28,6 +28,7 @@ jobs:
       create-artifact: true
 
   deploy-site:
+    runs-on: ubuntu-latest
     needs: build-site
 
     steps:
