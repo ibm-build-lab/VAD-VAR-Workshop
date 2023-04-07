@@ -10,4 +10,5 @@ defaults:
 
 jobs:
   dry-build:
+    name: Create Dry Build
     uses: ./.github/workflows/build-site.yml

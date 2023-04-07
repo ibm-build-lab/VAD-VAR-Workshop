@@ -1,6 +1,12 @@
 name: Build Site
 on:
   workflow_call:
+    inputs:
+      create-artifact:
+        description: 'Should create artifact of build'
+        required: false
+        type: boolean
+        default: false
   workflow_dispatch:
 
 defaults:
@@ -9,6 +15,7 @@ defaults:
 
 jobs:
   build-site:
+    name: Build Static Site
     runs-on: ubuntu-latest
 
     steps:
@@ -26,3 +33,10 @@ jobs:
 
       - name: Build site
         run: npm run build
+
+      - name: Create Artifact
+        if: ${{ inputs.create-artifact }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: built-site
+          path: public/
