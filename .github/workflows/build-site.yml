@@ -35,7 +35,7 @@ jobs:
         run: npm run build
 
       - name: Create Artifact
-        if: ${{ inputs.create-artifact }} == true
+        if: ${{ inputs.create-artifact }}
         uses: actions/upload-artifact@v3
         with:
           name: built-site
