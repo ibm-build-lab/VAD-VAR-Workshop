@@ -1,3 +1,7 @@
+---
+title: Visual Inspection - Part 2
+---
+
 # Maximo Visual Inspection (MVI) - Part 2
 
 In this lab we will see how MVI makes training a model on your previously created data set easy.

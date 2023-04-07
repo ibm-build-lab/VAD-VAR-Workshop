@@ -34,7 +34,8 @@ interface ContentTemplateProps {
 const components: Props['components'] = {
   table: TableWrapper,
   a: SmartLink,
-  blockquote: BlockQuote
+  blockquote: BlockQuote,
+  SubHeader
 };
 
 const ContentTemplate = (props: ContentTemplateProps) => {
@@ -42,7 +43,7 @@ const ContentTemplate = (props: ContentTemplateProps) => {
     data: {
       mdx: {
         tableOfContents: { items: tocItems },
-        frontmatter: { toc = true, timeToComplete, updated }
+        frontmatter: { toc = true }
   ***REMOVED***
 ***REMOVED***,
     children
@@ -78,8 +79,7 @@ const ContentTemplate = (props: ContentTemplateProps) => {
       <article className={styles.article} ref={articleRef}>
         <MDXProvider
           components={{
-            ...components,
-            SubHeader: () => <SubHeader {...{ timeToComplete, updated }} />
+            ...components
       ***REMOVED***}>
           {children}
         </MDXProvider>
@@ -96,8 +96,6 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       tableOfContents(maxDepth: 0)
       frontmatter {
-        timeToComplete
-        updated
         title
         toc
   ***REMOVED***

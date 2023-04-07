@@ -1,4 +1,8 @@
-# MVI Lab Prerequisites
+---
+title: Visual Inspection Prereqs
+---
+
+# Maximo Visual Inspection Lab Prerequisites
 
 ## Step 1: Access to Maximo Application Suite Demo Environment
 
