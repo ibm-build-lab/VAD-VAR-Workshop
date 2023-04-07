@@ -21,11 +21,21 @@ defaults:
     shell: bash
 
 jobs:
-  build-and-deploy:
-    uses: ./.github/workflows/build-site.yml
+  build-site:
     concurrency: ci-${{ github.ref }}
+    uses: ./.github/workflows/build-site.yml
+    with:
+      create-artifact: true
+
+  deploy-site:
+    needs: build-site
 
     steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: built-site
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
