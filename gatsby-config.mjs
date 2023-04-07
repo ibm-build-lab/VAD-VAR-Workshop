@@ -8,7 +8,10 @@ import rehypeSlug from 'rehype-slug';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const isDev = process.env.NODE_ENV === 'development';
+const { NODE_ENV, IMAGE_OPTIMIZATION } = process.env;
+
+const isDev = NODE_ENV === 'development';
+const optimizeImages = IMAGE_OPTIMIZATION === 'true';
 
 const config = {
   pathPrefix: '/VAD-VAR-Workshop',
@@ -36,18 +39,23 @@ const config = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              ignoreFileExtensions: ['png', 'jpg', 'jpeg', 'tiff', 'webp', 'avif', 'pdf', 'md']
+              ignoreFileExtensions: optimizeImages
+                ? ['png', 'jpg', 'jpeg', 'tiff', 'webp', 'avif', 'pdf', 'md']
+                : ['pdf', 'md']
         ***REMOVED***
       ***REMOVED***,
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              linkImagesToOriginal: true,
-              maxWidth: 650,
-              withWebp: true,
-              quality: isDev ? 10 : 85
+          ...((optimizeImages && [
+            {
+              resolve: `gatsby-remark-images`,
+              options: {
+                linkImagesToOriginal: true,
+                maxWidth: 650,
+                withWebp: false,
+                quality: isDev ? 10 : 100
+          ***REMOVED***
         ***REMOVED***
-      ***REMOVED***
+          ]) ||
+            [])
         ],
         extensions: [`.mdx`, '.md']
   ***REMOVED***

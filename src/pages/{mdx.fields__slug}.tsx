@@ -3,7 +3,13 @@ import { MDXProvider } from '@mdx-js/react';
 import React, { useEffect, useRef, useState } from 'react';
 import TableOfContents from '../components/TableOfContents';
 import { graphql } from 'gatsby';
-import { BlockQuote, SmartLink, SubHeader, TableWrapper } from '../components/replacements';
+import {
+  BlockQuote,
+  ImageWrapper,
+  SmartLink,
+  SubHeader,
+  TableWrapper
+} from '../components/replacements';
 import { Props } from '@mdx-js/react/lib';
 import type { HeadProps } from 'gatsby';
 import SEO from '../components/SEO';
@@ -35,7 +41,8 @@ const components: Props['components'] = {
   table: TableWrapper,
   a: SmartLink,
   blockquote: BlockQuote,
-  SubHeader
+  SubHeader,
+  img: ImageWrapper
 };
 
 const ContentTemplate = (props: ContentTemplateProps) => {
