@@ -3,12 +3,7 @@ import React from 'react';
 import { Launch } from '@carbon/react/icons';
 import { Link as CarbonLink } from '@carbon/react';
 
-interface SmartLinkProps {
-  children?: React.ReactNode;
-  href?: string;
-}
-
-const SmartLink: React.FC<SmartLinkProps> = (props) => {
+const SmartLink = (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
   const { children, href = '' } = props;
 
   if (href.startsWith('#')) return <a href={href}>{children}</a>;

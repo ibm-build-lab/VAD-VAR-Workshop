@@ -1,0 +1,13 @@
+.imageWrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin: $spacing-05 0;
+
+  & > img {
+    object-fit: contain;
+    max-width: 80%;
+    max-height: 500px;
+  }
+}
