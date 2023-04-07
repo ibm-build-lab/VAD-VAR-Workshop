@@ -36,6 +36,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: built-site
+          path: public
 
       - name: Deploy Static Site
         uses: JamesIves/github-pages-deploy-action@v4
