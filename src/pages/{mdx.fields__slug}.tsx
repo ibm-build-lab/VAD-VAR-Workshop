@@ -5,7 +5,9 @@ import TableOfContents from '../components/TableOfContents';
 import { graphql } from 'gatsby';
 import {
   BlockQuote,
+  CodeBlock,
   ImageWrapper,
+  QuizAlert,
   SmartLink,
   SubHeader,
   TableWrapper
@@ -37,13 +39,30 @@ interface ContentTemplateProps {
   children: React.ReactNode;
 }
 
+interface MDXWrapperProps {
+  children: React.ReactNode;
+}
+
 const components: Props['components'] = {
   table: TableWrapper,
   a: SmartLink,
   blockquote: BlockQuote,
   SubHeader,
-  img: ImageWrapper
+  img: ImageWrapper,
+  code: CodeBlock,
+  QuizAlert: QuizAlert
 };
+
+const MDXWrapper = React.memo(function MDXWrapper({ children }: MDXWrapperProps) {
+  return (
+    <MDXProvider
+      components={{
+        ...components
+  ***REMOVED***}>
+      {children}
+    </MDXProvider>
+  );
+});
 
 const ContentTemplate = (props: ContentTemplateProps) => {
   const {
@@ -84,12 +103,7 @@ const ContentTemplate = (props: ContentTemplateProps) => {
   return (
     <>
       <article className={styles.article} ref={articleRef}>
-        <MDXProvider
-          components={{
-            ...components
-      ***REMOVED***}>
-          {children}
-        </MDXProvider>
+        <MDXWrapper>{children}</MDXWrapper>
       </article>
       {(toc === null ? true : toc) && tocItems && (
         <TableOfContents itemsList={tocItems} maxDepth={1} currSection={currSection} />

@@ -45,9 +45,15 @@
 
   ul,
   ol {
-    margin-left: $spacing-08;
-    margin-bottom: $spacing-08;
+    margin-left: $spacing-06;
+    margin-bottom: $spacing-05;
     @include type-style('body-01');
+
+    & ul,
+    & ol {
+      margin-left: $spacing-03;
+      margin-bottom: 0;
+***REMOVED***
   }
 
   ul {

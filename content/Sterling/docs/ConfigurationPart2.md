@@ -1,3 +1,7 @@
+---
+title: 4. B2Bi Configuration Pt. 2
+---
+
 # B2Bi Configuration Part 2
 
 In this chapter, learn how to create a B2Bi partner community, add partners to the community, create a group with these users, create a routing template for the group, and create routing channels.

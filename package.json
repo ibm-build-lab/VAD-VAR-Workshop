@@ -1,8 +1,8 @@
 {
-  "name": "vad-var",
+  "name": "vad-var-site",
   "version": "1.0.0",
   "private": true,
-  "description": "vad-var",
+  "description": "Static site to host VEST workshops",
   "author": "jbukuts",
   "keywords": [
     "gatsby"
@@ -36,9 +36,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rehype-autolink-headings": "^6.1.1",
+    "rehype-pretty-code": "0.9.4",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
     "sass": "^1.59.3",
+    "shiki": "^0.14.1",
     "unist-util-visit": "^4.1.2"
   },
   "devDependencies": {

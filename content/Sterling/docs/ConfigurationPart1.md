@@ -1,3 +1,7 @@
+---
+title: 3. B2Bi Configuration Pt. 1
+---
+
 # B2Bi Configuration Part 1
 
 In this chapter, learn how to configure a Secure File Transfer Protocol (SFTP) adapter using the containerized B2Bi deployment.

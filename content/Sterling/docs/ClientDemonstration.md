@@ -1,3 +1,7 @@
+---
+title: 5. Client Demonstration
+---
+
 # Client Demonstration
 
 It is now time for the partners to transfer files between each other using the newly created B2Bi SFTP adapter, but first one last setup step to make the demonstration more visually exciting.

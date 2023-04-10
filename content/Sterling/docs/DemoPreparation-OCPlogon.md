@@ -1,3 +1,8 @@
+---
+title: 2. Demo Prep
+toc: false
+---
+
 # Demo prep - OpenShift Logon
 
 This demonstration workshop uses an OpenShift environment provisioned from IBM Technology Zone (ITZ) [here](https://techzone.ibm.com/my/reservations/create/63dba359cc19150018af084f). If you are attending the workshop in-person, this OpenShift environment has already been created for you.

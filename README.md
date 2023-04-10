@@ -82,3 +82,9 @@ Frontmatter data is supported out of the box with `gatsby-plugin-mdx`. For use i
 | `toc`            | boolean | ✅       | Determines whether pages should show the table of contents right-hand nav. When not included defaults to `true`.       |
 | `timeToComplete` | number  | ✅       | Completion time for lab. Used in the conditional render of the sub-header under the `H1` tag.                          |
 | `updated`        | date    | ✅       | Date lab was last updated. Used in the conditional render of the sub-header under the `H1` tag.                        |
+
+## Helpful Carbon links
+
+- [Carbon Design System monorepo](https://github.com/carbon-design-system/carbon)
+- [Carbon components storybook](https://react.carbondesignsystem.com/)
+- [Icon list](https://carbondesignsystem.com/guidelines/icons/library/)
