@@ -1,5 +1,5 @@
 import { Tag } from '@carbon/react';
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Calendar, Time } from '@carbon/react/icons';
 import * as styles from '../../styles/components/replacements/SubHeader.module.scss';
 
@@ -17,7 +17,7 @@ const SubHeader = (props: SubHeaderProps) => {
     <div className={styles.subHeader}>
       {updated && (
         <Tag size={ICON_SIZE} type='gray' renderIcon={Calendar}>
-          Last updated {new Date(updated).toLocaleDateString()}
+          <Suspense fallback={null}>Last updated {new Date(updated).toLocaleDateString()}</Suspense>
         </Tag>
       )}
       {timeToComplete && (

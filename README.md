@@ -1,6 +1,8 @@
 # VAD VAR Workshop Docs
 
-This repo contains content for IBM Ecosystem partners (primarily our Value-Added Distributors and Value-Added Resellers) to build experiential sales skills with various IBM products.
+This repo contains the site code for IBM Ecosystem partners content (primarily our Value-Added Distributors and Value-Added Resellers) to build experiential sales skills with various IBM products.
+
+To see the content itself visit: https://vest.buildlab.cloud/
 
 Built using:
 
@@ -54,7 +56,7 @@ This creates the actual static pages of the site under the `/public` directory a
 npm run serve
 ```
 
-Using the supplied `serve` command will start host the site locally at http://localhost:9000/VAD-VAR-Workshop/.
+Using the supplied `serve` command will start host the site locally at http://localhost:9000.
 
 ### Deployment
 
