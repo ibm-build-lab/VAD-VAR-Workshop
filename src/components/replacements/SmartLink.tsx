@@ -5,19 +5,21 @@ import { Link as CarbonLink } from '@carbon/react';
 
 const SmartLink = (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
   const { children, href = '' } = props;
+  const isExternal = href.startsWith('//') || href.startsWith('http') || href.startsWith('mailto:');
 
-  if (href.startsWith('#')) return <a href={href}>{children}</a>;
+  if (isExternal)
+    return (
+      <CarbonLink href={href} target='_blank' rel='noreferrer'>
+        {children}
+        {<Launch />}
+      </CarbonLink>
+    );
 
-  const isInternal =
-    !href.startsWith('//') && !href.startsWith('http') && !href.startsWith('mailto:');
-
-  if (isInternal) return <GatsbyLink to={href}>{children}</GatsbyLink>;
-
+  const isHash = href.startsWith('#');
   return (
-    <CarbonLink href={href} target='_blank' rel='noreferrer'>
+    <GatsbyLink to={href} replace={isHash}>
       {children}
-      {<Launch />}
-    </CarbonLink>
+    </GatsbyLink>
   );
 };
 

@@ -3,7 +3,7 @@ import * as styles from '../styles/components/Layout.module.scss';
 import React from 'react';
 import SideBar from './SideBar';
 import { Content, Header, HeaderName } from '@carbon/react';
-import useSiteMetadata from '../helpers/useSiteMetaData';
+import useSiteMetadata from '../hooks/useSiteMetaData';
 
 interface LayoutProps {
   children: React.ReactNode;

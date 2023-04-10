@@ -1,13 +1,18 @@
 import React from 'react';
 import * as styles from '../../styles/components/replacements/BlockQuote.module.scss';
-import { InformationSquare } from '@carbon/react/icons';
+import { InformationSquare, RequestQuote } from '@carbon/react/icons';
+import cx from 'classnames';
 
-const BlockQuote: React.FC<React.BlockquoteHTMLAttributes<HTMLQuoteElement>> = (props) => {
-  const { children } = props;
+interface BlockQuoteProps extends React.BlockquoteHTMLAttributes<HTMLQuoteElement> {
+  alt?: boolean;
+}
+
+const BlockQuote: React.FC<BlockQuoteProps> = (props) => {
+  const { children, alt } = props;
 
   return (
-    <blockquote className={styles.blockQuote}>
-      <InformationSquare size={24} />
+    <blockquote className={cx(styles.blockQuote, alt && styles.altBlock)}>
+      {React.createElement(alt ? RequestQuote : InformationSquare, { size: 24 })}
       {children}
     </blockquote>
   );

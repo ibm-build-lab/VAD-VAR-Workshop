@@ -14,16 +14,16 @@ Currently, the workshops require additional content which introduces them in an 
 
 ### Instana
 
-- [Instana workshop](/content/Instana/)
+- [Instana workshop](/instana/)
 
 ### Watson
 
-- [Watson Assistant workshop](/content/Watson)
+- [Watson Assistant workshop](/watson)
 
 ### Maximo
 
-- [Maximo Application Suite (including separate Visual Inspection material) workshop](/content/Maximo)
+- [Maximo Application Suite (including separate Visual Inspection material) workshop](/maximo)
 
 ### Sterling
 
-- [Sterling Data Exchange workshop](/content/Sterling)
+- [Sterling Data Exchange workshop](/sterling)

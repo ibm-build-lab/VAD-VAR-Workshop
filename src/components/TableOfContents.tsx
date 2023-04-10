@@ -2,6 +2,7 @@ import * as styles from '../styles/components/TableOfContents.module.scss';
 import React, { useEffect, useMemo, useState } from 'react';
 import { ProgressIndicator, ProgressStep } from '@carbon/react';
 import { navigate } from 'gatsby';
+import { Link as GatsbyLink } from 'gatsby';
 
 interface TableOfContentsProps {
   itemsList: TOCItem[];
@@ -56,13 +57,15 @@ const TableOfContents = (props: TableOfContentsProps) => {
   return (
     <nav className={styles.toc}>
       <h6 className={styles.tocHeader}>
-        <a href='#'>On this page</a>
+        <GatsbyLink to='#' replace>
+          On this page
+        </GatsbyLink>
       </h6>
       <ProgressIndicator
         vertical
         currentIndex={currentIndex}
         spaceEqually
-        onChange={(t) => navigate(flatTOC[t].url)}>
+        onChange={(t) => navigate(flatTOC[t].url, { replace: true })}>
         {flatTOC.map(({ title }, index) => {
           return <ProgressStep label={title} key={index} />;
     ***REMOVED***)}

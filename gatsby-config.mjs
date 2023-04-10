@@ -4,21 +4,25 @@ import { fileURLToPath } from 'url';
 import remarkInsertJSX from './src/plugins/remark-insert-jsx.mjs';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
+import rehypePrettyCode from 'rehype-pretty-code';
+import createTheme from './src/helpers/create-theme.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const { NODE_ENV, IMAGE_OPTIMIZATION } = process.env;
 
+const syntaxTheme = createTheme();
+
 const isDev = NODE_ENV === 'development';
 const optimizeImages = IMAGE_OPTIMIZATION === 'true';
 
 const config = {
   siteMetadata: {
-    title: `VAD-VAR`,
+    title: `VEST Workshops`,
     description: 'Experiential Selling Workshops for IBM Ecosystem Partners',
     image: '',
-    siteUrl: `https://ibm-build-lab.github.io`
+    siteUrl: `https://vest.buildlab.cloud/`
   },
   graphqlTypegen: true,
   plugins: [
@@ -30,6 +34,7 @@ const config = {
         mdxOptions: {
           remarkPlugins: [remarkGfm, remarkInsertJSX],
           rehypePlugins: [
+            [rehypePrettyCode, { theme: syntaxTheme }],
             rehypeSlug,
             [rehypeAutolinkHeadings, { behavior: 'wrap', test: ['h2', 'h3', 'h4', 'h5', 'h6'] }]
           ]
