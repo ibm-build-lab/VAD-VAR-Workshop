@@ -33,8 +33,6 @@ const colors = {
   '--custom-theme-indigo': '#7a88cf',
   '--custom-theme-bright-cyan': cyan[10],
 
-  // gray[50]
-
   '--custom-theme-gray-10-alt': gray[50],
   '--custom-theme-gray-10': gray[50],
   '--custom-theme-gray-9': gray[50],

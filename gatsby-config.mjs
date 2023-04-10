@@ -79,7 +79,9 @@ const config = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
-        path: `${__dirname}/content`
+        path: `${__dirname}/content`,
+        ignore: isDev ? [] : ['**/test.md'],
+        fastHash: true
   ***REMOVED***,
       __key: 'content'
 ***REMOVED***
