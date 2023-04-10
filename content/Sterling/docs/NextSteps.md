@@ -1,3 +1,8 @@
+---
+title: 6. Next Steps
+toc: false
+---
+
 # Next Steps
 
 This guide provided information to assist IBM and Business Partner sellers and technical sellers in installing and demonstrating IBM Sterling B2B Integrator. Links to specific B2Bi topics were provided throughout this demonstration guide.

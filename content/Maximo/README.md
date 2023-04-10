@@ -1,5 +1,6 @@
 ---
 title: Maximo
+toc: false
 ---
 
 # Maximo Technical Sales Workshop

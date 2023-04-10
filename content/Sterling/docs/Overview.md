@@ -1,3 +1,8 @@
+---
+title: 1. Overview
+toc: false
+---
+
 # Lab Overview
 
 This demonstration assumes users have at least a basic knowledge of IBM Sterling B2B Integrator. Before proceeding, it is highly encouraged that users complete the IBM Sterling Data Exchange Level 2 learning plan. The plan is accessible to IBM employees [here](https://yourlearning.ibm.com/activity/PLAN-C22C127B3AEC)and Business Partners [here](https://learn.ibm.com/course/view.php?id=11891).

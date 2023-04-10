@@ -57,7 +57,11 @@ const NavBar = (props: NavBarProps) => {
             <CustomSideNavItem href={slug} isActive={isActive} depth={depth + 1}>
               {name}
             </CustomSideNavItem>
-            <NavBar navItems={children} currentPath={currentPath} depth={depth + 1} />
+            <NavBar
+              navItems={children.sort((a, b) => a.name.localeCompare(b.name))}
+              currentPath={currentPath}
+              depth={depth + 1}
+            />
           </SideNavMenu>
 ***REMOVED*** : (
           <CustomSideNavItem key={index} href={slug} isActive={isActive} depth={depth}>

@@ -1,3 +1,7 @@
+---
+toc: false
+---
+
 # Experiential Selling Workshops for IBM Ecosystem Partners (VADs/VARs)
 
 This repo contains content for IBM Ecosystem partners (primarily our Value-Added Distributors and Value-Added Resellers) to build experiential sales skills with various IBM products.

@@ -1,3 +1,7 @@
+---
+title: 7. Bonus - Configure Endpoint
+---
+
 # Bonus - Configure a secured HTTP endpoint
 
 In this activity, you will learn more about how services and adapters can be configured in Sterling B2B Integrator. Like the Configuration Part 1 activity, since the steps in this lab will deploy a new service in the cluster, the first section where the service is configured will be performed once per cluster.

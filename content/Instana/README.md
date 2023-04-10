@@ -1,5 +1,6 @@
 ---
 title: Instana
+toc: false
 ---
 
 # Instana Technical Sales Workshop
