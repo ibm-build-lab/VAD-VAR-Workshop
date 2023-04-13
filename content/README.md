@@ -31,3 +31,7 @@ Currently, the workshops require additional content which introduces them in an 
 ### Sterling
 
 - [Sterling Data Exchange workshop](/sterling)
+
+### QRadar
+
+- [QRadar XDR Connect workshop](/qradar)
