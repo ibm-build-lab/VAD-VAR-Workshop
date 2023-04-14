@@ -17,6 +17,8 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 ## Labs
 
+- **[Introduction](/sterling/docs/)**
+
 - **[Lab Overview](/sterling/docs/overview)**
 
 - **[Demo prep - OpenShift Logon](/sterling/docs/demopreparation-ocplogon/)**
@@ -30,5 +32,3 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - **[Next Steps - take the quiz!](/sterling/docs/nextsteps)**
 
 - **[Bonus - Configuring a secured HTTP endpoint](/sterling/docs/httpadapter)**
-
-As an alternative to the individual labs linked above there is also a [formatted workshop](https://timroster.github.io/SalesEnablement-SterlingDataExchange-L3/) with the same basic content.
