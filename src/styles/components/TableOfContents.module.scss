@@ -1,7 +1,7 @@
 .toc {
   position: sticky;
   top: calc($header-height + $spacing-07);
-  height: calc(100vh - $header-height - $spacing-07);
+  height: calc(100vh - $header-height - $spacing-07 - $spacing-07);
   width: $sidebar-width;
   overflow-y: auto;
 

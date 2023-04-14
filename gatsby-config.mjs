@@ -18,6 +18,7 @@ const isDev = NODE_ENV === 'development';
 const optimizeImages = IMAGE_OPTIMIZATION === 'true';
 
 const config = {
+  trailingSlash: 'never',
   siteMetadata: {
     title: `VEST Workshops`,
     description: 'Experiential Selling Workshops for IBM Ecosystem Partners',

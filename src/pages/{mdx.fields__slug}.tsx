@@ -15,6 +15,7 @@ import {
 import { Props } from '@mdx-js/react/lib';
 import type { HeadProps } from 'gatsby';
 import SEO from '../components/SEO';
+import cx from 'classnames';
 
 interface TOCItem {
   title: string;
@@ -100,14 +101,14 @@ const ContentTemplate = (props: ContentTemplateProps) => {
     return () => observer.disconnect();
   }, []);
 
+  const showToc = (toc === null ? true : toc) && tocItems;
+
   return (
     <>
-      <article className={styles.article} ref={articleRef}>
+      <article className={cx(styles.article, !showToc && styles.noToc)} ref={articleRef}>
         <MDXWrapper>{children}</MDXWrapper>
       </article>
-      {(toc === null ? true : toc) && tocItems && (
-        <TableOfContents itemsList={tocItems} maxDepth={1} currSection={currSection} />
-      )}
+      {showToc && <TableOfContents itemsList={tocItems} maxDepth={1} currSection={currSection} />}
     </>
   );
 };
