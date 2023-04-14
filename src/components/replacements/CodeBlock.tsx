@@ -14,7 +14,7 @@ const CodeBlock = (props: CodeBlockProps) => {
 
   const codeSnippetProps = {
     type: isInline ? 'inline' : 'multi',
-    className: cx(styles.code, !isInline && styles.codeBlock),
+    className: cx(styles.code, (!isInline && styles.codeBlock) || styles.codeInline),
     ...((!isInline && {
       wrapText: true
 ***REMOVED***) ||

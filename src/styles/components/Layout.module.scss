@@ -5,9 +5,9 @@
 }
 
 .content {
-  padding: 0;
   display: flex;
-  margin-top: 0 !important;
+  gap: $spacing-08;
+  justify-content: center;
 }
 
 @include apply-lesser-than('md') {

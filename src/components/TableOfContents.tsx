@@ -64,7 +64,6 @@ const TableOfContents = (props: TableOfContentsProps) => {
       <ProgressIndicator
         vertical
         currentIndex={currentIndex}
-        spaceEqually
         onChange={(t) => navigate(flatTOC[t].url, { replace: true })}>
         {flatTOC.map(({ title }, index) => {
           return <ProgressStep label={title} key={index} />;

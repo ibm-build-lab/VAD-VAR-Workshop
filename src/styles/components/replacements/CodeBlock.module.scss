@@ -1,12 +1,11 @@
 .code {
   font-size: 0.7rem;
   padding: $spacing-01;
-  max-width: 100%;
+  max-width: inherit;
 }
 
 .codeBlock {
   box-sizing: border-box;
-
   padding: $spacing-04;
   margin-bottom: $spacing-06;
 
@@ -15,6 +14,15 @@
   }
 
   & pre {
-    padding-bottom: 0 !important;
+    padding-bottom: $spacing-01 !important;
+  }
+}
+.codeInline {
+ 
+
+  & * {
+    display: flex;
+    white-space: normal !important;
+    word-wrap: break-word;
   }
 }
