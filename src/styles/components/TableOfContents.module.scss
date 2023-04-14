@@ -1,15 +1,9 @@
 .toc {
-  @include theme($themes-g10);
-  border-left: 1px solid $cool-gray-20;
-  background-color: $gray-10;
-
   position: sticky;
-  top: $header-height;
-  height: calc(100vh - $header-height);
-  min-width: 300px;
+  top: calc($header-height + $spacing-07);
+  height: calc(100vh - $header-height - $spacing-07);
+  width: $sidebar-width;
   overflow-y: auto;
-  padding: $spacing-07;
-  flex-grow: 1;
 
   & .tocHeader {
     & > a {

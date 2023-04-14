@@ -6,7 +6,7 @@ updated: 2023-04-06
 
 # Content Formatting
 
-Below are various examples to show how various Markdown will be displayed on a page. This page is mostly a means to test content formatting and custom UI elements but does also contain some explanations as to how some of the content formatting is handled as well.
+Below are various examples to show how Markdown content will be displayed on a page. This page is mostly a means to test content formatting and custom UI elements but does also contain some explanations as to how some of the content formatting is handled as well.
 
 ## Standard Markdown Formatting
 
@@ -30,7 +30,7 @@ Given we use MDX as a means to parse our Markdown content this means we can inse
 
 ### Quiz Alert
 
-This component is used as a means to denotes a certain section of the content may be on a quiz. Use of this component is easy as it requires no props but does allow of `text` string to customize the message. To insert it into Markdown the syntax is simply:
+This component is used as a means to denote a certain section of the content may be on a quiz. Use of this component is easy as it requires no props but does allow a `text` string to customize the message.
 
 Example use:
 
@@ -58,7 +58,7 @@ Syntax highlighting is handled via [rehype-pretty-code](https://rehype-pretty-co
 
 This is some standard `inline code` than can exist.
 
-We can even syntax highlight some inline code in `js`. This is an array `[1, 2, 3]{:js}` and is written in Markdown as `[1, 2, 3]{:js}`.
+We can even syntax highlight some inline code. This is an array `[1, 2, 3]{:js}` highlighted as `js` code.
 
 ### Code Blocks
 
@@ -93,6 +93,10 @@ chmod +X test.sh
 
 echo 'This is a test'
 ```
+
+Really long inline code:
+
+`https://www.ibm.com/products/watson-assistant/demos/lendyr/demo.html?integrationID=ID_HERE&region=REGION_HERE&serviceInstanceID=ID_HERE`
 
 Here's an example of some really long code in `json`:
 
