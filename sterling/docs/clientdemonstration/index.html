@@ -12,62 +12,62 @@
 <ol>
 <li>
 <p>Return to the OpenShift web console and click on the <strong>sterling-fg-b2bi-asi-internal-route</strong> route on the <strong>Routes</strong> page.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266086.9421375719/OS_InternalRoute1.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583682.5261592810/OS_InternalRoute1.png" alt="image"/></span>
 </li>
 <li>
 <p>Select the <strong>Host</strong> field, right click, and click <strong>Copy</strong>.</p>
 <p>Note, the example below was captured using Firefox on MacOS. Others browser menus options may be labeled differently.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266086.9421375720/OS_InternalRoute2.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583686.52611592811/OS_InternalRoute2.png" alt="image"/></span>
 </li>
 <li>
 <p>Open the FileZilla application on local computer.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266018.9421375655/FileZilla.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583614.52271592746/FileZilla.png" alt="image"/></span>
 </li>
 <li>
-<p>Click the <strong>FileZilla Site Manager</strong> <span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266014.9421375645/FZSiteManagerIcon.png" alt="image"/></span> icon.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266018.9421375656/FileZillaSiteManager.png" alt="image"/></span>
+<p>Click the <strong>FileZilla Site Manager</strong> <span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583610.52251592736/FZSiteManagerIcon.png" alt="image"/></span> icon.</p>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583614.52271592747/FileZillaSiteManager.png" alt="image"/></span>
 </li>
 <li>
 <p>Click the <strong>New site</strong> button.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266014.9421375647/FZ_NewSiteButton.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583610.52251592738/FZ_NewSiteButton.png" alt="image"/></span>
 </li>
 <li>
 <p>Enter <strong>B2BGateway</strong> for the <strong>New Site</strong> name and press enter.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266014.9421375648/FZ_NewSiteName.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583610.52251592739/FZ_NewSiteName.png" alt="image"/></span>
 </li>
 <li>
 <p>Select <strong>SFTP - Secure File Transfer Protocol</strong> on the <strong>Protocol</strong> pull-down menu.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266018.9421375651/FZ_NewSiteProtocol.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583614.52271592742/FZ_NewSiteProtocol.png" alt="image"/></span>
 </li>
 <li>
 <p>Paste the <strong>hostname</strong> copied from the OpenShift Route in step 2 into the <strong>Host</strong> field.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266014.9421375649/FZ_NewSitePasteHost.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583610.52251592740/FZ_NewSitePasteHost.png" alt="image"/></span>
 </li>
 <li>
 <p>Enter the <strong>port number</strong> of the <strong>sterling-fg-b2bi-asi-backend-svc</strong> service in the <strong>Port</strong> field.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266014.9421375650/FZ_NewSitePort.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583610.52251592741/FZ_NewSitePort.png" alt="image"/></span>
 <blockquote class="BlockQuote-module--blockQuote--410c9"><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M17 22L17 14 13 14 13 16 15 16 15 22 12 22 12 24 20 24 20 22 17 22zM16 8a1.5 1.5 0 101.5 1.5A1.5 1.5 0 0016 8z"></path><path d="M26,28H6a2.0023,2.0023,0,0,1-2-2V6A2.0023,2.0023,0,0,1,6,4H26a2.0023,2.0023,0,0,1,2,2V26A2.0023,2.0023,0,0,1,26,28ZM6,6V26H26V6Z"></path></svg>
 <p>&quot;Don&#x27;t remember the port number?&quot; The port number can be found in the details of the <strong>sterling-fg-b2bi-asi-backend-svc</strong> service (under Networking -&gt; Services) in the OpenShift web console - use <strong>adapters-1&#x27;s</strong> <strong>Node port</strong>.</p>
 </blockquote>
 </li>
 <li>
 <p>Enter <strong>bb-partner2</strong> in the <strong>User</strong> field and <strong>password</strong> in the <strong>Password</strong> field and click the <strong>Connect</strong> button.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415265982.9421375569/BB_FZ_NewSiteUserPassword.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583578.52081592660/BB_FZ_NewSiteUserPassword.png" alt="image"/></span>
 <blockquote class="BlockQuote-module--blockQuote--410c9"><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M17 22L17 14 13 14 13 16 15 16 15 22 12 22 12 24 20 24 20 22 17 22zM16 8a1.5 1.5 0 101.5 1.5A1.5 1.5 0 0016 8z"></path><path d="M26,28H6a2.0023,2.0023,0,0,1-2-2V6A2.0023,2.0023,0,0,1,6,4H26a2.0023,2.0023,0,0,1,2,2V26A2.0023,2.0023,0,0,1,26,28ZM6,6V26H26V6Z"></path></svg>
 <p>If you have told FileZilla not to save passwords, you will see a warning about the login process being changed from &#x27;Normal&#x27; to &#x27;Ask for password&#x27;. This is ok and you will just be prompted for the password for <strong>bb-partner2</strong> when connecting to the SFTP server.</p>
 </blockquote>
 </li>
 <li>
 <p>Check the <strong>Always trust this host, add this key to cache</strong> checkbox and click <strong>OK</strong> on the <strong>Unknown host key</strong> pop-up window.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266018.9421375653/FZ_UKnknownHostKey.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583614.52271592744/FZ_UKnknownHostKey.png" alt="image"/></span>
 </li>
 <li>
 <p>Notice the connection is established and the <strong>Remote site</strong> shows no files.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266014.9421375646/FZ_Connected.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583610.52251592737/FZ_Connected.png" alt="image"/></span>
 </li>
 <li>
 <p>At this time, it is recommended to have both FileZilla and the OpenShift web console both visible at the same time (either split on a single screen or using multiple monitors).</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266086.9421375718/OS_FZ_splitScreen.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583682.5261592809/OS_FZ_splitScreen.png" alt="image"/></span>
 </li>
 <li>
 <p>Create or download the 2 sample files that will be transferred between partner1 and partner2. Since the templates created earlier allow for any file names to be transferred it does not matter what files are used. It is suggested to use small files so the transfers happen quickly. Feel free to download these two sample invoice files. In most browsers, select the link names below, right click on the links, and click <strong>Save link as</strong> to the local Downloads directory.</p>
@@ -85,38 +85,38 @@
 <ol>
 <li>
 <p>In the OpenShift web console click the link to open the link to the <strong>sterling-fg-b2bi-asi-internal-route-myfg</strong> route.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266090.9421375721/OS_Route-MyFG.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583686.52611592812/OS_Route-MyFG.png" alt="image"/></span>
 </li>
 <li>
 <p>Enter <strong>bb-partner1</strong> in the <strong>User name</strong> field, <strong>password</strong> in the <strong>Password</strong> field, and then click <strong>Log in</strong>.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415265990.9421375575/BB_MyFG_login.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583586.52121592666/BB_MyFG_login.png" alt="image"/></span>
 </li>
 <li>
-<p>Click the hamburger menu icon <span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266066.9421375693/MyFG_HamburgerIcon.png" alt="image"/></span> at top left and click <strong>Uploads</strong>.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266070.9421375697/MyFG_UploadsMenu.png" alt="image"/></span>
+<p>Click the hamburger menu icon <span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583662.5251592784/MyFG_HamburgerIcon.png" alt="image"/></span> at top left and click <strong>Uploads</strong>.</p>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583666.52511592788/MyFG_UploadsMenu.png" alt="image"/></span>
 </li>
 <li>
 <p>Click the <strong>/</strong> directory in left-hand panel.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266066.9421375689/MyFG_DirectorySelect.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583662.5251592780/MyFG_DirectorySelect.png" alt="image"/></span>
 </li>
 <li>
 <p>Click the <strong>select</strong> link in the <strong>Upload to /</strong> panel.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266066.9421375696/MyFG_UploadPanel.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583666.52511592787/MyFG_UploadPanel.png" alt="image"/></span>
 </li>
 <li>
 <p>Click the <strong>SampleInvoice1.xml</strong> file in the <strong>Downloads</strong> directory and click <strong>Open</strong>.</p>
 <blockquote class="BlockQuote-module--blockQuote--410c9"><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M17 22L17 14 13 14 13 16 15 16 15 22 12 22 12 24 20 24 20 22 17 22zM16 8a1.5 1.5 0 101.5 1.5A1.5 1.5 0 0016 8z"></path><path d="M26,28H6a2.0023,2.0023,0,0,1-2-2V6A2.0023,2.0023,0,0,1,6,4H26a2.0023,2.0023,0,0,1,2,2V26A2.0023,2.0023,0,0,1,26,28ZM6,6V26H26V6Z"></path></svg>
 <p>Navigate to the directory where the sample invoice files were downloaded or pick another file to transfer. Do not transfer any file with confidential or personal information. The image above was captured using Firefox on MacOS, other browsers and operating system combinations may look different.</p>
 </blockquote>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266066.9421375694/MyFG_UploadFileDialog.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583662.5251592785/MyFG_UploadFileDialog.png" alt="image"/></span>
 </li>
 <li>
 <p>Verify in the <strong>myFileGateway</strong> application that the file transferred successfully.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415265986.9421375574/BB_MyFG_UploadFileTransferSuccess.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583582.5211592665/BB_MyFG_UploadFileTransferSuccess.png" alt="image"/></span>
 </li>
 <li>
 <p>Verify in <strong>FileZilla</strong> that <strong>bb-partner2</strong> received the file.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415265986.9421375571/BB_FZ_UploadFileTransferSuccess.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583582.5211592662/BB_FZ_UploadFileTransferSuccess.png" alt="image"/></span>
 <blockquote class="BlockQuote-module--blockQuote--410c9"><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M17 22L17 14 13 14 13 16 15 16 15 22 12 22 12 24 20 24 20 22 17 22zM16 8a1.5 1.5 0 101.5 1.5A1.5 1.5 0 0016 8z"></path><path d="M26,28H6a2.0023,2.0023,0,0,1-2-2V6A2.0023,2.0023,0,0,1,6,4H26a2.0023,2.0023,0,0,1,2,2V26A2.0023,2.0023,0,0,1,26,28ZM6,6V26H26V6Z"></path></svg>
 <p>The file size shown in <strong>IBM Sterling My File Gateway 2.0</strong> is in kilobytes (KB) and in <strong>FileZilla</strong> the file size is displayed in bytes, but they are the same and the file transfer was successful.</p>
 </blockquote>
@@ -126,20 +126,20 @@
 <h2 id="view-the-details-of-the-file-transfer-in-ibm-sterling-my-file-gateway-20"><a href="/sterling/docs/clientdemonstration/#view-the-details-of-the-file-transfer-in-ibm-sterling-my-file-gateway-20">View the details of the file transfer in <strong>IBM Sterling My File Gateway 2.0</strong></a></h2>
 <ol>
 <li>
-<p>Click <strong>File activity</strong> under the hamburger menu icon <span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266066.9421375693/MyFG_HamburgerIcon.png" alt="image"/></span>.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415266066.9421375692/MyFG_FileActivityMenu.png" alt="image"/></span>
+<p>Click <strong>File activity</strong> under the hamburger menu icon <span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583662.5251592784/MyFG_HamburgerIcon.png" alt="image"/></span>.</p>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583662.5251592783/MyFG_FileActivityMenu.png" alt="image"/></span>
 </li>
 <li>
 <p>Click the link for the recently uploaded file: <strong>SampleInvoice1.xml</strong>.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415265986.9421375572/BB_MyFG_FileActivity.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583582.5211592663/BB_MyFG_FileActivity.png" alt="image"/></span>
 </li>
 <li>
 <p>Review the events that occurred during the file transfer.</p>
-<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681415265986.9421375573/BB_MyFG_FileActivityDetails.png" alt="image"/></span>
+<span class="ImageWrapper-module--imageWrapper--d6d53"><img src="/1681488583582.5211592664/BB_MyFG_FileActivityDetails.png" alt="image"/></span>
 <p>Notice events <strong>FG_0503</strong> and <strong>FG_0504</strong> show the <strong>BB Passthrough</strong> channel template was used to properly route the transferred file to <strong>bb-partner2</strong>.</p>
-<p>:green_circle: There is a quiz question related to the events of a successful file transfer. A screen capture of all the events and event numbers will help answer the question.</p>
 </li>
 </ol>
+<blockquote class="BlockQuote-module--blockQuote--410c9 BlockQuote-module--altBlock--bb07e"><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M22,22v6H6V4H16V2H6A2,2,0,0,0,4,4V28a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V22Z"></path><path d="M29.54,5.76l-3.3-3.3a1.6,1.6,0,0,0-2.24,0l-14,14V22h5.53l14-14a1.6,1.6,0,0,0,0-2.24ZM14.7,20H12V17.3l9.44-9.45,2.71,2.71ZM25.56,9.15,22.85,6.44l2.27-2.27,2.71,2.71Z"></path></svg><p>There is a quiz question related to the events of a successful file transfer. A screen capture of all the events and event numbers will help answer the question.</p></blockquote>
 <p>For additional demonstrations, consider the following:</p>
 <ul>
 <li>Transfer a file from <strong>bb-partner2</strong> to <strong>bb-partner1</strong>.</li>
@@ -149,6 +149,6 @@
           <script
             id="gatsby-chunk-mapping"
           >
-            window.___chunkMapping="{\"app\":[\"/app-caf20862354dd31c8c48.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-ebdba75fd7d0700c3806.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md-10d997e101a76cdbf420.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md-07c277c15845dcbb7df6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md-4bf80f0345ec84547d8c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md-31fab4fe8b51d0f61996.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md-2c3668e81909a700e828.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md-c448b7bfa4eab7178db6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md-67fc8b1ae800bd4994f8.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md-64c70297dd1efe25b350.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md-77428fc175089190538c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md-bf43048a36cdd0655653.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md-9990d179bd59d001b74f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md-34114e566288eb55926b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md-6f68653cf7131dfa4aac.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md-5c2d9ae4289e6afed35a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-readme-md-674230903964c5ba7d77.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-client-demonstration-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-client-demonstration-md-ab17c64decfcdb4e150e.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-configuration-part-1-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-configuration-part-1-md-6d21dccebe53b997a727.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-configuration-part-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-configuration-part-2-md-581f1c22687ba0a0def3.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-demo-preparation-oc-plogon-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-demo-preparation-oc-plogon-md-e47e980d75ea6b1b7e3f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-http-adapter-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-http-adapter-md-3cf0f09859c746e12ffa.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-index-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-index-md-49be91bbfac8fd6c5251.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-next-steps-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-next-steps-md-3b37dcdc3a932901263c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-overview-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-overview-md-59f8993d2524e65785c9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md-6e5708f14f8071e459df.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md-24d064e0d5b843158ef3.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md-8bc8b316f3696cb4f219.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md-d7563cc2c33663f923f4.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md-a49368b0f5061d2570e3.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md-2b358a718971eaad162f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-md-700c280f552b070e2a49.js\"]}";
+            window.___chunkMapping="{\"app\":[\"/app-caf20862354dd31c8c48.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-ebdba75fd7d0700c3806.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md-385610cb76375195fdca.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md-ec30503c8ea984a8c245.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md-541a9dce6529c22af2a6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md-f6c618e6e6a3ce2de354.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md-2c3668e81909a700e828.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md-9af588bb9f365e3ac3f8.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md-2add239dc6aba5fbbcb2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md-06698516002ebf1f1b8f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md-77428fc175089190538c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md-18999af1918e8eb90632.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md-f8ecccec6c63a0095fdb.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md-3e084dcfabe6c3ebfb37.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md-076af3d014690fdf80ee.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md-5c2d9ae4289e6afed35a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-readme-md-78c10bb70e31945d609a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-client-demonstration-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-client-demonstration-md-ae951e2ede690e131d2c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-configuration-part-1-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-configuration-part-1-md-9c968ead1baedca9d72a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-configuration-part-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-configuration-part-2-md-165b85a8b67e84f60a7e.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-demo-preparation-oc-plogon-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-demo-preparation-oc-plogon-md-e1b74961cb894d2dd683.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-http-adapter-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-http-adapter-md-5cad8a46aa9b5e4df983.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-index-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-index-md-3c6d02a34cdc2a6de505.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-next-steps-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-next-steps-md-3b37dcdc3a932901263c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-overview-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-docs-overview-md-aa1e29b2a6f7dab81df1.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md-eaea1b9f499ac2d167f6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md-9a9fa6fde6bc0d7d256d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md-a52d634e22d3f838c684.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md-c843a575d1396ed8a2c5.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md-9c4839e46587cf6e5025.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md-9eb2c2d69c3744dd20ab.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-md-700c280f552b070e2a49.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="c09aaeabac8faccbeeea";</script><script src="/webpack-runtime-8505b49fd5970e140878.js" async></script><script src="/framework-95c35b56e4733717bdbb.js" async></script><script src="/58b694ca-47954de2c824a18e8208.js" async></script><script src="/app-caf20862354dd31c8c48.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="c41c4cbdca61310abc4a";</script><script src="/webpack-runtime-8362b2b11c5f5ead0b2d.js" async></script><script src="/framework-95c35b56e4733717bdbb.js" async></script><script src="/58b694ca-47954de2c824a18e8208.js" async></script><script src="/app-caf20862354dd31c8c48.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
