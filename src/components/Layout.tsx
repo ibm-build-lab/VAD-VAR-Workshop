@@ -1,8 +1,8 @@
-import '../styles/globals.scss';
-import * as styles from '../styles/components/Layout.module.scss';
-import React from 'react';
-import SideBar from './SideBar';
 import { Content, Header, HeaderName } from '@carbon/react';
+import React from 'react';
+import * as styles from '../styles/components/Layout.module.scss';
+import '../styles/globals.scss';
+import TreeSideBar from './TreeSideBar';
 import useSiteMetadata from '../hooks/useSiteMetaData';
 
 interface LayoutProps {
@@ -18,7 +18,7 @@ const Layout = (props: LayoutProps) => {
       <Header aria-label='IBM Platform Name' className={styles.header}>
         <HeaderName prefix='IBM'>{title}</HeaderName>
       </Header>
-      <SideBar />
+      <TreeSideBar />
       <Content className={styles.content}>{children}</Content>
     </>
   );
