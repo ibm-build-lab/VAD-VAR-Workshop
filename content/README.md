@@ -12,7 +12,7 @@ These workshops have been customized from the Technical Sales badge labs in orde
 
 Currently, the workshops require additional content which introduces them in an in-person workshop setting and provides configuration detail that's not found directly in the repos. This content may be added at a later date.
 
-:green_circle: Pay special attention to sections marked with green circles. These topics are very important for the L3 quiz. :green_circle:
+<QuizAlert text="Pay special attention to information enclosed in notes like this because they will be important for the L3 quiz" />
 
 ## Products
 

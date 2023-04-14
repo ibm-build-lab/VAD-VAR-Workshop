@@ -196,11 +196,11 @@ You will now add a group to make mapping selecting users into a routing channel 
 
    ![image](_attachments/FG_TemplateCreateProducerUnknownMenuSelect.png)
 
-1. Enter **.+** in the **File name pattern as regular expression** field and then click **Save**.
+1. Enter .+ in the **File name pattern as regular expression** field and then click **Save**.
 
    ![image](_attachments/FG_TemplateCreateProducerUnknownPattern.png)
 
-   Setting the file pattern to the regular expression **.+** allows for file names of one or more characters.
+   Setting the file pattern to the regular expression .+ allows for file names of one or more characters.
 
 1. Click **Next>>** on the **Producer** page.
 
@@ -223,6 +223,8 @@ You will now add a group to make mapping selecting users into a routing channel 
    ```text
    ${ProducerFileName}
    ```
+
+   <br/>
 
 1. Review the help information regarding file name formats by hovering over the **File name format** entry field and then click **Save**.
 
