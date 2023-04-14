@@ -18,10 +18,7 @@
   }
 }
 .codeInline {
- 
-
   & * {
-    display: flex;
     white-space: normal !important;
     word-wrap: break-word;
   }

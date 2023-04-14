@@ -2,6 +2,7 @@
   width: min(100%, 975px);
   line-height: 1.5;
   box-sizing: border-box;
+  margin-top: $header-height;
 
   @include headings {
     margin-bottom: $spacing-02;
@@ -65,5 +66,15 @@
 
   ol {
     list-style-type: number;
+  }
+}
+
+.noToc {
+  margin-right: calc($sidebar-width + $spacing-08);
+}
+
+@include apply-lesser-than('lg') {
+  .noToc {
+    margin-right: 0;
   }
 }
