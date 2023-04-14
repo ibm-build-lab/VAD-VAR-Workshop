@@ -1,3 +1,7 @@
+---
+title: 3. B2Bi Configuration Pt. 1
+---
+
 # B2Bi Configuration Part 1
 
 In this chapter, learn how to configure a Secure File Transfer Protocol (SFTP) adapter using the containerized B2Bi deployment.
@@ -18,7 +22,7 @@ The B2Bi dashboard runs as an application on Red Hat OpenShift. These steps will
 
    ![image](_attachments/OSRoutesMenu.png)
 
-   :green_circle: Several BP quiz questions will come from the **OpenShift web console**. When taking the BP quiz make sure the ITZ environment is still active and keep this demonstration script open.
+   <QuizAlert text="Several BP quiz questions will come from the OpenShift web console. When taking the BP quiz make sure the environment is still active and keep this demonstration script open." />
 
 1. Notice all the routes that are currently defined in the b2bi Project, there are 15 of them
 
@@ -38,7 +42,7 @@ The B2Bi dashboard runs as an application on Red Hat OpenShift. These steps will
 
 First, a **SSH Host Identity** needs to be created. The Host Identity Key is a Private/Public key pair used to identify the Application SFTP Server to remote clients. Note, for this demonstration, default values will be used where possible, but production deployments may use other values depending on client requirements.
 
-:green_circle: Several BP quiz questions will come from the **B2Bi dashboard**. When taking the BP quiz make sure the ITZ environment is still active and keep this demonstration script open.
+<QuizAlert text="Several BP quiz questions will come from the B2Bi dashboard. When taking the BP quiz make sure the environment is still active and keep this demonstration script open." />
 
 1. Click the **Deployment** menu item in left-hand menu bar.
 

@@ -1,9 +1,9 @@
 import { Content, Header, HeaderName } from '@carbon/react';
 import React from 'react';
-import useSiteMetadata from '../helpers/useSiteMetaData';
 import * as styles from '../styles/components/Layout.module.scss';
 import '../styles/globals.scss';
 import TreeSideBar from './TreeSideBar';
+import useSiteMetadata from '../hooks/useSiteMetaData';
 
 interface LayoutProps {
   children: React.ReactNode;

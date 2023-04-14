@@ -1,3 +1,7 @@
+---
+title: 5. Client Demonstration
+---
+
 # Client Demonstration
 
 It is now time for the partners to transfer files between each other using the newly created B2Bi SFTP adapter, but first one last setup step to make the demonstration more visually exciting.
@@ -138,7 +142,7 @@ To configure FileZilla for **partner2** both the File Gateway route address and 
 
    Notice events **FG_0503** and **FG_0504** show the **BB Passthrough** channel template was used to properly route the transferred file to **bb-partner2**.
 
-   :green_circle: There is a quiz question related to the events of a successful file transfer. A screen capture of all the events and event numbers will help answer the question.
+<QuizAlert text="There is a quiz question related to the events of a successful file transfer. A screen capture of all the events and event numbers will help answer the question." />
 
 For additional demonstrations, consider the following:
 

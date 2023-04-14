@@ -46,18 +46,29 @@ const CustomSideNavItem = (props: SmartLinkProps) => {
 // build side nav recursively
 const NavBar = (props: NavBarProps) => {
   const { navItems, currentPath, depth = 0 } = props;
+  const splitCurrPath = cleanPathString(currentPath).split('/');
 
   return (
     <>
       {navItems.map((item, index) => {
         const { children, name, slug } = item;
-        const isActive = cleanPathString(slug) === currentPath;
+        const cleanSlug = cleanPathString(slug);
+        const isActive = cleanSlug === currentPath;
+
         return children.length > 0 ? (
-          <SideNavMenu key={index} title={name} defaultExpanded className={styles[`col${depth}`]}>
+          <SideNavMenu
+            key={index}
+            title={name}
+            defaultExpanded={cleanSlug === splitCurrPath.slice(0, depth + 1).join('/')}
+            className={styles[`col${depth}`]}>
             <CustomSideNavItem href={slug} isActive={isActive} depth={depth + 1}>
               {name}
             </CustomSideNavItem>
-            <NavBar navItems={children} currentPath={currentPath} depth={depth + 1} />
+            <NavBar
+              navItems={children.sort((a, b) => a.name.localeCompare(b.name))}
+              currentPath={currentPath}
+              depth={depth + 1}
+            />
           </SideNavMenu>
 ***REMOVED*** : (
           <CustomSideNavItem key={index} href={slug} isActive={isActive} depth={depth}>

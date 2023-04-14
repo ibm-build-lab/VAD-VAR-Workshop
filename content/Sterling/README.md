@@ -1,5 +1,6 @@
 ---
 title: Sterling Data Exchange
+toc: false
 ---
 
 # Sterling Data Exchange Technical Sales Workshop
@@ -16,18 +17,18 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 ## Labs
 
-- **[Lab Overview](docs/Overview.md)**
+- **[Introduction](/sterling/docs/)**
 
-- **[Demo prep - OpenShift Logon](docs/DemoPreparation-OCPlogon.md)**
+- **[Lab Overview](/sterling/docs/overview)**
 
-- **[Configuration part 1](docs/ConfigurationPart1.md)**
+- **[Demo prep - OpenShift Logon](/sterling/docs/demopreparation-ocplogon/)**
 
-- **[Configuration part 2](docs/ConfigurationPart2.md)**
+- **[Configuration part 1](/sterling/docs/configurationpart1)**
 
-- **[Client Demo Script and Practice](docs/ClientDemonstration.md)**
+- **[Configuration part 2](/sterling/docs/configurationpart2)**
 
-- **[Next Steps - take the quiz!](docs/NextSteps.md)**
+- **[Client Demo Script and Practice](/sterling/docs/clientdemonstration)**
 
-- **[Bonus - Configuring a secured HTTP endpoint](docs/HTTPAdapter.md)**
+- **[Next Steps - take the quiz!](/sterling/docs/nextsteps)**
 
-As an alternative to the individual labs linked above there is also a [formatted workshop](https://timroster.github.io/SalesEnablement-SterlingDataExchange-L3/) with the same basic content.
+- **[Bonus - Configuring a secured HTTP endpoint](/sterling/docs/httpadapter)**

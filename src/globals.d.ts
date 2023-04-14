@@ -14,6 +14,7 @@ declare module '@carbon/react/icons' {
     InformationSquare: React.FC<IconProps>;
     Calendar: React.FC<IconProps>;
     Time: React.FC<IconProps>;
+    RequestQuote: React.FC<IconProps>;
   };
   export = icon;
 }

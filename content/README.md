@@ -1,3 +1,7 @@
+---
+toc: false
+---
+
 # Experiential Selling Workshops for IBM Ecosystem Partners (VADs/VARs)
 
 This repo contains content for IBM Ecosystem partners (primarily our Value-Added Distributors and Value-Added Resellers) to build experiential sales skills with various IBM products.
@@ -8,22 +12,26 @@ These workshops have been customized from the Technical Sales badge labs in orde
 
 Currently, the workshops require additional content which introduces them in an in-person workshop setting and provides configuration detail that's not found directly in the repos. This content may be added at a later date.
 
-:green_circle: Pay special attention to sections marked with green circles. These topics are very important for the L3 quiz. :green_circle:
+<QuizAlert text="Pay special attention to information enclosed in notes like this because they will be important for the L3 quiz" />
 
 ## Products
 
 ### Instana
 
-- [Instana workshop](/content/Instana/)
+- [Instana workshop](/instana/)
 
 ### Watson
 
-- [Watson Assistant workshop](/content/Watson)
+- [Watson Assistant workshop](/watson)
 
 ### Maximo
 
-- [Maximo Application Suite (including separate Visual Inspection material) workshop](/content/Maximo)
+- [Maximo Application Suite (including separate Visual Inspection material) workshop](/maximo)
 
 ### Sterling
 
-- [Sterling Data Exchange workshop](/content/Sterling)
+- [Sterling Data Exchange workshop](/sterling)
+
+### QRadar
+
+- [QRadar XDR Connect workshop](/qradar)
