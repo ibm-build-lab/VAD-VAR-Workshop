@@ -7,14 +7,18 @@ declare module '*.scss' {
 declare module '@carbon/react/icons' {
   interface IconProps {
     size?: number;
+    fill?: string;
   }
 
+  type CarbonIcon = React.FC<IconProps>;
+
   const icon: {
-    Launch: React.FC<IconProps>;
-    InformationSquare: React.FC<IconProps>;
-    Calendar: React.FC<IconProps>;
-    Time: React.FC<IconProps>;
-    RequestQuote: React.FC<IconProps>;
+    Launch: CarbonIcon;
+    InformationSquare: CarbonIcon;
+    Calendar: CarbonIcon;
+    Time: CarbonIcon;
+    RequestQuote: CarbonIcon;
+    EarthFilled: CarbonIcon;
   };
   export = icon;
 }
@@ -22,6 +26,12 @@ declare module '@carbon/react/icons' {
 declare module '@carbon/react' {
   import types from 'carbon-components-react';
 
+  interface StackProps {
+    className?: string;
+    gap?: number;
+    orientation?: 'horizontal' | 'vertical';
+  }
+
   export function usePrefix();
-  export = types;
+  export = { ...types, Stack = React.FC<StackProps> };
 }
