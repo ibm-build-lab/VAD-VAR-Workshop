@@ -34,7 +34,7 @@ Ahora que el canal ha sido creado, podemos proceder a decidir qué alertas quere
 
 5. En **Scope**, elija la opción **Application Perspective** y, a continuación, seleccione la opción **Add Application Perspectives**. A continuación, **Select All** las opciones.
 
-Observación: Si utiliza Instana para observar varias aplicaciones, puede añadir alertas de varias aplicaciones diferentes a la vez, o puede crear varias alertas, una para cada perspectiva.
+_Observación: Si utiliza Instana para observar varias aplicaciones, puede añadir alertas de varias aplicaciones diferentes a la vez, o puede crear varias alertas, una para cada perspectiva._
 
 ![Perspectiva de la aplicación](./images/104/app-perspective.png)
 

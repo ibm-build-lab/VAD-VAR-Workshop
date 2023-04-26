@@ -100,16 +100,17 @@ _**Observación**: el filtro de búsqueda acepta muchas consultas diferentes, in
 Ahora echemos un vistazo a otra característica clave de Instana, el descubrimiento automatizado de dependencias gracias en parte a la característica Dynamic Graph que forma parte de Instana.
 
 1.  Para empezar, seleccione el icono Aplicaciones en el menú de navegación de la izquierda
+
     ![](./images/101/image-011-app-menu.png)
 
 2.  A continuación seleccione `robot-shop with frontend` de la lista de aplicaciones disponibles, una vez completado debería tener una vista de la aplicación por default como la que se muestra a continuación. A continuación, seleccione la pestaña `Dependencies` tab
 
     ![](./images/101/image-012-dep-menu.png)
 
-3.  Vea las dependencias de las aplicaciones de la tienda robótica descubiertas por Instana. Las llamadas entre servicios y puntos finales se representan mediante líneas, y el tráfico en directo se representa visualmente como puntos en movimiento a lo largo de la conexión. 🟢
+3.  Vea las dependencias de las aplicaciones de la tienda robótica descubiertas por Instana. Las llamadas entre servicios y puntos finales se representan mediante líneas, y el tráfico en directo se representa visualmente como puntos en movimiento a lo largo de la conexión.
 
-    ![](./images/101/image-013-dep-tab.png)
+🟢 ![d](./images/101/image-013-dep-tab.png)
 
-4.  Al visualizar un servicio específico para su aplicación, observe que las conexiones a otros servicios aparecen oscurecidas, lo que le permite centrarse en el servicio o las conexiones que le interesa investigar. 🟢
+4.  Al visualizar un servicio específico para su aplicación, observe que las conexiones a otros servicios aparecen oscurecidas, lo que le permite centrarse en el servicio o las conexiones que le interesa investigar.
 
-    ![](./images/101/image-014-dep-highlight.png)
+🟢 ![d](./images/101/image-014-dep-highlight.png)

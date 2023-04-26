@@ -4,7 +4,7 @@ timeToComplete: 30
 updated: 2023-03-31
 ---
 
-# 102:Monitorización de llamadas + Rastreo de aplicaciones
+# 102: Monitorización de llamadas + Rastreo de aplicaciones
 
 ## Navegue hasta las dependencias de RobotShop
 
@@ -71,7 +71,7 @@ Ahora podemos ver una cronología del incidente, el evento que provocó que Inst
 
    ![](./images/102/incident_details_screen.png)
 
-   🟢 Hay una pregunta relacionada con el widget **Related Eevents**.
+   🟢 Hay una pregunta relacionada con el widget **Related Events**.
 
 ## Depurando el incidente inspeccionando las llamadas
 
