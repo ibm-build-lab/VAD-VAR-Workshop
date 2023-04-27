@@ -15,12 +15,12 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 ## Labs
 
-- **[Module 101: What, Why, How?](/instana/101)**
+- **[Module 101: What, Why, How?](/instana/101-English)**
 
-- **[Module 102: Monitor Calls + App Tracing](/instana/102)**
+- **[Module 102: Monitor Calls + App Tracing](/instana/102-English)**
 
-- **[Module 103: Load Testing + Chaos](/instana/103)**
+- **[Module 103: Load Testing + Chaos](/instana/103-English)**
 
-- **[Module 104: Alerting + Synthetics (L3+ content)](/instana/104)**
+- **[Module 104: Alerting + Synthetics (L3+ content)](/instana/104-English)**
 
 - **Optional Module 105: Additional Instana features (L3+ content)**
