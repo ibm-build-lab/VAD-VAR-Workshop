@@ -78,3 +78,73 @@ Explore the plan results further. Notice how the optimized migration will make t
 ## Custom Dashboards
 
 A custom dashboard is a view that you create to focus on specific aspects of your environment. You can create dashboards that are private to your user account, or dashboards that are visible to any user who logs into your Turbonomic deployment.
+
+### Creating a Custom Dashboard
+
+1. To create a custom dashboard, Click on **Dashboards** as shown below:
+
+![](./images/105/turbo_custom_dashboard1.png)
+
+2. Click **NEW DASHBOARD** to add a new dashboard to your Turbonomic session.
+
+![](./images/105/turbo_custom_dashboard2.png)
+
+3. The dashboard appears with a default name and without chart widgets. The time range in the Time Slider is set to 24 hours by default as shown below
+
+![](./images/105/turbo_custom_dashboard3.gif)
+
+**Click 1** from the above screenshot and give a name that describes the dashboard. If you will share the dashboard with all Turbonomic users, the name will help them decide whether to view it.
+
+Next **Click 2** (Gear to change the setting) from above screenshot to set the dashboard access.
+
+Dashboard access can be:
+
+- Only Me – The dashboard is only available to your Turbonomic user account.
+
+- All Users – Every Turbonomic user can see this dashboard.
+
+![](./images/105/turbo_custom_dashboard4.png)
+
+4. Add chart widgets to the dashboard by clicking **ADD WIDGET**
+
+We will customize this dashboard to show certain metrics for **Quote Of The Day** Application.
+
+#### Adding Health Widget
+
+1. You will see the default screen with multiple Widget Galleries as shown below:
+
+![](./images/105/turbo_custom_dashboard_main.png)
+
+2. Type **Health** in the search bar as shown below and select that widget by clicking anywhere in the white space.
+
+![](./images/105/turbo_custom_dashboard_health.png)
+
+3. Under **Scope**, **Click to change scope**
+
+![](./images/105/turbo_custom_dashboard_health1.png)
+
+4. Next, **Select Scope**, ensure you are on Entities and select **Business Application** as shown in the below image. Follow the order (1 to 3)
+
+![](./images/105/turbo_custom_dashboard_health2.png)
+
+5. Next, Select **Quote of the Day** from **Business Application**.
+
+![](./images/105/turbo_custom_dashboard_health3.png)
+
+6. Next, select **Application Components** from **Entity Type**
+
+![](./images/105/turbo_custom_dashboard_health4.png)
+
+7. Next, select **Ring Chart** from **Chart Type**
+
+![](./images/105/turbo_custom_dashboard_health5.png)
+
+8. Next, click **Update Preview** button to see the result and then click **Save** at the bottom
+
+![](./images/105/turbo_custom_dashboard_health7.png)
+
+9. Finally, you will see your widget published on your Custom Dashboard
+
+![](./images/105/turbo_custom_dashboard_health8.png)
+
+To learn more about the chart types / widgets available, please review our documentation by [clicking here](https://www.ibm.com/docs/en/tarm/8.8.3?topic=views-chart-types).
