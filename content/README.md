@@ -20,6 +20,10 @@ Currently, the workshops require additional content which introduces them in an 
 
 - [Instana workshop](/instana/)
 
+### Turbonomic
+
+- [Turbonomic workshop](/turbonomic/)
+
 ### Watson
 
 - [Watson Assistant workshop](/watson)
