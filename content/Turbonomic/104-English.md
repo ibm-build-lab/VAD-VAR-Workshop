@@ -110,3 +110,77 @@ In this section you will take actions that will optimize your on-prem resources 
 Once you approve of all details and ensure this action is safe, click on **Execute Action** button at the bottom of the details page. Once you execute this action, Turbonomic will use API calls to adjust the virtual memory of this VM for you. So you won't need to log into your vCenter environment. If the action is executed successfully, you will see a green checkmark next to that action.
 
 ![](./images/104/optimize2.png)
+
+## Turbonomic Policies
+
+You’ve learned how to take actions manually. But what if we wanted to automate this? Once we validate that it is safe and good to take a certain action and we trust it, we can allow the entities to act on their own decisions.
+
+### What are policies in Turbonomic?
+
+Policies set business rules to control how Turbonomic analyzes resource allocation, how it displays resource status, and how it recommends or executes actions. Turbonomic includes two fundamental types of policies:
+
+#### Placement Policies
+
+To optimize your environment, Turbonomic recommends actions to place workloads such as applications, containers, or VMs on their providers. Turbonomic can recommend these actions or execute them automatically.
+
+#### Automation Policies
+
+As Turbonomic gathers metrics, it compares the metric values against specified constraint and capacity settings to determine whether a metric exhibits a problem, and what actions to recommend or execute to avoid a problem. Turbonomic uses Automation Policies to guide its analysis and resulting actions.
+
+### Explore existing policies
+
+_As a reminder, please ensure that you are logged in with an **Administrator** user. If you havent't logged out of your demo users, you will not have the necessary permissions to run through the labs_
+
+1. Navigate to **Settings**, then **Policies**. In this page, you will see a list of all existing policies.
+
+![](./images/104/policy1.png)
+
+2. From the list to the left, select **Defaults**. This will show a list of all system default policies.
+
+_**Tip**: These default policies remain effective unless user creates a policy affecting same resources but with different criteria. User defined policy overrides the default policy._
+
+![](./images/104/defaultpolicy.png)
+
+3. Scroll down in default policy list and click on **Storage Defaults**. Now notice that this policy sets the **Resize** action acceptance are set to recommend. This will result in all resize actions generated for storage to be set to recommend only and be unable to execute within Turbonomic.
+
+![](./images/104/storage1.png)
+
+4. Respectively, for the action that you explored for a cloud VM where you could manually accept and execute it within Turbonomic, there is a default policy set that defines that:
+
+Navigate to **Virtual Machine Defaults** policy from the default policies list. You can see that all cloud scaling actions are set to **Manual** which allows them to be accepted and executed (assuming there are no prerequisites for them).
+
+![](./images/104/vm1.png)
+
+### Create an Automation Policy
+
+You will create an automation policy to define how you'd like Turbonomic to treat actions as they appear. Keep in mind, user defined policies will override system default policies that affect the same entity.
+
+#### Move Virtual Machines
+
+1. Navigate to **Policies** from **Settings**. Then click on **New Automation Policy** on the top right side of the window.
+
+![](./images/104/auto1.png)
+
+2. Scroll down the list and click on **Virtual Machine**. Once you do the Policy Editor window will appear.
+
+![](./images/104/vmmove1.png)
+
+3. In the Policy editor, give your policy a unique name like vm_move_YourInitials. Then under **Scope** click on **Select group of virtual machines**. This will specify which group of VMs will be affected by this policy.
+
+![](./images/104/vmmove2.png)
+
+4. In the search bar type _vsphere_ and from the list select the group named **vsphere-DC20-DC01_VM** and click on **Select**.
+
+![](./images/104/vmmove3.png)
+
+5. In the policy editor, then click on **Automation and Orchestration** then click on **Add Action**. This section will allow you to select which actions are accepted and how. Fill out the information as shown below. The automation piece is applied when you select **Automatic** for **Action Acceptance**. You can leave the orchestration settings as default then click **Submit**
+
+![](./images/104/vmmove4.png)
+
+6. In your policy editor, double check for entered information and the click on **Save Policy**. You may recieve a message saying it may take 10 minutes for the policy to become effective, click **Yes** to proceed.
+
+![](./images/104/vmmove5.png)
+
+7. To check if your policy is created try searching for your policy's name in the list. you can make changes and edit it as necessary from here as well.
+
+![](./images/104/vmmove6.png)
