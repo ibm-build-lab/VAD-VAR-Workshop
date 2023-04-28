@@ -1,26 +1,26 @@
 ---
-title: Instana
+title: Turbonomic
 toc: false
 ---
 
-# Instana Technical Sales Workshop
+# Turbonomic Technical Sales Workshop
 
-This workshop covers Instana in breadth and depth, with content appropriate for both brand-new learners and experienced practitioners.
+This workshop covers Turbonomic in breadth and depth, with content appropriate for both brand-new learners and experienced practitioners.
 
-After completing these labs in a workshop session, you'll be able to earn the [Instana by IBM Technical Sales Intermediate badge](https://www.credly.com/org/ibm/badge/instana-by-ibm-technical-sales-intermediate) based on a quiz about this workshop.
+After completing these labs in a workshop session, you'll be able to earn the [Turbonomic by IBM Technical Sales Intermediate badge](https://www.credly.com/earner/earned/badge/a9e44d40-7bf0-4ae5-be58-5b5b93137d6c) based on a quiz about this workshop.
 
 ## Prerequisites
 
-- Recommended: Level 1 and Level 2 material for the [Instana by IBM Sales Foundation badge](https://www.credly.com/org/ibm/badge/instana-by-ibm-sales-foundation).
+- Recommended: Level 1 and Level 2 material for the [Turbonomic by IBM Sales Foundation badge](https://www.credly.com/org/ibm/badge/turbonomic-by-ibm-technical-sales-intermediate).
 
 ## Labs
 
-- **[Module 101: What, Why, How?](/instana/101-English)**
+- **[Module 101: Turbonomic Overview and lab environment](/turbonomic/101)**
 
-- **[Module 102: Monitor Calls + App Tracing](/instana/102-English)**
+- **[Module 102: Connect Instana to Turbonomic](/turbonomic/102)**
 
-- **[Module 103: Load Testing + Chaos](/instana/103-English)**
+- **[Module 103: Explore Turbonomic UI](/turbonomic/103-English)**
 
-- **[Module 104: Alerting + Synthetics (L3+ content)](/instana/104-English)**
+- **[Module 104: Turbonomic Actions and Policies (L3+ content)](/turbonomic/104-English)**
 
-- **Optional Module 105: Additional Instana features (L3+ content)**
+- **[Module 105: Planning and Custom Dashboards (L3+ content)](/turbonomic/104-English)**
