@@ -11,7 +11,6 @@ const useSupportedLanguages = () => {
 
   useEffect(() => {
     const path = cleanPathString(pathname).split('/').slice(1).join('/');
-    console.log(path);
     const matchRegex = new RegExp(`^.*/${path}$`);
     const langs = nodes
       .map((node) => node.fields.slug)
@@ -19,9 +18,6 @@ const useSupportedLanguages = () => {
         return matchRegex.test(slug);
       })
       .map((slug: string) => slug.split('/')[0]);
-
-    console.log(langs);
-
     setSupported(supportedLangs.filter((lng) => langs.includes(lng.id)));
   }, [pathname]);
 

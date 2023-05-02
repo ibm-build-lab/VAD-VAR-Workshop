@@ -38,7 +38,7 @@ const LanguageSelector = () => {
       <Dropdown
         onChange={onChange}
         disabled={langs.length <= 1}
-        id='en'
+        id='lang-dropdown-menu'
         size='sm'
         label='Select Language'
         items={langs}
