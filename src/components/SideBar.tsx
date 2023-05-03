@@ -1,12 +1,13 @@
 import * as styles from '../styles/components/SideBar.module.scss';
 import { Link } from 'gatsby';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { cleanPathString } from '../helpers/helpers';
 import cx from 'classnames';
 import { useLocation } from '@reach/router';
 import { usePrefix } from '@carbon/react';
 import { SideNav, SideNavDivider, SideNavItems, SideNavLinkText, SideNavMenu } from '@carbon/react';
 import buildSiteMap, { MenuItem } from '../helpers/buildSiteMap';
+import { useCurrentLanguage } from '../hooks';
 
 interface SmartLinkProps {
   href: string;
@@ -59,7 +60,7 @@ const NavBar = (props: NavBarProps) => {
           <SideNavMenu
             key={index}
             title={name}
-            defaultExpanded={cleanSlug === splitCurrPath.slice(0, depth + 1).join('/')}
+            defaultExpanded={cleanSlug === splitCurrPath.slice(0, depth + 2).join('/')}
             className={styles[`col${depth}`]}>
             <CustomSideNavItem href={slug} isActive={isActive} depth={depth + 1}>
               {name}
@@ -81,9 +82,20 @@ const NavBar = (props: NavBarProps) => {
 };
 
 const SideBar = () => {
-  const siteMap = buildSiteMap();
+  const [siteMap, setSiteMap] = useState<MenuItem[]>([]);
   const { pathname } = useLocation();
+  const currentLanguage = useCurrentLanguage();
+
   const cleanPathName = cleanPathString(pathname);
+  const fullSiteMap = buildSiteMap();
+
+  useEffect(() => {
+    setSiteMap(() =>
+      (fullSiteMap.find((map) => map.root == currentLanguage)?.children || []).sort(
+        (a, b) => a.children.length - b.children.length
+      )
+    );
+  }, [currentLanguage]);
 
   return (
     <SideNav
@@ -93,7 +105,7 @@ const SideBar = () => {
       className={styles.sidebar}
       isChildOfHeader={true}>
       <SideNavItems>
-        <CustomSideNavItem href='/'>Home</CustomSideNavItem>
+        <CustomSideNavItem href={`/${currentLanguage}`}>Home</CustomSideNavItem>
         <SideNavDivider />
         <NavBar navItems={siteMap} currentPath={cleanPathName} />
       </SideNavItems>

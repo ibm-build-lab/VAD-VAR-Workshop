@@ -1,7 +1,16 @@
 .header {
-  @include theme($themes-g100);
+  justify-content: space-between;
   position: sticky;
   top: 0;
+  @include theme($themes-g100);
+}
+
+.headerNav {
+  padding-right: $spacing-05;
+  & li {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .content {
@@ -19,7 +28,7 @@
 
 @include apply-lesser-than('md') {
   .content {
-    margin-left: unset !important;
+    margin-left: 0 !important;
   }
 }
 

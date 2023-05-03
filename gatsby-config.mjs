@@ -81,7 +81,7 @@ const config = {
       options: {
         name: 'content',
         path: `${__dirname}/content`,
-        ignore: isDev ? [] : ['**/test.md'],
+        ignore: isDev ? [] : ['**/test*.md'],
         fastHash: true
   ***REMOVED***,
       __key: 'content'
