@@ -39,3 +39,7 @@ Currently, the workshops require additional content which introduces them in an 
 ### QRadar
 
 - [QRadar XDR Connect workshop](/qradar)
+
+### Envizi
+
+- [Envizi Sustainability Performance Management](/envizi)
