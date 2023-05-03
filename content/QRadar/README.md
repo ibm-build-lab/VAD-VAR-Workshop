@@ -7,7 +7,7 @@ toc: false
 
 This workshop covers IBM QRadar XDR Connect with a use case of diagnosing and triaging a phishing attack on a company employee.
 
-After completing these labs in a workshop session, you'll be able to earn the [IBM QRadar XDR Sales Intermediate badge](https://www.credly.com/org/ibm/badge/qradar-xdr-connect-technical-sales-intermediate) based on a quiz about this workshop.
+After completing these labs in a workshop session, you'll be able to earn the [IBM QRadar XDR Technical Sales Intermediate badge](https://www.credly.com/org/ibm/badge/qradar-xdr-connect-technical-sales-intermediate) based on a quiz about this workshop.
 
 ## Prerequisites
 
