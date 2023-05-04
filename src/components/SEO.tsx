@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import useSiteMetadata from '../hooks/useSiteMetaData';
 
 interface SEOProps {
@@ -11,6 +12,9 @@ interface SEOProps {
 const SEO = (props: SEOProps) => {
   const { title, description, pathname, children } = props;
   const { description: defDescription, title: defTitle, origin } = useSiteMetadata();
+  const {
+    i18n: { language }
+  } = useTranslation();
 
   const seo = {
     title: title || defTitle,
@@ -20,7 +24,7 @@ const SEO = (props: SEOProps) => {
 
   return (
     <>
-      <html lang='en' />
+      <html lang={language} />
       <link
         rel='icon'
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🦺</text></svg>"
