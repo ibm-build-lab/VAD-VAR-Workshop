@@ -17,9 +17,9 @@ After completing these labs in a workshop session, you'll be able to earn the [T
 
 - **[Module 101: Turbonomic Overview and lab environment](/turbonomic/101)**
 
-- **[Module 102: Connect Instana to Turbonomic](/turbonomic/102)**
+- **[Module 102: Explore Turbonomic UI](/turbonomic/102)**
 
-- **[Module 103: Explore Turbonomic UI](/turbonomic/103)**
+- **[Module 103: Connect Instana to Turbonomic](/turbonomic/103)**
 
 - **[Module 104: Turbonomic Actions and Policies (L3+ content)](/turbonomic/104)**
 
