@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import useSiteMetadata from '../hooks/useSiteMetaData';
+import useSiteMetadata from '@hooks/useSiteMetaData';
 
 interface SEOProps {
   title?: string;
