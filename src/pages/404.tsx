@@ -1,19 +1,13 @@
-import * as React from 'react';
-import { HeadFC, Link, PageProps } from 'gatsby';
+import React, { useEffect } from 'react';
+import { HeadFC, Link, PageProps, navigate } from 'gatsby';
 import SEO from '../components/SEO';
 
 const NotFoundPage: React.FC<PageProps> = () => {
-  return (
-    <main>
-      <h1>Page not found</h1>
-      <p>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        <br />
-        <Link to='/'>Go home</Link>.
-      </p>
-    </main>
-  );
+  useEffect(() => {
+    navigate('/en');
+  }, []);
+
+  return null;
 };
 
 export default NotFoundPage;

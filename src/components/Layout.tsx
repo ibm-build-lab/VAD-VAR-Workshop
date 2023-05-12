@@ -1,9 +1,9 @@
 import { Content, Header, HeaderGlobalBar, HeaderName } from '@carbon/react';
 import React from 'react';
-import * as styles from '../styles/components/Layout.module.scss';
-import '../styles/globals.scss';
+import * as styles from '@styles/components/Layout.module.scss';
+import '@styles/globals.scss';
 import SideBar from './SideBar';
-import useSiteMetadata from '../hooks/useSiteMetaData';
+import { useSiteMetadata } from '@hooks/index';
 import LanguageSelector from './LanguageSelector';
 
 interface LayoutProps {

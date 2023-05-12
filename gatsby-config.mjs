@@ -30,6 +30,20 @@ const config = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
+      resolve: 'gatsby-plugin-module-resolver',
+      options: {
+        root: '.',
+        aliases: {
+          i18n: 'i18n',
+          '@components': 'src/components',
+          '@styles': 'src/styles',
+          '@plugins': 'src/plugins',
+          '@hooks': 'src/hooks',
+          '@helpers': 'src/helpers'
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         mdxOptions: {
