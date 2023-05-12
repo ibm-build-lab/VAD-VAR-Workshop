@@ -1,11 +1,11 @@
 import { Dropdown, Stack } from '@carbon/react';
 import React, { useEffect, useState } from 'react';
 import { useLocation } from '@reach/router';
-import { cleanPathString } from '../helpers/helpers';
+import { cleanPathString } from '@helpers/helpers';
 import { navigate } from 'gatsby';
 import { EarthFilled } from '@carbon/react/icons';
-import { useCurrentLanguage, useSupportedLanguages } from '../hooks';
-import { SupportedLanguage, supportedLangs } from '../../i18n';
+import { useCurrentLanguage, useSupportedLanguages } from '@hooks/index';
+import { SupportedLanguage, supportedLangs } from 'i18n';
 
 interface DropdownChangeEvent {
   selectedItem: SupportedLanguage;
