@@ -89,10 +89,12 @@ const SideBar = () => {
   const cleanPathName = cleanPathString(pathname);
   const fullSiteMap = buildSiteMap();
 
+  console.log(fullSiteMap);
+
   useEffect(() => {
     setSiteMap(() =>
-      (fullSiteMap.find((map) => map.root == currentLanguage)?.children || []).sort(
-        (a, b) => a.children.length - b.children.length
+      (fullSiteMap.find((map) => map.root == currentLanguage)?.children || []).sort((a, b) =>
+        a.name.localeCompare(b.name)
       )
     );
   }, [currentLanguage]);
