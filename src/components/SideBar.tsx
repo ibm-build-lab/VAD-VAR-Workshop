@@ -1,13 +1,13 @@
-import * as styles from '../styles/components/SideBar.module.scss';
+import * as styles from '@styles/components/SideBar.module.scss';
 import { Link } from 'gatsby';
 import React, { useEffect, useState } from 'react';
-import { cleanPathString } from '../helpers/helpers';
+import { cleanPathString } from '@helpers/helpers';
 import cx from 'classnames';
 import { useLocation } from '@reach/router';
 import { usePrefix } from '@carbon/react';
 import { SideNav, SideNavDivider, SideNavItems, SideNavLinkText, SideNavMenu } from '@carbon/react';
-import buildSiteMap, { MenuItem } from '../helpers/buildSiteMap';
-import { useCurrentLanguage } from '../hooks';
+import buildSiteMap, { MenuItem } from '@helpers/buildSiteMap';
+import { useCurrentLanguage } from '@hooks/index';
 
 interface SmartLinkProps {
   href: string;
@@ -89,10 +89,12 @@ const SideBar = () => {
   const cleanPathName = cleanPathString(pathname);
   const fullSiteMap = buildSiteMap();
 
+  console.log(fullSiteMap);
+
   useEffect(() => {
     setSiteMap(() =>
-      (fullSiteMap.find((map) => map.root == currentLanguage)?.children || []).sort(
-        (a, b) => a.children.length - b.children.length
+      (fullSiteMap.find((map) => map.root == currentLanguage)?.children || []).sort((a, b) =>
+        a.name.localeCompare(b.name)
       )
     );
   }, [currentLanguage]);
