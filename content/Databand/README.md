@@ -1,5 +1,5 @@
 ---
-title: Data Observability with Databand
+title: Databand
 toc: false
 ---
 

@@ -1,13 +1,13 @@
-import * as styles from '@styles/components/SideBar.module.scss';
+import * as styles from './SideBar.module.scss';
 import { Link } from 'gatsby';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { cleanPathString } from '@helpers/helpers';
 import cx from 'classnames';
 import { useLocation } from '@reach/router';
 import { usePrefix } from '@carbon/react';
 import { SideNav, SideNavDivider, SideNavItems, SideNavLinkText, SideNavMenu } from '@carbon/react';
-import buildSiteMap, { MenuItem } from '@helpers/buildSiteMap';
-import { useCurrentLanguage, useSiteMap } from '@hooks/index';
+import { MenuItem } from '@helpers/buildSiteMap';
+import { useSiteMap } from '@hooks/index';
 
 interface SmartLinkProps {
   href: string;

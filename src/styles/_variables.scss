@@ -1,10 +1,10 @@
-$content-width: 800px;
+$content-width: 1250px;
 $header-height: 48px;
-$sidebar-width: 255px;
+$sidebar-width: 300px;
 
 $breakpoints: (
   'sm': 600px,
   'md': 1000px,
-  'lg': calc($content-width + (($sidebar-width) * 2)),
+  'lg': 1600px,
   'xl': 2000px
 ) !default;

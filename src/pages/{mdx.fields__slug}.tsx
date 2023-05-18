@@ -1,21 +1,12 @@
-import * as styles from '../styles/pages/{mdx.fields__slug}.module.scss';
-import { MDXProvider } from '@mdx-js/react';
+import * as styles from '@styles/pages/{mdx.fields__slug}.module.scss';
 import React, { useEffect, useRef, useState } from 'react';
-import TableOfContents from '../components/TableOfContents';
+import TableOfContents from '@components/TableOfContents';
 import { graphql } from 'gatsby';
-import {
-  BlockQuote,
-  CodeBlock,
-  ImageWrapper,
-  QuizAlert,
-  SmartLink,
-  SubHeader,
-  TableWrapper
-} from '../components/replacements';
-import { Props } from '@mdx-js/react/lib';
 import type { HeadProps } from 'gatsby';
-import SEO from '../components/SEO';
-import cx from 'classnames';
+import SEO from '@components/SEO';
+import MDXWrapper from '@components/MDXWrapper';
+import PageHeader from '@components/PageHeader';
+import ContentWrapper from '@components/ContentWrapper';
 
 interface TOCItem {
   title: string;
@@ -40,37 +31,12 @@ interface ContentTemplateProps {
   children: React.ReactNode;
 }
 
-interface MDXWrapperProps {
-  children: React.ReactNode;
-}
-
-const components: Props['components'] = {
-  table: TableWrapper,
-  a: SmartLink,
-  blockquote: BlockQuote,
-  SubHeader,
-  img: ImageWrapper,
-  code: CodeBlock,
-  QuizAlert: QuizAlert
-};
-
-const MDXWrapper = React.memo(function MDXWrapper({ children }: MDXWrapperProps) {
-  return (
-    <MDXProvider
-      components={{
-        ...components
-  ***REMOVED***}>
-      {children}
-    </MDXProvider>
-  );
-});
-
-const ContentTemplate = (props: ContentTemplateProps) => {
+const Content = (props: ContentTemplateProps) => {
   const {
     data: {
       mdx: {
         tableOfContents: { items: tocItems },
-        frontmatter: { toc = true }
+        frontmatter: { toc = true, title, timeToComplete, updated }
   ***REMOVED***
 ***REMOVED***,
     children
@@ -105,10 +71,13 @@ const ContentTemplate = (props: ContentTemplateProps) => {
 
   return (
     <>
-      <article className={cx(styles.article, !showToc && styles.noToc)} ref={articleRef}>
-        <MDXWrapper>{children}</MDXWrapper>
-      </article>
-      {showToc && <TableOfContents itemsList={tocItems} maxDepth={1} currSection={currSection} />}
+      <PageHeader {...{ timeToComplete, updated }}>{tocItems[0].title || title || ''}</PageHeader>
+      <ContentWrapper className={styles.wrapper}>
+        <article className={styles.article} ref={articleRef}>
+          <MDXWrapper components={{ h1: () => null }}>{children}</MDXWrapper>
+        </article>
+        {showToc && <TableOfContents itemsList={tocItems} maxDepth={2} currSection={currSection} />}
+      </ContentWrapper>
     </>
   );
 };
@@ -116,8 +85,10 @@ const ContentTemplate = (props: ContentTemplateProps) => {
 export const pageQuery = graphql`
   query PostTemplate($id: String!) {
     mdx(id: { eq: $id }) {
-      tableOfContents(maxDepth: 0)
+      tableOfContents(maxDepth: 2)
       frontmatter {
+        timeToComplete
+        updated
         title
         toc
   ***REMOVED***
@@ -140,4 +111,4 @@ export const Head = (props: HeadProps<ContentTemplateProps['data']>) => {
   return <SEO {...{ pathname, title: title || items[0].title || undefined }} />;
 };
 
-export default ContentTemplate;
+export default Content;

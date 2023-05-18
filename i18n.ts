@@ -9,6 +9,22 @@ export interface SupportedLanguage {
 i18n.use(initReactI18next).init({
   fallbackLng: 'en',
   debug: true,
+  resources: {
+    en: {
+      translation: {
+        landingPageTitle: 'Experiential Selling Workshops for IBM Ecosystem Partners',
+        landPageTileUpdated: 'Updated {{date}}',
+        landPageTileTitle: 'Go to {{name}} lab materials'
+  ***REMOVED***
+***REMOVED***,
+    es: {
+      translation: {
+        landingPageTitle: 'Talleres de Venta Experiencial para Socios del Ecosistema IBM',
+        landPageTileUpdated: 'Actualizada {{date}}',
+        landPageTileTitle: 'Ir a los materiales de laboratorio de IBM {{name}}'
+  ***REMOVED***
+***REMOVED***
+  },
   interpolation: {
     escapeValue: false
   }

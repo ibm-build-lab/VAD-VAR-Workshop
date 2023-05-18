@@ -1,7 +1,8 @@
 import React from 'react';
-import * as styles from '../../styles/components/replacements/CodeBlock.module.scss';
+import * as styles from './CodeBlock.module.scss';
 import cx from 'classnames';
-import { CodeSnippet, CodeSnippetMultiProps } from '@carbon/react';
+import { CodeSnippet } from '@carbon/react';
+import { CodeSnippetMultiProps } from 'carbon-components-react';
 
 interface CodeBlockProps extends React.HTMLAttributes<HTMLElement> {
   'data-language'?: string;

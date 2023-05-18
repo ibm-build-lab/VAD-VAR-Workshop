@@ -19,7 +19,8 @@ declare module '@carbon/react/icons' {
     Time: CarbonIcon;
     RequestQuote: CarbonIcon;
     EarthFilled: CarbonIcon;
-    // [className: string]: CarbonIcon;
+    ArrowRight: CarbonIcon;
+    // [name: string]: CarbonIcon;
   };
   export = icon;
 }

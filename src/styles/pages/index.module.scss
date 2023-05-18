@@ -1,0 +1,31 @@
+.content {
+  padding: $spacing-07;
+  position: relative;
+
+  & p {
+    margin-bottom: $spacing-05;
+  }
+}
+
+.tileContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: $spacing-05;
+}
+
+.tile {
+  width: auto !important;
+}
+
+@include apply-lesser-than('md') {
+  .tileContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include apply-lesser-than('sm') {
+  .tileContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

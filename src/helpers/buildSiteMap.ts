@@ -4,6 +4,8 @@ interface SlugItem {
   slug: string;
   title: string;
   locale: string;
+  updated: string;
+  timeToComplete: number;
 }
 
 export interface MenuItem {
@@ -11,6 +13,8 @@ export interface MenuItem {
   slug: string;
   root: string;
   children: MenuItem[];
+  updated: string;
+  timeToComplete: number;
 }
 
 // recursive insert pass by reference
@@ -21,6 +25,8 @@ const insertNested = (array: MenuItem[], splitPath: string[], curr: SlugItem) =>
     array.splice(array.length, 0, {
       name: curr.title,
       slug: `/${curr.slug}`,
+      updated: curr?.updated,
+      timeToComplete: curr?.timeToComplete,
       children: [],
       root: splitPath[0]
 ***REMOVED***);
@@ -39,6 +45,8 @@ const buildSiteMap = () => {
     .map(({ fields, tableOfContents, frontmatter }) => ({
       slug: fields.slug,
       locale: fields.slug.split('/')[0],
+      updated: frontmatter?.updated || '',
+      timeToComplete: frontmatter?.timeToComplete || 0,
       title:
         frontmatter?.title || (tableOfContents?.items && tableOfContents?.items[0]?.title) || ''
 ***REMOVED***))

@@ -1,0 +1,13 @@
+.contentWrapper {
+  padding: $spacing-07;
+  width: min(100%, $content-width);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@include apply-lesser-than('sm') {
+  .contentWrapper {
+    padding: $spacing-05;
+  }
+}

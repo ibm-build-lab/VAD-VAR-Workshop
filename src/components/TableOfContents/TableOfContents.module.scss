@@ -1,0 +1,61 @@
+.toc {
+  position: sticky;
+  top: calc($header-height + $spacing-07);
+  grid-column-start: 3;
+  grid-column-end: 4;
+  justify-content: center;
+  display: flex;
+  height: calc(100vh - $header-height - $spacing-07 - $spacing-07);
+  overflow-y: auto;
+  width: $sidebar-width;
+}
+
+.tocStack {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-01;
+}
+
+.tocHeader {
+  & > a {
+    color: unset;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+***REMOVED***
+  }
+}
+
+.link {
+  @include type-style('body-01');
+  position: relative;
+  display: inline-block;
+  transition: color 100ms;
+  color: currentColor;
+  text-decoration: none;
+
+  margin-left: $spacing-06;
+
+  &:hover {
+    text-decoration: underline;
+  }
+  &:before {
+    content: '\21B3'; //"↳"
+    position: absolute;
+    left: -$spacing-06;
+    color: currentColor;
+    cursor: pointer;
+  }
+}
+
+.activeItem {
+  color: $blue-70;
+  text-decoration: underline;
+}
+
+@include apply-lesser-than('lg') {
+  .toc {
+    display: none;
+  }
+}

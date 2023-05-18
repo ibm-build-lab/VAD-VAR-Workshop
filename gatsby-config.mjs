@@ -1,11 +1,11 @@
 import path from 'path';
 import remarkGfm from 'remark-gfm';
 import { fileURLToPath } from 'url';
-import remarkInsertJSX from './src/plugins/remark-insert-jsx.mjs';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import rehypePrettyCode from 'rehype-pretty-code';
 import createTheme from './src/helpers/create-theme.mjs';
+import rehypeSectionize from '@hbsnow/rehype-sectionize';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -47,11 +47,12 @@ const config = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         mdxOptions: {
-          remarkPlugins: [remarkGfm, remarkInsertJSX],
+          remarkPlugins: [remarkGfm],
           rehypePlugins: [
             [rehypePrettyCode, { theme: syntaxTheme }],
-            rehypeSlug,
-            [rehypeAutolinkHeadings, { behavior: 'wrap', test: ['h2', 'h3', 'h4', 'h5', 'h6'] }]
+            [rehypeSlug, {}],
+            [rehypeAutolinkHeadings, { behavior: 'wrap', test: ['h2', 'h3', 'h4', 'h5', 'h6'] }],
+            [rehypeSectionize, {}]
           ]
     ***REMOVED***,
         gatsbyRemarkPlugins: [

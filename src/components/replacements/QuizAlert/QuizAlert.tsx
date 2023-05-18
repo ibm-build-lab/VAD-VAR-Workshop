@@ -1,5 +1,5 @@
 import React from 'react';
-import BlockQuote from './BlockQuote';
+import BlockQuote from '../BlockQuote';
 
 interface QuizAlertProps {
   text?: string;

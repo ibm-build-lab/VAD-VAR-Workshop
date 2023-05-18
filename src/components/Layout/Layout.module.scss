@@ -14,10 +14,7 @@
 }
 
 .content {
-  display: flex;
-  gap: $spacing-08;
-  justify-content: center;
-  margin-top: 0 !important;
+  padding: 0 !important;
 }
 
 @include apply-lesser-than('lg') {
@@ -29,11 +26,5 @@
 @include apply-lesser-than('md') {
   .content {
     margin-left: 0 !important;
-  }
-}
-
-@include apply-lesser-than('sm') {
-  .content {
-    padding: $spacing-05 !important;
   }
 }

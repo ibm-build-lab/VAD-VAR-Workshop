@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from '../../styles/components/replacements/BlockQuote.module.scss';
+import * as styles from './BlockQuote.module.scss';
 import { InformationSquare, RequestQuote } from '@carbon/react/icons';
 import cx from 'classnames';
 

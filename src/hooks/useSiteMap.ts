@@ -9,9 +9,9 @@ const useSiteMap = () => {
 
   useEffect(() => {
     setSiteMap(() =>
-      (fullSiteMap.find((map) => map.root == currentLanguage)?.children || []).sort((a, b) =>
-        a.name.localeCompare(b.name)
-      )
+      (fullSiteMap.find((map) => map.root == currentLanguage)?.children || [])
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .sort((a) => (a.children.length === 0 ? -1 : 0))
     );
   }, [currentLanguage]);
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from '../../styles/components/replacements/ImageWrapper.module.scss';
+import * as styles from './ImageWrapper.module.scss';
 
 const ImageWrapper = (props: React.ImgHTMLAttributes<HTMLImageElement>) => {
   const { src = '', alt = '' } = props;
