@@ -6,6 +6,8 @@ interface MDXNode {
   };
   frontmatter: {
     title: string;
+    updated?: string;
+    timeToComplete?: number;
   };
   tableOfContents: {
     items: {
@@ -27,6 +29,8 @@ const useAllMDXNodes = (): MDXNode[] => {
       ***REMOVED***
           frontmatter {
             title
+            timeToComplete
+            updated
       ***REMOVED***
           tableOfContents(maxDepth: 1)
     ***REMOVED***

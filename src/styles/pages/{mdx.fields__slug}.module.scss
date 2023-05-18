@@ -1,8 +1,13 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-07;
+}
+
 .article {
-  width: min(100%, 975px);
+  width: min(calc($content-width - $sidebar-width), 100%);
   line-height: 1.5;
   box-sizing: border-box;
-  margin-top: $header-height;
 
   @include headings {
     margin-bottom: $spacing-02;
@@ -17,25 +22,31 @@
 ***REMOVED***
   }
 
-  h1 {
-    @include type-style('heading-05');
-    margin-bottom: $spacing-03;
+  & section[data-heading-rank='2'] {
+    margin-bottom: $spacing-07;
+  }
+
+  & section[data-heading-rank='3'] {
+    margin-bottom: $spacing-06;
+    margin-top: $spacing-05;
+  }
+
+  & section[data-heading-rank='4'] {
+    margin-bottom: $spacing-05;
+    margin-top: $spacing-04;
   }
 
   h2 {
     @include type-style('heading-04');
-    margin-top: $spacing-07;
   }
 
   h3 {
     @include type-style('heading-03');
     font-weight: bold;
-    margin-top: $spacing-06;
   }
 
   h4 {
     @include type-style('heading-02');
-    margin-top: $spacing-05;
   }
 
   span {
@@ -44,7 +55,8 @@
 
   p {
     @include type-style('body-01');
-    margin-bottom: $spacing-03;
+    // font-size: 15px;
+    margin-bottom: $spacing-04;
   }
 
   ul,
@@ -66,15 +78,5 @@
 
   ol {
     list-style-type: number;
-  }
-}
-
-.noToc {
-  margin-right: calc($sidebar-width + $spacing-08);
-}
-
-@include apply-lesser-than('lg') {
-  .noToc {
-    margin-right: 0;
   }
 }

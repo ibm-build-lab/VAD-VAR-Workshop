@@ -1,0 +1,27 @@
+.tileContainer {
+  width: calc($spacing-07 * 10);
+  min-height: calc($spacing-07 * 5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & h3 {
+    margin-bottom: $spacing-01;
+  }
+
+  & small {
+    color: $gray-70;
+    font-size: $spacing-04;
+  }
+}
+
+.bottomStack {
+  & > svg {
+    margin-left: auto;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $spacing-07;
+}

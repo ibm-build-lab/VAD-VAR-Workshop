@@ -5,7 +5,7 @@ import { cleanPathString } from '@helpers/helpers';
 import { navigate } from 'gatsby';
 import { EarthFilled } from '@carbon/react/icons';
 import { useCurrentLanguage, useSupportedLanguages } from '@hooks/index';
-import { SupportedLanguage, supportedLangs } from 'i18n';
+import i18n, { SupportedLanguage, supportedLangs } from 'i18n';
 
 interface DropdownChangeEvent {
   selectedItem: SupportedLanguage;
@@ -25,6 +25,11 @@ const LanguageSelector = () => {
 ***REMOVED*** = evt;
     const splitPat = cleanPathString(location.pathname).split('/');
     splitPat[0] = id;
+
+    if (location.pathname === '/') {
+      i18n.changeLanguage(id);
+      return;
+***REMOVED***
     navigate(`/${splitPat.join('/')}`);
   };
 
@@ -37,7 +42,7 @@ const LanguageSelector = () => {
       <EarthFilled size={20} fill='white' />
       <Dropdown
         onChange={onChange}
-        disabled={langs.length <= 1}
+        disabled={langs.length <= 1 && location.pathname !== '/'}
         id='lang-dropdown-menu'
         size='sm'
         label='Select Language'
