@@ -27,7 +27,7 @@ const PageHeader = React.forwardRef<Element, PageHeaderProps>(
             </Tag>
   ***REMOVED***}
         </div>
-        <h1>{children}</h1>
+        <h1 id='page-header'>{children}</h1>
       </ContentWrapper>
     </div>
   )

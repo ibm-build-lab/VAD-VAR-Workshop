@@ -4,6 +4,8 @@
   background-color: $blue-10;
   gap: $spacing-04;
   margin: $spacing-05 0;
+  border: 1px solid $blue-60;
+  border-left-width: 5px;
 
   & p {
     margin-bottom: 0;
@@ -12,9 +14,15 @@
   & svg {
     height: fit-content;
     flex-shrink: 0;
+    fill: $blue-60;
   }
 }
 
 .altBlock {
   background-color: $green-10;
+  border-color: $green-60;
+
+  & svg {
+    fill: $green-60;
+  }
 }

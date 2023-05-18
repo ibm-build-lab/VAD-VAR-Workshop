@@ -1,5 +1,5 @@
 import * as styles from '@styles/pages/{mdx.fields__slug}.module.scss';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import TableOfContents from '@components/TableOfContents';
 import { graphql } from 'gatsby';
 import type { HeadProps } from 'gatsby';
@@ -7,6 +7,7 @@ import SEO from '@components/SEO';
 import MDXWrapper from '@components/MDXWrapper';
 import PageHeader from '@components/PageHeader';
 import ContentWrapper from '@components/ContentWrapper';
+import cx from 'classnames';
 
 interface TOCItem {
   title: string;
@@ -43,29 +44,7 @@ const Content = (props: ContentTemplateProps) => {
   } = props;
 
   const articleRef = useRef(null);
-  const [currSection, setCurrSection] = useState('');
-
-  useEffect(() => {
-    if (!articleRef.current) return;
-    const headingElements = (articleRef.current as HTMLElement).querySelectorAll('h2,h3,h4,h5');
-
-    const cb: IntersectionObserverCallback = (entries) => {
-      entries.forEach((e: IntersectionObserverEntry) => {
-        if (e.isIntersecting) setCurrSection(e.target.id);
-  ***REMOVED***);
-***REMOVED***;
-
-    const observer = new IntersectionObserver(cb, {
-      rootMargin: '0px 0px -95% 0px',
-      threshold: 0
-***REMOVED***);
-
-    headingElements.forEach((el) => {
-      observer.observe(el);
-***REMOVED***);
-
-    return () => observer.disconnect();
-  }, []);
+  const [currSection] = useState('');
 
   const showToc = (toc === null ? true : toc) && tocItems;
 
@@ -73,7 +52,7 @@ const Content = (props: ContentTemplateProps) => {
     <>
       <PageHeader {...{ timeToComplete, updated }}>{tocItems[0].title || title || ''}</PageHeader>
       <ContentWrapper className={styles.wrapper}>
-        <article className={styles.article} ref={articleRef}>
+        <article className={cx(styles.article, !showToc && styles.noToc)} ref={articleRef}>
           <MDXWrapper components={{ h1: () => null }}>{children}</MDXWrapper>
         </article>
         {showToc && <TableOfContents itemsList={tocItems} maxDepth={2} currSection={currSection} />}

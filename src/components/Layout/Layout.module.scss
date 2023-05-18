@@ -13,8 +13,17 @@
   }
 }
 
+.wrapper {
+  min-height: 100vh;
+  margin-left: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .content {
   padding: 0 !important;
+  padding-top: $header-height !important;
 }
 
 @include apply-lesser-than('lg') {
@@ -26,5 +35,9 @@
 @include apply-lesser-than('md') {
   .content {
     margin-left: 0 !important;
+  }
+
+  .wrapper {
+    margin-left: 0;
   }
 }

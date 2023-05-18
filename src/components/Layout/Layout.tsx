@@ -5,6 +5,7 @@ import '@styles/globals.scss';
 import SideBar from '../SideBar';
 import { useSiteMetadata } from '@hooks/index';
 import LanguageSelector from '../LanguageSelector';
+import Footer from '@components/Footer';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -25,7 +26,10 @@ const Layout = (props: LayoutProps) => {
         </HeaderGlobalBar>
       </Header>
       <SideBar />
-      <Content className={styles.content}>{children}</Content>
+      <div className={styles.wrapper}>
+        <Content className={styles.content}>{children}</Content>
+        <Footer />
+      </div>
     </>
   );
 };
