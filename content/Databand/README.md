@@ -11,7 +11,7 @@ This workshop will teach IBMers and Business Partners about the additional monit
 
 ## Prerequisites
 
-- Access to an IBM Cloud account through your IBMid. This lab uses the `lite` (otherwise known as free) plans for Cloud Pak for Data as a Service on IBM cloud and is best accessed with a personal account. If you do not hav an IBM Cloud account, please [register here](https://cloud.ibm.com/registration) and after receiving the confirmation email, follow the steps in the instructions to activate your account.
+- Access to an IBM Cloud account through your IBMid. This lab uses the `lite` (otherwise known as free) plans for Cloud Pak for Data as a Service on IBM cloud and is best accessed with a personal account. If you do not have an IBM Cloud account, please [register here](https://cloud.ibm.com/registration) and after receiving the confirmation email, follow the steps in the instructions to activate your account.
 
 ## Labs
 
