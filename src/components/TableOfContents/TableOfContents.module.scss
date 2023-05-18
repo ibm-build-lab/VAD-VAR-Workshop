@@ -1,19 +1,27 @@
+:export {
+  headerHeight: $header-height;
+}
+
 .toc {
   position: sticky;
   top: calc($header-height + $spacing-07);
-  grid-column-start: 3;
-  grid-column-end: 4;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
-  height: calc(100vh - $header-height - $spacing-07 - $spacing-07);
+  height: min-content;
   overflow-y: auto;
   width: $sidebar-width;
+  flex-shrink: 0;
+
+  padding: $spacing-05;
+
+  background-color: $gray-10;
+  border: 1px solid $gray-50;
 }
 
 .tocStack {
   display: flex;
   flex-direction: column;
-  gap: $spacing-01;
+  gap: $spacing-02;
 }
 
 .tocHeader {
@@ -35,15 +43,16 @@
   color: currentColor;
   text-decoration: none;
 
-  margin-left: $spacing-06;
+  margin-left: $spacing-05;
 
   &:hover {
     text-decoration: underline;
   }
+
   &:before {
-    content: '\21B3'; //"↳"
+    content: '\21B3';
     position: absolute;
-    left: -$spacing-06;
+    left: -$spacing-05;
     color: currentColor;
     cursor: pointer;
   }
@@ -51,7 +60,6 @@
 
 .activeItem {
   color: $blue-70;
-  text-decoration: underline;
 }
 
 @include apply-lesser-than('lg') {

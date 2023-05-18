@@ -2,6 +2,7 @@ import * as styles from './TableOfContents.module.scss';
 import React, { useMemo } from 'react';
 import { Link as GatsbyLink } from 'gatsby';
 import cx from 'classnames';
+import useCurrentHeading from '@hooks/useCurrentHeading';
 
 interface TableOfContentsProps {
   itemsList: TOCItem[];
@@ -35,13 +36,17 @@ const flattenTOC = (toc: TOCItem[], flatList: FlatTOCItem[] = [], depth = 0): Fl
 };
 
 const TableOfContents = (props: TableOfContentsProps) => {
-  const { itemsList, currSection } = props;
+  const { itemsList } = props;
 
   const flatTOC = useMemo(() => flattenTOC(itemsList[0].items || []), [itemsList]);
 
+  const currentSection = useCurrentHeading('h1[id],h2[id]', {
+    threshold: [0, 1],
+    rootMargin: `-${styles.headerHeight} 0px -90% 0px`
+  });
+
   if (flatTOC.length < 1) return null;
 
-  // url.substring(1) === currSection && styles.activeItem
   return (
     <nav className={styles.toc}>
       <div className={styles.tocStack}>
@@ -53,7 +58,10 @@ const TableOfContents = (props: TableOfContentsProps) => {
 
         {flatTOC.map(({ title, url }, index) => {
           return (
-            <a className={cx(styles.link)} key={index} href={url}>
+            <a
+              className={cx(styles.link, currentSection === url.substring(1) && styles.activeItem)}
+              key={index}
+              href={url}>
               {title}
             </a>
   ***REMOVED***;

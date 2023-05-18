@@ -39,7 +39,7 @@ const LanguageSelector = () => {
 
   return (
     <Stack gap={4} orientation='horizontal' as='li'>
-      <EarthFilled size={20} fill='white' />
+      <EarthFilled size={18} fill='white' />
       <Dropdown
         onChange={onChange}
         disabled={langs.length <= 1 && location.pathname !== '/'}

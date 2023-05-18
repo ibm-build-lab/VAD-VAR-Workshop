@@ -5,6 +5,8 @@ import * as styles from '@styles/pages/index.module.scss';
 import PageHeader from '@components/PageHeader';
 import { useTranslation } from 'react-i18next';
 import ContentWrapper from '@components/ContentWrapper';
+import { marked } from 'marked';
+import { QuizAlert } from '@components/replacements';
 
 const LandingPage = () => {
   const siteMap = useSiteMap();
@@ -14,6 +16,12 @@ const LandingPage = () => {
     <>
       <PageHeader>{t('landingPageTitle')}</PageHeader>
       <ContentWrapper className={styles.content}>
+        <div
+          className={styles.contentText}
+          dangerouslySetInnerHTML={{ __html: marked.parse(t('landingPageContent')) }}
+        />
+        <QuizAlert text={t('landingPageQuizAlert')} />
+        <h2>Products</h2>
         <div className={styles.tileContainer}>
           {siteMap.map((item, index) => {
             const { children = [] } = item;

@@ -1,11 +1,11 @@
 .sidebar {
   @include theme($themes-g10);
-  border-right: 1px solid $cool-gray-20;
+  border-right: 1px solid $gray-20;
 }
 
 .tree {
   @include theme($themes-white);
-  
+
   * > a {
     text-decoration: none;
     color: unset;
