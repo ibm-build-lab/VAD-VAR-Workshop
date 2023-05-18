@@ -1,13 +1,13 @@
-import * as styles from '@styles/components/SideBar.module.scss';
+import * as styles from './SideBar.module.scss';
 import { Link } from 'gatsby';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { cleanPathString } from '@helpers/helpers';
 import cx from 'classnames';
 import { useLocation } from '@reach/router';
 import { usePrefix } from '@carbon/react';
 import { SideNav, SideNavDivider, SideNavItems, SideNavLinkText, SideNavMenu } from '@carbon/react';
-import buildSiteMap, { MenuItem } from '@helpers/buildSiteMap';
-import { useCurrentLanguage } from '@hooks/index';
+import { MenuItem } from '@helpers/buildSiteMap';
+import { useSiteMap } from '@hooks/index';
 
 interface SmartLinkProps {
   href: string;
@@ -82,22 +82,9 @@ const NavBar = (props: NavBarProps) => {
 };
 
 const SideBar = () => {
-  const [siteMap, setSiteMap] = useState<MenuItem[]>([]);
+  const siteMap = useSiteMap();
   const { pathname } = useLocation();
-  const currentLanguage = useCurrentLanguage();
-
   const cleanPathName = cleanPathString(pathname);
-  const fullSiteMap = buildSiteMap();
-
-  console.log(fullSiteMap);
-
-  useEffect(() => {
-    setSiteMap(() =>
-      (fullSiteMap.find((map) => map.root == currentLanguage)?.children || []).sort((a, b) =>
-        a.name.localeCompare(b.name)
-      )
-    );
-  }, [currentLanguage]);
 
   return (
     <SideNav
@@ -107,7 +94,7 @@ const SideBar = () => {
       className={styles.sidebar}
       isChildOfHeader={true}>
       <SideNavItems>
-        <CustomSideNavItem href={`/${currentLanguage}`}>Home</CustomSideNavItem>
+        <CustomSideNavItem href={`/`}>Home</CustomSideNavItem>
         <SideNavDivider />
         <NavBar navItems={siteMap} currentPath={cleanPathName} />
       </SideNavItems>

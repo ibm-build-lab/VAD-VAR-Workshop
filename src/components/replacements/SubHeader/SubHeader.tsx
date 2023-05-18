@@ -1,7 +1,7 @@
 import { Tag } from '@carbon/react';
 import React, { Suspense } from 'react';
 import { Calendar, Time } from '@carbon/react/icons';
-import * as styles from '../../styles/components/replacements/SubHeader.module.scss';
+import * as styles from './SubHeader.module.scss';
 
 interface SubHeaderProps {
   timeToComplete?: number;

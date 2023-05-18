@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from '../../styles/components/replacements/TableWrapper.module.scss';
+import * as styles from './TableWrapper.module.scss';
 
 const TableWrapper: React.FC<React.TableHTMLAttributes<HTMLTableElement>> = (props) => {
   const { children } = props;
