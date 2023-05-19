@@ -1,6 +1,6 @@
 ---
-título: Envizi
-toc: falso
+title: Envizi
+toc: false
 ---
 
 # Curso técnico de ventas sobre gestión del rendimiento de la sostenibilidad de IBM Envizi
