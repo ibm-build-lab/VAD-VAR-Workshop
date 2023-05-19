@@ -1,5 +1,7 @@
 ---
 title: 7. Bonus - Configure Endpoint
+timeToComplete: 30
+updated: 2023-03-24
 ---
 
 # Bonus - Configure a secured HTTP endpoint

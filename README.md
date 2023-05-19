@@ -87,7 +87,9 @@ Frontmatter data is supported out of the box with `gatsby-plugin-mdx`. For use i
 
 Localization for the content is also supported through [react-i18next](https://www.npmjs.com/package/react-i18next).
 
-Since the bulk of the content is written in Markdown for it to be in different languages separate files are needed for each.
+Tokens for localization are stored in the `/translations` folder as JSON files at the project root. If you'd like to localize specific content simply provide a token and consume it in the UI via the `useTranslation()` hook.
+
+However, since the bulk of the content is written in Markdown for it to be in different languages separate files are needed for each.
 
 If you want to declare the language of a file append a locale code to the end of the file in the form of `[filename].[locale-code].md`. This means that content in various languages live next to each other in the file system so they can easily share certain paths.
 

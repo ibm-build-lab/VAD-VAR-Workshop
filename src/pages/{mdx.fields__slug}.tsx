@@ -1,13 +1,13 @@
-import * as styles from '@styles/pages/{mdx.fields__slug}.module.scss';
 import React, { useRef, useState } from 'react';
-import TableOfContents from '@components/TableOfContents';
 import { graphql } from 'gatsby';
 import type { HeadProps } from 'gatsby';
-import SEO from '@components/SEO';
-import MDXWrapper from '@components/MDXWrapper';
-import PageHeader from '@components/PageHeader';
-import ContentWrapper from '@components/ContentWrapper';
 import cx from 'classnames';
+import SEO from '@components/SEO';
+import PageHeader from '@components/PageHeader';
+import MDXWrapper from '@components/MDXWrapper';
+import ContentWrapper from '@components/ContentWrapper';
+import TableOfContents from '@components/TableOfContents';
+import * as styles from '@styles/pages/{mdx.fields__slug}.module.scss';
 
 interface TOCItem {
   title: string;

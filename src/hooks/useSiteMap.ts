@@ -1,6 +1,6 @@
+import { useEffect, useState } from 'react';
 import buildSiteMap, { MenuItem } from '@helpers/buildSiteMap';
 import useCurrentLanguage from './useCurrentLanguage';
-import { useEffect, useState } from 'react';
 
 const useSiteMap = () => {
   const [siteMap, setSiteMap] = useState<MenuItem[]>([]);

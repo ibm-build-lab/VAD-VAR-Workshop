@@ -7,7 +7,7 @@ module.exports = {
       jsx: true
 ***REMOVED***
   },
-  plugins: ['@typescript-eslint', 'react', 'prettier'],
+  plugins: ['@typescript-eslint', 'react', 'prettier', 'import'],
   env: {
     browser: true,
     node: true,
@@ -17,11 +17,17 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier'
+    'prettier',
+    'plugin:import/recommended',
+    'plugin:import/typescript'
   ],
   settings: {
     react: {
       version: 'detect'
+***REMOVED***,
+    'import/resolver': {
+      typescript: true,
+      node: true
 ***REMOVED***
   },
   rules: {
@@ -38,6 +44,10 @@ module.exports = {
         ignoreMemberSort: false,
         memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple']
   ***REMOVED***
+    ],
+    'import/order': [
+      'error',
+      { groups: ['external', 'builtin', 'internal', 'sibling', 'parent', 'index'] }
     ],
     'react/self-closing-comp': [
       'error',

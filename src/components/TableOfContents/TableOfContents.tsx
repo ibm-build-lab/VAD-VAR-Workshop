@@ -1,8 +1,8 @@
-import * as styles from './TableOfContents.module.scss';
 import React, { useMemo } from 'react';
 import { Link as GatsbyLink } from 'gatsby';
 import cx from 'classnames';
 import useCurrentHeading from '@hooks/useCurrentHeading';
+import * as styles from './TableOfContents.module.scss';
 
 interface TableOfContentsProps {
   itemsList: TOCItem[];

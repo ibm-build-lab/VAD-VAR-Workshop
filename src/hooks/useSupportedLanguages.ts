@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import useAllMDXNodes from './useAllMDXNodes';
 import { useLocation } from '@reach/router';
+import useAllMDXNodes from './useAllMDXNodes';
 import { cleanPathString } from '../helpers/helpers';
 import { SupportedLanguage, supportedLangs } from '../../i18n';
 
