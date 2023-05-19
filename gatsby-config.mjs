@@ -1,11 +1,11 @@
-import path from 'path';
 import remarkGfm from 'remark-gfm';
-import { fileURLToPath } from 'url';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import rehypePrettyCode from 'rehype-pretty-code';
-import createTheme from './src/helpers/create-theme.mjs';
 import rehypeSectionize from '@hbsnow/rehype-sectionize';
+import { fileURLToPath } from 'url';
+import path from 'path';
+import createTheme from './src/helpers/create-theme.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

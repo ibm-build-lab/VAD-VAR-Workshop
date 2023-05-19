@@ -1,6 +1,8 @@
 ---
 title: 6. Next Steps
 toc: false
+timeToComplete: 10
+updated: 2023-03-24
 ---
 
 # Next Steps

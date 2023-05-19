@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HeadFC, Link, PageProps, navigate } from 'gatsby';
+import { HeadFC, PageProps, navigate } from 'gatsby';
 import SEO from '../components/SEO';
 
 const NotFoundPage: React.FC<PageProps> = () => {

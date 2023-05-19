@@ -1,28 +1,23 @@
-import React from 'react';
-import * as styles from './CodeBlock.module.scss';
+import React, { HTMLAttributes, isValidElement } from 'react';
 import cx from 'classnames';
 import { CodeSnippet } from '@carbon/react';
-import { CodeSnippetMultiProps } from 'carbon-components-react';
+import * as styles from './CodeBlock.module.scss';
 
-interface CodeBlockProps extends React.HTMLAttributes<HTMLElement> {
+interface CodeBlockProps extends HTMLAttributes<HTMLElement> {
   'data-language'?: string;
 }
 
 const CodeBlock = (props: CodeBlockProps) => {
   const { children } = props;
+  const isInline = props['data-language'] === undefined || isValidElement(children);
 
-  const isInline = props['data-language'] === undefined || React.isValidElement(children);
-
-  const codeSnippetProps = {
+  const codeProps: any = {
     type: isInline ? 'inline' : 'multi',
-    className: cx(styles.code, (!isInline && styles.codeBlock) || styles.codeInline),
-    ...((!isInline && {
-      wrapText: true
-***REMOVED***) ||
-      {})
-  } as CodeSnippetMultiProps;
+    wrapText: isInline,
+    className: cx(styles.code, (!isInline && styles.codeBlock) || styles.codeInline)
+  };
 
-  return <CodeSnippet {...codeSnippetProps}>{children}</CodeSnippet>;
+  return <CodeSnippet {...codeProps}>{children}</CodeSnippet>;
 };
 
 export default CodeBlock;

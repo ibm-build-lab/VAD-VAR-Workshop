@@ -1,5 +1,7 @@
 ---
 title: Visual Inspection - Part 2
+timeToComplete: 30
+updated: 2023-03-24
 ---
 
 # Maximo Visual Inspection (MVI) - Part 2
