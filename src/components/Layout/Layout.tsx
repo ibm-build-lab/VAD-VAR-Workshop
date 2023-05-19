@@ -1,11 +1,11 @@
 import { Content, Header, HeaderGlobalBar, HeaderName } from '@carbon/react';
 import React from 'react';
-import * as styles from './Layout.module.scss';
-import '@styles/globals.scss';
-import SideBar from '../SideBar';
 import { useSiteMetadata } from '@hooks/index';
-import LanguageSelector from '../LanguageSelector';
 import Footer from '@components/Footer';
+import * as styles from './Layout.module.scss';
+import SideBar from '../SideBar';
+import LanguageSelector from '../LanguageSelector';
+import '@styles/globals.scss';
 
 interface LayoutProps {
   children: React.ReactNode;

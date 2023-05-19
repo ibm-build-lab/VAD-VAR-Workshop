@@ -1,5 +1,7 @@
 ---
 title: Application Suite Prereqs
+timeToComplete: 30
+updated: 2023-03-24
 ---
 
 # Maximo Application Suite Lab Prerequisites

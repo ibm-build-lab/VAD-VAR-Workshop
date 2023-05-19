@@ -1,6 +1,8 @@
 ---
 title: 2. Demo Prep
 toc: false
+timeToComplete: 30
+updated: 2023-03-24
 ---
 
 # Demo prep - OpenShift Logon

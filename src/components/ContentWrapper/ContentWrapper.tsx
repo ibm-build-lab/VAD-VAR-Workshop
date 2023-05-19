@@ -1,6 +1,6 @@
 import React from 'react';
-import * as styles from './ContentWrapper.module.scss';
 import cx from 'classnames';
+import * as styles from './ContentWrapper.module.scss';
 
 interface ContentWrapperProps {
   children: React.ReactNode;
