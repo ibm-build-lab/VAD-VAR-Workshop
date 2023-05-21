@@ -25,6 +25,6 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 - **[Technical Sales L3 Badge Quiz](https://learn.ibm.com/course/view.php?id=11879)**
 
-- **[Module 104: Data Management](/envizi/104)**
+- **[Module 104: Data Management (L3+ content)](/envizi/104)**
 
-- **[Module 105: Turbonomic dashboard](/envizi/105)**
+- **[Module 105: Turbonomic dashboard (L3+ content)](/envizi/105)**
