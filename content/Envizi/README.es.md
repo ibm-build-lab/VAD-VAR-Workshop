@@ -22,3 +22,9 @@ Tras completar estos laboratorios en una sesión de curso, podrá obtener la [in
 - **[Módulo 102: Informes alineados](/envizi/102)**
 
 - **[Módulo 102: Capacidades de Ámbito 3](/envizi/103)**
+
+- **[Examen de la insignia L3 de Ventas Técnicas](https://learn.ibm.com/mod/quiz/view.php?id=236302)**
+
+- **[Módulo 104: Gestión de datos (contenido L3+)](/envizi/104)**
+
+- **[Módulo 105: Envizi - Cuadro de mandos de Turbonomic (contenido L3+)](/envizi/105)**
