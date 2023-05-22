@@ -1,3 +1,9 @@
+---
+title: '0. Introduction'
+timeToComplete: 10
+updated: 2023-03-24
+---
+
 # Introduction
 
 Welcome to the IBM Sterling Data Exchange Level 3 demonstration workshop! The goal of this guide is to provide IBM and Business Partner technical sellers with the knowledge and tools to perform hands-on demonstrations of IBM Sterling B2B Integrator.

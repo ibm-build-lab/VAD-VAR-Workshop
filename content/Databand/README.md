@@ -15,6 +15,6 @@ This workshop will teach IBMers and Business Partners about the additional monit
 
 ## Labs
 
-- **[Module 101: Configuration of DataStage flow and Databand setup](/databand/101)**
+- **[Module 101: Configuration of DataStage flow and Databand setup (L3+ content)](/databand/101)**
 
-- **[Module 102: Observing jobs, Configuring Alerts and External Notifications](/databand/102)**
+- **[Module 102: Observing jobs, Configuring Alerts and External Notifications (L3+ content)](/databand/102)**

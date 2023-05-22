@@ -1,6 +1,8 @@
 ---
 title: 1. Overview
 toc: false
+timeToComplete: 10
+updated: 2023-03-24
 ---
 
 # Lab Overview
