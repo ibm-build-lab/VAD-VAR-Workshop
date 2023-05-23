@@ -19,8 +19,8 @@ Después de completar estos laboratorios en una sesión de taller, podrá obtene
 
 - **[Módulo 102: Monitorización de llamadas + App Tracing](/instana/102)**
 
-- **[Módulo 103: Pruebas de carga + Caos](/instana/103)**
+- **[Módulo 103: Alertas + Sintéticos](/instana/103)**
 
-- **[Módulo 104: Alertas + Sintéticos (contenido L3+)](/instana/104)**
+- **Módulo opcional 104: Funciones adicionales de Instana (contenido L3+)**
+  - **[Módulo 104: Pruebas de carga + Caos (contenido L3+)](/instana/104)**
 
-- **Módulo opcional 105: Funciones adicionales de Instana (contenido L3+)**
