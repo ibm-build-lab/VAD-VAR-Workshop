@@ -22,5 +22,4 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - **[Module 103: Alerting + Synthetics](/instana/103)**
 
 - **Optional Module 104+: Additional Instana features (L3+ content)**
-
   - **[Module 104: Load Testing + Chaos (L3+ content)](/instana/104)**

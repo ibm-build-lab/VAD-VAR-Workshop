@@ -22,6 +22,5 @@ Después de completar estos laboratorios en una sesión de taller, podrá obtene
 - **[Módulo 103: Alertas + Sintéticos](/instana/103)**
 
 - **Módulo opcional 104: Funciones adicionales de Instana (contenido L3+)**
-- 
   - **[Módulo 104: Pruebas de carga + Caos (contenido L3+)](/instana/104)**
 
