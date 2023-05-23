@@ -18,10 +18,9 @@ const SmartLink = (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
     );
 
   const isHash = href.startsWith('#');
-  const isFile = href.endsWith('.zip');
 
   let to = href;
-  if (!isHash && !isFile && currLang) {
+  if (!isHash && currLang) {
     to = `/${currLang}${href}`;
   }
 
