@@ -17,8 +17,8 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 ## Labs
 
-- **[Module 101: Sustainability Performance Manager](/EIS-WeatherSolutions/101)**
+- **[Module 101: Sustainability Performance Manager](/envizi/101)**
 
-- **[Module 102: Aligned Reporting](/EIS-WeatherSolutions/102)**
+- **[Module 102: Aligned Reporting](/envizi/102)**
 
 - **[Module 102: Scope 3 Capabilities](/envizi/103)**
