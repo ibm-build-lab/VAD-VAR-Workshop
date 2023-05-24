@@ -1,5 +1,7 @@
 ---
 title: 4. B2Bi Configuration Pt. 2
+timeToComplete: 30
+updated: 2023-03-24
 ---
 
 # B2Bi Configuration Part 2

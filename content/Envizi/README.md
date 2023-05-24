@@ -21,4 +21,10 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 - **[Module 102: Aligned Reporting](/envizi/102)**
 
-- **[Module 102: Scope 3 Capabilities](/envizi/103)**
+- **[Module 103: Scope 3 Capabilities](/envizi/103)**
+
+- **[Technical Sales L3 Badge Quiz](https://learn.ibm.com/mod/quiz/view.php?id=236302)**
+
+- **[Module 104: Data Management (L3+ content)](/envizi/104)**
+
+- **[Module 105: Turbonomic dashboard (L3+ content)](/envizi/105)**

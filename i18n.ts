@@ -1,5 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import * as translations from './translations';
 
 export interface SupportedLanguage {
   id: string;
@@ -11,18 +12,10 @@ i18n.use(initReactI18next).init({
   debug: true,
   resources: {
     en: {
-      translation: {
-        landingPageTitle: 'Experiential Selling Workshops for IBM Ecosystem Partners',
-        landPageTileUpdated: 'Updated {{date}}',
-        landPageTileTitle: 'Go to {{name}} lab materials'
-  ***REMOVED***
+      translation: translations.en
 ***REMOVED***,
     es: {
-      translation: {
-        landingPageTitle: 'Talleres de Venta Experiencial para Socios del Ecosistema IBM',
-        landPageTileUpdated: 'Actualizada {{date}}',
-        landPageTileTitle: 'Ir a los materiales de laboratorio de IBM {{name}}'
-  ***REMOVED***
+      translation: translations.es
 ***REMOVED***
   },
   interpolation: {
@@ -37,7 +30,7 @@ const supportedLangs: SupportedLanguage[] = [
   },
   {
     id: 'es',
-    label: 'Espanol'
+    label: 'Español'
   }
 ];
 

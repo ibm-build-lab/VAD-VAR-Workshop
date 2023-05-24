@@ -1,15 +1,18 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import BlockQuote from '../BlockQuote';
 
 interface QuizAlertProps {
-  text?: string;
+  text?: string | null;
 }
 
 const QuizAlert = (props: QuizAlertProps) => {
-  const { text = 'Parts of this section will be on the quiz' } = props;
+  const { text } = props;
+  const { t } = useTranslation();
+
   return (
     <BlockQuote alt>
-      <p>{text}</p>
+      <p>{text || t('quizAlertDefault')}</p>
     </BlockQuote>
   );
 };

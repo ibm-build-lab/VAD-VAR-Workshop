@@ -1,9 +1,9 @@
 import { Dropdown, Stack } from '@carbon/react';
 import React, { useEffect, useState } from 'react';
 import { useLocation } from '@reach/router';
-import { cleanPathString } from '@helpers/helpers';
 import { navigate } from 'gatsby';
 import { EarthFilled } from '@carbon/react/icons';
+import { cleanPathString } from '@helpers/helpers';
 import { useCurrentLanguage, useSupportedLanguages } from '@hooks/index';
 import i18n, { SupportedLanguage, supportedLangs } from 'i18n';
 
@@ -39,7 +39,7 @@ const LanguageSelector = () => {
 
   return (
     <Stack gap={4} orientation='horizontal' as='li'>
-      <EarthFilled size={20} fill='white' />
+      <EarthFilled size={18} fill='white' />
       <Dropdown
         onChange={onChange}
         disabled={langs.length <= 1 && location.pathname !== '/'}

@@ -1,10 +1,10 @@
 import React from 'react';
 import { navigate } from 'gatsby';
 import { ClickableTile, Tag } from '@carbon/react';
-import * as styles from './ItemTile.module.scss';
 import cx from 'classnames';
 import { ArrowRight, Time } from '@carbon/react/icons';
 import { useTranslation } from 'react-i18next';
+import * as styles from './ItemTile.module.scss';
 
 interface ItemTileProps {
   slug: string;
@@ -35,7 +35,9 @@ const ItemTile = (props: ItemTileProps) => {
         <h3>{name}</h3>
         {lastUpdated && (
           <small>
-            {t('landPageTileUpdated', { date: new Date(lastUpdated).toLocaleDateString() })}
+            {t('landPageTileUpdated', {
+              date: new Date(lastUpdated).toLocaleDateString('en-US', { timeZone: 'EST' })
+        ***REMOVED***)}
           </small>
 ***REMOVED***}
       </div>

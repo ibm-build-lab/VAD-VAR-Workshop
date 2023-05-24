@@ -17,9 +17,10 @@ declare module '@carbon/react/icons' {
     InformationSquare: CarbonIcon;
     Calendar: CarbonIcon;
     Time: CarbonIcon;
-    RequestQuote: CarbonIcon;
+    HelpFilled: CarbonIcon;
     EarthFilled: CarbonIcon;
     ArrowRight: CarbonIcon;
+    InformationFilled: CarbonIcon;
     // [name: string]: CarbonIcon;
   };
   export = icon;

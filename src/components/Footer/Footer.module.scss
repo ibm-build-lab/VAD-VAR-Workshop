@@ -1,0 +1,16 @@
+.footer {
+  border-top: 1px solid $gray-20;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@include apply-lesser-than('md') {
+  .footer {
+    margin-left: 0;
+  }
+}

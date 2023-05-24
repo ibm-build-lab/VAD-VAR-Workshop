@@ -1,17 +1,25 @@
 .content {
-  padding: $spacing-07;
   position: relative;
 
-  & p {
+  & h2 {
     margin-bottom: $spacing-05;
   }
+
+  & p {
+    @include type-style('body-01');
+    margin-bottom: $spacing-04;
+  }
+}
+
+.contentText {
+  margin-bottom: $spacing-07;
 }
 
 .tileContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  gap: $spacing-05;
+  gap: $spacing-02;
 }
 
 .tile {

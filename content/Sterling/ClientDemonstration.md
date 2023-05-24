@@ -1,5 +1,7 @@
 ---
 title: 5. Client Demonstration
+timeToComplete: 30
+updated: 2023-03-24
 ---
 
 # Client Demonstration
