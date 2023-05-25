@@ -2,11 +2,11 @@
 title: EIS
 toc: false
 ---
-# Taller técnico de ventas de IBM Environmental Intelligent Suite
+# Taller técnico de ventas de IBM Environmental Intelligence Suite
 
 IBM Environmental Intelligence Suite (EIS) es una plataforma de clima y sostenibilidad basada en cloud que le permite combinar datos propios y de terceros, geoespaciales, meteorológicos y de IoT para obtener información de negocio y compartir el estado y el rendimiento de los activos, el personal, los servicios y los eventos con las partes interesadas de su organización en tiempo real a través de cuadros de mando intuitivos, mapas, gráficos y alertas.
 
-IBM Environmental Intelligent Suite L3 badge lab, destacando el complemento de operaciones de aviación para IBM Weather Solution.
+IBM Environmental Intelligence Suite L3 badge lab, destacando el complemento de operaciones de aviación para IBM Weather Solution.
 
 Después de completar estos laboratorios en una sesión de taller, podrá obtener la [insignia IBM Environmental Intelligence Suite (EIS) Technical Sales Intermediate](https://www.credly.com/org/ibm/badge/ibm-environmental-intelligence-suite-technical-sales-intermediate) basada en un cuestionario sobre este taller.
 
