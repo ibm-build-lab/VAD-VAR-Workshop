@@ -38,14 +38,14 @@ Assistant keeps things stress free with its <strong>Integrations</strong> page. 
 all your channel integrations and extensions in one place.</p>
 <p>Use the left menu of your assistant to open the Integrations page. It’s at the bottom of the menu,
 so you might not spot it at first:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755500.29641089467/0.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160743.07521090218/0.png" alt=""/></span>
 <p>The Integrations page is organized into three sections (as can be seen below):</p>
 <ol>
 <li>Essential channels — The bedrock of any assistant: Web chat or Phone.</li>
 <li>Extensions — Customize your assistant by connecting to third-party APIs.</li>
 <li>Channels — Deploy your assistant to additional channels, like Slack, Facebook Messenger, or SMS and WhatsApp via Twilio.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089468/1.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160743.07521090219/1.png" alt=""/></span>
 <p>The web chat channel integration is automatically configured for every virtual assistant.
 Organizations that build virtual assistants for the phone, Slack, Microsoft Teams, or other
 channels still tend to use the web chat channel for drafting and testing. Later sections of this lab
@@ -127,57 +127,57 @@ file to your system, and assure the file extension is <strong>.json</strong>; th
 <p><strong>Create a custom extension by uploading the OpenAPI spec to Watson Assistant</strong></p>
 <p>In Watson Assistant, use the left menu to open the <strong>Integrations (1)</strong> page. Then, scroll down and
 click the <strong>Build custom extension (2)</strong> button:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089479/2.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090230/2.png" alt=""/></span>
 <p>This first screen describes what you’ll need to create the extension. Note that the OpenAPI JSON
 document, which you just obtained, is key to the setup. Click <strong>Next</strong> in the top right to proceed to
 the next screen:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089490/3.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090241/3.png" alt=""/></span>
 <p>The second screen asks you to name and describe the custom extension. Name the custom
 extension <strong>HubSpot CRM</strong> as shown in the image below <strong>(1)</strong> and add a description, like
 &quot;Personalizes the end user experience with information from Lendyr&#x27;s CRM system&quot; <strong>(2)</strong>. Click
 Next (3) in the top right to proceed to the next screen.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089501/4.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090252/4.png" alt=""/></span>
 <p>In the next screen, either drag-and-drop or click to upload the OpenAPI spec you downloaded,
 then click <strong>Next</strong> in the top right to proceed to the next screen:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755512.29641089512/5.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160755.07541090263/5.jpg" alt=""/></span>
 <p>Take a moment to review the extension on the following screen. Note that this extension will
 allow us to call the HubSpot API to get a Contact’s details by their <strong>ID (1)</strong>. You can click the
 arrow next to this <strong>Get Contact by ID (1)</strong> operation to see more details:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755520.29641089523/6.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160759.07571090274/6.png" alt=""/></span>
 <p>In the above image, Watson Assistant will share the end user’s <strong>contactid</strong> with the extension,
 which will call the HubSpot API and then return various information, including the end user’s
 <strong>email</strong>, <strong>lastname</strong>, <strong>firstname</strong>, and <strong>membership_status (2)</strong>.</p>
 <p>Click <strong>Finish (3)</strong> to create the custom extension. You should now be able to see the HubSpot
 CRM extension in your Integrations catalog:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755524.29641089534/7.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160763.07571090285/7.jpg" alt=""/></span>
 <p><strong>Create a HubSpot account and add some end user data</strong></p>
 <p>Next, you will create a HubSpot CRM account (if you haven’t already created one in the past).
 This will be the specific instance of HubSpot with which the extension integrates.</p>
 <p>Navigate to this link to <a class="cds--link" rel="noreferrer" href="https://developers.hubspot.com/get-started" target="_blank">create an app developer account<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13,14H3c-0.6,0-1-0.4-1-1V3c0-0.6,0.4-1,1-1h5v1H3v10h10V8h1v5C14,13.6,13.6,14,13,14z"></path><path d="M10 1L10 2 13.3 2 9 6.3 9.7 7 14 2.7 14 6 15 6 15 1z"></path></svg></a>. <em>This account is free and it does not
 require a credit card</em>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755528.29611089545/8.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160771.0761090296/8.jpg" alt=""/></span>
 <p>Follow the prompts as you sign up. HubSpot will ask you to verify your email. Once you have
 verified your email, click <strong>Test things out</strong> to create a test account:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755532.29611089556/9.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160775.0761090307/9.jpg" alt=""/></span>
 <p>Click <strong>Manage test accounts</strong> on the following screen:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089469/10.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160743.07521090220/10.jpg" alt=""/></span>
 <p>Next, click <strong>Create app test account</strong> in the top right.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089470/11.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160743.07521090221/11.jpg" alt=""/></span>
 <p>On the popup window, name the test account <strong>Extensions lab (1)</strong> and click <strong>Create (2)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089471/12.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160743.07521090222/12.png" alt=""/></span>
 <p>Open the test account in a new window by clicking its name:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089472/13.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160743.07521090223/13.jpg" alt=""/></span>
 <p>Next, in the newly opened window, click on <strong>Settings</strong> (the cog wheel icon in the top menu bar):</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089473/14.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160743.07521090224/14.jpg" alt=""/></span>
 <p>On the Settings screen (shown below), click to expand the <strong>Integrations (1)</strong> left menu option, and
 select <strong>Private Apps (2)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089474/15.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160743.07521090225/15.jpg" alt=""/></span>
 <p>Now, create your own private HubSpot CRM app:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089475/16.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090226/16.jpg" alt=""/></span>
 <p>In the following screen, enter your app’s name, for example <strong>Extensions-Lab (1)</strong>, enter a
 description <strong>(2)</strong>, such as “Personalizing Lendyr with a customer extension to a CRM system”),
 and then click <strong>Scopes (3)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089476/17.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090227/17.png" alt=""/></span>
 <p>Next, you will set the scope of your new HubSpot CRM app as one that handles support tickets:</p>
 <ol>
 <li>Go to the <strong>Scopes</strong> tab.</li>
@@ -186,54 +186,54 @@ and then click <strong>Scopes (3)</strong>:</p>
 <li>Confirm that they both appear as <strong>Selected</strong> scopes.</li>
 <li>Click <strong>Create app</strong>:</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089477/18.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090228/18.jpg" alt=""/></span>
 <p>The next popup screen informs you that an access token will be generated. You will need to save
 this elsewhere for future use. Click <strong>Continue creating</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089478/19.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090229/19.jpg" alt=""/></span>
 <p>In the ensuing popup, click to show the token <strong>(1)</strong>, <strong>Copy</strong> it <strong>(2)</strong>, and save it. Then, it’s
 recommended that you take the quick <strong>private apps tour (3)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089480/20.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090231/20.jpg" alt=""/></span>
 <p>Once you complete the tour, you will need to add contacts to your CRM system. Contacts are
 end customers which your assistant will need to support. To do so, open the Contacts page by
 clicking <strong>Contacts (1)</strong> in the top menu, then <strong>Contacts (2)</strong> from the dropdown menu:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089481/21.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090232/21.jpg" alt=""/></span>
 <p>Note that, on this Contacts page, HubSpot has created two example contacts for you: <em>Brian
 Halligan</em> and <em>Maria Johnson</em>. Each contact has a set of properties associated with them. These
 properties are columns in the Contacts table; for example, phone number and contact owner.</p>
 <p>You will add a new property: membership status. Click <strong>Actions (1)</strong>, then <strong>Edit properties (2)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089482/22.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090233/22.jpg" alt=""/></span>
 <p>Then, click <strong>Create property</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089483/23.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090234/23.jpg" alt=""/></span>
 <p>Next, you will create the property with Object type: <strong>Contact (1), Group: Contact information(2)</strong>,
 and <strong>Label: Membership status (3)</strong>. <strong><em>Make sure the label is exactly membership status</em></strong>. The
 OpenAPI spec you uploaded to create the extension expects a label with that exact name and
 spelling. You can double check by clicking the <strong>&lt;/&gt; icon (4)</strong> and noting that the <strong>Internal name</strong> is
 exactly <strong>membership_status (5)</strong>. When ready, click <strong>Next (6)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755504.29641089484/24.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090235/24.jpg" alt=""/></span>
 <p>Select <strong>Single-line text</strong> as the field <strong>type (1)</strong>, then <strong>Next (2)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089485/25.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090236/25.jpg" alt=""/></span>
 <p>Click <strong>Create</strong> in the bottom right:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089486/26.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090237/26.jpg" alt=""/></span>
 <p>Note that a popup on the top of your screen confirms that the new property was created:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089487/27.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090238/27.jpg" alt=""/></span>
 <p>Now, return to the <strong>Contacts</strong> page by clicking <strong>Contacts (1)</strong> in the top menu, then <strong>Contacts (2)</strong>
 from the dropdown menu. Next, you will add data to the contacts in your CRM system. Click <strong>Edit columns</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089488/28.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090239/28.png" alt=""/></span>
 <p>Search for the <strong>Record ID (1)</strong> and check its checkbox <strong>(2)</strong> to add it. Note that it appears at the
 bottom of the list of <strong>selected columns (3)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089489/29.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160747.07541090240/29.jpg" alt=""/></span>
 <p>Next, search for <strong>Membership status (1)</strong> and check its checkbox <strong>(2)</strong> to add it. It will also appear
 at the bottom of the list of <strong>selected columns (3)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089491/30.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090242/30.jpg" alt=""/></span>
 <p>Drag <strong>Record ID</strong> and <strong>Membership status (1)</strong> up to be the second and third columns,
 respectively. <strong>Name</strong> will be the first column. Then, click <strong>Apply (2)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089492/31.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090243/31.jpg" alt=""/></span>
 <p>Your table should now look similar to the image below. Select Brian Halligan’s record by
 clicking his checkbox <strong>(1),</strong> then click <strong>Edit (2)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089493/32.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090244/32.jpg" alt=""/></span>
 <p>In the ensuing popup, select <strong>Membership status (1)</strong> from the dropdown,
 and type in <strong>Lendyr Topaz (2)</strong> as its value. Click <strong>Update (3)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089494/33.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090245/33.png" alt=""/></span>
 <p>You should now see in the Contacts table that Brian Halligan’s membership status is Lendyr
 Topaz (not shown). Do not change Maria’s membership status.</p>
 <p>Congratulations! You’re ready to work with the custom extension in Watson Assistant. Don’t
@@ -243,19 +243,19 @@ close your HubSpot browser window just yet, you may need to come back to it once
 to HubSpot, but it doesn’t tell Watson Assistant which instance of HubSpot to pull data from.</p>
 <p>In your assistant, navigate to the <strong>Integrations</strong> page <strong>(1)</strong> and click Add (2) on the HubSpot card,
 then click <strong>Add (3)</strong> in the pop-up confirmation.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089495/34.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090246/34.jpg" alt=""/></span>
 <p>In the following screen, you can read about how to add the custom extension. When ready, click
 <strong>Next</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089496/35.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090247/35.jpg" alt=""/></span>
 <p>Select <strong>Bearer auth (1)</strong> as the authentication type, then paste in the access token you saved from
 HubSpot <strong>(2)</strong>. (You don&#x27;t need to specify the server because that was included as part of the JSON
 file provided earlier when adding the integration.) Click <strong>Next (3)</strong>.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089497/36.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090248/36.png" alt=""/></span>
 <p>You’ll see a summary of the custom extension on the final page. Review the operations provided
 by the extension, then click <strong>Finish</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089498/37.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090249/37.jpg" alt=""/></span>
 <p>Click <strong>Close</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089499/38.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090250/38.png" alt=""/></span>
 <p><strong>As a builder, write the extension in an Action</strong></p>
 <p>You now have a custom extension to your HubSpot CRM system, and you’re ready to use it to
 personalize the experience of Lendyr’s end users.</p>
@@ -268,22 +268,22 @@ instructions, please refer to the 102 section of this lab on building Actions.</
 “Authenticate me” to start this interaction. (Not shown.)</p>
 <p>In Step 1, have the assistant ask “What is your Lendyr member number?” and define the
 customer response as a <em>number</em>. Your screen should look similar to this:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089500/39.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090251/39.jpg" alt=""/></span>
 <p>Add a second step. In Step 2, have the assistant say “Pulling in your information now…” Change
 <strong>And then</strong> to “Use an extension,” which will open up an <strong>Extension setup</strong> popup window:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755508.29641089502/40.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090253/40.png" alt=""/></span>
 <p>In the panel, as shown above, select <strong>HubSpot CRM</strong> as the extension <strong>(1), Get Contact by ID</strong> as
 the <strong>Operation (2)</strong>, and set <strong>contactId</strong> to the end user’s response to step 1, <strong>“1. What is your Lendyr member number?” (3)</strong></p>
 <p>Notice how you, as the builder, are easily configuring this Action to call out to the HubSpot API
 via the extension. You can select the steps or other variables to plug into the operation with a
 dropdown menu – there’s no code and no unnecessary complexity.</p>
 <p>Click <strong>Apply</strong> when you’re done. Your Step 2 should look like this:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755512.29641089503/41.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090254/41.png" alt=""/></span>
 <p>Now, create a new step. In this Step 3, since you used an extension in a previous step, you can
 reference information that the extension has returned.</p>
 <p>In <strong>Assistant says</strong>, type in “Welcome, ” <strong>(1)</strong> and then click the variables icon <strong>(2)</strong>. Let’s
 look at what variables are available to you <strong>(3)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755512.29641089504/42.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160751.07541090255/42.png" alt=""/></span>
 <p>The list of variables provides a selection of values that you can reference in your assistant now
 that you’ve called the extension. Note that it includes <strong>Run successfully</strong> which indicates whether
 the API call was successful, so that you can conditionally handle the case of unrecognized
@@ -291,29 +291,29 @@ customer IDs.</p>
 <p>From this list, scroll down and click on <strong>body.properties.firstname</strong>. Then, as shown below <strong>(1)</strong>,
 type in an exclamation point, and a new sentence: “How can I help you today?” Lastly, change
 <strong>And then</strong> to <strong>End the action (2)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755512.29641089505/43.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160755.07541090256/43.png" alt=""/></span>
 <p>There’s one more thing you need to do. Right now, the information produced by the extension is
 not stored by the assistant beyond this Action. In other words, while you can use the
 body.properties.firstname variable in Step 3, you cannot use it in an another Action.</p>
 <p>Let’s fix that. Click the <strong>fx</strong> icon in Step 3 to set variable values.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755512.29641089506/44.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160755.07541090257/44.jpg" alt=""/></span>
 <p>Note that the <strong>Variable values</strong> view is now shown <strong>(1)</strong>. Click <strong>Set new value + (2)</strong> and scroll
 down to the bottom to select + <strong>New session variable (3)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755512.29641089507/45.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160755.07541090258/45.png" alt=""/></span>
 <p>You will create several new session variables to store information from HubSpot. <strong>Session</strong>
 <strong>variables</strong> are stored for the end user’s entire session – the entire time they interact with the
 virtual assistant. This will allow you to use them across Actions.</p>
 <p>In the popup, set the <strong>Name</strong> to <strong>email (1)</strong>, select <strong>Free text (2)</strong> as its type, and click <strong>Apply (3)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755512.29641089508/46.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160755.07541090259/46.png" alt=""/></span>
 <p>Back in the Step 3 view, set the email variable value to <strong>body.properties.email</strong>. Do this by
 clicking on the dropdown <strong>(1)</strong>, then selecting <strong>Hubspot CRM (2)</strong>, and finally picking the
 <strong>body.properties.email</strong> property (3):</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755512.29641089509/47.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160755.07541090260/47.png" alt=""/></span>
 <p>Now, repeat the above steps to create three more session variables named: <strong>first name</strong>, <strong>lastname</strong>,
 and <strong>Membership status</strong>. (Not shown.) As you do, set each session variable to its corresponding
 value from the custom extension. Your screen should look like the image below; don’t forget to
 save the Action by clicking on the <strong>Save icon</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755512.29641089510/48.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160755.07541090261/48.jpg" alt=""/></span>
 <p>That’s it! You’ve successfully added an extension – a connection to an external service – into an
 Action.</p>
 <p>This may have felt quite time-consuming. You spent a fair bit of time setting up the custom
@@ -328,10 +328,10 @@ custom extensions!</p>
 <p>Before you continue, remember that the “Lendyr member number” should be one of the Record
 IDs in HubSpot, which are 1 and 51 (as shown below). Any other number will not work – you
 will return to fix that problem later.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755512.29641089511/49.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160755.07541090262/49.png" alt=""/></span>
 <p>Now, within the Actions window (so that you can chat in “debug” mode), open up the Preview
 panel. Once you start the chat, click the <strong>variable values icon (1)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755516.29641089513/50.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160755.07541090264/50.png" alt=""/></span>
 <p>Then, have the chat shown above on the <strong>left (2)</strong> by saying “Authenticate me please!”, followed by
 “51”. Note how the <strong>Action variables (3)</strong> populate and change as you converse.</p>
 <p>Next, you will inspect the extension! Click the <strong>refresh icon (4)</strong> and enter the two customer
@@ -361,17 +361,17 @@ between its virtual assistant and Zendesk.</p>
 <p><strong>Set up a free trial (no credit card required) of Zendesk</strong></p>
 <p>Visit <a class="cds--link" rel="noreferrer" href="https://www.zendesk.com/register/" target="_blank">https://www.zendesk.com/register/<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13,14H3c-0.6,0-1-0.4-1-1V3c0-0.6,0.4-1,1-1h5v1H3v10h10V8h1v5C14,13.6,13.6,14,13,14z"></path><path d="M10 1L10 2 13.3 2 9 6.3 9.7 7 14 2.7 14 6 15 6 15 1z"></path></svg></a> to set up a free trial. Follow the prompts, and once you
 verify your email, you should arrive at a screen like this one:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755516.29641089514/51.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160755.07541090265/51.jpg" alt=""/></span>
 <p>Note that your Zendesk account’s URL will have a unique code called a server domain, in the
 following format: <strong>https://{server-domain}.zendesk.com</strong>. Using your unique server domain,
 visit <strong>https://{server-domain}.zendesk.com/admin</strong> to go to your <strong>Admin center (1)</strong> page:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755516.29641089515/52.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160755.07541090266/52.jpg" alt=""/></span>
 <p>On the left-hand menu, go to <strong>Apps and integrations (2)</strong>, then click <strong>Zendesk API (3)</strong>.</p>
 <p>On the next screen (not shown), agree to the Zendesk Terms of Service and Application
 Developer and API License Agreement.</p>
 <p>Next, as shown below, open the <strong>Settings</strong> tab <strong>(1)</strong>, toggle <strong>Token access (2)</strong> on, and click
 <strong>Add API Token (3)</strong>. <strong>Copy (4)</strong> the API token and store it somewhere, and click <strong>Save (5)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755516.29641089516/53.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160759.07571090267/53.jpg" alt=""/></span>
 <blockquote class="BlockQuote-module--blockQuote--41e2b"><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path fill="none" d="M16,8a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,16,8Zm4,13.875H17.125v-8H13v2.25h1.875v5.75H12v2.25h8Z" data-icon-path="inner-path"></path><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,6a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,16,8Zm4,16.125H12v-2.25h2.875v-5.75H13v-2.25h4.125v8H20Z"></path></svg>
 <p><strong>Important:</strong> Make sure to copy and store the API token. Zendesk will never show it to you again
 once you click Save or leave the page.</p>
@@ -385,25 +385,25 @@ file to your device; it should appear on your device as a JSON file.</p>
 by renaming the file. The final file name should be <strong>zendesk.openapi.json</strong></p>
 </blockquote>
 <p>In Watson Assistant, go to the <strong>Integrations page (1)</strong>, and click <strong>Build custom extension (2):</strong></p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755516.29641089517/54.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160759.07571090268/54.png" alt=""/></span>
 <p>On the following screen, click <strong>Next</strong> to get past the <strong>Get started</strong> panel (not shown). This will take
 you to the <strong>Basic information (1)</strong> panel, shown below. Name your custom extension
 <strong>Zendesk Ticketing (2)</strong> and type in a <strong>description (3)</strong>: “Allows end users to use the virtual assistant to
 create tickets in Lendyr&#x27;s ticketing service.” Click <strong>Next (4)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755516.29641089518/55.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160759.07571090269/55.jpg" alt=""/></span>
 <p>Drag and drop the OpenAPI spec <strong>(1)</strong>, or click to upload. Click <strong>Next (2)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755516.29641089519/56.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160759.07571090270/56.jpg" alt=""/></span>
 <p>Review the extension and its operations. You’ll mainly use <strong>Create Ticket (1)</strong>. Click <strong>Finish (2)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755516.29641089520/57.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160759.07571090271/57.jpg" alt=""/></span>
 <p>Back at the <strong>Integrations page (1)</strong>, click <strong>Add + (2)</strong> on the Zendesk Ticketing card:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755516.29641089521/58.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160759.07571090272/58.png" alt=""/></span>
 <p>Click <strong>Add</strong> in the resulting pop-up (not shown). On the ensuing <strong>Getting started</strong> panel, click
 <strong>Next</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755516.29641089522/59.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160759.07571090273/59.png" alt=""/></span>
 <p>On the following screen, you will fill out several fields:</p>
 <ol>
 <li>For <strong>Authentication</strong> type, choose Basic auth.</li>
-<li>For <strong>Username</strong>, type in <strong>your</strong> email address and /token. For example, <span class="cds--popover-container cds--popover--caret cds--popover--high-contrast cds--popover--bottom cds--tooltip cds--icon-tooltip"><button class="cds--btn--icon-only CodeBlock-module--code--6fced CodeBlock-module--codeInline--37ba5 cds--snippet cds--snippet--inline cds--snippet--wraptext cds--copy cds--btn cds--btn--md cds--btn--primary" type="button"><code id="id113">arvind.krishna@ibm.com/token</code></button><span aria-hidden="true" role="tooltip" class="cds--popover"><span class="cds--popover-content cds--tooltip-content">Copy to clipboard</span><span class="cds--popover-caret"></span></span></span>.</li>
+<li>For <strong>Username</strong>, type in <strong>your</strong> email address and /token. For example, <span class="cds--popover-container cds--popover--caret cds--popover--high-contrast cds--popover--bottom cds--tooltip cds--icon-tooltip"><button class="cds--btn--icon-only CodeBlock-module--code--6fced CodeBlock-module--codeInline--37ba5 cds--snippet cds--snippet--inline cds--snippet--wraptext cds--copy cds--btn cds--btn--md cds--btn--primary" type="button"><code id="id112">arvind.krishna@ibm.com/token</code></button><span aria-hidden="true" role="tooltip" class="cds--popover"><span class="cds--popover-content cds--tooltip-content">Copy to clipboard</span><span class="cds--popover-caret"></span></span></span>.</li>
 <li>For Password, paste in the API token you stored from the Zendesk API settings.</li>
 <li>For Servers, keep the selected option.</li>
 <li>For Server variables, type in your unique server domain - this is the first part of the URL
@@ -411,9 +411,9 @@ you see when you log into your Zendesk trial. For example, “ibm2023” as the 
 <a class="cds--link" rel="noreferrer" href="https://ibm2023.zendesk.com" target="_blank">https://ibm2023.zendesk.com<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13,14H3c-0.6,0-1-0.4-1-1V3c0-0.6,0.4-1,1-1h5v1H3v10h10V8h1v5C14,13.6,13.6,14,13,14z"></path><path d="M10 1L10 2 13.3 2 9 6.3 9.7 7 14 2.7 14 6 15 6 15 1z"></path></svg></a>.</li>
 <li>Click <strong>Next</strong>:</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755520.29641089524/60.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160759.07571090275/60.png" alt=""/></span>
 <p>On the next screen, you can review the Zendesk Ticketing integration <strong>(1)</strong>, then click <strong>Finish (2)</strong>.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755520.29641089525/61.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160763.07571090276/61.png" alt=""/></span>
 <p>On the final confirmation screen (not shown), simply click <strong>Close</strong>.</p>
 <p><strong>Write the custom extension into an Action</strong></p>
 <p>Now that the Zendesk Ticketing extension is set up, you will create an Action that uses it.</p>
@@ -423,29 +423,29 @@ users (2), including the ones you created earlier: <strong>email</strong>, <stro
 <strong>Membership status</strong>. Some of them have types - like number or free text. Others can be configured to have an
 initial value. You will leverage the fact that you might already know the end user&#x27;s name, email
 address, or membership status when you create the ticket:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755520.29641089526/62.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160763.07571090277/62.png" alt=""/></span>
 <p>Next, you will create another Action. On the above screen, click <strong>Created by you</strong> under the
 <strong>Actions</strong> category, then click <strong>New action +</strong>, and Start from scratch. (This sequence of clicks is
 not shown, but it&#x27;s the same as with all the Actions you created earlier.)</p>
 <p>What does your customer say to start this interaction? “I want to submit a support ticket.” In
 <strong>Step 1</strong>, write <strong>Assistant says</strong> “Let&#x27;s create a ticket for you! I will need to gather some
 information to help you submit the ticket.” Your new Action should look like this:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755520.29641089527/63.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160763.07571090278/63.png" alt=""/></span>
 <p>Next, create step 2. In this step, set <strong>Assistant says (1)</strong> to “What is your email address?” Then,
 <strong>Define customer response (2)</strong> as <strong>Regex (Regular expression)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755520.29641089528/64.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160763.07571090279/64.png" alt=""/></span>
 <blockquote class="BlockQuote-module--blockQuote--41e2b"><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path fill="none" d="M16,8a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,16,8Zm4,13.875H17.125v-8H13v2.25h1.875v5.75H12v2.25h8Z" data-icon-path="inner-path"></path><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,6a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,16,8Zm4,16.125H12v-2.25h2.875v-5.75H13v-2.25h4.125v8H20Z"></path></svg>
 <p>A <em>Regular expression</em> is a sequence of characters that satisfies a specific pattern. An example is
 email; it contains a name, followed by “@,” which is then followed by a domain name.</p>
 </blockquote>
 <p>This opens a pop-up. Select <strong>Email (1)</strong> as the regular expression, then click <strong>Apply (2)</strong>.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755520.29641089529/65.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160763.07571090280/65.jpg" alt=""/></span>
 <p>At this point, your Action should look like this:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755520.29641089530/66.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160763.07571090281/66.png" alt=""/></span>
 <p>Consider that you only want to ask the end user for their email address if you don&#x27;t already know
 it. Thus, as shown below, change <strong>Step 2 is taken without conditions</strong> to
 <strong>Step 2 is taken with conditions (1)</strong>. Then change the default condition to: <strong>email is not defined (2)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755520.29641089531/67.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160763.07571090282/67.png" alt=""/></span>
 <p>Now that you have set this condition, your virtual assistant will only ask the end user for their
 email address if the virtual assistant does <em>not</em> already know it.</p>
 <p>Add a new step - <strong>Step 3</strong>. As shown below, in <strong>Assistant says (1)</strong>, write: “What is your first
@@ -453,29 +453,29 @@ name?” Set <strong>Define customer response</strong> to <strong>Free text (2)<
 user for their name if you don&#x27;t already know their first name. Change
 <strong>Step 3 is taken without conditions (3)</strong> to <strong>Step 3 is taken with conditions</strong>. Then change the condition to:
 <strong>firstname is not defined</strong>. Step 3 should look like this:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755520.29641089532/68.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160763.07571090283/68.png" alt=""/></span>
 <p>Next, add Step 4. In this step, set <strong>Assistant says: (1)</strong> to “Please describe your problem or
 situation in detail. This description will be submitted to the support team as the ticket.” Then,
 <strong>Define customer response (2)</strong> as “Free text:”</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755524.29641089533/69.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160763.07571090284/69.jpg" alt=""/></span>
 <p>Create Step 5, and set <strong>Assistant says (1)</strong> to: “Creating your ticket…” Change <strong>And then (2)</strong>
 from “Continue to next step” to “Use an extension:”</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755524.29641089535/70.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160767.07571090286/70.png" alt=""/></span>
 <p>In the ensuing popup, select “Zendesk Ticketing” under <strong>Extension (1)</strong> and “Create Ticket” under
 <strong>Operation (2)</strong>. Open the dropdown (3) menu where you set <strong>request.subject</strong> to something, scroll
 all the way down to the bottom, and select <strong>Expression (4)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755524.29641089536/71.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160767.07571090287/71.png" alt=""/></span>
 <p>Choosing <strong>Expression</strong> now lets you type in free text <strong>(1)</strong>. Type in “Support ticket,” as shown in
 the image below. Then, open the <strong>Optional parameters (2)</strong>, and set <strong>request.comment.body</strong> to
 the response to <strong>Step 4 (3)</strong>. Set <strong>request.requester.name</strong> to the <strong>firstname (4)</strong> session variable.
 Finally, set <strong>request.requester.email</strong> to the <strong>email (5)</strong> session variable, and click <strong>Apply (6)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755524.29641089537/72.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160767.07571090288/72.png" alt=""/></span>
 <blockquote class="BlockQuote-module--blockQuote--41e2b"><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path fill="none" d="M16,8a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,16,8Zm4,13.875H17.125v-8H13v2.25h1.875v5.75H12v2.25h8Z" data-icon-path="inner-path"></path><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,6a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,16,8Zm4,16.125H12v-2.25h2.875v-5.75H13v-2.25h4.125v8H20Z"></path></svg>
 <p>Note: Take care not to accidentally set <strong>request.requester.name</strong> to the response to <strong>Step 3</strong>, and
 not to set <strong>request.requester.email</strong> to the response to <strong>Step 2</strong>.</p>
 </blockquote>
 <p>Your Action should now look like this:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755524.29641089538/73.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160767.07571090289/73.jpg" alt=""/></span>
 <p>There is one more thing you need to do.</p>
 <p>In Step 5, you pass the session variables <strong>firstname</strong> and <strong>email</strong> to the extension. These session
 variables are where you stored the firstname and email information from HubSpot.</p>
@@ -487,23 +487,23 @@ Action ask for the email and firstname when those session variables are blank (o
 <p>We need to make sure your virtual assistant uses the responses to step two and three when the
 email and firstname session variables are not defined. To do this, add Step 6, and
 <strong>drag and drop the new step between steps three and four</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755524.29641089539/74.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160767.07571090290/74.png" alt=""/></span>
 <p><strong>Step 6</strong> now becomes <strong>Step 4</strong>. In it,</p>
 <ol>
 <li>Set a condition, which will check whether both first name and email are defined.</li>
 <li>Set the first condition to <strong>3. What is your first name?</strong> is defined.</li>
 <li>Set the second condition to <strong>2. What is your email address? is defined</strong>.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755524.29641089540/75.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160767.07571090291/75.png" alt=""/></span>
 <p>After you finish setting up the step condition, click <strong>fx (1)</strong> to open the <strong>Variable values (2)</strong> view,
 and click <strong>Set new value + (3)</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755524.29641089541/76.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160767.07571090292/76.png" alt=""/></span>
 <p>Set the Session variable <strong>firstname (1)</strong> to the response to <strong>Step 3</strong> by following the sequence of
 clicks <strong>(2)</strong> and <strong>(3)</strong> shown below:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755524.29641089542/77.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160767.07571090293/77.png" alt=""/></span>
 <p>Again using the sequence of clicks shown above, also set the Session variable <strong>email</strong> to the response
 to <strong>Step 2</strong>. Your Step 4 should now look like this:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755528.29611089543/78.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160767.07571090294/78.png" alt=""/></span>
 <p>If you do not see “2. What is your email address” in the list of action variables, this may be a bug.</p>
 <p>Take a moment to consider the behavior you set up in this Action
 <strong>(I want to submit a support ticket)</strong>. When the end user invokes this Action, if the <strong>email</strong> and <strong>firstname</strong> session variables are
@@ -516,11 +516,11 @@ the correct email and firstname to pass to Zendesk.</p>
 create step 7. As shown below, write <strong>(1)</strong> “Success! Your ticket number is ”. Then, type <strong>$</strong> or click
 the <strong>insert a variable icon</strong> and scroll down to select the variable for <strong>body.request.id (2)</strong> returned
 by the Zendesk Ticketing extension in Step 6 when it created the new ticket:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755528.29611089544/79.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160767.07571090295/79.png" alt=""/></span>
 <p>Finish the <strong>Assistant says (1)</strong> section with “. A customer support representative will follow up
 with you within the next few days.” Change <strong>And then (2)</strong> to “End the action.” Your Step 7
 should look like this:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755528.29611089546/80.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160771.0761090297/80.png" alt=""/></span>
 <p>Fantastic work! Our action is ready to go. Remember to save it.</p>
 <p><strong>Preview the action to see your extension in action</strong></p>
 <p>Try out a conversation where you don&#x27;t pull in information about yourself via HubSpot, like
@@ -533,11 +533,11 @@ can watch them populate in real time. Enter the following utterances:</p>
 <li>Say “I want to see how this extension works”
 (the screenshot below captures the whose single conversation)</li>
 </ul>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755528.29611089547/81.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160771.0761090298/81.jpg" alt=""/></span>
 <p>Now, go and see the ticket you created in your instance of Zendesk! To do so, navigate your
 browser to <strong>https://{server-domain}.zendesk.com/agent/dashboard (1)</strong>, and view the ticket
 with subject &#x27;Support ticket&#x27; (2):</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755528.29611089548/82.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160771.0761090299/82.png" alt=""/></span>
 <p>Your ticket should have an ID of #2. Ticket ID #1 is a sample ticket created by Zendesk for you.</p>
 <blockquote class="BlockQuote-module--blockQuote--41e2b"><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path fill="none" d="M16,8a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,16,8Zm4,13.875H17.125v-8H13v2.25h1.875v5.75H12v2.25h8Z" data-icon-path="inner-path"></path><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,6a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,16,8Zm4,16.125H12v-2.25h2.875v-5.75H13v-2.25h4.125v8H20Z"></path></svg>
 <p>Note: Zendesk also sends two emails, one to the submitter of the ticket, and one to the Zendesk
@@ -546,7 +546,7 @@ administrator. Depending on what emails you supplied, you may see both of these 
 <p>Now, try out a conversation where you first pull in information via HubSpot and then create a
 support ticket via Zendesk. (Remember to first hit <strong>Refresh</strong> to restart the chat session.) In this
 way, you will be taking advantage of both the HubSpot and Zendesk extensions:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755528.29611089549/83.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160771.0761090300/83.jpg" alt=""/></span>
 <p>Notice how this time the assistant didn&#x27;t ask for your first name or email address, since it already
 retrieved them from the HubSpot CRM system.</p>
 <p>Go back to your Zendesk dashboard and see the ticket you just created. (Note that you may need
@@ -571,32 +571,32 @@ of the problem using the <strong>Extension inspector</strong> - something this l
 responses it passes back to your Action, and debug in the Preview panel of the Actions page.</p>
 <p>First, let&#x27;s inspect a custom extension that works properly. Run through the following
 conversation with your assistant in the Preview panel of the Actions page:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755528.29611089550/84.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160771.0761090301/84.png" alt=""/></span>
 <p>This extension works properly: it uses the member number provided by the end user to pull the
 end user&#x27;s information from the HubSpot CRM system. Click <strong>Inspect (1)</strong> to open the
 <strong>Extension inspector</strong> and see its details:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755528.29611089551/85.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160771.0761090302/85.png" alt=""/></span>
 <p>As can be seen above, the <strong>Extension inspector</strong> pane shows the request parameters sent <em>to</em> <strong>(2)</strong>
 and response properties received <em>from</em> <strong>(3)</strong> the HubSpot API via the custom extension. While you
 only store and use a handful of these response properties in your Action – including email,
 firstname, lastname, and membership_status - there are many more properties passed along that
 provide useful context.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755528.29611089552/86.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160771.0761090303/86.png" alt=""/></span>
 <p>In this conversation, something went awry. While there are two error messages that make it clear
 something went wrong, you can also see that the virtual assistant said “Welcome, !” <strong>(1)</strong> The
 name that would normally come from the HubSpot CRM system is missing, which suggests
 something went wrong. Click <strong>Details (2)</strong> next to “Error in the response,” to reveal a popup of
 runtime errors affecting the Action.</p>
 <p>On the ensuing popup, expand the first error:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755528.29611089553/87.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160771.0761090304/87.png" alt=""/></span>
 <p>Depending on your ability to parse technical jargon, you may or may not be able to understand
 these error messages. That&#x27;s okay - Watson Assistant&#x27;s Extension inspector will lay it all out in
 easy-to-understand terms.</p>
-<p>Close the runtime errors pop-up. Now click <strong>Inspect (1)</strong> next to “Extension error.” What do you
+<p>Close the runtime errors pop-up. Now click <strong>Inspect (1)</strong> next to “Extension error.  ” What do you
 see? It looks like the body of the response is completely blank <strong>(2)</strong> – and the success response
 property is <strong>false (3)</strong>. This means that HubSpot was unable to find a contact with ID 46. You may
 recall from earlier that your HubSpot CRM system has no Contact with an ID of 46.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755532.29611089554/88.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160771.0761090305/88.jpg" alt=""/></span>
 <p>You can also open the <strong>Advanced</strong> tab of the Extension inspector (not shown) to see the request
 and response for this extension in raw form.</p>
 <p>You could fix this end user&#x27;s problem by adding a Contact record to HubSpot with ID 46. But
@@ -609,7 +609,7 @@ that&#x27;s not a scalable solution for others entering a non-existent member nu
 <li>Step 3 should execute when the extension runs successfully, so select <strong>If Ran successfully</strong>.</li>
 <li>Your final condition should state <strong>2 Ran successfully == true</strong>.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755532.29611089555/89.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160775.0761090306/89.png" alt=""/></span>
 <p>Now you will only greet the end user by name if the extension succeeds in getting their name and
 other information from HubSpot. Let&#x27;s also add a step that will be taken when the extension fails
 to find the end user&#x27;s information:</p>
@@ -620,7 +620,7 @@ to find the end user&#x27;s information:</p>
 like to try again?”</li>
 <li><strong>Define customer response</strong> as <strong>Confirmation</strong>, which allows the end user to select <em>yes</em> or <em>no</em>:</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755532.29611089557/90.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160775.0761090308/90.jpg" alt=""/></span>
 <p>Next, add a step for when the user selects “yes” in the previous step, so that they can try entering
 their Lendyr member number again:</p>
 <ol>
@@ -629,9 +629,9 @@ their Lendyr member number again:</p>
 <li>Change <strong>Assistant says</strong> to “Okay –”</li>
 <li>Change <strong>And then</strong> to Re-ask previous step(s).</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755532.29611089558/91.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160775.0761090309/91.png" alt=""/></span>
 <p>Select all the checkboxes, so that your assistant will re-ask all action steps, then click <strong>Apply</strong>:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755532.29611089559/92.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160775.0761090310/92.png" alt=""/></span>
 <p>Finally, add step 6 for when the users selects “no” in step 4:</p>
 <ol>
 <li>Click **New step + **.</li>
@@ -640,12 +640,12 @@ their Lendyr member number again:</p>
 <li>Change <strong>And then</strong> to <strong>End the action</strong>.</li>
 </ol>
 <p>Your Action should now look like this:</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755532.29611089560/93.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160775.0761090311/93.png" alt=""/></span>
 <p>Nicely done! Save your Action, open the Preview panel, refresh the Preview panel, and try out
 this conversation again. <em>In this scenario, the end user chooses to try again</em>:\</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755532.29611089561/94.jpg" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160775.0761090312/94.jpg" alt=""/></span>
 <p>Hit refresh again and try this. <em>In this scenario, the end user chooses not to try again</em>.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684993755536.29611089562/95.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1684995160775.0761090313/95.png" alt=""/></span>
 <p>Congratulations! You now know how to use the Extension inspector to test, understand, and
 debug your extensions and the Actions that use them.</p>
 </section></section><section class="heading" data-heading-rank="2" aria-labelledby="closing-thoughts"><h2 id="closing-thoughts"><a href="/en/watson/105#closing-thoughts">Closing thoughts</a></h2>
@@ -677,6 +677,6 @@ series of this lab will discuss using webhooks with Watson Assistant.</p></secti
           <script
             id="gatsby-chunk-mapping"
           >
-            window.___chunkMapping="{\"app\":[\"/app-48e2e19548a05b3ed7db.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-e40bd2429dab6d7ae8ff.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-48f6018d5b0018ba1dcf.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-es-md-adafe94f194bca12d7b6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-md-6372cf3c4fc6ed5fa4b0.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-es-md-ca94ac06ac6a1c414e87.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-md-4a2a01c578cbe48ed627.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-es-md-81ec86cbcad1b2b1fe13.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-md-e56ee72fd92f49ff237f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-es-md-ede4783258f3381e21fe.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-md-56e3799f76a670d5e780.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-es-md-802b814cdd8ad22e2570.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-md-1bcedf73bc0c1cbfeb84.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-es-md-b77492148a1ee07e2655.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-md-e040a5fe7f33cf4063c0.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-es-md-3de39a6911a9096c8160.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-md-ea67ffa667aa9f81248d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-es-md-940b9e58500627ef04d8.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-md-d19993d05cd835de127c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-es-md-73375cbf6f693f2825bc.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-md-3068f6e92171e8bf4ba0.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-es-md-8dbc9f468493c306c2af.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-md-abf43c2e6dd54d733875.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-es-md-e9efece41397e516629b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-md-7aefdc56fed20f07fdaf.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-es-md-5d67d0824955083bf649.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-md-d003b0261e99e19cc78b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-es-md-043c0690604e934531fc.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md-7b77c9e99f9b14054cf3.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-es-md-c206dc8a95275a4ae899.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md-5e5d8e2510abf77ab1e0.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-es-md-ec3e40c830f3c452db81.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md-68482b0f6eb325f26338.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-es-md-6516b1592607f32ee534.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md-79a003c0a673cdcba1b6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-es-md-3c5c03d88b8a4a6f1021.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md-cfed2b28bf104c5f7697.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md-393f90455b06cadebb74.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md-cf705470137add8b21e1.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md-d3a853b6ff03e42c7006.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md-92eff3bb72a0d687ac07.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md-4664829846858d103e19.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md-c04e2738b841c3bde5e9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-es-md-0ed056409b414cd56896.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-md-5e0a06d782fd81fd7e8c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-es-md-325bc24a68ca2cb68413.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-md-fc4ce79bc6707a8daaf6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-es-md-7095cdb5474e8b118376.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-md-17aa2ada8672d100acd2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-es-md-2f029b8319aa57bbfbca.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-md-769c1c5dfec6f6ba4250.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-es-md-c226b6b6596065bdebcd.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-md-82c8f28f95d89049f241.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-es-md-c58c001c07c9bec50035.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-md-8a4f76b4f5b2a3afa967.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-es-md-600c3f7780041fb78e16.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-md-b2aed9d1f2f93e6b2bc1.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md-685c9e516099a764ca66.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md-7e10e3d50dcbf4e6656e.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md-378a1148ac0d083f7d23.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-client-demonstration-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-client-demonstration-md-48f275476e4a798954bb.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-1-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-1-md-e5329787cc8181013ae7.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-2-md-0ce41bedc8fba88508b8.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-demo-preparation-oc-plogon-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-demo-preparation-oc-plogon-md-0000ea4c9057c6e6541e.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-http-adapter-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-http-adapter-md-06cfc391b79b8624f7f0.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-introduction-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-introduction-md-7f7bd910779752ec5b0c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-next-steps-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-next-steps-md-c182855888ab85f29de3.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-overview-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-overview-md-48e66c0b1d7b816907f8.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md-c8d798fcb29a196cf9d5.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-es-md-84a132741e12442d014b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-md-e82b8be5a3088cafd684.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-es-md-d5146576ae0a9be81066.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-md-4239a10f97d8db656731.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-es-md-de1e1b8e0ad4d5483ef4.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-md-a3d6e6f4c98cb8aef533.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-es-md-c542e16f0efc0a8899a7.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-md-85f3a3489ae7a7874d6f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-es-md-a3cbaeb1357f9d208a92.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-md-ad67a47c87d3f1b481ed.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-es-md-59d015c046d2f33b3cde.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-md-8c0f3c0c1fe7e87285f2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md-90366c5b77254cde7951.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md-82cd5a120db9fbb3f030.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md-d026d90f8b7fcf741d65.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md-bd2950089a64f4a2c2ec.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md-565051efd0dc5ab4582f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-en-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-en-md-4e812df0e0d7ef8af7a5.js\"]}";
+            window.___chunkMapping="{\"app\":[\"/app-48e2e19548a05b3ed7db.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-e40bd2429dab6d7ae8ff.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-48f6018d5b0018ba1dcf.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-es-md-d160335b27f70ebfbdd7.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-md-d6e6e875cfe6de6b7f48.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-es-md-f13ffac61c677925ec90.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-md-3cdbd79a2d1b351540f4.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-es-md-81ec86cbcad1b2b1fe13.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-md-e56ee72fd92f49ff237f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-es-md-80466fc96622f7e4dcb9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-md-8caa462bccc8ab837387.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-es-md-d7e6108ebbf86c69324a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-md-9d6a21aa3f8424a393a2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-es-md-f19dae4f8f8b4ef57baa.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-md-cbbe8ce6bf3eaf9a9b92.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-es-md-9b732f758d691442f398.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-md-54cb3fd3fb474216347b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-es-md-12ef25209b5c5287afcc.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-md-589ad6191676dfb9cd8f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-es-md-90d890902338d9cc6ed8.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-md-d3e835037c3c5db875dc.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-es-md-51c6d6e17a1b396cd5d9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-md-e73f9ce4cdc7de26883a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-es-md-0eb57a7b05379ee4555c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-md-9b9b7c1a8d79fca48425.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-es-md-5d67d0824955083bf649.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-md-d003b0261e99e19cc78b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-es-md-fe9059c3ee9016bc4d17.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md-19b08e7355ba82cee019.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-es-md-00d517eb805a52d11122.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md-dae85685e259392566fb.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-es-md-3deb020bd0db56d4e525.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md-09c9fabcd55bfc945370.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-es-md-f9b2545f0f95da5ea3c2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md-29e5a42cf105bbbeebd1.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-es-md-3c5c03d88b8a4a6f1021.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md-cfed2b28bf104c5f7697.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md-2bb697128cb63ae509db.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md-9d94eda4c7499ea01c80.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md-95a04e23f9cd72aa61e0.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md-92eff3bb72a0d687ac07.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md-3ab3b4337d1400d57323.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md-76a55e4225df3f727fb4.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-es-md-6230f1cf8180905ae358.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-md-78b445d59b2ba58f99fd.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-es-md-6bbe40a92fcf8d69eea7.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-md-a842716b842b828edac9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-es-md-297717901735b65cb37c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-md-5d72d078b79934d1a525.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-es-md-3b9c28baaf6516ca81ab.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-md-48e4dc9546499b4c527c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-es-md-09683c4916fe810fb2ba.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-md-99f1e598c0166d3602e8.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-es-md-5e2473224a7d0960b6ad.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-md-8f6c43383a6fe480a676.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-es-md-600c3f7780041fb78e16.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-md-b2aed9d1f2f93e6b2bc1.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md-5fdd0aab49b01f70c0c7.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md-b2c2710788181800636d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md-378a1148ac0d083f7d23.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-client-demonstration-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-client-demonstration-md-fcb1d333e3b96808b051.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-1-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-1-md-bdd588c10266e4fcc773.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-2-md-dd83780f7dec9852b636.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-demo-preparation-oc-plogon-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-demo-preparation-oc-plogon-md-93dc18db2021defaa936.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-http-adapter-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-http-adapter-md-335b9f41d2a55d8cb674.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-introduction-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-introduction-md-b19871af96cb4cc2c918.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-next-steps-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-next-steps-md-c182855888ab85f29de3.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-overview-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-overview-md-48e66c0b1d7b816907f8.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md-c8d798fcb29a196cf9d5.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-es-md-6c2845a19caf1bb108b8.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-md-fdc3dfbd5a08a6adf966.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-es-md-7e3d4301797c5fd21f25.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-md-42bf6126d1b0e48a50c5.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-es-md-69a64050821ec626273c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-md-b4e995ab66b9f66755a2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-es-md-d2085ca14156f9da4151.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-md-1de7d2497a7df7b3ccb2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-es-md-fbde1752ac00b8f08eca.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-md-88d04c760ab51c1a25e9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-es-md-59d015c046d2f33b3cde.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-md-8c0f3c0c1fe7e87285f2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md-6d56cf2a2c28031bd601.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md-8df957a089d26e5204e2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md-e7db8d493a25eb4a5db4.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md-c7ab15cc617d71edcf3d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md-26ba5136afacb9e30e10.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-en-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-en-md-4e812df0e0d7ef8af7a5.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="e8fd45dc889a6719ff1f";</script><script src="/webpack-runtime-228534e045c2bc0960d1.js" async></script><script src="/framework-f66cde3aabc675f32ff5.js" async></script><script src="/app-48e2e19548a05b3ed7db.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="f5170723bb4632310024";</script><script src="/webpack-runtime-a3fba174ea8795200121.js" async></script><script src="/framework-f66cde3aabc675f32ff5.js" async></script><script src="/app-48e2e19548a05b3ed7db.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
