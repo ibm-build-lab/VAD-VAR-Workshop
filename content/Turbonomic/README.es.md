@@ -12,6 +12,12 @@ Después de completar estos laboratorios en una sesión de Curso, podrá obtener
 ## Requisitos previos
 
 - Recomendado: Material de nivel 1 y nivel 2 para la [Turbonomic by IBM Sales Foundation badge](https://www.credly.com/org/ibm/badge/turbonomic-by-ibm-technical-sales-intermediate).
+- Para este laboratorio se requiere una reserva en TechZone para el [Entorno PoT de Turbonomic](https://techzone.ibm.com/my/reservations/create/641cb4cce0c63a00185065cf). Para simplificar, puede utilizar el siguiente formulario de reserva:
+
+      <br/> **Tipo de reserva**: _Reserve Now_
+      <br/> **Nombre**: _Turbonomic for Madrid Workshop_
+      <br/> **Propósito**: _Practice/Self-Education_
+      <br/> **Geografía Preferida**: _AMERICAS - us-south-region - dal10_
 
 ## Laboratorios
 

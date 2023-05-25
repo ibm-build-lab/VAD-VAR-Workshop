@@ -30,7 +30,7 @@ const supportedLangs: SupportedLanguage[] = [
   },
   {
     id: 'es',
-    label: 'Espanol'
+    label: 'Español'
   }
 ];
 
