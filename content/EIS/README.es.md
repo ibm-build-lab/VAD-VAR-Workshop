@@ -12,11 +12,12 @@ Después de completar estos laboratorios en una sesión de taller, podrá obtene
 
 ## Requisitos previos
 
-*   Un IBMid - Acceso al entorno EIS SaaS para la insignia L3. Las instrucciones para acceder a BP se incluyen en la sección de *acceso al entorno Demo* de [este documento de Seismic](https://ibm.seismic.com/Link/Content/DC3WCfCq2qCD9GWVQbpJC2TWdPXj).
-*   Utilice la credencial compartida proporcionada en el documento anterior para este laboratorio.
-*   Recomendado: Material de Nivel 1 y Nivel 2 para la [Environmental Intelligence Suite Vegetation Management Sales Foundation](https://www.credly.com/org/ibm/badge/ibm-environmental-intelligence-suite-vegetation-management-sales-foundation).
+*  Un IBM id 
+*  Acceso al entorno EIS SaaS para la insignia L3. Las instrucciones para acceder a BP se incluyen en la sección de *acceso al entorno Demo* de [este documento de Seismic](https://ibm.seismic.com/Link/Content/DC3WCfCq2qCD9GWVQbpJC2TWdPXj).
+*  Utilice la credencial compartida proporcionada en el documento anterior para este laboratorio.
+*  Recomendado: Material de Nivel 1 y Nivel 2 para la [Environmental Intelligence Suite Vegetation Management Sales Foundation](https://www.credly.com/org/ibm/badge/ibm-environmental-intelligence-suite-vegetation-management-sales-foundation).
 
 ## Laboratorios
 
-*   **[Módulo 101: Introducción a IBM Environmental Intelligent Suite - Aviation Operations](/eis-weathersolutions/101)**
-*   **[Módulo 102: Introducción a IBM Environmental Intelligent Suite - Vegetation Management](/eis-weathersolutions/102)**
+*   **[Módulo 101: Introducción a IBM Environmental Intelligence Suite - Aviation Operations](/eis-weathersolutions/101)**
+*   **[Módulo 102: Introducción a IBM Environmental Intelligence Suite - Vegetation Management](/eis-weathersolutions/102)**
