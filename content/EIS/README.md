@@ -21,5 +21,5 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 ## Labs
 
-- **[Module 101: Introduction to IBM Environmental Intelligence Suite - Aviation Operations](/eis-weathersolutions/101)**
-- **[Module 102: Introduction to IBM Environmental Intelligence Suite - Vegetation Management](/eis-weathersolutions/102)**
+- **[Module 101: Introduction to IBM Environmental Intelligence Suite - Aviation Operations](/eis/101)**
+- **[Module 102: Introduction to IBM Environmental Intelligence Suite - Vegetation Management](/eis/102)**
