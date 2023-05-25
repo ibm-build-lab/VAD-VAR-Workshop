@@ -1,5 +1,5 @@
 ---
-title: EIS-WeatherSolutions
+title: EIS
 toc: false
 ---
 # Taller técnico de ventas de IBM Environmental Intelligent Suite
