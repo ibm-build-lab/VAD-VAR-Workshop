@@ -8,7 +8,8 @@ import {
   QuizAlert,
   SmartLink,
   SubHeader,
-  TableWrapper
+  TableWrapper,
+  CopyText
 } from '../replacements';
 
 interface MDXWrapperProps {
@@ -23,7 +24,8 @@ const standardComponents: Props['components'] = {
   SubHeader: SubHeader,
   img: ImageWrapper,
   code: CodeBlock,
-  QuizAlert: QuizAlert
+  QuizAlert: QuizAlert,
+  CopyText: CopyText
 };
 
 const MDXWrapper = memo(function MDXWrapper({ children, components = {} }: MDXWrapperProps) {
