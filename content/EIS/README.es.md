@@ -19,5 +19,5 @@ Después de completar estos laboratorios en una sesión de taller, podrá obtene
 
 ## Laboratorios
 
-*   **[Módulo 101: Introducción a IBM Environmental Intelligence Suite - Aviation Operations](/eis-weathersolutions/101)**
-*   **[Módulo 102: Introducción a IBM Environmental Intelligence Suite - Vegetation Management](/eis-weathersolutions/102)**
+*   **[Módulo 101: Introducción a IBM Environmental Intelligence Suite - Aviation Operations](/eis/101)**
+*   **[Módulo 102: Introducción a IBM Environmental Intelligence Suite - Vegetation Management](/eis/102)**
