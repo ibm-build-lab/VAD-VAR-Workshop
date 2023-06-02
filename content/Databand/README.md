@@ -7,7 +7,9 @@ toc: false
 
 This workshop shows how to configure and perform common data observability tasks on an IBM DataStage flow using Databand
 
-This workshop will teach IBMers and Business Partners about the additional monitoring and alerting capabilities that Databand brings to DataStage on Cloud Pak for Data as a Service (CP4DaaS). The DataStage flow we will be observing is found in the Data Integration tutorial. This flow combines anonymized mortgage applications data with the mortgage applicants’ personally identifiable information to help lenders decide whether they should approve or deny mortgage applications.
+The [first lab](/databand/101) provides a scripted walk though of key data observability features and benefits that are provided by Databand. This lab is a good place to see how Databand provides capabilities that help data engineers understand problems in data pipelines earlier, understand impacts of issues and errors, and ultimately remediate problems faster. The flow of this lab follows IBM's recommended way to demonstrate Databand to a potential customer.
+
+The [second](/databand/102) and [third](/databand/103) labs show IBMers and Business Partners the additional monitoring and alerting capabilities that Databand brings to DataStage on Cloud Pak for Data as a Service (CP4DaaS). The DataStage flow we will be observing is found in the Data Integration tutorial. This flow combines anonymized mortgage applications data with the mortgage applicants’ personally identifiable information to help lenders decide whether they should approve or deny mortgage applications.
 
 ## Prerequisites
 
@@ -15,6 +17,8 @@ This workshop will teach IBMers and Business Partners about the additional monit
 
 ## Labs
 
-- **[Module 101: Configuration of DataStage flow and Databand setup (L3+ content)](/databand/101)**
+- **[Module 101: Overview and demonstrating Datband key features](/databand/101)**
 
-- **[Module 102: Observing jobs, Configuring Alerts and External Notifications (L3+ content)](/databand/102)**
+- **[Module 102: Configuration of DataStage flow and Databand setup (L3+ content)](/databand/102)**
+
+- **[Module 103: Observing jobs, Configuring Alerts and External Notifications (L3+ content)](/databand/103)**
