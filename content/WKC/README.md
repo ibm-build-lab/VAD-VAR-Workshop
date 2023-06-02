@@ -7,7 +7,7 @@ toc: false
 
 ## Prerequisites
 
-- **[Getting Started](/wkc/getting-started)**
+- **[Module 100: Getting Started](/wkc/getting-started)**
 
 ## Labs
 

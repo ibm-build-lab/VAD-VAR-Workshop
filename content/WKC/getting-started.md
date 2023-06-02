@@ -1,5 +1,5 @@
 ---
-title: 'Getting Started'
+title: '100: Getting Started'
 timeToComplete: 30
 updated: 2023-06-01
 ---
