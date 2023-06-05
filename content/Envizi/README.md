@@ -27,4 +27,6 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 - **[Module 104: Data Management (L3+ content)](/envizi/104)**
 
-- **[Module 105: Turbonomic dashboard (L3+ content)](/envizi/105)**
+- **[Module 105: Connectors (L3+ content)](/envizi/105)**
+
+- **[Module 106: Turbonomic dashboard (L3+ content)](/envizi/106)**
