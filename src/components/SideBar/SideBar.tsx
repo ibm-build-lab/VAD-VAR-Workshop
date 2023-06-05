@@ -30,6 +30,11 @@ interface NavBarProps {
   index?: string;
 }
 
+interface SideBarProps {
+  isOpen?: boolean;
+  toggleOpen?: () => void;
+}
+
 // custom link implementation to stop remounts
 const CustomSideNavItem = (props: SmartLinkProps) => {
   const prefix = usePrefix();
@@ -57,14 +62,16 @@ const NavBar = (props: NavBarProps) => {
 
   return (
     <>
-      {navItems.map((item, index) => {
+      {navItems.map((item) => {
         const { children, name, slug } = item;
         const cleanSlug = cleanPathString(slug);
         const isActive = cleanSlug === currentPath;
 
+        console.log(cleanSlug === splitCurrPath.slice(0, depth + 2).join('/'), cleanSlug, name);
+
         return children.length > 0 ? (
           <SideNavMenu
-            key={index}
+            key={`${name}-col`}
             title={name}
             defaultExpanded={cleanSlug === splitCurrPath.slice(0, depth + 2).join('/')}
             className={styles[`col${depth}`]}>
@@ -78,7 +85,7 @@ const NavBar = (props: NavBarProps) => {
             />
           </SideNavMenu>
 ***REMOVED*** : (
-          <CustomSideNavItem key={index} href={slug} isActive={isActive} depth={depth}>
+          <CustomSideNavItem key={`${name}-item`} href={slug} isActive={isActive} depth={depth}>
             {name || ''}
           </CustomSideNavItem>
 ***REMOVED***;
@@ -87,17 +94,20 @@ const NavBar = (props: NavBarProps) => {
   );
 };
 
-const SideBar = () => {
+const SideBar = (props: SideBarProps) => {
+  const { isOpen, toggleOpen } = props;
   const siteMap = useSiteMap();
   const { pathname } = useLocation();
   const cleanPathName = cleanPathString(pathname);
 
+  const sidebarClass = cx(styles.sidebar);
+
   return (
     <SideNav
-      isFixedNav
-      expanded
+      expanded={isOpen}
+      onOverlayClick={toggleOpen}
       aria-label='Side navigation'
-      className={styles.sidebar}
+      className={sidebarClass}
       isChildOfHeader={true}>
       <SideNavItems>
         <CustomSideNavItem href={`/`}>Home</CustomSideNavItem>

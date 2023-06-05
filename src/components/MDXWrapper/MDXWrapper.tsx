@@ -4,11 +4,13 @@ import { Props } from '@mdx-js/react/lib';
 import {
   BlockQuote,
   CodeBlock,
+  Danger,
   ImageWrapper,
   QuizAlert,
   SmartLink,
   SubHeader,
-  TableWrapper
+  TableWrapper,
+  Warning
 } from '../replacements';
 
 interface MDXWrapperProps {
@@ -23,7 +25,9 @@ const standardComponents: Props['components'] = {
   SubHeader: SubHeader,
   img: ImageWrapper,
   code: CodeBlock,
-  QuizAlert: QuizAlert
+  QuizAlert,
+  Danger,
+  Warning
 };
 
 const MDXWrapper = memo(function MDXWrapper({ children, components = {} }: MDXWrapperProps) {

@@ -4,5 +4,5 @@
   "landingPageQuizAlert": "Presta especial atención a la información incluida en este tipo de notas, ya que serán importantes para el examen L3.",
   "landPageTileUpdated": "Actualizada {{date}}",
   "landPageTileTitle": "Ir a los materiales de laboratorio de IBM {{name}}",
-  "quizAlertDefault": "Atención! Partes de esta sección estarán en el cuestionario."
+  "QuizAlertDefault": "Atención! Partes de esta sección estarán en el cuestionario."
 }

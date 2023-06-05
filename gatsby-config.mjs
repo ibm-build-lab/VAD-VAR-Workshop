@@ -1,18 +1,20 @@
 import remarkGfm from 'remark-gfm';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
-import rehypePrettyCode from 'rehype-pretty-code';
+// import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSectionize from '@hbsnow/rehype-sectionize';
+import rehypeHighlight from 'rehype-highlight';
+import xls from 'highlight.js/lib/languages/xl.js';
 import { fileURLToPath } from 'url';
 import path from 'path';
-import createTheme from './src/helpers/create-theme.mjs';
+// import createTheme from './src/helpers/create-theme.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const { NODE_ENV, IMAGE_OPTIMIZATION } = process.env;
 
-const syntaxTheme = createTheme();
+// const syntaxTheme = createTheme();
 
 const isDev = NODE_ENV === 'development';
 const optimizeImages = IMAGE_OPTIMIZATION === 'true';
@@ -49,7 +51,7 @@ const config = {
         mdxOptions: {
           remarkPlugins: [remarkGfm],
           rehypePlugins: [
-            [rehypePrettyCode, { theme: syntaxTheme }],
+            [rehypeHighlight, { languages: { xls: xls } }],
             [rehypeSlug, {}],
             [rehypeAutolinkHeadings, { behavior: 'wrap', test: ['h2', 'h3', 'h4', 'h5', 'h6'] }],
             [rehypeSectionize, {}]
