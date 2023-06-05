@@ -4,6 +4,7 @@ import BlockQuote from './BlockQuote';
 import SubHeader from './SubHeader';
 import ImageWrapper from './ImageWrapper';
 import CodeBlock from './CodeBlock';
+import CopyText from './CopyText';
 import callouts from './Callouts';
 
 const { QuizAlert, Danger, Warning } = callouts;
@@ -17,5 +18,6 @@ export {
   CodeBlock,
   QuizAlert,
   Danger,
-  Warning
+  Warning,
+  CopyText
 };

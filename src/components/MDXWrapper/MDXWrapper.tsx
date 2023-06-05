@@ -11,6 +11,7 @@ import {
   SubHeader,
   TableWrapper,
   Warning
+  CopyText
 } from '../replacements';
 
 interface MDXWrapperProps {
@@ -28,6 +29,8 @@ const standardComponents: Props['components'] = {
   QuizAlert,
   Danger,
   Warning
+  QuizAlert: QuizAlert,
+  CopyText: CopyText
 };
 
 const MDXWrapper = memo(function MDXWrapper({ children, components = {} }: MDXWrapperProps) {
