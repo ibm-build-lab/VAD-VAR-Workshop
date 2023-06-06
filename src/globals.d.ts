@@ -21,6 +21,8 @@ declare module '@carbon/react/icons' {
     EarthFilled: CarbonIcon;
     ArrowRight: CarbonIcon;
     InformationFilled: CarbonIcon;
+    WarningAltFilled: CarbonIcon;
+    WarningSquareFilled: CarbonIcon;
     // [name: string]: CarbonIcon;
   };
   export = icon;

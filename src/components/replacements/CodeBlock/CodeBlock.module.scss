@@ -2,6 +2,7 @@
   font-size: 0.7rem;
   padding: $spacing-01;
   max-width: inherit;
+  border: 1px solid $gray-20;
 }
 
 .codeBlock {
@@ -9,7 +10,7 @@
   padding: $spacing-04;
   margin-bottom: $spacing-06;
 
-  & > div:focus {
+  &>div:focus {
     outline: none !important;
   }
 
@@ -17,6 +18,7 @@
     padding-bottom: $spacing-01 !important;
   }
 }
+
 .codeInline {
   & * {
     white-space: normal !important;
