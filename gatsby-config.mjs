@@ -1,21 +1,18 @@
 import remarkGfm from 'remark-gfm';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
-// import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSectionize from '@hbsnow/rehype-sectionize';
 import rehypeHighlight from 'rehype-highlight';
-import xls from 'highlight.js/lib/languages/xl.js';
+import xls from 'highlight.js/lib/languages/xl';
 import { fileURLToPath } from 'url';
 import path from 'path';
-// import createTheme from './src/helpers/create-theme.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const { NODE_ENV, IMAGE_OPTIMIZATION } = process.env;
 
-// const syntaxTheme = createTheme();
-
+// build flags
 const isDev = NODE_ENV === 'development';
 const optimizeImages = IMAGE_OPTIMIZATION === 'true';
 
