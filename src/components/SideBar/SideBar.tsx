@@ -108,7 +108,8 @@ const SideBar = (props: SideBarProps) => {
       onOverlayClick={toggleOpen}
       aria-label='Side navigation'
       className={sidebarClass}
-      isChildOfHeader={true}>
+      isPersistent
+      isChildOfHeader>
       <SideNavItems>
         <CustomSideNavItem href={`/`}>Home</CustomSideNavItem>
         <SideNavDivider />
