@@ -4,6 +4,7 @@ import { Props } from '@mdx-js/react/lib';
 import {
   BlockQuote,
   CodeBlock,
+  CopyText,
   Danger,
   ImageWrapper,
   QuizAlert,
@@ -11,7 +12,6 @@ import {
   SubHeader,
   TableWrapper,
   Warning
-  CopyText
 } from '../replacements';
 
 interface MDXWrapperProps {
@@ -28,8 +28,7 @@ const standardComponents: Props['components'] = {
   code: CodeBlock,
   QuizAlert,
   Danger,
-  Warning
-  QuizAlert: QuizAlert,
+  Warning,
   CopyText: CopyText
 };
 
