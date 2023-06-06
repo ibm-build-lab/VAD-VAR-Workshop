@@ -5,7 +5,7 @@ toc: false
 
 # Data Observability with Databand
 
-This workshop shows how to configure and perform common data observability tasks on an IBM DataStage flow using Databand
+This workshop introduces key Databand capabilities and provides a hands-on exercise to configure and perform common data observability tasks for an IBM DataStage flow using Databand.
 
 The [first lab](/databand/101) provides a scripted walk though of key data observability features and benefits that are provided by Databand. This lab is a good place to see how Databand provides capabilities that help data engineers understand problems in data pipelines earlier, understand impacts of issues and errors, and ultimately remediate problems faster. The flow of this lab follows IBM's recommended way to demonstrate Databand to a potential customer.
 
