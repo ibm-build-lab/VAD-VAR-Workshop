@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 0;
 
   & h3 {
     margin-bottom: $spacing-01;
@@ -16,7 +17,7 @@
 }
 
 .bottomStack {
-  & > svg {
+  &>svg {
     margin-left: auto;
   }
 
