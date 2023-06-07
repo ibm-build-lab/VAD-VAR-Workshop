@@ -107,23 +107,14 @@ For the technical labs, you will need to provision the following services:
 | Service Catalog Category | Service Catalog Service Name  |
 | ------------------------ | ----------------------------- |
 | AI / Machine Learning    | Watson OpenScale              |
-| ------------------------ | ----------------------------- |
 | AI / Machine Learning    | Watson Studio                 |
-| ------------------------ | ----------------------------- |
 | AI / Machine Learning    | Watson Knowledge Catalog      |
-| ------------------------ | ----------------------------- |
 | AI / Machine Learning    | IBM Match 360 with Watson     |
-| ------------------------ | ----------------------------- |
 | AI / Machine Learning    | Watson Machine Learning       |
-| ------------------------ | ----------------------------- |
 | Databases                | Db2                           |
-| ------------------------ | ----------------------------- |
 | Databases                | Watson Query                  |
-| ------------------------ | ----------------------------- |
 | Databases                | DataStage                     |
-| ------------------------ | ----------------------------- |
 | Analytics                | IBM Cognos Embedded Dashboard |
-| ------------------------ | ----------------------------- |
 | Storage                  | Cloud Object Storage          |
 
 **Note:** If you already have any of the services listed above already provisioned in your cloud account in the **Dallas** region, you can **skip** provisioning that service.
@@ -477,9 +468,7 @@ You will add 3 platform connections, that are also used by the **Data and AI Liv
 | Name                 | Connection Type          |
 | -------------------- | ------------------------ |
 | Cloud Object Storage | IBM Cloud Object Storage |
-| -------------------- | ------------------------ |
 | Data Warehouse       | IBM Db2 Warehouse        |
-| -------------------- | ------------------------ |
 | Third Party Data     | PostgreSQL EDB           |
 
 The screen shots in this section were captured in a new Cloud Pak for Data as a Service account that does not have any platform connections. If you already have platform connections, your environment may look different but the results should be the same.
