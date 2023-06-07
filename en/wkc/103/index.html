@@ -4,24 +4,24 @@
 <p>Depending on the curation tasks you want to perform, you need to work on the data assets in a project, a catalog, or both before the data is ready for use by data consumers. In this lab, you will use both. The majority of the data curation tasks will be done in a project before you publish them to a governed catalog. Once they are published to the catalog, you will do some additional enrichment tasks in the catalog, that are not available from a project. In order to accomplish this, you will perform the following data curation steps.</p>
 <section class="heading" data-heading-rank="2" aria-labelledby="1-create-the-project"><h2 id="1-create-the-project"><a href="/en/wkc/103#1-create-the-project">1. Create the Project</a></h2>
 <p>In this section, you will create the project that you will use to create and execute the automated <strong>Metadata Import</strong> and <strong>Enrichment</strong> processes to discover, add, and curate the data assets needed by the analytics project team before they are published to the governed <strong>Business</strong> catalog.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958225.754782851/image167.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720247.5657790179/image167.png" alt=""/></span>
 <ol>
 <li>Select the <strong>Navigation</strong> menu (the 4 stacked horizontal lines in the upper left corner).</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958229.754782852/image168.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720247.5657790180/image168.png" alt=""/></span>
 <ol start="2">
 <li>Select the <strong>Projects &gt; View all projects</strong> menu.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958229.754782853/image169.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720251.566790181/image169.png" alt=""/></span>
 <p><strong>Note:</strong> Your <strong>Projects</strong> screen may look different than the screen shot above. You might already have projects in your environment. This environment does not have any projects. It is using a newly deployed <strong>Watson Studio</strong> service.</p>
 <ol start="3">
 <li>Click the <strong>New project+</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958233.754782855/image170.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720255.566790183/image170.png" alt=""/></span>
 <ol start="4">
 <li>Click the <strong>Create an empty project</strong> option.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958237.754782856/image171.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720255.566790184/image171.png" alt=""/></span>
 <ol start="5">
 <li>Copy the text below and paste it into the <strong>Name</strong> field:</li>
 </ol>
@@ -44,14 +44,14 @@
 </li>
 </ol>
 <p>You will see a dialog box with the message that the <strong>Business Catalog Enrichment project is being created...</strong></p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958237.754782857/image172.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720259.5662790185/image172.png" alt=""/></span>
 <p>When the project creation is complete, you will be brought into the <strong>Overview</strong> section of the new project.</p>
 </section><section class="heading" data-heading-rank="2" aria-labelledby="2-add-the-connections"><h2 id="2-add-the-connections"><a href="/en/wkc/103#2-add-the-connections">2. Add the Connections</a></h2>
 <p>The first step is to add the connections to the project that will be used by <strong>Metadata Import</strong>. These are <strong>Platform connections</strong>, so make sure you have created all of the <strong>Platform connections</strong> you were instructed to create in the <strong>Data fabric lab</strong> <a class="cds--link" rel="noreferrer" href="https://vest.buildlab.cloud/en/wkc/getting-started" target="_blank">Getting started<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13,14H3c-0.6,0-1-0.4-1-1V3c0-0.6,0.4-1,1-1h5v1H3v10h10V8h1v5C14,13.6,13.6,14,13,14z"></path><path d="M10 1L10 2 13.3 2 9 6.3 9.7 7 14 2.7 14 6 15 6 15 1z"></path></svg></a> section.</p>
 <section class="heading" data-heading-rank="3" aria-labelledby="add-the-object-storage-connection"><h3 id="add-the-object-storage-connection"><a href="/en/wkc/103#add-the-object-storage-connection">Add the Object Storage Connection</a></h3>
 <hr/>
 <p>The <strong>Object Storage</strong> data source connections contains the <strong>Warehouse</strong> data that was requested by the analytics project team.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958237.754782858/image173.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720259.5662790186/image173.png" alt=""/></span>
 <ol>
 <li>
 <p>Select the <strong>Assets</strong> tab.</p>
@@ -60,11 +60,11 @@
 <p>Click the <strong>New Asset +</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958241.754782859/image174.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720263.5662790187/image174.png" alt=""/></span>
 <ol start="3">
 <li>Select the <strong>Connection</strong> tile in the Data access tools section.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958241.754782860/image175.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720263.5662790188/image175.png" alt=""/></span>
 <ol start="4">
 <li>
 <p>Select the <strong>From platform</strong> tab.</p>
@@ -76,22 +76,22 @@
 <p>Click the <strong>Select</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958245.754782861/image176.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720263.5662790189/image176.png" alt=""/></span>
 <ol start="7">
 <li>Click the <strong>Create</strong> button.</li>
 </ol>
 </section><section class="heading" data-heading-rank="3" aria-labelledby="add-the-data-warehouse-connection"><h3 id="add-the-data-warehouse-connection"><a href="/en/wkc/103#add-the-data-warehouse-connection">Add the Data Warehouse Connection</a></h3>
 <hr/>
 <p>The <strong>Data Warehouse</strong> data source connections contains the <strong>Employee</strong> data that was requested by the analytics project team.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958245.754782862/image177.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720263.5662790190/image177.png" alt=""/></span>
 <ol>
 <li>Click the <strong>New Asset +</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958241.754782859/image174.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720263.5662790187/image174.png" alt=""/></span>
 <ol start="2">
 <li>Select the <strong>Connection</strong> tile in the Data access tools section.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958245.754782863/image178.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720267.5664790191/image178.png" alt=""/></span>
 <ol start="3">
 <li>
 <p>Select the <strong>From platform</strong> tab.</p>
@@ -103,22 +103,22 @@
 <p>Click the <strong>Select</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958249.754782864/image179.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720267.5664790192/image179.png" alt=""/></span>
 <ol start="6">
 <li>Click the <strong>Create</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958249.754782866/image180.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720271.5664790194/image180.png" alt=""/></span>
 <p>You should now see the two new connections in the project.</p>
 </section></section><section class="heading" data-heading-rank="2" aria-labelledby="3-import-the-data"><h2 id="3-import-the-data"><a href="/en/wkc/103#3-import-the-data">3. Import the Data</a></h2>
 <p>This section uses the automated <strong>Metadata Import</strong> process to quickly, and easily connect to data source connections, discover and select the data assets you are interested in, and add them as data assets into a project or catalog. You will import the data assets into the project you just created, and then use them as input into the <strong>Metadata Enrichment</strong> process. You will discover and import <strong>4</strong> data assets to fulfill the data requested by the analytics project team that reside across the <strong>2</strong> disparate data source connections that you just created.</p>
 <section class="heading" data-heading-rank="3" aria-labelledby="import-the-data-warehouse-data"><h3 id="import-the-data-warehouse-data"><a href="/en/wkc/103#import-the-data-warehouse-data">Import the Data Warehouse Data</a></h3>
 <hr/>
 <p>In this step, you will create the <strong>Metadata Import</strong> to import the <strong>Employee</strong> data asset from the <strong>Data Warehouse</strong> connection into the project.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958245.754782862/image177.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720263.5662790190/image177.png" alt=""/></span>
 <ol>
 <li>Click the <strong>New Asset +</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958253.754782869/image183.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720271.5664790197/image183.png" alt=""/></span>
 <ol start="2">
 <li>
 <p>Select the <strong>Data access tools</strong> category from the Tools menu on the left.</p>
@@ -127,7 +127,7 @@
 <p>Select the <strong>Metadata import</strong> tile in the Data access tools section.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958253.754782870/image184.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720271.5664790198/image184.png" alt=""/></span>
 <ol start="4">
 <li>Copy the text below and paste it into the <strong>Name</strong> field:</li>
 </ol>
@@ -142,7 +142,7 @@
 <ol start="6">
 <li>Click the <strong>Next</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958253.754782871/image185.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720275.5667790199/image185.png" alt=""/></span>
 <ol start="7">
 <li>
 <p>Select <strong>This project (Business Catalog Enrichment)</strong> as the target (it should be selected by default).</p>
@@ -151,11 +151,11 @@
 <p>Click the <strong>Next</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958257.754782872/image186.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720275.5667790200/image186.png" alt=""/></span>
 <ol start="9">
 <li>Click the <strong>Select connection</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958257.754782873/image187.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720275.5667790201/image187.png" alt=""/></span>
 <ol start="10">
 <li>
 <p>Select the <strong>Data Warehouse</strong> connection from the Connections list on the left.</p>
@@ -170,28 +170,28 @@
 <p>Click the <strong>Select</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958257.754782875/image189.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720279.567790203/image189.png" alt=""/></span>
 <ol start="14">
 <li>Click the <strong>Next</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958261.754782877/image190.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720279.567790205/image190.png" alt=""/></span>
 <p>Take the default <strong>Job name</strong> and leave scheduling turned off.</p>
 <ol start="15">
 <li>Click the <strong>Next</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958265.754782878/image191-1.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720283.567790206/image191-1.png" alt=""/></span>
 <p>Take the default <strong>Advanced options</strong> that are selected for the Update on reimport actions.</p>
 <ol start="16">
 <li>Click the <strong>Next</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958265.754782879/image191.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720283.567790207/image191.png" alt=""/></span>
 <p>Take a minute to review the import before you create it. Your <strong>Scope</strong> is importing <strong>1</strong> data assets from the <strong>Data Warehouse</strong> connection into the <strong>Business Catalog Enrichment</strong> project as the Target.</p>
 <ol start="17">
 <li>Click the <strong>Create</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958269.754782880/image192.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720287.5671790208/image192.png" alt=""/></span>
 <p>The import process should run quickly. In a few seconds, you should begin seeing the import process adding the data assets you selected to the Imported assets list. You can click on the <strong>Refresh</strong> button at the top of the page to update the results.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958269.754782881/image193.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720287.5671790209/image193.png" alt=""/></span>
 <p>When the import is complete, you should see a message at the top of the page: <strong>Metadata import complete. 1 assets were imported successfully</strong>. The data asset will appear in the Imported assets list and is now added to the project.</p>
 <ol start="18">
 <li>Select the <strong>Business Catalog Enrichment</strong> project breadcrumb at the top of the page to get back to the project home page.</li>
@@ -199,11 +199,11 @@
 </section><section class="heading" data-heading-rank="3" aria-labelledby="import-the-object-storage-data"><h3 id="import-the-object-storage-data"><a href="/en/wkc/103#import-the-object-storage-data">Import the Object Storage Data</a></h3>
 <hr/>
 <p>In this step, you will create the <strong>Metadata Import</strong> to import the <strong>Warehouse</strong> data assets from the <strong>Cloud Object Storage</strong> connection into the project.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958245.754782862/image177.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720263.5662790190/image177.png" alt=""/></span>
 <ol>
 <li>Click the <strong>New Asset +</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958253.754782869/image183.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720271.5664790197/image183.png" alt=""/></span>
 <ol start="2">
 <li>
 <p>Select the <strong>Data access tools</strong> category from the Tools menu on the left.</p>
@@ -212,7 +212,7 @@
 <p>Select the <strong>Metadata import</strong> tile in the Data access tools section.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958269.754782882/image194.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720287.5671790210/image194.png" alt=""/></span>
 <ol start="4">
 <li>Copy the text below and paste it into the <strong>Name</strong> field:</li>
 </ol>
@@ -227,7 +227,7 @@
 <ol start="6">
 <li>Click the <strong>Next</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958253.754782871/image185.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720275.5667790199/image185.png" alt=""/></span>
 <ol start="7">
 <li>
 <p>Select <strong>This project (Business Catalog Enrichment)</strong> as the target (It should be selected by default).</p>
@@ -236,11 +236,11 @@
 <p>Click the <strong>Next</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958257.754782872/image186.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720275.5667790200/image186.png" alt=""/></span>
 <ol start="9">
 <li>Click the <strong>Select connection</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958273.754782883/image195.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720291.5671790211/image195.png" alt=""/></span>
 <ol start="10">
 <li>
 <p>Select the <strong>Cloud Object Storage</strong> connection from the Connections list on the left.</p>
@@ -255,28 +255,28 @@
 <p>Click the <strong>Select</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958273.754782884/image196.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720291.5671790212/image196.png" alt=""/></span>
 <ol start="14">
 <li>Click the <strong>Next</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958273.754782885/image197.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720291.5671790213/image197.png" alt=""/></span>
 <p>Take the default <strong>Job name</strong> and leave scheduling turned off.</p>
 <ol start="15">
 <li>Click the <strong>Next</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958265.754782878/image191-1.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720283.567790206/image191-1.png" alt=""/></span>
 <p>Take the default <strong>Advanced options</strong> that are selected for the Update on reimport actions.</p>
 <ol start="16">
 <li>Click the <strong>Next</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958277.7542782886/image198.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720295.5674790214/image198.png" alt=""/></span>
 <p>Take a minute to review the import before you create it. Your <strong>Scope</strong> is importing <strong>3</strong> data assets from the <strong>Cloud Object Storage</strong> connection into the <strong>Business Catalog Enrichment</strong> project as the Target.</p>
 <ol start="17">
 <li>Click the <strong>Create</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958277.7542782887/image199.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720295.5674790215/image199.png" alt=""/></span>
 <p>The import process should run quickly. In a few seconds, you should begin seeing the import process adding the data assets you selected to the Imported assets list. You can click on the <strong>Refresh</strong> button at the top of the page to update the results.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958281.7542782890/image200.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720299.5674790218/image200.png" alt=""/></span>
 <p>When the import is complete, you should see a message at the top of the page: <strong>Metadata import complete. 3 assets were imported successfully</strong>. The data assets will appear in the Imported assets list and are now added to the project.</p>
 <ol start="18">
 <li>Select the <strong>Business Catalog Enrichment</strong> breadcrumb at the top of the page to get back to the project home page.</li>
@@ -284,11 +284,11 @@
 </section></section><section class="heading" data-heading-rank="2" aria-labelledby="4-enrich-the-data"><h2 id="4-enrich-the-data"><a href="/en/wkc/103#4-enrich-the-data">4. Enrich the Data</a></h2>
 <p>This section uses the automated <strong>Metadata Enrichment</strong> process of a project, provided by <strong>Watson Knowledge Catalog</strong>, to enrich the data assets that were discovered and imported during the <strong>Metadata Import</strong> processes you just completed. Metadata imports can be used as input into <strong>Metadata Enrichment</strong> processes to automatically profile the data, analyze and assess data quality, and assign data classifications and business terms by leveraging governance artifacts defined in the business glossary.</p>
 <p>This is where all the work that was done up front building out a complete, meaningful, and cross-referenced business glossary, to establish a business ready analytics foundation, pays dividends. Metadata enrichment can now leverage the data classes, and business terms, and automatically assign them, and make suggestions, during the metadata enrichment process. This saves organizations a tremendous amount of time and resources, by alleviating the manual effort that would have been involved to accomplish the same result.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958245.754782862/image177.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720263.5662790190/image177.png" alt=""/></span>
 <ol>
 <li>Click the <strong>New Asset +</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958285.7542782898/image208.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720303.5676790226/image208.png" alt=""/></span>
 <ol start="2">
 <li>
 <p>Select the <strong>Automated builders</strong> category from the Tools menu on the left.</p>
@@ -297,7 +297,7 @@
 <p>Select the <strong>Metadata Enrichment</strong> tile in the Automated builders tools section.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958285.7542782899/image209.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720303.5676790227/image209.png" alt=""/></span>
 <ol start="4">
 <li>Copy the text below and paste it into the <strong>Name</strong> field:</li>
 </ol>
@@ -312,11 +312,11 @@
 <ol start="6">
 <li>Click the <strong>Next</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958289.7542782901/image210.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720307.5676790229/image210.png" alt=""/></span>
 <ol start="7">
 <li>Click the <strong>Select data from project</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958289.7542782902/image211.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720307.5676790230/image211.png" alt=""/></span>
 <ol start="8">
 <li>
 <p>Select the <strong>Metadata Import</strong> from the Asset types list on the left.</p>
@@ -328,11 +328,11 @@
 <p>Click the <strong>Select</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958293.7542782903/image212.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720307.5676790231/image212.png" alt=""/></span>
 <ol start="11">
 <li>Click the <strong>Next</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958293.7542782904/image213.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720311.5679790232/image213.png" alt=""/></span>
 <ol start="12">
 <li>
 <p>Select the checkbox for the <strong>Profile data</strong> Enrichment objective.</p>
@@ -347,7 +347,7 @@
 <p>Click the <strong>Select categories +</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958293.7542782905/image214.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720311.5679790233/image214.png" alt=""/></span>
 <ol start="16">
 <li>
 <p>Select the checkbox next to the <strong>[uncategorized]</strong> category.</p>
@@ -363,7 +363,7 @@
 <ol start="19">
 <li>Click the <strong>Select</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958297.7542782906/image215.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720311.5679790234/image215.png" alt=""/></span>
 <ol start="20">
 <li>Scroll <strong>down</strong> to view the <strong>Sampling</strong> options.</li>
 </ol>
@@ -376,7 +376,7 @@
 <p>Click the <strong>Next</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958297.7542782907/image216.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720315.5679790235/image216.png" alt=""/></span>
 <ol start="23">
 <li>
 <p>Select <strong>All data assets</strong> for the Data scope of reruns option (It should be selected by default).</p>
@@ -385,23 +385,23 @@
 <p>Click the <strong>Next</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958297.7542782908/image217.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720315.5679790236/image217.png" alt=""/></span>
 <p>Take a minute to review the metadata enrichment before you create it. The <strong>Data Scope</strong> will be analyzing <strong>2</strong> data assets (these are the 2 metadata imports that contain the 4 data assets that you just created) with an enrichment <strong>Objective</strong> to <strong>Profile data</strong>, <strong>Analyze quality</strong> and <strong>Assign terms</strong> across <strong>5 Categories</strong> using the <strong>Basic</strong> sampling method.</p>
 <ol start="25">
 <li>Click the <strong>Create</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958301.7542782909/image218.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720319.568790237/image218.png" alt=""/></span>
 <p>The enrichment process will take approximately 2 minutes to complete. The status will change from <strong>Not analyzed</strong> to <strong>In progress</strong> to <strong>Finished</strong>.</p>
 <ol start="26">
 <li>Select the <strong>Refresh</strong> button to update the status and monitor the progress.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958301.7542782910/image219.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720319.568790238/image219.png" alt=""/></span>
 <p>You will eventually get a message notifying you that the <strong>Metadata enrichment completed</strong>. Wait until the <strong>Enrichment status</strong> for all data assets have a status of <strong>Finished</strong>.</p>
 </section><section class="heading" data-heading-rank="2" aria-labelledby="5-review-enrichment-results"><h2 id="5-review-enrichment-results"><a href="/en/wkc/103#5-review-enrichment-results">5. Review Enrichment Results</a></h2>
 <p>Now that the enrichment process is complete you can review the <strong>Asset</strong> and <strong>Column</strong> results. The <strong>Metadata Enrichment</strong> process automatically profiled all of the data assets, analyzed data quality at the data asset and column level, assigned and suggested business terms for all the data assets and columns, and assigned data classes for all columns of the data assets.</p>
 <section class="heading" data-heading-rank="3" aria-labelledby="review-asset-results"><h3 id="review-asset-results"><a href="/en/wkc/103#review-asset-results">Review Asset Results</a></h3>
 <hr/>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958305.7542782913/image221.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720323.5684790241/image221.png" alt=""/></span>
 <ul>
 <li>
 <p><strong>All</strong> of the data assets have a data quality score of <strong>100%</strong>.</p>
@@ -414,7 +414,7 @@
 <p><strong>Notice</strong> that data classes do not get assigned at the <strong>Asset</strong> level.</p>
 </section><section class="heading" data-heading-rank="3" aria-labelledby="review-column-results"><h3 id="review-column-results"><a href="/en/wkc/103#review-column-results">Review Column Results</a></h3>
 <hr/>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958309.7542782914/image222.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720327.5684790242/image222.png" alt=""/></span>
 <ol>
 <li>
 <p>Select the <strong>Columns</strong> tab.</p>
@@ -429,7 +429,7 @@
 <ol start="3">
 <li>Scroll <strong>down</strong> the list of columns to review the data quality score for all the other columns.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958313.7542782918/image226.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720327.5684790246/image226.png" alt=""/></span>
 <ol start="4">
 <li>
 <p>Scroll <strong>up</strong> to the first column at the top of the column list.</p>
@@ -438,7 +438,7 @@
 <p>Click the <strong>Columns</strong> column header to sort the columns in ascending order (Arrows pointing up) until <strong>BIRTH_DATE</strong> is the first column at the top.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958313.7542782919/image227.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720331.5686790247/image227.png" alt=""/></span>
 <ol start="6">
 <li>Scroll <strong>down</strong> the list of columns to review the following business term and data class observations:</li>
 </ol>
@@ -469,7 +469,7 @@
 <p>The business term definitions in the business glossary are accurate. With a few modifications, the accuracy rate of the metadata enrichment business term assignment process could be improved to 100%. Data class assignment could be improved significantly by adding related business terms to more data classes. You added some new data classes, which have related business terms, but the majority of the columns were reliant on the 165 predefined data classes supplied by Watson Knowledge Catalog, which do not have related business terms.</p>
 </section></section><section class="heading" data-heading-rank="2" aria-labelledby="6-rectify-asset-results"><h2 id="6-rectify-asset-results"><a href="/en/wkc/103#6-rectify-asset-results">6. Rectify Asset Results</a></h2>
 <p>In this step, you will rectify the missing <strong>Asset</strong> level business term assignments. Metadata enrichment considers suggested business terms as missing until one of the suggested business terms has been accepted.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958317.7542782920/image228.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720335.5686790248/image228.png" alt=""/></span>
 <ol>
 <li>
 <p>Select the <strong>Assets</strong> tab.</p>
@@ -482,7 +482,7 @@
 </li>
 </ol>
 <p><strong>Note:</strong> Selecting the <strong>View more</strong> link automatically opens the <strong>Governance</strong> tab of the information panel on the right. This will happen every time you select the link for a business term or data class for any column.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958317.7542782921/image229.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720335.5686790249/image229.png" alt=""/></span>
 <ol start="4">
 <li>
 <p>Using the <strong>business term type</strong> dropdown, select <strong>All terms</strong>.</p>
@@ -494,7 +494,7 @@
 <p>Select the checkbox next to the <strong>Email Address</strong> business term. <strong>Do not</strong> click the <strong>Assign</strong> button until you are instructed.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958321.7542782923/image230.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720339.5688790251/image230.png" alt=""/></span>
 <ol start="7">
 <li>
 <p>Scroll <strong>down</strong> the list until you get to the <strong>Phone Number</strong> business term.</p>
@@ -503,7 +503,7 @@
 <p>Select the checkbox next to the <strong>Phone Number</strong> business term. <strong>Do not</strong> click the <strong>Assign</strong> button until you are instructed.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958325.7542782924/image231.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720339.5688790252/image231.png" alt=""/></span>
 <ol start="9">
 <li>
 <p>Scroll <strong>down</strong> the list until you get to the <strong>US Social Security Number</strong> business term.</p>
@@ -615,7 +615,7 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958325.7542782925/image232.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720343.5688790253/image232.png" alt=""/></span>
 <p>This completes the modifications you will make at the <strong>Asset</strong> level. so you will set the status of the <strong>Assets</strong> to <strong>Reviewed</strong>. You now have a correct, meaningful and useful set of business terms assigned to all of the data assets that will provide additional information to help end users understand their content.</p>
 <ol>
 <li>
@@ -625,7 +625,7 @@
 <p>Select the <strong>high level</strong> checkbox to select all <strong>4</strong> assets in the list.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958329.7542782926/image233.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720343.5688790254/image233.png" alt=""/></span>
 <ol start="3">
 <li>
 <p>Select the <strong>More</strong> action menu on the toolbar.</p>
@@ -634,22 +634,22 @@
 <p>Select then <strong>Mark as reviewed</strong> action.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958329.7542782927/image234.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720343.5688790255/image234.png" alt=""/></span>
 <ol start="5">
 <li>Click the <strong>Done</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958333.7542782928/image235.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720347.569790256/image235.png" alt=""/></span>
 <ol start="6">
 <li>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958333.7542782929/image236.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720347.569790257/image236.png" alt=""/></span>
 <p>All of the <strong>Assets</strong> now have a <strong>checkmark</strong> next to them in the <strong>Review status</strong> column indicating that they have been reviewed.</p>
 </section></section><section class="heading" data-heading-rank="2" aria-labelledby="7-rectify-column-results"><h2 id="7-rectify-column-results"><a href="/en/wkc/103#7-rectify-column-results">7. Rectify Column Results</a></h2>
 <p>In this section, you will rectify the columns that have incorrect, and missing, business term and data class assignments. The metadata enrichment data class assignment was not as accurate as the business term assignment, with <strong>26</strong> columns needing data class corrections, compared to <strong>6</strong> columns needing business term corrections. This seems like a lot of work, but as you will experience in the following steps, metadata enrichment provides multiple methods to expedite the correction process.</p>
 <section class="heading" data-heading-rank="3" aria-labelledby="rectify-column-business-term-assignments"><h3 id="rectify-column-business-term-assignments"><a href="/en/wkc/103#rectify-column-business-term-assignments">Rectify Column Business Term Assignments</a></h3>
 <hr/>
 <p>In this step you will assign business terms to the <strong>5</strong> columns that are missing business terms. Even though some columns have suggested business terms, Watson Knowledge Catalog considers suggested business term assignments as missing assignments. You will also assign the correct business term to the <strong>DAY</strong> column.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958337.7542782930/image237.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720351.569790258/image237.png" alt=""/></span>
 <ol>
 <li>
 <p>Select the <strong>Columns</strong> tab.</p>
@@ -667,7 +667,7 @@
 <p>Click the <strong>Apply</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958341.7542782931/image238.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720355.5693790259/image238.png" alt=""/></span>
 <ol start="6">
 <li>
 <p>Hover over the <strong>Business terms</strong> column of the <strong>FAX</strong> column, click the <strong>View more</strong> link that appears.</p>
@@ -676,7 +676,7 @@
 <p>Click the <strong>+</strong> sign in the <strong>Business terms</strong> section of the <strong>Governance</strong> tab.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958341.7542782932/image239.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720355.5693790260/image239.png" alt=""/></span>
 <ol start="8">
 <li>
 <p>Using the <strong>business term type</strong> dropdown, select <strong>All terms</strong>.</p>
@@ -691,11 +691,11 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958349.7544782934/image240.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720363.5696790262/image240.png" alt=""/></span>
 <ol start="12">
 <li>Click the <strong>+</strong> plus sign in the <strong>Data class</strong> section of the <strong>Governance</strong> tab.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958349.7544782935/image241.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720363.5696790263/image241.png" alt=""/></span>
 <ol start="13">
 <li>
 <p>Using the <strong>data classes</strong> dropdown, select <strong>All data classes</strong>.</p>
@@ -710,7 +710,7 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958353.7544782936/image242.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720367.5698790264/image242.png" alt=""/></span>
 <ol start="17">
 <li>
 <p>Hover over the <strong>Business terms</strong> column of the <strong>FIRST_NAME_MB</strong> column, click the <strong>View more</strong> link that appears.</p>
@@ -719,7 +719,7 @@
 <p>Click the <strong>Assign</strong> button under the <strong>First Name</strong> business term in the <strong>Governance</strong> tab.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958357.7544782937/image243.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720371.5698790265/image243.png" alt=""/></span>
 <ol start="19">
 <li>
 <p>Hover over the <strong>Business terms</strong> column of the <strong>GENDER_CODE</strong> column, click the <strong>View more</strong> link that appears.</p>
@@ -728,7 +728,7 @@
 <p>Click the <strong>Assign</strong> button under the <strong>Gender</strong> business term in the <strong>Governance</strong> tab.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958361.7544782938/image244.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720375.57790266/image244.png" alt=""/></span>
 <ol start="21">
 <li>
 <p>Hover over the <strong>Business terms</strong> column of the <strong>LAST_NAME_MB</strong> column, click the <strong>View more</strong> link that appears.</p>
@@ -737,7 +737,7 @@
 <p>Click the <strong>Assign</strong> button under the <strong>Last Name</strong> business term in the <strong>Governance</strong> tab.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958365.7544782939/image245.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720375.57790267/image245.png" alt=""/></span>
 <ol start="23">
 <li>
 <p>Hover over the <strong>Business terms</strong> column of the <strong>SHIFT_MAX_HOURS</strong> column, click the <strong>View more</strong> link that appears.</p>
@@ -749,7 +749,7 @@
 <p>Click the <strong>edit</strong> button (looks like a pencil), in the <strong>Data class</strong> section of the <strong>Governance</strong> tab.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958365.7544782940/image246.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720379.57790268/image246.png" alt=""/></span>
 <ol start="26">
 <li>
 <p>Using the <strong>data classes</strong> dropdown, select <strong>All data classes</strong>.</p>
@@ -764,11 +764,11 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958369.7544782941/image247.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720379.57790269/image247.png" alt=""/></span>
 <ol start="30">
 <li>Click the <strong>Clear</strong> button to clear all filters.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958373.7544782942/image248.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720383.5703790270/image248.png" alt=""/></span>
 <p>The list of columns should still be sorted by <strong>Columns</strong> in ascending order with <strong>BIRTH_DATE</strong> as the first column in the list. If not, click on the <strong>Columns</strong> header and sort <strong>Columns</strong> in ascending (Arrow pointing up) until <strong>BIRTH_DATE</strong> is the first column in the list.</p>
 <p>The <strong>DAY</strong> column has <strong>20</strong> (+19) suggested business terms that are all incorrect. The <strong>20</strong> suggestions need to be removed, and the correct business term needs to be assigned. It will be a repetitive process to remove them, because there is <strong>not</strong> a function to remove them all, so follow the instructions carefully to remove them and assign the <strong>Shift Day</strong> business term as the correct business term.</p>
 <ol start="31">
@@ -788,12 +788,12 @@
 <p>Scroll <strong>down</strong> the business term list, select the <strong>-</strong> minus sign next to each of the remaining <strong>16</strong> business terms in the list to remove them.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958373.7544782943/image249.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720387.5703790271/image249.png" alt=""/></span>
 <p>All of the business terms should be removed from the <strong>DAY</strong> column and the <strong>Business terms</strong> column for the <strong>DAY</strong> column should be empty with a <strong>- dash</strong> in it.</p>
 <ol start="36">
 <li>Click the <strong>+</strong> plus sign in the <strong>Business terms</strong> section of the <strong>Governance</strong> tab for the <strong>DAY</strong> column.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958377.7544782945/image250.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720387.5703790273/image250.png" alt=""/></span>
 <ol start="37">
 <li>
 <p>Using the <strong>data classes</strong> dropdown, select <strong>All terms</strong>.</p>
@@ -808,7 +808,7 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958381.7544782946/image251.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720391.5706790274/image251.png" alt=""/></span>
 <p>You have successfully completed rectifying the business terms, and now have accurate business term assignments for all <strong>38</strong> columns.</p>
 </section><section class="heading" data-heading-rank="3" aria-labelledby="rectify-column-data-class-assignments"><h3 id="rectify-column-data-class-assignments"><a href="/en/wkc/103#rectify-column-data-class-assignments">Rectify Column Data Class Assignments</a></h3>
 <hr/>
@@ -821,13 +821,13 @@
 <p>Select the <strong>X</strong> in the <strong>Filters</strong> section to close it.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958381.7544782947/image252.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720391.5706790275/image252.png" alt=""/></span>
 <ol start="3">
 <li>Copy the text below and paste it into the <strong>search area</strong>:</li>
 </ol>
 <pre class="--copy"><pre style="color:rgb(17, 27, 39);background:rgb(227, 233, 242);font-family:Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;overflow-wrap:normal;line-height:1.5;tab-size:4;hyphens:none;padding:1em;margin:0.5em 0px;overflow:auto"><span><span>employee_code<!-- -->
 </span></span></pre></pre>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958381.7544782948/image253.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720395.5706790276/image253.png" alt=""/></span>
 <ol start="4">
 <li>
 <p>Select the <strong>high level</strong> checkbox to select all columns in the list.</p>
@@ -836,7 +836,7 @@
 <p>Click the <strong>Assign data class</strong> button on the toolbar.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958385.7544782949/image254.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720395.5706790277/image254.png" alt=""/></span>
 <ol start="6">
 <li>
 <p>Using the <strong>search area</strong>, enter the word <strong>identifier</strong>.</p>
@@ -848,7 +848,7 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958385.7544782950/image255.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720395.5706790278/image255.png" alt=""/></span>
 <ol start="9">
 <li>
 <p>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</p>
@@ -857,13 +857,13 @@
 <p>Select the <strong>X</strong> in the <strong>search area</strong> to clear it out.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958385.7544782951/image256.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720399.5708790279/image256.png" alt=""/></span>
 <ol start="11">
 <li>Copy the text below and paste it into the <strong>search area</strong>:</li>
 </ol>
 <pre class="--copy"><pre style="color:rgb(17, 27, 39);background:rgb(227, 233, 242);font-family:Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;overflow-wrap:normal;line-height:1.5;tab-size:4;hyphens:none;padding:1em;margin:0.5em 0px;overflow:auto"><span><span>_code<!-- -->
 </span></span></pre></pre>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958389.7544782952/image257.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720399.5708790280/image257.png" alt=""/></span>
 <ol start="12">
 <li>
 <p>Select the checkbox next to <strong>DAY_CODE</strong> column.</p>
@@ -878,7 +878,7 @@
 <p>Click the <strong>Assign data class</strong> button on the toolbar.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958389.7544782953/image258.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720399.5708790281/image258.png" alt=""/></span>
 <ol start="16">
 <li>
 <p>Using the <strong>search area</strong>, enter the word <strong>code</strong>.</p>
@@ -890,7 +890,7 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958389.7544782954/image259.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720403.571790282/image259.png" alt=""/></span>
 <ol start="19">
 <li>
 <p>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</p>
@@ -899,13 +899,13 @@
 <p>Select the <strong>X</strong> in the <strong>search area</strong> to clear it out.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958393.7544782956/image260.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720403.571790284/image260.png" alt=""/></span>
 <ol start="21">
 <li>Copy the text below and paste it into the <strong>search area</strong>:</li>
 </ol>
 <pre class="--copy"><pre style="color:rgb(17, 27, 39);background:rgb(227, 233, 242);font-family:Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;overflow-wrap:normal;line-height:1.5;tab-size:4;hyphens:none;padding:1em;margin:0.5em 0px;overflow:auto"><span><span>_date<!-- -->
 </span></span></pre></pre>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958393.7544782957/image261.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720407.571790285/image261.png" alt=""/></span>
 <ol start="22">
 <li>
 <p>Select the checkbox next to <strong>SHIFT_END_DATE</strong> column.</p>
@@ -917,7 +917,7 @@
 <p>Click the <strong>Assign data class</strong> button on the toolbar.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958397.7544782958/image262.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720407.571790286/image262.png" alt=""/></span>
 <ol start="25">
 <li>
 <p>Using the <strong>search area</strong>, enter the word <strong>date</strong>.</p>
@@ -929,7 +929,7 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958397.7544782959/image263.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720407.571790287/image263.png" alt=""/></span>
 <ol start="28">
 <li>
 <p>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</p>
@@ -938,13 +938,13 @@
 <p>Select the <strong>X</strong> in the <strong>search area</strong> to clear it out.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958397.7544782960/image264.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720407.571790288/image264.png" alt=""/></span>
 <ol start="30">
 <li>Copy the text below and paste it into the <strong>search area</strong>:</li>
 </ol>
 <pre class="--copy"><pre style="color:rgb(17, 27, 39);background:rgb(227, 233, 242);font-family:Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;overflow-wrap:normal;line-height:1.5;tab-size:4;hyphens:none;padding:1em;margin:0.5em 0px;overflow:auto"><span><span>_hour<!-- -->
 </span></span></pre></pre>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958401.7544782961/image265.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720411.5713790289/image265.png" alt=""/></span>
 <ol start="31">
 <li>
 <p>Select the checkbox next to <strong>SHIFT_END_HOUR</strong> column.</p>
@@ -956,7 +956,7 @@
 <p>Click the <strong>Assign data class</strong> button on the toolbar.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958401.7544782962/image266.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720411.5713790290/image266.png" alt=""/></span>
 <ol start="34">
 <li>
 <p>Using the <strong>search area</strong>, enter the word <strong>hour</strong>.</p>
@@ -968,7 +968,7 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958401.7544782963/image267.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720411.5713790291/image267.png" alt=""/></span>
 <ol start="37">
 <li>
 <p>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</p>
@@ -977,13 +977,13 @@
 <p>Select the <strong>X</strong> in the <strong>search area</strong> to clear it out.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958401.7544782964/image268.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720415.5713790292/image268.png" alt=""/></span>
 <ol start="39">
 <li>Copy the text below and paste it into the <strong>search area</strong>:</li>
 </ol>
 <pre class="--copy"><pre style="color:rgb(17, 27, 39);background:rgb(227, 233, 242);font-family:Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;overflow-wrap:normal;line-height:1.5;tab-size:4;hyphens:none;padding:1em;margin:0.5em 0px;overflow:auto"><span><span>_phone<!-- -->
 </span></span></pre></pre>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958405.7544782965/image269.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720415.5713790293/image269.png" alt=""/></span>
 <ol start="40">
 <li>
 <p>Select the checkbox next to <strong>WORK_PHONE</strong> column.</p>
@@ -992,7 +992,7 @@
 <p>Click the <strong>Assign data class</strong> button on the toolbar.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958405.7544782967/image270.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720415.5713790295/image270.png" alt=""/></span>
 <ol start="42">
 <li>
 <p>Using the <strong>search area</strong>, enter the word <strong>phone</strong>.</p>
@@ -1004,7 +1004,7 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958409.7544782968/image271.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720419.5715790296/image271.png" alt=""/></span>
 <ol start="45">
 <li>
 <p>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</p>
@@ -1013,13 +1013,13 @@
 <p>Select the <strong>X</strong> in the <strong>search area</strong> to clear it out.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958409.7544782969/image272.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720419.5715790297/image272.png" alt=""/></span>
 <ol start="47">
 <li>Copy the text below and paste it into the <strong>search area</strong>:</li>
 </ol>
 <pre class="--copy"><pre style="color:rgb(17, 27, 39);background:rgb(227, 233, 242);font-family:Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;overflow-wrap:normal;line-height:1.5;tab-size:4;hyphens:none;padding:1em;margin:0.5em 0px;overflow:auto"><span><span>_id<!-- -->
 </span></span></pre></pre>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958409.7544782970/image273.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720419.5715790298/image273.png" alt=""/></span>
 <ol start="48">
 <li>
 <p>Select the checkbox next to <strong>SHIFT_ID</strong> column.</p>
@@ -1028,7 +1028,7 @@
 <p>Click the <strong>Assign data class</strong> button on the toolbar.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958409.7544782971/image274.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720419.5715790299/image274.png" alt=""/></span>
 <ol start="50">
 <li>
 <p>Using the <strong>search area</strong>, enter the word <strong>identifier</strong>.</p>
@@ -1040,7 +1040,7 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958413.7546782972/image275.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720423.5715790300/image275.png" alt=""/></span>
 <ol start="53">
 <li>
 <p>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</p>
@@ -1049,7 +1049,7 @@
 <p>Select the <strong>X</strong> in the <strong>search area</strong> to clear it out.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958417.7546782973/image276.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720423.5715790301/image276.png" alt=""/></span>
 <ol start="55">
 <li>
 <p>Click the <strong>filter</strong> button in the upper left corner under the <strong>Assets</strong> tab.</p>
@@ -1071,7 +1071,7 @@
 <p>Click the <strong>Apply</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958417.7546782974/image277.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720427.5718790302/image277.png" alt=""/></span>
 <ol start="60">
 <li>
 <p>Select the checkbox next to <strong>DEPARTMENT</strong> column.</p>
@@ -1083,7 +1083,7 @@
 <p>Click the <strong>Assign data class</strong> button on the toolbar.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958421.7546782975/image278.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720427.5718790303/image278.png" alt=""/></span>
 <ol start="63">
 <li>
 <p>Using the <strong>search area</strong>, enter the word <strong>text</strong>.</p>
@@ -1095,7 +1095,7 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958421.7546782976/image279.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720431.5718790304/image279.png" alt=""/></span>
 <ol start="66">
 <li>
 <p>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</p>
@@ -1104,7 +1104,7 @@
 <p>Select the <strong>Clear</strong> button to clear the filters.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958425.7546782978/image280.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720435.572790306/image280.png" alt=""/></span>
 <ol start="68">
 <li>
 <p>Select the checkbox next to the <strong>Delaware State Driver&#x27;s License</strong> data class.</p>
@@ -1113,7 +1113,7 @@
 <p>Click the <strong>Apply</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958429.7546782979/image281.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720435.572790307/image281.png" alt=""/></span>
 <ol start="70">
 <li>
 <p>Select the checkbox next to <strong>COMMUTE_TIME</strong> column.</p>
@@ -1131,7 +1131,7 @@
 <p>Click the <strong>Assign data class</strong> button on the toolbar.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958429.7546782980/image282.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720439.572790308/image282.png" alt=""/></span>
 <ol start="75">
 <li>
 <p>Using the <strong>search area</strong>, enter the word <strong>quantity</strong>.</p>
@@ -1143,11 +1143,11 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958433.7546782981/image283.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720439.572790309/image283.png" alt=""/></span>
 <ol start="78">
 <li>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958433.7546782982/image284.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720443.5723790310/image284.png" alt=""/></span>
 <ol start="79">
 <li>
 <p>Select the checkbox next to <strong>EXTENSION</strong> column.</p>
@@ -1162,7 +1162,7 @@
 <p>Click the <strong>Assign data class</strong> button on the toolbar.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958433.7546782983/image285.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720443.5723790311/image285.png" alt=""/></span>
 <ol start="83">
 <li>
 <p>Using the <strong>search area</strong>, enter the word <strong>code</strong>.</p>
@@ -1174,11 +1174,11 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958437.7546782984/image286.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720447.5725790312/image286.png" alt=""/></span>
 <ol start="86">
 <li>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958437.7546782985/image287.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720447.5725790313/image287.png" alt=""/></span>
 <ol start="87">
 <li>
 <p>Click the <strong>Clear</strong> button to clear all filters.</p>
@@ -1187,7 +1187,7 @@
 <p>Select the <strong>X</strong> in the <strong>Filters</strong> section to close it.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958441.7546782986/image288.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720451.5725790314/image288.png" alt=""/></span>
 <ol start="89">
 <li>
 <p>Select the checkbox next to <strong>DAYS_OFF</strong> column.</p>
@@ -1196,7 +1196,7 @@
 <p>Click the <strong>Assign data class</strong> button on the toolbar.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958441.7546782987/image289.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720451.5725790315/image289.png" alt=""/></span>
 <ol start="91">
 <li>
 <p>Using the <strong>search area</strong>, enter the word <strong>day</strong>.</p>
@@ -1208,12 +1208,12 @@
 <p>Click the <strong>Assign</strong> button.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958445.7546782989/image290.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720451.5725790317/image290.png" alt=""/></span>
 <ol start="94">
 <li>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</li>
 </ol>
 <p>You have successfully assigned the correct data classes to all <strong>38</strong> columns. This completes all the modifications you will make at the <strong>Column</strong> level. You now have a correct, meaningful and useful set of business terms and data classes assigned to all of the columns. This will provide additional information to help end users understand their content, and ensure sensitive data is protected by the data protection rules that rely on data class assignment, so you can set the status of the <strong>Columns</strong> to <strong>Reviewed</strong>.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958445.7546782990/image291.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720455.5728790318/image291.png" alt=""/></span>
 <ol start="95">
 <li>
 <p>Select the <strong>high level</strong> checkbox to select <strong>all columns</strong> in the list.</p>
@@ -1225,15 +1225,15 @@
 <p>Select then <strong>Mark as reviewed</strong> action.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958449.7546782991/image292.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720455.5728790319/image292.png" alt=""/></span>
 <ol start="98">
 <li>Click the <strong>Done</strong> button.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958449.7546782992/image293.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720459.5728790320/image293.png" alt=""/></span>
 <ol start="99">
 <li>Click the <strong>Refresh</strong> button in the top right corner of the message displayed.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958453.7546782993/image294.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720459.5728790321/image294.png" alt=""/></span>
 <p>The <strong>Review status</strong> columns now has a <strong>check mark</strong> next to all the columns.</p>
 <ol start="100">
 <li>
@@ -1245,7 +1245,7 @@
 </ol>
 </section></section><section class="heading" data-heading-rank="2" aria-labelledby="8-add-additional-metadata"><h2 id="8-add-additional-metadata"><a href="/en/wkc/103#8-add-additional-metadata">8. Add Additional Metadata</a></h2>
 <p>The metadata import and enrichment utilities <strong>do not</strong> allow for descriptions, or additional tags, to be added to data assets as they are imported and enriched. The import automatically adds the data asset&#x27;s schema or folder name as a tag, but it adds the tag in uppercase, and tags are case sensitive, with no means to the feature off or a means to change the behavior. In this section you will add <strong>descriptions</strong> to all of the data assets, remove their existing tags, and add new <strong>tags</strong> before you publish them to the <strong>Business</strong> catalog. You are removing the existing tags because they were added by the metadata imports in upper case, and the tags that were added to all the governance artifacts in the business glossary were added in mixed case. Tags are case sensitive, and you do not want duplicate and inconsistent tags. Therefore, you will correct the data asset tags to be in mixed case before you publish them.</p>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958453.7546782994/image295.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720459.5728790322/image295.png" alt=""/></span>
 <ol>
 <li>
 <p>Select the <strong>Assets</strong> tab.</p>
@@ -1260,11 +1260,11 @@
 <p>Click the <strong>EMPLOYEE</strong> data asset.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958457.7546782995/image296.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720463.573790323/image296.png" alt=""/></span>
 <ol start="5">
 <li>Click the <strong>Edit</strong> button (looks like a pencil) for the <strong>Description</strong>.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958457.7546782996/image297.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720467.573790324/image297.png" alt=""/></span>
 <ol start="6">
 <li>Copy the text below and paste it into the <strong>Description</strong> field:</li>
 </ol>
@@ -1278,11 +1278,11 @@
 <p>Select the <strong>+</strong> plus sign to Add <strong>Tags</strong>.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958461.7546782997/image298.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720467.573790325/image298.png" alt=""/></span>
 <ol start="9">
 <li>Select the <strong>X</strong> on the <strong>EMPLOYEE</strong> tag to remove it.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958465.7546782998/image299.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720471.5732790326/image299.png" alt=""/></span>
 <ol start="10">
 <li>Copy the text below and paste it into the <strong>Tag</strong> field:</li>
 </ol>
@@ -1291,7 +1291,7 @@
 <ol start="11">
 <li>Click the <strong>+</strong> plus sign to add the tag.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958469.7546783001/image300.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720475.5732790329/image300.png" alt=""/></span>
 <ol start="12">
 <li>
 <p>Click the <strong>Save</strong> button.</p>
@@ -1300,11 +1300,11 @@
 <p>Select the <strong>Business Catalog Enrichment</strong> breadcrumb at the top of the page to go back to the project home page.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958469.7546783002/image301.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720475.5732790330/image301.png" alt=""/></span>
 <ol start="14">
 <li>Click the <strong>WAREHOUSE_SHIFTS.csv</strong> data asset.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958473.7546783003/image302.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720479.5735790331/image302.png" alt=""/></span>
 <ol start="15">
 <li>
 <p>Click the <strong>Edit</strong> button (looks like a pencil) for the <strong>Name</strong>.</p>
@@ -1319,7 +1319,7 @@
 <p>Click the <strong>Edit</strong> button (looks like a pencil) for the <strong>Description</strong>.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958473.7546783004/image303.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720479.5735790332/image303.png" alt=""/></span>
 <ol start="19">
 <li>Copy the text below and paste it into the <strong>Description</strong> field:</li>
 </ol>
@@ -1333,7 +1333,7 @@
 <p>Select the <strong>+</strong> plus sign to Add <strong>Tags</strong>.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958477.7546783005/image304.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720483.5737790333/image304.png" alt=""/></span>
 <ol start="22">
 <li>Copy the text below and paste it into the <strong>Tag</strong> field:</li>
 </ol>
@@ -1342,7 +1342,7 @@
 <ol start="23">
 <li>Click the <strong>+</strong> plus sign to add the tag.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958481.755783006/image305.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720483.5737790334/image305.png" alt=""/></span>
 <ol start="24">
 <li>
 <p>Click the <strong>Save</strong> button.</p>
@@ -1351,11 +1351,11 @@
 <p>Select the <strong>Business Catalog Enrichment</strong> breadcrumb at the top of the page to go back to the project home page.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958481.755783007/image306.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720487.5737790335/image306.png" alt=""/></span>
 <ol start="26">
 <li>Click the <strong>WAREHOUSE_STAFF.csv</strong> data asset.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958485.755783008/image307.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720487.5737790336/image307.png" alt=""/></span>
 <ol start="27">
 <li>
 <p>Click the <strong>Edit</strong> button (looks like a pencil) for the <strong>Name</strong>.</p>
@@ -1370,7 +1370,7 @@
 <p>Click the <strong>Edit</strong> button (looks like a pencil) for the <strong>Description</strong>.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958485.755783009/image308.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720491.574790337/image308.png" alt=""/></span>
 <ol start="31">
 <li>Copy the text below and paste it into the <strong>Description</strong> field:</li>
 </ol>
@@ -1384,7 +1384,7 @@
 <p>Select the <strong>+</strong> plus sign to Add <strong>Tags</strong>.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958489.755783010/image309.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720495.574790338/image309.png" alt=""/></span>
 <ol start="34">
 <li>Copy the text below and paste it into the <strong>Tag</strong> field:</li>
 </ol>
@@ -1393,7 +1393,7 @@
 <ol start="35">
 <li>Click the <strong>+</strong> plus sign to add the tag.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958493.755783012/image310.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720499.5742790340/image310.png" alt=""/></span>
 <ol start="36">
 <li>
 <p>Click the <strong>Save</strong> button.</p>
@@ -1402,11 +1402,11 @@
 <p>Select the <strong>Business Catalog Enrichment</strong> breadcrumb at the top of the page to go back to the project home page.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958497.755783013/image311.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720499.5742790341/image311.png" alt=""/></span>
 <ol start="38">
 <li>Click the <strong>WAREHOUSE_STAFFING.csv</strong> data asset.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958497.755783014/image312.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720499.5742790342/image312.png" alt=""/></span>
 <ol start="39">
 <li>
 <p>Click the <strong>Edit</strong> button (looks like a pencil) for the <strong>Name</strong>.</p>
@@ -1421,7 +1421,7 @@
 <p>Click the <strong>Edit</strong> button (looks like a pencil) for the <strong>Description</strong>.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958501.755783015/image313.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720503.5742790343/image313.png" alt=""/></span>
 <ol start="43">
 <li>Copy the text below and paste it into the <strong>Description</strong> field:</li>
 </ol>
@@ -1435,7 +1435,7 @@
 <p>Select the <strong>+</strong> plus sign to Add <strong>Tags</strong>.</p>
 </li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958501.755783016/image314.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720503.5742790344/image314.png" alt=""/></span>
 <ol start="46">
 <li>Copy the text below and paste it into the <strong>Tag</strong> field:</li>
 </ol>
@@ -1444,7 +1444,7 @@
 <ol start="47">
 <li>Click the <strong>+</strong> plus sign to add the tag.</li>
 </ol>
-<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686155958505.755783017/image315.png" alt=""/></span>
+<span class="ImageWrapper-module--imageWrapper--5d197"><img src="/1686166720507.5745790345/image315.png" alt=""/></span>
 <ol start="48">
 <li>
 <p>Click the <strong>Save</strong> button.</p>
@@ -1456,6 +1456,6 @@
           <script
             id="gatsby-chunk-mapping"
           >
-            window.___chunkMapping="{\"app\":[\"/app-3f9c2234c1d62a0778fc.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-e40bd2429dab6d7ae8ff.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-280ebbcdabf53ef08e84.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-100-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-100-es-md-91d272617a07327905fe.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-100-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-100-md-109caf2f14c31c0e1e16.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-101-es-md-ca9ef704d9b7dd3408b9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-101-md-1c9f3f553ebaa9f0bc55.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-102-es-md-20cc075651cf5bd9fb39.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-102-md-0b049f7007cc755d3387.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-103-es-md-a0644a3aae2033567d03.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-103-md-4c7a2fff0916a96cdfbe.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-104-es-md-9de61c37a2e1952a8615.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-104-md-4dac2ec5de204f6d2c85.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-105-es-md-dcf373478e7f8f8c9c82.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-105-md-5adada32eb0284b6679f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-readme-es-md-815aaa42359742beb5ae.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-readme-md-d4728518409c7374d6da.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-md-f993fd8692036bf06572.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-es-md-eecf6c1dfacd69571cff.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-md-f46d811bae56b507d18a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-103-es-md-14cadf3fc7156655f2ed.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-103-md-4e5d14ebb140da3782df.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-es-md-7f55d29b8e640a811ad3.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-md-4a1719ec46261936cf9f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-es-md-7c92fa9ad45fabf78f36.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-md-0712e60cef81224f3650.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-es-md-a2488f6a964794944d38.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-md-a49e047162161ea50f49.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-es-md-20653ba349d0a4b98d12.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-md-b556f61b5e3daa58bd18.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-es-md-df790b32017247819966.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-md-549cbe7be1884edd6765.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-es-md-016905656b0718b49c13.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-md-b7f0366daa9138302afc.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-es-md-73065f289c8ede922e4f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-md-eed092b7fe4a31ec5999.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-es-md-3b6fa0d9760a1e2a4449.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-md-e22f62bc45a1862bc844.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-es-md-e1e0a5b13cadbc11db43.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-md-28633f162f9c3560fd41.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-es-md-504ba28ac6ccff5774c9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-md-1045950a473e8f28dfe1.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-es-md-b85e5e0f8272c1a05d4e.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md-114433a2662c2fc5a97e.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-es-md-aefcec420f7315f9de60.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md-a8bf20d29d60de2859b9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-es-md-04a2d0d69bae251458b6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md-6a267b1206aedd473312.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-es-md-1f9b61cbb4f5f070a382.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md-513179fee8fa1d8b761f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-es-md-a98dd70ba1a17c3d8f56.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md-0372ff5092e3fe901434.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md-73f661945ba071fe5c76.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md-9d9be81ed5c72e1ff658.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md-67e6222ec384e04923c3.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md-13d4b188603be18b971d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md-0cb5e414d84ef5741f0e.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md-b498485fa9c57b26b416.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-es-md-7907c604304d11a25f76.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-md-bd820c3b4215f9878a13.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-es-md-c48fad5dd68c88a90a5c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-md-d8cdbde38f819ad09d81.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-es-md-a47bc27bfe59536b08ad.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-md-88cc2f864f66f5328c41.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-es-md-df0d8be466ff7a8bc874.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-md-d5837c2e3e50137dc2e0.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-es-md-34fdbfb64c576af2606a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-md-1bdc8ceb7394207a6ada.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-es-md-e51adb874c1424aa0a40.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-md-ed55550576c3bd5e8eed.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-es-md-8ad1fa2d694fd9154680.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-md-850850c79189f12a4dc4.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md-7d2de50ead1ed508cbce.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md-26c3473403a7e93c106b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md-9fa4e25484347e7b0afd.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-101-md-1bf498a15273b3dd857f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-102-md-a5f39bf7025cf2f26d8f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-readme-md-09edeca13cd811683ccf.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-client-demonstration-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-client-demonstration-md-1ff4999eb5980c2020bf.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-1-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-1-md-52b141028dbbcf5db48e.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-2-md-f0215255c8c41003d85a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-demo-preparation-oc-plogon-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-demo-preparation-oc-plogon-md-a5abcb11493b2f7c9bde.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-http-adapter-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-http-adapter-md-0ac11b76000fab3c0637.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-introduction-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-introduction-md-aae6dbe8f1079014a4ea.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-next-steps-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-next-steps-md-d1e0df12fb84ace1d429.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-overview-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-overview-md-88d422e7c38efbc30906.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md-074cdd585ef08277666b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-es-md-d839ca552dd51b169de5.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-md-b5d869742f633dccad9d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-es-md-ac327b64547d3a45b121.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-md-7b03980b4a7876821845.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-es-md-221ae7098c96b79ea685.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-md-e4c12197a07720ed7ec7.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-es-md-bfd1d5cd841e5112fee2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-md-fe0115aa9e129db484d6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-es-md-0dc66c670149f800b5fc.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-md-207c675c91767e370fca.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-es-md-8fbace673e44950a8580.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-md-a78f6a18feff02d7eb5c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md-a494e30288c1e33313f1.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md-9cf0ff9ec7768f9e35f9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md-96108382b67185b05dc6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md-65aac071a26f1e51053f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md-292a62657648b9811549.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-en-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-en-md-4c7a3d94628e7a7fa35a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-101-es-md-95ecc449e1cb0556f28d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-101-md-ca8f9d860fb978cf3189.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-102-es-md-a6ed1a892d1dcfb50b8e.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-102-md-6c7e428a9c7ef8b17b19.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-103-es-md-8f9de0dbdd4fc6d0dcf1.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-103-md-eb225ebee72e908deeba.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-104-es-md-f9c8404503d7abe270f4.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-104-md-cfab3e967c2df1abf5a5.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-105-es-md-6cb039020d4c87bbefdd.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-105-md-3f334ffeb56ae5990a37.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-106-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-106-es-md-2bc79beeca4034b4c436.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-106-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-106-md-c134cf48d917b3252d0a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-getting-started-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-getting-started-es-md-01a967ae8d7db67299ca.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-getting-started-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-getting-started-md-23cf4aaf03bee4f875f4.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-readme-es-md-499b5a3ddc6d7d6fbfea.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-readme-md-140e2f89cbdb1ccff50f.js\"]}";
+            window.___chunkMapping="{\"app\":[\"/app-3f9c2234c1d62a0778fc.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-e40bd2429dab6d7ae8ff.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-280ebbcdabf53ef08e84.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-100-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-100-es-md-eb8b561101ad92ab3b49.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-100-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-100-md-bf1d01d8c02eb463bac2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-101-es-md-13ac67e837120285ee81.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-101-md-f265b1d56e41a66e7873.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-102-es-md-d264d5fe8a0383a1639f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-102-md-d0bf21a535e0a79ea086.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-103-es-md-a0644a3aae2033567d03.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-103-md-4c7a2fff0916a96cdfbe.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-104-es-md-9de61c37a2e1952a8615.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-104-md-4dac2ec5de204f6d2c85.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-105-es-md-24022e8b305eb66c29cc.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-105-md-1c8d983f4fd39c6db203.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-readme-es-md-f35de8cce956acad8b5e.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-cp-4-i-readme-md-833b27bfac7eb6c59abb.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-101-md-4a801d72689d7fb9d487.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-es-md-c22f13500a9a0ef65c87.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-102-md-b7727c12cfdf07b3d9cf.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-103-es-md-6a3542426bd2d1c3c085.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-103-md-8da8ce66de60afe39b3b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-es-md-7f55d29b8e640a811ad3.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-databand-readme-md-4a1719ec46261936cf9f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-es-md-fbe2f4fb72798a36e9f7.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-101-md-17b46fe6cec73b66f330.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-es-md-99f6b074f1ca3daa2480.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-102-md-70003a3758a9d5798db9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-es-md-20653ba349d0a4b98d12.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-eis-readme-md-b556f61b5e3daa58bd18.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-es-md-00ce08825894cd426eb0.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-101-md-f579a9178dbac711e458.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-es-md-20ae6a986500b9ce33b8.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-102-md-f4fd2cec23c80a1588d6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-es-md-c27caf7c989312caafb3.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-103-md-c26543ed79a006e21af9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-es-md-50dc2d0d9e11e864cf00.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-104-md-784ec1cb5551812facfd.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-es-md-7fad0998a44c73b7a14a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-105-md-121d809150a750d49058.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-es-md-504ba28ac6ccff5774c9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-envizi-readme-md-1045950a473e8f28dfe1.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-es-md-04923e7256dbc0f3a4d7.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-101-md-ba9ad0a0a6bde36a6fba.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-es-md-0d7992b463b91ef2d4e9.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-102-md-b7886d609af11f14ccb6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-es-md-6eca2d65c8a554d4e9c1.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-103-md-2182f43d39440ed87402.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-es-md-5a5e5caae1e446585f1c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-104-md-eba12366215fa4a634c0.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-es-md-a98dd70ba1a17c3d8f56.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-instana-readme-md-0372ff5092e3fe901434.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-prereq-md-c56e6bd84e172361fe6d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-app-suite-workshop-md-81729c86d8d24260c6a7.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-mvi-prereq-md-14053860c47347059f38.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-readme-md-13d4b188603be18b971d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-2-md-34ffd9f3bdcecfb2eada.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-maximo-visual-inspection-md-8b55ae235963d6e9e887.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-es-md-097ef0fb7f9ec0dd458f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-100-md-4b6bb0b12a131e558083.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-es-md-a55bd80793f31761183d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-101-md-5cb8c21d392802ce8389.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-es-md-c5a099a04f84186c7d4b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-102-md-6862683b349efa5a1494.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-es-md-866d456c785410246ccd.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-103-md-ba90da7cf5f0fae8f3de.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-es-md-c910e255b2ed05bad07b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-104-md-1e4cc8cb03e01aa43477.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-es-md-21ad84596c5e52ba4198.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-105-md-51b29486cbc3ae1e7c19.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-es-md-8ad1fa2d694fd9154680.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-ml-ops-readme-md-850850c79189f12a4dc4.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-101-md-439985d279094303464a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-102-md-43333bf90371b95de51a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-readme-md-9fa4e25484347e7b0afd.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-101-md-9c264807a8fe04f729dd.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-102-md-9fccf6f47f1379d13784.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-q-radar-siem-readme-md-09edeca13cd811683ccf.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-client-demonstration-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-client-demonstration-md-953699f5886ab34f6c50.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-1-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-1-md-dae3f8b1249f6dd015ee.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-2-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-configuration-part-2-md-b6781a87c793c123edac.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-demo-preparation-oc-plogon-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-demo-preparation-oc-plogon-md-f5c52dc1785e05400ac1.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-http-adapter-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-http-adapter-md-db84ff72ba29992c0b5f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-introduction-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-introduction-md-d693e9edbeddf9250b40.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-next-steps-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-next-steps-md-d1e0df12fb84ace1d429.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-overview-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-overview-md-88d422e7c38efbc30906.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-sterling-readme-md-074cdd585ef08277666b.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-es-md-b0ae611cce92e665624d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-101-md-0b302e45a7e255d93d5d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-es-md-59e840c9a3fbfd30b7ca.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-102-md-36a404b9e4584721fe12.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-es-md-7c5e441ffc4d9b73e467.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-103-md-a6c5df6099e70a518a36.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-es-md-f205c6619b0b6c58faae.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-104-md-2b994922ab59fd8005e5.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-es-md-4ccf41ddd17e9a1f4370.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-105-md-5627e0aa0d9be95d9819.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-es-md-8fbace673e44950a8580.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-turbonomic-readme-md-a78f6a18feff02d7eb5c.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-101-md-20addb113a9c84384225.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-102-md-61ba7a6bb6c4e9db20ae.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-103-md-fffbfe71760a77e35eb6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-104-md-cd01388b36e81c4d6b23.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-105-md-e6fee7cebb2e5570511f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-en-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-watson-readme-en-md-4c7a3d94628e7a7fa35a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-101-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-101-es-md-e8306d97fd4d0a5b3645.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-101-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-101-md-7f8cd897e583936e6446.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-102-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-102-es-md-7bff27275caf25c27390.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-102-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-102-md-9ee9c738b6a65ecb0e75.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-103-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-103-es-md-0f0353389f3c86a7cbaa.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-103-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-103-md-9773ffa6b9b97d03e6e5.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-104-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-104-es-md-e2a7895dde5cc70cd003.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-104-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-104-md-078de6aee0a995e1d972.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-105-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-105-es-md-3a9e4fd03c270faf08b2.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-105-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-105-md-48f38f5c944c08e11c1f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-106-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-106-es-md-9ff44e571f7aaf89921d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-106-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-106-md-eb027b8123252177dc8a.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-getting-started-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-getting-started-es-md-1e2afb7b7a1766fbd3c6.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-getting-started-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-getting-started-md-ec712b8201d264ef6822.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-readme-es-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-readme-es-md-499b5a3ddc6d7d6fbfea.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-readme-md\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-content-wkc-readme-md-140e2f89cbdb1ccff50f.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="7921ff82607515e8f578";</script><script src="/webpack-runtime-85bd480b7fd8cc211b7f.js" async></script><script src="/framework-f66cde3aabc675f32ff5.js" async></script><script src="/b45c48b8-8482c1aed08d329fbe07.js" async></script><script src="/app-3f9c2234c1d62a0778fc.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="2c68922c58306a5337c5";</script><script src="/webpack-runtime-dfa67915c450f06ab409.js" async></script><script src="/framework-f66cde3aabc675f32ff5.js" async></script><script src="/b45c48b8-8482c1aed08d329fbe07.js" async></script><script src="/app-3f9c2234c1d62a0778fc.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
