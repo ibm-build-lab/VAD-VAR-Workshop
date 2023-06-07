@@ -4,7 +4,9 @@ timeToComplete: 30
 updated: 2023-06-01
 ---
 
-# Technical Lab Preparation
+# 100: Getting Started
+
+## Technical Lab Preparation
 
 This section instructs you on how to prepare your **IBM Cloud** and **Cloud Pak for Data as a Service** environments to perform the Data and AI **Data fabric labs**.
 
