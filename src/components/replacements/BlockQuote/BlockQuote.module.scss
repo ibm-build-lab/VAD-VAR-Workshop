@@ -1,10 +1,21 @@
+@use "sass:map";
+
+$blockStyles: (
+  "standard": blue,
+  "success": green,
+  "warning": yellow,
+  "danger": red
+);
+
+:export {
+  types: map.keys($blockStyles)
+}
+
 .blockQuote {
   display: flex;
   padding: $spacing-04;
-  background-color: $blue-10;
   gap: $spacing-04;
   margin: $spacing-05 0;
-  border: 1px solid $blue-60;
   border-left-width: 5px;
 
   & p {
@@ -14,15 +25,17 @@
   & svg {
     height: fit-content;
     flex-shrink: 0;
-    fill: $blue-60;
   }
 }
 
-.altBlock {
-  background-color: $green-10;
-  border-color: $green-60;
+@each $name,
+$color in $blockStyles {
+  .#{$name} {
+    background-color: map-deep-get($colors, $color, 10);
+    border: 1px solid map-deep-get($colors, $color, 60);
 
-  & svg {
-    fill: $green-60;
+    & svg {
+      fill: map-deep-get($colors, $color, 60);
+***REMOVED***
   }
 }
