@@ -34,9 +34,26 @@ This component is used as a means to denote a certain section of the content may
 
 Example use:
 
-`<QuizAlert text='This will be on the quiz' />{:jsx}`
+`<QuizAlert text='This will be on the quiz' />`
 
 <QuizAlert text='This will be on the quiz' />
+
+### Warning
+
+Same usage as the `Quiz Alert` component.
+
+`<Warning text='This is a warning' />{:jsx}`
+
+<Warning text='This is a warning' />
+
+### Danger
+
+Same usage as the `Quiz Alert` component.
+
+`<Danger text='Callout something very important' />`
+
+<Danger text='Callout something very important' />
+
 
 ### Sub-header
 
@@ -45,7 +62,7 @@ It's content is based off of frontmatter data that exist in the document and thu
 
 Example use:
 
-`<SubHeader timeToComplete={2} updated='2023-04-10'/>{:jsx}`
+`<SubHeader timeToComplete={2} updated='2023-04-10'/>`
 
 <SubHeader timeToComplete={2} updated='2023-04-10'/>
 
@@ -57,8 +74,6 @@ Syntax highlighting is handled via [rehype-pretty-code](https://rehype-pretty-co
 ### Inline code
 
 This is some standard `inline code` than can exist.
-
-We can even syntax highlight some inline code. This is an array `[1, 2, 3]{:js}` highlighted as `js` code.
 
 ### Code Blocks
 
