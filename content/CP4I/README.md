@@ -7,7 +7,7 @@ toc: false
 
 This workshop covers CP4I in breadth and depth, with content appropriate for both brand-new learners and experienced practitioners.
 
-After completing these labs in a workshop session, you'll be able to earn the [Cloud Pak for Integration for Technical Sales Intermediate](https://www.credly.com/org/ibm/badge/instana-by-ibm-technical-sales-intermediate) based on a quiz about this workshop.
+After completing these labs in a workshop session, you'll be able to earn the [Cloud Pak for Integration for Technical Sales Intermediate](https://www.credly.com/org/ibm/badge/cloud-pak-for-integration-technical-sales-intermediate) based on a quiz about this workshop.
 
 ## Labs
 
