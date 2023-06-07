@@ -7,7 +7,7 @@ toc: false
 
 Este taller abarca la CP4I en profundidad, con contenidos apropiados tanto para principiantes como para profesionales experimentados.
 
-Después de completar estos laboratorios en una sesión de taller, podrá obtener el [Cloud Pak for Integration for Technical Sales Intermediate](https://www.credly.com/org/ibm/badge/instana-by-ibm-technical-sales-intermediate) basado en un cuestionario sobre este taller.
+Después de completar estos laboratorios en una sesión de taller, podrá obtener el [Cloud Pak for Integration for Technical Sales Intermediate](https://www.credly.com/org/ibm/badge/cloud-pak-for-integration-technical-sales-intermediate) basado en un cuestionario sobre este taller.
 
 ## Laboratorios
 
