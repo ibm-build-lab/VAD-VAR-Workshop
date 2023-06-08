@@ -7,7 +7,7 @@ toc: false
 
 This workshop covers CP4I in breadth and depth, with content appropriate for both brand-new learners and experienced practitioners.
 
-After completing these labs in a workshop session, you'll be able to earn the [Cloud Pak for Integration for Technical Sales Intermediate](https://www.credly.com/org/ibm/badge/cloud-pak-for-integration-technical-sales-intermediate) based on a quiz about this workshop.
+After completing these labs in a workshop session, you'll be able to earn the [Cloud Pak for Integration for Technical Sales Intermediate](https://www.credly.com/org/ibm/badge/cloud-pak-for-integration-technical-sales-intermediate) badge based on a quiz about this workshop.
 
 ## Labs
 
@@ -23,4 +23,4 @@ After completing these labs in a workshop session, you'll be able to earn the [C
 
 - **[Module 105: Frequently Asked Questions](/cp4i/105)**: Frequently Asked Questions you may refer for help
 
-- **[Technical Sales L3 Badge Quiz](https://learn.ibm.com/mod/quiz/view.php?id=206800)**
+- **[Technical Sales L3 Badge Quiz](https://learn.ibm.com/course/view.php?id=10576)**

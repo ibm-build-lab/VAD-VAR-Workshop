@@ -5,11 +5,14 @@ toc: false
 
 # Watson Knowledge Catalog Technical Sales Workshop
 
-## Prerequisites
+This workshop covers WKC in breadth and depth, with content appropriate for both brand-new learners and experienced practitioners.
 
-- **[Module 100: Getting Started](/wkc/getting-started)**
+After completing these labs in a workshop session, you'll be able to earn the [Data Governance and Privacy Technical Sales Intermediate](https://www.credly.com/org/ibm/badge/data-governance-and-privacy-technical-sales-intermediate) badge based on a quiz about this workshop.
+
 
 ## Labs
+
+- **[Module 100: Getting Started](/wkc/getting-started)**
 
 - **[Module 101: Introduction and Prerequisites](/wkc/101)**
 
@@ -23,3 +26,4 @@ toc: false
 
 - **[Module 106: Governing Virtual Data](/wkc/106)**
 
+- **[Technical Sales L3 Badge Quiz](https://learn.ibm.com/course/view.php?id=11820)**
