@@ -1,7 +1,7 @@
 ---
 title: '100: Cómo empezar'
 timeToComplete: 30
-updated: 2023-06-01T00:00:00.000Z
+updated: 2023-06-01
 ---
 # 100: Cómo empezar
 
