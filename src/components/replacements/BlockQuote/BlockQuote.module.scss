@@ -28,6 +28,12 @@ $blockStyles: (
   }
 }
 
+.blockQuoteContent {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-05
+}
+
 @each $name,
 $color in $blockStyles {
   .#{$name} {

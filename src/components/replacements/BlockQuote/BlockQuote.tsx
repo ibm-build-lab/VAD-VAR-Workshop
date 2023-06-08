@@ -28,7 +28,7 @@ const BlockQuote: React.FC<BlockQuoteProps> = (props) => {
   return (
     <blockquote className={cx(styles.blockQuote, styles[type])}>
       {createElement(iconMap[type], { size: 20 })}
-      {children}
+      <div className={styles.blockQuoteContent}>{children}</div>
     </blockquote>
   );
 };
