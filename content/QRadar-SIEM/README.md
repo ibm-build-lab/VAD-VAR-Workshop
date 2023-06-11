@@ -19,3 +19,15 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - **[Module 101: QRadar Demo Setup](/qradar-siem/101)**
 
 - **[Module 102: QRadar SIEM Demo Walkthrough](/qradar-siem/102)**
+
+## Extended Labs
+
+These labs are not required for the QRadar Sales Intermediate badge but will give you more experience using QRadar and provide a deeper dive into their subject areas:
+
+- **[Module 103: Advanced Lab Setup](/qradar-siem/103)**
+
+- **[Module 104: Log Sources](/qradar-siem/104)**
+  
+- **[Module 105: User Behavior Analytics (UBA)](/qradar-siem/105)**
+  
+- **[Module 106: Developing Anomaly Detection Rules](/qradar-siem/106)**
