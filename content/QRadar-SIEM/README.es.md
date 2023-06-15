@@ -16,6 +16,7 @@ Después de completar estos laboratorios en una sesión de taller, podrá obtene
 ## Laboratorios
 
 *   **[Módulo 101: Configuración de demostración de QRadar](/qradar-siem/101)**
+
 *   **[Módulo 102: Demostración de QRadar SIEM](/qradar-siem/102)**
 
 ## Laboratorios ampliados
@@ -23,6 +24,9 @@ Después de completar estos laboratorios en una sesión de taller, podrá obtene
 Estos laboratorios no son necesarios para obtener la insignia QRadar Sales Intermediate, pero le darán más experiencia en el uso de QRadar y le proporcionarán una inmersión más profunda en sus áreas temáticas:
 
 *   **[Módulo 103: Configuración avanzada del laboratorio](/qradar-siem/103)**
+
 *   **[Módulo 104: Fuentes de registro](/qradar-siem/104)**
+
 *   **[Módulo 105: Análisis del comportamiento de los usuarios (UBA)](/qradar-siem/105)**
+
 *   **[Módulo 106: Desarrollo de reglas de detección de anomalías](/qradar-siem/106)**

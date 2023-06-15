@@ -5,7 +5,7 @@ toc: false
 
 # QRadar SIEM Technical Sales Workshop
 
-This workshop covers IBM QRadar SIEM user interface features with attention to analysis of Compliance-related offenses
+This workshop covers the IBM QRadar SIEM user interface features with attention to analysis of compliance-related offenses.
 
 After completing these labs in a workshop session, you'll be able to earn the [IBM QRadar Security Information and Event Management Technical Sales Intermediate badge](https://www.credly.com/org/ibm/badge/qradar-xdr-security-information-and-event-management-technical-sales-intermediate) based on a quiz about this workshop.
 
