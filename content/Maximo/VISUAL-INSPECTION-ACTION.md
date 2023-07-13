@@ -10,6 +10,9 @@ In this lab you will see MVI's Action Detection Functionality through creating, 
 
 Make sure you have access to a Maximo environment; you can reserve one on TechZone [**here**](https://techzone.ibm.com/my/reservations/create/635952829aaefe0019bea350).
 
+If you would like to see a video demonstration of the Lab, please see this [**video**](_attatchments/mvi-action/video-tutorial.zip).
+
+All assets for this demo can be found [**here**](_attatchments/mvi-action)
 ## MVI Action Detection
 
 ## Creating and labeling a data set
@@ -202,6 +205,8 @@ Using a dataset that was not part of the model-building phase is a standard proc
 
 ![](_attatchments/mvi-action/MVI-action-detection-Step5.7.0.png)
 ![](_attatchments/mvi-action/MVI-action-detection-Step5.7.1.png)
+
+If you would like to see a video demonstration of the Lab, please see this [**video**](_attatchments/mvi-action/video-tutorial.zip).
 
 Congratulations! You have just used IBM Maximo Visual Inspection to create a computer vision model that can identify different actions performed on a water bottle! 
 
