@@ -21,6 +21,8 @@ All assets for this demo can be found [**here**](_attatchments/mvi-action)
 
 The instructions below are for creating your own dataset of videos. Alternatively, this [**link**](_attatchments/mvi-action/Dataset) will also bring you to an already created set of videos ready to be used and uploaded to the Maximo Visual Inspection application. 
 
+Downloading assets: To download and use the zip files in the *Dataset* folder, double click on the blue hyperlink for the specific zip file and then click on the download icon in the upper right corner. This will download a zip file to your downloads folder. Now, open your downloads and double click on the zip file to unzip the folder and access the assets inside. Now, you can move the corressponding contents of the folder into new folders labeled "Training" and "Testing" somewhere on your Desktop or somewhere that is easily accessible.
+
 **Actions:**
 
 1. Find a water bottle (plastic, metal, disposable, etc.), make sure it does not have too complex of any patterns or colors. This demo will use a simple plastic disposable water bottle with a simple paper label.  
@@ -53,7 +55,7 @@ Again alternatively, if you do not have access to a water bottle or have other l
 
 **What is an MVI dataset, and why do you need to create one?**
 
-As a first step towards building your AI inspection model, you must create a dataset in MVI containing videos of twisting on and off the caps of water bottles, shaking water bottles, and squeezing water bottles, to teach the model what each class looks like. 
+As a first step towards building your AI inspection model, you must create a dataset in MVI containing videos of twisting on and off the caps of water bottles, shaking water bottles, and spinning water bottles, to teach the model what each action looks like. 
 
 Data is at the heart of machine learning (ML). In the case of vision-based models, this data takes the form of images or videos. Built-in MVI ML models intelligently detect and learn patterns in the uploaded dataset and analyze this data repeatedly until it can discern distinctions and ultimately recognizes objects of interest in the images or videos. For example, to train a computer to recognize automobile tires, you need to feed it with vast quantities of tire images and tire-related items to learn the differences and identify a tire, especially one with defects. 
 For this use case model, you will create a dataset with a limited number of water bottle videos taken by yourself for brevity and accessibility; however, in real world scenarios, a computer vision model would require many more videos and processing time than this demonstration offers. 
@@ -66,7 +68,7 @@ In this demo, you manually upload saved videos from your local machine to the MV
 
 ![](_attatchments/mvi-action/MVI-action-detection-Step2.1.png)
 
-2. The **Data sets**window opens.
+2. The **Data sets** window opens.
 
 3. On the MVI **Data sets** screen, Click the **blue Create +** icon in the top right corner.
 
@@ -99,9 +101,9 @@ In this demo, you manually upload saved videos from your local machine to the MV
 
 ### Step 3: Label the Dataset
 
-In this step, you will label the water bottle videos. Labeling is marking the input videos with information about its contents. In action detection, this would involve highlighting start and end time of the occurrence of the action within the videos. In the case of this demo, you will go through each of the uploaded videos and enter the appropriate start time and end time of each action occurred during the video. During the training phase, these labelled images will allow your model to learn which part of the videos represent twisting the cap on a water bottle, shaking a water bottle, or squeezing a water bottle. 
+In this step, you will label the water bottle videos. Labeling is marking the input videos with information about its contents. In action detection, this would involve highlighting start and end time of the occurrence of the action within the videos. In the case of this demo, you will go through each of the uploaded videos and enter the appropriate start time and end time of each action occurred during the video. During the training phase, these labeled images will allow your model to learn which part of the videos represent twisting the cap on a water bottle, shaking a water bottle, or spinning a water bottle. 
 
-As you can imagine, labeling the videos correctly is critical to the accuracy of the model you are creating because it directly impacts the overall quality of the trained model. Quite simply, when it comes to identifying actions, you want a use case domain expert – the person with the relevant subject matter expertise (SME) – to be labeling these images. This will ensure the highest quality of input into the model training. Traditionally, data scientists have been the focal point of AI initiatives and have wasted their precious time labelling data. With MVI, a domain expert – with no data science expertise– can label the images and then subsequently build a model based on those images. 
+As you can imagine, labeling the videos correctly is critical to the accuracy of the model you are creating because it directly impacts the overall quality of the trained model. Quite simply, when it comes to identifying actions, you want a use case domain expert – the person with the relevant subject matter expertise (SME) – to be labeling these images. This will ensure the highest quality of input into the model training. Traditionally, data scientists have been the focal point of AI initiatives and have wasted their precious time labeling data. With MVI, a domain expert – with no data science expertise– can label the images and then subsequently build a model based on those images. 
 
 This approach lowers the barrier to entry and empowers domain experts with limited to no AI training the ability to create and deploy working AI models in a matter of hours, not days or weeks. 
 
@@ -144,7 +146,7 @@ Once all the pictures are uploaded in MVI perform the following steps:
 
 ### Step 4: Create and Train an Action Detection Model in Maximo Visual Inspection
 
-Now that you have a workable dataset of videos, as the Asset Analyst, it’s time to train an action detection model in MVI using these labelled videos. Training is the process of fitting a model to the input data such that it can be used to make predictions on data it hasn’t seen before in the future. 
+Now that you have a workable dataset of videos, as the Asset Analyst, it’s time to train an action detection model in MVI using these labeled videos. Training is the process of fitting a model to the input data such that it can be used to make predictions on data it hasn’t seen before in the future. 
 
 Now it’s time to start the training process of your action detection model using MVI’s power of AI and ease of use. 
 
