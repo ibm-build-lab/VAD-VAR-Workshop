@@ -212,5 +212,5 @@ If you would like to see a video demonstration of the Lab, please see this [**vi
 
 Congratulations! You have just used IBM Maximo Visual Inspection to create a computer vision model that can identify different actions performed on a water bottle! 
 
-If you would like to embed MVI into your solution, please reach out to IBM Build Lab to co-create a solution together at: [**https://w3.ibm.com/w3publisher/ibmbuildlab**](https://w3.ibm.com/w3publisher/ibmbuildlab). 
+If you would like to embed MVI into your solution, please reach out to your IBM Seller to engage with IBM Build Labs and co-create a solution together.
  
