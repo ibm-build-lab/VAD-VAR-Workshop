@@ -21,7 +21,7 @@ All assets for this demo can be found [**here**](_attatchments/mvi-action)
 
 The instructions below are for creating your own dataset of videos. Alternatively, this [**link**](_attatchments/mvi-action/Dataset) will also bring you to an already created set of videos ready to be used and uploaded to the Maximo Visual Inspection application. 
 
-Downloading assets: To download and use the zip files in the *Dataset* folder, double click on the blue hyperlink for the specific zip file and then click on the download icon in the upper right corner. This will download a zip file to your downloads folder. Now, open your downloads and double click on the zip file to unzip the folder and access the assets inside. Now, you can move the corressponding contents of the folder into new folders labeled "Training" and "Testing" somewhere on your Desktop or somewhere that is easily accessible.
+Downloading assets: To download and use the zip files in the *Dataset* folder, double click on the blue hyperlink for the specific zip file and then click on the download icon in the upper right corner. This will download a zip file to your downloads folder. Now, open your downloads and double click on the zip file to unzip the folder and access the assets inside. Now, you can move the corresponding contents of the folder into new folders labeled "Training" and "Testing" somewhere on your Desktop or somewhere that is easily accessible.
 
 **Actions:**
 
@@ -97,7 +97,7 @@ In this demo, you manually upload saved videos from your local machine to the MV
  
 9. After a few seconds, the images are uploaded to your newly created dataset. You are now ready to label these videos. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step2.9.png)
+![](_attatchments/mvi-action/MVI-action-detection-Step2.8.png)
 
 ### Step 3: Label the Dataset
 
@@ -171,7 +171,7 @@ Now it’s time to start the training process of your action detection model usi
 
 ![](_attatchments/mvi-action/MVI-action-detection-Step4.5.png)
 
-*Note: If you are in a live demo setting or there are not enought GPUs open in the environment to train the dataset and create a model, [**here**](_attatchments/mvi-action/waterbottle-action-pretrained-model.zip) is the action detection model shown in this tutorial that you can download and upload to use. Once downloaded, go to the **Models** section and click on the **Upload files** hyperlink and select the file you just downloaded.*
+*Note: If you are in a live demo setting or there are not enough GPUs open in the environment to train the dataset and create a model, [**here**](_attatchments/mvi-action/waterbottle-action-pretrained-model.zip) is the action detection model shown in this tutorial that you can download and upload to use. Once downloaded, go to the **Models** section and click on the **Upload files** hyperlink and select the file you just downloaded.*
 
 ### Step 5: Model Testing
 
