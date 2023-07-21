@@ -199,11 +199,11 @@ Using a dataset that was not part of the model-building phase is a standard proc
 
 ![](_attatchments/mvi-action/MVI-action-detection-Step5.2.png)
 
-3. In this section, you will see some of the details and information about the deployed model and the API endpoint for any potential future app integration. Upload your new test videos in the box outlined in red in the below screenshot. 
+3. In this section, you will see some of the details and information about the deployed model and the API endpoint for any potential future app integration. Upload your new test videos in the box outlined in red in the below screenshot. If you downloaded the **MVI-Dataset** folder and used either the training videos to train your own model or the pre-trained model zip file, upload all the videos found in the "Testing_Dataset".
 
 ![](_attatchments/mvi-action/MVI-action-detection-Step5.3.png)
 
-4. First, upload a video of you twisting the cap on the water bottle. 
+4. First, upload a video of twisting the cap on the water bottle. 
 
 ![](_attatchments/mvi-action/MVI-action-detection-Step5.4.png)
 
@@ -211,7 +211,7 @@ Using a dataset that was not part of the model-building phase is a standard proc
 
 ![](_attatchments/mvi-action/MVI-action-detection-Step5.5.png)
 
-6. Next, repeat the process with a video of you shaking the water bottle, and other videos you would like to test.
+6. Next, repeat the process with a video of shaking the water bottle, and other videos you would like to test.
 
 7. Lastly once you are done with this demo and experimenting with your models and datasets, please make sure to delete your datasets in the dataset section by selecting your dataset and clicking the trash button in the top right corner, deployed models by selecting your deployed model and clicking the **un-deploy** button in the top right corner, and trained models by selecting your trained model and clicking the **trash** button in the top right corner as this is a shared demo environment and will be used by others as well. 
 
