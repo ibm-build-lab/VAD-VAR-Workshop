@@ -10,18 +10,18 @@ In this lab you will see MVI's Action Detection Functionality through creating, 
 
 Make sure you have access to a Maximo environment; you can reserve one on TechZone [**here**](https://techzone.ibm.com/my/reservations/create/635952829aaefe0019bea350).
 
-If you would like to see a video demonstration of the Lab, please see this [**video**](_attatchments/mvi-action/video-tutorial.zip).
+If you would like to see a video demonstration of the Lab, please see this [**video**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEE4vEqrvIUkY7FaOB3Ji2Y7IXCyw9vW3cCv5___6eS4V0ySMESNBLXObAp8dHJQgn1PLUSSIGNAEQUALSIGN).
 
-All assets for this demo can be found [**here**](_attatchments/mvi-action)
+All assets for this demo can be found [**here**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEHDPLUSSIGNYhgVWLte2FjvAep70KOjpm5Sifx9HjW2ZZBTV2jtriODcOHyBE1ujIF___KAH1IMEQUALSIGN)
 ## MVI Action Detection
 
 ## Creating and labeling a data set
 
 ### Setup/Prerequisites: Creating or downloading a dataset of videos
 
-The instructions below are for creating your own dataset of videos. Alternatively, this [**link**](_attatchments/mvi-action/Dataset) will also bring you to an already created set of videos ready to be used and uploaded to the Maximo Visual Inspection application. 
+The instructions below are for creating your own dataset of videos. Alternatively, this [**link**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEHDPLUSSIGNYhgVWLte2FjvAep70KOjpm5Sifx9HjW2ZZBTV2jtriODcOHyBE1ujIF___KAH1IMEQUALSIGNt) will also bring you to an already created set of videos ready to be used and uploaded to the Maximo Visual Inspection application. 
 
-Downloading assets: To download and use the zip files in the *Dataset* folder, double click on the blue hyperlink for the specific zip file and then click on the download icon in the upper right corner. This will download a zip file to your downloads folder. Now, open your downloads and double click on the zip file to unzip the folder and access the assets inside. Now, you can move the corresponding contents of the folder into new folders labeled "Training" and "Testing" somewhere on your Desktop or somewhere that is easily accessible.
+Downloading assets: To download and use the files at the link above, click on the download button in the top right corner. This will download the dataset folder into your *Downloads* folder. Click on the downloaded folder to open the contents. Inside, you will find training videos, testing videos and a pre-trained model in-case you have trouble training the model yourself. The instructions below will tell you how to use the video assets during the demo.
 
 **Actions:**
 
@@ -36,7 +36,9 @@ Downloading assets: To download and use the zip files in the *Dataset* folder, d
 6. Finally upload the videos to your computer using whatever method is most convenient. (Airdrop, uploading to a cloud accessible by the computer you are using, or plugging in the device to your computer with a USB cord.) 
 7. Make sure to save these files in a folder somewhere accessible for use of this demo on your desktop, documents, or external hard drive. Separate one video of each action from the rest in a separate folder to save for testing your trained model in the final steps. 
 
-Again alternatively, if you do not have access to a water bottle or have other logistical difficulties filming and uploading your own set of videos, please use the set of training videos linked [**here**](_attatchments/mvi-action/Dataset). 
+Again alternatively, if you do not have access to a water bottle or have other logistical difficulties filming and uploading your own set of videos, please use the set of training videos linked [**here**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEHDPLUSSIGNYhgVWLte2FjvAep70KOjpm5Sifx9HjW2ZZBTV2jtriODcOHyBE1ujIF___KAH1IMEQUALSIGN). 
+
+Downloading assets: To download and use the files at the link above, click on the download button in the top right corner. This will download the dataset folder into your *Downloads* folder. Click on the downloaded folder to open the contents. Inside, you will find training videos, testing videos and a pre-trained model in-case you have trouble training the model yourself. The instructions below will tell you how to use the video assets during the demo.
 
 ### Step 1: Log in to Maximo Application Suite Navigator 
 
@@ -171,7 +173,7 @@ Now it’s time to start the training process of your action detection model usi
 
 ![](_attatchments/mvi-action/MVI-action-detection-Step4.5.png)
 
-*Note: If you are in a live demo setting or there are not enough GPUs open in the environment to train the dataset and create a model, [**here**](_attatchments/mvi-action/waterbottle-action-pretrained-model.zip) is the action detection model shown in this tutorial that you can download and upload to use. Once downloaded, go to the **Models** section and click on the **Upload files** hyperlink and select the file you just downloaded.*
+*Note: If you are in a live demo setting, having trouble training your model or there are not enough GPUs open in the environment to train the dataset and create a model, [**here**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEHDPLUSSIGNYhgVWLte2FjvAep70KOjpm5Sifx9HjW2ZZBTV2jtriODcOHyBE1ujIF___KAH1IMEQUALSIGN) is a folder of all the assets for this demo containing a zip file of the action detection model shown in this tutorial that you can download and upload to use (There is no need to unzip the file!). Once downloaded, go to the **Models** section and click on the **Upload files** hyperlink and select the zip file you just downloaded.*
 
 ### Step 5: Model Testing
 
@@ -208,7 +210,7 @@ Using a dataset that was not part of the model-building phase is a standard proc
 ![](_attatchments/mvi-action/MVI-action-detection-Step5.7.0.png)
 ![](_attatchments/mvi-action/MVI-action-detection-Step5.7.1.png)
 
-If you would like to see a video demonstration of the Lab, please see this [**video**](_attatchments/mvi-action/video-tutorial.zip).
+If you would like to see a video demonstration of the Lab, please see this [**video**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEE4vEqrvIUkY7FaOB3Ji2Y7IXCyw9vW3cCv5___6eS4V0ySMESNBLXObAp8dHJQgn1PLUSSIGNAEQUALSIGN).
 
 Congratulations! You have just used IBM Maximo Visual Inspection to create a computer vision model that can identify different actions performed on a water bottle! 
 
