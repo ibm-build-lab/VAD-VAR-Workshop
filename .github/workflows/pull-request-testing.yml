@@ -10,5 +10,17 @@ defaults:
 
 jobs:
   dry-build:
-    name: Create Dry Build
-    uses: ./.github/workflows/build-site.yml
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Build Site
+        run: npm run build
+
+      - name: Check Contents
+        run: cat ./public
