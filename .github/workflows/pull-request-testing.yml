@@ -23,4 +23,4 @@ jobs:
         run: npm run build
 
       - name: Check Contents
-        run: cat ./public
+        run: ls ./public
