@@ -9,7 +9,7 @@ updated: 2023-07-11
 In this lab, using Maximo Visual Inspection's Action Detection functionality, you will:
 - See how easily actions can be labeled trained and modeled using MVI via an explanatory video.
 - Learn how to create a video dataset as well as train and deploy an action detection model in MVI in a short amount of time by following the sample demo instructions.
-- Use the provided assets or your own created video dataset to successfully do it yourself.
+- Use the provided assets or your own video dataset that you created to successfully do it yourself.
 
 Make sure you have access to a Maximo environment; you can reserve one on TechZone [**here**](https://techzone.ibm.com/my/reservations/create/635952829aaefe0019bea350).
 
