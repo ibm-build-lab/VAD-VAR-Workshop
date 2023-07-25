@@ -6,11 +6,14 @@ updated: 2023-07-11
 
 # Maximo Visual Inspection (MVI) - Action Detection
 
-In this lab you will see MVI's Action Detection Functionality through creating, training and deploying your own video data set and action detection model using an MVI instance.
+In this lab, using Maximo Visual Inspection's Action Detection functionality, you will:
+- See how easily actions can be labeled trained and modeled using MVI via an explanatory video.
+- Learn how to create a video dataset as well as train and deploy an action detection model in MVI in a short amount of time by following the sample demo instructions.
+- Use the provided assets or your own video dataset that you created to successfully do it yourself.
 
 Make sure you have access to a Maximo environment; you can reserve one on TechZone [**here**](https://techzone.ibm.com/my/reservations/create/635952829aaefe0019bea350).
 
-If you would like to see a video demonstration of the Lab, please see this [**video**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEE4vEqrvIUkY7FaOB3Ji2Y7IXCyw9vW3cCv5___6eS4V0ySMESNBLXObAp8dHJQgn1PLUSSIGNAEQUALSIGN).
+If you would like to see a video demonstration of the Lab and preview MVI's Action Detection functionality, please see this [**video**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEE4vEqrvIUkY7FaOB3Ji2Y7IXCyw9vW3cCv5___6eS4V0ySMESNBLXObAp8dHJQgn1PLUSSIGNAEQUALSIGN).
 
 All assets for this demo can be found [**here**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEHDPLUSSIGNYhgVWLte2FjvAep70KOjpm5Sifx9HjW2ZZBTV2jtriODcOHyBE1ujIF___KAH1IMEQUALSIGN)
 ## MVI Action Detection
@@ -19,7 +22,7 @@ All assets for this demo can be found [**here**](https://livesend.ibm.com/i/6VDi
 
 ### Setup/Prerequisites: Creating or downloading a dataset of videos
 
-The instructions below are for creating your own dataset of videos. Alternatively, this [**link**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEHDPLUSSIGNYhgVWLte2FjvAep70KOjpm5Sifx9HjW2ZZBTV2jtriODcOHyBE1ujIF___KAH1IMEQUALSIGNt) will also bring you to an already created set of videos ready to be used and uploaded to the Maximo Visual Inspection application. 
+Create a video dataset by following the instructions below are for creating your own dataset of videos. Alternatively, this [**link**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEHDPLUSSIGNYhgVWLte2FjvAep70KOjpm5Sifx9HjW2ZZBTV2jtriODcOHyBE1ujIF___KAH1IMEQUALSIGNt) will also bring you to an already created set of videos ready to be used and uploaded to the Maximo Visual Inspection application. 
 
 Downloading assets: To download and use the files at the link above, click on the download button in the top right corner. This will download the **MVI-Dataset** zip file into your *Downloads* folder. If the dowloaded item ends in ".zip," make sure to double click the file to unzip and access the contents. Once unzipped, click on the downloaded **MVI-Dataset** folder to open the contents. Inside, you will find the following:
 1. Training videos categorized by action (No Action, Twisting, Shaking, Spinning)
@@ -111,7 +114,7 @@ In this demo, you manually upload saved videos from your local machine to the MV
 
 ### Step 3: Label the Dataset
 
-In this step, you will label the water bottle videos. Labeling is marking the input videos with information about its contents. In action detection, this would involve highlighting start and end time of the occurrence of the action within the videos. In the case of this demo, you will go through each of the uploaded videos and enter the appropriate start time and end time of each action occurred during the video. During the training phase, these labeled images will allow your model to learn which part of the videos represent twisting the cap on a water bottle, shaking a water bottle, or spinning a water bottle. 
+In this step, you will learn how to label the water bottle videos. Labeling is marking the input videos with information about its contents. In action detection, this would involve highlighting start and end time of the occurrence of the action within the videos. In the case of this demo, you will go through each of the uploaded videos and enter the appropriate start time and end time of each action occurred during the video. During the training phase, these labeled images will allow your model to learn which part of the videos represent twisting the cap on a water bottle, shaking a water bottle, or spinning a water bottle. 
 
 As you can imagine, labeling the videos correctly is critical to the accuracy of the model you are creating because it directly impacts the overall quality of the trained model. Quite simply, when it comes to identifying actions, you want a use case domain expert – the person with the relevant subject matter expertise (SME) – to be labeling these images. This will ensure the highest quality of input into the model training. Traditionally, data scientists have been the focal point of AI initiatives and have wasted their precious time labeling data. With MVI, a domain expert – with no data science expertise– can label the images and then subsequently build a model based on those images. 
 
@@ -156,7 +159,7 @@ Once all the pictures are uploaded in MVI perform the following steps:
 
 ### Step 4: Create and Train an Action Detection Model in Maximo Visual Inspection
 
-Now that you have a workable dataset of videos, as the Asset Analyst, it’s time to train an action detection model in MVI using these labeled videos. Training is the process of fitting a model to the input data such that it can be used to make predictions on data it hasn’t seen before in the future. 
+Now that you have a workable dataset of videos, as the Asset Analyst, it’s time to learn how to train an action detection model in MVI using these labeled videos. Training is the process of fitting a model to the input data such that it can be used to make predictions on data it hasn’t seen before in the future. 
 
 Now it’s time to start the training process of your action detection model using MVI’s power of AI and ease of use. 
 
