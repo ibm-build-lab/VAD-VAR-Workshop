@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from '@reach/router';
 import useAllMDXNodes from './useAllMDXNodes';
-import { cleanPathString } from '../helpers/helpers';
+import { cleanPathString } from '../helpers/helpers.mjs';
 import { SupportedLanguage, supportedLangs } from '../../i18n';
 
 const useSupportedLanguages = () => {
