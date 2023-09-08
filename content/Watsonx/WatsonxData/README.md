@@ -1,9 +1,9 @@
 ---
-title: WatsonXData
+title: watsonx.data
 toc: false
 ---
 
-# IBM WatsonX.Data Technical Sales Workshop
+# IBM Watsonx.Data Technical Sales Workshop
 
 This workshop covers the IBM Watsonx.Data L3 badge lab, highlighting 
 
@@ -15,5 +15,5 @@ This workshop covers the IBM Watsonx.Data L3 badge lab, highlighting
 
 ## Labs
 
-- **[Module 101: Environment Setup](/WatsonxData/101)**
+- **[Module 101: Environment Setup](/watsonx.data/101)**
 
