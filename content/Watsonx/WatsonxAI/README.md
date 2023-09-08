@@ -1,5 +1,5 @@
 ---
-title: watsonx.ai
+title: Watsonx.ai
 toc: false
 ---
 

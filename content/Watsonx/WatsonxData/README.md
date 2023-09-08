@@ -1,5 +1,5 @@
 ---
-title: watsonx.data
+title: Watsonx.data
 toc: false
 ---
 
