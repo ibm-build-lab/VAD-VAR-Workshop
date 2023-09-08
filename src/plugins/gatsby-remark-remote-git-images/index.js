@@ -1,6 +1,6 @@
 import { CONTINUE, visit } from 'unist-util-visit';
 import { createFilePath } from 'gatsby-source-filesystem';
-import { cleanPathString, isAbsoluteUrl } from '../../helpers/helpers.mjs';
+import { cleanPathString, isRelativeUrl } from '../../helpers/helpers.mjs';
 
 const BASE_URL = 'https://raw.githubusercontent.com';
 
@@ -10,30 +10,36 @@ export default function gatsbyRemarkRemoteGitImages(
 ) {
   const { user, repo, branch, pathPrefix } = pluginOptions;
 
-  const relativeFilePath = createFilePath({
+  const basePathArr = [user, repo, branch, pathPrefix];
+  const folderPathArr = createFilePath({
     node: markdownNode,
     getNode,
     trailingSlash: false
-  });
+  })
+    .split('/')
+    .slice(0, -1);
+
+  const startingPathArr = basePathArr.concat(folderPathArr);
 
   visit(
     markdownAST,
     (node) => {
       const { type, url } = node;
-      return type === 'image' && !isAbsoluteUrl(url);
+      return type === 'image' && isRelativeUrl(url);
     },
     (node) => {
-      const { url } = node;
+      const { url: imagePath } = node;
 
-      const cleanPath = cleanPathString(url);
-      const cutPath = relativeFilePath.substring(
-        relativeFilePath.indexOf('/') + 1,
-        relativeFilePath.lastIndexOf('/')
-      );
+      // build full path and march through to handle paths referencing parent directory
+      const fullPath = cleanPathString(imagePath)
+        .split('/')
+        .reduce(
+          (acc, curr) => (curr !== '..' ? acc.concat(curr) : acc.slice(0, -1)),
+          startingPathArr
+        )
+        .join('/');
 
-      const remoteURL = [BASE_URL, user, repo, branch, pathPrefix, cutPath, cleanPath].join('/');
-      node.url = remoteURL;
-
+      node.url = `${BASE_URL}/${fullPath}`;
       return CONTINUE;
     }
   );

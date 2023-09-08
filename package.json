@@ -12,7 +12,7 @@
     "build": "gatsby build",
     "build:local": "./node_modules/.bin/cross-env LOCAL_IMAGES=true gatsby build",
     "serve": "gatsby serve",
-    "start": "npm run build && npm run serve",
+    "start": "npm run clean && npm run build && npm run serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --ext js,md,mdx,ts,tsx,mjs",
