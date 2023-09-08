@@ -1,5 +1,5 @@
 ---
-title: Watsonx
+title: watsonx
 toc: false
 ---
 
