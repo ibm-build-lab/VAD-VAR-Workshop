@@ -31,15 +31,17 @@ export default function gatsbyRemarkRemoteGitImages(
       const { url: imagePath } = node;
 
       // build full path and march through to handle paths referencing parent directory
-      const fullPath = cleanPathString(imagePath)
-        .split('/')
-        .reduce(
-          (acc, curr) => (curr !== '..' ? acc.concat(curr) : acc.slice(0, -1)),
-          startingPathArr
+      node.url = [BASE_URL]
+        .concat(
+          cleanPathString(imagePath)
+            .split('/')
+            .reduce(
+              (acc, curr) => (curr !== '..' ? acc.concat(curr) : acc.slice(0, -1)),
+              startingPathArr
+            )
         )
         .join('/');
 
-      node.url = `${BASE_URL}/${fullPath}`;
       return CONTINUE;
     }
   );
