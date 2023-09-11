@@ -6,15 +6,34 @@ import rehypeHighlight from 'rehype-highlight';
 import xls from 'highlight.js/lib/languages/xl';
 import { fileURLToPath } from 'url';
 import path from 'path';
+import { createRequire } from 'module';
 
+const require = createRequire(import.meta.url);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const { NODE_ENV, IMAGE_OPTIMIZATION } = process.env;
+const { NODE_ENV, LOCAL_IMAGES } = process.env;
+
+const remoteImagesSettings = {
+  resolve: require.resolve(`./src/plugins/gatsby-remark-remote-git-images`),
+  options: {
+    user: 'ibm-build-lab',
+    repo: 'VAD-VAR-Workshop',
+    branch: 'main',
+    pathPrefix: 'content'
+  }
+};
+
+const localImagesSettings = {
+  resolve: `gatsby-remark-copy-linked-files`,
+  options: {
+    ignoreFileExtensions: ['pdf', 'md']
+  }
+};
 
 // build flags
 const isDev = NODE_ENV === 'development';
-const optimizeImages = IMAGE_OPTIMIZATION === 'true';
+const useLocalImages = isDev || LOCAL_IMAGES == 'true';
 
 const config = {
   trailingSlash: 'never',
@@ -54,32 +73,11 @@ const config = {
             [rehypeSectionize, {}]
           ]
     ***REMOVED***,
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-copy-linked-files`,
-            options: {
-              ignoreFileExtensions: optimizeImages
-                ? ['png', 'jpg', 'jpeg', 'tiff', 'webp', 'avif', 'pdf', 'md']
-                : ['pdf', 'md']
-        ***REMOVED***
-      ***REMOVED***,
-          ...((optimizeImages && [
-            {
-              resolve: `gatsby-remark-images`,
-              options: {
-                linkImagesToOriginal: true,
-                maxWidth: 650,
-                withWebp: false,
-                quality: isDev ? 10 : 100
-          ***REMOVED***
-        ***REMOVED***
-          ]) ||
-            [])
-        ],
+        gatsbyRemarkPlugins: [useLocalImages ? localImagesSettings : remoteImagesSettings],
         extensions: [`.mdx`, '.md']
   ***REMOVED***
 ***REMOVED***,
-    'gatsby-plugin-image',
+    ...(useLocalImages ? ['gatsby-plugin-image'] : []),
     {
       resolve: `gatsby-plugin-sass`,
       options: {
