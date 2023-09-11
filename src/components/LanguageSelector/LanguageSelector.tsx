@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from '@reach/router';
 import { navigate } from 'gatsby';
 import { EarthFilled } from '@carbon/react/icons';
-import { cleanPathString } from '@helpers/helpers';
+import { cleanPathString } from '@helpers/helpers.mjs';
 import { useCurrentLanguage, useSupportedLanguages } from '@hooks/index';
 import i18n, { SupportedLanguage, supportedLangs } from 'i18n';
 

@@ -10,7 +10,7 @@ import {
   SideNavMenu,
   usePrefix
 } from '@carbon/react';
-import { cleanPathString } from '@helpers/helpers';
+import { cleanPathString } from '@helpers/helpers.mjs';
 import { MenuItem } from '@helpers/buildSiteMap';
 import { useSiteMap } from '@hooks/index';
 import * as styles from './SideBar.module.scss';
@@ -66,8 +66,6 @@ const NavBar = (props: NavBarProps) => {
         const { children, name, slug } = item;
         const cleanSlug = cleanPathString(slug);
         const isActive = cleanSlug === currentPath;
-
-        console.log(cleanSlug === splitCurrPath.slice(0, depth + 2).join('/'), cleanSlug, name);
 
         return children.length > 0 ? (
           <SideNavMenu

@@ -1,0 +1,8 @@
+{
+  "name": "gatsby-remark-remote-git-images",
+  "version": "0.0.1",
+  "private": true,
+  "author": "jbukuts",
+  "type": "module",
+  "main": "index.js"
+}
