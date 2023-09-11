@@ -16,9 +16,6 @@ const cleanPathString = (path) => {
  * @returns {boolean}
  */
 const isAbsoluteUrl = (url) => {
-  // const ABSOLUTE_URL_REGEX = /^[a-zA-Z][a-zA-Z\d+\-.]*?:/;
-  // const WINDOWS_PATH_REGEX = /^[a-zA-Z]:\\/;
-
   const URL_REGEX = /^https:\/\//i;
   const tests = [URL_REGEX.test(url), url.startsWith('//')];
   return tests.some((b) => b);
