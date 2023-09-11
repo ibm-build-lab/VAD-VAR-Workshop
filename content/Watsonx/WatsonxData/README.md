@@ -3,15 +3,15 @@ title: Watsonx.data
 toc: false
 ---
 
-# IBM Watsonx.Data Technical Sales Workshop
+# IBM watsonx.data Technical Sales Workshop
 
-This workshop covers the IBM Watsonx.Data L3 badge lab, highlighting 
+This workshop covers the IBM watsonx.data L3 badge lab, highlighting some of the core components and capabilities of IBM watsonx.data. 
 
 
 
 ## Prerequisites
 
-- An IBMid
+***coming soon***
 
 ## Labs
 
