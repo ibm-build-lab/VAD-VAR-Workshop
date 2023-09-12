@@ -1,5 +1,5 @@
 ---
-title: Watsonx.data
+title: watsonx.data
 toc: false
 ---
 
@@ -15,5 +15,6 @@ This workshop covers the IBM watsonx.data L3 badge lab, highlighting some of the
 
 ## Labs
 
-- **[Module 101: Environment Setup](/watsonx.data/101)**
+***under construction***
+- **[Module 101: Environment Setup](/watsonx/watsonxdata/101)**
 

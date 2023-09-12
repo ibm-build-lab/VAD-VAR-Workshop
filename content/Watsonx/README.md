@@ -1,11 +1,11 @@
 ---
-title: Watsonx
+title: watsonx
 toc: false
 ---
 
-# Watsonx data and AI platform workshop
+# watsonx.data and watsonx.ai platform workshop
 
-This workshop includes hands on labs designed to provide practical experience with IBM's data and AI platform, watsonx.  
+This workshop includes hands on labs designed to provide practical experience with IBM watsonx.data, watsonx.ai, and watsonx.governance.
 
 ## Labs (coming soon)
 
