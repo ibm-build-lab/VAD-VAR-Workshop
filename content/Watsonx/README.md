@@ -9,7 +9,7 @@ This workshop includes hands on labs designed to provide practical experience wi
 
 ## Labs (coming soon)
 
-### watsonx.ai
+### [watsonx.ai](/watsonx/watsonxai)
 
 
-### watsonx.data
+### [watsonx.data](/watsonx/watsonxdata)
