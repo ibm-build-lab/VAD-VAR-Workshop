@@ -12,6 +12,8 @@ const require = createRequire(import.meta.url);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const underConstrunction = ['**/Watsonx'];
+
 const { NODE_ENV, LOCAL_IMAGES } = process.env;
 
 const remoteImagesSettings = {
@@ -93,7 +95,7 @@ const config = {
       options: {
         name: 'content',
         path: `${__dirname}/content`,
-        ignore: isDev ? [] : ['**/test*.md'],
+        ignore: isDev ? [] : ['**/test*.md', ...underConstrunction],
         fastHash: true
   ***REMOVED***,
       __key: 'content'
