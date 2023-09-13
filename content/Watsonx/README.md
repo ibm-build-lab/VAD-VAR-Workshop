@@ -3,13 +3,13 @@ title: watsonx
 toc: false
 ---
 
-# watsonx.data and watsonx.ai platform workshop
+# watsonx data and AI platform workshop
 
-This workshop includes hands on labs designed to provide practical experience with IBM watsonx.data, watsonx.ai, and watsonx.governance.
+This workshop includes hands on labs designed to provide practical experience with IBM's data and AI platform, watsonx.
 
 ## Labs (coming soon)
 
-### watsonx.ai
+### [watsonx.ai](/watsonx/watsonxai)
 
 
-### watsonx.data
+### [watsonx.data](/watsonx/watsonxdata)
