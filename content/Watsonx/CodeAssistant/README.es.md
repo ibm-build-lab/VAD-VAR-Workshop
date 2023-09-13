@@ -20,6 +20,6 @@ Antes de proceder con este laboratorio, asegúrese de haber instalado y tener ac
 ## Laboratorios
 
 
-- **[Laboratorio 101: Configuración del entorno Ansible Lightspeed en VS Code](watsonx-code-assistant/101.md)**
+- **[Laboratorio 101: Configuración del entorno Ansible Lightspeed en VS Code](code-assistant/101.md)**
 
-- **[Laboratorio 102: Asistente de código IBM Watsonx](watsonx-code-assistant/102.md)**
+- **[Laboratorio 102: Asistente de código IBM Watsonx](code-assistant/102.md)**

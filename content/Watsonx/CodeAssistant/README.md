@@ -1,5 +1,5 @@
 ---
-title: IBM Watsonx Code Assistant
+title: 'IBM Watsonx Code Assistant'
 toc: false
 ---
 
@@ -20,7 +20,7 @@ Before proceeding through this lab, make sure you have installed and have access
 ## Labs
 
 
-- **[Lab 101: Ansible Lightspeed environment setup in VS Code](watsonx-code-assistant/101.md)**
+- **[Lab 101: Ansible Lightspeed environment setup in VS Code](code-assistant/101.md)**
 
-- **[Lab 102: IBM Watsonx Code Assistant](watsonx-code-assistant/102.md)**
+- **[Lab 102: IBM Watsonx Code Assistant](code-assistant/102.md)**
 
