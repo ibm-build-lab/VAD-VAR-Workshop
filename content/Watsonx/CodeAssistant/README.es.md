@@ -1,11 +1,11 @@
 ---
-title: Taller técnico de ventas de IBM Watsonx Code Assistant
+title: Taller técnico de ventas de IBM watsonx Code Assistant
 toc: false
 ---
 
-# Taller técnico de ventas de IBM Watsonx Code Assistant
+# Taller técnico de ventas de IBM watsonx Code Assistant
 
-Este taller cubre el laboratorio IBM Watsonx Code Assistant L3, destacando algunos de los componentes principales y capacidades de IBM Watsonx Code Assistant. 
+Este taller cubre el laboratorio IBM watsonx Code Assistant L3, destacando algunos de los componentes principales y capacidades de IBM watsonx Code Assistant. 
 
 ## Requisitos previos
 
@@ -23,4 +23,4 @@ Antes de proceder con este laboratorio, asegúrese de haber instalado y tener ac
 
 - **[Laboratorio 101: Configuración del entorno Ansible Lightspeed en VS Code](/watsonx/codeassistant/101)**
 
-- **[Laboratorio 102: Asistente de código IBM Watsonx](/watsonx/codeassistant/102)**
+- **[Laboratorio 102: Asistente de código IBM watsonx](/watsonx/codeassistant/102)**
