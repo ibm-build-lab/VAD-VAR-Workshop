@@ -15,5 +15,5 @@ This workshop covers the IBM watsonx.ai L3 badge lab, highlighting some of the c
 
 ## Labs
 
-***coming soon***
+- [100: Integrate watsonx.ai foundation models with watsonx Assistant](/watsonx/watsonxai/100)
 
