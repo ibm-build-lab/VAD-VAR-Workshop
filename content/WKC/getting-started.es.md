@@ -1,7 +1,7 @@
 ---
 title: '100: Cómo empezar'
 timeToComplete: 30
-updated: 2023-06-01T00:00:00.000Z
+updated: 2023-06-01
 ---
 # 100: Cómo empezar
 
@@ -99,23 +99,14 @@ Para los laboratorios técnicos, tendrá que prestar los siguientes servicios:
 | Categoría de catálogo de servicios | Servicio de catálogo de servicios   |
 | ---------------------------------- | ----------------------------------- |
 | AI/Machine Learning                | Watson OpenScale                    |
-| ------------------------           | -----------------------------       |
 | AI/Machine Learning                | Watson Studio                       |
-| ------------------------           | -----------------------------       |
 | AI/Machine Learning                | Catálogo de conocimientos de Watson |
-| ------------------------           | -----------------------------       |
 | AI/Machine Learning                | IBM Match 360 con Watson            |
-| ------------------------           | -----------------------------       |
 | AI/Machine Learning                | Watson Machine Learning             |
-| ------------------------           | -----------------------------       |
 | Bases                              | Db2                                 |
-| ------------------------           | -----------------------------       |
 | Bases                              | Consulta de Watson                  |
-| ------------------------           | -----------------------------       |
 | Bases                              | DataStage                           |
-| ------------------------           | -----------------------------       |
 | Análisis                           | Panel de instrumentos de IBM Cognos |
-| ------------------------           | -----------------------------       |
 | Almacenamiento                     | Almacenamiento de objetos de nube   |
 
 **Nota:** Si ya tiene alguno de los servicios listados anteriormente ya suministrados en su cuenta de nube en el **Dallas** región, puede **Omitir** suministro de ese servicio.
@@ -170,7 +161,7 @@ El **Crear** el botón será gris y se convertirá en **Creación**.
 
 Una vez que haya finalizado correctamente, se le llevará a la cuenta de Cloud Pak for Data **Instancias de servicio**. **Asegúrese de que** (ver el **columnas resaltadas** en la captura de pantalla) ha desplegado un **Lite** servicio **Plan**, que se colocó en el **Grupo de recursos** ha especificado, y que el servicio **Estado** is **Activo**.
 
-11. Haga clic en **Añadir servicio +** botón para crear cualquier necesidad adicional **Laboratorio de tejido de datos** servicios en el [Servicios requeridos](https://vest.buildlab.cloud/en/wkc/getting-started#1-required-services) arriba.
+11. Haga clic en **Añadir servicio +** botón para crear cualquier necesidad adicional **Laboratorio de tejido de datos** servicios en el [Servicios requeridos](https://vest.buildlab.cloud/es/wkc/getting-started#1-required-services) arriba.
 
 Repita el proceso que acaba de seguir para desplegar el **DataStage** para todos los servicios necesarios restantes utilizando la información de cada servicio. El **Nombre del servicio** proporcionado en la información para cada servicio es sólo una recomendación. Puede nombrar estos servicios como desee y asignarlos al grupo de recursos que desee. Sin embargo, **asegurarse de que** usted elige el **Lite** plan para que no se le cobre por los servicios que usted proporciona.
 
@@ -403,9 +394,7 @@ Añadirá 3 conexiones de plataforma, que también se utilizan en la **Datos e I
 | Nombre                            | Tipo de conexión         |
 | --------------------------------- | ------------------------ |
 | Almacenamiento de objetos de nube | IBM Cloud Object Storage |
-| --------------------              | ------------------------ |
 | Depósito de datos                 | IBM DB2 Warehouse        |
-| --------------------              | ------------------------ |
 | Datos de terceros                 | PostgreSQL EDB           |
 
 Las capturas de pantalla de esta sección se han capturado en un nuevo Cloud Pak for Data como una cuenta de servicio que no tiene ninguna conexión de plataforma. Si ya tiene conexiones de plataforma, su entorno puede parecer diferente, pero los resultados deben ser los mismos.

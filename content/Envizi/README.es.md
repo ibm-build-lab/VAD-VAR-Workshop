@@ -27,4 +27,6 @@ Tras completar estos laboratorios en una sesión de curso, podrá obtener la [in
 
 - **[Módulo 104: Gestión de datos (contenido L3+)](/envizi/104)**
 
-- **[Módulo 105: Envizi - Cuadro de mandos de Turbonomic (contenido L3+)](/envizi/105)**
+- **[Módulo 105: Conectores (contenido L3+)](/envizi/105)**
+
+- **[Módulo 106: Envizi - Cuadro de mandos de Turbonomic (contenido L3+)](/envizi/106)**

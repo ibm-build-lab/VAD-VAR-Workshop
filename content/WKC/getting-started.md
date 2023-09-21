@@ -10,7 +10,7 @@ updated: 2023-06-01
 
 This section instructs you on how to prepare your **IBM Cloud** and **Cloud Pak for Data as a Service** environments to perform the Data and AI **Data fabric labs**.
 
-These tasks are a pre-requisite in order to perform **any** of the **Data fabric labs** successfully. These labs are **not** done in the shared, multi-user, pre-configured **Data and AI Live Demos** environment. That environment, which requires a reservation request, is primarily a read only environment that is used exclusively for the **Data fabric demos**. These technical labs require more flexibility and this is why you have to prepare your own Cloud Pak for Data accounts to do these labs.
+These tasks are a prerequisite in order to perform **any** of the **Data fabric labs** successfully. These labs are **not** done in the shared, multi-user, pre-configured **Data and AI Live Demos** environment. That environment, which requires a reservation request, is primarily a read only environment that is used exclusively for the **Data fabric demos**. These technical labs require more flexibility and this is why you have to prepare your own Cloud Pak for Data accounts to do these labs.
 
 You will need an **IBM Cloud** and **IBM Cloud Pak for Data as a Service** account to do these technical **Data fabric labs**. Depending on your account status, follow the steps below so you can use your personal IBM Cloud and Cloud Pak for Data as a Service account. This ensures that there will be zero conflicts with other users and services, that you have the proper cloud and Cloud Pak for Data as a Service privileges, and that no special naming conventions or processing will be needed for you to complete these technical labs.
 
@@ -107,23 +107,14 @@ For the technical labs, you will need to provision the following services:
 | Service Catalog Category | Service Catalog Service Name  |
 | ------------------------ | ----------------------------- |
 | AI / Machine Learning    | Watson OpenScale              |
-| ------------------------ | ----------------------------- |
 | AI / Machine Learning    | Watson Studio                 |
-| ------------------------ | ----------------------------- |
 | AI / Machine Learning    | Watson Knowledge Catalog      |
-| ------------------------ | ----------------------------- |
 | AI / Machine Learning    | IBM Match 360 with Watson     |
-| ------------------------ | ----------------------------- |
 | AI / Machine Learning    | Watson Machine Learning       |
-| ------------------------ | ----------------------------- |
 | Databases                | Db2                           |
-| ------------------------ | ----------------------------- |
 | Databases                | Watson Query                  |
-| ------------------------ | ----------------------------- |
 | Databases                | DataStage                     |
-| ------------------------ | ----------------------------- |
 | Analytics                | IBM Cognos Embedded Dashboard |
-| ------------------------ | ----------------------------- |
 | Storage                  | Cloud Object Storage          |
 
 **Note:** If you already have any of the services listed above already provisioned in your cloud account in the **Dallas** region, you can **skip** provisioning that service.
@@ -477,9 +468,7 @@ You will add 3 platform connections, that are also used by the **Data and AI Liv
 | Name                 | Connection Type          |
 | -------------------- | ------------------------ |
 | Cloud Object Storage | IBM Cloud Object Storage |
-| -------------------- | ------------------------ |
 | Data Warehouse       | IBM Db2 Warehouse        |
-| -------------------- | ------------------------ |
 | Third Party Data     | PostgreSQL EDB           |
 
 The screen shots in this section were captured in a new Cloud Pak for Data as a Service account that does not have any platform connections. If you already have platform connections, your environment may look different but the results should be the same.
