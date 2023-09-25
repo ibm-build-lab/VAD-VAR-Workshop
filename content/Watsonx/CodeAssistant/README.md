@@ -13,7 +13,7 @@ Before proceeding through this lab, make sure you have installed and have access
 
 - [Visual Studio Code](https://code.visualstudio.com/download) (VS Code)
 - [Python](https://www.python.org/downloads/) 3.9+: VS Code uses Python to execute Ansible playbooks and roles.
-- [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-and-upgrading-ansible-with-pip).
+- [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-and-upgrading-ansible-with-pip): If after the installation the scripts are not seen, add the path where the Ansible scripts were installed to the PATH variable.
 - [Public Github Account](https://github.com/signup): If you do not have a public Github account please create a public Github account.
 
 ## Labs
