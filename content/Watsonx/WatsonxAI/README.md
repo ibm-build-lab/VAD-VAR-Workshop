@@ -15,4 +15,6 @@ This workshop covers the IBM watsonx.ai L3 badge lab, highlighting some of the c
 
 - [100: Integrate watsonx.ai Foundation models with watsonx Assistant](/watsonx/watsonxai/100)
 - [101: Integrate watsonx.ai Prompt engineering](/watsonx/watsonxai/101)
+- [102: Programmatic Access to watsonx.ai](/watsonx/watsonxai/102)
+- [103: Retrieval-Augmented Generation using Watson Discovery](/watsonx/watsonxai/103)
 - [109: Integrate watsonx.ai Prompt engineering exercise answers](/watsonx/watsonxai/109)
