@@ -1,10 +1,10 @@
 ---
-title: '102: Programmatic Access'
+title: '1XX: Programmatic Access'
 timeToComplete: 30
 updated: 2023-09-19
 ---
 
-# 102: Programmatic Access to watsonx.ai
+# 1XX: Programmatic Access to watsonx.ai
 
 In this lab we'll explore two ways that we can programmatically access watsonx.ai. We will do this through the use of some open source tools like Python and Jupyter Notebooks.
 
