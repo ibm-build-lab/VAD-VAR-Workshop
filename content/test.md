@@ -24,6 +24,13 @@ An ordered list with some nesting:
 2. Two
 3. Three
 
+Here's what a table might look like:
+
+| Header Column 1 | Header Column 2 |
+| --------------- | --------------- |
+| One             | Two             |
+| Three           | *Four*          |
+
 ## Custom Elements
 
 Given we use MDX as a means to parse our Markdown content this means we can insert JSX elements directly into our content. Below are some examples of the custom elements implemented.
@@ -53,7 +60,6 @@ Same usage as the `Quiz Alert` component.
 `<Danger text='Callout something very important' />`
 
 <Danger text='Callout something very important' />
-
 
 ### Sub-header
 
@@ -157,7 +163,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Convallis convallis tellus id interdum velit laoreet id donec ultrices. Enim diam vulputate ut pharetra sit. Augue lacus viverra vitae congue eu consequat ac felis donec. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Ut eu sem integer vitae justo eget magna. Nunc sed blandit libero volutpat sed. Convallis aenean et tortor at risus viverra adipiscing. Enim facilisis gravida neque convallis a cras. Ornare arcu dui vivamus arcu. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Neque aliquam vestibulum morbi blandit cursus risus at. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. A diam maecenas sed enim ut. Lacus vestibulum sed arcu non odio euismod lacinia at quis.
 
 Sed nisi lacus sed viverra. Volutpat est velit egestas dui id ornare arcu odio ut. Neque viverra justo nec ultrices dui sapien eget mi. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Vivamus arcu felis bibendum ut tristique. Adipiscing at in tellus integer feugiat scelerisque. Vitae tempus quam pellentesque nec nam aliquam sem et. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu.
-
 
 > This is an example of a multiline blockquote
 >

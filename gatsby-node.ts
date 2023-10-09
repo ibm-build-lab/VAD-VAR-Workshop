@@ -23,7 +23,10 @@ const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, actions }) =>
       splitPath[splitPath.length - 1] = splitFileName[splitFileName.length - 2];
 ***REMOVED***
 
-    const cleanPath: string = splitPath.filter((s) => !!s && s !== 'readme').join('/');
+    const cleanPath: string = splitPath
+      .filter((s) => !!s && s !== 'readme')
+      .join('/')
+      .replaceAll('_', '-');
 
     createNodeField({
       node,
