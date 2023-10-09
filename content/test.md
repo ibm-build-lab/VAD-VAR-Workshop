@@ -24,6 +24,13 @@ An ordered list with some nesting:
 2. Two
 3. Three
 
+Here's what a table might look like:
+
+| Header Column 1 | Header Column 2 |
+| --------------- | --------------- |
+| One             | Two             |
+| Three           | *Four*          |
+
 ## Custom Elements
 
 Given we use MDX as a means to parse our Markdown content this means we can insert JSX elements directly into our content. Below are some examples of the custom elements implemented.
