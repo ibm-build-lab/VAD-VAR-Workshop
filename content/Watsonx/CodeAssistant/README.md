@@ -1,5 +1,5 @@
 ---
-title: 'IBM watsonx Code Assistant Technical Sales Workshop'
+title: 'watsonx Code Assistant Technical Sales Workshop'
 toc: false
 ---
 
