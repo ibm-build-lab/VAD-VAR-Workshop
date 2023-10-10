@@ -55,7 +55,7 @@ None of the above changes should impact the labs in this document.  However, the
 
 [104: Working with Jupyter notebooks](/watsonx/watsonxai/104)
 
-[L3 Course Quiz - coming soon]()
+[L3 Course Quiz](https://learn.ibm.com/course/view.php?id=15075)
 
 
 ### Supplemental labs (L3+)
@@ -64,7 +64,7 @@ None of the above changes should impact the labs in this document.  However, the
 
 [106: Retrieval-Augmented Generation using Watson Discovery](/watsonx/watsonxai/106)
 
-[107: Retrieval-Augmented Generation using VectorDB (coming soon)]()
+[107: Retrieval-Augmented Generation using VectorDB](/watsonx/watsonxai/107)
 
 [108: Integrate watsonx.ai Foundation models with watsonx Assistant](/watsonx/watsonxai/108)
 
