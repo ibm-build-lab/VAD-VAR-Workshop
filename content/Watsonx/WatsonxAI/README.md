@@ -72,6 +72,6 @@ None of the above changes should impact the labs in this document.  However, the
 ### Reference materials and other exercises
 [AI Glossary](/watsonx/watsonxai/ref100)
 
-[Prompt Engineering tips](/watsonx/watsonxai/ref101)
+[Basics of Prompt Engineering](/watsonx/watsonxai/ref101)
 
-[Prompt Engineering - exercises and answers](/watsonx/watsonxai/ref102)
+[Prompt Engineering exercises and answers](/watsonx/watsonxai/ref102)
