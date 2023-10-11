@@ -19,14 +19,14 @@ Los talleres de estilo aula típicamente proporcionarán un ambiente compartido 
 <details>
   <summary>Cosas que aprenderás</summary>
 
-  *   The watsonx.ai web based Prompt Lab UI, including Structured and Freeform interface, sample prompts, model information panels and model parameter panel.
-  *   Strengths and weaknesses of different models
-  *   An overview of the model parameters and how they influence output.
-  *   Zero shot vs. Few shot prompting
-  *   Using prompts to generate specific output
-  *   Saving prompts and prompt sessions
-  *   Restoring a prompt to an earlier state via prompt history
-  *   Saving prompts to a Jupyter notebook and working with the Jupyter notebook
+  * La interfaz de usuario de Prompt Lab basada en la web watsonx.ai, que incluye una interfaz estructurada y de forma libre, indicaciones de muestra, paneles de información del modelo y panel de parámetros del modelo.
+   * Fortalezas y debilidades de los diferentes modelos.
+   * Una descripción general de los parámetros del modelo y cómo influyen en la producción.
+   * Disparo cero frente a pocos disparos
+   * Uso de indicaciones para generar resultados específicos
+   * Guardar mensajes y sesiones de mensajes
+   * Restaurar un mensaje a un estado anterior a través del historial de mensajes
+   * Guardar mensajes en un cuaderno Jupyter y trabajar con el cuaderno Jupyter
 </details>
 
 <details>
