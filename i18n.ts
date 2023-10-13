@@ -10,7 +10,7 @@ export interface SupportedLanguage {
 
 export type Lang = 'en' | 'es';
 
-export const DEFAULT_LOCALE: Lang = 'es';
+export const DEFAULT_LOCALE: Lang = 'en';
 
 const supportedLangsDict: Record<Lang, Omit<SupportedLanguage, 'id'>> = {
   en: {
