@@ -35,7 +35,7 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - Access to lab related credential [IBM watsonx.data Lab Guid](https://ibm.seismic.com/Link/Content/DCG37pjmPj7VmGCHj2Df8fHVmDJj)
 - Recommended: Complete Level 1 and Level 2 material for the [watsonx.data Sales Foundation](https://learn.ibm.com/course/view.php?id=12781)
 
-## Labs
+## Labs L3
 
 - **[Module 101: Environment Setup](/watsonx/watsonxdata/101)**
 - **[Module 102: Exploring the watsonx.data User Interface](/watsonx/watsonxdata/102)**
@@ -45,3 +45,7 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - **[Module 106: Federated Queries](/watsonx/watsonxdata/106)**
 - **[Module 107: Offloading Data from a Data Warehouse](/watsonx/watsonxdata/107)**
 - **[Module 108: Time Travel and Rollback](/watsonx/watsonxdata/108)**
+
+## Labs L3+
+
+- **[Module 109: Working with IBM Cloud COS](/watsonx/watsonxdata/109)**
