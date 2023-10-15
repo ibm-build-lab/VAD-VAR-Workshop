@@ -60,7 +60,8 @@ None of the above changes should impact the labs in this document.  However, the
 
 ### Supplemental labs (L3+)
 
-[105: Intro to LangChain (coming soon)](/watsonx/watsonxai/105)
+[105: Intro to LangChain
+](/watsonx/watsonxai/105)
 
 [106: Retrieval-Augmented Generation using Watson Discovery](/watsonx/watsonxai/106)
 
