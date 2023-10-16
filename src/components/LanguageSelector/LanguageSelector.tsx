@@ -5,18 +5,21 @@ import { navigate } from 'gatsby';
 import { EarthFilled } from '@carbon/react/icons';
 import { cleanPathString } from '@helpers/helpers.mjs';
 import { useCurrentLanguage, useSupportedLanguages } from '@hooks/index';
-import i18n, { SupportedLanguage, supportedLangs } from 'i18n';
+import i18n, { Lang, SupportedLanguage, supportedLangsDict } from 'i18n';
 
 interface DropdownChangeEvent {
   selectedItem: SupportedLanguage;
 }
 
-const langById = (id: string) => supportedLangs.find((lng) => id === lng.id) || supportedLangs[0];
+const langById = (id: string) => supportedLangsDict[id as Lang] || supportedLangsDict['en'];
 
 const LanguageSelector = () => {
   const currentLanguage = useCurrentLanguage();
   const location = useLocation();
-  const [currentItem, setCurrentItem] = useState(langById(currentLanguage));
+  const [currentItem, setCurrentItem] = useState({
+    id: currentLanguage,
+    ...langById(currentLanguage)
+  });
   const langs = useSupportedLanguages();
 
   const onChange = (evt: DropdownChangeEvent) => {
@@ -34,7 +37,10 @@ const LanguageSelector = () => {
   };
 
   useEffect(() => {
-    setCurrentItem(langById(currentLanguage));
+    setCurrentItem({
+      id: currentLanguage,
+      ...langById(currentLanguage)
+***REMOVED***);
   }, [currentLanguage]);
 
   return (

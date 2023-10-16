@@ -9,6 +9,32 @@ import ContentWrapper from '@components/ContentWrapper';
 import { QuizAlert } from '@components/replacements';
 import useSiteMetadata from '@hooks/useSiteMetaData';
 import SEO from '@components/SEO';
+import { MenuItem } from '@helpers/buildSiteMap';
+
+/**
+ * Merges tree-like structure of MenuItems into flattened array
+ * @param {MenuItem[]} nodeArray
+ * @returns {MenuItem[]}
+ */
+const flattenTree = (nodeArr: Array<MenuItem>) => {
+  let arr = [...nodeArr];
+
+  for (let i = 0; i < arr.length; i++) {
+    if ('children' in arr[i]) {
+      arr = arr.concat(arr[i].children);
+***REMOVED***
+  }
+
+  return arr;
+};
+
+const calcReadingTime = (nodeArr: Array<MenuItem>) => {
+  return flattenTree(nodeArr).reduce((acc, curr) => acc + curr.timeToComplete, 0);
+};
+
+const calcUpdated = (nodeArr: Array<MenuItem>) => {
+  return flattenTree(nodeArr).sort((a, b) => b.updated?.localeCompare(a.updated))[0];
+};
 
 const LandingPage = () => {
   const siteMap = useSiteMap();
@@ -24,15 +50,15 @@ const LandingPage = () => {
             __html: marked.parse(t('landingPageContent'), { headerIds: false, mangle: false })
       ***REMOVED***}
         />
-        <QuizAlert text={t('landingPageQuizAlert')} />
+        <QuizAlert text={t('landingPageQuizAlert') as string} />
         <h2>Products</h2>
         <div className={styles.tileContainer}>
           {siteMap
             .filter(({ children = [] }) => children.length > 0)
             .map((item, index) => {
               const { children } = item;
-              const lastUpdated = children.sort((a, b) => b.updated?.localeCompare(a.updated))[0];
-              const timeNeeded = children.reduce((acc, curr) => acc + curr.timeToComplete, 0);
+              const lastUpdated = calcUpdated(children);
+              const timeNeeded = calcReadingTime(children);
 
               return (
                 <ItemTile

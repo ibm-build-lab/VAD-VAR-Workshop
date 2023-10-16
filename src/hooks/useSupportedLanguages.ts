@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useLocation } from '@reach/router';
 import useAllMDXNodes from './useAllMDXNodes';
 import { cleanPathString } from '../helpers/helpers.mjs';
-import { SupportedLanguage, supportedLangs } from '../../i18n';
+import { SupportedLanguage, supportedLangsArr } from '../../i18n';
 
 const useSupportedLanguages = () => {
   const [supported, setSupported] = useState<SupportedLanguage[]>([]);
@@ -13,7 +13,7 @@ const useSupportedLanguages = () => {
     const path = cleanPathString(pathname).split('/').slice(1).join('/');
 
     if (!path && pathname === '/') {
-      setSupported(supportedLangs);
+      setSupported(supportedLangsArr);
       return;
 ***REMOVED***
 
@@ -24,7 +24,7 @@ const useSupportedLanguages = () => {
         return matchRegex.test(slug);
   ***REMOVED***)
       .map((slug: string) => slug.split('/')[0]);
-    setSupported(supportedLangs.filter((lng) => langs.includes(lng.id)));
+    setSupported(supportedLangsArr.filter((lng) => langs.includes(lng.id)));
   }, [pathname]);
 
   return supported;

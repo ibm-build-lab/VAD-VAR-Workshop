@@ -36,7 +36,7 @@ const ItemTile = (props: ItemTileProps) => {
         {lastUpdated && (
           <small>
             {t('landPageTileUpdated', {
-              date: new Date(lastUpdated).toLocaleDateString('en-US', { timeZone: 'EST' })
+              date: lastUpdated
         ***REMOVED***)}
           </small>
 ***REMOVED***}
