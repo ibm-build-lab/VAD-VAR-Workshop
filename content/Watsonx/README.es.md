@@ -9,9 +9,6 @@ Este taller incluye manos sobre laboratorios diseñados para proporcionar experi
 ## Laboratorios
 
 ### [watsonx.ai](/watsonx/watsonxai)
-
 ### [watsonx.data](/watsonx/watsonxdata)
-
 ### [watsonx Assistant](/watsonx/assistant)
-
-### asistente de código de watsonx - próximamente
+### [watsonx Code Assistant](/watsonx/codeassistant)

@@ -1,11 +1,11 @@
 ---
-title: Taller técnico de ventas de IBM watsonx Code Assistant
+title: watsonx Code Assistant
 toc: false
 ---
 
-# Taller técnico de ventas de IBM watsonx Code Assistant
+# Taller técnico de ventas de watsonx Code Assistant
 
-Este taller cubre el laboratorio IBM watsonx Code Assistant L3, destacando algunos de los componentes principales y capacidades de IBM watsonx Code Assistant. 
+Estos laboratorios muestran cómo Red Hat Ansible Lightspeed utiliza watsonx Code Assistant para asignar el lenguaje natural a una sintaxis válida de Ansible.
 
 ## Requisitos previos
 

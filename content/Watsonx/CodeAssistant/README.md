@@ -1,11 +1,11 @@
 ---
-title: 'watsonx Code Assistant Technical Sales Workshop'
+title: 'watsonx Code Assistant'
 toc: false
 ---
 
-# IBM watsonx Code Assistant Technical Sales Workshop
+# watsonx Code Assistant Technical Sales Workshop
 
-This workshop covers the IBM watsonx Code Assistant L3 lab, highlighting some of the core components and capabilities of IBM watsonx Code Assistant. 
+These labs show how watsonx Code Assistant is utilized by Red Hat Ansible Lightspeed to map natural language in to valid Ansible syntax.
 
 ## Prerequisites
 
