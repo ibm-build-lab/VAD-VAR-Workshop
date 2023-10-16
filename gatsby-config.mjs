@@ -12,7 +12,7 @@ const require = createRequire(import.meta.url);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const underConstrunction = ['**/Watsonx/CodeAssistant'];
+const underConstrunction = [];
 
 const { NODE_ENV, LOCAL_IMAGES } = process.env;
 
