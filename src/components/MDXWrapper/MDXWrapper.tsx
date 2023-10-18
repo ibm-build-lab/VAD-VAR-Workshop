@@ -11,6 +11,7 @@ import {
   SmartLink,
   SubHeader,
   TableWrapper,
+  TokenizationApplet,
   Warning
 } from '../replacements';
 
@@ -29,7 +30,8 @@ const standardComponents: Props['components'] = {
   QuizAlert,
   Danger,
   Warning,
-  CopyText: CopyText
+  CopyText: CopyText,
+  TokenizationApplet: TokenizationApplet
 };
 
 const MDXWrapper = memo(function MDXWrapper({ children, components = {} }: MDXWrapperProps) {
