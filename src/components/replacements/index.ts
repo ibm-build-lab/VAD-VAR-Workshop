@@ -20,6 +20,6 @@ export {
   QuizAlert,
   Danger,
   Warning,
-  CopyText,
-  TokenizationApplet
+  TokenizationApplet,
+  CopyText
 };
