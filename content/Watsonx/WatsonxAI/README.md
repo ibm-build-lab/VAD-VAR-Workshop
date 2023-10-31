@@ -65,7 +65,7 @@ None of the above changes should impact the labs in this document.  However, the
 
 [106: Retrieval-Augmented Generation using Watson Discovery](/watsonx/watsonxai/106)
 
-[107: Retrieval-Augmented Generation using VectorDB](/watsonx/watsonxai/107)
+[107: Retrieval-Augmented Generation using VectorDB](/watsonx/watsonxai/107) **(Coming soon)**
 
 [108: Integrate watsonx.ai Foundation models with watsonx Assistant](/watsonx/watsonxai/108)
 
