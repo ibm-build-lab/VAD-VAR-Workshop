@@ -30,10 +30,7 @@ self.addEventListener('message', async (event: MessageEvent<EventData>) => {
       self.postMessage({
         status: 'not-complete',
         output: e
-      }),
-    config: {
-      language: 'es'
-    }
+      })
   });
 
   const tokenIds = tokenizer.encode(text);
