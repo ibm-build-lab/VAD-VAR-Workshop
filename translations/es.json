@@ -5,5 +5,7 @@
   "landPageTileUpdated": "Actualizada {{date, formatDate}}",
   "landPageTileTitle": "Ir a los materiales de laboratorio de IBM {{name}}",
   "contentHeaderUpdated": "Última actualización {{date, formatDate}}",
-  "QuizAlertDefault": "Atención! Partes de esta sección estarán en el cuestionario."
+  "QuizAlertDefault": "Atención! Partes de esta sección estarán en el cuestionario.",
+  "TokenizationAppletInputLabel": "Texto de entrada",
+  "TokenizationAppletOutputLabel": "Texto Tokenizado"
 }

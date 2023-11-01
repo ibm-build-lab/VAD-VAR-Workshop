@@ -5,5 +5,7 @@
   "landPageTileUpdated": "Updated {{date, formatDate}}",
   "landPageTileTitle": "Go to {{name}} lab materials",
   "contentHeaderUpdated": "Last updated {{date, formatDate}}",
-  "QuizAlertDefault": "Heads up! Parts of this section will be on the quiz."
+  "QuizAlertDefault": "Heads up! Parts of this section will be on the quiz.",
+  "TokenizationAppletInputLabel": "Input text",
+  "TokenizationAppletOutputLabel": "Tokenized text"
 }

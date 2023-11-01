@@ -6,6 +6,7 @@ import ImageWrapper from './ImageWrapper';
 import CodeBlock from './CodeBlock';
 import CopyText from './CopyText';
 import callouts from './Callouts';
+import TokenizationApplet from './TokenizationApplet';
 
 const { QuizAlert, Danger, Warning } = callouts;
 
@@ -19,5 +20,6 @@ export {
   QuizAlert,
   Danger,
   Warning,
+  TokenizationApplet,
   CopyText
 };
