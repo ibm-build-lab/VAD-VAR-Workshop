@@ -3,6 +3,28 @@ import { GatsbyNode } from 'gatsby';
 
 const DEFAULT_LOCALE = 'en';
 
+const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        sharp$: false,
+        'onnxruntime-node$': false
+      }
+    },
+    module: {
+      rules: [
+        {
+          test: /\.wasm$/,
+          type: 'webassembly/async'
+        }
+      ]
+    },
+    experiments: {
+      asyncWebAssembly: true
+    }
+  });
+};
+
 const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === 'Mdx') {
@@ -36,4 +58,4 @@ const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, actions }) =>
   }
 };
 
-export { onCreateNode };
+export { onCreateNode, onCreateWebpackConfig };
