@@ -62,7 +62,7 @@ Ninguno de los cambios mencionados debería afectar a los laboratorios de este d
 
 [106: Recuperación-Generación mejorada con Watson Discovery](/watsonx/watsonxai/106)
 
-[107: Recuperación-Generación mejorada con VectorDB](/watsonx/watsonxai/107)
+[107: Recuperación-Generación mejorada con VectorDB](/watsonx/watsonxai/107) **(Próximamente)**
 
 [108: Integrar modelos de watsonx.ai Foundation con watsonx Assistant](/watsonx/watsonxai/108)
 
