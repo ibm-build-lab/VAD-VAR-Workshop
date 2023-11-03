@@ -73,3 +73,5 @@ Ninguno de los cambios mencionados debería afectar a los laboratorios de este d
 [Fundamentos de la ingeniería de preguntas](/watsonx/watsonxai/ref101)
 
 [Ejercicios y respuestas de ingeniería de preguntas](/watsonx/watsonxai/ref102)
+
+[Importación de cuadernos a watsonx](/watsonx/watsonxai/ref103)
