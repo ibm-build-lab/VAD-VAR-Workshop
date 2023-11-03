@@ -76,3 +76,5 @@ None of the above changes should impact the labs in this document.  However, the
 [Basics of Prompt Engineering](/watsonx/watsonxai/ref101)
 
 [Prompt Engineering exercises and answers](/watsonx/watsonxai/ref102)
+
+[Importing notebooks into watsonx](/watsonx/watsonxai/ref103)
