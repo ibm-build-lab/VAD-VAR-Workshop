@@ -19,6 +19,8 @@ Antes de proceder con este laboratorio, asegúrese de haber instalado y tener ac
     ```
 - [Cuenta pública de Github](https://github.com/signup): Si no tienes una cuenta pública en Github por favor crea una cuenta pública en Github.
 
+Si prefiere no configurar su entorno informático local, puede utilizar el entorno de laboratorio interactivo de Ansible Lightspeed que se encuentra en esta [página](https://developers.redhat.com/products/ansible/lightspeed) haciendo clic en `Probar enlace de nuestro laboratorio interactivo`.
+
 ## Laboratorios
 
 - **[Laboratorio 101: Configuración del entorno Ansible Lightspeed en VS Code](/watsonx/codeassistant/101)**
