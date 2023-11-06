@@ -28,14 +28,14 @@ Specifically, you will get hands-on experience in the following areas:
 
 After completing these labs in a workshop session, you'll be able to earn the [IBM watsonx.data Technical Sales Intermediate badge](https://www.credly.com/org/ibm/badge/watsonx-data-technical-sales-intermediate) based on a quiz about this workshop.
 
-## Prerequisites
+### Prerequisites
 
 - An IBM id
 - Access to IBM Techzone to provision watsonx.data (single-node Developer Edition installation)
 - Access to lab related credential [IBM watsonx.data Lab Guid](https://ibm.seismic.com/Link/Content/DCG37pjmPj7VmGCHj2Df8fHVmDJj)
 - Recommended: Complete Level 1 and Level 2 material for the [watsonx.data Sales Foundation](https://learn.ibm.com/course/view.php?id=12781)
 
-## Labs L3
+### Labs L3
 
 - **[Module 101: Environment Setup](/watsonx/watsonxdata/101)**
 - **[Module 102: Exploring the watsonx.data User Interface](/watsonx/watsonxdata/102)**
@@ -46,6 +46,13 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - **[Module 107: Offloading Data from a Data Warehouse](/watsonx/watsonxdata/107)**
 - **[Module 108: Time Travel and Rollback](/watsonx/watsonxdata/108)**
 
-## Labs L3+
+### Suplimental Labs L3+/L4
 
 - **[Module 109: Working with IBM Cloud COS](/watsonx/watsonxdata/109)**
+- **[Module 110: Visualization of watsonx.data from watsonx.ai](/watsonx/watsonxdata/110)**
+
+### Reference materials and other exercises
+
+- **[Key Data Terms](/watsonx/watsonxdata/ref100)**
+- **[Data as a Product with IBM](/watsonx/watsonxdata/ref101)**
+- **[Relevant open source technologies](/watsonx/watsonxdata/ref102)**
