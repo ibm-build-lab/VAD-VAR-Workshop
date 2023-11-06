@@ -7,9 +7,9 @@ toc: false
 
 Watsonx.data is a core component of watsonx, IBM’s enterprise-ready AI and data platform designed to multiply the impact of AI across an enterprise’s business. 
 
-The watsonx platform comprises three powerful components: the watsonx.ai studio for new foundation models, generative AI and machine learning; the watsonx.data fit-for-purpose data store that provides the flexibility of a data lake with the performance of a data warehouse; plus the watsonx.governance toolkit, to enable AI workflows that are built with responsibility, transparency, and explainability.
+The watsonx platform is comprised of three powerful components: the watsonx.ai studio for new foundation models, generative AI and machine learning; the watsonx.data fit-for-purpose data store that provides the flexibility of a data lake with the performance of a data warehouse; plus the watsonx.governance toolkit, to enable AI workflows that are built with responsibility, transparency, and explainability.
 
-This workshop covers the IBM watsonx.data L3 badge lab, highlighting some of the core components and capabilities of IBM watsonx.data. This workshop also covers addition labs which can help integrating different products.
+This workshop covers the IBM watsonx.data L3 badge lab, highlighting some of the core components and capabilities of IBM watsonx.data. This workshop also covers additional labs that can help integrate different products.
 
 The watsonx.data component (the focus of this lab) makes it possible for enterprises to scale analytics and AI with a data store built on an open lakehouse architecture, supported by querying, governance, and open data and table formats, to access and share data. With watsonx.data, enterprises can connect to data in minutes, quickly get trusted insights, and reduce their data warehouse costs.
 

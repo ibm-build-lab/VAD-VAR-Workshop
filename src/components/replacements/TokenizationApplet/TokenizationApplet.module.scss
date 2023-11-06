@@ -1,0 +1,72 @@
+@use 'sass:list';
+
+$chunk-colors: blue, green, red, purple, yellow, orange, gray;
+$input-height: 10rem;
+
+:export {
+  colorsLength: list.length($chunk-colors)
+}
+
+.container {
+  width: inherit;
+}
+
+.applet {
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: $input-height;
+  gap: $spacing-03;
+}
+
+.appletSection {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-height: max-content;
+}
+
+.inputSection {
+  & textarea {
+    resize: none;
+    border: 1px solid $gray-50;
+  }
+
+  & div:nth-child(2) {
+    flex-grow: 1;
+  }
+}
+
+.outputSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: $spacing-02;
+  flex-grow: 1;
+  overflow: scroll;
+  border: 1px solid $gray-50;
+  padding: $spacing-04 $spacing-05;
+}
+
+.chunk {
+  border-radius: 5px;
+  padding: 0 .25rem;
+  height: fit-content;
+  margin: 0 !important;
+
+  @each $value in $chunk-colors {
+    $index: list.index($chunk-colors, $value);
+
+    &_#{$index - 1} {
+      border: 1px solid map-deep-get($colors, $value, 60);
+      color: map-deep-get($colors, $value, 60);
+      background-color: map-deep-get($colors, $value, 10);
+***REMOVED***
+  }
+}
+
+@include apply-lesser-than('sm') {
+  .applet {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, $input-height);
+  }
+}
