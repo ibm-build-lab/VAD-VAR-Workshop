@@ -46,9 +46,10 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - **[Module 107: Offloading Data from a Data Warehouse](/watsonx/watsonxdata/107)**
 - **[Module 108: Time Travel and Rollback](/watsonx/watsonxdata/108)**
 
-### Suplimental Labs L3+
+### Suplimental Labs L3+/L4
 
 - **[Module 109: Working with IBM Cloud COS](/watsonx/watsonxdata/109)**
+- **[Module 110: Visualization of watsonx.data from watsonx.ai](/watsonx/watsonxdata/110)**
 
 ### Reference materials and other exercises
 
