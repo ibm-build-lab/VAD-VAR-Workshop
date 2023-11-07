@@ -23,6 +23,7 @@ $input-height: 10rem;
   flex-direction: column;
   align-items: stretch;
   max-height: max-content;
+  position: relative;
 }
 
 .inputSection {
@@ -34,6 +35,10 @@ $input-height: 10rem;
   & div:nth-child(2) {
     flex-grow: 1;
   }
+}
+
+.outputSectionLabel {
+  margin-bottom: $spacing-03;
 }
 
 .outputSection {
@@ -62,6 +67,13 @@ $input-height: 10rem;
       background-color: map-deep-get($colors, $value, 10);
     }
   }
+}
+
+.counterTag {
+  position: absolute;
+  bottom: $spacing-02;
+  right: $spacing-02;
+  border: 1px solid rgba($color: #000, $alpha: 0.25);
 }
 
 @include apply-lesser-than('sm') {
