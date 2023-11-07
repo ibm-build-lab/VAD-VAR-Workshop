@@ -1,4 +1,13 @@
-import { AutoTokenizer, PreTrainedTokenizer, PretrainedOptions } from '@xenova/transformers';
+import { AutoTokenizer, PreTrainedTokenizer, PretrainedOptions, env } from '@xenova/transformers';
+
+Object.assign(env, {
+  ...env,
+  allowLocalModels: false,
+  allowRemoteModels: true,
+  useBrowserCache: false,
+  useFSCache: false,
+  useCustomCache: false
+});
 
 const DEF_MODEL = 'google/flan-t5-small';
 
@@ -14,7 +23,10 @@ class TokenizerSingleton {
   static async getInstance(model = DEF_MODEL, options: PretrainedOptions) {
     if (!TokenizerSingleton.instance || model !== TokenizerSingleton.model) {
       console.log('Updating tokenizer instance', model);
-      TokenizerSingleton.instance = await AutoTokenizer.from_pretrained(model, options);
+      TokenizerSingleton.instance = await AutoTokenizer.from_pretrained(model, {
+        ...options,
+        local_files_only: false
+  ***REMOVED***);
       TokenizerSingleton.model = model;
 ***REMOVED***
 

@@ -23,6 +23,7 @@ $input-height: 10rem;
   flex-direction: column;
   align-items: stretch;
   max-height: max-content;
+  position: relative;
 }
 
 .inputSection {
@@ -36,21 +37,31 @@ $input-height: 10rem;
   }
 }
 
+.outputSectionLabel {
+  margin-bottom: $spacing-03;
+}
+
 .outputSection {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: $spacing-02;
   flex-grow: 1;
   overflow: scroll;
   border: 1px solid $gray-50;
   padding: $spacing-04 $spacing-05;
 }
 
+.tokenList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: $spacing-02;
+  height: min-content;
+}
+
 .chunk {
   border-radius: 5px;
   padding: 0 .25rem;
   height: fit-content;
+  width: fit-content;
   margin: 0 !important;
 
   @each $value in $chunk-colors {
@@ -62,6 +73,13 @@ $input-height: 10rem;
       background-color: map-deep-get($colors, $value, 10);
 ***REMOVED***
   }
+}
+
+.counterTag {
+  position: absolute;
+  bottom: $spacing-02;
+  right: $spacing-02;
+  border: 1px solid rgba($color: #000, $alpha: 0.25);
 }
 
 @include apply-lesser-than('sm') {

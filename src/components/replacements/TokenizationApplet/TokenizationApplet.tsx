@@ -1,4 +1,4 @@
-import { Stack, TextArea } from '@carbon/react';
+import { FormLabel, Stack, Tag, TextArea } from '@carbon/react';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import cx from 'classnames';
 import { useTranslation } from 'react-i18next';
@@ -7,6 +7,19 @@ import * as styles from './TokenizationApplet.module.scss';
 const { colorsLength } = styles;
 
 const COLORS_LENGTH = parseInt(colorsLength);
+
+const countWords = (s: string) => {
+  const matches = s.match(/[\w\d’'-]+/gi);
+  return matches ? matches.length : 0;
+};
+
+const CountTag = ({ children }: React.HTMLAttributes<HTMLDivElement>) => {
+  return (
+    <Tag className={styles.counterTag} type='gray' size='sm'>
+      {children}
+    </Tag>
+  );
+};
 
 const TokenizationApplet = () => {
   const [inputText, setInputText] = useState('');
@@ -41,31 +54,38 @@ const TokenizationApplet = () => {
   return (
     <div className={styles.container}>
       <Stack orientation='horizontal' className={styles.applet}>
-        <TextArea
-          light
-          value={inputText}
-          className={cx(styles.inputSection, styles.appletSection)}
-          onChange={async (e) => {
-            const text = e.target.value || '';
-            tokenize(text);
-            setInputText(text);
-      ***REMOVED***}
-          labelText={t('TokenizationAppletInputLabel')}
-        />
+        <div className={cx(styles.appletSection)}>
+          <TextArea
+            light
+            value={inputText}
+            className={cx(styles.inputSection)}
+            onChange={async (e) => {
+              const text = e.target.value || '';
+              tokenize(text);
+              setInputText(text);
+        ***REMOVED***}
+            labelText={t('TokenizationAppletInputLabel')}
+          />
+          <CountTag>{countWords(inputText) + t('TokenizationAppletWordsTag')}</CountTag>
+        </div>
 
         <div className={styles.appletSection}>
-          <div className='cds--text-area__label-wrapper'>
-            <label className='cds--label'>{t('TokenizationAppletOutputLabel')}</label>
-          </div>
+          <FormLabel className={styles.outputSectionLabel}>
+            {t('TokenizationAppletOutputLabel')}
+          </FormLabel>
           <div className={styles.outputSection}>
-            {encodedText.map((chunk, index) => (
-              <p
-                key={index}
-                className={cx(styles.chunk, styles[`chunk_${index % (COLORS_LENGTH - 1)}`])}>
-                {chunk}
-              </p>
-    ***REMOVED***)}
+            <div className={styles.tokenList}>
+              {' '}
+              {encodedText.map((chunk, index) => (
+                <p
+                  key={index}
+                  className={cx(styles.chunk, styles[`chunk_${index % (COLORS_LENGTH - 1)}`])}>
+                  {chunk}
+                </p>
+      ***REMOVED***)}
+            </div>
           </div>
+          <CountTag>{encodedText.length + t('TokenizationAppletTokensTag')}</CountTag>
         </div>
       </Stack>
     </div>
