@@ -74,13 +74,16 @@ const TokenizationApplet = () => {
             {t('TokenizationAppletOutputLabel')}
           </FormLabel>
           <div className={styles.outputSection}>
-            {encodedText.map((chunk, index) => (
-              <p
-                key={index}
-                className={cx(styles.chunk, styles[`chunk_${index % (COLORS_LENGTH - 1)}`])}>
-                {chunk}
-              </p>
-            ))}
+            <div className={styles.tokenList}>
+              {' '}
+              {encodedText.map((chunk, index) => (
+                <p
+                  key={index}
+                  className={cx(styles.chunk, styles[`chunk_${index % (COLORS_LENGTH - 1)}`])}>
+                  {chunk}
+                </p>
+              ))}
+            </div>
           </div>
           <CountTag>{encodedText.length + t('TokenizationAppletTokensTag')}</CountTag>
         </div>

@@ -43,19 +43,25 @@ $input-height: 10rem;
 
 .outputSection {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: $spacing-02;
   flex-grow: 1;
   overflow: scroll;
   border: 1px solid $gray-50;
   padding: $spacing-04 $spacing-05;
 }
 
+.tokenList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: $spacing-02;
+  height: min-content;
+}
+
 .chunk {
   border-radius: 5px;
   padding: 0 .25rem;
   height: fit-content;
+  width: fit-content;
   margin: 0 !important;
 
   @each $value in $chunk-colors {
