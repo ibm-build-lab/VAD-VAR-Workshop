@@ -7,5 +7,7 @@
   "contentHeaderUpdated": "Última actualización {{date, formatDate}}",
   "QuizAlertDefault": "Atención! Partes de esta sección estarán en el cuestionario.",
   "TokenizationAppletInputLabel": "Texto de entrada",
-  "TokenizationAppletOutputLabel": "Texto Tokenizado"
+  "TokenizationAppletOutputLabel": "Texto Tokenizado",
+  "TokenizationAppletTokensTag": " tokens",
+  "TokenizationAppletWordsTag": " palabras"
 }
