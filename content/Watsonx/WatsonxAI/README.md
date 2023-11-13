@@ -55,7 +55,7 @@ None of the above changes should impact the labs in this document.  However, the
 
 [104: Working with Jupyter notebooks](/watsonx/watsonxai/104)
 
-[L3 Course Quiz](https://learn.ibm.com/course/view.php?id=15075)
+[L3 Course Quiz](https://learn.ibm.com/course/view.php?id=13452)
 
 
 ### Supplemental labs (L3+)
