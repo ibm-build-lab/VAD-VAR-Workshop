@@ -54,7 +54,7 @@ Ninguno de los cambios mencionados debería afectar a los laboratorios de este d
 
 [104: Trabajar con cuadernos Jupyter](/watsonx/watsonxai/104)
 
-[Cuestionario del curso L3](https://learn.ibm.com/course/view.php?id=15075)
+[Cuestionario del curso L3](https://learn.ibm.com/course/view.php?id=13452)
 
 ### Laboratorios suplementarios (L3+)
 

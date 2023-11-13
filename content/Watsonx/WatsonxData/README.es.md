@@ -44,6 +44,7 @@ Después de completar estos laboratorios en una sesión de taller, usted será c
 *   **[Módulo 106: Consultas federadas](/watsonx/watsonxdata/106)**
 *   **[Módulo 107: Descarga de datos de un almacén de datos](/watsonx/watsonxdata/107)**
 *   **[Módulo 108: Tiempo de viaje y retrotracción](/watsonx/watsonxdata/108)**
+*   **[Prueba del curso L3](https://learn.ibm.com/course/view.php?id=13171)**
 
 ### Suplimental Labs L3 + /L4
 
