@@ -31,7 +31,7 @@ Después de completar estos laboratorios en una sesión de taller, usted será c
 
 *   Un ID de IBM
 *   Acceso a IBM Techzone para suministrar watsonx.data (instalación de un solo nodo Developer Edition)
-*   Acceso a la credencial relacionada con el laboratorio [Guia de laboratoria de IBM watsonx.data](https://ibm.seismic.com/Link/Content/DCG37pjmPj7VmGCHj2Df8fHVmDJj)
+*   Acceso a la credencial relacionada con el laboratorio [Guia del laboratorio de IBM watsonx.data](https://ibm.seismic.com/Link/Content/DCG37pjmPj7VmGCHj2Df8fHVmDJj)
 *   Recomendado: Completar material de nivel 1 y nivel 2 para el [Fundación de ventas de watsonx.data](https://learn.ibm.com/course/view.php?id=12781)
 
 ### Laboratorios L3
