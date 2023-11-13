@@ -6,7 +6,7 @@ toc: false
 
 Watsonx.data es un componente básico de watsonx, la plataforma de IA y datos preparada para la empresa de IBM diseñada para multiplicar el impacto de la IA en todo el negocio de una empresa.
 
-La plataforma watsonx está compuesta por tres potentes componentes: el estudio watsonx.ai para nuevos modelos de fundación, la IA generativa y el aprendizaje automático; el almacén de datos watsonx.data fit-for-purpose que proporciona la flexibilidad de un lago de datos con el rendimiento de un depósito de datos; además del kit de herramientas watsonx.governance, para habilitar flujos de trabajo de IA que se crean con responsabilidad, transparencia y explicabilidad.
+La plataforma watsonx está compuesta por tres potentes componentes: el estudio watsonx.ai para nuevos modelos de fundación, la IA generativa y el aprendizaje automático; el almacén de datos watsonx.data apto para el propósito que proporciona la flexibilidad de un lago de datos con el rendimiento de un depósito de datos; además del kit de herramientas watsonx.governance, para habilitar flujos de trabajo de IA que se crean con responsabilidad, transparencia y explicabilidad.
 
 Este taller cubre el laboratorio de identificación de IBM watsonx.data L3, resaltando algunos de los componentes principales y capacidades de IBM watsonx.data. Este taller también cubre laboratorios adicionales que pueden ayudar a integrar diferentes productos.
 
@@ -31,7 +31,7 @@ Después de completar estos laboratorios en una sesión de taller, usted será c
 
 *   Un ID de IBM
 *   Acceso a IBM Techzone para suministrar watsonx.data (instalación de un solo nodo Developer Edition)
-*   Acceso a la credencial relacionada con el laboratorio [IBM watsonx.data Lab Guid](https://ibm.seismic.com/Link/Content/DCG37pjmPj7VmGCHj2Df8fHVmDJj)
+*   Acceso a la credencial relacionada con el laboratorio [Guia de laboratoria de IBM watsonx.data](https://ibm.seismic.com/Link/Content/DCG37pjmPj7VmGCHj2Df8fHVmDJj)
 *   Recomendado: Completar material de nivel 1 y nivel 2 para el [Fundación de ventas de watsonx.data](https://learn.ibm.com/course/view.php?id=12781)
 
 ### Laboratorios L3

@@ -32,7 +32,7 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 - An IBM id
 - Access to IBM Techzone to provision watsonx.data (single-node Developer Edition installation)
-- Access to lab related credential [IBM watsonx.data Lab Guid](https://ibm.seismic.com/Link/Content/DCG37pjmPj7VmGCHj2Df8fHVmDJj)
+- Access to lab related credential [IBM watsonx.data Lab Guide](https://ibm.seismic.com/Link/Content/DCG37pjmPj7VmGCHj2Df8fHVmDJj)
 - Recommended: Complete Level 1 and Level 2 material for the [watsonx.data Sales Foundation](https://learn.ibm.com/course/view.php?id=12781)
 
 ### Labs L3
