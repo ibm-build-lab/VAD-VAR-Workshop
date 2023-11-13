@@ -45,6 +45,7 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - **[Module 106: Federated Queries](/watsonx/watsonxdata/106)**
 - **[Module 107: Offloading Data from a Data Warehouse](/watsonx/watsonxdata/107)**
 - **[Module 108: Time Travel and Rollback](/watsonx/watsonxdata/108)**
+- **[L3 Course Quiz](https://learn.ibm.com/course/view.php?id=13171)**
 
 ### Suplimental Labs L3+/L4
 
