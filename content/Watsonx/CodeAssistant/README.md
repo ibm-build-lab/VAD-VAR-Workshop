@@ -3,9 +3,9 @@ title: 'watsonx Code Assistant'
 toc: false
 ---
 
-# watsonx Code Assistant Technical Sales Workshop
+# IBM watsonx Code Assistant Technical Sales Workshop
 
-These labs show how watsonx Code Assistant is utilized by Red Hat Ansible Lightspeed to map natural language in to valid Ansible syntax.
+These labs show how IBM watsonx Code Assistant is utilized by Red Hat Ansible Lightspeed to map natural language in to valid Ansible syntax.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ If you prefer to not to set up your local computer environment, you can use the 
 
 ## Labs
 
-- **[Lab 101: Ansible Lightspeed environment setup in VS Code](/watsonx/codeassistant/101)**
+- **[Lab 101: Ansible Lightspeed environment setup](/watsonx/codeassistant/101)**
 
-- **[Lab 102: IBM watsonx Code Assistant](/watsonx/codeassistant/102)**
+- **[Lab 102: Generating Code using IBM watsonx Code Assistant](/watsonx/codeassistant/102)**
 
