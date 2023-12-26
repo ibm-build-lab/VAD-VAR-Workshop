@@ -7,11 +7,9 @@ toc: false
 
 This workshop includes hands on labs designed to provide practical experience with IBM's data and AI platform, watsonx.
 
-## Labs (coming soon)
+## Labs
 
 ### [watsonx.ai](/watsonx/watsonxai)
-
-
 ### [watsonx.data](/watsonx/watsonxdata)
-
-### [watsonx code assistant](/watsonx/codeassistant)
+### [watsonx Assistant](/watsonx/assistant)
+### [watsonx Code Assistant](/watsonx/codeassistant)

@@ -1,11 +1,11 @@
 ---
-title: Taller técnico de ventas de IBM watsonx Code Assistant
+title: watsonx Code Assistant
 toc: false
 ---
 
-# Taller técnico de ventas de IBM watsonx Code Assistant
+# Taller técnico de ventas de watsonx Code Assistant
 
-Este taller cubre el laboratorio IBM watsonx Code Assistant L3, destacando algunos de los componentes principales y capacidades de IBM watsonx Code Assistant. 
+Estos laboratorios muestran cómo Red Hat Ansible Lightspeed utiliza watsonx Code Assistant para asignar el lenguaje natural a una sintaxis válida de Ansible.
 
 ## Requisitos previos
 
@@ -18,6 +18,8 @@ Antes de proceder con este laboratorio, asegúrese de haber instalado y tener ac
     pip install ansible
     ```
 - [Cuenta pública de Github](https://github.com/signup): Si no tienes una cuenta pública en Github por favor crea una cuenta pública en Github.
+
+Si prefiere no configurar su entorno informático local, puede utilizar el entorno de laboratorio interactivo de Ansible Lightspeed que se encuentra en esta [página](https://developers.redhat.com/products/ansible/lightspeed) haciendo clic en `Probar enlace de nuestro laboratorio interactivo`.
 
 ## Laboratorios
 
