@@ -47,13 +47,17 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - **[Module 108: Time Travel and Rollback](/watsonx/watsonxdata/108)**
 - **[L3 Course Quiz](https://learn.ibm.com/course/view.php?id=13171)**
 
-### Suplimental Labs L3+/L4
+### Supplemental Labs L3+
 
 - **[Module 109: Working with IBM Cloud COS](/watsonx/watsonxdata/109)**
 - **[Module 110: Visualization of watsonx.data from watsonx.ai](/watsonx/watsonxdata/110)**
+
+### Supplemental Labs L4
+
+- **[Module 111: Apache Spark with watsonx.data](/watsonx/watsonxdata/111)**
 
 ### Reference materials and other exercises
 
 - **[Key Data Terms](/watsonx/watsonxdata/ref100)**
 - **[Data as a Product with IBM](/watsonx/watsonxdata/ref101)**
-- **[Relevant open source technologies](/watsonx/watsonxdata/ref102)**
+- **[Relevant open-source technologies](/watsonx/watsonxdata/ref102)**
