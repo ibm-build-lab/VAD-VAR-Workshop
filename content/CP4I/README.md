@@ -23,4 +23,6 @@ After completing these labs in a workshop session, you'll be able to earn the [C
 
 - **[Module 105: Frequently Asked Questions](/cp4i/105)**: Frequently Asked Questions you may refer for help
 
+- **[Module 106: Install CP4D and WatsonX](/cp4i/106)**: This is a L4 lab which shows you how to install CP4D and WatsonX into a techzone cluster
+
 - **[Technical Sales L3 Badge Quiz](https://learn.ibm.com/course/view.php?id=10576)**
