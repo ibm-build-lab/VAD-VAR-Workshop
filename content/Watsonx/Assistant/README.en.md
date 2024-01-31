@@ -27,3 +27,7 @@ After completing these labs in a workshop session, you'll be able to earn the [w
 - **[Module 104: Analytics](/watsonx/assistant/104)**: Learn about watsonx Assistant's analytics, a powerful capability that takes the guesswork out of improving your assistant's performance.
 
 - **[Optional Module 105: Custom Extensions](/watsonx/assistant/105)**: Learn how to integrate watsonx Assistant with external services, like CRM systems, ticketing services, or databases, with custom extensions.
+
+### Supplemental labs
+
+[207: LLM-powered Conversational Search](/watsonx/assistant/207)
