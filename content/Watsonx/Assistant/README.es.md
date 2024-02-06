@@ -25,4 +25,4 @@ Después de completar estos laboratorios en una sesión de taller, podrás obten
 
 ### Laboratorios complementarios
 
-*   **[Módulo 207:](/watsonx/assistant/207)** Búsqueda conversacional**[basada en LL](/watsonx/assistant/207)**M: Obtenga información sobre la búsqueda conversacional basada en el modelo de lenguaje amplio (LLM) de IBM watsonx Assistant: qué es, cómo funciona, cómo configurarlo y cómo utilizarlo.
+*   **[Módulo 202:](/watsonx/assistant/207)** Búsqueda conversacional**[basada en LL](/watsonx/assistant/202)**M: Obtenga información sobre la búsqueda conversacional basada en el modelo de lenguaje amplio (LLM) de IBM watsonx Assistant: qué es, cómo funciona, cómo configurarlo y cómo utilizarlo.

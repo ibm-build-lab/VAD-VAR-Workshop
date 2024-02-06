@@ -30,4 +30,4 @@ After completing these labs in a workshop session, you'll be able to earn the [w
 
 ### Supplemental labs
 
-- **[Module 207: LLM-powered Conversational Search](/watsonx/assistant/207)**: Learn about IBM watsonx Assistant’s large language model (LLM)-powered Conversational Search: what it is, how it works, how to set it up, and how to use it.
+- **[Module 202: LLM-powered Conversational Search](/watsonx/assistant/202)**: Learn about IBM watsonx Assistant’s large language model (LLM)-powered Conversational Search: what it is, how it works, how to set it up, and how to use it.
