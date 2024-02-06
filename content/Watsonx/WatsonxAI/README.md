@@ -71,7 +71,7 @@ None of the above changes should impact the labs in this document.  However, the
 
 ### Supplemental Labs L4
 
-[109: Large language model application building blocks](/watsonx/watsonxai/109)
+[201: Large language model application building blocks](/watsonx/watsonxai/201)
 
 
 ### Reference materials and other exercises
