@@ -54,7 +54,7 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 ### Supplemental Labs L4
 
-- **[Module 111: Apache Spark with watsonx.data](/watsonx/watsonxdata/111)**
+- **[Module 201: Apache Spark with watsonx.data](/watsonx/watsonxdata/201)**
 
 ### Reference materials and other exercises
 
