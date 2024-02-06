@@ -66,6 +66,9 @@ Ninguno de los cambios mencionados debería afectar a los laboratorios de este d
 
 [108: Integrar modelos de watsonx.ai Foundation con watsonx Assistant](/watsonx/watsonxai/108)
 
+### Laboratorios suplementarios L4
+
+[201: Grandes bloques de aplicación de modelos lingüísticos](/watsonx/watsonxai/201)
 
 ### Materiales de referencia y otros ejercicios
 [Glosario de IA](/watsonx/watsonxai/ref100)
