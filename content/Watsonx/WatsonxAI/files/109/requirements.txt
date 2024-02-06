@@ -1,0 +1,5 @@
+load_dotenv==0.1.0
+ibm_watson_machine_learning==1.0.345
+streamlit==1.31.0
+plotly==5.18.0
+pandas==1.5.3
