@@ -73,6 +73,8 @@ None of the above changes should impact the labs in this document.  However, the
 
 [201: Large language model application building blocks](/watsonx/watsonxai/201)
 
+[202: Large language model application building blocks](/watsonx/watsonxai/202)
+
 
 ### Reference materials and other exercises
 [AI Glossary](/watsonx/watsonxai/ref100)
