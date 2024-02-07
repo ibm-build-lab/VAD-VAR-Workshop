@@ -20,6 +20,6 @@ Después de completar estos laboratorios en una sesión de taller, podrás obten
 
 - **[Módulo 101: Un vistazo a un asistente](/watsonx/assistant/101)** de ejemplo: Explore cómo es un asistente virtual creado con watsonx Assistant desde las perspectivas de varias personas.
 - **[Módulo 102: Acciones y gestión básica de acceso a identidades (IAM)](/watsonx/assistant/102)**: Conozca los componentes básicos de un asistente virtual y cómo colaborar en un asistente con sus compañeros.
-- **[Módulo 103:](/watsonx/assistant/102)** Inteligencia artificial lista para usar: Conozca la inteligencia artificial que se ejecuta en watsonx Assistant.
+- **[Módulo 103:](/watsonx/assistant/103)** Inteligencia artificial lista para usar: Conozca la inteligencia artificial que se ejecuta en watsonx Assistant.
 - **[Módulo 104:](/watsonx/assistant/104)** Análisis: Conozca la analítica de watsonx Assistant, una potente capacidad que elimina las conjeturas a la hora de mejorar el rendimiento de su asistente.
 - **[Módulo opcional 105: Extensiones](/watsonx/assistant/105)** personalizadas: Aprende a integrar watsonx Assistant con servicios externos, como sistemas CRM, servicios de tickets o bases de datos, con extensiones personalizadas.
