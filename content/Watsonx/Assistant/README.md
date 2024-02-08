@@ -22,7 +22,7 @@ After completing these labs in a workshop session, you'll be able to earn the [w
 
 - **[Module 102: Actions and basic Identity Access Management (IAM)](/watsonx/assistant/102)**: Learn about the fundamental building blocks of a virtual assistant and how to collaborate on an assistant with colleagues.
 
-- **[Module 103: Out-of-box Artificial Intelligence](/watsonx/assistant/102)**: Learn about the artificial intelligence that runs out-of-the-box in watsonx Assistant.
+- **[Module 103: Out-of-box Artificial Intelligence](/watsonx/assistant/103)**: Learn about the artificial intelligence that runs out-of-the-box in watsonx Assistant.
 
 - **[Module 104: Analytics](/watsonx/assistant/104)**: Learn about watsonx Assistant's analytics, a powerful capability that takes the guesswork out of improving your assistant's performance.
 
