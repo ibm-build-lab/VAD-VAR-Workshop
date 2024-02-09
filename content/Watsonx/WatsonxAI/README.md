@@ -75,6 +75,8 @@ None of the above changes should impact the labs in this document.  However, the
 
 [202: Large language model application building blocks](/watsonx/watsonxai/202)
 
+[204: Implement RAG use cases](/watsonx/watsonxai/204)
+
 
 ### Reference materials and other exercises
 [AI Glossary](/watsonx/watsonxai/ref100)

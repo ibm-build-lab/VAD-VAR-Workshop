@@ -22,7 +22,7 @@ After completing these labs in a workshop session, you'll be able to earn the [w
 
 - **[Module 102: Actions and basic Identity Access Management (IAM)](/watsonx/assistant/102)**: Learn about the fundamental building blocks of a virtual assistant and how to collaborate on an assistant with colleagues.
 
-- **[Module 103: Out-of-box Artificial Intelligence](/watsonx/assistant/102)**: Learn about the artificial intelligence that runs out-of-the-box in watsonx Assistant.
+- **[Module 103: Out-of-box Artificial Intelligence](/watsonx/assistant/103)**: Learn about the artificial intelligence that runs out-of-the-box in watsonx Assistant.
 
 - **[Module 104: Analytics](/watsonx/assistant/104)**: Learn about watsonx Assistant's analytics, a powerful capability that takes the guesswork out of improving your assistant's performance.
 
@@ -31,3 +31,6 @@ After completing these labs in a workshop session, you'll be able to earn the [w
 ### Supplemental labs
 
 - **[Module 202: LLM-powered Conversational Search](/watsonx/assistant/202)**: Learn about IBM watsonx Assistant’s large language model (LLM)-powered Conversational Search: what it is, how it works, how to set it up, and how to use it.
+
+- **[Module 203: Deploy NeuralSeek with watsonx Assistant and Watson Discovery](/watsonx/assistant/203)**: Use Watson Discovery, watsonx Assistant, and NeuralSeek to create a virtual assistant that can answer questions about Watson Discovery.
+
