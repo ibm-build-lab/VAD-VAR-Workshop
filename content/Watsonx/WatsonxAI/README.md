@@ -60,8 +60,7 @@ None of the above changes should impact the labs in this document.  However, the
 
 ### Supplemental labs (L3+)
 
-[105: Intro to LangChain
-](/watsonx/watsonxai/105)
+[105: Intro to LangChain](/watsonx/watsonxai/105)
 
 [106: Retrieval-Augmented Generation using Watson Discovery](/watsonx/watsonxai/106)
 
@@ -74,6 +73,8 @@ None of the above changes should impact the labs in this document.  However, the
 [201: Large language model application building blocks](/watsonx/watsonxai/201)
 
 [202: Introduction to LangChain](/watsonx/watsonxai/202)
+
+[204: Implement RAG use cases](/watsonx/watsonxai/204)
 
 ### Reference materials and other exercises
 [AI Glossary](/watsonx/watsonxai/ref100)
