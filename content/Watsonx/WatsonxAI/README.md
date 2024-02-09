@@ -72,7 +72,7 @@ None of the above changes should impact the labs in this document.  However, the
 
 [201: Large language model application building blocks](/watsonx/watsonxai/201)
 
-[202: Introduction to LangChain](/watsonx/watsonxai/202)
+[203: Introduction to LangChain](/watsonx/watsonxai/203)
 
 [204: Implement RAG use cases](/watsonx/watsonxai/204)
 
