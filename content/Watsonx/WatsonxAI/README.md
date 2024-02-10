@@ -70,7 +70,9 @@ None of the above changes should impact the labs in this document.  However, the
 
 ### Supplemental Labs L4
 
-[201: Large language model application building blocks](/watsonx/watsonxai/201)
+[201: Introduction to Generative AI in watsonx.ai](/watsonx/watsonxai/201)
+
+[202: Large language model application building blocks](/watsonx/watsonxai/202)
 
 [203: Introduction to LangChain](/watsonx/watsonxai/203)
 
