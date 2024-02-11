@@ -25,7 +25,8 @@ const standardComponents: Props['components'] = {
   Danger: DynamicComponent('Danger'),
   Warning: DynamicComponent('Warning'),
   TokenizationApplet: DynamicComponent('TokenizationApplet'),
-  CopyText: DynamicComponent('CopyText')
+  CopyText: DynamicComponent('CopyText'),
+  Tabs: DynamicComponent('Tabs')
 };
 
 const MDXWrapper = ({ children, components = {} }: MDXWrapperProps) => {
