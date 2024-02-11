@@ -57,9 +57,11 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 ### Labs L4
 
-- **[Module 201: Apache Spark with watsonx.data](/watsonx/watsonxdata/201)**
-- **[Module 202: Using IBM Cloud and Amazon S3 Object Storage](/watsonx/watsonxdata/202)**
-- **[Module 203: Netezza data warehouse modernization](/watsonx/watsonxdata/203)**
+- **[Module 201: Apache Spark with watsonx.data](/watsonx/watsonxdata/level-4/201)**
+- **[Module 202: Using IBM Cloud and Amazon S3 Object Storage](/watsonx/watsonxdata/level-4/202)**
+- **[Module 203: Netezza data warehouse modernization](/watsonx/watsonxdata/level-4/203)**
+- **[Module 204: Data Ingestion](/watsonx/watsonxdata/level-4/204)**
+
 - **[L4 Course Quiz](https://learn.ibm.com/course/view.php?id=16013)**
 
 ### Reference materials and other exercises
