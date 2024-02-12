@@ -47,6 +47,8 @@ None of the above changes should impact the labs in this document.  However, the
 
 <br />
 
+### Labs L3
+
 [101: Basic navigation and zero-shot prompting](/watsonx/watsonxai/101)
 
 [102: Model parameters and prompting for output](/watsonx/watsonxai/102)
@@ -70,13 +72,13 @@ None of the above changes should impact the labs in this document.  However, the
 
 ### Supplemental Labs L4
 
-[201: Introduction to Generative AI in watsonx.ai](/watsonx/watsonxai/201)
+[201: Introduction to Generative AI in watsonx.ai](/watsonx/watsonxai/level-4/201)
 
-[202: Large language model application building blocks](/watsonx/watsonxai/202)
+[202: Large language model application building blocks](/watsonx/watsonxai/level-4/202)
 
-[203: Introduction to LangChain](/watsonx/watsonxai/203)
+[203: LangChain](/watsonx/watsonxai/level-4/203)
 
-[204: Implement RAG use cases](/watsonx/watsonxai/204)
+[204: Implement RAG use cases](/watsonx/watsonxai/level-4/204)
 
 ### Reference materials and other exercises
 [AI Glossary](/watsonx/watsonxai/ref100)
