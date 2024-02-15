@@ -16,7 +16,7 @@ This IBM watsonx.governance hands-on lab introduces you to some of the core comp
 Specifically, you will get hands-on experience in the following areas for both **predictive** and **generative** AI models:
 
   - Define an AI model use case
-  - Setup watsonx.ai project
+  - Set up an IBM watsonx.ai project
   - Track an AI model
   - Deploy an AI model
   - Evaluate an AI model
@@ -36,7 +36,7 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 ### Labs L3
 
 - **[Module 102: Define an AI model use case](/watsonx/watsonxgov/102)**
-- **[Module 103: Setup watsonx.ai project](/watsonx/watsonxgov/103)**
+- **[Module 103: Set up an IBM watsonx.ai project](/watsonx/watsonxgov/103)**
 - **[Module 104: Track an AI model](/watsonx/watsonxgov/104)**
 - **[Module 105: Deploy an AI model](/watsonx/watsonxgov/105)**
 - **[Module 106: Evaluate an AI model](/watsonx/watsonxgov/106)**
