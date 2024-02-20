@@ -7,6 +7,7 @@ import CodeBlock from './CodeBlock';
 import CopyText from './CopyText';
 import callouts from './Callouts';
 import TokenizationApplet from './TokenizationApplet';
+import Tabs from './Tabs';
 
 const { QuizAlert, Danger, Warning } = callouts;
 
@@ -21,5 +22,6 @@ export {
   Danger,
   Warning,
   TokenizationApplet,
-  CopyText
+  CopyText,
+  Tabs
 };
