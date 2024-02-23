@@ -14,3 +14,9 @@ toc: false
 - **[Module 203: Netezza data warehouse modernization](/watsonx/watsonxdata/level-4/203)**
 
 - **[Module 204: Data Ingestion](/watsonx/watsonxdata/level-4/204)**
+
+## Course links:
+
+- **[watsonx.data for Technical Sales Level 4](https://www.ibm.com/training/learning-path/ibmwatsonx.datafortechnicalsaleslevel4)**
+
+- **[Level 4 Badge Test](https://learn.ibm.com/course/view.php?id=15979)**
