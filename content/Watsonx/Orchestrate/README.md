@@ -31,3 +31,6 @@ For the 102 lab:
 - **[Module 101: Boosting Sales Productivity](/watsonx/orchestrate/101)**
 
 - **[Module 102: Process and Task Mining](/watsonx/orchestrate/102)**
+
+## [L3 Badge Quiz](https://learn.ibm.com/mod/quiz/view.php?id=289747)
+
