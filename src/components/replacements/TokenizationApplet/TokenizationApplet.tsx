@@ -1,4 +1,4 @@
-import { FormLabel, Stack, Tag, TextArea } from '@carbon/react';
+import { Dropdown, Stack, Tag, TextArea, Toggle } from '@carbon/react';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import cx from 'classnames';
 import { useTranslation } from 'react-i18next';
@@ -7,6 +7,20 @@ import * as styles from './TokenizationApplet.module.scss';
 const { colorsLength } = styles;
 
 const COLORS_LENGTH = parseInt(colorsLength);
+const DEFAULT_TEXT = `This is a interactive demo of tokenization.
+
+Type in any text you want here.
+
+Note the token separation and amount differences compared to your original input, as well as between the different models.`;
+const MODEL_LIST = [
+  'google/flan-ul2',
+  'Xenova/starcoderbase-1b',
+  'bigscience/mt0-small',
+  'EleutherAI/gpt-neox-20b',
+  'google/flan-t5-small',
+  'ibm/mpt-7b-instruct2',
+  'Xenova/llama-68m'
+];
 
 const countWords = (s: string) => {
   const matches = s.match(/[\w\d’'-]+/gi);
@@ -21,13 +35,25 @@ const CountTag = ({ children }: React.HTMLAttributes<HTMLDivElement>) => {
   );
 };
 
-const TokenizationApplet = () => {
-  const [inputText, setInputText] = useState('');
-  const [encodedText, setEncodedText] = useState<string[]>([]);
-
-  const worker = useRef<Worker | null>(null);
+const TokenizationApplet = (props: { startingText?: string }) => {
+  const { startingText = DEFAULT_TEXT } = props;
 
   const { t } = useTranslation();
+  const [inputText, setInputText] = useState(startingText);
+  const [encodedText, setEncodedText] = useState<string[]>([]);
+  const [encodedIds, setEncodedIds] = useState([]);
+  const [showInternal, setShowInternal] = useState(false);
+  const [model, setModel] = useState<string>(MODEL_LIST[0]);
+  const worker = useRef<Worker | null>(null);
+
+  const tokenize = useCallback(
+    (text: string) => {
+      if (worker.current) {
+        worker.current.postMessage({ text, model });
+  ***REMOVED***
+***REMOVED***,
+    [model]
+  );
 
   useEffect(() => {
     if (!worker.current) {
@@ -37,7 +63,11 @@ const TokenizationApplet = () => {
 ***REMOVED***
 
     const onMessageReceived = (e: MessageEvent) => {
-      if (e.data.status === 'complete') setEncodedText(e.data.output);
+      if (e.data.status === 'complete') {
+        const { tokenStrings, tokenIds } = e.data.output;
+        setEncodedText(tokenStrings);
+        setEncodedIds(tokenIds);
+  ***REMOVED***
 ***REMOVED***;
 
     worker.current.addEventListener('message', onMessageReceived);
@@ -45,11 +75,9 @@ const TokenizationApplet = () => {
     return () => worker.current?.removeEventListener('message', onMessageReceived);
   }, []);
 
-  const tokenize = useCallback((text: string) => {
-    if (worker.current) {
-      worker.current.postMessage({ text });
-***REMOVED***
-  }, []);
+  useEffect(() => {
+    if (worker.current) tokenize(inputText);
+  }, [inputText, model]);
 
   return (
     <div className={styles.container}>
@@ -60,33 +88,50 @@ const TokenizationApplet = () => {
             value={inputText}
             className={cx(styles.inputSection)}
             onChange={async (e) => {
-              const text = e.target.value || '';
-              tokenize(text);
-              setInputText(text);
+              setInputText(e.target.value || '');
         ***REMOVED***}
-            labelText={t('TokenizationAppletInputLabel')}
+            labelText={''}
           />
           <CountTag>{countWords(inputText) + t('TokenizationAppletWordsTag')}</CountTag>
         </div>
 
         <div className={styles.appletSection}>
-          <FormLabel className={styles.outputSectionLabel}>
-            {t('TokenizationAppletOutputLabel')}
-          </FormLabel>
           <div className={styles.outputSection}>
             <div className={styles.tokenList}>
-              {' '}
-              {encodedText.map((chunk, index) => (
+              {(showInternal ? encodedIds : encodedText).map((chunk, index) => (
                 <p
                   key={index}
                   className={cx(styles.chunk, styles[`chunk_${index % (COLORS_LENGTH - 1)}`])}>
-                  {chunk}
+                  {`${chunk}`.replaceAll('\n', '[nl]')}
                 </p>
       ***REMOVED***)}
             </div>
           </div>
           <CountTag>{encodedText.length + t('TokenizationAppletTokensTag')}</CountTag>
         </div>
+      </Stack>
+      <Stack orientation='horizontal' className={styles.controls} gap={3}>
+        <Dropdown
+          id='model-select'
+          className={styles.modelDropdown}
+          onChange={({ selectedItem }) => {
+            if (selectedItem) setModel(selectedItem);
+      ***REMOVED***}
+          titleText=''
+          label=''
+          items={MODEL_LIST}
+          itemToString={(i) => i.split('/')[1]}
+          initialSelectedItem={MODEL_LIST[0]}
+          type='inline'
+        />
+        <Toggle
+          size='sm'
+          labelText=''
+          labelA={t('TokenizationAppletTextToggle') as string}
+          labelB={t('TokenizationAppletInternalToggle') as string}
+          onToggle={() => setShowInternal((c) => !c)}
+          id='toggle-internal'
+        />
       </Stack>
     </div>
   );
