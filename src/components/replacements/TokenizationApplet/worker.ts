@@ -57,6 +57,9 @@ self.addEventListener('message', async (event: MessageEvent<EventData>) => {
 
   self.postMessage({
     status: 'complete',
-    output: tokenStrings
+    output: {
+      tokenStrings,
+      tokenIds
+***REMOVED***
   });
 });
