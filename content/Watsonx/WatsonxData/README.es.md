@@ -56,8 +56,10 @@ Después de completar estos laboratorios en una sesión de taller, podrá obtene
 
 ### Laboratorios L4
 
-*   **[Módulo 202: Uso del almacenamiento de objetos de IBM Cloud y Amazon S3](/watsonx/watsonxdata/202)**
-*   **[Módulo 203: Modernización del almacén de datos Netezza](/watsonx/watsonxdata/203)**
+*   **[Módulo 201: Apache Spark con watsonx.data](/watsonx/watsonxdata/level-4/201)**
+*   **[Módulo 202: Uso del almacenamiento de objetos de IBM Cloud y Amazon S3](/watsonx/watsonxdata/level-4/202)**
+*   **[Módulo 203: Modernización del almacén de datos Netezza](/watsonx/watsonxdata/level-4/203)**
+*   **[Módulo 204: Ingestión de datos](/watsonx/watsonxdata/level-4/204)**
 *   **[Cuestionario del curso L4](https://learn.ibm.com/course/view.php?id=16013)**
 
 ### Material de referencia y otros ejercicios
