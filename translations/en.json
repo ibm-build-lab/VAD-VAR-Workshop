@@ -9,5 +9,7 @@
   "TokenizationAppletInputLabel": "Input text",
   "TokenizationAppletOutputLabel": "Tokenized text",
   "TokenizationAppletTokensTag": " tokens",
-  "TokenizationAppletWordsTag": " words"
+  "TokenizationAppletWordsTag": " words",
+  "TokenizationAppletTextToggle": "Show text",
+  "TokenizationAppletInternalToggle": "Show internal"
 }

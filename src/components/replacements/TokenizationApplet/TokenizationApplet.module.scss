@@ -2,6 +2,7 @@
 
 $chunk-colors: blue, green, red, purple, yellow, orange, gray;
 $input-height: 10rem;
+$border-color: $gray-30;
 
 :export {
   colorsLength: list.length($chunk-colors)
@@ -15,7 +16,6 @@ $input-height: 10rem;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: $input-height;
-  gap: $spacing-03;
 }
 
 .appletSection {
@@ -29,7 +29,8 @@ $input-height: 10rem;
 .inputSection {
   & textarea {
     resize: none;
-    border: 1px solid $gray-50;
+    border: 1px solid $border-color;
+    border-right: none;
   }
 
   & div:nth-child(2) {
@@ -37,15 +38,11 @@ $input-height: 10rem;
   }
 }
 
-.outputSectionLabel {
-  margin-bottom: $spacing-03;
-}
-
 .outputSection {
   display: flex;
   flex-grow: 1;
-  overflow: scroll;
-  border: 1px solid $gray-50;
+  overflow-y: auto;
+  border: 1px solid $border-color;
   padding: $spacing-04 $spacing-05;
 }
 
@@ -82,9 +79,31 @@ $input-height: 10rem;
   border: 1px solid rgba($color: #000, $alpha: 0.25);
 }
 
+.controls {
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid $border-color;
+  border-top: none;
+
+  & .modelDropdown {
+    grid-gap: 0;
+  }
+}
+
 @include apply-lesser-than('sm') {
   .applet {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, $input-height);
+  }
+
+  .outputSection {
+    border-top: none;
+  }
+
+  .inputSection {
+    & textarea {
+      border-right: 1px solid $border-color;
+***REMOVED***
   }
 }
