@@ -13,3 +13,4 @@ Este taller incluye manos sobre laboratorios diseñados para proporcionar experi
 ### [watsonx.governance](/watsonx/watsonxgov)
 ### [watsonx Assistant](/watsonx/assistant)
 ### [watsonx Code Assistant](/watsonx/codeassistant)
+### [watsonx Orchestrate](/watsonx/orchestrate)
