@@ -70,6 +70,8 @@ None of the above changes should impact the labs in this document.  However, the
 
 [108: Integrate watsonx.ai Foundation models with watsonx Assistant](/watsonx/watsonxai/108)
 
+[109: PoX environment setup](/watsonx/watsonxai/109) **(W I P)**
+
 ### Supplemental Labs L4
 
 [201: Introduction to Generative AI in watsonx.ai](/watsonx/watsonxai/level-4/201)
