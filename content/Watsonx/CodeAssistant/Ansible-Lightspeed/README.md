@@ -47,3 +47,7 @@ If you prefer to not to set up your local computer environment, you can use the 
 - **[Lab 103: Ansible Lightspeed environment setup in VS Code](/watsonx/codeassistant/ansible-lightspeed/103)**
 
 - **[Lab 104: IBM watsonx Code Assistant](/watsonx/codeassistant/ansible-lightspeed/104)**
+
+### IBM watsonx Code Assistant Technical Sales Workshops
+
+Click, [IBM watsonx Code Assistant](/watsonx/codeassistant) to go to the IBM watsonx Code Assistant home page.

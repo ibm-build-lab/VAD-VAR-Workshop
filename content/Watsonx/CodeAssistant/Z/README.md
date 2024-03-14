@@ -5,7 +5,7 @@ toc: false
 
 # IBM watsonx Code Assistant for Z Technical Sales Workshop
 
-This workshop showcase the capability of IBM watsonx Code Assistant for Z within the mainframe application modernization lifecycle. This workshop covers the IBM watsonx Code Assistant for Z L3 badge lab, highlighting some of the core components and capabilities of IBM watsonx Code Assistant.
+This workshop showcase the capability of IBM watsonx Code Assistant for Z within the mainframe application modernization lifecycle for z/OS applications. This workshop covers the IBM watsonx Code Assistant for Z L3 badge lab, highlighting some of the core components and capabilities of IBM watsonx Code Assistant.
 
 IBM watsonx Code Assistant for Z, leverages generative AI to accelerate the mainframe application modernization lifecycle in three discrete phases:
 
@@ -35,3 +35,7 @@ IBM watsonx Code Assistant for Z, leverages generative AI to accelerate the main
 - **[Lab 114: Transform COBOL Code to Java](/watsonx/codeassistant/z/114)**
 
 - [L3 Course Quiz](https://learn.ibm.com/course/view.php?id=16039)
+
+### IBM watsonx Code Assistant Technical Sales Workshops
+
+Click, [IBM watsonx Code Assistant](/watsonx/codeassistant) to go to the IBM watsonx Code Assistant home page.
