@@ -23,6 +23,6 @@ Si prefiere no configurar su entorno informático local, puede utilizar el entor
 
 ## Laboratorios
 
-- **[Laboratorio 101: Configuración del entorno Ansible Lightspeed en VS Code](/watsonx/codeassistant/101)**
+- **[Laboratorio 101: Configuración del entorno Ansible Lightspeed en VS Code](/watsonx/codeassistant/ansible-lightspeed/101)**
 
-- **[Laboratorio 102: Asistente de código IBM watsonx](/watsonx/codeassistant/102)**
+- **[Laboratorio 102: Asistente de código IBM watsonx](/watsonx/codeassistant/ansible-lightspeed/102)**

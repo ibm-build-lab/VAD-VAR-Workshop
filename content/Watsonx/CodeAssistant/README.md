@@ -3,47 +3,14 @@ title: 'watsonx Code Assistant'
 toc: false
 ---
 
-# IBM watsonx Code Assistant Technical Sales Workshop
+# IBM watsonx Code Assistant Technical Sales Workshops
 
-This workshop shows how IBM watsonx Code Assistant is utilized by Red Hat Ansible Lightspeed to map natural language in to valid Ansible syntax. This workshop covers the IBM watsonx Code Assistant for Red Hat Ansible Lightspeed L3 badge lab, highlighting some of the core components and capabilities of IBM watsonx Code Assistant with additional L3+ labs that can be included based on client interest.
+IBM watsonx Code Assistant (WCA) is a family of offerings that supports AI-assisted code development and application modernization. Its objective is to help clients address skills gaps and increase productivity for developers and IT operations staff. Currently, there are two offerings of IBM watsonx Code Assistant: **IBM watsonx Code Assistant for Red Hat Ansible Lightspeed** and **IBM watsonx Code Assistant for Z**. Both take advantage of the same IBM-trained watsonx.ai Code Large Language Model. The IBM-trained watsonx.ai Code LLM has been tuned for Ansible for Code Assistant for **IBM watsonx Code Assistant for Red Hat Ansible Lightspeed**, and COBOL to Java conversion for **IBM watsonx Code Assistant for Z**.
 
-## IBM watsonx Code Assistant for Red Hat Ansible Lightspeed Technical Sales Intermediate (L3) badge lab
+## IBM watsonx Code Assistant for Red Hat Ansible Lightspeed Technical Sales Workshop
 
-### Prerequisites
+To continue to the **IBM watsonx Code Assistant for Red Hat Ansible Lightspeed** workshop, go [here](/watsonx/codeassistant/ansible-lightspeed)
 
-- An IBM id
+## IBM watsonx Code Assistant for Z Technical Sales Workshop
 
-- Access to [IBM Technology Zone](https://techzone.ibm.com) to provision an IBM watsonx Code Assistant for Ansible Lightspeed environment
-
-- **Recommended**: Complete Level 1 and Level 2 material for the [Generative AI for Code with watsonx Code Assistant Sales Foundation](https://learn.ibm.com/course/view.php?id=15710)
-
-
-### Labs
-
-- **[Lab 101: Ansible Lightspeed environment setup](/watsonx/codeassistant/101)**
-
-- **[Lab 102: Generating Code using IBM watsonx Code Assistant](/watsonx/codeassistant/102)**
-
-- [L3 Course Quiz](https://learn.ibm.com/course/view.php?id=15649)
-
-## Supplemental labs (L3+)
-
-### Prerequisites
-
-Before proceeding through the L3+ labs, make sure you have installed and have access to the following:
-
-- [Visual Studio Code](https://code.visualstudio.com/download) (VS Code)
-
-- [Python](https://www.python.org/downloads/) 3.9+: VS Code uses Python to execute Ansible playbooks and roles.
-
-- [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-and-upgrading-ansible-with-pip): If after the installation the scripts are not seen, add the path where the Ansible scripts were installed to the PATH variable.
-
-- [Public Github Account](https://github.com/signup): If you do not have a public Github account please create a public Github account.
-
-If you prefer to not to set up your local computer environment, you can use the Ansible Lightspeed's interactive lab environment found on this [page](https://developers.redhat.com/products/ansible/lightspeed) by clicking on the `Try our interactive lab` link.
-
-### Labs
-
-- **[Lab 103: Ansible Lightspeed environment setup in VS Code](/watsonx/codeassistant/103)**
-
-- **[Lab 104: IBM watsonx Code Assistant](/watsonx/codeassistant/104)**
+To continue to the **IBM watsonx Code Assistant for Z** workshop, go [here](/watsonx/codeassistant/z)
