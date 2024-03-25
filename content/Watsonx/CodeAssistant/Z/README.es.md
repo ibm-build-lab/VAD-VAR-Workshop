@@ -30,4 +30,4 @@ IBM watsonx Code Assistant for Z, aprovecha la IA generativa para acelerar el ci
 
 ### IBM watsonx Code Assistant Talleres técnicos de ventas
 
-Haga clic en [IBM w](/watsonx/codeassistant) atsonx Code Assistant para ir a la página de inicio de IBM watsonx Code Assistant.
+Haga clic en [IBM watsonx Code Assistant](/watsonx/codeassistant) para ir a la página de inicio de IBM watsonx Code Assistant.
