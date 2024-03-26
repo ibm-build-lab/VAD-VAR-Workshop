@@ -9,6 +9,16 @@ This workshop covers CP4I in breadth and depth, with content appropriate for bot
 
 After completing these labs in a workshop session, you'll be able to earn the [Cloud Pak for Integration for Technical Sales Intermediate](https://www.credly.com/org/ibm/badge/cloud-pak-for-integration-technical-sales-intermediate) badge based on a quiz about this workshop.
 
+For lab 101 and 102 use following link for environment preparation: https://ibm.github.io/platinum-demos-integration/300-integration-api-enabled-application-integration/demo-script
+You will also need the salesforce account setup.
+
+For lab 103 and 104 use following link for environment preparation: https://github.ibm.com/carew/cp4i-workshop-multitenant-lab-env-setup/blob/main/README.md
+Make sure you have docker and ansible environment
+
+When you provision the base openshfit: choose the most cpu one
+
+![worker node flaver choose the most cpu one](./images/worker-node.png)
+
 ## Labs
 
 - **[Module 100: Environment Setup](/cp4i/100)**: Environment Setup you may want to go over with before you start
