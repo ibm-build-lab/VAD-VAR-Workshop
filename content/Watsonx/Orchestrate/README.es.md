@@ -17,6 +17,7 @@ Para el laboratorio 101:
 ## Laboratorios
 
 - **[Módulo 101: Potenciar la productividad de las ventas](/watsonx/orchestrate/101)**
+
 - **[Módulo 102: Aumentar la productividad de las ventas con watsonx Orchestrate](/watsonx/orchestrate/102)**
 
 ## [Prueba de identificación L3](https://learn.ibm.com/mod/quiz/view.php?id=289747)
