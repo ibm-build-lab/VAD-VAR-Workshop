@@ -80,7 +80,7 @@ def get_list_of_complaints():
     # If you want the end user to have a choice of the number of tokens in the output as well as decoding
     # and temperature, you can parameterize these values
 
-    model_type = ModelTypes.MPT_7B_INSTRUCT2
+    model_type = ModelTypes.MT0_XXL
     max_tokens = 100
     min_tokens = 50
     decoding = DecodingMethods.GREEDY
