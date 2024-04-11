@@ -71,8 +71,6 @@ None of the above changes should impact the labs in this document. However, ther
 
 [109: PoX environment setup](/watsonx/watsonxai/109) **(W I P)**
 
-[110: Prompt Tuning](/watsonx/watsonxai/110)
-
 ### Supplemental Labs L4
 
 [201: Introduction to Generative AI in watsonx.ai](/watsonx/watsonxai/level-4/201)
@@ -82,6 +80,10 @@ None of the above changes should impact the labs in this document. However, ther
 [203: LangChain](/watsonx/watsonxai/level-4/203)
 
 [204: Implement RAG use cases](/watsonx/watsonxai/level-4/204)
+
+[205: RAG on documents with LangChain and Elasticsearch](/watsonx/watsonxai/level-4/205)
+
+[206: Prompt Tuning](/watsonx/watsonxai/level-4/206)
 
 ### Reference materials and other exercises
 
