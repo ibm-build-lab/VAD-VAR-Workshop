@@ -123,7 +123,7 @@
 ***REMOVED***
 
 ***REMOVED***
-    model_type = ModelTypes.MPT_7B_INSTRUCT2
+    model_type = ModelTypes.MT0_XXL 
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
