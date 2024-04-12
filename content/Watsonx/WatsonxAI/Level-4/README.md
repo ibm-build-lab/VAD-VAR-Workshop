@@ -14,3 +14,7 @@ toc: false
 - **[Module 203: LangChain](/watsonx/watsonxai/level-4/203)**
 
 - **[Module 204: Implement RAG Use Cases](/watsonx/watsonxai/level-4/204)**
+
+- **[Module 206: Prompt tuning](/watsonx/watsonxai/level-4/206)**
+
+- **[Module 207: Generating synthetic data](/watsonx/watsonxai/level-4/207)**

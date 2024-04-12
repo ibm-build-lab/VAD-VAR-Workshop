@@ -20,29 +20,29 @@ Classroom style workshops will typically provide a shared watsonx.ai environment
 <details>
   <summary>Things you'll learn</summary>
 
-  - The watsonx.ai web based Prompt Lab UI, including Structured and Freeform interface, sample prompts, model information panels and model parameter panel.
-  - Strengths and weaknesses of different models
-  - An overview of the model parameters and how they influence output.
-  - Zero shot vs. Few shot prompting
-  - Using prompts to generate specific output
-  - Saving prompts and prompt sessions
-  - Restoring a prompt to an earlier state via prompt history
-  - Saving prompts to a Jupyter notebook and working with the Jupyter notebook
+- The watsonx.ai web based Prompt Lab UI, including Structured and Freeform interface, sample prompts, model information panels and model parameter panel.
+- Strengths and weaknesses of different models
+- An overview of the model parameters and how they influence output.
+- Zero shot vs. Few shot prompting
+- Using prompts to generate specific output
+- Saving prompts and prompt sessions
+- Restoring a prompt to an earlier state via prompt history
+- Saving prompts to a Jupyter notebook and working with the Jupyter notebook
 </details>
 
 <details>
 <summary>Disclaimer</summary>
 
-Watsonx.ai is being developed and released in an agile manner, which may result in some of the lab screenshots looking slightly different from what you see in the UI.  You may notice the following differences:
+Watsonx.ai is being developed and released in an agile manner, which may result in some of the lab screenshots looking slightly different from what you see in the UI. You may notice the following differences:
 
 - Additional foundation models in the library list
-- Tweaks to the user interface (location of buttons, text/labels for various fields) 
+- Tweaks to the user interface (location of buttons, text/labels for various fields)
 - Additional tabs/buttons (especially when the Tuning Studio is released).
 
-None of the above changes should impact the labs in this document.  However, there are a few possible changes that would compromise the integrity of the lab:
+None of the above changes should impact the labs in this document. However, there are a few possible changes that would compromise the integrity of the lab:
 
 - Ongoing tuning of the foundation models may result in varied results.
-- Updates to the sample prompt default text may change. The original text for all prompts has been provided in the lab document if you need to copy/paste to the prompt UI. 
+- Updates to the sample prompt default text may change. The original text for all prompts has been provided in the lab document if you need to copy/paste to the prompt UI.
 </details>
 
 <br />
@@ -58,7 +58,6 @@ None of the above changes should impact the labs in this document.  However, the
 [104: Working with Jupyter notebooks](/watsonx/watsonxai/104)
 
 [L3 Course Quiz](https://learn.ibm.com/course/view.php?id=13452)
-
 
 ### Supplemental labs (L3+)
 
@@ -82,7 +81,14 @@ None of the above changes should impact the labs in this document.  However, the
 
 [204: Implement RAG use cases](/watsonx/watsonxai/level-4/204)
 
+[205: RAG on documents with LangChain and Elasticsearch](/watsonx/watsonxai/level-4/205)
+
+[206: Prompt Tuning](/watsonx/watsonxai/level-4/206)
+
+[207: Generating synthetic data](/watsonx/watsonxai/level-4/207)
+
 ### Reference materials and other exercises
+
 [AI Glossary](/watsonx/watsonxai/ref100)
 
 [Basics of Prompt Engineering](/watsonx/watsonxai/ref101)
