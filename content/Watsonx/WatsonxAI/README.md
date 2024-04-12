@@ -85,6 +85,8 @@ None of the above changes should impact the labs in this document. However, ther
 
 [206: Prompt Tuning](/watsonx/watsonxai/level-4/206)
 
+[207: Generating synthetic data](/watsonx/watsonxai/level-4/207)
+
 ### Reference materials and other exercises
 
 [AI Glossary](/watsonx/watsonxai/ref100)
