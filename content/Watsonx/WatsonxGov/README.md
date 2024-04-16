@@ -41,3 +41,7 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - **[Module 105: Deploy an AI model](/watsonx/watsonxgov/105)**
 - **[Module 106: Evaluate an AI model](/watsonx/watsonxgov/106)**
 - **[L3 Course Quiz](https://learn.ibm.com/course/view.php?id=16170)**
+
+### Reference materials and other exercises
+
+- **[AI Risk Atlas](/watsonx/watsonxgov/ref101)**
