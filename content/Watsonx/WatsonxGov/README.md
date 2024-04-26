@@ -42,6 +42,10 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - **[Module 106: Evaluate an AI model](/watsonx/watsonxgov/106)**
 - **[L3 Course Quiz](https://learn.ibm.com/course/view.php?id=16170)**
 
+### Supplemental Labs L3+
+
+- **[Module 107: Manage AI assets with versions](/watsonx/watsonxgov/107)**
+
 ### Reference materials and other exercises
 
 - **[AI Risk Atlas](/watsonx/watsonxgov/ref101)**
