@@ -40,3 +40,11 @@ Después de completar estos laboratorios en una sesión de taller, podrá obtene
 *   **[Módulo 105: Implantar un modelo de IA](/watsonx/watsonxgov/105)**
 *   **[Módulo 106: Evaluar un modelo de IA](/watsonx/watsonxgov/106)**
 *   **[Cuestionario del curso L3](https://learn.ibm.com/course/view.php?id=16170)**
+
+### Supplemental Labs L3+
+
+*   **[Módulo 107: Gestión de activos de IA con versiones](/watsonx/watsonxgov/107)**
+
+### Material de referencia y otros ejercicios
+
+*   **[Atlas de riesgos de IA](/watsonx/watsonxgov/ref101)**
