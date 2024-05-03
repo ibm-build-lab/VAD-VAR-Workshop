@@ -13,7 +13,7 @@ After completing these labs in a workshop session, you'll be able to earn the [T
 
 - IBMId and access to Techzone
 - Complete [Turbonomic by IBM Sales Foundation](https://learn.ibm.com/course/view.php?id=9929)
-- [A TechZone Reservation](https://learn.ibm.com/mod/page/view.php?id=210016). Follow the instruction in this document to reserve the Tubonomic Instance.
+- [A TechZone Reservation](https://learn.ibm.com/mod/page/view.php?id=210016). Follow the instruction in this document to reserve the Turbonomic Instance.
 
 > Note: Turbonomic instances will be reserved by Instructor for VEST Workshop.
 
