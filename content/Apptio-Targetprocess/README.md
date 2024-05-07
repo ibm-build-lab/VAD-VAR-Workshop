@@ -31,6 +31,8 @@ strategic planning.
 
 [102: Targetprocess Capabilities](/apptio-targetprocess/102)
 
+[L3 Course Quiz](https://learn.ibm.com/course/view.php?id=16366)
+
 ### Reference material
 
 [Term Glossary](/apptio-targetprocess/ref100)
