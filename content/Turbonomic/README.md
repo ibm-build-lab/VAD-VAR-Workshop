@@ -17,14 +17,18 @@ After completing these labs in a workshop session, you'll be able to earn the [T
 
 > Note: Turbonomic instances will be reserved by Instructor for VEST Workshop.
 
-## Labs
+## Labs L3
 
-- **[Module 101: Turbonomic Overview and lab environment](/turbonomic/101)**
+- **[Lab 101: Turbonomic Overview and Explore UI](/turbonomic/101)**
 
-- **[Module 102: Explore Turbonomic UI](/turbonomic/102)**
+- **[Lab 102: Optimizing Cost](/turbonomic/102)**
 
-- **[Module 103: Connect Instana to Turbonomic](/turbonomic/103)**
+- **[Lab 103: Business Application Drill Down](/turbonomic/103)**
 
-- **[Module 104: Turbonomic Actions and Policies (L3+ content)](/turbonomic/104)**
+- **[Lab 104: Infrastructure Changes Planning)](/turbonomic/104)**
 
-- **[Module 105: Planning and Custom Dashboards (L3+ content)](/turbonomic/105)**
+## Labs L3+
+
+- **[Lab 105: Connect Instana to Turbonomic](/turbonomic/105)**
+
+- **[Lab 106: Turbonomic Actions and Policies](/turbonomic/106)**
