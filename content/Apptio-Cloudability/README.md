@@ -28,7 +28,7 @@ In the L3 content, you will explore the following major selling points around Ap
 
 [101: Cloudability Overview](/apptio-cloudability/101)
 
-[L3 Course Quiz](https://learn.ibm.com/course/view.php?id=16366)
+[L3 Course Quiz](https://learn.ibm.com/course/view.php?id=15758)
 
 ### Reference material
 
