@@ -8,32 +8,16 @@ updated: 2023-03-24
 
 ## Step 1: Access to Maximo Application Suite Demo Environment
 
-Completing this lab requires access to the latest version of the worldwide Maximo Application Suite (MAS) v8.6 demo cluster environment. To make a reservation for the MAS demo environment, please perform the following steps,
+Completing this lab requires access to the latest version of the worldwide Maximo Application Suite (MAS) demo cluster environment. To make a reservation for the MAS demo environment, please perform the following steps,
 
-1. Click on this [**TechZone form**](https://techzone.ibm.com/my/reservations/create/635952829aaefe0019bea350) to request access to the MAS demo environment.
-1. On this form, select **Reserve now** or schedule a preferred time to provision your demo environment access (by selecting **Schedule for later** option) and click **Submit**.
+1. Click on this [**Monday form**](https://forms.monday.com/forms/9753d4c0fbbf082f119601a5d6b01f00?r=use1) to request access to the MAS demo environment.
+2. On this form, enter your **Name** and **Email** address and click **Submit**.
 
-![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.010.jpeg)
+![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.010.png)
 
-3. Click **Purpose** and select **Practice/Self-Education** from the drop-down list **(A)**.
-4. Click **Purpose description** and enter “To follow Maximo Visual Inspection Level 3 Demo Script” **(B)**.
-5. Click **Preferred Geography** and select **Americas** from the drop-down list **(C).**
-6. Choose an **End date and time** which ensures you have the time required to complete the demo script **(D)**.
-7. Click **Submit (E)**. You will receive an email almost immediately that your environment has begun provisioning. After 5-10 minutes, you’ll receive another email notifying that your environment is ready, with details on how to access it.
+3. Once you receive an email notifying you that your environment is ready to use, locate the URL (Uniform Resource Locator) link in this email for the demo environment **MVI URL** and the list of corresponding login credentials. This URL and login credentials will be used later in the demo script. Take a note of the username and password for Maximo Visual Inspection (MVI), as it will be required to log in to the application at a later step.
 
-![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.011.jpeg)
-
-**Caution:** The default duration for reserving this demo environment is 3 days (72 hours), with a maximum duration of 2 weeks (336 hours) depending on the end date you choose when booking the demo (screenshot below). Please try and complete this demo script within the time requested to avoid losing demo access before completion.
-
-![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.013.jpeg)
-
-8. Once you receive an email notifying your environment is ready to use, locate the URL (Uniform Resource Locator) link in this email for the demo environment **MAS v8.6 Demo Environment URL** and the list of corresponding login credentials. This URL and login credentials will be used later in the demo script.
-
-![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.014.jpeg)
-
-9. Scroll down this email to view a list of login credentials for each application in the Maximo Application Suite. To follow this demo script, you only require using Maximo Visual Inspection (MVI) username and password. Take a note of the username and password for Maximo Visual Inspection (MVI), as it will be required to log in to the application at a later step.
-
-![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.015.png)
+![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.011.png)
 
 ### Step 2: Download the Training and Validation Tank Images for the AI Model\*\*
 
