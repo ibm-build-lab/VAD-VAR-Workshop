@@ -21,14 +21,19 @@ Completing this lab requires access to the latest version of the worldwide Maxim
 
 ### Step 2: Download the Training and Validation Tank Images for the AI Model\*\*
 
-1. **Download** the images folder from[ Seismic ](https://ibm.seismic.com/Link/Content/DCpWQCmg4Wbg889TgW8X383JR7XB)to your local machine. These images of Sedimentation tanks will be used to train the computer vision model in the later steps.
+1. **Download** the images folder from [ Seismic ](https://ibm.seismic.com/Link/Content/DCpWQCmg4Wbg889TgW8X383JR7XB)to your local machine. These images of Sedimentation tanks will be used to train the computer vision model in the later steps.
 
 ![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.016.jpeg)
 
 2. **Unzip** the downloaded file and note the location of the directory where you unzipped the file. Once the images are downloaded and unzipped, switch back to the MVI **Data sets** screen (from step 1 in this section)
-3. **Download** the model validation images from the Seismic folder link[ Images of Sedimentation Tanks for Testing.](https://ibm.seismic.com/Link/Content/DC6Mq74dFcQV28fG6F74fCpMc9H3) Unzip the images folder and take note of the location of that folder (like you did in[ Step 3: Create a Dataset for Model Training ](#_page0_x57.00_y410.00)). Note that there are multiple images of sedimentation tanks in clean and dirty conditions in the downloaded images folder as shown in the screenshot below.
 
-![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.017.jpeg)
+> Note in the downloaded images folder there are two sub-folders both containing images of 
+sedimentation tanks in clean and dirty conditions. We will use images in both folders to train and test 
+the AI model in this demo
+
+3. Unzip both training and testing folders and note the location of the directory where you unzipped 
+these files.
+
 
 ## Step 3: Install MVI Mobile Application:
 
