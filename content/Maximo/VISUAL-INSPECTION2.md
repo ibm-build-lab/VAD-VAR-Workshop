@@ -83,7 +83,7 @@ Once model training is complete (in this case you are using a pre-built model), 
 
 Using a dataset that was not part of the model-building phase is a standard process to check the model performance (accuracy). This helps assure that the patterns detected during model training are generalizable (also exist in the never-before-seen images) and can be used in the real world to predict new “unseen” images.
 
----
+
 
 **Actions:**
 
@@ -120,11 +120,11 @@ Congratulations! You have just used IBM Maximo Visual Inspection to create a com
 
 Edge computing is a form of computing that takes place at or near the physical location of either the user or the data source. By placing computing services closer to these locations, users benefit from faster, more reliable services by removing latency issues and decreasing bandwidth usage. For example, it is ideal for usage in fixed camera deployments where data is in large video formats like this sedimentation tanks demo use case.
 
----
+
 
 **Action:**
 
-1. Access Maximo Visual Inspection Edge from this URL (credentials provided in slack/email) [ https://mas-wwdemo-mviedge1.gtm-pat.com/](https://mas-wwdemo-mviedge1.gtm-pat.com/)
+1. Access Maximo Visual Inspection Edge (MVI Edge) by clicking on the **MVI Edge URL(A)** given in the access email you got when requesting access to the demo environment: Also take a note of the MVI Edge login credentials provided in the same email.
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.016.jpeg)
 
@@ -138,9 +138,10 @@ Edge computing is a form of computing that takes place at or near the physical l
 
 **Sample Dialogue:** Several options to configure the MVI Edge environment are available on the left side panel. The **green check mark** at the bottom of the side panel confirms that the Edge server is currently connected to the MVI training server (using an API key), allowing for any models and datasets created in the training server to be imported and deployed in the Edge environment. Using the **Input sources** option from this sidebar, image, video folders, or a RTSP (Real Time Streaming Protocol) camera feed can be selected as an input source for the AI model inspections.
 
----
 
-4. From the **Dashboard** screen, click on the **Tanks** link to view the inspection details (recall that Tank number 2 triggered inspection alerts on the Monitor dashboard in part one of the demo).
+
+4. From the **Dashboard** page, click on the **Tank 1** link under the **Inspection** column to view the tank inspection details (or if Tank 1 is not available then click on any other Tank number link that is in the “Inspecting” **State** and has more than 0 inspections under the **Total inspections** column).
+   
 5. **Images** tab of the **Inspection: Sedimentation Tank 2 Inspection** page opens. Click the **Configuration** tab to view this tank’s inspection configurations.
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.018.jpeg)
@@ -153,15 +154,13 @@ On the configuration tab, show that any datasets, models, and projects made in t
 
 **Sample Dialogue:** Using Edge, you can collect or inspect images by selecting the appropriate option in the **Inspection mode** section under the Inspection status section. In **Collecting** mode, any images taken as part of the inspection are simply collected to train an AI model at a later stage. In **Inspecting** mode, these images are inspected by a previously trained AI model to perform inference (detect the image elements using computer vision). Because you want to inspect the tank images, ensure that this mode is set to the **Inspecting** option.
 
----
 
-6. Scroll down to the **Rules** section. In the **Clean Tank** row, click on the **gear** icon under the **Settings** column. This is where you can view inspection rules that the AI model will use to categorize the tank’s health to be a Pass or Fail.
+
+6. Scroll down to the **Rules** section. In the **CLEAN_TANK** row, click on the **gear** icon under the **Settings** column. This is where you can view inspection rules that the AI model will use to categorize the tank’s health to be a Pass or Fail.
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.021.jpeg)
 
-7. The **Rule settings** window appears. This is where the name of the inspection, and rules for
-
-a pass or a fail inspection can be configured. On this screen, please **keep the settings to their pre-select values and do not change anything here**.
+7. The **Rule settings** window appears. This is where the name of the inspection, and rules for a pass or a fail inspection can be configured. On this screen, please **keep the settings to their pre-select values and do not change anything here**.
 
 Simply put, confidence score is a measure of how confident an AI model is about its prediction and is described in a range of 0-100%.
 
@@ -173,15 +172,11 @@ Simply put, confidence score is a measure of how confident an AI model is about 
 
 Using MQTT protocol, the Edge server integrates with other applications in the MAS Suite to display inspection alerts and enable the creation of work order requests, as you saw earlier in this demo with MAS Monitor (part one of this demo). In addition to MQTT, using Twilio, inspection results can be immediately sent as SMS to the concerned person by simply providing their contact number.
 
----
-
 9. Click **Cancel** to exit out of the **Rule settings** window.
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.024.jpeg)
 
-**Sample Dialogue:** Once the rule settings are complete,\*\* you are now performing batch processing on multiple tank images in a clean and dirty state. After running the inspections, the AI model will perform inference on each image and subsequently trigger inspection results as Pass or Fail, depending on the tank’s condition. Inspections can be initiated by either setting MQTT topic triggers, which will perform inspections by receiving remote triggers, or by setting time-based intervals. Inspection interval settings can be set according to the business requirements; for example, tank inspections could be set to take place every 24 hours (in seconds) etc.
-
----
+**Sample Dialogue:** Once the rule settings are complete, you are now performing batch processing on multiple tank images in a clean and dirty state. After running the inspections, the AI model will perform inference on each image and subsequently trigger inspection results as Pass or Fail, depending on the tank’s condition. Inspections can be initiated by either setting MQTT topic triggers, which will perform inspections by receiving remote triggers, or by setting time-based intervals. Inspection interval settings can be set according to the business requirements; for example, tank inspections could be set to take place every 24 hours (in seconds) etc.
 
 **Note:** To avoid unexpected errors in the demo environment you are not actually triggering a new inspection in this demo. Instead in the next steps you will be showing the pre-loaded inspection results to the clients.
 
@@ -196,8 +191,6 @@ Using MQTT protocol, the Edge server integrates with other applications in the M
 **Sample Dialogue:** All the inference results are displayed on a single screen along with important metadata. If a live feed was coming through, you will see the most recent inspection at the top left image. For convenience, icons on the images serve as a quick way to view inspection results. There is a green check mark for a clean tank and a **red X** for a dirty tank. There may also be a yellow question mark if the model is unsure about the result. A high rate of inconclusive results might indicate that the model’s performance is poor, the rule configuration is incorrect, or the quality of the camera images is compromised.
 
 The exclamation points in the triangle indicate that the inspection result has been sent as alert notifications to Maximo Monitor via **MQTT or SMS via Twilio**, depending on the option(s) you selected in the Rules settings phase. Clicking on each of these images can show further details about the inspection, such as here you can see that the most recent tank inspection failed due to the poor tank condition, and an alert was immediately sent out about the inspection’s result. The prompt detection of the tank’s failing health helps the Water Resource Authority to avoid issues that often arise when a problem remains undetected or is detected too late. 🟢
-
----
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.028.jpeg)
 
@@ -220,7 +213,7 @@ Like the rest of the applications in the MVI solution, MVI Mobile delivers agili
 
 The mobile application can be configured by either a handheld mode or a fixed position mode. For example, consider a fixed camera that can take photos of welds on a manufacturing line and perform an automated inspection on the spot. Being able to determine at this point that a particular weld is bad has many benefits. Not only are you preventing this part from finding its way into the hands of a customer (either as the part itself or as a component in a larger item) – which could have disastrous consequences, depending on the item – but this could be a symptom of an issue with the welding equipment, and identifying and fixing the problem early means less wasted product. Similarly, with the hand-held mode a quality inspector can easily carry the mobile device to an inspection site and harness the power of a powerful AI model to detect any anomalies by simply clicking a picture of the inspected part. The result is a dramatic improvement in production quality inspection.
 
----
+
 
 The following part of this demo will demonstrate the core capabilities of MVI Mobile using the pre-trained water sedimentation computer vision model.
 
@@ -282,7 +275,7 @@ Associated with each label is a threshold value and a **Fail when below threshol
 
 For your model, you have both clean and dirty (tank) labels. For simplicity, let us focus on the dirty tanks, as such, you will only consider an inspection to be a failure if you find the condition of the tank to be dirty. You want to be extra careful so you will set the threshold for the dirty tank confidence level to be above 50%. On the other hand, no further actions are required for the clean sedimentation tanks. Therefore, you are going to effectively disable the clean tank rule as shown in the upcoming steps.
 
----
+
 
 6. Tap **Advanced** under the **Clean** label.
 
@@ -335,7 +328,7 @@ If you ever want to delete an inspection that you have created, simply click **E
 
 **Sample Dialogue:** Although you can still go ahead now and perform inspections. However, like MVI Edge, MVI Mobile offers easy integration with the[ Twilio application ](#_page0_x57.00_y68.00) so that SMS alerts about the inspection results can be sent to the concerned person. This would be incredibly beneficial for us since the field supervisor for the Water Resource Plant is usually away on inspection rounds. Using this feature, they can immediately receive SMS alerts if the tank health is deteriorating without the need to constantly monitor inspection results by staying in front of the computer screen.
 
----
+
 
 **Actions:**
 
@@ -375,7 +368,7 @@ The photo will remain on the display on your mobile device, so please press the 
 
 **Sample Dialogue:** Depending on the accuracy of the model, it has identified clean and dirty tanks in the photo. Since you are taking an image of an image it is possible that the model may struggle to accurately identify tanks or tank’s health in the image. In a real setting this could be resolved with taking an image of the actual object (and not an image of an image) or with more data and training for higher model accuracy. Note that in addition to the bounding boxes superimposed on the photo itself, the bottom of the screen shows the confidence level associated with each inferred object.
 
----
+
 
 You have now performed a successful inspection using the combined power of IBM Maximo Visual Inspection Mobile and IBM Maximo Visual Inspection!
 
@@ -421,7 +414,7 @@ You can see pass and fail rate for the inspections that were performed.
 
 **Sample Dialogue:** This concludes the demonstration. You observed how the MVI AI model sends inspection alerts to the Maximo Monitor. You also performed the steps to build a computer vision model and used that model to configure inspections in MVI Edge and in MVI Mobile. Lastly, you can think of this comprehensive solution where an AI Computer Vision model sends critical alerts beyond the use case of sedimentation tanks and apply it in any mission-critical areas where it is essential to visually detect objects of interest repeatedly at a fast pace and scale. A small assortment of examples includes fast-paced product lines, transmission lines, quality assurance, etc.
 
----
+
 
 ## Demo Cleanup
 
