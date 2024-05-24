@@ -26,8 +26,6 @@ The good news is that Maximo Visual Inspection simplifies and streamlines this m
 
 Now it’s time to start the training process of your dirty tank detection model using MVI’s power of AI and ease of use.
 
----
-
 **Actions:**
 
 1. Click **Train model** to start the object detection training process.
@@ -50,11 +48,11 @@ Apart from the chosen options, Maximo Visual Inspection (MVI) includes several m
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.003.jpeg)
 
 **Sample Dialogue:** Due to MVI’s ease of use, domain experts often progress very quickly into becoming advanced users. As they find themselves with new levels of comfort and control, they can also optionally choose to exploit advanced settings to further fine-tune the model. Once the **Advanced settings** switch is turned on, the **model hyperparameters** section becomes available at the bottom of the screen. Hyperparameters are used to optimize the model’s performance; and when it comes to improving the model accuracy, these parameters are the go-to option for data scientists and model experts. A brief description on each of the hyperparameters can be viewed by clicking on the **info** icon (the “**i**” in a circle) at the end of each corresponding hyperparameter. For now, keep hyperparameters at their default values.
----
+
 
 **IMPORTANT** If you are doing this demo in a classroom setting, or time is a factor, you can keep the number of iterations low. Setting it to a higher value will take longer, but it also means a more accurate model with better inspection results; for the demo, you can leave the hyperparameters at their default values.
 
-5. While you could click the blue **Train model** button at the top to begin the model training process, this is **NOT** recommended in a live demo setting. ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.005.jpeg)
+1. While you could click the blue **Train model** button at the top to begin the model training process, this is **NOT** recommended in a live demo setting. ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.005.jpeg)
 
 **Sample Dialogue:** Clicking on **“Train Model”** will start the training process, but since the training here will take 25+ minutes, this guide shows you the next steps using a more practical pre-built model that has been built using the same steps but was trained using 2000+ clean and dirty tank images and hours of computation.
 
@@ -72,6 +70,10 @@ For demo purposes, from this point on, you will use a prebuilt sedimentation tan
 7. Select **Deployed models** from the list to view a list of pre-deployed models **(B)**.
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.009.jpeg)
+
+8. Deployed models page opens. This page shows all the models currently deployed.
+
+![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.0009.png)
 
 ### Step 2: Model Testing
 
@@ -92,17 +94,17 @@ Using a dataset that was not part of the model-building phase is a standard proc
 - **Caution:** It is possible that the name of the pre-built model was changed from “DONOT DELETE- Sedimentation tank model” to something else by the time you are attempting to complete this demo. Hence to quickly identify the pre-trained model, it is worth remembering that the pre-trained model will have a dataset value of “Not found” regardless of its name as highlighted in the screenshot above. This quick tip can help you identify the pre-trained model among a list of several other deployed models regardless of any future model name changes.
 - Since you are working in a worldwide shared demo cluster environment, it is likely that you may see several other models previously deployed on the **Deployed models’** screen. These models can be ignored for the purposes of this demo.
 
-2. Once you click the deployed model’s name, you are brought to the model screen where its performance can be evaluated using a test image.
+2. Once you click the deployed model’s name, you are brought to the selected model screen where its performance can be evaluated using a test image. Click the **Drag and drop file here or click to upload (A)** button in the **Test Model** tile to select an image to score
 
-Click the **Import** button in the **Test Model** tile to select an image to score.
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.012.jpeg)
 
-3. Select an image of a **clean tank** from the model testing images folder (it will have the word “**clean**” in its name) and visually confirm the model result.
+3. Select an image of a **clean tank** from the model testing images folder (it will have the word “**clean**” in its name) and visually confirm the model result. In the case of the screenshot below the model predicts with high accuracy (0.907) that the uploaded image shows a clean sedimentation tank (which is correct).
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.013.jpeg)
 
-4. Next, click **Import** again and select an image of a dirty tank from the same folder.
+4. Click **Drag and drop file here or click to upload (A)** again and this time select an image of a dirty tank 
+from the same testing folder (image will have the word “dirty” in its name). Then click **Open (B)**. Visually confirm the model result. In the case of the screenshot below the model predicts with high accuracy (0.943) that the uploaded image shows a dirty sedimentation tank (which is correct)
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.014.jpeg)
 

@@ -177,14 +177,14 @@ For this demo, it is fair to assume that a posted field camera is unlikely to ta
 
 1. Click **Augment data**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.039.jpeg)
+![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.015.jpeg)
 
 2. The **Augment data** window opens and displays all of MVI’s available data augmentation filters. Select filters **Sharpen**, **Crop**, **Rotate**, **Vertical flip** and **Horizontal flip** to generate additional images **(A)**. Notice the number of images under **New creations** and **New total** labels increases as more filters are selected.
 3. Click **Continue (B).**
 
 ![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.040.jpeg)
 
-4. The **Augment data** window opens**.** Name the new dataset by typing “Augmented Sedimentation Tank _**\<YOUR INITIALS\>**_” **(A)**
+4. The **Augment data** window opens. Name the new dataset by typing `Augmented Sedimentation Tank <YOUR INITIALS>` **(A)**
 5. Click **Create data set** to create your new augmented data set **(B)**
 
 ![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.041.jpeg)
@@ -197,18 +197,18 @@ In this window;
 
 ![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.043.jpeg)
 
-6. Click the **Back** icon (not your browser’s back button) to return to the main **Data sets** page, where you can see your newly created augmented dataset.
+6. Click the **Data set** breadcrumb link to return to the main **Data sets** page, where you can see your newly created augmented dataset.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.044.jpeg)
+![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.016.jpeg)
 
 7. The main **Data sets** page opens and displays both the original and augmented dataset. Notice the increased number of images in the augmented dataset compared to the original dataset (the number of images in each dataset is shown right under its name in the tile). Click on the lower half (the water tank picture) of your newly created **Augmented Sedimentation Tanks** tile.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.045.jpeg)
+![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.017.jpeg)
 
 8. Once your augmented dataset page opens, notice how all the MVI generated augmented images have a small black (“magic”) icon at the bottom right of the image. Also, how image labels are automatically transferred from the original images to their corresponding augmented images.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.046.jpeg)
+![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.018.jpeg)
 
 Congratulations, you have created a new augmented dataset from the original that is ready to be trained. Now it’s time to create the object detection model using this augmented dataset.
 
-Part 2 of the MVI lab is available [here](VISUAL-INSPECTION2.md).
+Part 2 of the MVI lab is available [here](/maximo/visual-inspection2).
