@@ -1,6 +1,6 @@
 ---
 title: Turbonomic
-toc: false
+toc: true
 ---
 
 # Turbonomic Technical Sales Workshop
@@ -11,22 +11,24 @@ After completing these labs in a workshop session, you'll be able to earn the [T
 
 ## Prerequisites
 
-- Recommended: Level 1 and Level 2 material for the [Turbonomic by IBM Sales Foundation badge](https://www.credly.com/org/ibm/badge/turbonomic-by-ibm-technical-sales-intermediate).
-- A TechZone Reservation to the [Turbonomic PoT Environment](https://techzone.ibm.com/my/reservations/create/641cb4cce0c63a00185065cf) is required for this lab. For simplicity, You can use the following reservation form details below:
+- IBMId and access to Techzone
+- Complete [Turbonomic by IBM Sales Foundation](https://learn.ibm.com/course/view.php?id=9929)
+- [A TechZone Reservation](https://learn.ibm.com/mod/page/view.php?id=210016). Follow the instruction in this document to reserve the Turbonomic Instance.
 
-      <br/> **Reservation Type**: _Reserve Now_
-      <br/> **Name**: _Turbonomic for Workshop_
-      <br/> **Purpose**: _Practice/Self-Education_
-      <br/> **Preferred Geography**: _AMERICAS - us-south-region - dal10_
+> Note: Turbonomic instances will be reserved by Instructor for VEST Workshop.
 
-## Labs
+## Labs L3
 
-- **[Module 101: Turbonomic Overview and lab environment](/turbonomic/101)**
+- **[Lab 101: Turbonomic Overview and Explore UI](/turbonomic/101)**
 
-- **[Module 102: Explore Turbonomic UI](/turbonomic/102)**
+- **[Lab 102: Optimizing Cost](/turbonomic/102)**
 
-- **[Module 103: Connect Instana to Turbonomic](/turbonomic/103)**
+- **[Lab 103: Business Application Drill Down](/turbonomic/103)**
 
-- **[Module 104: Turbonomic Actions and Policies (L3+ content)](/turbonomic/104)**
+- **[Lab 104: Infrastructure Changes Planning)](/turbonomic/104)**
 
-- **[Module 105: Planning and Custom Dashboards (L3+ content)](/turbonomic/105)**
+## Labs L3+
+
+- **[Lab 105: Connect Instana to Turbonomic](/turbonomic/105)**
+
+- **[Lab 106: Turbonomic Actions and Policies](/turbonomic/106)**
