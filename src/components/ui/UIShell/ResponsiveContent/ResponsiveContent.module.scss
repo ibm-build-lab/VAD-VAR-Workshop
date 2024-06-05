@@ -1,0 +1,19 @@
+
+.content {
+  min-height: calc(100vh - resources.$header-height);
+  max-width: 100%;
+  padding: 0;
+  margin-left: resources.$sidebar-width;
+  display: flex;
+  flex-direction: column;
+
+  & > main {
+    flex-grow: 1;
+  }
+}
+
+@include resources.apply-lesser-than('lg') {
+  .content {
+    margin-left: 0;
+  }
+}

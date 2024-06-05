@@ -1,0 +1,18 @@
+.selectLang {
+  
+  & :global(.cds--dropdown) {
+    border-bottom: 1px solid themes.$border-subtle-00;
+    background-color: transparent;
+  }
+}
+
+.selectedItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: layout.$spacing-05;
+
+  @include resources.apply-lesser-than('md') {
+    & > span { display: none;}
+  }
+}

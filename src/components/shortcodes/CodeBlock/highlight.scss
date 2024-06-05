@@ -1,0 +1,109 @@
+@use '@carbon/themes' as themes;
+
+// TODO: better theming, give access to namespaces
+@function token-color($c) {
+  @return var(#{'--cds-tag-color-#{$c}'});
+}
+
+.hljs-keyword,
+.hljs-literal,
+.hljs-symbol,
+.hljs-name {
+  color: token-color('purple');
+}
+
+.hljs-link {
+  color: token-color('blue');
+  text-decoration: underline;
+}
+
+.hljs-built_in,
+.hljs-type {
+  color: token-color('teal');
+}
+
+.hljs-number,
+.hljs-class {
+  color: token-color('green');
+}
+
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: token-color('red');
+}
+
+.hljs-regexp,
+.hljs-template-tag {
+  color: token-color('red');
+}
+
+.hljs-subst,
+.hljs-function,
+.hljs-title,
+.hljs-params,
+.hljs-formula {
+  color: token-color('gray');
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: token-color('gray');
+  font-style: italic;
+}
+
+.hljs-doctag {
+  color: token-color('green');
+}
+
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-tag {
+  color: token-color('gray');
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: token-color('purple');
+}
+
+.hljs-attr,
+.hljs-attribute {
+  color: token-color('blue');
+}
+
+.hljs-section {
+  color: token-color('magenta');
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+/*.hljs-code {
+ font-family:'Monospace';
+}*/
+
+.hljs-bullet,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: token-color('magenta');
+}
+
+.hljs-addition {
+  background-color: token-color('green');;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-deletion {
+  background-color: token-color('red');
+  display: inline-block;
+  width: 100%;
+}

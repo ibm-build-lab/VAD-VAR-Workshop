@@ -1,0 +1,8 @@
+.tabs {
+  & :global(.cds--tab--list) {
+    margin-bottom: -1px;
+    border: 1px solid themes.$border-subtle-00;
+    border-bottom: none;
+    border-top: none;
+  }
+}

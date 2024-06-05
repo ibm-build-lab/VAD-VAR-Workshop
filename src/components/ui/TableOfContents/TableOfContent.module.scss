@@ -1,0 +1,8 @@
+
+
+@for $i from 1 through 6 {
+  .depth-#{$i} {
+    @include type.type-style('heading-0#{calc(6 - $i + 1)}');
+    padding-left: calc(($i - 1) * layout.$spacing-05);
+  }
+}

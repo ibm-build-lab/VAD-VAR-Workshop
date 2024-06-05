@@ -1,0 +1,16 @@
+.orderedList {
+  margin-inline-start: 0rem;
+  padding-inline-start: 1rem;
+
+  & > li {
+    padding-left: 0.5rem;
+  }
+}
+
+.unOrderedList {
+  margin-inline-start: 1.5rem !important;
+
+  & li::before {
+    inset-inline-start: -1.5rem !important;
+  }
+}

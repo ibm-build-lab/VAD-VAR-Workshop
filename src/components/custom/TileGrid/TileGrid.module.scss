@@ -1,0 +1,14 @@
+.tileGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: layout.$spacing-03;
+
+  @include resources.apply-lesser-than('lg') {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include resources.apply-greater-than('xxl') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

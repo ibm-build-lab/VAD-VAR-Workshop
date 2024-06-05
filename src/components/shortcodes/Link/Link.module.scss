@@ -1,0 +1,10 @@
+
+.link {
+  text-decoration: none;
+  transition: color 100ms linear;
+
+  &:hover {
+    color: themes.$link-primary-hover;
+    text-decoration: underline;
+  }
+}

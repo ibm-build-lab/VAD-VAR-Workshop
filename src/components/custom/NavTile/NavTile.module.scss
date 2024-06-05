@@ -1,0 +1,30 @@
+.tileStack {
+  height: 100%
+}
+
+.title {
+  @include type.type-style('heading-03');
+  font-weight: bold;
+}
+
+.updated {
+  @include type.type-style('body-compact-01');
+  color: themes.$text-secondary;
+  font-style: italic;
+}
+
+.excerpt {
+  & * {
+    @include type.type-style('legal-02');
+  }
+  
+  // max-height: 7rem;
+  // overflow: hidden;
+  // mask-image: linear-gradient(0deg, transparent, white);
+  margin-bottom: auto;
+  flex-grow: 1;
+}
+
+.bottomStack {
+  margin-top: auto;
+}

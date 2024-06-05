@@ -6,7 +6,8 @@ To see the content itself visit: https://vest.buildlab.cloud/
 
 Built using:
 
-- [Gatsby](https://www.gatsbyjs.com/docs/)
+- [Next.js](https://nextjs.org/docs)
+- [Velite](https://velite.js.org/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [MDX](https://mdxjs.com/docs/)
 - [Carbon Design System](https://carbondesignsystem.com/)
@@ -15,8 +16,8 @@ Built using:
 
 Before installing any dependencies ensure you have the proper prerequisites installed:
 
-- npm (recommended minimum of `v8.0.0`)
-- node (`v18.0.0` is a required minimum with this version of Gatsby)
+- npm (recommended minimum of `v9.0.0`)
+- node (`v18.18.0` is a required minimum with this version of Gatsby)
 
 To get up and running locally the first step is to run:
 
@@ -30,16 +31,22 @@ After this, you can run:
 npm run dev
 ```
 
-This will start the development server at http://localhost:8000.
+This will start the development server at http://localhost:3000.
 
-> Note: The current version of `@carbon/react` seems to not support [TypeScript types out of the box](https://github.com/carbon-design-system/carbon/discussions/10752).
+> Note: The current version of `@carbon/react` seems to not support [TypeScript types out of the box](https://github.com/carbon-design-system/carbon/discussions/10752) for all components.
 
 ### Linting
 
-Linting has been added via ESLint. MDX linting is also available too. To lint all files run:
+Linting has been added via ESLint. To lint code file run:
 
 ```bash
 npm run lint
+```
+
+MDX linting is also available too. To lint content files run:
+
+```bash
+npm run lint:md
 ```
 
 ## Building static pages
@@ -50,13 +57,23 @@ To build the site as static pages you can run:
 npm run build
 ```
 
-This creates the actual static pages of the site under the `/public` directory at the root. To serve these pages feel free to use a Python HTTP test server or just run:
+This creates the actual static pages of the site under the `/out` directory at the root. To serve these pages feel free to use a Python HTTP test server or just run:
 
 ```bash
 npm run serve
 ```
 
-Using the supplied `serve` command will start hosting the site locally at http://localhost:9000.
+Using the supplied `serve` command will start hosting the site locally at http://localhost:3000.
+
+### Build static pages with local assets
+
+By default, the `build` command will replace all image source references with their remote counterparts in the `main` branch of the repo. This is done to keep the static build size smaller. To instead include the local assets in the build run:
+
+```bash
+npm run build:local
+```
+
+You can then use the `serve` command to verify.
 
 ### Deployment
 
@@ -78,16 +95,17 @@ Frontmatter data is supported out of the box with `gatsby-plugin-mdx`. For use i
 
 | Value            | Type    | Optional | Description                                                                                                            |
 | ---------------- | ------- | -------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `title`          | string  | ✅       | Used as SEO title as well as string is left-hand side nav. When not used will default to the `H1` tag in the document. |
-| `toc`            | boolean | ✅       | Determines whether pages should show the table of contents right-hand nav. When not included defaults to `true`.       |
-| `timeToComplete` | number  | ✅       | Completion time for lab. Used in the conditional render of the sub-header under the `H1` tag.                          |
-| `updated`        | date    | ✅       | Date lab was last updated. Used in the conditional render of the sub-header under the `H1` tag.                        |
+| `title`          | string  | ✅        | Used as SEO title as well as string is left-hand side nav. When not used will default to the `H1` tag in the document. |
+| `toc`            | boolean | ✅        | Determines whether pages should show the table of contents right-hand nav. When not included defaults to `true`.       |
+| `timeToComplete` | number  | ✅        | Completion time for lab. Used in the conditional render of the sub-header under the `H1` tag.                          |
+| `updated`        | date    | ✅        | Date lab was last updated. Used in the conditional render of the sub-header under the `H1` tag.                        |
+| `desc`           | string  | ✅        | Short description of content within. Used for SEO.                                                                     |
 
 ### Localization
 
-Localization for the content is also supported through [react-i18next](https://www.npmjs.com/package/react-i18next).
+Localization for the content is also supported through [next-intl](https://next-intl-docs.vercel.app/).
 
-Tokens for localization are stored in the `/translations` folder as JSON files at the project root. If you'd like to localize specific content simply provide a token and consume it in the UI via the `useTranslation()` hook.
+Tokens for localization are stored in the `/translations` folder as JSON files at the project root. If you'd like to localize specific content be sure to use the correct hooks depending the on the context you are rendering in (Client vs Server component).
 
 However, since the bulk of the content is written in Markdown for it to be in different languages separate files are needed for each.
 

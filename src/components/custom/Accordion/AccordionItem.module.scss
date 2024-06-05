@@ -1,0 +1,11 @@
+.container {
+  & > * {
+    margin-bottom: layout.$spacing-06;
+  }
+}
+
+.test {
+  & :global(.cds--accordion__content) {
+    padding: 0 layout.$spacing-05;
+  }
+}
