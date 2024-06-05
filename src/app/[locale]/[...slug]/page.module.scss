@@ -1,0 +1,13 @@
+$margin: layout.$spacing-06;
+
+.article {
+  position: relative;
+
+  & > * {
+    margin-bottom: $margin;
+  }
+
+  & section > * {
+    margin-bottom: $margin;
+  }
+}

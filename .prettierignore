@@ -1,7 +1,0 @@
-.travis.yml
-.env
-.vscode/**
-public/**
-.cache/**
-yarn.lock
-package-lock.json
