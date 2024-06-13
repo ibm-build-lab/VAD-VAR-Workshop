@@ -38,7 +38,7 @@ There will be further instructions on how to use these assets throughout the dem
 4. You can take your videos on any device with video capabilities including iPhones, Androids, or any other cameras. Maximo Visual Inspection only allows uploading videos formatted in .mp4, .webm, or .ogg. iPhones record in .mov format so you will need to convert them into .mp4 –you can do this by using your favorite video converter or one of these -> [**option 1**](https://www.freeconvert.com/mov-to-mp4) (only allows 25 free convert minutes) or [**option 2**](https://movtomp4.com).  
 5. Set up your device and begin recording simple 10 second videos of you performing one action on the water bottle per video, twisting the cap on and off slowly, shaking the water bottle, and spinning the water bottle. Below are a couple example videos. For the purpose of this demo, you will only need to record 5-6 videos of you performing each action with little variance in each video. However, in a real use-case, many more videos and action variation would be required to create a trainable dataset. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step0.png)
+![](_attachments/mvi-action/MVI-action-detection-Step0.png)
 
 6. Finally upload the videos to your computer using whatever method is most convenient. (Airdrop, uploading to a cloud accessible by the computer you are using, or plugging in the device to your computer with a USB cord.) 
 7. Make sure to save these files in a folder somewhere accessible for use of this demo on your desktop, documents, or external hard drive. Separate one video of each action from the rest in a separate folder to save for testing your trained model in the final steps. 
@@ -61,7 +61,7 @@ There will be further instructions on how to use these assets throughout the dem
 4. Enter MVI **Password** and click **Log in**
 5. Once logged in, on the MAS Suite navigator screen, click on the **Visual Inspection tile**. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step1.2.png)
+![](_attachments/mvi-action/MVI-action-detection-Step1.2.png)
 
 
 ### Step 2: Create a Dataset for Model Training in Maximo Visual Inspection
@@ -79,38 +79,38 @@ In this demo, you manually upload saved videos from your local machine to the MV
 
 1. Click **Get started** on the **MVI Welcome to IBM Maximo Visual Inspection** screen.
 
-![](_attatchments/mvi-action/MVI-action-detection-Step2.1.png)
+![](_attachments/mvi-action/MVI-action-detection-Step2.1.png)
 
 2. The **Data sets** window opens.
 
 3. On the MVI **Data sets** screen, Click the **blue Create +** icon in the top right corner.
 
-![](_attatchments/mvi-action/MVI-action-detection-Step2.3.png)
+![](_attachments/mvi-action/MVI-action-detection-Step2.3.png)
 
 4. Enter **“Water Bottle Action Detection Dataset [Your Initials]”** for the data set name field in the **Create data set** window. For data set type, select *Training*.
 
 ***IMPORTANT: Please make sure to add your initials to the name of the data sets, training models and deployed models as it will be helpful to keep track of your assets since the demo is conducted in a shared environment.*
 
-![](_attatchments/mvi-action/MVI-action-detection-Step2.4.png)
+![](_attachments/mvi-action/MVI-action-detection-Step2.4.png)
 
 5. Click **Create**. 
  
 6. Click on the newly created dataset and click on the blue hyperlink in the top left corner of the **Upload files** box that will allow you to upload files. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step2.6.png)
-![](_attatchments/mvi-action/MVI-action-detection-Step2.6.1.png)
+![](_attachments/mvi-action/MVI-action-detection-Step2.6.png)
+![](_attachments/mvi-action/MVI-action-detection-Step2.6.1.png)
  
 7. Navigate to the directory location where you saved your videos of different water bottle actions and select all videos you would like to add to the dataset for training (do not select the testing videos you separated earlier in a different file.) If you downloaded the dataset earlier in the demo at this link [**here**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEHDPLUSSIGNYhgVWLte2FjvAep70KOjpm5Sifx9HjW2ZZBTV2jtriODcOHyBE1ujIF___KAH1IMEQUALSIGN) instead of creating your own videos, select all videos in each of the folders labeled "Training_Dataset_Noaction", "Training_Dataset_Shaking", "Training_Dataset_Spinning", and "Training_Dataset_Twisting" to upload to the dataset.
 
-![](_attatchments/mvi-action/MVI-action-detection-Step2.7.0.png)
-![](_attatchments/mvi-action/MVI-action-detection-Step2.7.1.png)
-![](_attatchments/mvi-action/MVI-action-detection-Step2.7.2.png)
+![](_attachments/mvi-action/MVI-action-detection-Step2.7.0.png)
+![](_attachments/mvi-action/MVI-action-detection-Step2.7.1.png)
+![](_attachments/mvi-action/MVI-action-detection-Step2.7.2.png)
 
 8. Click **Upload** to upload the model training videos from the directory.  
  
 9. After a few seconds, the images are uploaded to your newly created dataset. You are now ready to label these videos. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step2.8.png)
+![](_attachments/mvi-action/MVI-action-detection-Step2.8.png)
 
 ### Step 3: Label the Dataset
 
@@ -127,35 +127,35 @@ Once all the pictures are uploaded in MVI perform the following steps:
 1. Click the **Select** checkbox to automatically select all the dataset images.
 2. Click the **Label** dropdown menu and then select **Actions**.
 
-![](_attatchments/mvi-action/MVI-action-detection-Step3.2.png)
+![](_attachments/mvi-action/MVI-action-detection-Step3.2.png)
 
 3. The *Label actions* page opens. This is where you create labels for each action and assign them to the relevant portion of each video in the dataset.
 
 4. Create a new label for each action type by clicking on the blue **Add Label** button in the top right corner.
 
-![](_attatchments/mvi-action/MVI-action-detection-Step3.4.png)
+![](_attachments/mvi-action/MVI-action-detection-Step3.4.png)
 
 5. Create labels for each of the actions you plan on labeling in the dataset of videos (in this case, *Twisting, Shaking, and Spinning*) by typing the name of the action and clicking the blue **Add** button.
 
-![](_attatchments/mvi-action/MVI-action-detection-Step3.5.png)
+![](_attachments/mvi-action/MVI-action-detection-Step3.5.png)
 
 6. Then, define the *start time* and *end time* where the action is being performed in the video and select from the dropdown the corresponding action name that corresponds to that section of the video.  (If the action label is already created, you will be able to enter the start and end time and select the action from the action name drop down menu.) 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step3.6.png)
+![](_attachments/mvi-action/MVI-action-detection-Step3.6.png)
 
 7. Then click on the blue button **Create Action**.
 
 8. You will see the label pop up on the right side bar under the corresponding action category with a corresponding color. The corresponding section of the video timeline will also be filled in in the corresponding color.
 
-![](_attatchments/mvi-action/MVI-action-detection-Step3.8.png)
+![](_attachments/mvi-action/MVI-action-detection-Step3.8.png)
 
 9. If needed, you can edit or delete labels by clicking on the specific label in the **Actions** sidebar and click on the pen icon to edit and the trash icon to delete. Click the **Water Bottle Action Detection Dataset** Hyperlink in the path directory shown in the top left to label another video. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step3.9.png)
+![](_attachments/mvi-action/MVI-action-detection-Step3.9.png)
 
 10. Repeat and label all the videos in the Dataset as instructed above. Once all videos in the Image Navigator are appropriately labeled, those that have an action labeled will have a black square icon as outlined in red in the image below. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step3.12.png)
+![](_attachments/mvi-action/MVI-action-detection-Step3.12.png)
 
 ### Step 4: Create and Train an Action Detection Model in Maximo Visual Inspection
 
@@ -167,22 +167,22 @@ Now it’s time to start the training process of your action detection model usi
 
 1. Click **Train model** to start the action detection training process.
 
-![](_attatchments/mvi-action/MVI-action-detection-Step4.1.png)
+![](_attachments/mvi-action/MVI-action-detection-Step4.1.png)
 
 2. The **Train Model** page opens. **(1)** First, make sure you have at least one available GPU in order to train the model. Otherwise, it will ask you to add the training to queue and the task will be queued until one becomes available. **(2)** Then, select **Action detection** tile from the Select type of training section. **(3)** Select the only option to select for Model Optimization type as of right now, **Structured Segment Network (SSN)**. **(4)** Finally, click on the blue **Train Model** button in the top right corner. Reminder to add you initials to the end of all the assets you create in the demo space. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step4.2.png)
+![](_attachments/mvi-action/MVI-action-detection-Step4.2.png)
 
 3.  Once the training begins, depending on how large of a dataset you are training with how many iterations, variance and other factors, the time it takes to complete will vary. In our demo case, with about ten to twenty 10-20 second videos, it will usually take about ~25 minutes. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step4.3.0.png)
-![](_attatchments/mvi-action/MVI-action-detection-Step4.3.1.png)
+![](_attachments/mvi-action/MVI-action-detection-Step4.3.0.png)
+![](_attachments/mvi-action/MVI-action-detection-Step4.3.1.png)
 
 4. Once it is done training, you will see the details regarding accuracy, precision and other characteristics about the model.
 
 5. You can also click the **Hamburger** icon (a stacked bar) on the top left to view the list of page navigation options. Select **Models** from the list to view your trained model in the list of trained models. The click on the **Water Bottle Action Detection Model** you just trained to see more details
 
-![](_attatchments/mvi-action/MVI-action-detection-Step4.5.png)
+![](_attachments/mvi-action/MVI-action-detection-Step4.5.png)
 
 *Note: If you are in a live demo setting, having trouble training your model or there are not enough GPUs open in the environment to train the dataset and create a model, [**here**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEHDPLUSSIGNYhgVWLte2FjvAep70KOjpm5Sifx9HjW2ZZBTV2jtriODcOHyBE1ujIF___KAH1IMEQUALSIGN) is a folder of all the assets for this demo containing a zip file of the action detection model shown in this tutorial that you can download and upload to use (There is no need to unzip the file!). Once downloaded, go to the **Models** section and click on the **Upload files** hyperlink and select the zip file you just downloaded.*
 
@@ -196,30 +196,30 @@ Using a dataset that was not part of the model-building phase is a standard proc
 
 1. To test your model, once in the details of your trained model, click on the blue **Deploy model** button in the top right corner. *Reminder: Make sure to add your initials again to the deployed model name.* 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step5.1.1.png)
+![](_attachments/mvi-action/MVI-action-detection-Step5.1.1.png)
 
 2. Click again on the **Hamburger** icon in the top left, and then on the **Deployed models** section. On the **Deployed models** screen, under the Name column, click on the blue hyperlinked **Water bottle action detection dataset**.
 
-![](_attatchments/mvi-action/MVI-action-detection-Step5.2.png)
+![](_attachments/mvi-action/MVI-action-detection-Step5.2.png)
 
 3. In this section, you will see some of the details and information about the deployed model and the API endpoint for any potential future app integration. Upload your new test videos in the box outlined in red in the below screenshot. If you downloaded the **MVI-Dataset** folder and used either the training videos to train your own model or the pre-trained model zip file, upload all the videos found in the "Testing_Dataset".
 
-![](_attatchments/mvi-action/MVI-action-detection-Step5.3.png)
+![](_attachments/mvi-action/MVI-action-detection-Step5.3.png)
 
 4. First, upload a video of twisting the cap on the water bottle. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step5.4.png)
+![](_attachments/mvi-action/MVI-action-detection-Step5.4.png)
 
 5. After a couple moments, the video should have colored labels on its timeline corresponding to actions denoted on the sidebar with additional details about the confidence of the label and the specific time frame the action is predicted to have occurred in. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step5.5.png)
+![](_attachments/mvi-action/MVI-action-detection-Step5.5.png)
 
 6. Next, repeat the process with a video of shaking the water bottle, and other videos you would like to test.
 
 7. Lastly once you are done with this demo and experimenting with your models and datasets, please make sure to delete your datasets in the dataset section by selecting your dataset and clicking the trash button in the top right corner, deployed models by selecting your deployed model and clicking the **un-deploy** button in the top right corner, and trained models by selecting your trained model and clicking the **trash** button in the top right corner as this is a shared demo environment and will be used by others as well. 
 
-![](_attatchments/mvi-action/MVI-action-detection-Step5.7.0.png)
-![](_attatchments/mvi-action/MVI-action-detection-Step5.7.1.png)
+![](_attachments/mvi-action/MVI-action-detection-Step5.7.0.png)
+![](_attachments/mvi-action/MVI-action-detection-Step5.7.1.png)
 
 If you would like to see a video demonstration of the Lab, please see this [**video**](https://livesend.ibm.com/i/6VDioBx7fI___HGis8OS42bPmSAcLVRbootOWrT25___WEE4vEqrvIUkY7FaOB3Ji2Y7IXCyw9vW3cCv5___6eS4V0ySMESNBLXObAp8dHJQgn1PLUSSIGNAEQUALSIGN).
 
