@@ -223,17 +223,10 @@ The following part of this demo will demonstrate the core capabilities of MVI Mo
 
 **Actions:**
 
-1. Open MVI Mobile application on your iOS Mobile device installed in the [ Pre-work : Step 3 ](#_page0_x57.00_y68.00)section. You will land on the **Global Settings** page where you can configure various options in MVI Mobile. On this page, enable **Handheld Mode** by sliding the switch to the right.
+1. Login to MVI training server (the software where you created the AI model in).
+2. On Welcome to **IBM Maximo Visual Inspection** screen, click on the **hamburger icon (A)** to open the left side panel. On the left side panel click on **Services (B)** menu option to open the dropdown menu. From the Services dropdown menu click **API key (C)**. 
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.032.jpeg)
-
-**Sample Dialogue:** To integrate MVI training server with the MVI Mobile application you can simply make use of the QR code functionality. A QR code can be generated from the MVI training server that is scanned by the MVI mobile application for automatic integration as you will see in the next steps.
-
-Please ensure that you are logged in on IBM MVI training server on your computer . In the next few steps, you will be required to scan a QR code that appears on the MVI training server screen from your iOS mobile device.
-
-2. On the MVI training server, click on the **API key** sub-menu option from the left side panel under the **Services** menu.
-
-![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.034.jpeg)
 
 3. API Key screens appear with an API key (Application Programming Interface Key) and a QR code. In the next step you will point your iOS mobile device to this QR code for scanning and automatic application integration.
 
@@ -241,11 +234,13 @@ Please ensure that you are logged in on IBM MVI training server on your computer
 
 4. Using your iOS mobile device, click “**Scan QR Code**” option on the Global Settings screen of the MVI Mobile application. The camera screen appears that is ready to scan the QR code. Face your iPhone or iPad camera to the QR code to automatically integrate MVI Mobile application and MVI training server.
 
-Note: You also have an option to manually type the API Key that is generated on MVI training server.
+> Note: You also have an option to manually type the API Key that is generated on MVI training server.
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.036.jpeg)
 
 5. Once the QR code is successfully scanned, click **Save** on the top right corner of the screen (figure not shown for this step).
+       
+6. License Information screen may appear. Click **Agree & Finish**.
 
 **Sample Dialogue:** Once the integration is completed, the main Inspections page appears. This is where inspections are created and managed with the help of MVI projects.
 <br/><br/>
@@ -257,7 +252,7 @@ Note: You also have an option to manually type the API Key that is generated on 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.037.jpeg)
 
 2. A new screen opens. Enter a name for the inspection in the **Inspection Name** field (e.g., “Detect Clean and Dirty Sedimentation Tanks”) **(A)**.
-3. Select your project by clicking on **Project Select >** and then click on “Sedimentation Tanks Model Project” from the drop-down menu **(B)**.
+3. Select your project by clicking on **Project Select >** and the Project window appears. Select **MVI LEVEL 3 DO NOT DELETE (B)** from the list of projects that appear.
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.038.jpeg)
 
@@ -305,17 +300,11 @@ For your model, you have both clean and dirty (tank) labels. For simplicity, let
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.047.jpeg)
 
-12. **Data Set** window opens. Click **Create New Data Set**.
+12. The Data Set window appears. Click **Tank 1 Inspecting (A)** data set (or any other tank number if Tank 1 is not available).
+    
+13. To set a value for the **Trigger String** enter this text `Tank Inspection`**.** Click **Done**.
 
-![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.048.jpeg)
-
-13. Enter “\<YOUR INITIALS\> Sed Tank Device Images” in the Data Set Name field and click **Done** to return to the Create New Inspection window screen. This Data Set is where your images captured on your device will be uploaded on the MVI Core instance.
-
-![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.049.jpeg)
-
-14. To set a value for the **Trigger String** enter this text “Tank Inspection”**.** Click **Done**.
-
-15. At this point, an inspection is successfully configured in MVI Mobile. Here is what will be displayed when it is done.
+14. At this point, an inspection is successfully configured in MVI Mobile. Here is what will be displayed when it is done.
 
 ![](_attatchments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.050.jpeg)
 
@@ -326,7 +315,7 @@ If you ever want to delete an inspection that you have created, simply click **E
 
 ### Step 3: (Optional) Integrating MVI Mobile with Twilio Account
 
-**Sample Dialogue:** Although you can still go ahead now and perform inspections. However, like MVI Edge, MVI Mobile offers easy integration with the[ Twilio application ](#_page0_x57.00_y68.00) so that SMS alerts about the inspection results can be sent to the concerned person. This would be incredibly beneficial for us since the field supervisor for the Water Resource Plant is usually away on inspection rounds. Using this feature, they can immediately receive SMS alerts if the tank health is deteriorating without the need to constantly monitor inspection results by staying in front of the computer screen.
+**Sample Dialogue:** Although you can still go ahead now and perform inspections. However, like MVI Edge, MVI Mobile offers easy integration with the[ Twilio application ](/maximo/mvi-prereq#step-4-signup-twilio-trial-account-for-text-message-sms-notifications) so that SMS alerts about the inspection results can be sent to the concerned person. This would be incredibly beneficial for us since the field supervisor for the Water Resource Plant is usually away on inspection rounds. Using this feature, they can immediately receive SMS alerts if the tank health is deteriorating without the need to constantly monitor inspection results by staying in front of the computer screen.
 
 
 
@@ -391,15 +380,13 @@ In the previous section you defined the rules that determine whether a specific 
 ![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.004.jpeg)
 
 3. In the dashboard configuration screen, leave **IMAGES TO DISPLAY** scroll bar as-is.
-4. For **SELECT A PROJECT section**, choose **Sedimentation Tanks Model Project**.
+4. For **SELECT A PROJECT section**, choose **MVI LEVEL 3 DO NOT DELETE**.
 
-![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.005.jpeg)
+5. Click on **Data set Select (A)\>** and then choose **Tank 1 inspecting** (or the data set you selected earlier when creating the MVI Mobile inspection).
 
-5. Click on **Data set Select \> (A)** and then choose **Sedimentation Tanks Device Images** (the data set you created earlier).
+![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.006.jpeg)
 
-![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.006.jpeg) ![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.007.png)
-
-6. This will bring you to the main dashboard screen, and here you will see statistics associated with the photos taken during the inspections. It includes all photos taken during inspection. These statistics include:
+1. This will bring you to the main dashboard screen, and here you will see statistics associated with the photos taken during the inspections. It includes all photos taken during inspection. These statistics include:
 
 - Total number of inspection photos
 - Total number of collected photos

@@ -37,7 +37,7 @@ these files.
 
 ## Step 3: Install MVI Mobile Application:
 
-1. Open the Apple App Store on your iPhone or iPad and search for **“**IBM Maximo Visual Inspection**”** and click on the result (IBM Maximo Visual Inspection).
+1. Open the Apple App Store on your iPhone or iPad and search for `IBM Maximo Visual Inspection` and click on the result (IBM Maximo Visual Inspection).
 
 ![](_attatchments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.018.jpeg)
 
