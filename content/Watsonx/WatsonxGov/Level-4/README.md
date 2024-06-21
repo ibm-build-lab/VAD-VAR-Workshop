@@ -9,7 +9,7 @@ toc: false
 
 - **[Module 201: Environment setup](/watsonx/watsonxgov/level-4/201)**
 
-- **[Module 202: Deploy up a watsonx.ai model](/watsonx/watsonxgov/level-4/202)**
+- **[Module 202: Deploy up a watsonx.ai model [optional]](/watsonx/watsonxgov/level-4/202)**
 
 - **[Module 203: Configure the governance console & monitoring](/watsonx/watsonxgov/level-4/203)**
 
