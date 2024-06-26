@@ -66,6 +66,12 @@ Ninguno de los cambios mencionados debería afectar a los laboratorios de este d
 
 [108: Integrar modelos de watsonx.ai Foundation con watsonx Assistant](/watsonx/watsonxai/108)
 
+### Laboratorios suplementarios L4
+
+[201: Introducción a la IA Generativa en watsonx.ai](/watsonx/watsonxai/level-4/201)
+[202: Grandes bloques de aplicación de modelos lingüísticos](/watsonx/watsonxai/level-4/202)
+[203: Langchain](/watsonx/watsonxai/level-4/201)
+[204: Implementar casos de uso de RAG](/watsonx/watsonxai/level-4/202)
 
 ### Materiales de referencia y otros ejercicios
 [Glosario de IA](/watsonx/watsonxai/ref100)

@@ -11,5 +11,7 @@ This workshop includes hands on labs designed to provide practical experience wi
 
 ### [watsonx.ai](/watsonx/watsonxai)
 ### [watsonx.data](/watsonx/watsonxdata)
+### [watsonx.governance](/watsonx/watsonxgov)
 ### [watsonx Assistant](/watsonx/assistant)
 ### [watsonx Code Assistant](/watsonx/codeassistant)
+

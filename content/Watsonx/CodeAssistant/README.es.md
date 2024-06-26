@@ -2,27 +2,14 @@
 title: watsonx Code Assistant
 toc: false
 ---
+# IBM watsonx Code Assistant Talleres técnicos de ventas
 
-# Taller técnico de ventas de watsonx Code Assistant
+IBM watsonx Code Assistant (WCA) es una familia de ofertas que da soporte al desarrollo de código asistido por IA y a la modernización de aplicaciones. Su objetivo es ayudar a los clientes a abordar las carencias de competencias y aumentar la productividad de los desarrolladores y del personal de operaciones de TI. En la actualidad, existen dos ofertas de IBM watsonx Code Assistant: **IBM watsonx Code Assistant para Red Hat Ansible Lightspeed** e **IBM watsonx Code Assistant para Z**. Ambas aprovechan el mismo modelo de lenguaje watsonx.ai Code Large formado por IBM. El IBM-trained watsonx.ai Code LLM se ha ajustado para Ansible para Code Assistant para IBM watsonx **Code Assistant para Red Hat Ansible** Lightspeed, y la conversión de COBOL a Java para **IBM watsonx Code Assistant** para Z.
 
-Estos laboratorios muestran cómo Red Hat Ansible Lightspeed utiliza watsonx Code Assistant para asignar el lenguaje natural a una sintaxis válida de Ansible.
+## IBM watsonx Code Assistant para Red Hat Ansible Lightspeed Technical Sales Workshop
 
-## Requisitos previos
+Para continuar con el taller **IBM watsonx Code Assistant for Red Hat Ansible Lightspeed**, vaya [aquí](/watsonx/codeassistant/ansible-lightspeed)
 
-Antes de proceder con este laboratorio, asegúrese de haber instalado y tener acceso a lo siguiente:
+## Taller técnico de ventas de IBM watsonx Code Assistant para Z
 
-- [Visual Studio Code](https://code.visualstudio.com/download) (VS Code)
-- [Python](https://www.python.org/downloads/) 3.9+: VSCode utiliza Python para ejecutar playbooks y roles de Ansible.
-- [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-and-upgrading-ansible-with-pip): Puedes instalar Ansible con el siguiente comando en tu Terminal o Línea de Comandos.
-    ```bash
-    pip install ansible
-    ```
-- [Cuenta pública de Github](https://github.com/signup): Si no tienes una cuenta pública en Github por favor crea una cuenta pública en Github.
-
-Si prefiere no configurar su entorno informático local, puede utilizar el entorno de laboratorio interactivo de Ansible Lightspeed que se encuentra en esta [página](https://developers.redhat.com/products/ansible/lightspeed) haciendo clic en `Probar enlace de nuestro laboratorio interactivo`.
-
-## Laboratorios
-
-- **[Laboratorio 101: Configuración del entorno Ansible Lightspeed en VS Code](/watsonx/codeassistant/101)**
-
-- **[Laboratorio 102: Asistente de código IBM watsonx](/watsonx/codeassistant/102)**
+Para continuar con el taller **IBM watsonx Code Assistant for Z**, vaya [aquí](/watsonx/codeassistant/z)
