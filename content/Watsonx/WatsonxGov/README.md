@@ -41,3 +41,29 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 - **[Module 105: Deploy an AI model](/watsonx/watsonxgov/105)**
 - **[Module 106: Evaluate an AI model](/watsonx/watsonxgov/106)**
 - **[L3 Course Quiz](https://learn.ibm.com/course/view.php?id=16170)**
+
+### Supplemental Labs L3+
+
+- **[Module 107: Manage AI assets with versions](/watsonx/watsonxgov/107)**
+
+### Supplemental Labs L4
+
+[201: Environment setup](/watsonx/watsonxgov/level-4/201)
+
+[202: Deploy up a watsonx.ai model [optional]](/watsonx/watsonxgov/level-4/202)
+
+[203: Configure the governance console & monitoring](/watsonx/watsonxgov/level-4/203)
+
+[204: Customize the governance console](/watsonx/watsonxgov/level-4/204)
+
+[205: Create a questionnaire](/watsonx/watsonxgov/level-4/205)
+
+[206: Customize the use case approval workflow](/watsonx/watsonxgov/level-4/206)
+
+[207: Govern generative models](/watsonx/watsonxgov/level-4/207)
+
+[208: Govern predictive models](/watsonx/watsonxgov/level-4/208)
+
+### Reference materials and other exercises
+
+- **[AI Risk Atlas](/watsonx/watsonxgov/ref101)**
