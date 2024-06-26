@@ -1,0 +1,29 @@
+- name: lightspeed_demo
+  hosts: localhost
+  vars:
+    bam_bearer_token: "{{ lookup('env','bam_bearer_token') }}"
+
+  tasks:
+    - name: Print a debug message that says "Hello World!"
+      ansible.builtin.debug:
+        msg: hello world!
+    - name: HTTP GET request to the url https://bam-api.res.ibm.com/v1/models with bearer token with variable name bam_bearer_token
+      ansible.builtin.uri:
+        url: https://bam-api.res.ibm.com/v1/models
+        method: GET
+        headers:
+          Authorization: Bearer {{ bam_bearer_token }}
+        return_content: true
+      register: json_response
+    - name: print the result
+      ansible.builtin.debug:
+        var: json_response
+    
+    
+
+
+    
+    
+    
+
+

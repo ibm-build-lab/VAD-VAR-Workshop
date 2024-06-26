@@ -5,3 +5,8 @@ src/gatsby-types.d.ts
 
 **/.DS_Store
 .DS_Store
+
+# Python Venv
+venv/
+**/langchain/**
+replacements.txt
