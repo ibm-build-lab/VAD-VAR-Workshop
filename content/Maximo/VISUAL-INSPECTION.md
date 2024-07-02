@@ -25,7 +25,7 @@ in**
 
 ![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.003.png) 
 
-**Sample Dialogue:** Once the login credentials are accepted, the MAS Application **Suite navigator** window opens. Several applications that make up the Maximo Application Suite are displayed. In this demo, the focus will be on the Maximo Visual Inspection application; however, Part One of this demo, briefly looks at MVI AI model inspection results in the MAS Monitor application. (Note: in this demo environment, only the necessary applications are available for completing MVI L3).
+ Once the login credentials are accepted, the MAS Application **Suite navigator** window opens. Several applications that make up the Maximo Application Suite are displayed. In this demo, the focus will be on the Maximo Visual Inspection application; however, Part One of this demo, briefly looks at MVI AI model inspection results in the MAS Monitor application. (Note: in this demo environment, only the necessary applications are available for completing MVI L3).
 
 > Note: If this is your first-time logging into the MAS, you may be prompted to view a quick application tour (how-to tutorial). Please dismiss any such tours for the purposes of this demo.
 
@@ -49,7 +49,7 @@ The **Data sets** page opens.
 
 ## Step 2: Create a Dataset for Model Training in Maximo Visual Inspection
 
-**Sample Dialogue: What is an MVI dataset, and why do you need to create one?**
+**What is an MVI dataset, and why do you need to create one?**
 
 As a first step towards building your AI inspection model, you must create a dataset in MVI containing images of clean and dirty tanks to teach the model what each class looks like.
 
@@ -76,7 +76,7 @@ In this demo, you manually upload saved tank images from your local machine to t
 
 ![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.010.jpeg)
 
-**Sample Dialogue:** Once you click on this tile, a window opens for the data set you just created. As shown in the upcoming steps, you can perform several key operations on this page, such as uploading images, labeling objects, augmenting data, and training your model.
+ Once you click on this tile, a window opens for the data set you just created. As shown in the upcoming steps, you can perform several key operations on this page, such as uploading images, labeling objects, augmenting data, and training your model.
 
 9.  Click **Import Files** to import the model training tank images from the directory where you unzipped the sample files.
 
@@ -88,11 +88,11 @@ In this demo, you manually upload saved tank images from your local machine to t
 
 ![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.024.jpeg)
 
-**Sample Dialogue:** After a few seconds, the images are uploaded to your newly created dataset. This dataset includes several photos of clean and dirty sedimentation tanks. You are now ready to label these images.
+ After a few seconds, the images are uploaded to your newly created dataset. This dataset includes several photos of clean and dirty sedimentation tanks. You are now ready to label these images.
 
 ## Step 3: Label the Dataset
 
-**Sample Dialogue:** In this step, you will label the tank images. Labeling is tagging the input images with information about its content. In object detection, this would involve highlighting occurrences of items of interest. In the case of this demo, you will go through each of the uploaded tank images and highlight the portion of the image that represents a clean or a dirty tank. During the training phase, these labelled images will allow your model to learn which part of the image represents a tank and next whether that image portion contains a clean or a dirty tank.
+ In this step, you will label the tank images. Labeling is tagging the input images with information about its content. In object detection, this would involve highlighting occurrences of items of interest. In the case of this demo, you will go through each of the uploaded tank images and highlight the portion of the image that represents a clean or a dirty tank. During the training phase, these labelled images will allow your model to learn which part of the image represents a tank and next whether that image portion contains a clean or a dirty tank.
 
 As you can imagine, labeling the images correctly is critical to the accuracy of the model you are creating because it directly impacts the overall quality of the trained model. Quite simply, when it comes to identifying objects or classifying images, you want a use case domain expert – the person with the relevant subject matter expertise (SME) – to be labeling these images. This will ensure the highest quality of input into the model training. Traditionally, data scientists have been the focal point of AI initiatives and have wasted their precious time labelling data (despite not even being a domain expert; for example, would a data scientist be able to better label a dirty tank than the on-site inspection engineer?). With MVI, a domain expert – with no data science expertise– can label the images and then subsequently build a model based on those images.
 
@@ -110,7 +110,7 @@ Once all the pictures are uploaded in MVI perform the following steps:
 
 ![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.013.jpeg)
 
-**Sample Dialogue:** The **Label objects / Sedimentation Tanks** page opens. This is where you create labels for clean and dirty tanks and assign them to the relevant portion of the images in the dataset. Various sections of the Label objects page user interface for layout reference are highlighted below.
+ The **Label objects / Sedimentation Tanks** page opens. This is where you create labels for clean and dirty tanks and assign them to the relevant portion of the images in the dataset. Various sections of the Label objects page user interface for layout reference are highlighted below.
 
 ![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.026.jpeg)
 
@@ -165,7 +165,7 @@ The Sedimentation Tanks data set page opens. Notice how the newly created labels
 
 ## Step 4: Data Augmentation
 
-**Sample Dialogue:** MVI offers an easy and cost-effective way to augment data sets. At this point, you have labelled all the tank images in the uploaded data set.
+MVI offers an easy and cost-effective way to augment data sets. At this point, you have labelled all the tank images in the uploaded data set.
 
 When building out a deep learning computer vision model, the more images added to the data set, the more accurate the model will generally be. However, there may be times when you do not have a dataset as varied or large enough to create an accurate and generalized model, and the cost of acquiring new data is too high.
 
