@@ -34,23 +34,15 @@ A Water Resource Authority (WRA) needs to manage water and wastewater treatment 
 
 ### Step 1: Log into the Maximo Application Suite Navigator
 
-To complete this step, please refer to the email confirming your demo access and containing instructions to access the demo environment.
+1. Click on this [Maximo Application Suite Demo Environment](https://gtmenable.home.enablement3.gtm-pat.com/) URL link to launch IBM Maximo Application Suite and bring up the login page.
 
-**Actions:**
+2. The **IBM Maximo Application Suite** login page opens in a web browser. Enter the Maximo Manage **Username** and **Password** and click **Log in**.
 
-1. Click on this [Maximo Application Suite Demo Environment](https://wwdemo.home.wwdemomas8.gtm-pat.com/) URL link to launch IBM Maximo Application Suite and bring up the login page. Alternatively, you can also locate and click the MAS demo environment URL link from the email you received after TechZone environment reservation.
-
-2. The **IBM Maximo Application Suite** login page opens in a web browser.
-
-   - Enter the Maximo Manage **Username (A)** found in the confirmation email and click **Continue (B)**.
-
-   - Enter the Maximo Manage **Password** found in the confirmation email and click **Log in** (image not shown for this step).
-
-   ![](_attatchments/mas/login.png)
+   ![](_attachments/mas/login.png)
    <br />
    Once the login credentials are accepted, the Maximo Application **Suite navigator** window opens. Several applications that make up the MAS products are displayed. In this demo, the focus will be on Maximo Monitor, Manage, Health, and Predict.
 
-   ![](_attatchments/mas/suite-navigator.png)
+   ![](_attachments/mas/suite-navigator.png)
 
 ### Step 2: Review High Severity Alerts (Anomalies) in Monitor
 
@@ -60,210 +52,187 @@ An Operations Manager for this Water Resource Authority (WRA) needs to view the 
 
 3. From the Maximo **Suite navigator**, click the **Monitor** application tile.
 
-   ![](_attatchments/mas/suite-nav-monitor.png)
+   ![](_attachments/mas/suite-nav-monitor.png)
 
 4. Click the **Monitor** tile on the **Welcome** screen that opens.
 
-   ![](_attatchments/mas/monitor-root.png)
+   ![](_attachments/mas/monitor-root.png)
 
-5. On the left sidebar, use the **right arrow (>)** icon to scroll all the Maximo Monitor options **(A)**.
-6. Select the **Devices** tab **(B)** from the menu to view the list of device types in this WRA.
+5. On the left sidebar, use the **right arrow (>)** icon to scroll all the Maximo Monitor options.
+6. Select the **Devices** tab from the menu to view the list of device types in this WRA.
 
-   ![](_attatchments/mas/monitor-devices.png)
+   ![](_attachments/mas/monitor-devices.png)
 
 7. Type **“pump”** in the search bar to filter the results.
 
-   ![](_attatchments/mas/monitor-devices-pump.png)
+   ![](_attachments/mas/monitor-devices-pump.png)
 
-8. Click **Pump** from the filtered list to view a Pump summary dashboard that will appear on the right **(A)**.
+8. Click **Pump** from the filtered list to view a Pump summary dashboard that will appear on the right.
 
-9. Click on the left side bar’s **Hide sidebar** icon to collapse it **(B)**.
+9. Click on the left side bar’s **Hide sidebar** icon to collapse it.
 
-   ![](_attatchments/mas/monitor-devices-hide.png)
+   ![](_attachments/mas/monitor-devices-hide.png)
 
-   Maximo Monitor allows users to categorize/group device types according to their specific business use case. For example, a user can have a separate dashboard according to an asset’s supplier type such as Original Equipment Manufacturer (OEM) and non-OEM. By selecting the Pump group, the operations manager is viewing metrics for all Pump assets in order to manage and view performance of that entire asset set together.
+    Maximo Monitor allows users to categorize/group device types according to their specific business use case. For example, a user can have a separate dashboard according to an asset’s supplier type such as Original Equipment Manufacturer (OEM) and non-OEM. By selecting the Pump group, the operations manager is viewing metrics for all Pump assets in order to manage and view performance of that entire asset set together. By default, the **Pump Alerts** tab opens to display a list of all pumps with alerts across this enterprise operations.
 
-   The Operations Manager should now navigate through the summary dashboard to see a global map of pump sites. This summary dashboard summarizes important metrics relevant to a pump such as its motor temperature, pressure valves reading, and more. This provides real-time insights on any problems with these assets (These dashboards are fully customizable).
+10. On the **Pump Alerts** tab, notice that there is an alert named **VELOCITYX_Alert_KMeans_Anomaly** for **PMPDEVICE005**.
+    - **Note**: New alerts are generated frequently. You may need to filter on "005" in the Search text box to find it. But we will be working with PMPDEVICE005.
 
-   The Operations Manager notices an alert on one of the site locations in the map (as seen by the triangle with an exclamation point inside).
+    ![](_attachments/mas/monitor-pump-alert.png)
 
-10. Click on the **alert icon** displayed on the map to view a summary of the anomaly. Notice that a pump is causing an alert at the **Bedford Site**. 🟢
+    Traditional threshold-based alerts can be overwhelming; Maximo Monitor uses AI-powered anomaly alerts to remove the false positives. The Operations Manager decides to investigate the PMPDEVICE005 pump further.
 
-    ![](_attatchments/mas/monitor-pump-alert.png)
+11. Click on the **Show sidebar** icon to expand the sidebar.
+12. Expand the **Pump** category by clicking on the **dropdown arrow** to see the full list of pumps in this category.
 
-11. Select the **Pump Alerts** tab to display a list of all pumps with alerts across this enterprise operations.
+    ![](_attachments/mas/monitor-devices-pump-dropdown.png)
 
-    ![](_attatchments/mas/monitor-pump-alert-tab.png)
+13. Click on the **PMPDEVICE005** from the expanded list to bring up its dashboard on the right side of the page (if you don't see PMPDEVICE005 listed, scroll down the pump list until you find it). Collapse the left sidebar to view the dashboard in the full-view mode. 🟢
 
-12. On the **Pump Alerts** tab, notice that there is an alert named **VELOCITYX_Alert_KMeans_Anomaly** for **PMPDEVICE005**.
-    **NOTE**: New alerts are generated frequently. You may need to filter on you may need to filter by "005" int he Search textbox to find it. But we will be working with PMPDEVICE005.
+    ![](_attachments/mas/monitor-devices-pump-select.png)
 
-    ![](_attatchments/mas/monitor-pump-alert-velocity.png)
+14. The **PMPDEVICE005** dashboard displays critical data about its anomaly alert(s).
 
-    Traditional threshold-based alerts can be overwhelming; Maximo Monitor uses Artificial Intelligence (AI) powered anomaly alerts to remove the false positives. The Operations Manager decided to investigate the PMPDEVICE005 pump further.
+    ![](_attachments/mas/monitor-pump-dashboard.png)
 
-13. Click on the **Show sidebar** icon to expand it **(A)**.
-14. Expand the **Pump** category by clicking on the **dropdown arrow** to see the full list of pumps in this category **(B)**.
+    The picture of the pump shows the engineer which part of the pump is experiencing a problem using the alert icon. This is incredibly helpful because it is much easier to fix a problem with detailed knowledge of where it is and what it looks like.
 
-    ![](_attatchments/mas/monitor-devices-pump-dropdown.png)
+15. Scroll down to view time series graphs of critical pump metrics and alerts for this pump.
 
-15. Click on the **PMPDEVICE005** from the expanded list to bring up its dashboard on the right side of the page (If you don't see PMPDEVICE005 listed, scroll down the pump list until you find it). Collapse the left sidebar to view the dashboard in the full view mode. 🟢
+    These time series can be used to investigate any anomalies and take appropriate actions. For example, if the average pump pressure is declining while the average flow is increasing over time, this warrants an investigation into whether there are leaks in the pipeline. Based on such knowledge, an operations team can then investigate whether the pumps need to be serviced more frequently.
 
-    ![](_attatchments/mas/monitor-devices-pump-select.png)
-
-16. The **PMPDEVICE005** dashboard marks the location of the pump on the site map using a flag icon and displays critical data about its anomaly alert(s).
-
-    This site map saves the Remote Operations Manager time by pinpointing where exactly this troublesome pump is located at the **Bedford site** and provides critical data about the anomaly alerts. The picture of the pump shows the engineer which part of the pump is experiencing a problem using the alert icon. This is incredibly helpful because it is much easier to fix a problem with detailed knowledge of where it is and what it looks like.
-
-    ![](_attatchments/mas/monitor-pump-dashboard.png)
-
-17. Scroll down to view a timeseries of critical pump metrics and alerts for this pump.
-
-    The timeseries of critical pump metrics can be used to investigate any anomalies and take appropriate actions. For example, if the average pump pressure is declining while the average flow is increasing over time, this warrants an investigation as to whether there are leaks in the pipeline. Based on such knowledge, an operations team can then investigate whether the pumps need to be serviced more frequently.
-
-    ![](_attatchments/mas/monitor-pump-timeseries.png)
+    ![](_attachments/mas/monitor-pump-time-series.png)
 
 ### Step 3: Review Asset Work order history
 
 Next, the Operations Manager wants to look at this pump's maintenance history to see if there were any recent services done on it that could be the cause of the current problem.
 
-18. On the **Asset Information** card on this dashboard (bottom right), click on the **PMPDEVICE005** hyperlink under the **Asset_ID** column to open Maximo Manage. 🟢
+16. Click on the header in the top-left to return to the **Suite Navigator**.
 
-    ![](_attatchments/mas/monitor-manage-asset-link.png)
+    ![](_attachments/mas/monitor-pump-click-header.png)
 
-19. The Maximo **Manage** window opens in a separate browser tab.
+17. Click on the **Manage** tile.
 
-    ![](_attatchments/mas/manage-assets.png)
+    ![](_attachments/mas/suite-nav-manage.png)
 
-20. Select the **Work** tab **(A)** and then click on the filter icon (funnel) to see the available filter options **(B)**.
-21. Type **“COMP”** in the **Status** box in the **Work Order** section to filter recent completed work orders for this pump **(C)**. Press **Return** on the keyboard to apply the filter.
+18. The **Manage** application opens to a dashboard that shows assets. Click on **Field Pump 005**.
 
-    ![](_attatchments/mas/manage-assets-work.png)
+    ![](_attachments/mas/manage-root.png)
 
-22. This is where the Operations Manager can review previously completed work orders to make informed decisions on how to proceed with any maintenance. Let’s assume they did not see any recent work orders that seem relevant.
+19. Select the **Work** tab and then click on the filter icon (funnel) to see the available filter options.
+20. Type **“COMP”** in the **Status** box in the **Work Order** section to filter recent completed work orders for this pump **(C)**. Press **Return** on the keyboard to apply the filter. Depending on when you run this demo, there may not be any work orders with a status of **COMP**.
 
-23. The Operations Manager is convinced a new Service Request needs to be opened for investigation. Close the **Manage** browser tab **(A)**.
+    ![](_attachments/mas/manage-assets-work.png)
 
-24. Return to the **Monitor** browser tab (where you started this demo) to view the **PMPDEVICE005** dashboard in Maximo Monitor **(B)**.
+21. This is where the Operations Manager can review previously completed work orders to make informed decisions on how to proceed with any maintenance. Let’s assume they did not see any recent work orders that seem relevant.
+
+22. The Operations Manager is convinced a new Service Request needs to be opened for investigation. Return to the **Devices** tab in Maximo **Monitor** and select **PMPDEVICE005** to view its dashboard.
+
+    ![](_attachments/mas/monitor-devices-pump-select-2.png)
 
 ### Step 4: Assign Service Owner
 
-In a real-world scenario, the Operations Manager would return to the VELOCITYX alert on PMPDEVICE005 and assign a Maintenance Supervisor as an owner of this alert. However, to preserve this use case in the shared environment will not assign this alert, but will investigate further in Step 5 below.
+In a real-world scenario, the Operations Manager would return to the VELOCITYX alert on PMPDEVICE005 and assign a Maintenance Supervisor as an owner of this alert. However, to preserve this use case in the shared environment, we will not assign this alert. Instead, we will investigate further in Step 5 below.
 
-25. This is a placeholder step to mention that an Operations Manager could easily assign a service owner from the device dashboard.
+23. This is a placeholder step to mention that an Operations Manager could easily assign a service owner from the device dashboard.
+
+    ![](_attachments/mas/monitor-pump-dashboard-owner.png)
 
 ### Step 5: View near-real-time Metric data from IoT sensors
 
 The Remote Operations Manager decides to look at VelocityX real-time sensor data in the Monitor application to follow up on the AI-triggered VELOCITYX_Alert for this pump.
 
-26. From the left most navigation sidebar (black colored left sidebar), select the **Setup** menu option.
+24. From the left sidebar, select the **Setup** menu option.
 
-    ![](_attatchments/mas/monitor-setup.png)
+    ![](_attachments/mas/monitor-setup.png)
 
-27. Select the **Devices** tab and in the search bar under **Device types** type **“pump”**
+25. Select the **Devices** tab and in the search bar under **Device types** type **“pump”**
 
-    ![](_attatchments/mas/monitor-setup-devices.png)
+    ![](_attachments/mas/monitor-setup-devices.png)
 
-28. Click on the **Pump** option from the filtered list to see all assets in this group. Then click the **PMPDEVICE005** hyperlink from the list of pumps that appears on the right.
+26. Click on the **Pump** option from the filtered list to see all assets in this group. Then click the **PMPDEVICE005** hyperlink from the list of pumps that appears on the right.
 
-    ![](_attatchments/mas/monitor-setup-devices-pump.png)
+    ![](_attachments/mas/monitor-setup-devices-pump.png)
 
-29. Click on the **down-arrow beside Metric (A)** and select **VELOCITYX** option from the expanded sub- menu.
+27. Click on the down-arrow beside **Metric** and select the **VELOCITYX** option from the expanded sub-menu.
 
-    ![](_attatchments/mas/monitor-setup-pump-data.png)
+    ![](_attachments/mas/monitor-setup-pump-data.png)
 
-30. Notice that the graph of the **VELOCITYX** timeseries for this pump that appears on the right of the screen.
+28. A graph of the **VELOCITYX** time series for this pump appears on the right side of the screen.
 
-    ![](_attatchments/mas/monitor-setup-pump-velocityx.png)
+    ![](_attachments/mas/monitor-setup-pump-velocityx.png)
 
-    The pump’s motor velocity vector is a combination of velocity in the X, Y, and Z axis. When any axis’ velocity – such as velocity in the X-axis direction (or “velocityX") – experiences exceptional vibration (as shown with the inconsistent y-axis values in this graph), there is something obviously very wrong with the asset.
+    The pump’s motor velocity vector is a combination of velocity along the X, Y, and Z axes. When velocity along any axis—such as velocity along the X-axis (or *velocityX*)—experiences exceptional vibration (as shown by the inconsistent y-values in this graph), there is something obviously very wrong with the asset.
 
     If a machine is having problems, it will often show signs beforehand. For example, a pump's operating motor speed or temperature may change by a small amount before the pump fails completely. These changes may go unnoticed by a human, but Maximo Monitor can use advanced AI models like “Anomaly detection” to look at critical sensor data. It can then find these subtle changes that are often indicators of an imminent failure. This way, appropriate individuals can be alerted to take preventative action and reduce costly downtime.
 
-31. Click on **IBM Maximo Application Suite** (on the top left) to navigate back to the MAS **Suite Navigator**.
+29. Click on the header in the top-left to navigate back to the **Suite Navigator**.
 
-    ![](_attatchments/mas/monitor-setup-click-header.png)
+    ![](_attachments/mas/monitor-setup-click-header.png)
 
 ## Maximo Health and Predict
 
-You will now play a role of a Reliability Engineer who must now investigate all similar pumps to the one that created multiple alerts in the previous section. This will ensure that there are no failures before the scheduled maintenance dates for the same reason. Maximo Health and Predict can provide a view of the current state of all enterprise assets (including pumps), as well as AI-powered insights into the projected future conditions of those assets.
+You will now play the role of a Reliability Engineer who must investigate all pumps similar to the one that created multiple alerts in the previous section. This will ensure that there are no failures before the scheduled maintenance dates for the same reason. Maximo Health and Predict can provide a view of the current state of all enterprise assets (including pumps), as well as AI-powered insights into the projected future conditions of those assets.
 
-In this part of the demo, the Reliability Engineer will identify the health score of PMPDEVICE005 and similar pumps that need attention, investigate those assets, and finally take an action to avoid unplanned downtime.
+In this part of the demo, the Reliability Engineer will identify the health score of PMPDEVICE005 and similar pumps that need attention, investigate those assets, and finally take action to avoid unplanned downtime.
 
-**Actions:**
+30. Click on the **Health** application tile from the Maximo **Suite navigator**.
 
-32. Click on the **Health** application tile from the Maximo **Suite navigator**.
+    ![](_attachments/mas/suite-nav-health.png)
 
-    ![](_attatchments/mas/suite-nav-health.png)
+31. The Maximo Health **Assets** page opens.
 
-33. The Maximo Health **Assets** page opens.
+    ![](_attachments/mas/health-assets.png)
 
-    ![](_attatchments/mas/health-assets.png)
+    The Maximo Health Asset page provides a universal view of all of the Water Resource Authority’s managed assets. This is valuable to the reliability team as it allows them to see both IT data (from Maximo Manage) and Operational technology data (from Maximo Monitor) together in a single view. Many failures cannot be prevented with traditional time-based preventive maintenance strategies or solely based on sensor data. Individually, this data only provides part of the picture. Insights on past maintenance issues and service requests, the age of an asset, and historical investments enhances the "sensed conditions" of an asset. This is the power that Maximo Health and Manage provide.
 
-    The Maximo Health Asset page provides a universal view of all of the Water Resource Authority’s (WRA’s) managed assets. This is valuable to the reliability team as it allows them to see both IT data (from Maximo Manage) and Operational technology data (from Maximo Monitor) together in a single view. Many failures cannot be prevented with traditional time-based preventive maintenance strategies or solely based on sensor data. Individually, this data only provides part of the picture. Insights on past maintenance issues and service requests, the age of an asset, and historical investments enhances the "sensed conditions" of an asset with real insight. This is the power that Maximo Health and Manage provide.
-
-### Step 5: Asset Health Score
+### Step 6: Asset Health Score
 
 With hundreds of assets deployed in any given complex operation, Maximo Health provides flexibility to generate and customize different views of asset data to make it easier to identify critical assets. Users have the option to add and move columns, filter, search, and sort according to their role and responsibilities.
 
-In the next steps, the Reliability Engineer will utilize a pre-configured view that helps them make repeated pump performance monitoring easy and quick. This view includes filters on select pumps, a pump’s status column, and sorts them by OEM and non-OEM suppliers.
+In the next steps, the Reliability Engineer will utilize a pre-configured view that helps them make repeated pump performance monitoring easy and quick. This view can filter pumps based on attributes like *failure class* or *site*, and it can sort pumps by OEM/non-OEM, location, health score, etc.
 
-34. Click the selection box dropdown from the top section to view all the pre-saved views. (By default, **All (shared)** option is selected in this selection box)
-35. Select the **PMP Devices (private)** saved view from the dropdown menu options that appear.
+In this demo, by default, the **PMP-Pumps (shared)** view is selected and assets are filtered on the search term **PMPDEVICE0**. The engineer can see two columns with calculated data (**Health** and **Days to failure**). Health scores provides a powerful and simplistic approach to combine and distill an asset’s condition assessment readings and historic maintenance history in a simple color-graded numeric scale. Similarly, *days to failure* can help proactively identify assets that are likely to fail in the next few days or weeks, allowing engineers to perform necessary corrective maintenance before any downtime occurs. The Reliability Engineer can look at that the **Health** and **Days to failure** scores for various pumps to gauge the risk of multiple pump failures. A lower number of Health score means deteriorated asset health.
 
-    ![](_attatchments/mas/health-assets-pmpdevices.png)
+It should be noted that risk tolerance can vary among industries, asset types, and enterprises. Monitor allows companies to define the health scoring ranges specific to their business operations tolerance levels and with their own color scheme.
 
-    In this saved pump view, the engineer can see two columns with calculated data (**Health** and **Days to failure**). Health scores provides a powerful and simplistic approach to combine and distill an asset’s condition assessment readings and historic maintenance history in a simple color-graded numeric scale. Similarly, ‘days to failure’ can help proactively identify assets that are going to fail in the next few days or weeks, allowing engineers to perform necessary corrective maintenance before any downtime occurs.
+32. Click the **Map** icon at the top right of the screen to view the health score of each of these pumps on a map view.
 
-36. The Reliability Engineer can look at that the **Health** and **Days to failure** scores for various pumps to gauge the risk of multiple pump failures. A lower number of Health score means deteriorated asset health.
+    ![](_attachments/mas/health-assets-2.png)
 
-    ![](_attatchments/mas/health-assets-pmpdevices2.png)
+    Seeing how the assets are spatially distributed, along with their health score grade, assists the Reliability Engineers in identifying and investigating assets at risk. This is particularly true in the utilities industry, where assets are typically spread over a large geographical area.
 
-    It should be noted that risk tolerance can vary among industries, asset types, and enterprises. Monitor allows companies to define the health scoring ranges specific to their business operations tolerance levels and with their own color scheme.
+    ![](_attachments/mas/health-assets-map.png)
 
-37. Click the **Map** icon at the top right of the screen to view the health score of each of these pumps on a map view.
+### Step 7: Work Queue
 
-    ![](_attatchments/mas/health-assets-pmpdevices3.png)
+The Reliability Engineer continues their investigation to determine which water pumps are expected to fail soon. These are the assets that are most likely to experience unplanned downtime. However, the engineer does not have a maintenance plan to address the failure yet. The easiest way to do this is to use the work queue feature built into Maximo Health and Predict.
 
-    Seeing how the assets are spatially distributed, along with their health score grade, assists the Reliability Engineers to identify and investigate assets at risk. This is particularly true in the Utilities industry, where assets are typically spread over a large geographical area.
+33. Select the **Work queues** option from the left sidebar to see the available queues.
 
-    ![](_attatchments/mas/health-assets-map.png)
-
-### Step 6: Work Queue
-
-The Reliability Engineer continues their investigation to determine which water pump(s) are expected to fail soon, yet don’t have a maintenance plan to address the failure. These are the assets more likely to result in unplanned downtime. The easiest way for a Reliability Engineer to do this is by using the work queue feature built into Maximo Health and Predict.
-
-38. Click the **Work queues** menu option from the left sidebar menu list (it will auto-expand as you hover over it) to see the available queues.
-
-    ![](_attatchments/mas/health-work-queue.png)
+    ![](_attachments/mas/health-work-queues.png)
 
     Work queues are preconfigured views designed to help users find what they’re looking for and to manage their day-to-day activities. These are particularly valuable to a Reliability Engineer who needs to address a specific problem, like a water treatment plant trying to avoid unplanned downtime.
 
-    There are several work queues included with Maximo Health and Predict. These include **High probability of failure**, **Low health**, and **Failing before Preventative Maintenance (PM)**. There are also work queues that show assets with missing data. Work queues describing missing data are extremely useful to a reliability engineer as they can help identify gaps in data necessary to create health scores or predictive failure model.
+    There are several work queues included with Maximo Health and Predict. These include **High probability of failure**, **Low health**, and **Failing before Preventative Maintenance (PM)**. There are also work queues that show assets with missing data. Work queues describing missing data are extremely useful to a reliability engineer as they can help identify gaps in data necessary to create health scores or predictive failure models.
 
-39. Select the **Failing before PM** work queue to see all the assets that are predicted to fail before planned maintenance work is scheduled for them. It is critical for the Reliability engineer to address these assets to avoid downtime of the water treatment plant.
+34. Select the **Failing before PM** work queue to see all the assets that are predicted to fail before planned maintenance work is scheduled for them. It is critical for the Reliability Engineer to address these assets to avoid downtime.
 
-    ![](_attatchments/mas/health-work-queue2.png)
+    ![](_attachments/mas/health-work-queues-2.png)
 
-40. This work queue shows all the assets predicted to fail before their scheduled Preventive maintenance (PM). Click the search icon (the magnifying glass) at the top right and type **“pmp”**. Press **Return** on the keyboard to apply this filter and see a list of only pump assets.
+35. This work queue shows all the assets predicted to fail before their scheduled Preventive maintenance (PM). Click the search icon (the magnifying glass) at the top-right and type **“pmp”**. Press **Return** on the keyboard to apply this filter and see a list of pump assets.
 
-    ![](_attatchments/mas/health-work-queue3.png)
+    ![](_attachments/mas/health-work-queues-fail.png)
 
-    ![](_attatchments/mas/health-work-queue4.png)
+36. There are multiple pumps that have a predicted failure before their next planned maintenance date, and they are all non-OEM pumps. Click on **PMPDEVICE005** from this work queue list.
 
-41. According to the screen, there are multiple pumps that have a predicted failure before their next planned maintenance date, and they are all non-OEM (non- Original Equipment Manufacturer) pumps.
+    ![](_attachments/mas/health-work-queues-fail-2.png)
 
-    ![](_attatchments/mas/health-work-queue5.png)
+### Step 8: Detailed Review of the Pump’s Health Score
 
-42. Click on **PMPDEVICE005** from this work queue list
+37. The **PMPDEVICE005** asset’s health detail page opens.
 
-    ![](_attatchments/mas/health-work-queue6.png)
-
-### Step 7: Detailed Review of the Pump’s Health Score
-
-43. The **PMPDEVICE005** asset’s health detail page opens.
-
-    ![](_attatchments/mas/health-work-queue-pump.png)
+    ![](_attachments/mas/health-assets-pump.png)
 
     The PMPDEVICE005 asset’s health details page is an incredibly useful tool for investigating a pump’s current and predicted future conditions. The Reliability Engineer can find all the asset’s information presented on a single page, and in easy-to-read tables, charts, and graphs.
 
@@ -271,7 +240,7 @@ The Reliability Engineer continues their investigation to determine which water 
 
     Because this is a live and dynamic demo environment that is also used by other sellers, the percentages shown in this script may vary from what you may see in the demo environment. Therefore, this script attempts to be generic in language.
 
-    Clicking on the information icon (small _i_ in a circle) in each of these KPI tiles provides a brief description about the corresponding metric. Specifically:
+    Hovering over the titles in these KPI tiles provides a brief description about the corresponding metric. Specifically:
 
     1. **Health Score:** The overall condition of the asset on a user defined scale. This helps to gauge the general maintenance needs of the asset.
     2. **Criticality:** The importance of an asset to its business. This helps to prioritize maintenance and repair activities.
@@ -284,75 +253,71 @@ The Reliability Engineer continues their investigation to determine which water 
 
     Below the KPI section, the Reliability Engineer can view more information about this pump, which comes directly from the Water Resource Authority’s Enterprise Asset Management (EAM) system (in this case, Maximo Manage).
 
-44. Scroll to the **Health details** section. This section shows a breakdown of the health score drivers and factors that provide insight into what is causing this pump’s poor health.
+38. Scroll to the **Health details** section. This section shows a breakdown of the health score drivers and factors that provide insight into what is causing this pump’s poor health.
 
-    ![](_attatchments/mas/health-work-queue-pump2.png)
+    ![](_attachments/mas/health-assets-pump-score-details.png)
 
-    For this asset, and assets in the same group, the Reliability Engineer can see that the health score is a weighted average of open work orders, remaining useful life, and meter health.
+    For this asset and assets in the same group, the Reliability Engineer can see that the health score is a weighted average of open work orders, remaining useful life, and meter health.
 
-### Step 8: Explore available actions
+### Step 9: Explore available actions
 
-45. Once the Reliability Engineer decides on what action to take, it can be immediately turned into action from the top of the page. They can create a service request, create a work order, recalculate a health score, or edit the source asset’s record. We will NOT take any action in the shared environment.
+39. Once the Reliability Engineer decides on what action to take, they can take action at the top of the page. They can create a service request, create a work order, recalculate a health score, or edit the source asset’s record. **We will NOT take any action in the shared environment.**
 
-46. The Reliability Engineer can finally create and present a detailed report of their findings about current and predicted future state of PMPDEVICE005 (and similar pumps) to the Operations Manager.
+    ![](_attachments/mas/health-assets-pump-service-request.png)
+
+40. The Reliability Engineer can finally create and present a detailed report of their findings about current and predicted future state of PMPDEVICE005 (and similar pumps) to the Operations Manager.
 
 ## Maximo Predict
 
-Maximo Predict includes templates to help enterprise Data Scientists to get started with building models to project days to failure, calculate probability of failure, detect anomalies, and generate an asset life curve based on an asset’s deployment and retirement dates. These templates include many algorithms, and the Data Scientists can select the one that best fits their data and needs to drive an optimal outcome.
+Maximo Predict includes templates that help enterprise data scientists get started with building models to project days to failure, calculate probability of failure, detect anomalies, and generate an asset life curve based on an asset’s deployment and retirement dates. These templates include many algorithms, and the data scientists can select the one that best fits their data and needs to drive an optimal outcome.
 
-In addition, the Maximo Application Suite includes Watson Studio and Watson Machine Learning, which can be used for building, training, and maintaining predictive models if a more custom solution is needed.
+In addition, Maximo Application Suite includes Watson Studio and Watson Machine Learning, which can be used for building, training, and maintaining predictive models if a more custom solution is needed.
 
-**Actions:**
+41. Scroll down and click **Predictions** to expand this tab.
 
-47. Scroll down and click **Predictions** to expand this tab.
+    ![](_attachments/mas/predict-predictions.png)
 
-    ![](_attatchments/mas/predict-predictions.png)
+42. The **Predictions** section opens showing the selected pump’s predictive KPIs and failure probability graphs.
 
-48. The **Predictions** section opens showing the selected pump’s predictive KPIs and failure probability graphs.
+    Brief information about the contents of each tile can be found by hovering over the tile's title.
 
-    Brief information about the contents of each tile can be found by clicking on the info icon next to each tile’s title.
+    ![](_attachments/mas/predict-predictions-ttf.png)
 
-    ![](_attatchments/mas/predict-predictions2.png)
+### Step 10: Predicted Failure Model
 
-### Step 9: Predicted Failure Model
+The AI model predicts that this pump will fail within a certain number of days, plus or minus a specified period. If the data history for this asset is rich enough, a data scientist can also build predictive models for specific failure modes. It helps to know the probability of failure along with the most probable failure reason (failure mode). For example, knowing information such as “there is a 40% chance the pump will fail within the next 30 days due to the motor failure” is very useful. In this case, the model would look for a sequence of events that led to this failure mode and provide the pump's probability of failure due to its motor burnout. In this way, it helps to plan for preventive maintenance actions.
 
-The AI model predicts that this pump will fail within a certain number of days, plus or minus a specified period. If the data history for this asset is rich enough, a Data Scientist can also build predictive models for specific failure modes. It helps to know the probability of failure along with the most probable failure reason (failure mode). For example, knowing information such as “there is a 40% chance the pump will fail within the next 30 days due to the motor failure” is very useful. In this case, the model would look for a sequence of events that led to this failure mode and provide the pump's probability of failure due to its motor burnout. In this way, it helps to plan for preventive maintenance actions.
+43. The timeframe of the training data in the **Estimated time to failure** tile can help to decide if and when the AI model should be retrained.
 
-49. In the **Estimated time to failure** card located at the top left of this page, ensure **PUMPS/STOPPED** failure mode is selected from the dropdown.
+    ![](_attachments/mas/predict-predictions-ttf-date.png)
 
-    ![](_attatchments/mas/predict-predictions3.png)
+44. In the **Failure probability** tile, notice the probability of the selected failure mode occurring in the selected prediction **Time window** (3 days by default, as shown at the bottom left of this tile). You can see that this pump has a 1% chance of failing in the next three days (based on the screenshot below). 🟢
 
-50. The timeframe of the training data in this tile can help to decide if and when the AI model should be retrained.
+    ![](_attachments/mas/predict-predictions-failure-prob.png)
 
-    ![](_attatchments/mas/predict-predictions4.png)
+52. Scroll down to the **Failure probability trend** card. This card shows the failure probability history for each mode, indicating how the probability of failure has changed over time.
 
-51. On the **Failure probability** tile, notice the probability of the selected failure mode occurring in the selected prediction **Time window** (currently pre-selected to 2 days as shown at the bottom left of this tile). You can see that this pump has a 0% chance of failing in the next two days (based on the screenshot below). 🟢
+    ![](_attachments/mas/predict-predictions-failure-prob-trend.png)
 
-    ![](_attatchments/mas/predict-predictions5.png)
+53. Scroll down to the **Factors that contribute to failures** card. It shows which factors from the training data had the biggest impact on failures. This gives an idea of what might cause future failures.
 
-52. Scroll down to the **Failure probability trend** card (it’s right below **Estimated time to failure** tile). This card shows the failure probability history for each mode, indicating how the probability of failure has changed over time.
+    ![](_attachments/mas/predict-predictions-failure-factors.png)
 
-    ![](_attatchments/mas/predict-predictions6.png)
+54. Scroll to the **Anomaly detection** and **Anomaly detection history** cards which show the anomaly scores for this pump as well as when it crossed the threshold value (red dotted line on the **Anomaly detection history** time series graph).
 
-53. Scroll down to the **Factors that contribute to failures** card (it’s right below **Failure probability trend tile**). It shows which factors from the training data had the biggest impact on failures. This gives an idea of what might cause future failures.
+    ![](_attachments/mas/predict-predictions-anomaly.png)
 
-    ![](_attatchments/mas/predict-predictions7.png)
+### Step 11: Asset Timeline
 
-54. Scroll to the **Anomaly detection** and **Anomaly detection history** cards which show the anomaly scores for this pump as well as when it crossed the threshold value (red dotted line on the **Anomaly detection history** timeseries graph).
+55. Scroll down and click **Asset timeline** to expand this tab.
 
-    ![](_attatchments/mas/predict-predictions8.png)
-
-### Step 10: Asset Timeline
-
-55. Scroll down and expand the **Asset timeline** twisty.
-
-    ![](_attatchments/mas/predict-asset-timeline.png)
+    ![](_attachments/mas/predict-asset-timeline.png)
 
 56. The **Asset timeline** tab provides several pieces of key information about this asset within a single graph. 🟢
 
-    Looking at this timeline, the selected pump has a predicted failure (PF) date that will occur before its next planned preventative maintenance (PM) scheduled date! other information from the chart, like past work order and inspection dates, provides valuable insight into the asset's history and may support what kind of action needs to be taken.
+    Looking at this timeline, the selected pump has a predicted failure (PF) date that will occur before its next planned preventative maintenance (PM) scheduled date! Other information from the chart, like past work order and inspection dates, provides valuable insight into the asset's history and may inform one's decision-making on what kind of action to take.
 
-    ![](_attatchments/mas/predict-asset-timeline2.png)
+    ![](_attachments/mas/predict-asset-timeline-2.png)
 
 ## Closing Remarks
 
