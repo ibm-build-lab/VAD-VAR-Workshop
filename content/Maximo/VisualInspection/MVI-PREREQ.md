@@ -1,7 +1,7 @@
 ---
 title: Visual Inspection Prereqs
 timeToComplete: 30
-updated: 2023-03-24
+updated: 2024-07-16
 ---
 
 # Maximo Visual Inspection Lab Prerequisites
