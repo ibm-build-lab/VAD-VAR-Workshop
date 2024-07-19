@@ -1,13 +1,13 @@
 ---
 title: Application Suite
 timeToComplete: 30
-updated: 2023-03-24T00:00:00.000Z
+updated: 2024-07-19
 ---
 # Maximo Application Suite
 
 En este laboratorio obtendrá un recorrido por cómo se pueden utilizar 4 aplicaciones clave dentro de Maximo Application Suite (MAS) para resolver problemas de una situación real en el mundo. Todas las preguntas de L3 Quiz se pueden responder utilizando este laboratorio.
 
-¡EADS UP! Contenido de cuestionario de L3 indicado con 🟢
+Contenido de cuestionario de L3 indicado con 🟢
 
 ## Línea de historia de laboratorio
 
