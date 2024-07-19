@@ -20,25 +20,25 @@ A continuación, creará su propio conjunto de datos, etiquetará y aumentará u
 1.  Haga clic en el enlace **URL MVI** del correo electrónico que recibió con las instrucciones para utilizar el entorno de demostración.
 2.  Se abre la página de inicio de sesión de IBM Maximo Application Suite. Introduzca **el nombre de usuario MVI (A)** y la **contraseña (B)** y haga clic en **Iniciar sesión**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.003.png)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.003.png)
 
 Una vez aceptadas las credenciales de acceso, se abre la ventana **del navegador** MAS Application Suite. Se muestran varias aplicaciones que componen el paquete de aplicaciones Maximo. En esta demostración, la atención se centrará en la aplicación Maximo Visual Inspection; sin embargo, la primera parte de esta demostración, examina brevemente los resultados de la inspección del modelo MVI AI en la aplicación MAS Monitor. (Nota: en este entorno de demostración, sólo están disponibles las aplicaciones necesarias para completar MVI L3).
 
 > Nota: Si es la primera vez que inicia sesión en la aplicación MAS, es posible que se le pida que vea un recorrido rápido por la aplicación (tutorial práctico). Por favor, descarte cualquier recorrido de este tipo para los fines de esta demostración.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.004.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.004.jpeg)
 
 3.  En la página de **navegación** de MAS **Suite**, haga clic en la ficha **Inspección visual (A)**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.005.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.005.jpeg)
 
 4.  Haga clic en **Get started (A** ) en la pantalla MVI **Welcome to IBM Maximo Visual Inspection**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.006.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.006.jpeg)
 
 Se abre la página **Conjuntos de datos**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.007.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.007.jpeg)
 
 <br />
 
@@ -60,29 +60,29 @@ En esta demostración, usted carga manualmente las imágenes de tanques guardado
 
 5.  En la pantalla **Conjuntos de datos** MVI, haga clic en el icono azul **Crear + (A)** situado en la parte superior derecha.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.008.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.008.jpeg)
 
 6.  Introduzca `Sedimentation Tanks <YOUR INITIALS>` para el campo **Name** en la ventana **Create data set** (ya que está compartiendo el entorno de demostración de Maximo Visual Inspection con otras personas se requiere un identificador único para evitar conflictos de nombres) **(A).**
 7.  Haga clic en **Crear (B)**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.009.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.009.jpeg)
 
 **Importante:** Este script de demostración no trata los nombres de los conjuntos de datos con ningún identificador único. Por lo tanto, a modo de ejemplo, si se le indica que haga clic en el conjunto de datos ***Tanques de sedimentación***, deberá hacer clic en el conjunto de datos ***Tanques de sedimentación \<SUS INICIALES>***, es decir, el conjunto de datos que usted nombró junto con su identificador único.
 
 8.  Haga clic en la mitad inferior del mosaico de **Tanques de Sedimentación** recién creado (donde se muestra un icono de imagen gris claro).
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.010.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.010.jpeg)
 
 Una vez que haga clic en este mosaico, se abrirá una ventana para el conjunto de datos que acaba de crear. Como se muestra en los siguientes pasos, puedes realizar varias operaciones clave en esta página, como cargar imágenes, etiquetar objetos, aumentar datos y entrenar tu modelo.
 
 9.  Haga clic en **Importar archivos** para importar las imágenes del tanque de entrenamiento del modelo desde el directorio donde descomprimió los archivos de muestra.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.011.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.011.jpeg)
 
 10. Navegue hasta la ubicación del directorio donde descomprimió la carpeta **Images of Sedimentation Tanks for training (Imágenes de tanques de sedimentación para formación** ), descargada y extraída en el[ Paso 2 del trabajo previo.](/maximo/mvi-prereq#step-2-download-the-training-and-validation-tank-images-for-the-ai-model)
 11. Seleccione todas las imágenes de tanques de la carpeta y haga clic en **Abrir**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.024.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.024.jpeg)
 
 Tras unos segundos, las imágenes se cargan en el conjunto de datos recién creado. Este conjunto de datos incluye varias fotos de tanques de sedimentación limpios y sucios. Ahora está listo para etiquetar estas imágenes.
 
@@ -100,43 +100,43 @@ Una vez que todas las imágenes se cargan en MVI realizar los siguientes pasos:
 
 1.  En el menú desplegable Seleccionar archivos, haga clic en **Todos (A)** para seleccionar automáticamente todas las imágenes del conjunto de datos.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.012.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.012.jpeg)
 
 2.  Haga clic en **Etiquetar objetos (B)**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.013.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.013.jpeg)
 
 Se abre la página **Etiquetar objetos / Tanques de sedimentación**. Aquí es donde se crean las etiquetas para los tanques limpios y sucios y se asignan a la parte correspondiente de las imágenes en el conjunto de datos. A continuación se destacan varias secciones de la interfaz de usuario de la página Objetos de etiqueta para referencia de diseño.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.026.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.026.jpeg)
 
 3.  Para iniciar el proceso de etiquetado, debe definir las etiquetas (limpias y sucias). Haga clic en **+ Añadir etiqueta** en la ventana **Objetos** del extremo derecho.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.027.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.027.jpeg)
 
 4.  En la ventana **Añadir objetos** que se abre, escriba "clean" en el campo **Crear objeto** **(A)** y haga clic en el botón **Añadir** **(B).**
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.028.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.028.jpeg)
 
 5.  Ahora, escribe "dirty" en la ventana **Añadir objetos** y haz clic en **Añadir**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.029.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.029.jpeg)
 
 6.  Haga clic en **Aceptar** para completar el proceso de Añadir etiqueta.
 7.  Una vez definidas las etiquetas, puede comenzar el proceso de etiquetar los objetos del tanque adecuadamente. Asegúrese de que la primera imagen del tanque está seleccionada en el Navegador de Imágenes (verá un recuadro azul oscuro alrededor de la imagen seleccionada en el Navegador de Imágenes de la izquierda). Seleccione el nombre de la etiqueta **limpia** en la ventana **Objetos** de la derecha **(A).**
 8.  Haga clic en el icono **Cuadro** del menú de selección **(B)** y dibuje un cuadro alrededor de una porción de la imagen que denote el tanque limpio o sucio **(C)**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.030.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.030.jpeg)
 
 Debido a la posible clasificación aleatoria de imágenes, es posible que la primera imagen que vea en el navegador de imágenes sea la de un tanque sucio. En este caso, elija la etiqueta **sucio** en lugar de **limpio** y etiquete la primera imagen en el paso 7 de esta sección adecuadamente.
 
 En caso de que te equivoques al dibujar la casilla, selecciona la casilla errónea y haz clic en el icono de **la papelera** situado junto a la etiqueta. También puedes pulsar **CTRL + Z** o **Comando + Z** en el teclado de Windows y Mac, respectivamente, para deshacer la última acción.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.032.png)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.032.png)
 
 9.  Etiquete todas las imágenes en el Navegador de Imágenes siguiendo las instrucciones de los pasos anteriores. Puede hacer clic en el botón **azul de flecha hacia abajo** para desplazarse y seleccionar las imágenes en secuencia para etiquetarlas.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.033.png)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.033.png)
 
 **Consejos para el etiquetado de imágenes:**
 
@@ -145,19 +145,19 @@ En caso de que te equivoques al dibujar la casilla, selecciona la casilla errón
 
 Para su comodidad, una barra azul claro resalta la etiqueta que está actualmente en selección, como se muestra en la siguiente captura de pantalla.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.035.png)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.035.png)
 
 *   Si hay más de un depósito (o porción de depósitos) en una imagen, dibuje recuadros de etiqueta separados alrededor de cada depósito, como se muestra en la captura de pantalla siguiente.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.037.png)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.037.png)
 
 1.  Una vez que todas las imágenes de tanques del Navegador de imágenes estén debidamente etiquetadas, haga clic en el icono **Atrás** (no en el botón Atrás de su navegador) para volver a la página **Conjunto de datos / Tanques de sedimentación**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.038.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.038.jpeg)
 
 Se abre la página del conjunto de datos Tanques de Sedimentación. Observe cómo se muestran las etiquetas recién creadas junto con cada imagen de tanque correspondiente (en la captura de pantalla siguiente se resaltan algunas etiquetas)
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.014.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.014.jpeg)
 
 ## Paso 4: Aumento de datos
 
@@ -173,36 +173,36 @@ Para esta demostración, es justo suponer que es poco probable que una cámara d
 
 1.  Haga clic en **Aumentar datos**.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.015.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.015.jpeg)
 
 2.  La ventana **Aumentar datos** se abre y muestra todos los filtros de aumento de datos disponibles de MVI. Seleccione los filtros **Sharpen**, **Crop**, **Rotate**, **Vertical flip** y **Horizontal flip** para generar imágenes adicionales **(A)**. Observe que el número de imágenes bajo las etiquetas **Nuevas creaciones** y **Nuevo total** aumenta a medida que se seleccionan más filtros.
 3.  Haga clic en **Continuar (B).**
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.040.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.040.jpeg)
 
 4.  Se abre la ventana Aumentar **datos**. Nombre el nuevo conjunto de datos escribiendo `Augmented Sedimentation Tank <YOUR INITIALS>` **(A)**
 5.  Haga clic en **Crear conjunto de datos** para crear su nuevo conjunto de datos aumentados **(B)**
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.041.jpeg) Una vez que haga clic en **Crear conjunto de datos**, podrá seguir el progreso del proceso de aumento de datos en una pequeña ventana que aparece en la parte superior derecha de la pantalla.
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.041.jpeg) Una vez que haga clic en **Crear conjunto de datos**, podrá seguir el progreso del proceso de aumento de datos en una pequeña ventana que aparece en la parte superior derecha de la pantalla.
 
 En esta ventana;
 
 *   Una barra de progreso azul indica que el aumento de datos está en curso.
 *   Un mensaje de confirmación de finalización y una marca de verificación verde indican que el proceso se ha completado.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.043.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.043.jpeg)
 
 6.  Haga clic en el enlace **Conjunto** de datos para volver a la página principal de **Conjuntos de datos**, donde podrá ver el conjunto de datos aumentado que acaba de crear.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.016.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.016.jpeg)
 
 7.  Se abre la página principal de **Conjuntos de datos**, que muestra tanto el conjunto de datos original como el aumentado. Observe el mayor número de imágenes en el conjunto de datos aumentado en comparación con el conjunto de datos original (el número de imágenes en cada conjunto de datos se muestra justo debajo de su nombre en el mosaico). Haga clic en la mitad inferior (la imagen del tanque de agua) de su recién creado mosaico de **Tanques de Sedimentación A** umentados.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.017.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.017.jpeg)
 
 8.  Una vez abierta la página del conjunto de datos aumentado, observe cómo todas las imágenes aumentadas generadas por el IVM tienen un pequeño icono negro ("mágico") en la parte inferior derecha de la imagen. Observe también cómo las etiquetas de las imágenes se transfieren automáticamente de las imágenes originales a sus correspondientes imágenes aumentadas.
 
-![](_attatchments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.018.jpeg)
+![](../_attachments/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.018.jpeg)
 
 Enhorabuena, has creado un nuevo conjunto de datos aumentado a partir del original que está listo para ser entrenado. Ahora es el momento de crear el modelo de detección de objetos utilizando este conjunto de datos aumentado.
 
