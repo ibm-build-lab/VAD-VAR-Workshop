@@ -1,7 +1,7 @@
 ---
 title: Visual Inspection - Part 2
 timeToComplete: 30
-updated: 2023-03-24
+updated: 2024-07-16
 ---
 
 # Maximo Visual Inspection (MVI) - Part 2
@@ -30,12 +30,12 @@ Now it’s time to start the training process of your dirty tank detection model
 
 1. Click **Train model** to start the object detection training process.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.001.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.001.jpeg)
 
 2. The Train Model / Augmented Sedimentation Tank page opens. Select **Object detection** tile from the **Select type of training** section **(A)**.
 3. In the **Optimize model using** section, select the **Faster R-CNN** tile **(B)**. 🟢
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.002.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.002.jpeg)
 
  The **Train Model / Augmented Sedimentation Tank** window (screenshot above) allows you to configure the model’s settings.
 
@@ -45,35 +45,35 @@ Apart from the chosen options, Maximo Visual Inspection (MVI) includes several m
 
 4. To gain more control over the model training, view your model’s hyperparameters by clicking on **Advanced settings** switch to turn it **On** (located in the upper right corner of the screen).
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.003.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.003.jpeg)
 
  Due to MVI’s ease of use, domain experts often progress very quickly into becoming advanced users. As they find themselves with new levels of comfort and control, they can also optionally choose to exploit advanced settings to further fine-tune the model. Once the **Advanced settings** switch is turned on, the **model hyperparameters** section becomes available at the bottom of the screen. Hyperparameters are used to optimize the model’s performance; and when it comes to improving the model accuracy, these parameters are the go-to option for data scientists and model experts. A brief description on each of the hyperparameters can be viewed by clicking on the **info** icon (the “**i**” in a circle) at the end of each corresponding hyperparameter. For now, keep hyperparameters at their default values.
 
 
 **IMPORTANT** If you are doing this demo in a classroom setting, or time is a factor, you can keep the number of iterations low. Setting it to a higher value will take longer, but it also means a more accurate model with better inspection results; for the demo, you can leave the hyperparameters at their default values.
 
-5. While you could click the blue **Train model** button at the top to begin the model training process, this is **NOT** recommended in a live demo setting. ![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.005.jpeg)
+5. While you could click the blue **Train model** button at the top to begin the model training process, this is **NOT** recommended in a live demo setting. ![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.005.jpeg)
 
  Clicking on **“Train Model”** will start the training process, but since the training here will take 25+ minutes, this guide shows you the next steps using a more practical pre-built model that has been built using the same steps but was trained using 2000+ clean and dirty tank images and hours of computation.
 
 At the time of writing, only two Graphics Processing Units (GPUs) are available for model training and deployment in the worldwide shared demo cluster (you can view the current GPU usage at the top right of the screen).
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.007.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.007.jpeg)
 
 Therefore, when you click Train Model, the training process is likely queued until resources (GPUs) become available again. If this happens, you will see a window prompting you to add the training job to the queue or cancel the training altogether. You can click Cancel to terminate the training process and avoid system overload.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.008.png)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.008.png)
 
 For demo purposes, from this point on, you will use a prebuilt sedimentation tanks model “DONOT DELETE- Sedimentation tank model” built on 2000+ tank images to showcase the next steps (just like on a cooking show where the meal is already cooked in the oven, and they just take it out on the show).
 
 6. Click the **Hamburger** icon (a stacked bar) on the top left to view the list of page navigation options **(A)**.
 7. Select **Deployed models** from the list to view a list of pre-deployed models **(B)**.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.009.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.009.jpeg)
 
 8. Deployed models page opens. This page shows all the models currently deployed.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.0009.png)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.0009.png)
 
 ### Step 2: Model Testing
 
@@ -89,7 +89,7 @@ Using a dataset that was not part of the model-building phase is a standard proc
 
 1. On the **Deployed models** screen, under the **Name** column, click **DO NOT DELETE - Sedimentation tank model** (prebuilt model).
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.010.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.010.jpeg)
 
 - **Caution:** It is possible that the name of the pre-built model was changed from “DONOT DELETE- Sedimentation tank model” to something else by the time you are attempting to complete this demo. Hence to quickly identify the pre-trained model, it is worth remembering that the pre-trained model will have a dataset value of “Not found” regardless of its name as highlighted in the screenshot above. This quick tip can help you identify the pre-trained model among a list of several other deployed models regardless of any future model name changes.
 - Since you are working in a worldwide shared demo cluster environment, it is likely that you may see several other models previously deployed on the **Deployed models’** screen. These models can be ignored for the purposes of this demo.
@@ -97,16 +97,16 @@ Using a dataset that was not part of the model-building phase is a standard proc
 2. Once you click the deployed model’s name, you are brought to the selected model screen where its performance can be evaluated using a test image. Click the **Drag and drop file here or click to upload (A)** button in the **Test Model** tile to select an image to score
 
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.012.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.012.jpeg)
 
 3. Select an image of a **clean tank** from the model testing images folder (it will have the word “**clean**” in its name) and visually confirm the model result. In the case of the screenshot below the model predicts with high accuracy (0.907) that the uploaded image shows a clean sedimentation tank (which is correct).
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.013.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.013.jpeg)
 
 4. Click **Drag and drop file here or click to upload (A)** again and this time select an image of a dirty tank 
 from the same testing folder (image will have the word “dirty” in its name). Then click **Open (B)**. Visually confirm the model result. In the case of the screenshot below the model predicts with high accuracy (0.943) that the uploaded image shows a dirty sedimentation tank (which is correct)
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.014.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.014.jpeg)
 
  With a validated model, you can build a dashboard in Maximo Monitor that will display the results of live camera feed inspections, as demonstrated in Part One of this demo. You observed how the MVI AI model sends inspection alerts to the Monitor dashboard. You also performed the steps to build a computer vision model.
 
@@ -126,11 +126,11 @@ Edge computing is a form of computing that takes place at or near the physical l
 
 1. Access Maximo Visual Inspection Edge (MVI Edge) by clicking on the **MVI Edge URL(A)** given in the access email you got when requesting access to the demo environment: Also take a note of the MVI Edge login credentials provided in the same email.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.016.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.016.jpeg)
 
 2. The MVI Edge **Dashboard** page opens that displays live inspection results for different devices in this WRA authority.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.017.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.017.jpeg)
 
  From the MVI Edge dashboard, you can easily keep track of your device’s health in real-time by viewing the total number of the corresponding pass or fail inspections.
 
@@ -144,13 +144,13 @@ Edge computing is a form of computing that takes place at or near the physical l
    
 5. **Images** tab of the **Inspection: Sedimentation Tank 2 Inspection** page opens. Click the **Configuration** tab to view this tank’s inspection configurations.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.018.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.018.jpeg)
 
 On the configuration tab, show that any datasets, models, and projects made in the MVI training server can be easily used in the MVI Edge application by simply selecting from the corresponding dropdown menu options (**A, B, C**).
 
 **Important:** For this demo, the project, model, and dataset are pre-selected for you on Sedimentation Tank 2 inspection screen. **Please do not change these pre-set options. Just view!**
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.020.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.020.jpeg)
 
  Using Edge, you can collect or inspect images by selecting the appropriate option in the **Inspection mode** section under the Inspection status section. In **Collecting** mode, any images taken as part of the inspection are simply collected to train an AI model at a later stage. In **Inspecting** mode, these images are inspected by a previously trained AI model to perform inference (detect the image elements using computer vision). Because you want to inspect the tank images, ensure that this mode is set to the **Inspecting** option.
 
@@ -158,7 +158,7 @@ On the configuration tab, show that any datasets, models, and projects made in t
 
 6. Scroll down to the **Rules** section. In the **CLEAN_TANK** row, click on the **gear** icon under the **Settings** column. This is where you can view inspection rules that the AI model will use to categorize the tank’s health to be a Pass or Fail.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.021.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.021.jpeg)
 
 7. The **Rule settings** window appears. This is where the name of the inspection, and rules for a pass or a fail inspection can be configured. On this screen, please **keep the settings to their pre-select values and do not change anything here**.
 
@@ -166,7 +166,7 @@ Simply put, confidence score is a measure of how confident an AI model is about 
 
 8. On the **Rule settings** window screen, scroll down to view the **Alert type** section. In this section, you can configure inspection results to be sent as alert notifications via two external applications, **MQTT (Message Queuing Telemetry Transport) or Twilio**. Once again, **Keep the settings to their pre-select values and do not change anything here**. 🟢
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.023.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.023.jpeg)
 
  Under the **Alert type** options, you can enable Maximo Visual Inspection Edge to send outbound alert messages to external recipients by configuring connections to an MQTT broker and the Twilio messaging service.
 
@@ -174,7 +174,7 @@ Using MQTT protocol, the Edge server integrates with other applications in the M
 
 9. Click **Cancel** to exit out of the **Rule settings** window.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.024.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.024.jpeg)
 
  Once the rule settings are complete, you are now performing batch processing on multiple tank images in a clean and dirty state. After running the inspections, the AI model will perform inference on each image and subsequently trigger inspection results as Pass or Fail, depending on the tank’s condition. Inspections can be initiated by either setting MQTT topic triggers, which will perform inspections by receiving remote triggers, or by setting time-based intervals. Inspection interval settings can be set according to the business requirements; for example, tank inspections could be set to take place every 24 hours (in seconds) etc.
 
@@ -182,17 +182,17 @@ Using MQTT protocol, the Edge server integrates with other applications in the M
 
 10. Scroll up and click on the **Images** tab where the pre-loaded inspection result would be available for viewing.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.026.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.026.jpeg)
 
 11. In the Images tab, inspection results from the images in the input source are displayed. If there are no images on this screen, please click the **Refresh** icon a few times for the images to load.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.027.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.027.jpeg)
 
  All the inference results are displayed on a single screen along with important metadata. If a live feed was coming through, you will see the most recent inspection at the top left image. For convenience, icons on the images serve as a quick way to view inspection results. There is a green check mark for a clean tank and a **red X** for a dirty tank. There may also be a yellow question mark if the model is unsure about the result. A high rate of inconclusive results might indicate that the model’s performance is poor, the rule configuration is incorrect, or the quality of the camera images is compromised.
 
 The exclamation points in the triangle indicate that the inspection result has been sent as alert notifications to Maximo Monitor via **MQTT or SMS via Twilio**, depending on the option(s) you selected in the Rules settings phase. Clicking on each of these images can show further details about the inspection, such as here you can see that the most recent tank inspection failed due to the poor tank condition, and an alert was immediately sent out about the inspection’s result. The prompt detection of the tank’s failing health helps the Water Resource Authority to avoid issues that often arise when a problem remains undetected or is detected too late. 🟢
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.028.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.028.jpeg)
 
 **Important:** At this point in the demo script, you are far enough to pass Maximo Visual Inspection Technical Sales Level 3 Badge.
 
@@ -202,7 +202,7 @@ The exclamation points in the triangle indicate that the inspection result has b
 
 This is an optional part of the demo. Please note, in addition to the MVI training server, you would also need access to an iOS mobile device (iPad or an iPhone) to demo this part because the MVI Mobile application is only available on iOS mobile devices (at the time of writing).
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.030.png)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.030.png)
 
 _Figure 2: Access to the MVI training server and iOS Mobile device is required_
 
@@ -217,7 +217,7 @@ The mobile application can be configured by either a handheld mode or a fixed po
 
 The following part of this demo will demonstrate the core capabilities of MVI Mobile using the pre-trained water sedimentation computer vision model.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.031.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.031.jpeg)
 
 ### Step 1: Integrating MVI Mobile with the MVI Training server
 
@@ -226,17 +226,17 @@ The following part of this demo will demonstrate the core capabilities of MVI Mo
 1. Login to MVI training server (the software where you created the AI model in).
 2. On Welcome to **IBM Maximo Visual Inspection** screen, click on the **hamburger icon (A)** to open the left side panel. On the left side panel click on **Services (B)** menu option to open the dropdown menu. From the Services dropdown menu click **API key (C)**. 
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.032.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.032.jpeg)
 
 3. API Key screens appear with an API key (Application Programming Interface Key) and a QR code. In the next step you will point your iOS mobile device to this QR code for scanning and automatic application integration.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.035.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.035.jpeg)
 
 4. Using your iOS mobile device, click “**Scan QR Code**” option on the Global Settings screen of the MVI Mobile application. The camera screen appears that is ready to scan the QR code. Face your iPhone or iPad camera to the QR code to automatically integrate MVI Mobile application and MVI training server.
 
 > Note: You also have an option to manually type the API Key that is generated on MVI training server.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.036.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.036.jpeg)
 
 5. Once the QR code is successfully scanned, click **Save** on the top right corner of the screen (figure not shown for this step).
        
@@ -249,20 +249,20 @@ The following part of this demo will demonstrate the core capabilities of MVI Mo
 
 1. To create a new inspection, click on the **blue plus sign** on the top right corner of the left panel.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.037.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.037.jpeg)
 
 2. A new screen opens. Enter a name for the inspection in the **Inspection Name** field (e.g., “Detect Clean and Dirty Sedimentation Tanks”) **(A)**.
 3. Select your project by clicking on **Project Select >** and the Project window appears. Select **MVI LEVEL 3 DO NOT DELETE (B)** from the list of projects that appear.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.038.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.038.jpeg)
 
 4. Once you have selected your project, you will be presented with additional configuration settings for the inspection being created. Click on **Model**. The default is to have no model (Collecting Mode Only), but you want to inspect tank images, not just collect only. So, select the pre-built AI model **DO NOT DELETE – OBJECT DETECTION MODEL FOR TANKS** from the presented list.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.039.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.039.jpeg)
 
 5. Now you can set inspection rules and thresholds that will determine when an inspection should be categorized a _Pass_ or _Fail_. For this, click **Set Thresholds**.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.040.png)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.040.png)
 
  On the **Set Thresholds** screen, you can specify whether an inspection is considered a _Pass_ or a _Fail_.
 
@@ -274,31 +274,31 @@ For your model, you have both clean and dirty (tank) labels. For simplicity, let
 
 6. Tap **Advanced** under the **Clean** label.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.041.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.041.jpeg)
 
 7. On the Advanced screen for a clean tank, Enable **No Action** by sliding the switch to the right
 
 **(A)** and then click **Set Thresholds** to go back **(B)**.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.042.jpeg) ![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.043.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.042.jpeg) ![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.043.jpeg)
 
 8. Now click Advanced under the **Dirty** label and set the threshold value to 50% **(A).** Click **Set Thresholds** to go back **(B)**
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.044.png)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.044.png)
 
 9. The threshold values you set will appear as shown on the screenshot below. Once verified, click
 
 **< Model** to go back to the model selection screen.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.045.png)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.045.png)
 
 10. The **Model** window screen appears. Click **< Back** to go back to the **Create New Inspection** screen.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.046.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.046.jpeg)
 
 11. Each inspection in MVI mobile is required to have a dataset assigned for storing the inspection images. To specify the dataset, On the Create New Inspection window screen, click the light grey **Select >** option from the **Data Set** row.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.047.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.047.jpeg)
 
 12. The Data Set window appears. Click **Tank 1 Inspecting (A)** data set (or any other tank number if Tank 1 is not available).
     
@@ -306,11 +306,11 @@ For your model, you have both clean and dirty (tank) labels. For simplicity, let
 
 14. At this point, an inspection is successfully configured in MVI Mobile. Here is what will be displayed when it is done.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.050.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.050.jpeg)
 
 If you ever want to delete an inspection that you have created, simply click **Edit** on the top right of the inspection screen and you’ll be presented with an option to delete the inspection at the bottom left of the small window screen that appears (please don’t try this right now to avoid accidental deletion of the inspection).
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.052.png)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.052.png)
 <br/><br/>
 
 ### Step 3: (Optional) Integrating MVI Mobile with Twilio Account
@@ -323,15 +323,15 @@ If you ever want to delete an inspection that you have created, simply click **E
 
 1. Click on the **blue gear and phone** icon to open the **Configure Device** page.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.053.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.053.jpeg)
 
 2. Configure Device page opens, click **Twilio Settings** to enter the Twilio trial account details noted during the Pre-work : Step 4.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.054.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.054.jpeg)
 
 3. On **Twilio settings** page enter all the required details in this section. Note, that Supervisor number is any phone number where you would want the inspection alerts to be sent during the demo (this is usually your personal or corporate phone number). Once all the information is entered click **Save**. (Remember to delete this information after the demo as described in the demo Appendix B: Demo Cleanup steps).
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.055.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.055.jpeg)
 
 It will be easier to simply copy-paste details from the Twilio account here instead of attempting to type these codes.
 <br/><br/>
@@ -342,7 +342,7 @@ It will be easier to simply copy-paste details from the Twilio account here inst
 
 1. From the main Inspections page, with your inspection selected and displayed on the right side of the screen (as in the screenshot below), click the **Capture** button. This will turn on the camera on your mobile device.
 
-![](_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.057.jpeg)
+![](../_attachments/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.057.jpeg)
 
  Mobile device’s camera screen is now enabled. If a model was not specified within an Inspection, it is in Collect mode - it takes photos and uploads to a dataset in IBM Maximo Visual Inspection to be labelled and then for a model to be trained
 
@@ -353,7 +353,7 @@ When you specify a model within an inspection (as you did in this demo) it is in
 
 The photo will remain on the display on your mobile device, so please press the **back (\<)** button to go back to the camera view. Here are some examples of what you might see after a few inspections.
 
-![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.001.jpeg)
+![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.001.jpeg)
 
  Depending on the accuracy of the model, it has identified clean and dirty tanks in the photo. Since you are taking an image of an image it is possible that the model may struggle to accurately identify tanks or tank’s health in the image. In a real setting this could be resolved with taking an image of the actual object (and not an image of an image) or with more data and training for higher model accuracy. Note that in addition to the bounding boxes superimposed on the photo itself, the bottom of the screen shows the confidence level associated with each inferred object.
 
@@ -364,7 +364,7 @@ You have now performed a successful inspection using the combined power of IBM M
 4. You can click **“Cancel”** at any point to go back to the main **Inspections** screen.
 5. If you followed the steps for Twilio integration and entered a supervisor number, then you may have received SMS alerts on the number you entered in the Twilio settings section.
 
-![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.002.png)
+![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.002.png)
 <br/><br/>
 
 ### Step 5: Exploring the MVI Mobile Dashboard
@@ -373,18 +373,18 @@ In the previous section you defined the rules that determine whether a specific 
 
 1. From the **Inspections** screen, click on **Dashboard**, the second option at the bottom of the screen.
 
-![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.003.jpeg)
+![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.003.jpeg)
 
 2. Here you need to first select the project that you want to view. Click the **ellipses** icon (blue circle icon with the 3 dots) and then click **Select Project**.
 
-![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.004.jpeg)
+![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.004.jpeg)
 
 3. In the dashboard configuration screen, leave **IMAGES TO DISPLAY** scroll bar as-is.
 4. For **SELECT A PROJECT section**, choose **MVI LEVEL 3 DO NOT DELETE**.
 
 5. Click on **Data set Select (A)\>** and then choose **Tank 1 inspecting** (or the data set you selected earlier when creating the MVI Mobile inspection).
 
-![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.006.jpeg)
+![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.006.jpeg)
 
 6. This will bring you to the main dashboard screen, and here you will see statistics associated with the photos taken during the inspections. It includes all photos taken during inspection. These statistics include:
 
@@ -395,7 +395,7 @@ In the previous section you defined the rules that determine whether a specific 
 
 You can see pass and fail rate for the inspections that were performed.
 
-![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.008.jpeg)
+![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.008.jpeg)
 
 **Congratulations!** You have just used IBM Maximo Visual Inspection Mobile to identify dirty water sedimentation tanks!
 
@@ -413,11 +413,11 @@ Once the demo is successfully completed you are required to perform a few clean 
 
 1. On MVI’s main **Data sets** page, select your Original and Augmented datasets (**A**) and click the **trashcan** icon to delete both these datasets (**B**).
 
-![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.043.jpeg)
+![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.043.jpeg)
 
 2. **Delete data set** window opens. Click **Delete** to confirm datasets deletion.
 
-![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.044.jpeg)
+![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.044.jpeg)
 
 <br/>
 
@@ -427,12 +427,12 @@ Like the Edge environment you may need to delete Twilio account details from you
 
 1. Open MVI Mobile application and click on the **gear and phone** icon next to your inspection title (Sedimentation Tank iPad)
 
-![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.045.jpeg)
+![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.045.jpeg)
 
 2. Configuration Device page appears. Click on Twilio Settings to view your account details.
 
-![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.046.jpeg)
+![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.046.jpeg)
 
 3. Disable the Twilio Notifications toggle and delete all your account information on this page. Once deleted click **Save.**
 
-![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.047.jpeg)
+![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.047.jpeg)
