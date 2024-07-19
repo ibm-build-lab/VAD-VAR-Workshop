@@ -9,7 +9,7 @@ updated: 2024-07-16
 
 Para completar este laboratorio es necesario tener acceso a la última versión del entorno de clúster de demostración de Maximo Application Suite (MAS) en todo el mundo. Para hacer una reserva para el entorno de demostración de MAS, realice los siguientes pasos,
 
-1.  Haga clic en este [**formulario del lunes**](https://forms.monday.com/forms/9753d4c0fbbf082f119601a5d6b01f00?r=use1) para solicitar acceso al entorno de demostración de MAS.
+1.  Haga clic en este [**formulario del Monday**](https://forms.monday.com/forms/9753d4c0fbbf082f119601a5d6b01f00?r=use1) para solicitar acceso al entorno de demostración de MAS.
 2.  En este formulario, introduzca su **nombre** y dirección **de correo electrónico** y haga clic en **Enviar**.
 
 ![](../_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.010.png)
