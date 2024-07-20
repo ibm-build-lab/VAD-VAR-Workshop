@@ -408,7 +408,7 @@ Copy the login command and issue it in the terminal window.
     ```
 7. you can always retrieve the userid and password of the MAS **superuser** from the **masdemo-credentials-superuser** secret in the **mas-masdemo-core** namespace
 
-8. After the installation completes successfully, you may want to log into MAS administration using the MAS superuser credentials. You can find the urls to use by navigating in the OpenShift cluster console to Networking -> Routes of the mas-masdemo-core namespace.
+8. After the installation completes successfully, you may want to log into **MAS administration** using the **MAS superuser** credentials. You can find the urls to use by navigating in the OpenShift cluster console to **Networking -> Routes** of the **mas-masdemo-core** namespace.
 
     ![](./images/sno/mas-urls.png)
 
