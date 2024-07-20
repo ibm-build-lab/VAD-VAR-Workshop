@@ -152,5 +152,56 @@ The new VM should now show in your pool under the bastion and the router. **Sele
 
 ## Installing OCP Cluster
 
-Switch back to the **Redhat Window** where you have created new cluster
+1. Switch back to the **Redhat Window** where you have created new cluster. If you are on the host page, you should see a host appeared. 
+
+    ![](./images/sno/host-ready.png)
+
+2. Change its hostname to **ocpgym**. The line should look like this:
+
+    ![](./images/sno/host-ready-name.png)
+
+3. Click **Next**. In the Storage screen click **Next**. In the Networking screen don’t change anything and click **Next**. Some times it takes a bit of time to get to a **Ready** state, due to NTP to be unreachable. Don’t worry, be patient and wait for the state to become **ready** and then click **Next**.
+
+4. In the **Review and create** all the validations should be good and you can click the **Install Cluster** button.
+
+    ![](./images/sno/host-ready-name.png)
+
+5. The next screen will allow you to follow the cluster installation till its end. It will take around 45 min to complete.
+
+    ![](./images/sno/create-cluster-final.png)
+
+    You can follow the details of the progress by using the **View Cluster Events** button at the bottom of the page. You can move to next step while installtion is in progress. 
+
+## Router Configuration
+
+While we are waiting for the SNO to be installed, let’s configure the router. 
+
+1. Go back to the vCenter panel and click on the **ocpgym** VM, On the right panel that will be shown, note the **IP address** of the VM, In this case the IP address is 192.168.252.104.
+
+    ![](./images/sno/router-ocpgym-ip.png)
+
+2. Then **click** on the **router VM** in the left panel. On the **right panel** that will be shown, click on the **VIEW ALL 4 IP ADDRESSES** and pick the one from the
+**192.168.252.x subnet**. In this case it’s **192.168.252.1**.
+
+    ![](./images/sno/router-ip.png)
+3. Open a new **browser window** and navigate to the address **192.168.252.1**. You should see the pfsense login panel. Use **admin** as username and the **vCenter password** you used before to login to vCenter (**which is in the Reservation page**).
+
+    ![](./images/sno/pfsense.png)
+
+4. At the top, use the **Services** pull down and chose **DNS Forwarder**
+
+    ![](./images/sno/pfsense-dns.png)
+
+5. In the page that will be shown, there are a few configurations to make at the bottom of the page using the **ocpgym** IP address.
+    - Add **address=/apps.ocpgym.gym.lan/192.168.252.104** to the **Custom options** and Save.
+    - Add two **Host Overrides** using the Add button:
+      
+      **Host:** api, **Domain:** ocpgym.gym.lan, **IP Address:** 192.168.252.104
+      **Host:** api-int, **Domain:** ocpgym.gym.lan, **IP Address:** 192.168.252.104
+
+    ![](./images/sno/pfsense-dns-host.png)
+
+      Your page sould look like this in the end:
+
+    ![](./images/sno/pfsense-dns-entry.png)
 
