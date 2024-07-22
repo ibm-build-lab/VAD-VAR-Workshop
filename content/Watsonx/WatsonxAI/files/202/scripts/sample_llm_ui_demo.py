@@ -48,7 +48,7 @@ DISPLAY_MODEL_FLAN = "flan"
 
 # Strings hardcoded in these variables are expected by the WML API
 FLAN_UL2 = 'google/flan-ul2'
-GRANITE_13B_CHAT = 'ibm/granite-13b-chat-v1'
+GRANITE_13B_CHAT = 'ibm/granite-13b-chat-v2'
 LLAMA_2_70B_CHAT = 'meta-llama/llama-2-70b-chat'
 
 ***REMOVED***
