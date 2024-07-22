@@ -146,7 +146,7 @@ def get_prompt(sample_text, task_type):
 ***REMOVED***
 
 ***REMOVED***
-    model_type = ModelTypes.MPT_7B_INSTRUCT2
+***REMOVED***
     max_tokens = 300
     min_tokens = 30
     decoding = DecodingMethods.GREEDY
