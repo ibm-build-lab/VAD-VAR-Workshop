@@ -4,7 +4,7 @@ updated: 2024-07-18
 toc: true
 ---
 
-# Taller de ventas técnicas de Maximo
+# Instalación de SNO MAS
 
 Si es un Business Partner de IBM o un empleado de IBM, se trata de una guía skinny pero completa para crear un entorno MAS Manage en IBM TechZone.
 
