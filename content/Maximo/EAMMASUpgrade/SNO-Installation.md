@@ -4,7 +4,7 @@ updated: 2024-07-18
 toc: true
 ---
 
-# Maximo Technical Sales Workshop
+# SNO MAS Installation
 
 If you are an IBM Business Partner or an IBMer, this is a skinny but complete guide to create a MAS Manage environment in IBM TechZone.
 
