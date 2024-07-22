@@ -63,7 +63,7 @@ Server
 
 > **Note:** You can register, if you have not registered yet. 
 
-    ![](./images/sno/bastion-cluster.png)
+![](./images/sno/bastion-cluster.png)
 
 3. In the following screen, click on the **Datacenter** tab, and click on the blue **Create cluster** button. 
 
@@ -76,7 +76,7 @@ Server
     **select** “Install single node OpenShift (SNO)”
     **Hosts' network configuration:** DHCP Only
 
-    ![](./images/sno/cluster-detail.png)
+  ![](./images/sno/cluster-detail.png)
 
 4. Click the **Next** button. Don’t change anything in the next screen and click again **Next**. 
 
@@ -411,7 +411,7 @@ Copy the login command and issue it in the terminal window.
     ```bash
         ./masinst.sh
     ```
-7. you can always retrieve the userid and password of the MAS **superuser** from the **masdemo-credentials-superuser** secret in the **mas-masdemo-core** namespace
+7. You can always retrieve the userid and password of the MAS **superuser** from the **masdemo-credentials-superuser** secret in the **mas-masdemo-core** namespace
 
 8. After the installation completes successfully, you may want to log into **MAS administration** using the **MAS superuser** credentials. You can find the urls to use by navigating in the OpenShift cluster console to **Networking -> Routes** of the **mas-masdemo-core** namespace.
 
@@ -429,4 +429,4 @@ You should see the list of users that have been inherited by the Manage demo dat
 
 **Click** on the **wilson** user. **Edit** this user by using the **pencil** icon at the **top right**. Open the **Login details** section and click **Replace forgotten password**. **Click** on the **Custom** radio button and set a password. Save the changes and close the information dialog that follows.
 
-Wait for the **synchronization** to finish. **Log out** and l**ogin as Wilson**. Accept any self-signed certificate. In the **MAS Navigator** you should see the **Manage** tile and you should be able to launch into it. Hover your mouse on it to show the Launch link.
+Wait for the **synchronization** to finish. **Log out** and **login as Wilson**. Accept any self-signed certificate. In the **MAS Navigator** you should see the **Manage** tile and you should be able to launch into it. Hover your mouse on it to show the Launch link.
