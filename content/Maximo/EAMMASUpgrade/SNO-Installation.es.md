@@ -1,6 +1,6 @@
 ---
-title: SNO MAS Installation
-updated: 2024-07-18T00:00:00.000Z
+title: Instalación de SNO MAS 
+updated: 2024-07-18
 toc: true
 ---
 
@@ -27,13 +27,18 @@ En el nivel superior, se describen los pasos siguientes en esta guía:
 
 1.  Vaya a [https://techzone.ibm.com/collection/ocp-gymnasium/environments ](https://techzone.ibm.com/collection/ocp-gymnasium/environments)e inicie sesión utilizando su IBMId
 
-    Verá el siguiente mosaico, haga clic en **Reserva** botón
+    Verá el siguiente panel, haga clic en **Reserva** botón
 
     ![](./images/sno/environment.png)
 
 2.  En la página Crear una página de reserva y pulse **Presentar** botón
 
-    **Nombre:** Taller MAS SNO **Objeto:** Práctica/Autoeducación **Descripción del propósito:** Educarme a mí mismo como instalar SNO y MAS **Geografía preferida:** AMÉRICA **Tamaño del almacén de datos de VMware:** 3 TB **Acceso VPN:** Habilitar
+    **Nombre:** Taller MAS SNO
+    **Objeto:** Práctica/Autoeducación 
+    **Descripción del propósito:** Educarme a mí mismo como instalar SNO y MAS 
+    **Geografía preferida:** AMÉRICA 
+    **Tamaño del almacén de datos de VMware:** 3 TB 
+    **Acceso VPN:** Habilitar
 
 También debe haber recibido un correo electrónico que **"La solicitud de entorno/acceso es de suministro"**
 
@@ -41,7 +46,7 @@ Cuando el entorno esté listo, recibirá otro correo electrónico con el asunto 
 
 3.  El entorno que se está creando contiene un sistema Bastion (basado en RHEL) y un direccionador (basado en pfSense). Cuando esté disponible, puede VPN en ella y acceder directamente a los equipos que se ejecutan en ella.
 
-Configurar la VPN es muy sencillo. Cuando el entorno estará listo, puedes hacer clic en el azulejo y verás una página con mucha información útil. En la parte inferior de esa página, encontrará el botón para descargar la configuración VPN de Wireguard desde la página de reserva.
+Configurar la VPN es muy sencillo. Cuando el entorno estará listo, puedes hacer clic en el panel y verás una página con mucha información útil. En la parte inferior de esa página, encontrará el botón para descargar la configuración VPN de Wireguard desde la página de reserva.
 
 Descargue la configuración, instale Wireguard ( [https://www.wireguard.com/install/ ](https://www.wireguard.com/install/)) si no lo tiene ya e importe la configuración. Puedes activar la VPN según sea necesario y acceder también al clúster de OpenShift que vamos a desplegar.
 
@@ -51,7 +56,7 @@ Descargue la configuración, instale Wireguard ( [https://www.wireguard.com/inst
 
     ![](./images/sno/bastion.png)
 
-Haga clic en la opción Escritorio remoto para abrir el escritorio remoto de Bastición. El bastión ejecuta RHEL, por lo tanto, puede utilizar el **Actividades** en la parte superior izquierda para abrir un mosaico y haga clic en el icono de Firefox.
+Haga clic en la opción Escritorio remoto para abrir el escritorio remoto de Bastición. El bastión ejecuta RHEL, por lo tanto, puede utilizar el **Actividades** en la parte superior izquierda para abrir un panel y haga clic en el icono de Firefox.
 
 2.  Inicie sesión en Red Hat Console para OpenShift ( [https://console.redhat.com/openshift ](https://console.redhat.com/openshift)). Usted debe ver un azul **Crear clúster**. Haga clic en él.
 
@@ -63,7 +68,12 @@ Haga clic en la opción Escritorio remoto para abrir el escritorio remoto de Bas
 
     ![](./images/sno/bastion-cluster-create.png)
 
-Rellene el formulario que aparece de esta manera: **Nombre de clúster:** ocpgym **Dominio base:** gym.lan **Versión de OpenShift:** OCP 4.12.x **seleccionar** "Instalar nodo único OpenShift (SNO)" **Configuración de red de hosts:** Sólo DHCP
+Rellene el formulario que aparece de esta manera: 
+**Nombre de clúster:** ocpgym 
+**Dominio base:** gym.lan 
+**Versión de OpenShift:** OCP 4.12.x 
+**seleccionar** "Instalar nodo único OpenShift (SNO)" 
+**Configuración de red de hosts:** Sólo DHCP
 
 ![](./images/sno/cluster-detail.png)
 
@@ -94,13 +104,13 @@ Cierre el diálogo. Volveremos a esta pantalla más tarde, pero ahora queremos s
 
 Haga clic en ese botón. Puede encontrar la credencial para vCenter en la parte inferior de la página de reserva de Techzone.
 
-2.  Una vez que inicie sesión, en la parte superior izquierda de la pantalla debe ver un símbolo de un disco de tambor. **Pulse en** en él. Abra el menú desplegable y seleccione el almacenamiento con el nombre que empieza por " **gimnasio-** ". En la parte derecha, seleccione **Archivos**.
+2.  Una vez que inicie sesión, en la parte superior izquierda de la pantalla debe ver un símbolo de un disco de tambor. **Pulse el botón**. Abra el menú desplegable y seleccione el almacenamiento con el nombre que empieza por " **gimnasio-** ". En la parte derecha, seleccione **Archivos**.
 
     ![](./images/sno/upload-iso.png)
 
-3.  Cree una carpeta iso denominada "sno" bajo el elemento de almacenamiento principal utilizando la **NUEVA CARPETA** opción mostrada en la imagen anterior. **Pulse en** sobre el recién creado **sno** y cargar en ella la ISO que ha descargado de Red Hat utilizando el **CARGAR ARCHIVOS**. Puede comprobar el progreso de carga desde la ventana de estado.
+3.  Cree una carpeta iso denominada "sno" bajo el elemento de almacenamiento principal utilizando la **NUEVA CARPETA** opción mostrada en la imagen anterior. **Pulse el botón** sobre el recién creado **sno** y cargar en ella la ISO que ha descargado de Red Hat utilizando el **CARGAR ARCHIVOS**. Puede comprobar el progreso de carga desde la ventana de estado.
 
-4.  Cuando la ISO ha subido, creamos una nueva VM que se convertirá en el Nodo Único OpenShift. **Pulse en** en el icono de los servidores en la parte superior izquierda de la pantalla y abrir todas las secciones
+4.  Cuando la ISO ha subido, creamos una nueva VM que se convertirá en el Nodo Único OpenShift. **Pulse el botón** en el icono de los servidores en la parte superior izquierda de la pantalla y abrir todas las secciones
 
     ![](./images/sno/vm-navigate.png)
 
@@ -112,21 +122,21 @@ Haga clic en ese botón. Puede encontrar la credencial para vCenter en la parte 
 
     ![](./images/sno/new-vm-create.png)
 
-7.  Establecer la **nombre de máquina virtual** como **ocpgym** y seleccione la carpeta la que comienza con el gimnasio-...
+7.  Establecer el **nombre de máquina virtual** como **ocpgym** y seleccione la carpeta la que comienza con el gimnasio-...
 
     ![](./images/sno/new-vm-create-name.png)
 
-8.  Pulse en **Siguiente**. Seleccione el recurso de cálculo que empieza por **gym-...**
+8.  Pulse el butón que díce **Siguiente**. Seleccione el recurso de cálculo que empieza por **gym-...**
 
     ![](./images/sno/new-vm-create-compute.png)
 
-9.  Pulse en **Siguiente**. Seleccione el almacenamiento que empieza por **gym-...**
+9.  Pulse el botón **Siguiente**. Seleccione el almacenamiento que empieza por **gym-...**
 
     ![](./images/sno/new-vm-create-storage.png)
 
-10. Pulse en **Siguiente**. Seleccionar compatibilidad **ESXi 7.0 U2 y posterior**.
+10. Pulse el botón **Siguiente**. Seleccionar compatibilidad **ESXi 7.0 U2 y posterior**.
 
-11. Pulse en **Siguiente**. Seleccionar familia de sistema operativo huésped **Linux** y **Versión RHEL 8 64 bits**
+11. Pulse el botón **Siguiente**. Seleccionar familia de sistema operativo huésped **Linux** y **Versión RHEL 8 64 bits**
 
 12. En el siguiente conjunto de paneles **CPU a 16** , **memoria a 64** , **disco primario 300 GB** , utilice el **AÑADIR NUEVO DISPOSITIVO** para añadir un disco duro secundario de **500 GB** , establezca la **Nueva unidad de CD/DVD a "Archivo ISO del almacén de datos"** y **seleccionar** el ISO que ha subido antes.
 
@@ -134,13 +144,13 @@ Asegúrese de que **seleccionar** el **Conectar** checkmark. El resultado final 
 
 ![](./images/sno/new-vm-create-hardware.png)
 
-13. En este punto, haga clic en **Opciones de VM** y abrir el **Avanzado**. Buscar el **Parámetros de configuración** y haga clic en **CONFIGURACIÓN DE EDIT**. En el panel siguiente, haga clic en **AÑADIR PARÁMETROS DE CONFIGURACIÓN**. Escriba el nombre **disk.EnableUUID** y establezca el valor en **VERDADERO**
+13. En este punto, haga clic en **Opciones de VM** y abrir el **Avanzado**. Buscar el **Parámetros de configuración** y haga clic en **CONFIGURACIÓN DE EDIT**. En el panel siguiente, haga clic en **AÑADIR PARÁMETROS DE CONFIGURACIÓN**. Escriba el nombre **disk. EnableUUID** y establezca el valor en **VERDADERO**
 
     ![](./images/sno/new-vm-create-hardware-parameter.png)
 
-Pulse en **OK** sobre la **Parámetro de configuración**.
+Pulse el botón **OK** sobre el **Parámetro de configuración**.
 
-14. Pulse en **Siguiente**. Revise una vez más todo y haga clic en **Acabado**.
+14. Pulse el botón **Siguiente**. Revise una vez más todo y haga clic en **Acabado**.
 
 La nueva VM ahora debe mostrar en su piscina bajo el bastión y el router. **Seleccione** pulsando en él e iniciarlo ya sea escribiendo **crtl + alt + b** o bien **clic derecho** y utilizando el **Alimentación-> Power ON** elemento de menú.
 
@@ -154,13 +164,13 @@ La nueva VM ahora debe mostrar en su piscina bajo el bastión y el router. **Sel
 
     ![](./images/sno/host-ready-name.png)
 
-3.  Pulse en **Siguiente**. En la pantalla de almacenamiento, pulse **Siguiente**. En la pantalla de Networking no cambie nada y haga clic en **Siguiente**. Algunas veces se necesita un poco de tiempo para llegar a un **Listo** estado, debido a que NTP es inalcanzable. No se preocupe, tenga paciencia y espere a que el estado se convierta en **ready** y haga clic en **Siguiente**.
+3.  Pulse el botón **Siguiente**. En la pantalla de almacenamiento, pulse **Siguiente**. En la pantalla de Networking no cambie nada y haga clic en **Siguiente**. Algunas veces se necesita un poco de tiempo para llegar a un **Listo** estado, debido a que NTP es inalcanzable. No se preocupe, tenga paciencia y espere a que el estado se convierta en **ready** y haga clic en **Siguiente**.
 
 4.  En el **Revisar y crear** todas las validaciones deben ser buenas y puede hacer clic en **Instalar clúster**.
 
     ![](./images/sno/host-ready-name.png)
 
-5.  La siguiente pantalla le permitirá seguir la instalación del clúster hasta su final. Tardará alrededor de 45 min en completarse.
+5.  La siguiente pantalla le permitirá seguir la instalación del clúster hasta su final. Tardará alrededor de 45 minutos en completarse.
 
     ![](./images/sno/create-cluster-final.png)
 
@@ -216,13 +226,13 @@ Esperemos que en este momento el clúster esté instalado. Vuelva a la página d
 
     ![](./images/sno/create-cluster-complete.png)
 
-2.  Usted puede **haga clic en** el **URL de control web** para acceder al nodo único OpenShift. Utilice el **Nombre** y **Contraseña** se muestra en la página de cluter para iniciar sesión. Revisa a tu alrededor para ver si todo está en forma.
+2.  Usted puede **hacer clic en** el **URL de control web** para acceder al nodo único OpenShift. Utilice el **Nombre** y **Contraseña** se muestra en la página de cluter para iniciar sesión. Revisa a tu alrededor para ver si todo está en forma.
 
 3.  El paso siguiente es proporcionar el clúster con una clase de almacenamiento y un suministrador relacionado. Ir a la **OperatorHub** (menú de la izquierda bajo Operadores) y **Búsqueda** para **LVM**.
 
     ![](./images/sno/lvm.png)
 
-4.  **Pulse en** sobre la **Teja LVM** e instale el operador utilizando **parámetros predeterminados**. Cuando el operador esté listo para su uso, haga clic en **Crear LVMCluster** botón
+4.  **Pulse el botón** sobre la **Teja LVM** e instale el operador utilizando **parámetros predeterminados**. Cuando el operador esté listo para su uso, haga clic en **Crear LVMCluster** botón
 
     ![](./images/sno/lvm-install.png)
 
@@ -300,11 +310,11 @@ Esperemos que en este momento el clúster esté instalado. Vuelva a la página d
         oc edit configs.imageregistry.operator.openshift.io/cluster
     ```
 
-9.  Desafortunadamente el operador del registro tiene un error y ha creado un PVC equivocado, por lo tanto usted encontrará que el PVC está pendiente y no está atado:
+9.  Desafortunadamente el operador del registro tiene un error y ha creado un PVC equivocado, por lo tanto usted encontrará que el PVC está pendiente y no está destinado:
 
     ![](./images/sno/pvc-pending.png)
 
-    Para resolver este problema, pulse en el **-registro-imagen-almacenamiento** PVC, haga clic en el **Pestaña YAML** , **descargar** el YAML y **edit** a:
+    Para resolver este problema, pulse en el **registro-imagen-almacenamiento** PVC, haga clic en el **Pestaña YAML** , **descargar** el YAML y **edit** a:
 
     *   Eliminar los campos de metadatos **uid, resourceVersion, creationTimestamp**
     *   Eliminar el **manageFields** Sección
@@ -315,7 +325,7 @@ Esperemos que en este momento el clúster esté instalado. Vuelva a la página d
 
     ![](./images/sno/pvc-yaml.png)
 
-    Volver a la página **PersistentVolumeClaim** lista y suprimir el **-registro-imagen-almacenamiento** PVC utilizando el **Menú desplegable "**.
+    Volver a la página **PersistentVolumeClaim** lista y suprimir el **registro-imagen-almacenamiento** PVC utilizando el **Menú desplegable**.
 
     ![](./images/sno/pvc-delete.png)
 
@@ -327,7 +337,7 @@ Esperemos que en este momento el clúster esté instalado. Vuelva a la página d
 
     ![](./images/sno/pvc-bound-yaml.png)
 
-    **Pulse en** el **Crear** en la parte inferior. El nuevo PVC debe entrar inmediatamente en el **amarre** estado.
+    **Pulse el botón** el **Crear** en la parte inferior. El nuevo PVC debe entrar inmediatamente en el **atado** estado.
 
     ![](./images/sno/pvc-bound.png)
 
@@ -408,7 +418,7 @@ Copie el mandato de inicio de sesión y emita el mandato en la ventana de termin
         ./masinst.sh
     ```
 
-7.  siempre puede recuperar el ID de usuario y la contraseña del MAS **superusuario** de la **masdemo-credentials-superusuario** secreto en el **mas-masdemo-core** espacio de nombres
+7.  Siempre puede recuperar el ID de usuario y la contraseña del MAS **superusuario** de la **masdemo-credentials-superusuario** secreto en el **mas-masdemo-core** espacio de nombres
 
 8.  Después de que la instalación se haya completado correctamente, es posible que desee iniciar sesión en **Administración del MAS** utilizando el **Superusuario del MAS** credenciales. Puede encontrar los url a utilizar navegando en la consola del clúster de OpenShift a **Red-> Rutas** de la **mas-masdemo-core**.
 
@@ -418,13 +428,13 @@ En primer lugar, haga clic en el **masdemo-api** url (el de la columna Ubicació
 
 A continuación, vuelva a la interfaz de usuario del clúster y pulse el **masdemo-admin** url. Inicie sesión en MAS.
 
-Una vez en MAS, pulse en el **Usuarios** azulejo.
+Una vez en MAS, pulse en el panel **Usuarios**.
 
 Debe ver la lista de usuarios que han heredado los datos de la demostración de gestión. **Filtro** por **Wilson**.
 
 ![](./images/sno/mas-user.png)
 
-**Pulse en** sobre la **wilson** usuario. **Editar** este usuario mediante la utilización de **lápiz** icono en el **superior derecho**. Abra el **Detalles de conexión** y pulse **Sustituir la contraseña olvidada**. **Pulse en** sobre la **Personalizado** y establecer una contraseña. Guarde los cambios y cierre el diálogo de información que se indica a continuación.
+**Pulse el botón** sobre la **wilson** usuario. **Editar** este usuario mediante la utilización de **lápiz** icono en el **superior derecho**. Abra el **Detalles de conexión** y pulse **Sustituir la contraseña olvidada**. **Pulse el botón** sobre la **Personalizado** y establecer una contraseña. Guarde los cambios y cierre el diálogo de información que se indica a continuación.
 
-Espere a que **sincronización** para terminar. **Cerrar sesión** y l **ogin como Wilson**. Aceptar cualquier certificado autofirmado. En el **MAS Navigator** usted debe ver el **Gestionar** azulejo y usted debe ser capaz de lanzar en él. Pase el ratón sobre él para mostrar el enlace de lanzamiento.
+Espere a que la **sincronización** termine. **Cerrar sesión** y **Iniciar sesión como Wilson**. Aceptar cualquier certificado autofirmado. En el **MAS Navigator** usted debe ver el panel **Gestionar** y usted debe ser capaz de lanzar en él. Pase el ratón(mouse) sobre él para mostrar el enlace de lanzamiento.
 
