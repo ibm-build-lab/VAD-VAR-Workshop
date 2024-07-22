@@ -144,7 +144,7 @@ Asegúrese de que **seleccionar** el **Conectar** checkmark. El resultado final 
 
 ![](./images/sno/new-vm-create-hardware.png)
 
-13. En este punto, haga clic en **Opciones de VM** y abrir el **Avanzado**. Buscar el **Parámetros de configuración** y haga clic en **CONFIGURACIÓN DE EDIT**. En el panel siguiente, haga clic en **AÑADIR PARÁMETROS DE CONFIGURACIÓN**. Escriba el nombre **disk. EnableUUID** y establezca el valor en **VERDADERO**
+13. En este punto, haga clic en **Opciones de VM** y abrir el **Avanzado**. Buscar el **Parámetros de configuración** y haga clic en **CONFIGURACIÓN DE EDIT**. En el panel siguiente, haga clic en **AÑADIR PARÁMETROS DE CONFIGURACIÓN**. Escriba el nombre **disk.EnableUUID** y establezca el valor en **VERDADERO**
 
     ![](./images/sno/new-vm-create-hardware-parameter.png)
 
