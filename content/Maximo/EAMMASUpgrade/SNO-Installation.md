@@ -97,7 +97,7 @@ Server
 
 Close the dialog. We’ll come back to this screen later, but now we want to upload the ISO into the TechZone vCenter.
 
-## Create a Virtual Machine in vShpare
+## Create a Virtual Machine in vSphere
 
 1. In the Firefox window, notice that there is a predefined button to access the vCenter.
 
@@ -112,12 +112,15 @@ Close the dialog. We’ll come back to this screen later, but now we want to upl
 3. Create an iso folder called “sno” under the main storage element using the **NEW FOLDER** option shown in the previous picture. **Click** on the newly created **sno** folder and upload in it the ISO you downloaded from Red Hat using the **UPLOAD FILES** option. You can check the upload progress from the status window.
 
 4. When the ISO has uploaded, we create a new VM that will become the Single Node OpenShift. **Click** on the servers icon at the top left of the screen and open all the sections
+
     ![](./images/sno/vm-navigate.png)
 
-5. **Right click** on the resource pool highlighted and chose **New Virtual Machine…**
+5. **Right click** on the resource pool highlighted and chose **New Virtual Machine**
+
     ![](./images/sno/new-vm.png)
 
 6. In the dialog that will be shown, select **Create a new virtual machine** and click **Next**
+
     ![](./images/sno/new-vm-create.png)
 
 7. Set the **virtual machine name** as **ocpgym** and select the folder the one starting with gym-...
@@ -125,9 +128,11 @@ Close the dialog. We’ll come back to this screen later, but now we want to upl
     ![](./images/sno/new-vm-create-name.png)
 
 8. Click **Next**. Select the compute resource starting with **gym-...**
+
     ![](./images/sno/new-vm-create-compute.png)
 
 9. Click **Next**. Select the storage starting with **gym-...**
+
     ![](./images/sno/new-vm-create-storage.png)
 
 10. Click **Next**. Select compatibility **ESXi 7.0 U2 and later**.
@@ -180,10 +185,10 @@ While we are waiting for the SNO to be installed, let’s configure the router.
 
     ![](./images/sno/router-ocpgym-ip.png)
 
-2. Then **click** on the **router VM** in the left panel. On the **right panel** that will be shown, click on the **VIEW ALL 4 IP ADDRESSES** and pick the one from the
-**192.168.252.x subnet**. In this case it’s **192.168.252.1**.
+2. Then **click** on the **router VM** in the left panel. On the **right panel** that will be shown, click on the **VIEW ALL 4 IP ADDRESSES** and pick the one from the **192.168.252.x subnet**. In this case it’s **192.168.252.1**.
 
     ![](./images/sno/router-ip.png)
+
 3. Open a new **browser window** and navigate to the address **192.168.252.1**. You should see the pfsense login panel. Use **admin** as username and the **vCenter password** you used before to login to vCenter (**which is in the Reservation page**).
 
     ![](./images/sno/pfsense.png)
@@ -193,10 +198,12 @@ While we are waiting for the SNO to be installed, let’s configure the router.
     ![](./images/sno/pfsense-dns.png)
 
 5. In the page that will be shown, there are a few configurations to make at the bottom of the page using the **ocpgym** IP address.
+
     - Add **address=/apps.ocpgym.gym.lan/192.168.252.104** to the **Custom options** and Save.
     - Add two **Host Overrides** using the Add button:
       
       **Host:** api, **Domain:** ocpgym.gym.lan, **IP Address:** 192.168.252.104
+
       **Host:** api-int, **Domain:** ocpgym.gym.lan, **IP Address:** 192.168.252.104
 
     ![](./images/sno/pfsense-dns-host.png)
@@ -212,7 +219,6 @@ While we are waiting for the SNO to be installed, let’s configure the router.
     You can log out from **pfSense** using the exit door icon at the top left of the page.
 
 Hopefully at this time the cluster is installed. Go back to the Red Hat Cluster installation page and you should see a page including this:
-
 
 ## Configure OCP Cluster
 
@@ -298,7 +304,7 @@ Hopefully at this time the cluster is installed. Go back to the Red Hat Cluster 
     ```bash
         oc edit configs.imageregistry.operator.openshift.io/cluster
     ```
-    
+
 9. Unfortunately the registry operator has a bug and has created a wrong PVC, therefore you will find it that that PVC is pending and not bound:
 
     ![](./images/sno/pvc-pending.png)
@@ -339,7 +345,6 @@ Before starting this step, make sure you have two things:
 - The Entitled Registry (ER) key. With this key you must have access to the Maximo Application Suite and CloudPak for Data images. You can get it by logging into - **[My IBM](https://myibm.ibm.com/dashboard/)** and click on Container Software & Entitlement key
 
 - A MAS license file. This file is named license.dat and you can get it from the License Key Center (First link in the list at this url: **[https://www.ibm.com/support/pages/ibm-support-licensing-start-page](https://www.ibm.com/support/pages/ibm-support-licensing-start-page)**. You can also navigate to **[ https://techzone.ibm.com/collection/mas-manage-sno/resources]( https://techzone.ibm.com/collection/mas-manage-sno/resources)** and click on **Getting Started Guide - Business Partners** for direction to get license file. 
-
 
 1. Open a terminal using the **Activities** button at the top left of the Bastion desktop. Issue the following commands to get a few files from GitHub
 
