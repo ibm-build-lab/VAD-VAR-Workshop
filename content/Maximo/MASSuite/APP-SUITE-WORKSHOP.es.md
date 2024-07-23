@@ -36,13 +36,13 @@ Una Autoridad de Recursos Hídricos (WRA, por sus siglas en inglés) necesita ge
 
 2.  El **IBM Maximo Application Suite** se abre la página de inicio de sesión en un navegador web Especifique la gestión de Maximo **Nombre** y **Contraseña** y pulse **Iniciar sesión**.
 
-    ![](../_attachments/mas/login.png)
+    ![](../images/mas/login.png)
 
     <br />
 
     Una vez aceptadas las credenciales de inicio de sesión, la aplicación Maximo **Navegador de suites** abre la ventana. Se muestran varias aplicaciones que componen los productos MAS. En esta demostración, el foco estará en Maximo Monitor, Manage, Health y Predict.
 
-    ![](../_attachments/mas/suite-navigator.png)
+    ![](../images/mas/suite-navigator.png)
 
 ### Paso 2: Revisar alertas de alta gravedad (anomalías) en Monitor
 
@@ -52,27 +52,27 @@ Un Gestor de Operaciones para esta Autoridad de Recursos Hídricos (WRA) necesit
 
 3.  Desde Maximo **Navegador de suites** , pulse el botón **Monitor** mosaico de aplicación.
 
-    ![](../_attachments/mas/suite-nav-monitor.png)
+    ![](../images/mas/suite-nav-monitor.png)
 
 4.  Haga clic en **Monitor** azulejo en el **Bienvenido** que se abre.
 
-    ![](../_attachments/mas/monitor-root.png)
+    ![](../images/mas/monitor-root.png)
 
 5.  En la barra lateral izquierda, utilice el **flecha derecha (>)** para desplazarse por todas las opciones de Maximo Monitor.
 
 6.  Seleccione la opción **Dispositivos** del menú para ver la lista de tipos de dispositivo en esta WRA.
 
-    ![](../_attachments/mas/monitor-devices.png)
+    ![](../images/mas/monitor-devices.png)
 
 7.  Tipo **"bomba"** en la barra de búsqueda para filtrar los resultados.
 
-    ![](../_attachments/mas/monitor-devices-pump.png)
+    ![](../images/mas/monitor-devices-pump.png)
 
 8.  Pulse en **Bomba** desde la lista filtrada para ver un panel de control de resumen de Pump que aparecerá a la derecha.
 
 9.  Haga clic en la barra lateral izquierda **Ocultar barra lateral** icono para contraerlo.
 
-    ![](../_attachments/mas/monitor-devices-hide.png)
+    ![](../images/mas/monitor-devices-hide.png)
 
     Maximo Monitor permite a los usuarios categorizar/agrupar tipos de dispositivo de acuerdo con su caso de uso empresarial específico. Por ejemplo, un usuario puede tener un panel de control independiente de acuerdo con el tipo de proveedor de un activo como, por ejemplo, el fabricante de equipo original (OEM) y el no OEM. Al seleccionar el grupo de Pump, el gestor de operaciones está visualizando métricas para todos los activos de Pump con el fin de gestionar y ver el rendimiento de todo el conjunto de activos. De forma predeterminada, el **Alertas de bomba** se abre para visualizar una lista de todas las bombas con alertas en esta operación de empresa.
 
@@ -80,7 +80,7 @@ Un Gestor de Operaciones para esta Autoridad de Recursos Hídricos (WRA) necesit
 
     *   **Nota:** : Las nuevas alertas se generan con frecuencia. Es posible que tenga que filtrar "005" en el cuadro de texto Buscar para encontrarlo. Pero estaremos trabajando con PMPDEVICE005.
 
-    ![](../_attachments/mas/monitor-pump-alert.png)
+    ![](../images/mas/monitor-pump-alert.png)
 
     Las alertas tradicionales basadas en umbrales pueden ser abrumadoras; Maximo Monitor utiliza alertas de anomalías basadas en IA para eliminar los falsos positivos. El Gestor de operaciones decide investigar más a fondo la bomba PMPDEVICE005.
 
@@ -88,15 +88,15 @@ Un Gestor de Operaciones para esta Autoridad de Recursos Hídricos (WRA) necesit
 
 12. Expanda el archivo **Bomba** haciendo clic en el botón **flecha desplegable** para ver la lista completa de bombas en esta categoría.
 
-    ![](../_attachments/mas/monitor-devices-pump-dropdown.png)
+    ![](../images/mas/monitor-devices-pump-dropdown.png)
 
 13. Haga clic en **PMPDEVICE005** desde la lista ampliada para que aparezca su panel de control en el lado derecho de la página (si no ve PMPDEVICE005 listado, desplácese por la lista de la bomba hasta que la encuentre). Contrae la barra lateral izquierda para ver el panel de control en la modalidad de vista completa. 🟢
 
-    ![](../_attachments/mas/monitor-devices-pump-select.png)
+    ![](../images/mas/monitor-devices-pump-select.png)
 
 14. El **PMPDEVICE005** El panel de instrumentos muestra datos críticos sobre la alerta o alertas de anomalía.
 
-    ![](../_attachments/mas/monitor-pump-dashboard.png)
+    ![](../images/mas/monitor-pump-dashboard.png)
 
     La imagen de la bomba muestra al ingeniero que parte de la bomba está experimentando un problema utilizando el icono de alerta. Esto es increíblemente útil porque es mucho más fácil arreglar un problema con un conocimiento detallado de dónde está y cómo se ve.
 
@@ -104,7 +104,7 @@ Un Gestor de Operaciones para esta Autoridad de Recursos Hídricos (WRA) necesit
 
     Estas series de tiempo se pueden utilizar para investigar cualquier anomalía y tomar las acciones adecuadas. Por ejemplo, si la presión media de la bomba está disminuyendo mientras el flujo promedio aumenta con el tiempo, esto justifica una investigación sobre si hay fugas en la tubería. Basándose en estos conocimientos, un equipo de operaciones puede investigar si las bombas deben ser atendidas con más frecuencia.
 
-    ![](../_attachments/mas/monitor-pump-time-series.png)
+    ![](../images/mas/monitor-pump-time-series.png)
 
 ### Paso 3: Revisar historial de órdenes de trabajo de activos
 
@@ -112,27 +112,27 @@ A continuación, el Administrador de Operaciones quiere ver el historial de mant
 
 16. Pulse en la cabecera de la parte superior izquierda para volver a la **Suite Navigator**.
 
-    ![](../_attachments/mas/monitor-pump-click-header.png)
+    ![](../images/mas/monitor-pump-click-header.png)
 
 17. Haga clic en **Gestionar** azulejo.
 
-    ![](../_attachments/mas/suite-nav-manage.png)
+    ![](../images/mas/suite-nav-manage.png)
 
 18. El **Gestionar** se abre a un panel de instrumentos que muestra activos. Haga clic en **Bomba de campo 005**.
 
-    ![](../_attachments/mas/manage-root.png)
+    ![](../images/mas/manage-root.png)
 
 19. Seleccione la opción **Trabajo** y, a continuación, haga clic en el icono de filtro (embudo) para ver las opciones de filtro disponibles.
 
 20. Tipo **"COMP"** en el **Estado** en la caja **Orden de trabajo** para filtrar órdenes de trabajo completadas recientes para esta bomba **(C)**. Prensa **Retorno** en el teclado para aplicar el filtro. En función de cuándo ejecute esta demostración, es posible que no haya ninguna orden de trabajo con un estado de **COMP**.
 
-    ![](../_attachments/mas/manage-assets-work.png)
+    ![](../images/mas/manage-assets-work.png)
 
 21. Aquí es donde el Administrador de Operaciones puede revisar las órdenes de trabajo completadas previamente para tomar decisiones informadas sobre cómo proceder con cualquier mantenimiento. Supongamos que no vieron ninguna orden de trabajo reciente que parezca relevante.
 
 22. El gestor de operaciones está convencido de que es necesario abrir una nueva solicitud de servicio para la investigación. Volver a la **Dispositivos** de Maximo **Monitor** y seleccione **PMPDEVICE005** para ver su panel de control.
 
-    ![](../_attachments/mas/monitor-devices-pump-select-2.png)
+    ![](../images/mas/monitor-devices-pump-select-2.png)
 
 ### Paso 4: Asignar propietario de servicio
 
@@ -140,7 +140,7 @@ En un escenario real, el Gestor de operaciones volvería a la alerta VELOCITYX e
 
 23. Se trata de un paso de marcador para mencionar que un gestor de operaciones podría asignar fácilmente un propietario de servicio desde el panel de control del dispositivo.
 
-    ![](../_attachments/mas/monitor-pump-dashboard-owner.png)
+    ![](../images/mas/monitor-pump-dashboard-owner.png)
 
 ### Paso 5: Ver datos de métrica casi en tiempo real de los sensores de IoT
 
@@ -148,23 +148,23 @@ El Gestor de Operaciones Remotos decide mirar los datos del sensor en tiempo rea
 
 24. En la barra lateral izquierda, seleccione el **Configuración** opción de menú.
 
-    ![](../_attachments/mas/monitor-setup.png)
+    ![](../images/mas/monitor-setup.png)
 
 25. Seleccione la opción **Dispositivos** y en la barra de búsqueda bajo **Tipos de dispositivo** tipo **"bomba"**
 
-    ![](../_attachments/mas/monitor-setup-devices.png)
+    ![](../images/mas/monitor-setup-devices.png)
 
 26. Haga clic en **Bomba** de la lista filtrada para ver todos los activos de este grupo. A continuación, pulse **PMPDEVICE005** Hiperenlace de la lista de bombas que aparece a la derecha.
 
-    ![](../_attachments/mas/monitor-setup-devices-pump.png)
+    ![](../images/mas/monitor-setup-devices-pump.png)
 
 27. Haga clic en la flecha hacia abajo junto a **Métrica** y seleccione el **VELOCITYX** del submenú expandido.
 
-    ![](../_attachments/mas/monitor-setup-pump-data.png)
+    ![](../images/mas/monitor-setup-pump-data.png)
 
 28. Un gráfico de la **VELOCITYX** la serie de tiempo para esta bomba aparece en el lado derecho de la pantalla.
 
-    ![](../_attachments/mas/monitor-setup-pump-velocityx.png)
+    ![](../images/mas/monitor-setup-pump-velocityx.png)
 
     El vector de velocidad del motor de la bomba es una combinación de velocidad a lo largo de los ejes X, Y y Z. Cuando la velocidad a lo largo de cualquier eje-como la velocidad a lo largo del eje X (o *velocityX* )-experimenta una vibración excepcional (como lo muestran los inconsistentes y valores en este gráfico), hay algo obviamente muy equivocado con el activo.
 
@@ -172,7 +172,7 @@ El Gestor de Operaciones Remotos decide mirar los datos del sensor en tiempo rea
 
 29. Pulse en la cabecera de la parte superior izquierda para volver a la **Suite Navigator**.
 
-    ![](../_attachments/mas/monitor-setup-click-header.png)
+    ![](../images/mas/monitor-setup-click-header.png)
 
 ## Maximo Health and Predict
 
@@ -182,11 +182,11 @@ En esta parte de la demostración, el Ingeniero de fiabilidad identificará la p
 
 30. Haga clic en **Salud** Mosaico de aplicaciones de Maximo **Navegador de suites**.
 
-    ![](../_attachments/mas/suite-nav-health.png)
+    ![](../images/mas/suite-nav-health.png)
 
 31. La salud de Maximo **Activos** se abre.
 
-    ![](../_attachments/mas/health-assets.png)
+    ![](../images/mas/health-assets.png)
 
     La página Asset Health de Maximo proporciona una vista universal de todos los activos gestionados de la Autoridad de recursos de agua. Esto es valioso para el equipo de fiabilidad, ya que les permite ver los datos de TI (de Maximo Manage) y los datos de tecnología operativa (de Maximo Monitor) juntos en una sola vista. Muchas fallas no pueden prevenirse con estrategias tradicionales de mantenimiento preventivo basadas en el tiempo o únicamente basadas en datos de sensores. Individualmente, estos datos sólo proporcionan parte de la imagen. Los conocimientos sobre los problemas de mantenimiento y las solicitudes de servicio anteriores, la antigüedad de un activo y las inversiones históricas mejoran las "condiciones sentidas" de un activo. Esta es la alimentación que proporcionan Maximo Health y Manage.
 
@@ -202,11 +202,11 @@ Cabe señalar que la tolerancia al riesgo puede variar entre las industrias, los
 
 32. Haga clic en **Mapa** situado en la parte superior derecha de la pantalla para ver la puntuación de salud de cada una de estas bombas en una vista de mapa.
 
-    ![](../_attachments/mas/health-assets-2.png)
+    ![](../images/mas/health-assets-2.png)
 
     Ver cómo los activos se distribuyen espacialmente, junto con su grado de puntuación de salud, ayuda a los Ingenieros de Fiabilidad en la identificación e investigación de activos en riesgo. Esto es particularmente cierto en la industria de servicios públicos, donde los activos se extienden típicamente sobre una gran área geográfica.
 
-    ![](../_attachments/mas/health-assets-map.png)
+    ![](../images/mas/health-assets-map.png)
 
 ### Paso 7: Cola de trabajo
 
@@ -214,7 +214,7 @@ El ingeniero de fiabilidad continúa su investigación para determinar qué bomb
 
 33. Seleccione la opción **Colas de trabajo** de la barra lateral izquierda para ver las colas disponibles.
 
-    ![](../_attachments/mas/health-work-queues.png)
+    ![](../images/mas/health-work-queues.png)
 
     Las colas de trabajo son vistas preconfiguradas diseñadas para ayudar a los usuarios a encontrar lo que buscan y gestionar sus actividades diarias. Estos son particularmente valiosos para un Ingeniero de Fiabilidad que necesita abordar un problema específico, como una planta de tratamiento de agua tratando de evitar el tiempo de inactividad no planificado.
 
@@ -222,21 +222,21 @@ El ingeniero de fiabilidad continúa su investigación para determinar qué bomb
 
 34. Seleccione la opción **Anómalo antes del MP** cola de trabajos para ver todos los activos que se prevé que fallen antes de que se haya planificado el trabajo de mantenimiento planificado para ellos. Es fundamental que el Ingeniero de fiabilidad se dirija a estos activos para evitar el tiempo de inactividad.
 
-    ![](../_attachments/mas/health-work-queues-2.png)
+    ![](../images/mas/health-work-queues-2.png)
 
 35. Esta cola de trabajos muestra todos los activos pronosticados para fallar antes de su mantenimiento preventivo planificado (PM). Pulse el icono de búsqueda (la lupa) en la parte superior derecha y tipo **"pmp"**. Prensa **Retorno** en el teclado para aplicar este filtro y ver una lista de los activos de la bomba.
 
-    ![](../_attachments/mas/health-work-queues-fail.png)
+    ![](../images/mas/health-work-queues-fail.png)
 
 36. Hay varias bombas que tienen una anomalía prevista antes de su próxima fecha de mantenimiento planificada, y todas ellas son bombas no OEM. Haga clic en **PMPDEVICE005** de esta lista de colas de trabajo.
 
-    ![](../_attachments/mas/health-work-queues-fail-2.png)
+    ![](../images/mas/health-work-queues-fail-2.png)
 
 ### Paso 8: Revisión detallada de la puntuación de salud de la bomba
 
 37. El **PMPDEVICE005** Se abre la página de detalles de salud de
 
-    ![](../_attachments/mas/health-assets-pump.png)
+    ![](../images/mas/health-assets-pump.png)
 
     La página de detalles de salud del activo PMPDEVICE005 es una herramienta increíblemente útil para investigar las condiciones actuales y futuras de una bomba. El ingeniero de fiabilidad puede encontrar toda la información del activo presentada en una sola página y en tablas, gráficos y gráficos fáciles de leer.
 
@@ -259,7 +259,7 @@ El ingeniero de fiabilidad continúa su investigación para determinar qué bomb
 
 38. Desplácese hasta el **Datos sanitarios**. Esta sección muestra un desglose de los factores y factores de la puntuación de la salud que proporcionan información sobre lo que está causando la mala salud de esta bomba.
 
-    ![](../_attachments/mas/health-assets-pump-score-details.png)
+    ![](../images/mas/health-assets-pump-score-details.png)
 
     Para este activo y activos en el mismo grupo, el Ingeniero de fiabilidad puede ver que la puntuación de salud es un promedio ponderado de órdenes de trabajo abiertas, vida útil restante y salud de medidor.
 
@@ -267,7 +267,7 @@ El ingeniero de fiabilidad continúa su investigación para determinar qué bomb
 
 39. Una vez que el Ingeniero de Fiabilidad decide qué acción tomar, puede tomar acción en la parte superior de la página. Pueden crear una solicitud de servicio, crear una orden de trabajo, volver a calcular una puntuación de salud o editar el registro del activo de origen. **NO tomaremos ninguna acción en el entorno compartido.**
 
-    ![](../_attachments/mas/health-assets-pump-service-request.png)
+    ![](../images/mas/health-assets-pump-service-request.png)
 
 40. El ingeniero de fiabilidad finalmente puede crear y presentar un informe detallado de sus resultados sobre el estado futuro actual y predicho de PMPDEVICE005 (y bombas similares) al gestor de operaciones.
 
@@ -279,13 +279,13 @@ Además, Maximo Application Suite incluye Watson Studio y Watson Machine Learnin
 
 41. Desplácese hacia abajo y pulse **Previsiones** para expandir esta pestaña.
 
-    ![](../_attachments/mas/predict-predictions.png)
+    ![](../images/mas/predict-predictions.png)
 
 42. El **Previsiones** mostrando los KPI predictivos de la bomba seleccionada y los gráficos de probabilidad de anomalía.
 
     Información breve sobre el contenido de cada azulejo se puede encontrar al pasar el ratón sobre el título del azulejo.
 
-    ![](../_attachments/mas/predict-predictions-ttf.png)
+    ![](../images/mas/predict-predictions-ttf.png)
 
 ### Paso 10: Modelo de anomalía pronosticada
 
@@ -293,35 +293,35 @@ El modelo de IA predice que esta bomba fallará dentro de un cierto número de d
 
 43. El calendario de los datos de formación en el **Tiempo estimado de anomalía** teja puede ayudar a decidir si y cuándo debe reformarse el modelo de IA.
 
-    ![](../_attachments/mas/predict-predictions-ttf-date.png)
+    ![](../images/mas/predict-predictions-ttf-date.png)
 
 44. En el **Probabilidad de fallo** teja, observe la probabilidad de que la modalidad de anomalía seleccionada se produzca en la predicción seleccionada **Ventana de tiempo** (3 días por defecto, como se muestra en la parte inferior izquierda de este azulejo). Puede ver que esta bomba tiene un 1% de probabilidad de fallar en los próximos tres días (basado en la captura de pantalla a continuación). 🟢
 
-    ![](../_attachments/mas/predict-predictions-failure-prob.png)
+    ![](../images/mas/predict-predictions-failure-prob.png)
 
 45. Desplácese hacia abajo hasta el **Tendencia de probabilidad de fallo**. Esta tarjeta muestra el historial de probabilidad de anomalía para cada modalidad, lo que indica cómo la probabilidad de anomalía ha cambiado con el tiempo.
 
-    ![](../_attachments/mas/predict-predictions-failure-prob-trend.png)
+    ![](../images/mas/predict-predictions-failure-prob-trend.png)
 
 46. Desplácese hacia abajo hasta el **Factores que contribuyen a fallos**. Muestra qué factores de los datos de formación tuvieron el mayor impacto en los fallos. Esto da una idea de lo que podría causar fallas futuras.
 
-    ![](../_attachments/mas/predict-predictions-failure-factors.png)
+    ![](../images/mas/predict-predictions-failure-factors.png)
 
 47. Desplácese hasta el **Detección de anomalías** y **Historial de detección de anomalías** Las tarjetas que muestran las puntuaciones de anomalía para esta bomba, así como cuando se cruzó el valor de umbral (línea de puntos rojos en el **Historial de detección de anomalías** gráfico de la serie temporal).
 
-    ![](../_attachments/mas/predict-predictions-anomaly.png)
+    ![](../images/mas/predict-predictions-anomaly.png)
 
 ### Paso 11: Línea de tiempo del activo
 
 55. Desplácese hacia abajo y pulse **Calendario de activos** para expandir esta pestaña.
 
-    ![](../_attachments/mas/predict-asset-timeline.png)
+    ![](../images/mas/predict-asset-timeline.png)
 
 56. El **Calendario de activos** proporciona varias piezas de información clave sobre este activo dentro de un solo gráfico. 🟢
 
     Mirando esta línea de tiempo, la bomba seleccionada tiene una fecha de falla prevista (PF) que ocurrirá antes de su próxima fecha programada de mantenimiento preventivo (PM). Otra información del gráfico, como el orden de trabajo y las fechas de inspección anteriores, proporciona información valiosa sobre la historia del activo y puede informar la toma de decisiones sobre qué tipo de acción tomar.
 
-    ![](../_attachments/mas/predict-asset-timeline-2.png)
+    ![](../images/mas/predict-asset-timeline-2.png)
 
 ## Observaciones finales
 
