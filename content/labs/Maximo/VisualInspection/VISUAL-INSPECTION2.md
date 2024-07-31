@@ -16,8 +16,6 @@ Finally you will link MVI Mobile iOS app on your device to our MVI core instance
 
 ### Step 1: Create Object Detection Model in Maximo Visual Inspection (Instructor Led)
 
-
-
 Now that you have a workable dataset of images, as the Asset Analyst, it’s time to train an object detection model in MVI using these labelled images. Training is the process of fitting a model to the input data such that it can be used to make predictions on data it hasn’t seen before in the future.
 
 During computer vision model training, pixel-level information from the image dataset is fed into the training algorithm. A Convolutional Neural Network (CNN) helps the algorithm “look” by breaking images into pixels (CNN is a popular algorithm for computer vision). This neural network also checks the accuracy of its predictions in a series of iterations until its predictions are accurate. At this point, the CNN model is recognizing or seeing images like a human’s biological neural network (hence the name – Convolutional _Neural Network_). In this demo, the model you will train is **Faster R-CNN** (Faster Region-based Convolutional Network). **Faster R- CNN** is an extension of the CNN models that belongs to a family of object detection computer vision models.
@@ -37,7 +35,7 @@ Now it’s time to start the training process of your dirty tank detection model
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.002.jpeg)
 
- The **Train Model / Augmented Sedimentation Tank** window (screenshot above) allows you to configure the model’s settings.
+The **Train Model / Augmented Sedimentation Tank** window (screenshot above) allows you to configure the model’s settings.
 
 For this demo’s use case, you will use the **Object detection** training type – because you want to train a model that can analyze the tank’s condition without getting confused with any other background entity in the incoming camera image. Also, you will use the **Faster R-CNN** model type, which is optimized for higher accuracy but takes more computing and GPU power than alternatives (that’s ok; you want higher accuracy).
 
@@ -47,14 +45,13 @@ Apart from the chosen options, Maximo Visual Inspection (MVI) includes several m
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.003.jpeg)
 
- Due to MVI’s ease of use, domain experts often progress very quickly into becoming advanced users. As they find themselves with new levels of comfort and control, they can also optionally choose to exploit advanced settings to further fine-tune the model. Once the **Advanced settings** switch is turned on, the **model hyperparameters** section becomes available at the bottom of the screen. Hyperparameters are used to optimize the model’s performance; and when it comes to improving the model accuracy, these parameters are the go-to option for data scientists and model experts. A brief description on each of the hyperparameters can be viewed by clicking on the **info** icon (the “**i**” in a circle) at the end of each corresponding hyperparameter. For now, keep hyperparameters at their default values.
-
+Due to MVI’s ease of use, domain experts often progress very quickly into becoming advanced users. As they find themselves with new levels of comfort and control, they can also optionally choose to exploit advanced settings to further fine-tune the model. Once the **Advanced settings** switch is turned on, the **model hyperparameters** section becomes available at the bottom of the screen. Hyperparameters are used to optimize the model’s performance; and when it comes to improving the model accuracy, these parameters are the go-to option for data scientists and model experts. A brief description on each of the hyperparameters can be viewed by clicking on the **info** icon (the “**i**” in a circle) at the end of each corresponding hyperparameter. For now, keep hyperparameters at their default values.
 
 **IMPORTANT** If you are doing this demo in a classroom setting, or time is a factor, you can keep the number of iterations low. Setting it to a higher value will take longer, but it also means a more accurate model with better inspection results; for the demo, you can leave the hyperparameters at their default values.
 
 5. While you could click the blue **Train model** button at the top to begin the model training process, this is **NOT** recommended in a live demo setting. ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.005.jpeg)
 
- Clicking on **“Train Model”** will start the training process, but since the training here will take 25+ minutes, this guide shows you the next steps using a more practical pre-built model that has been built using the same steps but was trained using 2000+ clean and dirty tank images and hours of computation.
+Clicking on **“Train Model”** will start the training process, but since the training here will take 25+ minutes, this guide shows you the next steps using a more practical pre-built model that has been built using the same steps but was trained using 2000+ clean and dirty tank images and hours of computation.
 
 At the time of writing, only two Graphics Processing Units (GPUs) are available for model training and deployment in the worldwide shared demo cluster (you can view the current GPU usage at the top right of the screen).
 
@@ -83,8 +80,6 @@ Once model training is complete (in this case you are using a pre-built model), 
 
 Using a dataset that was not part of the model-building phase is a standard process to check the model performance (accuracy). This helps assure that the patterns detected during model training are generalizable (also exist in the never-before-seen images) and can be used in the real world to predict new “unseen” images.
 
-
-
 **Actions:**
 
 1. On the **Deployed models** screen, under the **Name** column, click **DO NOT DELETE - Sedimentation tank model** (prebuilt model).
@@ -96,19 +91,18 @@ Using a dataset that was not part of the model-building phase is a standard proc
 
 2. Once you click the deployed model’s name, you are brought to the selected model screen where its performance can be evaluated using a test image. Click the **Drag and drop file here or click to upload (A)** button in the **Test Model** tile to select an image to score
 
-
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.012.jpeg)
 
 3. Select an image of a **clean tank** from the model testing images folder (it will have the word “**clean**” in its name) and visually confirm the model result. In the case of the screenshot below the model predicts with high accuracy (0.907) that the uploaded image shows a clean sedimentation tank (which is correct).
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.013.jpeg)
 
-4. Click **Drag and drop file here or click to upload (A)** again and this time select an image of a dirty tank 
-from the same testing folder (image will have the word “dirty” in its name). Then click **Open (B)**. Visually confirm the model result. In the case of the screenshot below the model predicts with high accuracy (0.943) that the uploaded image shows a dirty sedimentation tank (which is correct)
+4. Click **Drag and drop file here or click to upload (A)** again and this time select an image of a dirty tank
+   from the same testing folder (image will have the word “dirty” in its name). Then click **Open (B)**. Visually confirm the model result. In the case of the screenshot below the model predicts with high accuracy (0.943) that the uploaded image shows a dirty sedimentation tank (which is correct)
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.014.jpeg)
 
- With a validated model, you can build a dashboard in Maximo Monitor that will display the results of live camera feed inspections, as demonstrated in Part One of this demo. You observed how the MVI AI model sends inspection alerts to the Monitor dashboard. You also performed the steps to build a computer vision model.
+With a validated model, you can build a dashboard in Maximo Monitor that will display the results of live camera feed inspections, as demonstrated in Part One of this demo. You observed how the MVI AI model sends inspection alerts to the Monitor dashboard. You also performed the steps to build a computer vision model.
 
 Congratulations! You have just used IBM Maximo Visual Inspection to create a computer vision model that can identify dirty water sedimentation tanks!
 
@@ -120,8 +114,6 @@ Congratulations! You have just used IBM Maximo Visual Inspection to create a com
 
 Edge computing is a form of computing that takes place at or near the physical location of either the user or the data source. By placing computing services closer to these locations, users benefit from faster, more reliable services by removing latency issues and decreasing bandwidth usage. For example, it is ideal for usage in fixed camera deployments where data is in large video formats like this sedimentation tanks demo use case.
 
-
-
 **Action:**
 
 1. Access Maximo Visual Inspection Edge (MVI Edge) by clicking on the **MVI Edge URL(A)** given in the access email you got when requesting access to the demo environment: Also take a note of the MVI Edge login credentials provided in the same email.
@@ -132,16 +124,14 @@ Edge computing is a form of computing that takes place at or near the physical l
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.017.jpeg)
 
- From the MVI Edge dashboard, you can easily keep track of your device’s health in real-time by viewing the total number of the corresponding pass or fail inspections.
+From the MVI Edge dashboard, you can easily keep track of your device’s health in real-time by viewing the total number of the corresponding pass or fail inspections.
 
 3. From the dashboard screen, hover over the left side panel to view the key options available in the Edge server.
 
- Several options to configure the MVI Edge environment are available on the left side panel. The **green check mark** at the bottom of the side panel confirms that the Edge server is currently connected to the MVI training server (using an API key), allowing for any models and datasets created in the training server to be imported and deployed in the Edge environment. Using the **Input sources** option from this sidebar, image, video folders, or a RTSP (Real Time Streaming Protocol) camera feed can be selected as an input source for the AI model inspections.
-
-
+Several options to configure the MVI Edge environment are available on the left side panel. The **green check mark** at the bottom of the side panel confirms that the Edge server is currently connected to the MVI training server (using an API key), allowing for any models and datasets created in the training server to be imported and deployed in the Edge environment. Using the **Input sources** option from this sidebar, image, video folders, or a RTSP (Real Time Streaming Protocol) camera feed can be selected as an input source for the AI model inspections.
 
 4. From the **Dashboard** page, click on the **Tank 1** link under the **Inspection** column to view the tank inspection details (or if Tank 1 is not available then click on any other Tank number link that is in the “Inspecting” **State** and has more than 0 inspections under the **Total inspections** column).
-   
+
 5. **Images** tab of the **Inspection: Sedimentation Tank 2 Inspection** page opens. Click the **Configuration** tab to view this tank’s inspection configurations.
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.018.jpeg)
@@ -152,9 +142,7 @@ On the configuration tab, show that any datasets, models, and projects made in t
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.020.jpeg)
 
- Using Edge, you can collect or inspect images by selecting the appropriate option in the **Inspection mode** section under the Inspection status section. In **Collecting** mode, any images taken as part of the inspection are simply collected to train an AI model at a later stage. In **Inspecting** mode, these images are inspected by a previously trained AI model to perform inference (detect the image elements using computer vision). Because you want to inspect the tank images, ensure that this mode is set to the **Inspecting** option.
-
-
+Using Edge, you can collect or inspect images by selecting the appropriate option in the **Inspection mode** section under the Inspection status section. In **Collecting** mode, any images taken as part of the inspection are simply collected to train an AI model at a later stage. In **Inspecting** mode, these images are inspected by a previously trained AI model to perform inference (detect the image elements using computer vision). Because you want to inspect the tank images, ensure that this mode is set to the **Inspecting** option.
 
 6. Scroll down to the **Rules** section. In the **CLEAN_TANK** row, click on the **gear** icon under the **Settings** column. This is where you can view inspection rules that the AI model will use to categorize the tank’s health to be a Pass or Fail.
 
@@ -168,7 +156,7 @@ Simply put, confidence score is a measure of how confident an AI model is about 
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.023.jpeg)
 
- Under the **Alert type** options, you can enable Maximo Visual Inspection Edge to send outbound alert messages to external recipients by configuring connections to an MQTT broker and the Twilio messaging service.
+Under the **Alert type** options, you can enable Maximo Visual Inspection Edge to send outbound alert messages to external recipients by configuring connections to an MQTT broker and the Twilio messaging service.
 
 Using MQTT protocol, the Edge server integrates with other applications in the MAS Suite to display inspection alerts and enable the creation of work order requests, as you saw earlier in this demo with MAS Monitor (part one of this demo). In addition to MQTT, using Twilio, inspection results can be immediately sent as SMS to the concerned person by simply providing their contact number.
 
@@ -176,7 +164,7 @@ Using MQTT protocol, the Edge server integrates with other applications in the M
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.024.jpeg)
 
- Once the rule settings are complete, you are now performing batch processing on multiple tank images in a clean and dirty state. After running the inspections, the AI model will perform inference on each image and subsequently trigger inspection results as Pass or Fail, depending on the tank’s condition. Inspections can be initiated by either setting MQTT topic triggers, which will perform inspections by receiving remote triggers, or by setting time-based intervals. Inspection interval settings can be set according to the business requirements; for example, tank inspections could be set to take place every 24 hours (in seconds) etc.
+Once the rule settings are complete, you are now performing batch processing on multiple tank images in a clean and dirty state. After running the inspections, the AI model will perform inference on each image and subsequently trigger inspection results as Pass or Fail, depending on the tank’s condition. Inspections can be initiated by either setting MQTT topic triggers, which will perform inspections by receiving remote triggers, or by setting time-based intervals. Inspection interval settings can be set according to the business requirements; for example, tank inspections could be set to take place every 24 hours (in seconds) etc.
 
 **Note:** To avoid unexpected errors in the demo environment you are not actually triggering a new inspection in this demo. Instead in the next steps you will be showing the pre-loaded inspection results to the clients.
 
@@ -186,13 +174,13 @@ Using MQTT protocol, the Edge server integrates with other applications in the M
 
 11. In the Images tab, inspection results from the images in the input source are displayed. If there are no images on this screen, please click the **Refresh** icon a few times for the images to load.
 
-![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.027.jpeg)
+![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.027.webp)
 
- All the inference results are displayed on a single screen along with important metadata. If a live feed was coming through, you will see the most recent inspection at the top left image. For convenience, icons on the images serve as a quick way to view inspection results. There is a green check mark for a clean tank and a **red X** for a dirty tank. There may also be a yellow question mark if the model is unsure about the result. A high rate of inconclusive results might indicate that the model’s performance is poor, the rule configuration is incorrect, or the quality of the camera images is compromised.
+All the inference results are displayed on a single screen along with important metadata. If a live feed was coming through, you will see the most recent inspection at the top left image. For convenience, icons on the images serve as a quick way to view inspection results. There is a green check mark for a clean tank and a **red X** for a dirty tank. There may also be a yellow question mark if the model is unsure about the result. A high rate of inconclusive results might indicate that the model’s performance is poor, the rule configuration is incorrect, or the quality of the camera images is compromised.
 
 The exclamation points in the triangle indicate that the inspection result has been sent as alert notifications to Maximo Monitor via **MQTT or SMS via Twilio**, depending on the option(s) you selected in the Rules settings phase. Clicking on each of these images can show further details about the inspection, such as here you can see that the most recent tank inspection failed due to the poor tank condition, and an alert was immediately sent out about the inspection’s result. The prompt detection of the tank’s failing health helps the Water Resource Authority to avoid issues that often arise when a problem remains undetected or is detected too late. 🟢
 
-![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.028.jpeg)
+![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.028.webp)
 
 **Important:** At this point in the demo script, you are far enough to pass Maximo Visual Inspection Technical Sales Level 3 Badge.
 
@@ -206,14 +194,12 @@ This is an optional part of the demo. Please note, in addition to the MVI traini
 
 _Figure 2: Access to the MVI training server and iOS Mobile device is required_
 
- Now, let us see how a model trained on the Maximo Visual Inspection server can be used to perform inspections using IBM Maximo Visual Inspection Mobile (MVI Mobile) app. Maximo Visual Inspection (MVI) Mobile is a native iOS/iPadOS mobile app that runs on Apple devices such as the iPhone and iPad. This provides a low barrier to entry in terms of hardware costs and time to value. The sophisticated optics on Apple devices are combined with the ability to run models generated from the MVI core application, with native 5G support allowing clients to run
+Now, let us see how a model trained on the Maximo Visual Inspection server can be used to perform inspections using IBM Maximo Visual Inspection Mobile (MVI Mobile) app. Maximo Visual Inspection (MVI) Mobile is a native iOS/iPadOS mobile app that runs on Apple devices such as the iPhone and iPad. This provides a low barrier to entry in terms of hardware costs and time to value. The sophisticated optics on Apple devices are combined with the ability to run models generated from the MVI core application, with native 5G support allowing clients to run
 inspections at scale.
 
 Like the rest of the applications in the MVI solution, MVI Mobile delivers agility with point-and-click ease but through the footprint of a mobile app, while providing a powerful real-time AI-powered inspection point and data management platform. In a matter of hours, clients can train complex computer vision models on the core MVI platform and deploy the trained model to the MVI Mobile device to perform inferencing.
 
 The mobile application can be configured by either a handheld mode or a fixed position mode. For example, consider a fixed camera that can take photos of welds on a manufacturing line and perform an automated inspection on the spot. Being able to determine at this point that a particular weld is bad has many benefits. Not only are you preventing this part from finding its way into the hands of a customer (either as the part itself or as a component in a larger item) – which could have disastrous consequences, depending on the item – but this could be a symptom of an issue with the welding equipment, and identifying and fixing the problem early means less wasted product. Similarly, with the hand-held mode a quality inspector can easily carry the mobile device to an inspection site and harness the power of a powerful AI model to detect any anomalies by simply clicking a picture of the inspected part. The result is a dramatic improvement in production quality inspection.
-
-
 
 The following part of this demo will demonstrate the core capabilities of MVI Mobile using the pre-trained water sedimentation computer vision model.
 
@@ -224,7 +210,7 @@ The following part of this demo will demonstrate the core capabilities of MVI Mo
 **Actions:**
 
 1. Login to MVI training server (the software where you created the AI model in).
-2. On Welcome to **IBM Maximo Visual Inspection** screen, click on the **hamburger icon (A)** to open the left side panel. On the left side panel click on **Services (B)** menu option to open the dropdown menu. From the Services dropdown menu click **API key (C)**. 
+2. On Welcome to **IBM Maximo Visual Inspection** screen, click on the **hamburger icon (A)** to open the left side panel. On the left side panel click on **Services (B)** menu option to open the dropdown menu. From the Services dropdown menu click **API key (C)**.
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.032.jpeg)
 
@@ -239,11 +225,10 @@ The following part of this demo will demonstrate the core capabilities of MVI Mo
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.036.jpeg)
 
 5. Once the QR code is successfully scanned, click **Save** on the top right corner of the screen (figure not shown for this step).
-       
+
 6. License Information screen may appear. Click **Agree & Finish**.
 
- Once the integration is completed, the main Inspections page appears. This is where inspections are created and managed with the help of MVI projects.
-<br/><br/>
+Once the integration is completed, the main Inspections page appears. This is where inspections are created and managed with the help of MVI projects. <br/><br/>
 
 ### Step 2: Creating Inspections in MVI Mobile
 
@@ -264,13 +249,11 @@ The following part of this demo will demonstrate the core capabilities of MVI Mo
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.040.png)
 
- On the **Set Thresholds** screen, you can specify whether an inspection is considered a _Pass_ or a _Fail_.
+On the **Set Thresholds** screen, you can specify whether an inspection is considered a _Pass_ or a _Fail_.
 
 Associated with each label is a threshold value and a **Fail when below threshold** condition. The inspection will be marked as a _Fail_ if the confidence returned for a label is above its specified threshold or below the threshold if Fail when below threshold option is toggled on. There is also a **No Action** option which allows users to ignore the result when the object is detected.
 
 For your model, you have both clean and dirty (tank) labels. For simplicity, let us focus on the dirty tanks, as such, you will only consider an inspection to be a failure if you find the condition of the tank to be dirty. You want to be extra careful so you will set the threshold for the dirty tank confidence level to be above 50%. On the other hand, no further actions are required for the clean sedimentation tanks. Therefore, you are going to effectively disable the clean tank rule as shown in the upcoming steps.
-
-
 
 6. Tap **Advanced** under the **Clean** label.
 
@@ -301,7 +284,7 @@ For your model, you have both clean and dirty (tank) labels. For simplicity, let
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.047.jpeg)
 
 12. The Data Set window appears. Click **Tank 1 Inspecting (A)** data set (or any other tank number if Tank 1 is not available).
-    
+
 13. To set a value for the **Trigger String** enter this text `Tank Inspection`**.** Click **Done**.
 
 14. At this point, an inspection is successfully configured in MVI Mobile. Here is what will be displayed when it is done.
@@ -310,14 +293,11 @@ For your model, you have both clean and dirty (tank) labels. For simplicity, let
 
 If you ever want to delete an inspection that you have created, simply click **Edit** on the top right of the inspection screen and you’ll be presented with an option to delete the inspection at the bottom left of the small window screen that appears (please don’t try this right now to avoid accidental deletion of the inspection).
 
-![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.052.png)
-<br/><br/>
+![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.052.png) <br/><br/>
 
 ### Step 3: (Optional) Integrating MVI Mobile with Twilio Account
 
- Although you can still go ahead now and perform inspections. However, like MVI Edge, MVI Mobile offers easy integration with the[ Twilio application ](/maximo/mvi-prereq#step-4-signup-twilio-trial-account-for-text-message-sms-notifications) so that SMS alerts about the inspection results can be sent to the concerned person. This would be incredibly beneficial for us since the field supervisor for the Water Resource Plant is usually away on inspection rounds. Using this feature, they can immediately receive SMS alerts if the tank health is deteriorating without the need to constantly monitor inspection results by staying in front of the computer screen.
-
-
+Although you can still go ahead now and perform inspections. However, like MVI Edge, MVI Mobile offers easy integration with the[ Twilio application ](/maximo/mvi-prereq#step-4-signup-twilio-trial-account-for-text-message-sms-notifications) so that SMS alerts about the inspection results can be sent to the concerned person. This would be incredibly beneficial for us since the field supervisor for the Water Resource Plant is usually away on inspection rounds. Using this feature, they can immediately receive SMS alerts if the tank health is deteriorating without the need to constantly monitor inspection results by staying in front of the computer screen.
 
 **Actions:**
 
@@ -333,8 +313,7 @@ If you ever want to delete an inspection that you have created, simply click **E
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.055.jpeg)
 
-It will be easier to simply copy-paste details from the Twilio account here instead of attempting to type these codes.
-<br/><br/>
+It will be easier to simply copy-paste details from the Twilio account here instead of attempting to type these codes. <br/><br/>
 
 ### Step 4: Performing Inspections in MVI Mobile
 
@@ -344,28 +323,25 @@ It will be easier to simply copy-paste details from the Twilio account here inst
 
 ![](./images/mvi/mvi.3b2f35bd-3c7a-437d-a3d2-793494ca3b8c.057.jpeg)
 
- Mobile device’s camera screen is now enabled. If a model was not specified within an Inspection, it is in Collect mode - it takes photos and uploads to a dataset in IBM Maximo Visual Inspection to be labelled and then for a model to be trained
+Mobile device’s camera screen is now enabled. If a model was not specified within an Inspection, it is in Collect mode - it takes photos and uploads to a dataset in IBM Maximo Visual Inspection to be labelled and then for a model to be trained
 
 When you specify a model within an inspection (as you did in this demo) it is in the Inspect mode which also takes photos but then uses the trained model to run inference on the images and upload results to the specified dataset in IBM Maximo Visual Inspection.
 
 2. For this demo, you will run inference on an _image of an image_ of a tank. For this, on your laptop, please open one of the tank images downloaded in the Prework Step 2 section and keep it on the display for the next step.
 3. Take a photo of a clean or dirty tank image displayed on your computer or projector screen (you are basically taking image of an image in this step).
 
-The photo will remain on the display on your mobile device, so please press the **back (\<)** button to go back to the camera view. Here are some examples of what you might see after a few inspections.
+The photo will remain on the display on your mobile device, so please press the **back (<)** button to go back to the camera view. Here are some examples of what you might see after a few inspections.
 
 ![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.001.jpeg)
 
- Depending on the accuracy of the model, it has identified clean and dirty tanks in the photo. Since you are taking an image of an image it is possible that the model may struggle to accurately identify tanks or tank’s health in the image. In a real setting this could be resolved with taking an image of the actual object (and not an image of an image) or with more data and training for higher model accuracy. Note that in addition to the bounding boxes superimposed on the photo itself, the bottom of the screen shows the confidence level associated with each inferred object.
-
-
+Depending on the accuracy of the model, it has identified clean and dirty tanks in the photo. Since you are taking an image of an image it is possible that the model may struggle to accurately identify tanks or tank’s health in the image. In a real setting this could be resolved with taking an image of the actual object (and not an image of an image) or with more data and training for higher model accuracy. Note that in addition to the bounding boxes superimposed on the photo itself, the bottom of the screen shows the confidence level associated with each inferred object.
 
 You have now performed a successful inspection using the combined power of IBM Maximo Visual Inspection Mobile and IBM Maximo Visual Inspection!
 
 4. You can click **“Cancel”** at any point to go back to the main **Inspections** screen.
 5. If you followed the steps for Twilio integration and entered a supervisor number, then you may have received SMS alerts on the number you entered in the Twilio settings section.
 
-![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.002.png)
-<br/><br/>
+![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.002.png) <br/><br/>
 
 ### Step 5: Exploring the MVI Mobile Dashboard
 
@@ -380,9 +356,10 @@ In the previous section you defined the rules that determine whether a specific 
 ![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.004.jpeg)
 
 3. In the dashboard configuration screen, leave **IMAGES TO DISPLAY** scroll bar as-is.
+
 4. For **SELECT A PROJECT section**, choose **MVI LEVEL 3 DO NOT DELETE**.
 
-5. Click on **Data set Select (A)\>** and then choose **Tank 1 inspecting** (or the data set you selected earlier when creating the MVI Mobile inspection).
+5. Click on **Data set Select (A)>** and then choose **Tank 1 inspecting** (or the data set you selected earlier when creating the MVI Mobile inspection).
 
 ![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.006.jpeg)
 
@@ -399,9 +376,7 @@ You can see pass and fail rate for the inspections that were performed.
 
 **Congratulations!** You have just used IBM Maximo Visual Inspection Mobile to identify dirty water sedimentation tanks!
 
- This concludes the demonstration. You observed how the MVI AI model sends inspection alerts to the Maximo Monitor. You also performed the steps to build a computer vision model and used that model to configure inspections in MVI Edge and in MVI Mobile. Lastly, you can think of this comprehensive solution where an AI Computer Vision model sends critical alerts beyond the use case of sedimentation tanks and apply it in any mission-critical areas where it is essential to visually detect objects of interest repeatedly at a fast pace and scale. A small assortment of examples includes fast-paced product lines, transmission lines, quality assurance, etc.
-
-
+This concludes the demonstration. You observed how the MVI AI model sends inspection alerts to the Maximo Monitor. You also performed the steps to build a computer vision model and used that model to configure inspections in MVI Edge and in MVI Mobile. Lastly, you can think of this comprehensive solution where an AI Computer Vision model sends critical alerts beyond the use case of sedimentation tanks and apply it in any mission-critical areas where it is essential to visually detect objects of interest repeatedly at a fast pace and scale. A small assortment of examples includes fast-paced product lines, transmission lines, quality assurance, etc.
 
 ## Demo Cleanup
 
