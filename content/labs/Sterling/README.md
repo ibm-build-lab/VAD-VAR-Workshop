@@ -17,18 +17,18 @@ After completing these labs in a workshop session, you'll be able to earn the [I
 
 ## Labs
 
-- **[Introduction](/sterling/docs/)**
+- **[100: Introduction](/sterling/docs/100)**
 
-- **[Lab Overview](/sterling/docs/overview)**
+- **[101: Lab Overview](/sterling/docs/101)**
 
-- **[Demo prep - OpenShift Logon](/sterling/docs/demopreparation-ocplogon/)**
+- **[102: Demo prep - OpenShift Logon](/sterling/docs/102/)**
 
-- **[Configuration part 1](/sterling/docs/configurationpart1)**
+- **[103: Configuration part 1](/sterling/docs/103)**
 
-- **[Configuration part 2](/sterling/docs/configurationpart2)**
+- **[104: Configuration part 2](/sterling/docs/104)**
 
-- **[Client Demo Script and Practice](/sterling/docs/clientdemonstration)**
+- **[105: Client Demo Script and Practice](/sterling/docs/105)**
 
-- **[Next Steps - take the quiz!](/sterling/docs/nextsteps)**
+- **[106: Next Steps - take the quiz!](/sterling/docs/106)**
 
-- **[Bonus - Configuring a secured HTTP endpoint](/sterling/docs/httpadapter)**
+- **[107: Bonus - Configuring a secured HTTP endpoint](/sterling/docs/107)**
