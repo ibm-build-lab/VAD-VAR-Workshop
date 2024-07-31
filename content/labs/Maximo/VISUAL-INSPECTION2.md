@@ -434,7 +434,7 @@ When you specify a model within an inspection (as you did in this demo) it is in
 2. For this demo, you will run inference on an _image of an image_ of a tank. For this, on your laptop, please open one of the tank images downloaded in the Prework Step 2 section and keep it on the display for the next step.
 3. Take a photo of a clean or dirty tank image displayed on your computer or projector screen (you are basically taking image of an image in this step).
 
-The photo will remain on the display on your mobile device, so please press the **back (<)** button to go back to the camera view. Here are some examples of what you might see after a few inspections.
+The photo will remain on the display on your mobile device, so please press the **back {'(<)'}** button to go back to the camera view. Here are some examples of what you might see after a few inspections.
 
 ![](_attachments/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.001.jpeg)
 
