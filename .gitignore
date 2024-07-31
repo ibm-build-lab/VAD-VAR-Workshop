@@ -40,3 +40,8 @@ next-env.d.ts
 
 # symlink
 public/content
+
+# Ignore build files
+.cache/*
+public/*
+src/gatsby-types.d.ts
