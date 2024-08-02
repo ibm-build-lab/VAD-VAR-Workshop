@@ -3,9 +3,9 @@ title: watsonx
 toc: false
 ---
 
-# Taller de plataforma de inteligencia artificial de watsonx y watsonx data
+# Taller sobre la plataforma watsonx de datos, inteligencia artificial y gobernanza
 
-Este taller incluye manos sobre laboratorios diseñados para proporcionar experiencia práctica con los datos de IBM y la plataforma de IA, watsonx.
+Este taller incluye manos sobre laboratorios prácticos diseñados para proporcionar experiencia práctica con la plataforma de datos, IA y gobierno de IBM, watsonx.
 
 ## Laboratorios
 
