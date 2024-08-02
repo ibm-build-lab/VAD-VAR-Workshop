@@ -1,0 +1,13 @@
+$bg-color: var(--cds-layer, themes.$layer-01);
+$border-color: var(--cds-layer-accent, themes.$border-subtle-00);
+
+.tableWrapper {
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tableHeader {
+  background-color: $bg-color;
+}

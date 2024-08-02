@@ -1,0 +1,59 @@
+@use "sass:map";
+@use 'sass:color';
+// @use '@carbon/themes';
+
+$blockStyles: "info", "success", "warning", "error", "caution-undefined";
+
+:export {
+  types: $blockStyles
+}
+
+.blockQuote {
+  display: flex;
+  padding: layout.$spacing-04;
+  gap: layout.$spacing-04;
+  margin: layout.$spacing-05 0;
+  border-left-width: 5px;
+
+  & p {
+    margin-bottom: 0 !important;
+  }
+
+  & svg {
+    height: fit-content;
+    flex-shrink: 0;
+  }
+}
+
+.blockQuoteContent {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-05;
+}
+
+.default {
+  border-color: themes.$text-primary;
+  border-style: solid;
+  border-width: 1px;
+  border-left-width: 5px;
+  background-color: themes.get_token('text-primary', 0.175);
+}
+
+@each $name in $blockStyles {
+  .#{$name} {
+    $bg-color: themes.get_token('support-#{$name}', 0.25);
+    $border-color: themes.get_token('support-#{$name}', 0.75);
+
+    border-color: $border-color;
+    background-color: $bg-color;
+
+    & svg {
+      fill: themes.get_token('support-#{$name}');
+***REMOVED***
+
+    & code {
+      background-color: $bg-color !important;
+      border-color: $border-color;
+***REMOVED***
+  }
+}

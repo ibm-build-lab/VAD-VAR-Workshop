@@ -1,0 +1,19 @@
+$border-color: var(--cds-layer-accent, themes.$border-subtle-00);
+$bg-color: var(--cds-layer, themes.$layer-01);
+
+.copyText {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  overflow: auto;
+  border: 1px solid $border-color;
+  background-color: $bg-color;
+}

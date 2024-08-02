@@ -1,0 +1,23 @@
+.heading {
+  margin-top: layout.$spacing-08;
+  scroll-margin-top: calc(resources.$header-height + layout.$spacing-10);
+  font-weight: bold;
+  color: themes.$text-primary;
+  padding-bottom: layout.$spacing-02;
+  border-bottom: 1px solid themes.$border-subtle-02;
+
+  & a {
+    color: themes.$text-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: unset;
+      text-decoration: none;
+***REMOVED***
+
+    &:hover::after {
+      content: ' #';
+      color: themes.$border-subtle-02;
+***REMOVED***
+  }
+}

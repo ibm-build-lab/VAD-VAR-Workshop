@@ -1,19 +1,22 @@
 {
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "files.autoSave": "onFocusChange",
-    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
-    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
-    "files.insertFinalNewline": true,
-    "eslint.enable": true,
-    "eslint.validate": [
-      "javascript",
-      "typescript"
-    ],
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
-***REMOVED***,
-    "[javascript]": {
-      "editor.formatOnSave": false
-***REMOVED***,
-  }
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "files.autoSave": "onFocusChange",
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "files.insertFinalNewline": true,
+  "eslint.enable": true,
+  "eslint.validate": ["javascript", "typescript", "markdown", "mdx", "md"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "auto-close-tag.activationOnLanguage": [
+    "md",
+    "mdx"
+  ]
+}

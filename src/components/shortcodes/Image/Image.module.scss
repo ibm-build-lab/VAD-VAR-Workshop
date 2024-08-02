@@ -1,0 +1,44 @@
+.wrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+
+  & > img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+  
+    &:hover {
+      cursor: zoom-in;
+***REMOVED***
+  }
+}
+
+.dialog {
+  @include resources.center-fixed;
+  background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  border: none;
+
+  &::backdrop {
+    background: themes.$overlay;
+  }
+}
+
+.closeButton {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.controls {
+  position: fixed;
+  z-index: 999;
+  bottom: layout.$spacing-06;
+  @include resources.center-fixed-horizontal;
+}

@@ -1,0 +1,42 @@
+$border-color: var(--cds-layer-accent, themes.$border-subtle-00);
+$bg-color: var(--cds-layer, themes.$layer-01);
+
+.inline {
+  font-size: 0.75em;
+  border: 1px solid $border-color;
+  padding: layout.$spacing-01;
+  border-radius: 4px;
+  background-color: $bg-color;
+}
+
+.multiline {
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+
+  & .codeWrapper {
+    padding: layout.$spacing-04;
+    overflow-x: auto;
+    max-height: 250px;
+
+    & code {
+      font-size: 0.875em;
+***REMOVED***
+  }
+
+  & .panel {
+    display: flex;
+    border-top: 1px solid $border-color;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .copyButton {
+    border-left: 1px solid $border-color;
+  }
+
+  & .lang {
+    padding-left: layout.$spacing-04;
+    @include type.type-style('code-01');
+  }
+}

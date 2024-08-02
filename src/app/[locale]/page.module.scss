@@ -1,0 +1,7 @@
+
+
+.article {
+  & > p {
+    margin-bottom: layout.$spacing-06;
+  }
+}

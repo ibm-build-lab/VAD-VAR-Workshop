@@ -1,9 +1,15 @@
-@forward '@carbon/react/scss/theme';
-@forward '@carbon/react/scss/themes' as themes-*;
-@forward '@carbon/layout';
-@forward '@carbon/type';
-@forward '@carbon/colors';
+// @forward '@carbon/react/scss/theme' as theme-*;
+// @forward '@carbon/react/scss/themes' as themes-*;
+// @forward '@carbon/layout';
+// @forward '@carbon/type';
+// @forward '@carbon/colors';
+
+// @forward '@carbon/colors';
+// @forward '@carbon/themes';
+
+// @forward '@carbon/react/scss/spacing';
 
 @import 'functions';
 @import 'variables';
 @import 'mixins';
+

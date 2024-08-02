@@ -1,15 +1,63 @@
 {
-  "landingPageTitle": "Talleres de Venta Experiencial para Socios del Ecosistema IBM",
-  "landingPageContent": "Este sitio contiene contenido para que los socios del Ecosistema IBM (principalmente nuestros Distribuidores de Valor Añadido y Revendedores de Valor Añadido) desarrollen habilidades de ventas experienciales con varios productos IBM.<br><br>Estos talleres incluyen laboratorios prácticos que le proporcionarán habilidades de venta experimental \"mostrar, no contar\". El contenido le ayudará a prepararse para las [insignias de ventas técnicas de nivel 3 de cada tecnología](https://ibm.seismic.com/Link/Content/DCGX2M377qBM38TMpQ7DB3WVmQg8).<br><br>Estos talleres se han adaptado a partir de los laboratorios de la insignia de ventas técnicas para ajustarse al tiempo disponible y añadir habilidades adicionales de \"Nivel 3+\" para responder a preguntas comunes no cubiertas por los laboratorios básicos ni por el cuestionario de ventas técnicas.<br><br>Actualmente, los talleres requieren un contenido adicional que los introduzca en un entorno de taller presencial y proporcione detalles de configuración que no se encuentran directamente en los repos. Este contenido podrá añadirse más adelante.",
-  "landingPageQuizAlert": "Presta especial atención a la información incluida en este tipo de notas, ya que serán importantes para el examen L3.",
-  "landPageTileUpdated": "Actualizada {{date, formatDate}}",
-  "landPageTileTitle": "Ir a los materiales de laboratorio de IBM {{name}}",
-  "contentHeaderUpdated": "Última actualización {{date, formatDate}}",
-  "QuizAlertDefault": "Atención! Partes de esta sección estarán en el cuestionario.",
-  "TokenizationAppletInputLabel": "Texto de entrada",
-  "TokenizationAppletOutputLabel": "Texto Tokenizado",
-  "TokenizationAppletTokensTag": " tokens",
-  "TokenizationAppletWordsTag": " palabras",
-  "TokenizationAppletTextToggle": "Mostrar texto",
-  "TokenizationAppletInternalToggle": "Mostrar interno"
+  "NotFound": {
+    "title": "Página no encontrada",
+    "message": "Parece que la página solicitada no existe.<br/><br/>Pruebe con una de estas:"
+  },
+  "LandingPage": {
+    "title": "Talleres de Venta Experiencial para Socios del Ecosistema IBM",
+    "alert": "Presta especial atención a la información incluida en este tipo de notas, ya que serán importantes para el examen L3."
+  },
+  "UIShell": {
+    "Header": {
+      "menuButton": {
+        "open": "Navegación lateral abierta",
+        "close": "Cerrar navegación lateral"
+  ***REMOVED***,
+      "localeSwitcher": {
+        "label": "Seleccionar idioma"
+  ***REMOVED***,
+      "themeSwitcher": {
+        "label": "Cambiar el tema del sitio"
+  ***REMOVED***
+***REMOVED***,
+    "SideNav": {
+      "label": "Navegación lateral"
+***REMOVED***
+  },
+  "components": {
+    "shared": {
+      "lastUpdated": "Última actualización {date}"
+***REMOVED***,
+    "QuizAlert": {
+      "defaultText": "Atención! Partes de esta sección estarán en el cuestionario."
+***REMOVED***,
+    "Warning": {
+      "defaultText": ""
+***REMOVED***,
+    "Danger": {
+      "defaultText": ""
+***REMOVED***,
+    "Persona": {
+      "defaultText": ""
+***REMOVED***,
+    "Callout": {
+      "defaultText": ""
+***REMOVED***,
+    "PageHeader": {
+      "scrollToTop": "Ir arriba"
+***REMOVED***,
+    "Image": {},
+    "CodeBlock": {
+      "copyText": "Copiar código al portapapeles",
+      "copiedText": "¡Copiado!"
+***REMOVED***,
+    "TokenizationApplet": {
+      "inputLabel": "Texto de entrada",
+      "outputLabel": "Texto tokenizado",
+      "tokensTag": "{amount} tokens",
+      "wordsTag": "{amount} palabras",
+      "textToggle": "Mostrar texto",
+      "internalToggle": "Mostrar interno"
+***REMOVED***
+  }
 }

@@ -1,0 +1,118 @@
+@use 'sass:list';
+
+$input-height: 12rem;
+$border-color: themes.$border-subtle-00;
+
+$chunk-colors: 'info', 'success', 'error', 'caution-undefined', 'warning',
+  'caution-major', 'info';
+
+:export {
+  colorsLength: list.length($chunk-colors);
+}
+
+.container {
+  width: inherit;
+}
+
+.applet {
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: $input-height;
+}
+
+.appletSection {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-height: max-content;
+  position: relative;
+}
+
+.inputSection {
+  & textarea {
+    resize: none;
+    border: 1px solid $border-color;
+    border-right: none;
+  }
+
+  & div:nth-child(2) {
+    flex-grow: 1;
+  }
+}
+
+.outputSection {
+  display: flex;
+  flex-grow: 1;
+  overflow-y: auto;
+  border: 1px solid $border-color;
+  padding: layout.$spacing-04 layout.$spacing-05;
+  background-color: themes.$layer-01;
+}
+
+.tokenList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: layout.$spacing-02;
+  height: min-content;
+}
+
+.chunk {
+  border-radius: 5px;
+  padding: 0 0.25rem;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 !important;
+
+  @each $value in $chunk-colors {
+    $index: list.index($chunk-colors, $value);
+
+    &_#{$index - 1} {
+      $bg-color: themes.get_token('support-#{$value}', 0.175);
+      $border-c: themes.get_token('support-#{$value}');
+
+      color: $border-c;
+      border: 1px solid $border-c;
+      background-color: $bg-color;
+
+      // border: 1px solid resources.map-deep-get(colors.$colors, $value, 60);
+      // color: resources.map-deep-get(colors.$colors, $value, 60);
+      // background-color: resources.map-deep-get(colors.$colors, $value, 10);
+***REMOVED***
+  }
+}
+
+.counterTag {
+  position: absolute;
+  bottom: layout.$spacing-02;
+  right: layout.$spacing-02;
+}
+
+.controls {
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid $border-color;
+  border-top: none;
+
+  & .modelDropdown {
+    grid-gap: 0;
+  }
+}
+
+@include resources.apply-lesser-than('sm') {
+  .applet {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, $input-height);
+  }
+
+  .outputSection {
+    border-top: none;
+  }
+
+  .inputSection {
+    & textarea {
+      border-right: 1px solid $border-color;
+***REMOVED***
+  }
+}

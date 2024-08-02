@@ -1,9 +1,13 @@
-$content-width: 1150px;
-$sidebar-width: 275px;
-$header-height: 48px;
+@use '@carbon/styles/scss/config';
+@use "sass:map";
+
+$header-height: 3rem;
+$sidebar-width: 16rem;
 
 $breakpoints: (
-  'sm': 600px,
-  'md': 1055.68px,
-  'lg': 1600px,
-  'xl': 2000px) !default;
+  'sm': map.get(config.$grid-breakpoints, 'sm', 'width'),
+  'md': map.get(config.$grid-breakpoints, 'md', 'width'),
+  'lg': map.get(config.$grid-breakpoints, 'lg', 'width'),
+  'xl': map.get(config.$grid-breakpoints, 'max', 'width'),
+  'xxl': calc(map.get(config.$grid-breakpoints, 'max', 'width') + 20rem)
+);

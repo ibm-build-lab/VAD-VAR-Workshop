@@ -1,0 +1,28 @@
+@forward '@carbon/themes' hide get;
+
+@use 'sass:map';
+@use '@carbon/themes';
+
+// Custom function to create CSS var from token for theme neutral tokens
+// combination of get() and _get()
+// get only returns color for defined theme and _get() is private
+@function get_token($token, $opacity: 1.0) {
+  $css-token: null;
+
+  @if map.has-key(themes.$theme, $token) {
+    @if themes.$use-fallback-value == false {
+      $css-token: var(--#{themes.$prefix}-#{$token});
+***REMOVED*** @else {
+      $css-token: var(--#{themes.$prefix}-#{$token}, #{themes.get($token)});
+***REMOVED***
+  }
+  @else { 
+    @error "Unable to find token: #{$token} in theme map.";
+  }
+
+  @if $opacity == 1.0 {
+    @return $css-token;
+  } @else {
+    @return color-mix(in srgb, $css-token $opacity*100%, transparent);
+  }
+}

@@ -1,66 +1,69 @@
+// const { getGlobals } = require('eslint-plugin-mdx/lib/helpers');
+
+// const shortcodes = require('./src/lib/mdx/shortcodes.ts');
+// const shortcodes = { TileGrid: null, NavTile: null };
+
+/** @type { import('eslint').Linter.Config }  */
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
-***REMOVED***
-  },
-  plugins: ['@typescript-eslint', 'react', 'prettier', 'import'],
-  env: {
-    browser: true,
-    node: true,
-    es6: true
-  },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-    'plugin:import/recommended',
-    'plugin:import/typescript'
-  ],
-  settings: {
-    react: {
-      version: 'detect'
-***REMOVED***,
-    'import/resolver': {
-      typescript: true,
-      node: true
-***REMOVED***
-  },
+  extends: ['next/core-web-vitals', 'prettier'],
+  plugins: ['prettier'],
   rules: {
-    'react/prop-types': 'off',
-    'prettier/prettier': 'error',
-    'no-underscore-dangle': 'off',
+    // indent: ['error', 2, { SwitchCase: 1, offsetTernaryExpressions: false }],
+    indent: 'off',
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    'spaced-comment': ['error', 'always'],
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.tsx'] }],
-    'react/function-component-definition': ['warn', { namedComponents: 'arrow-function' }],
-    'sort-imports': [
+    'react/forbid-prop-types': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/self-closing-comp': ['error', { component: true, html: false }],
+    'react/no-array-index-key': 'off',
+    'react/require-default-props': 'off',
+    'no-unused-vars': [
       'error',
-      {
-        ignoreCase: false,
-        ignoreDeclarationSort: true,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple']
-  ***REMOVED***
+      { destructuredArrayIgnorePattern: '^_', argsIgnorePattern: '^_' }
     ],
     'import/order': [
       'error',
-      { groups: ['external', 'builtin', 'internal', 'sibling', 'parent', 'index'] }
-    ],
-    'react/self-closing-comp': [
-      'error',
       {
-        component: true,
-        html: true
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index'
+        ],
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true
+    ***REMOVED***
+  ***REMOVED***
+    ],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never'
   ***REMOVED***
     ]
   },
   overrides: [
     {
-      files: ['*.md'],
-      extends: 'plugin:mdx/recommended'
+      files: ['*.md', '*.mdx'],
+      // requires so eslint can know what JSX is valid
+      // globals: getGlobals(shortcodes),
+      rules: {
+        indent: ['off'],
+        // 'react/jsx-no-undef': [1, { allowGlobals: true }],
+        'react/jsx-no-undef': 'off',
+        'react/no-unescaped-entities': 'off',
+        'react/jsx-filename-extension': [1, { extensions: ['.md', '.mdx'] }]
+  ***REMOVED***,
+      extends: 'plugin:mdx/recommended',
+      settings: { 'mdx/remark': true }
 ***REMOVED***
   ]
 };

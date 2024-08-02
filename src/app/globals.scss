@@ -1,0 +1,46 @@
+@use '@carbon/react';
+// @use '@carbon/react/scss/reset' as reset;
+// @include reset.reset();
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100%;
+  min-height: calc(100vh - resources.$header-height);
+  overscroll-behavior-y: none;
+}
+
+dialog:modal {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+// global helper classes to hide items at breakpoints
+@each $name, $sz in resources.$breakpoints {
+  .hide-lesser-than-#{$name} {
+    @include resources.apply-lesser-than($name) {
+      display: none !important;
+***REMOVED***
+  }
+
+  .hide-greater-than-#{$name} {
+    @include resources.apply-greater-than($name) {
+      display: none !important;
+***REMOVED***
+  }
+}
+
+// global helper class to wrap content correctly
+// so it aligns with sidenav
+.page-wrapper {
+  @include resources.repsonsive-content;
+}

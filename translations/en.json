@@ -1,15 +1,63 @@
 {
-  "landingPageTitle": "Experiential Selling Workshops for IBM Ecosystem Partners",
-  "landingPageContent": "This site contains content for IBM Ecosystem partners (primarily our Value-Added Distributors and Value-Added Resellers) to build experiential sales skills with various IBM products.<br><br>These workshops include hands-on labs that give you \"show, not tell\" experiential selling skills. The content will help you prepare for the [Level 3 Technical Sales badges](https://ibm.seismic.com/Link/Content/DCGX2M377qBM38TMpQ7DB3WVmQg8) for each technology.<br><br>These workshops have been customized from the Technical Sales badge labs in order to fit the time and to add additional \"Level 3+\" skills to answer common questions not covered by the base labs nor the Technical Sales quiz.<br><br>Currently, the workshops require additional content which introduces them in an in-person workshop setting and provides configuration detail that's not found directly in the repos. This content may be added at a later date.",
-  "landingPageQuizAlert": "Pay special attention to information enclosed in notes like this because they will be important for the L3 quiz",
-  "landPageTileUpdated": "Updated {{date, formatDate}}",
-  "landPageTileTitle": "Go to {{name}} lab materials",
-  "contentHeaderUpdated": "Last updated {{date, formatDate}}",
-  "QuizAlertDefault": "Heads up! Parts of this section will be on the quiz.",
-  "TokenizationAppletInputLabel": "Input text",
-  "TokenizationAppletOutputLabel": "Tokenized text",
-  "TokenizationAppletTokensTag": " tokens",
-  "TokenizationAppletWordsTag": " words",
-  "TokenizationAppletTextToggle": "Show text",
-  "TokenizationAppletInternalToggle": "Show internal"
+  "NotFound": {
+    "title": "Page Not Found",
+    "message": "Looks like the page you requested doesn't exist.<br/><br/>Try one of these:"
+  },
+  "LandingPage": {
+    "title": "Experiential Selling Workshops for IBM Ecosystem Partners",
+    "alert": "Pay special attention to information enclosed in notes like this because they will be important for the L3 quiz"
+  },
+  "UIShell": {
+    "Header": {
+      "menuButton": {
+        "open": "Open side navigation",
+        "close": "Close side navigation"
+  ***REMOVED***,
+      "localeSwitcher": {
+        "label": "Change language"
+  ***REMOVED***,
+      "themeSwitcher": {
+        "label": "Toggle theme"
+  ***REMOVED***
+***REMOVED***,
+    "SideNav": {
+      "label": "Side navigation"
+***REMOVED***
+  },
+  "components": {
+    "shared": {
+      "lastUpdated": "Last updated {date}"
+***REMOVED***,
+    "QuizAlert": {
+      "defaultText": "Heads up! Parts of this section will be on the quiz."
+***REMOVED***,
+    "Warning": {
+      "defaultText": ""
+***REMOVED***,
+    "Danger": {
+      "defaultText": ""
+***REMOVED***,
+    "Persona": {
+      "defaultText": ""
+***REMOVED***,
+    "Callout": {
+      "defaultText": ""
+***REMOVED***,
+    "PageHeader": {
+      "scrollToTop": "Scroll to top"
+***REMOVED***,
+    "Image": {},
+    "CodeBlock": {
+      "copyText": "Copy code to clipboard",
+      "copiedText": "Copied!"
+***REMOVED***,
+    "TokenizationApplet": {
+      "inputLabel": "Input text",
+      "outputLabel": "Tokenized text",
+      "tokensTag": "{amount} tokens",
+      "wordsTag": "{amount} words",
+      "textToggle": "Show text",
+      "internalToggle": "Show internal"
+***REMOVED***
+  }
 }
