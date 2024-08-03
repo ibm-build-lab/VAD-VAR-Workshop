@@ -79,6 +79,8 @@ Classroom style workshops will typically provide a shared watsonx.ai environment
 
 ### Reference materials and other exercises
 
-- [AI Glossary](/watsonx/watsonxai/ref100)
-- [Basics of Prompt Engineering](/watsonx/watsonxai/ref101)
-- [Prompt Engineering exercises and answers](/watsonx/watsonxai/ref102)
+<TileGrid>
+  <NavTile to='/watsonx/watsonxai/ref100' />
+  <NavTile to='/watsonx/watsonxai/ref101' />
+  <NavTile to='/watsonx/watsonxai/ref102' />
+</TileGrid>
