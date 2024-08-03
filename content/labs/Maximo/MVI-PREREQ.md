@@ -15,7 +15,7 @@ Completing this lab requires access to the latest version of the worldwide Maxim
 
 ![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.010.jpeg)
 ![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.010.jpeg)
-3. Once you receive an email notifying you that your environment is ready to use, locate the URL (Uniform Resource Locator) link in this email for the demo environment **MVI URL** and the list of corresponding login credentials. This URL and login credentials will be used later in the demo script. Take a note of the username and password for Maximo Visual Inspection (MVI), as it will be required to log in to the application at a later step.
+3\. Once you receive an email notifying you that your environment is ready to use, locate the URL (Uniform Resource Locator) link in this email for the demo environment **MVI URL** and the list of corresponding login credentials. This URL and login credentials will be used later in the demo script. Take a note of the username and password for Maximo Visual Inspection (MVI), as it will be required to log in to the application at a later step.
 
 ![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.011.jpeg)
 
@@ -27,12 +27,12 @@ Completing this lab requires access to the latest version of the worldwide Maxim
 
 2. **Unzip** the downloaded file and note the location of the directory where you unzipped the file. Once the images are downloaded and unzipped, switch back to the MVI **Data sets** screen (from step 1 in this section)
 
-> Note in the downloaded images folder there are two sub-folders both containing images of 
-sedimentation tanks in clean and dirty conditions. We will use images in both folders to train and test 
-the AI model in this demo
+> Note in the downloaded images folder there are two sub-folders both containing images of
+> sedimentation tanks in clean and dirty conditions. We will use images in both folders to train and test
+> the AI model in this demo
 
-3. Unzip both training and testing folders and note the location of the directory where you unzipped 
-these files.
+3. Unzip both training and testing folders and note the location of the directory where you unzipped
+   these files.
 
 ## Step 3: Install MVI Mobile Application:
 
@@ -86,7 +86,7 @@ Follow the instructions below to sign up for a Twilio account and note your acco
 
 **Actions:**
 
-1. Go to Twilio’s website (http[s://www.twilio.com/). ](<http://www.twilio.com/)>)
+1. Go to Twilio’s website ([twilio.com](https://www.twilio.com/))
 2. Click the **Sign-up** button on the far top right of the screen.
 
 ![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.024.jpeg)
