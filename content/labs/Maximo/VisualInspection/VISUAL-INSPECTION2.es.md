@@ -338,7 +338,7 @@ Cuando se especifica un modelo dentro de una inspección (como se hizo en esta d
 2. Para esta demostración, usted ejecutará la inferencia sobre una imagen _de_ un tanque. Para ello, en su ordenador portátil, abra una de las imágenes de tanque descargadas en la sección Paso 2 del trabajo previo y manténgala en la pantalla para el siguiente paso.
 3. Tome una foto de la imagen de un tanque limpio o sucio mostrada en la pantalla de su ordenador o proyector (en este paso básicamente está tomando la imagen de una imagen).
 
-La foto permanecerá en la pantalla de su dispositivo móvil, así que pulse el botón **atrás (<)** para volver a la vista de la cámara. Estos son algunos ejemplos de lo que podría ver después de unas cuantas inspecciones.
+La foto permanecerá en la pantalla de su dispositivo móvil, así que pulse el botón **atrás {'(<)'}** para volver a la vista de la cámara. Estos son algunos ejemplos de lo que podría ver después de unas cuantas inspecciones.
 
 ![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.001.jpeg)
 
