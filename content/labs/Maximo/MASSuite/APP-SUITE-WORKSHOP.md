@@ -8,7 +8,7 @@ updated: 2023-03-24
 
 In this lab you will get a tour of how 4 key applications within Maximo Application Suite (MAS) can be used to troubleshoot a real world situation. All L3 Quiz questions can be answered using this lab.
 
-HEADS UP! L3 Quiz Content denoted with 🟢
+<QuizAlert text='Heads Up! Quiz material will be flagged like this!' />
 
 ## Lab Story Line
 

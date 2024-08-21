@@ -7,7 +7,7 @@ updated: 2024-07-19
 
 En este laboratorio obtendrá un recorrido por cómo se pueden utilizar 4 aplicaciones clave dentro de Maximo Application Suite (MAS) para resolver problemas de una situación real en el mundo. Todas las preguntas de L3 Quiz se pueden responder utilizando este laboratorio.
 
-Contenido de cuestionario de L3 indicado con 🟢
+<QuizAlert text="¡Aviso! ¡El material del cuestionario se marcará así!" />
 
 ## Línea de historia de laboratorio
 

@@ -1,7 +1,7 @@
 ---
 title: Application Suite Prereqs
 timeToComplete: 30
-updated: 2023-03-24T00:00:00.000Z
+updated: 2023-03-24
 ---
 
 # Requisitos previos del laboratorio de Maximo Application Suite

@@ -6,6 +6,8 @@ updated: 2024-07-16
 
 # Maximo Visual Inspection (MVI) - Part 2
 
+<QuizAlert text='Heads Up! Quiz material will be flagged like this!' />
+
 In this lab we will see how MVI makes training a model on your previously created data set easy.
 
 Next you will explore MVI Edge to see how scaling and efficiency are facilitated.
@@ -207,7 +209,7 @@ The following part of this demo will demonstrate the core capabilities of MVI Mo
 
 ### Step 1: Integrating MVI Mobile with the MVI Training server
 
-**Actions:**
+#### Actions
 
 1. Login to MVI training server (the software where you created the AI model in).
 2. On Welcome to **IBM Maximo Visual Inspection** screen, click on the **hamburger icon (A)** to open the left side panel. On the left side panel click on **Services (B)** menu option to open the dropdown menu. From the Services dropdown menu click **API key (C)**.

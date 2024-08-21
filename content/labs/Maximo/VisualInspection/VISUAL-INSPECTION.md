@@ -10,7 +10,7 @@ In this lab you will first see the connection between Maximo Monitor and MVI.
 
 Then you will create your own data set, label, and augment using an MVI instance.
 
-HEADS UP! L3 Quiz Content denoted with 🟢
+<QuizAlert text='Heads Up! Quiz material will be flagged like this!' />
 
 ## Maximo Monitor and MVI
 
@@ -20,22 +20,19 @@ HEADS UP! L3 Quiz Content denoted with 🟢
 
 1. Click on the **MVI URL** link from the email you received containing instructions to use the demo environment.
 
-2. IBM Maximo Application Suite log in page opens. Enter **MVI Username (A)** and **Password (B)**  and click **Log 
-in** 
+2. IBM Maximo Application Suite log in page opens. Enter **MVI Username (A)** and **Password (B)** and click **Log in**
 
-![](./images/mvi/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.003.png) 
+![](./images/mvi/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.003.png)
 
- Once the login credentials are accepted, the MAS Application **Suite navigator** window opens. Several applications that make up the Maximo Application Suite are displayed. In this demo, the focus will be on the Maximo Visual Inspection application; however, Part One of this demo, briefly looks at MVI AI model inspection results in the MAS Monitor application. (Note: in this demo environment, only the necessary applications are available for completing MVI L3).
+Once the login credentials are accepted, the MAS Application **Suite navigator** window opens. Several applications that make up the Maximo Application Suite are displayed. In this demo, the focus will be on the Maximo Visual Inspection application; however, Part One of this demo, briefly looks at MVI AI model inspection results in the MAS Monitor application. (Note: in this demo environment, only the necessary applications are available for completing MVI L3).
 
 > Note: If this is your first-time logging into the MAS, you may be prompted to view a quick application tour (how-to tutorial). Please dismiss any such tours for the purposes of this demo.
 
 ![](./images/mvi/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.004.jpeg)
 
-
 3. In the MAS **Suite navigator** page, click on the **Visual Inspection (A)** tile.
 
 ![](./images/mvi/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.005.jpeg)
-
 
 4. Click **Get started (A)** on the MVI **Welcome to IBM Maximo Visual Inspection** screen.
 
@@ -98,7 +95,7 @@ As you can imagine, labeling the images correctly is critical to the accuracy of
 
 This approach lowers the barrier to entry and empowers domain experts with limited to no AI training the ability to create and deploy working AI models in a matter of hours, not days or weeks.
 
-**Actions:**
+### Actions
 
 Once all the pictures are uploaded in MVI perform the following steps:
 
@@ -155,7 +152,7 @@ For your convenience, a light blue bar highlights the label that is currently in
 
 ![](./images/mvi/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.037.png)
 
-1.  Once all tank images in the Image Navigator are appropriately labelled, click the **Back** icon (not your browser’s back button) to navigate back to the **Data set / Sedimentation Tanks** page.
+1. Once all tank images in the Image Navigator are appropriately labelled, click the **Back** icon (not your browser’s back button) to navigate back to the **Data set / Sedimentation Tanks** page.
 
 ![](./images/mvi/mvi.1a40bb6d-e87f-4b74-929f-11f16746fc40.038.jpeg)
 
@@ -173,7 +170,7 @@ To address this pain point, MVI provides image augmentation capabilities, where 
 
 For this demo, it is fair to assume that a posted field camera is unlikely to take pictures of the tanks under the same conditions every time. The lighting will vary depending on weather and time of day. If the camera is rotatable, then it’s orientation to the tank and image focus can also be inconsistent. Rather than trying to provide images for all possible scenarios, image augmentation can help simulate these different conditions. This is how, data augmentation helps add additional data to your dataset to improve model performance (accuracy). You will use a few of the available MVI data augmentation options to add volume and variety to your tank images data set.
 
-**Actions:**
+### Actions
 
 1. Click **Augment data**.
 
