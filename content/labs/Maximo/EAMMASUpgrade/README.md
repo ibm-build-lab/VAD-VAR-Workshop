@@ -1,11 +1,14 @@
 ---
-title: Actualización de EAM a MAS
+title: EAM to MAS Upgrade
 toc: false
 ---
 
-# Maximo Technical Sales Workshop
+# Enterprise Asset Management (EAM) to Maximo Manage (MAS)
 
+This page includes links to hands-on labs designed to provide practical experience with the steps involved for upgrading Maximo Enterprise Asset Management (EAM) to IBM Maximo Manage.
 
 ## Labs
 
-- **[SNO MAS Installation](/maximo/eammasupgrade/sno-installation)**
+<TileGrid>
+  <NavTile to='/maximo/eammasupgrade/sno-installation' recursive />
+</TileGrid>

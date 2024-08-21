@@ -1,6 +1,7 @@
 ---
 title: SNO MAS Installation
 updated: 2024-07-18
+timeToComplete: 120
 toc: true
 ---
 

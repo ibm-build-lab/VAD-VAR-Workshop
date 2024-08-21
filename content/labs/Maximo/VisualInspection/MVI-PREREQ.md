@@ -13,11 +13,11 @@ Completing this lab requires access to the latest version of the worldwide Maxim
 1. Click on this [**Monday form**](https://forms.monday.com/forms/9753d4c0fbbf082f119601a5d6b01f00?r=use1) to request access to the MAS demo environment.
 2. On this form, enter your **Name** and **Email** address and click **Submit**.
 
-![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.010.jpeg)
-![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.010.jpeg)
+![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.010.png)
+
 3\. Once you receive an email notifying you that your environment is ready to use, locate the URL (Uniform Resource Locator) link in this email for the demo environment **MVI URL** and the list of corresponding login credentials. This URL and login credentials will be used later in the demo script. Take a note of the username and password for Maximo Visual Inspection (MVI), as it will be required to log in to the application at a later step.
 
-![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.011.jpeg)
+![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.011.png)
 
 ### Step 2: Download the Training and Validation Tank Images for the AI Model
 
@@ -131,7 +131,7 @@ You will start with a trial balance of credit. Each phone number that you provis
 
 You now have a phone number associated with your account. The next step is to setup a messenger service within Twilio and associate it with your new phone number. This is done with Twilio’s “Messaging” capability, which allows text messages (SMS) to be sent and received worldwide.
 
-11. From the left side panel of the main dashboard, click **Messaging** (**A)** and then click **Services** from the sub-menu that opens.
+11. From the left side panel of the main dashboard, click **Messaging** **(A)** and then click **Services** from the sub-menu that opens.
 
 ![](./images/mvi/mvi.f2962fae-95d4-4d63-9e23-211e54c72214.034.jpeg)
 

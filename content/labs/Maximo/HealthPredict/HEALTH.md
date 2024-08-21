@@ -10,14 +10,14 @@ In this exercise you will learn how to setup Asset Health scores like Heath, Ris
 
 > **Import Note**: In this lab, we'll be creating assets like XX_Asset1, XX_Asset2, etc. Please make sure you replace the word XX with your initals during the lab.
 
-## Setup inital Manage data
+## Setup Initial Manage data
 
 1. Open Manage application
 2. Go to Assets application and click on the `+` icon to create a new Asset record. Create at least 5 assets with asset names like `XX_ASSET1`, `XX_ASSET2`, `XX_ASSET3`, `XX_ASSET4`,
-`XX_ASSET5` etc.
+   `XX_ASSET5` etc.
 3. Change the status of all assets to **Active**.
 4. Go to the **List** tab and filter the assets which you have created with a string like `XX%`
-  
+
 ![Assets search](images/HEALTH/000.png)
 
 5. Save the Asset list by using the **Save Query** option.
@@ -35,10 +35,10 @@ In this exercise you will learn how to setup Asset Health scores like Heath, Ris
 
 9. **Save** the record.
 10. Go to **Applications** -> **Asset** and associate the meter group `XX_METER` to all the assets created above.
-    
+
 ![Associate assets](images/HEALTH/004.png)
 
-11.  Enter **Meter readings** for all the assets using **More Actions** -> **Enter Meter Readings**. Add similar meter readings for all assets like so:
+11. Enter **Meter readings** for all the assets using **More Actions** -> **Enter Meter Readings**. Add similar meter readings for all assets like so:
 
 ![Add meter readings](images/HEALTH/005.png)
 
@@ -47,7 +47,7 @@ In this exercise you will learn how to setup Asset Health scores like Heath, Ris
 1. From the MAS homepage, click the **Launch icon** on the **Heath card**.
 2. Go to the top-left **Assets** menu. Enter `XX%` in the **Search** bar. This will return the 3 Assets we just created in the last section.
 
-![Search assets](images/HEALTH/006.png) 
+![Search assets](images/HEALTH/006.png)
 
 3. Click on `XX_Asset1` and observe the various cards that appear out-of-the-box. They are all empty for the moment. Let's populate them!
 
@@ -98,7 +98,7 @@ Select object as Asset and Configure Scoring as : Building Score
 
 ![Select contributors for health score](images/HEALTH/016.png)
 
-> Add the two other contributors as well for `VIBRATIONH` and `PRESSURE` 
+> Add the two other contributors as well for `VIBRATIONH` and `PRESSURE`
 
 ![Health menu](images/HEALTH/017.png)
 

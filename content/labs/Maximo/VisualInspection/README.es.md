@@ -1,13 +1,13 @@
 ---
-title: Visual Inspection
+title: Maximo Visual Inspection
 toc: false
 ---
 
-# Visual Inspection Technical Sales Labs
+# Laboratorios de Ventas Técnicas de Inspección Visual
 
-This page includes links to hands-on labs designed to provide practical experience with Maximo Visual Inspection.
+Esta página incluye enlaces a laboratorios prácticos diseñados para proporcionar experiencia práctica con Maximo Visual Inspection.
 
-## Labs
+## Laboratorios
 
 <TileGrid>
   <NavTile to='/maximo/visualinspection/mvi-prereq' recursive />
