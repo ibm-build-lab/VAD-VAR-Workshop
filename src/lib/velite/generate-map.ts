@@ -11,7 +11,7 @@ export default function generateMap() {
     (acc, curr) => {
       acc[curr.slug] = curr;
       return acc;
-***REMOVED***,
+    },
     {} as Record<string, Lab>
   );
 }

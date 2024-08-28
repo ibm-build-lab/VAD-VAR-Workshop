@@ -12,45 +12,45 @@
       "menuButton": {
         "open": "Open side navigation",
         "close": "Close side navigation"
-  ***REMOVED***,
+      },
       "localeSwitcher": {
         "label": "Change language"
-  ***REMOVED***,
+      },
       "themeSwitcher": {
         "label": "Toggle theme"
-  ***REMOVED***
-***REMOVED***,
+      }
+    },
     "SideNav": {
       "label": "Side navigation"
-***REMOVED***
+    }
   },
   "components": {
     "shared": {
       "lastUpdated": "Last updated {date}"
-***REMOVED***,
+    },
     "QuizAlert": {
       "defaultText": "Heads up! Parts of this section will be on the quiz."
-***REMOVED***,
+    },
     "Warning": {
       "defaultText": ""
-***REMOVED***,
+    },
     "Danger": {
       "defaultText": ""
-***REMOVED***,
+    },
     "Persona": {
       "defaultText": ""
-***REMOVED***,
+    },
     "Callout": {
       "defaultText": ""
-***REMOVED***,
+    },
     "PageHeader": {
       "scrollToTop": "Scroll to top"
-***REMOVED***,
+    },
     "Image": {},
     "CodeBlock": {
       "copyText": "Copy code to clipboard",
       "copiedText": "Copied!"
-***REMOVED***,
+    },
     "TokenizationApplet": {
       "inputLabel": "Input text",
       "outputLabel": "Tokenized text",
@@ -58,6 +58,6 @@
       "wordsTag": "{amount} words",
       "textToggle": "Show text",
       "internalToggle": "Show internal"
-***REMOVED***
+    }
   }
 }

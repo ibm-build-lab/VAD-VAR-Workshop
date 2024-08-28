@@ -31,6 +31,6 @@ export default function collectBreadcrumbs(
       const slug = (crumbs as string[]).slice(0, index + 1).join('/');
       const item = SLUG_MAP[slug];
       return { slug: `/${slug}`, title: item?.title || part };
-***REMOVED***)
+    })
     .slice(1);
 }

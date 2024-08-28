@@ -48,7 +48,7 @@ export async function generateMetadata(
     description,
     alternates: {
       canonical: fullSlug
-***REMOVED***,
+    },
     twitter: { title, description },
     openGraph: {
       type: 'article',
@@ -57,7 +57,7 @@ export async function generateMetadata(
       url: fullSlug,
       locale,
       modifiedTime: updated
-***REMOVED***
+    }
   });
 }
 

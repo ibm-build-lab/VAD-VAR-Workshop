@@ -47,7 +47,7 @@ export default function CustomSideNavItem(props: CustomSideNavItemProps) {
           <div className={`${prefix}--tag__custom-icon`}>
             <CustomIconElement />
           </div>
-***REMOVED***}
+        )}
         <SideNavLinkText>{children}</SideNavLinkText>
       </Link>
     </li>

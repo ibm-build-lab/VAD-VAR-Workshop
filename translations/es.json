@@ -12,45 +12,45 @@
       "menuButton": {
         "open": "Navegación lateral abierta",
         "close": "Cerrar navegación lateral"
-  ***REMOVED***,
+      },
       "localeSwitcher": {
         "label": "Seleccionar idioma"
-  ***REMOVED***,
+      },
       "themeSwitcher": {
         "label": "Cambiar el tema del sitio"
-  ***REMOVED***
-***REMOVED***,
+      }
+    },
     "SideNav": {
       "label": "Navegación lateral"
-***REMOVED***
+    }
   },
   "components": {
     "shared": {
       "lastUpdated": "Última actualización {date}"
-***REMOVED***,
+    },
     "QuizAlert": {
       "defaultText": "Atención! Partes de esta sección estarán en el cuestionario."
-***REMOVED***,
+    },
     "Warning": {
       "defaultText": ""
-***REMOVED***,
+    },
     "Danger": {
       "defaultText": ""
-***REMOVED***,
+    },
     "Persona": {
       "defaultText": ""
-***REMOVED***,
+    },
     "Callout": {
       "defaultText": ""
-***REMOVED***,
+    },
     "PageHeader": {
       "scrollToTop": "Ir arriba"
-***REMOVED***,
+    },
     "Image": {},
     "CodeBlock": {
       "copyText": "Copiar código al portapapeles",
       "copiedText": "¡Copiado!"
-***REMOVED***,
+    },
     "TokenizationApplet": {
       "inputLabel": "Texto de entrada",
       "outputLabel": "Texto tokenizado",
@@ -58,6 +58,6 @@
       "wordsTag": "{amount} palabras",
       "textToggle": "Mostrar texto",
       "internalToggle": "Mostrar interno"
-***REMOVED***
+    }
   }
 }

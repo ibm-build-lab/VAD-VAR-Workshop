@@ -35,8 +35,8 @@ export default function BreadCrumbs(props: BreadCrumbsProps) {
             isCurrentPage={index === breadcrumbs.length - 1}>
             <Link href={slug}>{title}</Link>
           </BreadcrumbItem>
-***REMOVED***;
-  ***REMOVED***)}
+        );
+      })}
     </Breadcrumb>
   );
 }

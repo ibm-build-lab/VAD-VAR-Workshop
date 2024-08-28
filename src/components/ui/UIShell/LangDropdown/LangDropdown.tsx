@@ -34,15 +34,15 @@ export default function LangDropdown(props: LangDropdownProps) {
             <EarthFilled size={20} className={styles.icon} />
             <span>{localeMap[i!.locale]}</span>
           </div>
-***REMOVED***}
+        )}
         titleText=''
         aria-label={t('Header.localeSwitcher.label')}
         onChange={({ selectedItem }) =>
           selectedItem && router.push(selectedItem.pathname)
-    ***REMOVED***
+        }
         initialSelectedItem={supportedLocales.find(
           (i) => i.locale === currentLocale
-***REMOVED***}
+        )}
         disabled={supportedLocales.length === 1}
         className={styles.selectLang}
         label={t('Header.localeSwitcher.label')}
@@ -50,7 +50,7 @@ export default function LangDropdown(props: LangDropdownProps) {
           greaterThanMd
             ? localeMap[i!.locale]
             : localeMap[i!.locale].substring(0, 2).toUpperCase()
-    ***REMOVED***
+        }
         id='locale-select'
         items={supportedLocales}
         size='lg'

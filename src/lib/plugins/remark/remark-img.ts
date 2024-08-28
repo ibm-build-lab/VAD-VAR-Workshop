@@ -25,14 +25,14 @@ export default function remarkImage(options: Options) {
       const { prepend } = options;
       const test = [...prepend.split('/'), ...node.url.split('/')];
       node.url = '/' + path.join(...test);
-***REMOVED***
+    }
   }
 
   return function transform(tree: Node) {
     if (options && options.prepend) {
       visit(tree, 'image', visitor);
-***REMOVED*** else {
+    } else {
       throw Error('Missing required `prepend` option.');
-***REMOVED***
+    }
   };
 }

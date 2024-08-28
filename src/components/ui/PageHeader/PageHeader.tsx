@@ -43,13 +43,13 @@ export default function Header(props: HeaderProps) {
           align='flex-start'>
           {breadcrumbs.length > 0 ? (
             <BreadCrumbs breadcrumbs={breadcrumbs} />
-  ***REMOVED*** : (
+          ) : (
             <div></div>
-  ***REMOVED***}
+          )}
           <Stack gap={2} orientation='horizontal'>
             {timeToComplete && (
               <ReadingTimeTag type='gray' timeToComplete={timeToComplete} />
-    ***REMOVED***}
+            )}
             {updated && <UpdatedTag type='gray' updated={updated} />}
             {level && <ContentLevelTag level={level} />}
           </Stack>

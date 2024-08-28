@@ -18,17 +18,17 @@ const nextConfig = {
     ? {
         loader: 'custom',
         loaderFile: './src/lib/image-loader.ts'
-  ***REMOVED***
+      }
     : {
         unoptimized: true
-  ***REMOVED***,
+      },
   webpack: (config) => {
     // for tokenization applet
     config.resolve.alias = {
       ...config.resolve.alias,
       sharp$: false,
       'onnxruntime-node$': false
-***REMOVED***;
+    };
 
     return config;
   },
@@ -46,19 +46,19 @@ const nextConfig = {
           `@use '@carbon/layout'`,
           `@use '@carbon/type'`
         ]);
-  ***REMOVED***
+      }
 
       const imports = [...list, ''].join(';\n');
       return imports.trim() + content;
-***REMOVED***,
+    },
     logger: {
       warn: function (message) {
         console.warn(message);
-  ***REMOVED***,
+      },
       debug: function (message) {
         console.log(message);
-  ***REMOVED***
-***REMOVED***
+      }
+    }
   }
 };
 

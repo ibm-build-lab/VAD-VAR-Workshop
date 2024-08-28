@@ -30,10 +30,10 @@ function TOCTree(props: TableOfContentsProps) {
 
             {items && items.length > 0 && nextDepth !== maxDepth && (
               <TOCTree toc={items} depth={nextDepth} />
-    ***REMOVED***}
+            )}
           </>
-***REMOVED***;
-  ***REMOVED***)}
+        );
+      })}
     </div>
   );
 }

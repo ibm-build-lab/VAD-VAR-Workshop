@@ -27,27 +27,27 @@ const config = {
         title: {
           description: 'Title string displayed in left-hand navigation',
           type: 'string'
-    ***REMOVED***,
+        },
         updated: {
           description: 'Represents last date content was updated',
           type: 'string',
           format: 'date'
-    ***REMOVED***,
+        },
         timeToComplete: {
           description: 'Amount of time in minutes lab will take to complete',
           type: 'number',
           exclusiveMinimum: 0
-    ***REMOVED***,
+        },
         toc: {
           description: 'Whether final lab page should render table of contents',
           type: 'boolean'
-    ***REMOVED***,
+        },
         desc: {
           description: 'Short plaintext desciption of the content within',
           type: 'string'
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+        }
+      }
+    }
   },
   plugins: {
     remarkPlugins: [
@@ -62,7 +62,7 @@ const config = {
         {
           languages: { ...common, plaintext, xls },
           aliases: { plaintext: ['txt'] }
-    ***REMOVED***
+        }
       ],
       [rehypeSlug, {}],
       [

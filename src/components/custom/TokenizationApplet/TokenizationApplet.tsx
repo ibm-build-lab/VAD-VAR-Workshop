@@ -51,8 +51,8 @@ export default function TokenizationApplet(props: { startingText?: string }) {
     (text: string) => {
       if (worker.current) {
         worker.current.postMessage({ text, model });
-  ***REMOVED***
-***REMOVED***,
+      }
+    },
     [model]
   );
 
@@ -60,16 +60,16 @@ export default function TokenizationApplet(props: { startingText?: string }) {
     if (!worker.current) {
       worker.current = new Worker(new URL('./worker.ts', import.meta.url), {
         type: 'module'
-  ***REMOVED***);
-***REMOVED***
+      });
+    }
 
     const onMessageReceived = (e: MessageEvent) => {
       if (e.data.status === 'complete') {
         const { tokenStrings, tokenIds } = e.data.output;
         setEncodedText(tokenStrings);
         setEncodedIds(tokenIds);
-  ***REMOVED***
-***REMOVED***;
+      }
+    };
 
     worker.current.addEventListener('message', onMessageReceived);
 
@@ -90,7 +90,7 @@ export default function TokenizationApplet(props: { startingText?: string }) {
             className={cx(styles.inputSection)}
             onChange={async (e) => {
               setInputText(e.target.value || '');
-        ***REMOVED***}
+            }}
             labelText={''}
           />
           <CountTag>
@@ -107,10 +107,10 @@ export default function TokenizationApplet(props: { startingText?: string }) {
                   className={cx(
                     styles.chunk,
                     styles[`chunk_${index % (COLORS_LENGTH - 1)}`]
-          ***REMOVED***}>
+                  )}>
                   {`${chunk}`.replaceAll('\n', '[nl]')}
                 </p>
-      ***REMOVED***)}
+              ))}
             </div>
           </div>
           <CountTag>{t('tokensTag', { amount: encodedText.length })}</CountTag>
@@ -122,7 +122,7 @@ export default function TokenizationApplet(props: { startingText?: string }) {
           className={styles.modelDropdown}
           onChange={({ selectedItem }) => {
             if (selectedItem) setModel(selectedItem);
-      ***REMOVED***}
+          }}
           titleText=''
           label=''
           items={MODEL_LIST}

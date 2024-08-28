@@ -36,8 +36,8 @@ module.exports = {
         alphabetize: {
           order: 'asc',
           caseInsensitive: true
-    ***REMOVED***
-  ***REMOVED***
+        }
+      }
     ],
     'import/extensions': [
       'error',
@@ -47,7 +47,7 @@ module.exports = {
         jsx: 'never',
         ts: 'never',
         tsx: 'never'
-  ***REMOVED***
+      }
     ]
   },
   overrides: [
@@ -61,9 +61,9 @@ module.exports = {
         'react/jsx-no-undef': 'off',
         'react/no-unescaped-entities': 'off',
         'react/jsx-filename-extension': [1, { extensions: ['.md', '.mdx'] }]
-  ***REMOVED***,
+      },
       extends: 'plugin:mdx/recommended',
       settings: { 'mdx/remark': true }
-***REMOVED***
+    }
   ]
 };

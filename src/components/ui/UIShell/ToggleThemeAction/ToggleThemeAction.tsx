@@ -29,7 +29,7 @@ export default function ToggleThemeAction() {
       onClick={toggleTheme}>
       {createElement(resolvedTheme === 'dark' ? LightFilled : AsleepFilled, {
         size: 20
-  ***REMOVED***)}
+      })}
     </HeaderGlobalAction>
   );
 }

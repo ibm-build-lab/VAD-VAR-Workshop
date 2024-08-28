@@ -21,15 +21,15 @@ export default function remarkLocalizeLinks(options: Options) {
       isURLRelative(node.url)
     ) {
       node.url = path.normalize(`/${options.locale}/${node.url}`);
-***REMOVED***
+    }
     return CONTINUE;
   }
 
   return function transform(tree: Node) {
     if (options && options.locale) {
       visit(tree, 'link', visitor);
-***REMOVED*** else {
+    } else {
       throw Error('Missing required `locale` option.');
-***REMOVED***
+    }
   };
 }

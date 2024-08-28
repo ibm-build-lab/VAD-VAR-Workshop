@@ -40,8 +40,8 @@ export function UpdatedTag(props: UpdatedTagProps) {
             year: 'numeric',
             month: '2-digit',
             day: '2-digit'
-      ***REMOVED***)
-    ***REMOVED***)}
+          })
+        })}
       </Tag>
     </Suspense>
   );

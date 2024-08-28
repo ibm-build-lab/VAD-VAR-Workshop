@@ -50,7 +50,7 @@ function generateLunrIndex(docs: SearchItem[]) {
 
     for (const d of docs) {
       b.add(d);
-***REMOVED***
+    }
   }).toJSON();
 
   return idx;
@@ -111,7 +111,7 @@ export async function GET(
       const contentRoot: Root = {
         type: 'root',
         children: between
-  ***REMOVED***;
+      };
 
       rBreak(contentRoot);
       remove(contentRoot, 'image');
@@ -122,7 +122,7 @@ export async function GET(
         toHast({
           type: 'root',
           children: between
-    ***REMOVED***)
+        })
       );
 
       docs.push({
@@ -131,10 +131,10 @@ export async function GET(
         title,
         text: content,
         location: `/${slug}#${slugify(title, { lower: true })}`
-  ***REMOVED***);
+      });
 
       c++;
-***REMOVED***);
+    });
   }
 
   const idx = generateMiniSearchIndex(docs);

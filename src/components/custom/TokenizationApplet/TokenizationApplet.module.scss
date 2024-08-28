@@ -78,7 +78,7 @@ $chunk-colors: 'info', 'success', 'error', 'caution-undefined', 'warning',
       // border: 1px solid resources.map-deep-get(colors.$colors, $value, 60);
       // color: resources.map-deep-get(colors.$colors, $value, 60);
       // background-color: resources.map-deep-get(colors.$colors, $value, 10);
-***REMOVED***
+    }
   }
 }
 
@@ -113,6 +113,6 @@ $chunk-colors: 'info', 'success', 'error', 'caution-undefined', 'warning',
   .inputSection {
     & textarea {
       border-right: 1px solid $border-color;
-***REMOVED***
+    }
   }
 }

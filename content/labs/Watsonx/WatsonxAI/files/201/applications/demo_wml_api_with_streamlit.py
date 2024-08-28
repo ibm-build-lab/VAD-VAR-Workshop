@@ -1,73 +1,73 @@
-***REMOVED***
-***REMOVED***
+"""
+author: Elena Lowery
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+This code sample shows how to invoke Large Language Models (LLMs) deployed in watsonx.ai.
+Documentation: # https://ibm.github.io/watson-machine-learning-sdk/foundation_models.html#
+You will need to provide your IBM Cloud API key and a watonx.ai project id (any project)
+for accessing watsonx.ai
 This example shows a simple generation or Q&A use case without comprehensive prompt tuning
-***REMOVED***
+"""
 
 # Install the wml and streamlit api your Python env prior to running this example:
-***REMOVED***
+# pip install ibm-watson-machine-learning
 # pip install streamlit
 
 # In non-Anaconda Python environments, you may also need to install dotenv
 # pip install python-dotenv
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# For reading credentials from the .env file
+import os
+from dotenv import load_dotenv
 
 import streamlit as st
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+from ibm_watson_machine_learning.foundation_models import Model
+from ibm_watson_machine_learning.metanames import GenTextParamsMetaNames as GenParams
+from ibm_watson_machine_learning.foundation_models.utils.enums import ModelTypes, DecodingMethods
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# Important: hardcoding the API key in Python code is not a best practice. We are using
+# this approach for the ease of demo setup. In a production application these variables
+# can be stored in an .env or a properties file
 
-***REMOVED***
-***REMOVED***
+# URL of the hosted LLMs is hardcoded because at this time all LLMs share the same endpoint
+url = "https://us-south.ml.cloud.ibm.com"
 
-***REMOVED***s
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# These global variables will be updated in get_credentials() functions
+watsonx_project_id = ""
+# Replace with your IBM Cloud key
+api_key = ""
 
-***REMOVED***
+def get_credentials():
 
-***REMOVED***
+    load_dotenv()
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    # Update the global variables that will be used for authentication in another function
+    globals()["api_key"] = os.getenv("api_key", None)
+    globals()["watsonx_project_id"] = os.getenv("project_id", None)
 
     print("*** Got credentials***")
 
 # The get_model function creates an LLM model object with the specified parameters
 def get_model(model_type,max_tokens,min_tokens,decoding,stop_sequences):
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    generate_params = {
+        GenParams.MAX_NEW_TOKENS: max_tokens,
+        GenParams.MIN_NEW_TOKENS: min_tokens,
+        GenParams.DECODING_METHOD: decoding,
         GenParams.STOP_SEQUENCES:stop_sequences
-***REMOVED***
+    }
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-    ***REMOVED***,
-***REMOVED***
-***REMOVED***
+    model = Model(
+        model_id=model_type,
+        params=generate_params,
+        credentials={
+            "apikey": api_key,
+            "url": url
+        },
+        project_id=watsonx_project_id
+        )
 
-***REMOVED***
+    return model
 
 def get_prompt(question):
 
@@ -88,7 +88,7 @@ def get_prompt(question):
 def answer_questions():
 
     # Set the api key and project id global variables
-***REMOVED***
+    get_credentials()
 
     # Web app UI - title and input box for the question
     st.title('🌠Test watsonx.ai LLM')
@@ -122,11 +122,11 @@ def answer_questions():
     print("Answer: " + model_output)
 
     # Display output on the Web page
-    formatted_output = f***REMOVED***
+    formatted_output = f"""
         **Answer to your question:** {user_question} \
         *{model_output}*</i>
-        ***REMOVED***
+        """
     st.markdown(formatted_output, unsafe_allow_html=True)
 
-***REMOVED***
+# Invoke the main function
 answer_questions()

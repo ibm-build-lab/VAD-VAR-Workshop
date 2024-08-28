@@ -29,13 +29,13 @@ dialog:modal {
   .hide-lesser-than-#{$name} {
     @include resources.apply-lesser-than($name) {
       display: none !important;
-***REMOVED***
+    }
   }
 
   .hide-greater-than-#{$name} {
     @include resources.apply-greater-than($name) {
       display: none !important;
-***REMOVED***
+    }
   }
 }
 

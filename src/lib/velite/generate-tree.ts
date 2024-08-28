@@ -38,9 +38,9 @@ export default function generateSlugTree(): SlugTree {
         updated,
         timeToComplete,
         toc
-  ***REMOVED***,
+      },
       slug: `/${slug}`
-***REMOVED***;
+    };
 
     const objectPath = directories.join('.children.');
     setWith<SlugTree>(tree, objectPath, value, Object);

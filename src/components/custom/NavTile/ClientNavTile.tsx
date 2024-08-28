@@ -30,7 +30,7 @@ export default function ClientNavTile(props: ClientNavTileProps) {
       onClick={(e) => {
         e.preventDefault();
         router.push(to);
-  ***REMOVED***}
+      }}
       href={to}
       onMouseEnter={() => router.prefetch(to)}>
       <CustomStack
@@ -46,9 +46,9 @@ export default function ClientNavTile(props: ClientNavTileProps) {
             <p className={styles.updated}>
               {t('lastUpdated', {
                 date: formatter.relativeTime(new Date(updated))
-          ***REMOVED***)}
+              })}
             </p>
-  ***REMOVED***}
+          )}
         </CustomStack>
 
         {children && <div className={styles.excerpt}>{children}</div>}
@@ -60,7 +60,7 @@ export default function ClientNavTile(props: ClientNavTileProps) {
           justify={timeToComplete ? 'space-between' : 'flex-end'}>
           {timeToComplete > 0 && (
             <ReadingTimeTag timeToComplete={timeToComplete} />
-  ***REMOVED***}
+          )}
           <ArrowRight size={16} />
         </CustomStack>
       </CustomStack>

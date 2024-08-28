@@ -13,11 +13,11 @@
     &:hover {
       color: unset;
       text-decoration: none;
-***REMOVED***
+    }
 
     &:hover::after {
       content: ' #';
       color: themes.$border-subtle-02;
-***REMOVED***
+    }
   }
 }

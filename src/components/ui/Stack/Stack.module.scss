@@ -9,7 +9,7 @@
   @include resources.apply-lesser-than('md') {
     &.responsive {
       flex-direction: column;
-***REMOVED***
+    }
   }
   
 }
@@ -24,7 +24,7 @@
   @each $option in $options {
     &.justify-#{$option} {
       justify-content: #{$option};
-***REMOVED***
+    }
   }
 }
 
@@ -34,6 +34,6 @@
   @each $option in $options {
     &.align-#{$option} {
       align-items: #{$option};
-***REMOVED***
+    }
   }
 }

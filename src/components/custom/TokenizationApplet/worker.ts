@@ -31,9 +31,9 @@ class TokenizerSingleton {
       TokenizerSingleton.instance = await AutoTokenizer.from_pretrained(model, {
         ...options,
         local_files_only: false
-  ***REMOVED***);
+      });
       TokenizerSingleton.model = model;
-***REMOVED***
+    }
 
     return TokenizerSingleton.instance;
   }
@@ -47,7 +47,7 @@ self.addEventListener('message', async (event: MessageEvent<EventData>) => {
       self.postMessage({
         status: 'not-complete',
         output: e
-  ***REMOVED***)
+      })
   });
 
   const tokenIds = tokenizer.encode(text);
@@ -56,7 +56,7 @@ self.addEventListener('message', async (event: MessageEvent<EventData>) => {
       tokenizer.decode_single([t], {
         skip_special_tokens: true,
         clean_up_tokenization_spaces: true
-  ***REMOVED***)
+      })
     )
     .filter((t) => t);
 
@@ -65,6 +65,6 @@ self.addEventListener('message', async (event: MessageEvent<EventData>) => {
     output: {
       tokenStrings,
       tokenIds
-***REMOVED***
+    }
   });
 });

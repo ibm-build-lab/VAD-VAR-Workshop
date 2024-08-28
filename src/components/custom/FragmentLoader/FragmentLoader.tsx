@@ -47,8 +47,8 @@ async function compileFragment(name: string, locale: string) {
           [remarkImage, { prepend: imagePath }]
         ],
         rehypePlugins: [...rehypePlugins]
-  ***REMOVED***
-***REMOVED***
+      }
+    }
   });
 
   return content;

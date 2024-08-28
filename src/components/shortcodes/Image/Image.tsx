@@ -86,13 +86,13 @@ export default function Image(props: ImageProps) {
                       width: '100%',
                       height: '100vh',
                       objectFit: 'contain'
-                ***REMOVED***}
+                    }}
                   />
                 </TransformComponent>
               </>
-    ***REMOVED***}
+            )}
           </TransformWrapper>
-***REMOVED***}
+        )}
       </dialog>
       <span className={styles.wrapper}>
         <NextImage

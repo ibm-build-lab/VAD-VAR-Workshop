@@ -49,11 +49,11 @@ $blockStyles: "info", "success", "warning", "error", "caution-undefined";
 
     & svg {
       fill: themes.get_token('support-#{$name}');
-***REMOVED***
+    }
 
     & code {
       background-color: $bg-color !important;
       border-color: $border-color;
-***REMOVED***
+    }
   }
 }

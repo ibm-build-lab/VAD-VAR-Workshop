@@ -47,8 +47,8 @@ export default async function LandingPage(props: PageProps) {
               const { slug } = item;
 
               return <NavTile prefix={false} to={slug!} recursive key={idx} />;
-        ***REMOVED***
-  ***REMOVED***}
+            }
+          )}
         </TileGrid>
       </article>
     </>

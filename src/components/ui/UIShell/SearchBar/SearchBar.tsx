@@ -23,7 +23,7 @@ export default function SearchBar() {
       if (acc[page] === undefined) acc[page] = [];
       acc[page].push(curr);
       return acc;
-***REMOVED***, {} as SearchMap);
+    }, {} as SearchMap);
 
     setResultsMap(t);
   }, [results]);
@@ -36,9 +36,9 @@ export default function SearchBar() {
           !(
             e.relatedTarget !== e.currentTarget &&
             !e.currentTarget.contains(e.relatedTarget)
-  ***REMOVED***
-***REMOVED***
-  ***REMOVED***>
+          )
+        )
+      }>
       <ExpandableSearch
         isExpanded={expanded}
         onFocus={() => setExpanded(true)}
@@ -83,11 +83,11 @@ export default function SearchBar() {
                           {r.title}
                         </span>
                       </Link>
-            ***REMOVED***;
-              ***REMOVED***)}
+                    );
+                  })}
                 </div>
-      ***REMOVED***;
-        ***REMOVED***)}
+              );
+            })}
         </div>
       )}
     </div>

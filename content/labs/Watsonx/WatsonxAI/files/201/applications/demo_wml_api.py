@@ -1,74 +1,74 @@
-***REMOVED***
-***REMOVED***
+"""
+author: Elena Lowery
 
-***REMOVED***
+This code sample shows how to invoke Large Language Models (LLMs) deployed in watsonx.ai.
 Documentation: https://ibm.github.io/watson-machine-learning-sdk/foundation_models.html
 You will need to provide your IBM Cloud API key and a watonx.ai project id  (any project)
-***REMOVED*** in a .env file
+for accessing watsonx.ai in a .env file
 This example shows simple use cases without comprehensive prompt tuning
-***REMOVED***
+"""
 
-***REMOVED***
-***REMOVED***
+# Install the wml api your Python env prior to running this example:
+# pip install ibm-watson-machine-learning
 # pip install ibm-cloud-sdk-core
 
 # In non-Anaconda Python environments, you may also need to install dotenv
 # pip install python-dotenv
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# For reading credentials from the .env file
+import os
+from dotenv import load_dotenv
 
 # WML python SDK
-***REMOVED***
-***REMOVED***
-***REMOVED***
+from ibm_watson_machine_learning.foundation_models import Model
+from ibm_watson_machine_learning.metanames import GenTextParamsMetaNames as GenParams
+from ibm_watson_machine_learning.foundation_models.utils.enums import ModelTypes, DecodingMethods
 
 # For invocation of LLM with REST API
 import requests, json
 from ibm_cloud_sdk_core import IAMTokenManager
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# Important: hardcoding the API key in Python code is not a best practice. We are using
+# this approach for the ease of demo setup. In a production application these variables
+# can be stored in an .env or a properties file
 
-***REMOVED***
-***REMOVED***
+# URL of the hosted LLMs is hardcoded because at this time all LLMs share the same endpoint
+url = "https://us-south.ml.cloud.ibm.com"
 
-***REMOVED***s
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# These global variables will be updated in get_credentials() functions
+watsonx_project_id = ""
+# Replace with your IBM Cloud key
+api_key = ""
 
-***REMOVED***
+def get_credentials():
 
-***REMOVED***
+    load_dotenv()
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    # Update the global variables that will be used for authentication in another function
+    globals()["api_key"] = os.getenv("api_key", None)
+    globals()["watsonx_project_id"] = os.getenv("project_id", None)
 
 # The get_model function creates an LLM model object with the specified parameters
-***REMOVED***
+def get_model(model_type,max_tokens,min_tokens,decoding,temperature):
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    generate_params = {
+        GenParams.MAX_NEW_TOKENS: max_tokens,
+        GenParams.MIN_NEW_TOKENS: min_tokens,
+        GenParams.DECODING_METHOD: decoding,
+        GenParams.TEMPERATURE: temperature
+    }
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-    ***REMOVED***,
-***REMOVED***
-***REMOVED***
+    model = Model(
+        model_id=model_type,
+        params=generate_params,
+        credentials={
+            "apikey": api_key,
+            "url": url
+        },
+        project_id=watsonx_project_id
+        )
 
-***REMOVED***
+    return model
 
 def get_list_of_complaints():
 
@@ -80,28 +80,28 @@ def get_list_of_complaints():
     # If you want the end user to have a choice of the number of tokens in the output as well as decoding
     # and temperature, you can parameterize these values
 
-***REMOVED***
+    model_type = ModelTypes.LLAMA_2_13B_CHAT
     max_tokens = 100
     min_tokens = 50
     decoding = DecodingMethods.GREEDY
     # Temperature will be ignored if GREEDY is used
-***REMOVED***
+    temperature = 0.7
 
-***REMOVED***
+    # Instantiate the model
     model = get_model(model_type,max_tokens,min_tokens,decoding, temperature)
 
-    complaint = f***REMOVED***
+    complaint = f"""
             I just tried to book a flight on your incredibly slow website.  All 
             the times and prices were confusing.  I liked being able to compare 
             the amenities in economy with business class side by side.  But I 
             never got to reserve a seat because I didn't understand the seat map.  
             Next time, I'll use a travel agent!
-            ***REMOVED***
+            """
 
     # Hardcoding prompts in a script is not best practice. We are providing this code sample for simplicity of
     # understanding
 
-    prompt_get_complaints = f***REMOVED***
+    prompt_get_complaints = f"""
     From the following customer complaint, extract 3 factors that caused the customer to be unhappy. 
     Put each factor on a new line. 
 
@@ -109,7 +109,7 @@ def get_list_of_complaints():
 
     Numbered list of all the factors that caused the customer to be unhappy:
 
-    ***REMOVED***
+    """
 
     # Invoke the model and print the results
     generated_response = model.generate(prompt=prompt_get_complaints)
@@ -135,10 +135,10 @@ def answer_questions():
     model_type = ModelTypes.FLAN_UL2
     max_tokens = 300
     min_tokens = 50
-***REMOVED***
-***REMOVED***
+    decoding = DecodingMethods.SAMPLE
+    temperature = 0.7
 
-***REMOVED***
+    # Instantiate the model
     model = get_model(model_type,max_tokens,min_tokens,decoding, temperature)
     # Invoke the model and print the results
     generated_response = model.generate(prompt=final_prompt)
@@ -160,7 +160,7 @@ def invoke_with_REST():
     max_tokens = 300
     min_tokens = 50
     decoding = "sample"
-***REMOVED***
+    temperature = 0.7
 
     final_prompt = "Write a paragraph about the capital of France."
 
@@ -168,7 +168,7 @@ def invoke_with_REST():
         "Content-Type": "application/json",
         "Accept": "application/json",
         "Authorization": "Bearer " + access_token
-    ***REMOVED***
+        }
 
     data = {
         "model_id": model_type,
@@ -179,9 +179,9 @@ def invoke_with_REST():
             "min_new_tokens": min_tokens,
             "temperature": temperature,
             "stop_sequences": ["."],
-        ***REMOVED***,
+            },
         "project_id": watsonx_project_id
-***REMOVED***
+    }
 
     response = requests.post(rest_url, headers=headers, data=json.dumps(data))
     generated_response = response.json()['results'][0]['generated_text']
@@ -200,7 +200,7 @@ def get_auth_token():
 def demo_LLM_invocation():
 
     # Load the api key and project id
-***REMOVED***
+    get_credentials()
 
     # Show examples of 2 use cases/prompts
     answer_questions()

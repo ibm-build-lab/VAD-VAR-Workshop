@@ -27,7 +27,7 @@ export default memo(function SideNavTree(props: SideNavProps) {
             key={`${title}-item`}>
             {title as string}
           </CustomSideNavItem>
-***REMOVED*** : (
+        ) : (
           <SideNavMenu
             key={`${title}-inner-menu`}
             className={styles[`pl-${depth}`]}
@@ -40,17 +40,17 @@ export default memo(function SideNavTree(props: SideNavProps) {
                 key={`${title}-item`}>
                 {title}
               </CustomSideNavItem>
-    ***REMOVED***}
+            )}
             {children && (
               <SideNavTree
                 navItems={children}
                 depth={depth + 1}
                 key={`${title}-tree`}
               />
-    ***REMOVED***}
+            )}
           </SideNavMenu>
-***REMOVED***;
-  ***REMOVED***)}
+        );
+      })}
     </>
   );
 });

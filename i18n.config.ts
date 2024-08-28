@@ -21,12 +21,12 @@ export default getRequestConfig(async ({ locale }) => {
     onError(error) {
       if (error.code === IntlErrorCode.MISSING_MESSAGE) {
         console.error(error.originalMessage);
-  ***REMOVED*** else {
+      } else {
         console.log(error.originalMessage);
-  ***REMOVED***
-***REMOVED***,
+      }
+    },
     getMessageFallback() {
       return '';
-***REMOVED***
+    }
   };
 });

@@ -15,7 +15,7 @@ export default defineConfig({
           name: s.string(),
           raw: s.raw(),
           file_path: s.path()
-    ***REMOVED***)
+        })
         .transform((data) => {
           const { file_path } = data;
           const { locale } = parseLocaleFromFilePath(file_path + '.md');
@@ -23,9 +23,9 @@ export default defineConfig({
             ...data,
             locale,
             file_path: path.join('content', file_path)
-      ***REMOVED***;
-    ***REMOVED***)
-***REMOVED***,
+          };
+        })
+    },
     labs: {
       name: 'Lab',
       pattern: ['labs/**/*.{md,mdx}'].concat(
@@ -45,7 +45,7 @@ export default defineConfig({
           toc_tree: s.toc({ maxDepth: 3 }),
           raw: s.raw(),
           excerpt: s.excerpt({ length: 160 })
-    ***REMOVED***)
+        })
         .transform((data) => {
           const { title: t = '', toc_tree, excerpt, file_path } = data;
 
@@ -62,8 +62,8 @@ export default defineConfig({
             title,
             excerpt: `${excerpt}...`,
             file_path: path.join('content', file_path)
-      ***REMOVED***;
-    ***REMOVED***)
-***REMOVED***
+          };
+        })
+    }
   }
 });

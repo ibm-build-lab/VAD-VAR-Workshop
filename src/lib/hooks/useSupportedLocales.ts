@@ -33,8 +33,8 @@ export default function useSupportedLocales(sideBarTree: SlugTree) {
         supported.push({
           locale,
           pathname: ['', locale, ...splitPath.slice(1)].join('/')
-    ***REMOVED***);
-***REMOVED***
+        });
+    }
 
     setSupportedLocales(supported);
   }, [pathName]);

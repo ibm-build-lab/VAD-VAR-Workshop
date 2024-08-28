@@ -1,30 +1,30 @@
-***REMOVED***
-***REMOVED***
+"""
+author: Elena Lowery
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+This code sample shows how to invoke Large Language Models (LLMs) deployed in watsonx.ai.
+Documentation: # https://ibm.github.io/watson-machine-learning-sdk/foundation_models.html#
+You will need to provide your IBM Cloud API key and a watonx.ai project id (any project)
+for accessing watsonx.ai
 This example shows a simple summary use case without comprehensive prompt tuning
-***REMOVED***
+"""
 
-***REMOVED***
-***REMOVED***
+# Install the wml api your Python env prior to running this example:
+# pip install ibm-watson-machine-learning
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# For reading credentials from the .env file
+import os
+from dotenv import load_dotenv
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+from ibm_watson_machine_learning.foundation_models import Model
+from ibm_watson_machine_learning.metanames import GenTextParamsMetaNames as GenParams
+from ibm_watson_machine_learning.foundation_models.utils.enums import ModelTypes, DecodingMethods
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# Important: hardcoding the API key in Python code is not a best practice. We are using
+# this approach for the ease of demo setup. In a production application these variables
+# can be stored in an .env or a properties file
 
-***REMOVED***
-***REMOVED***
+# URL of the hosted LLMs is hardcoded because at this time all LLMs share the same endpoint
+url = "https://us-south.ml.cloud.ibm.com"
 
 REVIEW_TYPE_DEFAULT = "Default"
 REVIEW_TYPE_NEGATIVE = "Negative"
@@ -32,46 +32,46 @@ REVIEW_TYPE_POSITIVE = "Positive"
 REVIEW_TYPE_KEYWORD_INTEREST = "Interest Rate"
 REVIEW_TYPE_BULLET_POINTS = "Bullet Points"
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# These global variables will be updated in get_credentials() function
+watsonx_project_id = ""
+# Replace with your IBM Cloud key
+api_key = ""
 
-***REMOVED***
+def get_credentials():
 
-***REMOVED***
+    load_dotenv()
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    # Update the global variables that will be used for authentication in another function
+    globals()["api_key"] = os.getenv("api_key", None)
+    globals()["watsonx_project_id"] = os.getenv("project_id", None)
 
 # This function creates a model object with the specified parameters
-***REMOVED***
+def get_model(model_type,max_tokens,min_tokens,decoding,temperature):
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    generate_params = {
+        GenParams.MAX_NEW_TOKENS: max_tokens,
+        GenParams.MIN_NEW_TOKENS: min_tokens,
+        GenParams.DECODING_METHOD: decoding,
+        GenParams.TEMPERATURE: temperature
+    }
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-    ***REMOVED***,
-***REMOVED***
-***REMOVED***
+    model = Model(
+        model_id=model_type,
+        params=generate_params,
+        credentials={
+            "apikey": api_key,
+            "url": url
+        },
+        project_id=watsonx_project_id
+        )
 
-***REMOVED***
+    return model
 
-***REMOVED***
+def get_review():
 
-***REMOVED***
+    # This code can be replaced with getting a review from a file or another sources
 
-    service_review = f***REMOVED***
+    service_review = f"""
     I started my loan process toward securing a VA loan. 
     I was waiting for a a month and a couple weeks, then I was told that the VA needed  
     to acquire my retirement points to verify my veteran status. If I knew this is what 
@@ -89,14 +89,14 @@ REVIEW_TYPE_BULLET_POINTS = "Bullet Points"
     rate down in 1/4 of a point, so my mortgage has an interest rate that is 3/8 of a point higher 
     than my locked in interest rate in the beginning of this process. Although my interest rate is 
     higher than the locked in interest point, at the end, the mortgage is successfully finished.
-    ***REMOVED***
+    """
 
-***REMOVED***
+    return service_review
 
 # This function constructs a zero-shot prompt for the LLM
 def get_prompt(service_review, review_type):
 
-***REMOVED***
+    # Get the complete prompt by replacing variables
 
     if review_type == REVIEW_TYPE_BULLET_POINTS:
         # Few shot prompting - this type of review is the most challenging one for an LLM
@@ -104,21 +104,21 @@ def get_prompt(service_review, review_type):
         complete_prompt = get_few_shot_prompt(service_review)
         # Read from file (use either the hardcoded string function (comment out the other one)
         # complete_prompt = get_few_shot_prompt_from_file(review, "\\prompt_templates\\few_shot_summary.txt")
-***REMOVED***
-        complete_prompt = f***REMOVED***
+    else:
+        complete_prompt = f"""
             Generate a short summary of a service review to give feedback to the customer service department.\n
             Summarize the review below, delimited by ''' , in at most 100 words, and focusing on {review_type} comments.\n
-    ***REMOVED***
-            ***REMOVED***
+            Review: ```{service_review}```
+            """
 
-***REMOVED***
+    return complete_prompt
 
 # This function constructs a few-shot prompt for the LLM
 def get_few_shot_prompt(service_review):
 
     # We hardcoded the prompt for quick testing. See the get_few_shot_prompt_from_file() for a better approach
 
-    complete_prompt = f***REMOVED***
+    complete_prompt = f"""
     Please provide top 5 bullet points in the review provided in '''.
 
     Review:
@@ -163,9 +163,9 @@ def get_few_shot_prompt(service_review):
     Review: ```{service_review}```
     
     Top bullet points:
-    ***REMOVED***
+    """
 
-***REMOVED***
+    return complete_prompt
 
 # This function is not called by default, however, you can use it if you put your prompt text in a file
 def get_few_shot_prompt_from_file(review, fileName):
@@ -192,12 +192,12 @@ def get_few_shot_prompt_from_file(review, fileName):
     # for troubleshooting
     # print("Prompt retrieved from file: " + complete_prompt)
 
-***REMOVED***
+    return complete_prompt
 
-***REMOVED***
+def main():
 
     # Get the review that we will summarize
-***REMOVED***
+    review = get_review()
 
     # Create prompts for different types of summary
     complete_prompt1 = get_prompt(review, REVIEW_TYPE_DEFAULT)
@@ -206,63 +206,63 @@ def get_few_shot_prompt_from_file(review, fileName):
     complete_prompt4 = get_prompt(review, REVIEW_TYPE_KEYWORD_INTEREST)
     complete_prompt5 = get_prompt(review, REVIEW_TYPE_BULLET_POINTS)
 
-***REMOVED***
+    # Specify model parameters
     model_type = ModelTypes.FLAN_UL2
     max_tokens = 300
     min_tokens = 50
-***REMOVED***
-***REMOVED***
+    decoding = DecodingMethods.SAMPLE
+    temperature = 0.7
 
-***REMOVED***
-***REMOVED***
+    # Get the API key and project id and update global variables
+    get_credentials()
 
-***REMOVED***
-***REMOVED***
+    # Instantiate the model
+    model = get_model(model_type, max_tokens, min_tokens, decoding, temperature)
 
     # Default summary
     # Invoke the model and print the results
     generated_response = model.generate(prompt=complete_prompt1)
-***REMOVED***
+    # print model response
     print("--------------------------------- Default Review Summary -----------------------------------")
     print("Prompt: " + complete_prompt1.strip())
-***REMOVED***
+    print("---------------------------------------------------------------------------------------------")
     print("Default Summary: " + generated_response['results'][0]['generated_text'])
-***REMOVED***
+    print("*********************************************************************************************")
 
     # Negative summary
     # Invoke the model and print the results
     generated_response = model.generate(prompt=complete_prompt2)
-***REMOVED***
+    # print model response
     print("--------------------------------- Negative Review Summary -----------------------------------")
     print("Prompt: " + complete_prompt1.strip())
-***REMOVED***
+    print("---------------------------------------------------------------------------------------------")
     print("Negative Summary: " + generated_response['results'][0]['generated_text'])
 
     # Positive summary
     # Invoke the model and print the results
     generated_response = model.generate(prompt=complete_prompt3)
-***REMOVED***
+    # print model response
     print("--------------------------------- Positive Review Summary -----------------------------------")
     print("Prompt: " + complete_prompt1.strip())
-***REMOVED***
+    print("---------------------------------------------------------------------------------------------")
     print("Positive Summary: " + generated_response['results'][0]['generated_text'])
 
     # Keyword summary
     # Invoke the model and print the results
     generated_response = model.generate(prompt=complete_prompt4)
-***REMOVED***
+    # print model response
     print("--------------------------------- Keyword  Summary -----------------------------------")
     print("Prompt: " + complete_prompt1.strip())
-***REMOVED***
+    print("---------------------------------------------------------------------------------------------")
     print("Keyword Summary: " + generated_response['results'][0]['generated_text'])
 
     # Bullet points summary
     # Invoke the model and print the results
     generated_response = model.generate(prompt=complete_prompt5)
-***REMOVED***
+    # print model response
     print("--------------------------------- Bullet Points Summary -----------------------------------")
     print("Prompt: " + complete_prompt1.strip())
-***REMOVED***
+    print("---------------------------------------------------------------------------------------------")
     print("Bullet Points Summary: " + generated_response['results'][0]['generated_text'])
 
     # Test modular function invocation
@@ -271,30 +271,30 @@ def get_few_shot_prompt_from_file(review, fileName):
 # This function is called when this script is imported as a module
 def get_summary(request_api_key, request_project_id, review,review_type,model_type):
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    # Update the global variable
+    globals()["api_key"] = request_api_key
+    globals()["watsonx_project_id"] = request_project_id
 
-***REMOVED***
+    # Specify model parameters
     max_tokens = 300
     min_tokens = 50
-***REMOVED***
-***REMOVED***
+    decoding = DecodingMethods.SAMPLE
+    temperature = 0.7
 
-***REMOVED***
-***REMOVED***
+    # Instantiate the model
+    model = get_model(model_type, max_tokens, min_tokens, decoding, temperature)
 
     complete_prompt = get_prompt(review, review_type)
 
-***REMOVED***
-***REMOVED***
+    generated_response = model.generate(prompt=complete_prompt)
+    response_text = generated_response['results'][0]['generated_text']
 
     print("Prompt: " + complete_prompt)
-***REMOVED***
-***REMOVED***
+    print("*************************************************************")
+    print("Function invocation test result:" + response_text)
 
     return response_text
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# Invoke the main function
+if __name__ == "__main__":
+    main()

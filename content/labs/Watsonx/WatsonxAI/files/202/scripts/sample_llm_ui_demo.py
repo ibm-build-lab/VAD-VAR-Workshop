@@ -1,18 +1,18 @@
-***REMOVED***
-***REMOVED***
+"""
+author: Elena Lowery
 
 This code sample shows how to invoke watsonx.ai Generative AI API that's hosted in IBM Cloud.
 At this time the API endpoint is hardcoded in the API itself (can't be edited).
-You will need to provide your own API key ***REMOVED***
+You will need to provide your own API key for accessing watsonx.ai
 This example shows a simple use cases without comprehensive prompt tuning.
-***REMOVED***
+"""
 
 # Install the following libraries in your Python env prior to running this example:
 # pip install streamlit
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# For reading credentials from the .env file
+import os
+from dotenv import load_dotenv
 
 import streamlit as st
 import pandas as pd
@@ -51,21 +51,21 @@ FLAN_UL2 = 'google/flan-ul2'
 GRANITE_13B_CHAT = 'ibm/granite-13b-chat-v2'
 LLAMA_2_70B_CHAT = 'meta-llama/llama-2-70b-chat'
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# These global variables will be updated in get_credentials() function
+watsonx_project_id = ""
+# Replace with your IBM Cloud key
+api_key = ""
 
 # Selected model
 selected_use_case_model = ""
 
-***REMOVED***
+def get_credentials():
 
-***REMOVED***
+    load_dotenv()
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    # Update the global variables that will be used for authentication in another function
+    globals()["api_key"] = os.getenv("api_key", None)
+    globals()["watsonx_project_id"] = os.getenv("project_id", None)
 
 def demo_summary():
 
@@ -84,7 +84,7 @@ def demo_summary():
         selected_option = st.selectbox("Review type:", options)
         st.image(image_url, use_column_width=True)
 
-        default_review_orig = f***REMOVED***I started my loan process toward securing a VA loan. I was waiting for a a month
+        default_review_orig = f"""I started my loan process toward securing a VA loan. I was waiting for a a month
         and a couple weeks, then I was told that the VA needed to acquire my retirement points to verify
         my veteran status. If I knew this is what my loan was on hold for, I could have contacted the VA 
         office right away and got this cleared up. For whatever reason, it took the underwriting department 
@@ -99,7 +99,7 @@ def demo_summary():
         rate down in 1/4 of a point, so my mortgage has an interest rate that is 3/8 of a point higher 
         than my locked in interest rate in the beginning of this process. Although my interest rate is 
         higher than the locked in interest point, at the end, the mortgage is successfully finished.
-        ***REMOVED***
+        """
 
         # Clean up the string
         # Remove carriage return characters
@@ -135,14 +135,14 @@ def demo_extract():
         selected_option = st.selectbox("Select an option:", options)
         st.image(image_url, use_column_width=True)
 
-        default_review_orig = f***REMOVED***We used the Hilton Waikoloa's pool and slide while vacationing at 
+        default_review_orig = f"""We used the Hilton Waikoloa's pool and slide while vacationing at 
         the HGV Kingsland. The property was really overwhelming and quite huge. They had a train 
         and boat to get around since it was so big. Our girls loved the slide at the pool and also 
         swimming with the dolphins. The lagoon kiosk rented some snorkels which was very easy since 
         there were no waves inside the lagoon. Lots of turtles there! Food was the only downside as 
         it is very expensive. But I guess it was expected since it is Hawaii. We would love to return 
         once they have the Oceans Tower timeshares built for the HGV Club. Especially with the ocean views!
-        ***REMOVED***
+        """
 
         # Clean up the string
         # Remove carriage return characters
@@ -190,10 +190,10 @@ def demo_analyze():
     fig = px.bar(df, x="Category", color="Category", barmode="group")
     st.plotly_chart(fig)
 
-***REMOVED***
+def main():
 
-***REMOVED***
-***REMOVED***
+    # Get the API key and project id and update global variables
+    get_credentials()
 
     # Use the full page instead of a narrow central column
     st.set_page_config(layout="wide")
@@ -207,7 +207,7 @@ def demo_analyze():
         globals()["selected_use_case_model"] = LLAMA_2_70B_CHAT
     elif selected_model == DISPLAY_MODEL_GRANITE:
         globals()["selected_use_case_model"] = GRANITE_13B_CHAT
-***REMOVED***
+    else:
         # Default model if there is no selection
         globals()["selected_use_case_model"] = FLAN_UL2
 
@@ -225,5 +225,5 @@ def demo_analyze():
 
 
 
-***REMOVED***
-***REMOVED***
+if __name__ == "__main__":
+    main()

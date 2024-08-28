@@ -43,7 +43,7 @@ const callouts = Object.entries(calloutMap).reduce(
           {children}
         </GenericCallout>
       );
-***REMOVED***;
+    };
 
     acc[key as CalloutType] = Comp;
     return acc;

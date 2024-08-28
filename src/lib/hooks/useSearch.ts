@@ -32,17 +32,17 @@ export default function useSearch() {
       const idx = MiniSearch.loadJSON<SearchItem>(serialIdx, {
         fields: ['title', 'text'],
         storeFields: ['title', 'text', 'location', 'page']
-  ***REMOVED***);
+      });
 
       setIndex(idx);
-***REMOVED***);
+    });
   }, [locale]);
 
   useEffect(() => {
     if (!searchText || !searchIndex) {
       setResults([]);
       return;
-***REMOVED***
+    }
     const r = searchIndex.search(searchText);
     setResults(r as CustSearchResult[]);
   }, [searchText]);

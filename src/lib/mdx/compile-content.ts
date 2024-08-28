@@ -66,8 +66,8 @@ export default async function compileContent(
           [remarkLocalizeLinks, { locale }]
         ],
         rehypePlugins: [...defRehypePlugins, ...rehypePlugins]
-  ***REMOVED***
-***REMOVED***
+      }
+    }
   });
 
   return {
@@ -80,6 +80,6 @@ export default async function compileContent(
       toc,
       updated,
       timeToComplete
-***REMOVED***
+    }
   };
 }

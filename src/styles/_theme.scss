@@ -12,9 +12,9 @@
   @if map.has-key(themes.$theme, $token) {
     @if themes.$use-fallback-value == false {
       $css-token: var(--#{themes.$prefix}-#{$token});
-***REMOVED*** @else {
+    } @else {
       $css-token: var(--#{themes.$prefix}-#{$token}, #{themes.get($token)});
-***REMOVED***
+    }
   }
   @else { 
     @error "Unable to find token: #{$token} in theme map.";
