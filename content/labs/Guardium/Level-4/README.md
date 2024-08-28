@@ -1,24 +1,13 @@
 ---
-title: Guardium
+title: Level 4
 toc: false
 ---
 
-# Guardium workshop
+# Guardium Data Protection L4 Workshop
 
 This workshop includes hands-on labs designed to provide practical experience with IBM Guardium Data Protection.
 
 ## Labs
-
-<TileGrid>
-  <NavTile to='/guardium/100' recursive />
-  <NavTile to='/guardium/101' recursive />
-  <NavTile to='/guardium/102' recursive />
-  <NavTile to='/guardium/103' recursive />
-  <NavTile to='/guardium/104' recursive />
-  <NavTile to='/guardium/105' recursive />
-</TileGrid>
-
-## Level 4 Labs
 
 <TileGrid>
   <NavTile to='/guardium/level-4/200' recursive />
