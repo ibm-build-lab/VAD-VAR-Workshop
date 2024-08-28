@@ -7,7 +7,13 @@
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "files.insertFinalNewline": true,
   "eslint.enable": true,
-  "eslint.validate": ["javascript", "typescript", "markdown", "mdx", "md"],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "markdown",
+    "mdx",
+    "md"
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
@@ -18,5 +24,8 @@
   "auto-close-tag.activationOnLanguage": [
     "md",
     "mdx"
+  ],
+  "cSpell.words": [
+    "Guardium"
   ]
 }
